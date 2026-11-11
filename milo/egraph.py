@@ -1,4 +1,5 @@
-"""Build the sound e-graph in egglog, read back its nodes and each class's interval I_c."""
+"""Build the sound e-graph in egglog, and read back its e-nodes and the range I_c that the range
+analysis gives each e-class."""
 
 import os
 import subprocess
@@ -23,7 +24,8 @@ EGraph = namedtuple("EGraph", "nodes interval root")
 
 
 class BadBox(Exception):
-    """Some subexpression is undefined everywhere on the input box."""
+    """The range analysis found an empty range: some subexpression is undefined everywhere on the
+    input intervals."""
 
 
 def context(precision, round=gmpy2.RoundToNearest):
@@ -54,7 +56,7 @@ def rational(q):
 
 
 def guarded(e, box, precision):
-    """Rewrites input program's ifs into x > k."""
+    """Rewrites the input program's ifs to have guards x > k."""
     match e:
         case ("If", (op, x, c), a, b):
             k = threshold(op, c, precision)
@@ -75,7 +77,8 @@ def script(core, iters, branch):
     consts = set()
 
     def term(e, guard):
-        """e on a region, where guard maps a variable to the condition on it there."""
+        """e on a subdomain, where guard maps a variable to the side of its guard x > k there,
+        which becomes a context on that variable."""
         match e:
             case ("Var", x) if x in guard:
                 return f'(Ctx "{x}" {guard[x]} (Var "{x}"))'
@@ -86,7 +89,7 @@ def script(core, iters, branch):
                 return f"(Num {rational(q)})"
             case ("If", (_, x, k), a, b):
                 if x in guard:
-                    raise ValueError(f"conditions on {x} are nested, which is not supported")
+                    raise ValueError(f"guards on {x} are nested, which is not supported")
                 arms = (term(a, guard | {x: f"{f64(k)} true"}), term(b, guard | {x: f"{f64(k)} false"}))
                 return f'(If "{x}" {f64(k)} {arms[0]} {arms[1]})'
             case (op, *args):
@@ -100,8 +103,8 @@ def script(core, iters, branch):
     for q in consts:
         lo, hi = to_float(q, "binary64", gmpy2.RoundDown), to_float(q, "binary64", gmpy2.RoundUp)
         lines += [f"(set (lo (Num {rational(q)})) {f64(lo)})", f"(set (hi (Num {rational(q)})) {f64(hi)})"]
-    # Each iteration moves contexts to the leaves, bounds the classes, rewrites once with
-    # back-off, folds constants, and branches. With no rewriting, the bounds run to a fixed point.
+    # Each iteration pushes contexts to the leaves, runs the range analysis, rewrites once with
+    # back-off, folds constants, and branches. With no rewriting, the range analysis runs to a fixed point.
     iteration = "(saturate dist) (repeat 30 ana) (run-with bo opt) (saturate fold) (saturate branch)"
     last = "(repeat 30 ana)" if iters else "(saturate ana)"
     lines.append(f"(run-schedule (let-scheduler bo (back-off)) (repeat {iters} {iteration})"
@@ -154,7 +157,7 @@ def read_dump(text, precision):
         q = next((n.payload for n in ns if n.op in ("Num", "Lit")), None)
         if q is None:
             interval[c] = Iv(mpfr(ends["lo"].get(c, -INF)), mpfr(ends["hi"].get(c, INF)))
-        else:  # a class holding a constant gets the 200-bit enclosure of its exact value
+        else:  # the range of a class holding a constant is the 200-bit enclosure of its exact value
             n, d = mpz(q.numerator), mpz(q.denominator)
             interval[c] = Iv(DOWN.div(n, d), UP.div(n, d))
     return EGraph(nodes, interval, root)

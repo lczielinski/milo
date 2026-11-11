@@ -1,7 +1,9 @@
-"""Extraction on the e-graph read back from egglog. Each class's frontier F_k(c) is a
+"""Extraction on the e-graph read back from egglog. Each e-class's minimal-cost set F_k(c) is a
 list of (cost, program) entries whose costs are Min(X_k(c)).
 
-A cost that is FAIL is left out of every frontier."""
+A round keeps Min(F_k(c) | X_{k+1}(c)), which is Min(X_{k+1}(c)) for a monotone cost and also lets
+the bench's greedy order, which is not monotone, reach a fixed point. A cost that is FAIL is left
+out of every minimal-cost set."""
 
 import time
 from itertools import product
@@ -10,8 +12,8 @@ from .analysis import FAIL, err, precedes
 
 
 def insert(front, entry, leq):
-    """Add (cost, program) to a frontier unless a cost there is <= its cost, and drop the costs it
-    is below. A cost keeps the first program found for it."""
+    """Add (cost, program) to a set of minimal costs unless a cost there is <= its cost, and drop
+    the costs it is below. A cost keeps the first program found for it."""
     if not any(leq(e, entry[0]) for e, _ in front):
         front[:] = [f for f in front if not leq(entry[0], f[0])] + [entry]
 
@@ -32,7 +34,8 @@ def program(node, programs):
 
 
 def assumes(node, box):
-    """The input box for a node."""
+    """The subdomain of an e-node, as the set of guard sides (x, k, side) it assumes, where side
+    is True for x > k and False for x <= k."""
     if any(child not in box for child in node.children):
         return None
     guards = [box[child] for child in node.children]
@@ -47,7 +50,7 @@ def assumes(node, box):
 
 
 def boxes(g):
-    """A class's input box: the intersection of its nodes' boxes."""
+    """Each e-class's subdomain V_c, as a set of guard sides: the intersection of its e-nodes'."""
     box = {}
     while True:
         new = {}
@@ -61,7 +64,7 @@ def boxes(g):
 
 
 def participants(g):
-    """The nodes whose input box is the same as the class's."""
+    """The e-nodes whose subdomain is their e-class's V_c, so that V_c lies inside each child's."""
     box = boxes(g)
     nodes = [(c, n) for c, ns in g.nodes.items() for n in ns
              if (guards := assumes(n, box)) is not None and guards <= box[c]]
@@ -74,9 +77,9 @@ def participants(g):
 
 
 def extract(g, time_limit=None, cost=err, leq=precedes):
-    """F_k of every class for the largest k reached, k, and whether the time limit stopped it
-    before F_{k+1} = F_k. Round k+1 evaluates again only the nodes with a child whose frontier
-    changed in round k."""
+    """F_k of every e-class for the largest k reached, k, and whether the time limit stopped it
+    before the fixed point F_{k+1} = F_k. Round k+1 evaluates again only the e-nodes with a child
+    whose minimal-cost set changed in round k."""
     deadline = time_limit and time.monotonic() + time_limit
     nodes, members, readers = participants(g)
 

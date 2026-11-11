@@ -11,7 +11,7 @@ def main(argv=None):
                                      "smallest absolute and relative error bounds.")
     parser.add_argument("file", help="an FPCore file")
     parser.add_argument("--iters", type=int, default=4, help="rewriting iterations; 0 bounds the input")
-    parser.add_argument("--no-branch", action="store_true", help="do not introduce conditionals")
+    parser.add_argument("--no-branch", action="store_true", help="do not add if-statements")
     parser.add_argument("--time-limit", type=float, default=120,
                         help="seconds for extraction, after which F_k of the last finished round is reported")
     args = parser.parse_args(argv)
@@ -22,14 +22,14 @@ def main(argv=None):
     F, k, cut = extract(g, args.time_limit)
     I = g.interval[g.root]
     print(f"{core.name}: {sum(map(len, g.nodes.values()))} e-nodes, {len(g.nodes)} e-classes, "
-          f"value in {I}, frontier of {len(F[g.root])}")
+          f"range in {I}, minimal-cost set of {len(F[g.root])}")
     if cut:
-        print(f"no fixpoint: the time limit stopped extraction, so these are optimal only up to height {k}")
+        print(f"no fixed point: the time limit stopped extraction, so these are optimal only up to height {k}")
     else:
-        print(f"fixpoint at height {k}: these are optimal among all programs in the e-graph")
+        print(f"fixed point at height {k}: these are optimal among all programs in the e-graph")
     for name, bound in BOUNDS.items():
         if F[g.root]:
             e, p = best(F[g.root], bound)
             print(f"{name} {float(bound(e)):.3e}  {show(p)}")
         else:
-            print(f"{name} none: every program may fail")
+            print(f"{name} none: " + (f"no program up to height {k} has a bound" if cut else "every program may fail"))

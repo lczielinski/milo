@@ -4,13 +4,14 @@
 (rule ((= e (Neg a)) (SignOf a x)) ((SignOf e x)) :ruleset branch)
 (rule ((= e (Mul a b)) (SignOf a x) (Nonzero b)) ((SignOf e x)) :ruleset branch)
 
-; add an x > 0 branch to class of a + b where condition number bound > 10 if:
+; add an if-statement with guard x > 0 to the class of a + b where the bound on its atomic
+; condition number exceeds 10, if SameSgn(a, b) is decided by x > 0:
 ; sgn(a) follows sgn(x), sgn(b) is fixed, and x crosses 0
 (rule ((= e (Add a b)) (SignOf a x) (Nonzero b) (= lx (lo (Var x))) (= hx (hi (Var x))) (< lx 0.0) (> hx 0.0)
        (= la (lo a)) (= ha (hi a)) (= lb (lo b)) (= hb (hi b)) (= le (lo e)) (= he (hi e))
        (> (+ (max (neg la) ha) (max (neg lb) hb)) (* 10.0 (max 0.0 (max le (neg he))))))
       ((union e (If x 0.0 (Ctx x 0.0 true e) (Ctx x 0.0 false e)))
-       ; build b - a in each arm
+       ; build b - a in each branch
        (Add (Ctx x 0.0 true b) (Neg (Ctx x 0.0 true a)))
        (Add (Ctx x 0.0 false b) (Neg (Ctx x 0.0 false a)))) :ruleset branch)
 
@@ -18,7 +19,7 @@
 (rule ((= e (Add a b)) (= d (Add a (Neg b))) (Nonzero d))
       ((union e (Div (Add (Mul a a) (Neg (Mul b b))) d))) :ruleset opt)
 
-; move a conditional up past the operation applied to it
+; move an if-statement up past the operation applied to it
 (rewrite (Neg (If x k a b)) (If x k (Neg a) (Neg b)) :ruleset opt)
 (rewrite (Sqrt (If x k a b)) (If x k (Sqrt a) (Sqrt b)) :ruleset opt)
 (rewrite (Add (If x k a b) c) (If x k (Add a (Ctx x k true c)) (Add b (Ctx x k false c))) :ruleset opt)
@@ -26,6 +27,6 @@
 (rewrite (Div (If x k a b) c) (If x k (Div a (Ctx x k true c)) (Div b (Ctx x k false c))) :ruleset opt)
 (rewrite (Div c (If x k a b)) (If x k (Div (Ctx x k true c) a) (Div (Ctx x k false c) b)) :ruleset opt)
 
-; remove redundant conditional
+; remove an if-statement that its context decides
 (rewrite (Ctx x k true (If x k a b)) a :ruleset dist)
 (rewrite (Ctx x k false (If x k a b)) b :ruleset dist)

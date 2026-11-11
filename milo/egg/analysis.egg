@@ -6,7 +6,7 @@
   (Div Math Math)
   (Neg Math)
   (Sqrt Math)
-  ; (If x k a b) has condition x > k
+  ; (If x k a b) has guard x > k
   (If String f64 Math Math)
   ; (Ctx x k side e) is e restricted to x > k (true) or x <= k (false)
   (Ctx String f64 bool Math))
@@ -18,19 +18,19 @@
 (let $two (bigrat (bigint 2) (bigint 1)))
 (let $half (bigrat (bigint 1) (bigint 2)))
 
-(ruleset ana) ; interval analysis
+(ruleset ana) ; range analysis
 (ruleset opt) ; rewrite rules
 (ruleset fold) ; constant folding
 (ruleset dist) ; push contexts to leaves
-(ruleset branch) ; proposing splits
+(ruleset branch) ; proposing if-statements
 
 (relation Root (Math)) ; class of the input term
-(relation Bad (Math)) ; class interval came out empty
-; intersect intervals within a class
-(function lo (Math) f64 :merge (max old new)) ; lower bound on class interval
-(function hi (Math) f64 :merge (min old new)) ; upper bound on class interval
+(relation Bad (Math)) ; range came out empty
+; a class's range is the intersection of the ranges of its nodes
+(function lo (Math) f64 :merge (max old new)) ; lower end of the class's range
+(function hi (Math) f64 :merge (min old new)) ; upper end of the class's range
 
-; outward rounding for class intervals
+; outward rounding for ranges
 (function rlo (Math) f64 :merge (max old new))
 (function rhi (Math) f64 :merge (min old new))
 (function rmlo (Math) f64 :merge (max old new))
@@ -46,10 +46,10 @@
       ((set (hi e) (max (max (* h 0.9999999999999998) (* h 1.0000000000000002))
                         (+ h 4.9406564584124654e-324)))) :ruleset ana)
 
-; some subexpression is undefined everywhere on the box, input gets rejected
+; some subexpression is undefined everywhere on the input intervals, so the input is rejected
 (rule ((= l (lo e)) (= h (hi e)) (> l h)) ((Bad e)) :ruleset ana)
 
-; interval analysis rules
+; range analysis rules
 (rule ((= e (Num r))) ((set (rmlo e) (to-f64 r)) (set (rmhi e) (to-f64 r))) :ruleset ana)
 (rule ((= e (Num $zero))) ((set (lo e) 0.0) (set (hi e) 0.0)) :ruleset ana)
 
@@ -87,7 +87,7 @@
 (rule ((= e (Sqrt a)) (= l (lo a)) (= h (hi a)) (>= h 0.0))
       ((set (rlo e) (sqrt (max l 0.0))) (set (rhi e) (sqrt h))) :ruleset ana)
 
-; sign facts from the intervals
+; sign facts from the ranges
 (relation Pos (Math))
 (relation Nonneg (Math))
 (relation Nonzero (Math))
@@ -98,7 +98,7 @@
 (rule ((= h (hi e)) (< h 0.0)) ((Nonzero e)) :ruleset ana)
 
 ; move the context down to the leaves until it narrows (Var x) or disappears
-(relation Leaf (Math)) ; a Var or a contexted Var
+(relation Leaf (Math)) ; a Var, or a Var in a context on it
 (rule ((= e (Var x))) ((Leaf e)) :ruleset dist)
 (rule ((= e (Ctx x k s (Var x)))) ((Leaf e)) :ruleset dist)
 (rule ((= e (Ctx x k s u)) (Leaf u) (= v (Var x)) (!= u v)) ((union e u)) :ruleset dist)
@@ -109,7 +109,7 @@
 (rewrite (Ctx x k s (Neg a)) (Neg (Ctx x k s a)) :ruleset dist)
 (rewrite (Ctx x k s (Sqrt a)) (Sqrt (Ctx x k s a)) :ruleset dist)
 
-; Context and If intervals
+; ranges of contexts and if-statements
 (rule ((= e (Ctx x k s a)) (= l (lo a))) ((set (lo e) l)) :ruleset ana)
 (rule ((= e (Ctx x k s a)) (= h (hi a))) ((set (hi e) h)) :ruleset ana)
 (rule ((= e (Ctx x k true (Var x)))) ((set (lo e) k)) :ruleset ana)

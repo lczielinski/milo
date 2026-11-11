@@ -37,7 +37,7 @@ def precedes(e1, e2):
 
 
 def computed(X, e):
-    """X~ = (X + D) & XS, where the computed value lies, for a class interval X and a pair e.
+    """X~ = (X + D) & XS, where the computed value lies, for a range X and a pair e.
     XS needs x != 0, so it is dropped when 0 is in X."""
     return X + e.D if 0 in X else (X + e.D) & (X * e.S)
 
@@ -149,7 +149,7 @@ def sqrt(I, X, e1):
 
 
 def err(op, I, Xs, es):
-    """err_s of a node, from its class's interval I and its children's intervals Xs and pairs es."""
+    """err_s of an e-node, from its e-class's range I and its children's ranges Xs and pairs es."""
     if FAIL in es:
         return FAIL
     match op:
@@ -158,8 +158,8 @@ def err(op, I, Xs, es):
         case "Lit":  # a constant the format cannot represent, so it rounds
             return rounded(I, ONE, ZERO)
         case "Neg":
-            return reduce(I, es[0].S, -es[0].D)
-        case "Ctx":  # the child on a smaller box, so its class has a narrower interval
+            return Pair(es[0].S, -es[0].D)
+        case "Ctx":  # the child on a smaller subdomain, so its class may have a narrower range
             return reduce(I, *es[0])
         case "If":
             return reduce(I, es[0].S | es[1].S, es[0].D | es[1].D)
@@ -174,12 +174,12 @@ def err(op, I, Xs, es):
 
 
 def abs_bound(e):
-    """|x~ - x| <= max(|lo D|, |hi D|)."""
+    """The readout g_a: |x~ - x| <= max(|lo D|, |hi D|)."""
     return e.D.mag
 
 
 def rel_bound(e):
-    """|x~ - x|/|x| <= max(|lo S - 1|, |hi S - 1|)."""
+    """The readout g_r: |x~ - x|/|x| <= max(|lo S - 1|, |hi S - 1|) when x != 0."""
     return (e.S - ONE).mag
 
 

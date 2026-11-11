@@ -1,5 +1,5 @@
 {
- "rewriting_cores/fpbench-daisy-005-matrixdeterminant.fpcore": {
+ "rewriting_programs/fpbench-daisy-005-matrixdeterminant.fpcore": {
   "original": {
    "ulps": 1387215,
    "mean": 0.1597,
@@ -21,7 +21,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-daisy-006-matrixdeterminant2.fpcore": {
+ "rewriting_programs/fpbench-daisy-006-matrixdeterminant2.fpcore": {
   "original": {
    "ulps": 5969,
    "mean": 0.1504,
@@ -43,7 +43,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-fptaylor-extra-001-delta4.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-extra-001-delta4.fpcore": {
   "original": {
    "ulps": 84918021021,
    "mean": 2.5574,
@@ -65,7 +65,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-fptaylor-extra-002-delta.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-extra-002-delta.fpcore": {
   "original": {
    "ulps": 13,
    "mean": 1.833,
@@ -87,7 +87,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-fptaylor-extra-014-nonlin2.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-extra-014-nonlin2.fpcore": {
   "original": {
    "ulps": 128,
    "mean": 0.4027,
@@ -109,7 +109,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-fptaylor-real2float-008-kepler0.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-real2float-008-kepler0.fpcore": {
   "original": {
    "ulps": 4,
    "mean": 0.5824,
@@ -131,7 +131,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-fptaylor-real2float-009-kepler1.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-real2float-009-kepler1.fpcore": {
   "original": {
    "ulps": 9,
    "mean": 0.9005,
@@ -153,7 +153,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-fptaylor-real2float-010-kepler2.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-real2float-010-kepler2.fpcore": {
   "original": {
    "ulps": 14,
    "mean": 1.8036,
@@ -175,7 +175,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-fptaylor-tests-005-test04-dqmom9.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-tests-005-test04-dqmom9.fpcore": {
   "original": {
    "ulps": 16349219,
    "mean": 0.6829,
@@ -197,7 +197,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-fptaylor-tests-006-test05-nonlin1-r4.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-tests-006-test05-nonlin1-r4.fpcore": {
   "original": {
    "ulps": 44356,
    "mean": 2.4339,
@@ -219,7 +219,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-fptaylor-tests-008-test06-sums4-sum1.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-tests-008-test06-sums4-sum1.fpcore": {
   "original": {
    "ulps": 704643072,
    "mean": 0.0491,
@@ -241,7 +241,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-fptaylor-tests-009-test06-sums4-sum2.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-tests-009-test06-sums4-sum2.fpcore": {
   "original": {
    "ulps": 662700032,
    "mean": 0.0495,
@@ -263,7 +263,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-graphics-000-an-eigenvalue-calculation-from-tng.fpcore": {
+ "rewriting_programs/fpbench-graphics-000-an-eigenvalue-calculation-from-tng.fpcore": {
   "original": {
    "ulps": 8788630238179123067,
    "mean": 290.5324,
@@ -285,7 +285,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-hamming-ch3-000-nmse-example-3-1.fpcore": {
+ "rewriting_programs/fpbench-hamming-ch3-000-nmse-example-3-1.fpcore": {
   "original": {
    "ulps": 5,
    "mean": 0.0332,
@@ -307,7 +307,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-hamming-ch3-005-nmse-problem-3-3-1.fpcore": {
+ "rewriting_programs/fpbench-hamming-ch3-005-nmse-problem-3-3-1.fpcore": {
   "original": {
    "ulps": 4,
    "mean": 0.8878,
@@ -329,7 +329,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-hamming-ch3-012-nmse-p42-positive.fpcore": {
+ "rewriting_programs/fpbench-hamming-ch3-012-nmse-p42-positive.fpcore": {
   "original": {
    "ulps": 4,
    "mean": 0.537,
@@ -351,7 +351,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-hamming-ch3-014-nmse-problem-3-2-1-positive.fpcore": {
+ "rewriting_programs/fpbench-hamming-ch3-014-nmse-problem-3-2-1-positive.fpcore": {
   "original": {
    "ulps": 11,
    "mean": 1.2052,
@@ -373,7 +373,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-rosa-002-doppler3.fpcore": {
+ "rewriting_programs/fpbench-rosa-002-doppler3.fpcore": {
   "original": {
    "ulps": 4,
    "mean": 0.3062,
@@ -395,7 +395,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-rosa-003-rigidbody1.fpcore": {
+ "rewriting_programs/fpbench-rosa-003-rigidbody1.fpcore": {
   "original": {
    "ulps": 94522969476,
    "mean": 0.0048,
@@ -417,7 +417,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-rosa-004-rigidbody2.fpcore": {
+ "rewriting_programs/fpbench-rosa-004-rigidbody2.fpcore": {
   "original": {
    "ulps": 3743163696983028,
    "mean": 0.071,
@@ -439,7 +439,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-rosa-005-jetengine.fpcore": {
+ "rewriting_programs/fpbench-rosa-005-jetengine.fpcore": {
   "original": {
    "ulps": 352173820059060,
    "mean": 0.8461,
@@ -456,7 +456,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-rosa-007-turbine2.fpcore": {
+ "rewriting_programs/fpbench-rosa-007-turbine2.fpcore": {
   "original": {
    "ulps": 8761227616929369756,
    "mean": 1.9593,
@@ -478,7 +478,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-rosa-019-triangle.fpcore": {
+ "rewriting_programs/fpbench-rosa-019-triangle.fpcore": {
   "original": {
    "ulps": 26,
    "mean": 7.6048,
@@ -500,7 +500,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-rump-000-rump-s-example-with-pow.fpcore": {
+ "rewriting_programs/fpbench-rump-000-rump-s-example-with-pow.fpcore": {
   "original": {
    "ulps": 4,
    "mean": 0.6683,
@@ -522,7 +522,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-rump-001-rump-s-example-from-c-program.fpcore": {
+ "rewriting_programs/fpbench-rump-001-rump-s-example-from-c-program.fpcore": {
   "original": {
    "ulps": 6,
    "mean": 1.0035,
@@ -544,7 +544,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/fpbench-rump-002-rump-s-example-revisited-for-floating-po.fpcore": {
+ "rewriting_programs/fpbench-rump-002-rump-s-example-revisited-for-floating-po.fpcore": {
   "original": {
    "ulps": 6,
    "mean": 1.006,
@@ -566,7 +566,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-demo-006-sqrt-sqr.fpcore": {
+ "rewriting_programs/herbie-demo-006-sqrt-sqr.fpcore": {
   "original": {
    "ulps": 4368491638549381120,
    "mean": 6.456630641775986e+17,
@@ -583,7 +583,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-demo-010-x-1-to-x-20.fpcore": {
+ "rewriting_programs/herbie-demo-010-x-1-to-x-20.fpcore": {
   "original": {
    "ulps": 11,
    "mean": 2.2068,
@@ -605,7 +605,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-hamming-rearrangement-000-2sqrt-example-3-1.fpcore": {
+ "rewriting_programs/herbie-hamming-rearrangement-000-2sqrt-example-3-1.fpcore": {
   "original": {
    "ulps": 4485581437300251488,
    "mean": 3.217792205847345e+18,
@@ -627,7 +627,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-hamming-rearrangement-001-2isqrt-example-3-6.fpcore": {
+ "rewriting_programs/herbie-hamming-rearrangement-001-2isqrt-example-3-6.fpcore": {
   "original": {
    "ulps": 4255696023192697766,
    "mean": 1.3068042678263823e+18,
@@ -644,7 +644,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-004-optimisation-circlepacking-place-from-ci.fpcore": {
+ "rewriting_programs/herbie-haskell-004-optimisation-circlepacking-place-from-ci.fpcore": {
   "original": {
    "ulps": 171309907734061,
    "mean": 5.4718,
@@ -666,7 +666,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-017-data-colour-rgbspace-hsl-hsl-from-colour.fpcore": {
+ "rewriting_programs/herbie-haskell-017-data-colour-rgbspace-hsl-hsl-from-colour.fpcore": {
   "original": {
    "ulps": 4386355922864416952,
    "mean": 9.9107,
@@ -688,7 +688,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-046-diagrams-solve-polynomial-cubform-from-d.fpcore": {
+ "rewriting_programs/herbie-haskell-046-diagrams-solve-polynomial-cubform-from-d.fpcore": {
   "original": {
    "ulps": 8770237196975516768,
    "mean": 8.5034,
@@ -710,7 +710,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-054-diagrams-solve-polynomial-cubform-from-d.fpcore": {
+ "rewriting_programs/herbie-haskell-054-diagrams-solve-polynomial-cubform-from-d.fpcore": {
   "original": {
    "ulps": 4,
    "mean": 0.556,
@@ -732,7 +732,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-056-diagrams-solve-polynomial-quartform-from.fpcore": {
+ "rewriting_programs/herbie-haskell-056-diagrams-solve-polynomial-quartform-from.fpcore": {
   "original": {
    "ulps": 4368491638549381120,
    "mean": 2.927,
@@ -754,7 +754,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-057-diagrams-solve-polynomial-quartform-from.fpcore": {
+ "rewriting_programs/herbie-haskell-057-diagrams-solve-polynomial-quartform-from.fpcore": {
   "original": {
    "ulps": 4398413565893227632,
    "mean": 4.7361,
@@ -776,7 +776,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-059-diagrams-solve-polynomial-quartform-from.fpcore": {
+ "rewriting_programs/herbie-haskell-059-diagrams-solve-polynomial-quartform-from.fpcore": {
   "original": {
    "ulps": 4372904722665087104,
    "mean": 2.6667,
@@ -798,7 +798,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-071-main-bigenough3-from-c.fpcore": {
+ "rewriting_programs/herbie-haskell-071-main-bigenough3-from-c.fpcore": {
   "original": {
    "ulps": 5,
    "mean": 1.5115,
@@ -820,7 +820,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-086-linear-matrix-det44-from-linear-1-19-1-3.fpcore": {
+ "rewriting_programs/herbie-haskell-086-linear-matrix-det44-from-linear-1-19-1-3.fpcore": {
   "original": {
    "ulps": 127160,
    "mean": 13.006,
@@ -842,7 +842,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-100-main-z-from.fpcore": {
+ "rewriting_programs/herbie-haskell-100-main-z-from.fpcore": {
   "original": {
    "ulps": 33,
    "mean": 6.1636,
@@ -864,7 +864,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-111-diagrams-tangent-catparam-from-diagrams-.fpcore": {
+ "rewriting_programs/herbie-haskell-111-diagrams-tangent-catparam-from-diagrams-.fpcore": {
   "original": {
    "ulps": 4503599627370494,
    "mean": 6.6411,
@@ -886,7 +886,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-121-graphics-rendering-chart-axis-types-invl.fpcore": {
+ "rewriting_programs/herbie-haskell-121-graphics-rendering-chart-axis-types-invl.fpcore": {
   "original": {
    "ulps": 976021690418,
    "mean": 1.1703,
@@ -908,7 +908,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-134-system-random-mwc-distributions-standard.fpcore": {
+ "rewriting_programs/herbie-haskell-134-system-random-mwc-distributions-standard.fpcore": {
   "original": {
    "ulps": 2048,
    "mean": 0.2207,
@@ -930,7 +930,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-148-data-number-erf-cinvnormcdf-from-erf-2-0.fpcore": {
+ "rewriting_programs/herbie-haskell-148-data-number-erf-cinvnormcdf-from-erf-2-0.fpcore": {
   "original": {
    "ulps": 4371107818246510041,
    "mean": 8.8871,
@@ -952,7 +952,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-161-development-shake-progress-decay-from-sh.fpcore": {
+ "rewriting_programs/herbie-haskell-161-development-shake-progress-decay-from-sh.fpcore": {
   "original": {
    "ulps": 4,
    "mean": 0.6097,
@@ -974,7 +974,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-163-diagrams-backend-rasterific-crender-from.fpcore": {
+ "rewriting_programs/herbie-haskell-163-diagrams-backend-rasterific-crender-from.fpcore": {
   "original": {
    "ulps": 4384051132101334988,
    "mean": 2.5159,
@@ -996,7 +996,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-166-graphics-rendering-chart-axis-types-hbuf.fpcore": {
+ "rewriting_programs/herbie-haskell-166-graphics-rendering-chart-axis-types-hbuf.fpcore": {
   "original": {
    "ulps": 4503599627370496,
    "mean": 2.2904,
@@ -1018,7 +1018,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-167-graphics-rendering-chart-axis-types-linm.fpcore": {
+ "rewriting_programs/herbie-haskell-167-graphics-rendering-chart-axis-types-linm.fpcore": {
   "original": {
    "ulps": 22229834703163,
    "mean": 5.3537,
@@ -1040,7 +1040,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-176-ai-clustering-hierarchical-internal-ward.fpcore": {
+ "rewriting_programs/herbie-haskell-176-ai-clustering-hierarchical-internal-ward.fpcore": {
   "original": {
    "ulps": 7,
    "mean": 0.6291,
@@ -1062,7 +1062,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-178-numeric-specfunctions-inverfc-from-math-.fpcore": {
+ "rewriting_programs/herbie-haskell-178-numeric-specfunctions-inverfc-from-math-.fpcore": {
   "original": {
    "ulps": 16553250908982,
    "mean": 7.8116,
@@ -1084,7 +1084,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-181-numeric-specfunctions-loggamma-from-math.fpcore": {
+ "rewriting_programs/herbie-haskell-181-numeric-specfunctions-loggamma-from-math.fpcore": {
   "original": {
    "ulps": 5,
    "mean": 0.7817,
@@ -1106,7 +1106,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-182-numeric-specfunctions-loggamma-from-math.fpcore": {
+ "rewriting_programs/herbie-haskell-182-numeric-specfunctions-loggamma-from-math.fpcore": {
   "original": {
    "ulps": 6,
    "mean": 0.9287,
@@ -1128,7 +1128,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-194-numeric-specfunctions-invincompletegamma.fpcore": {
+ "rewriting_programs/herbie-haskell-194-numeric-specfunctions-invincompletegamma.fpcore": {
   "original": {
    "ulps": 84,
    "mean": 1.4753,
@@ -1150,7 +1150,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-196-numeric-specfunctions-invincompletegamma.fpcore": {
+ "rewriting_programs/herbie-haskell-196-numeric-specfunctions-invincompletegamma.fpcore": {
   "original": {
    "ulps": 3740984784324,
    "mean": 7.6399,
@@ -1172,7 +1172,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-197-numeric-specfunctions-invincompletegamma.fpcore": {
+ "rewriting_programs/herbie-haskell-197-numeric-specfunctions-invincompletegamma.fpcore": {
   "original": {
    "ulps": 8727986833569131963,
    "mean": 1.4796,
@@ -1194,7 +1194,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-198-numeric-specfunctions-incompletebetaappr.fpcore": {
+ "rewriting_programs/herbie-haskell-198-numeric-specfunctions-incompletebetaappr.fpcore": {
   "original": {
    "ulps": 5,
    "mean": 0.9253,
@@ -1216,7 +1216,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-203-numeric-specfunctions-invincompletebetaw.fpcore": {
+ "rewriting_programs/herbie-haskell-203-numeric-specfunctions-invincompletebetaw.fpcore": {
   "original": {
    "ulps": 12871569953310,
    "mean": 23.1981,
@@ -1238,7 +1238,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-207-numeric-specfunctions-invincompletebetaw.fpcore": {
+ "rewriting_programs/herbie-haskell-207-numeric-specfunctions-invincompletebetaw.fpcore": {
   "original": {
    "ulps": 1456662648384816,
    "mean": 3.2369,
@@ -1260,7 +1260,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-210-numeric-specfunctions-loggamma-from-math.fpcore": {
+ "rewriting_programs/herbie-haskell-210-numeric-specfunctions-loggamma-from-math.fpcore": {
   "original": {
    "ulps": 5,
    "mean": 0.6931,
@@ -1282,7 +1282,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-235-data-random-dice-roll-from-dice-0-1.fpcore": {
+ "rewriting_programs/herbie-haskell-235-data-random-dice-roll-from-dice-0-1.fpcore": {
   "original": {
    "ulps": 524287,
    "mean": 1.8313,
@@ -1304,7 +1304,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-238-hakyll-web-tags-rendertagcloud-from-haky.fpcore": {
+ "rewriting_programs/herbie-haskell-238-hakyll-web-tags-rendertagcloud-from-haky.fpcore": {
   "original": {
    "ulps": 5,
    "mean": 0.5666,
@@ -1326,7 +1326,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-241-numeric-signal-interpolate-from-hsignal-.fpcore": {
+ "rewriting_programs/herbie-haskell-241-numeric-signal-interpolate-from-hsignal-.fpcore": {
   "original": {
    "ulps": 3032019342260,
    "mean": 1.1916,
@@ -1348,7 +1348,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-257-graphics-rendering-plot-render-plot-axis.fpcore": {
+ "rewriting_programs/herbie-haskell-257-graphics-rendering-plot-render-plot-axis.fpcore": {
   "original": {
    "ulps": 52188310493471,
    "mean": 5.9447,
@@ -1370,7 +1370,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-258-graphics-rendering-plot-render-plot-axis.fpcore": {
+ "rewriting_programs/herbie-haskell-258-graphics-rendering-plot-render-plot-axis.fpcore": {
   "original": {
    "ulps": 28317008205079,
    "mean": 1.4037,
@@ -1392,7 +1392,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-haskell-261-graphics-rendering-plot-render-plot-axis.fpcore": {
+ "rewriting_programs/herbie-haskell-261-graphics-rendering-plot-render-plot-axis.fpcore": {
   "original": {
    "ulps": 154290956779293,
    "mean": 7.3035,
@@ -1414,7 +1414,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-libraries-basilisk-018-drag-accel-mag.fpcore": {
+ "rewriting_programs/herbie-libraries-basilisk-018-drag-accel-mag.fpcore": {
   "original": {
    "ulps": 4,
    "mean": 0.7321,
@@ -1436,7 +1436,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-libraries-coolprop-007-b-delta2.fpcore": {
+ "rewriting_programs/herbie-libraries-coolprop-007-b-delta2.fpcore": {
   "original": {
    "ulps": 4,
    "mean": 0.6214,
@@ -1458,7 +1458,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-libraries-coolprop-008-b-tau3.fpcore": {
+ "rewriting_programs/herbie-libraries-coolprop-008-b-tau3.fpcore": {
   "original": {
    "ulps": 5,
    "mean": 0.8518,
@@ -1480,7 +1480,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-libraries-coolprop-013-d2psi-ddelta2-over-psi.fpcore": {
+ "rewriting_programs/herbie-libraries-coolprop-013-d2psi-ddelta2-over-psi.fpcore": {
   "original": {
    "ulps": 4383385691016675211,
    "mean": 1.2268,
@@ -1502,7 +1502,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-libraries-fast-math-007-fastmath-test5.fpcore": {
+ "rewriting_programs/herbie-libraries-fast-math-007-fastmath-test5.fpcore": {
   "original": {
    "ulps": 4,
    "mean": 0.7615,
@@ -1524,7 +1524,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-libraries-jmatjs-004-jmat-real-dawson.fpcore": {
+ "rewriting_programs/herbie-libraries-jmatjs-004-jmat-real-dawson.fpcore": {
   "original": {
    "ulps": 5,
    "mean": 0.8406,
@@ -1541,7 +1541,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-libraries-octave-collocwt-000-octave-3-8-jcobi-1.fpcore": {
+ "rewriting_programs/herbie-libraries-octave-collocwt-000-octave-3-8-jcobi-1.fpcore": {
   "original": {
    "ulps": 295,
    "mean": 0.0017,
@@ -1558,7 +1558,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-libraries-octave-collocwt-001-octave-3-8-jcobi-2.fpcore": {
+ "rewriting_programs/herbie-libraries-octave-collocwt-001-octave-3-8-jcobi-2.fpcore": {
   "original": {
    "ulps": 1893009605760288,
    "mean": 12.3219,
@@ -1570,7 +1570,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-libraries-octave-collocwt-003-octave-3-8-jcobi-4.fpcore": {
+ "rewriting_programs/herbie-libraries-octave-collocwt-003-octave-3-8-jcobi-4.fpcore": {
   "original": {
    "ulps": 16010344,
    "mean": 75.8696,
@@ -1587,7 +1587,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-mathematics-beta-distribution-000-a-parameter-of-renormalized-beta-distrib.fpcore": {
+ "rewriting_programs/herbie-mathematics-beta-distribution-000-a-parameter-of-renormalized-beta-distrib.fpcore": {
   "original": {
    "ulps": 1189800662305611008,
    "mean": 0.1522,
@@ -1599,7 +1599,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-mathematics-beta-distribution-001-b-parameter-of-renormalized-beta-distrib.fpcore": {
+ "rewriting_programs/herbie-mathematics-beta-distribution-001-b-parameter-of-renormalized-beta-distrib.fpcore": {
   "original": {
    "ulps": 2970713727716795464,
    "mean": 0.0342,
@@ -1611,7 +1611,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-mathematics-excel-000-x0-1-x1-x0.fpcore": {
+ "rewriting_programs/herbie-mathematics-excel-000-x0-1-x1-x0.fpcore": {
   "original": {
    "ulps": 6481,
    "mean": 331.1031,
@@ -1633,7 +1633,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-mathematics-gui-010-abcf-ab-angle-b.fpcore": {
+ "rewriting_programs/herbie-mathematics-gui-010-abcf-ab-angle-b.fpcore": {
   "original": {
    "ulps": 17,
    "mean": 1.9256,
@@ -1650,7 +1650,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-mathematics-sarnoff-000-quadratic-roots-full-range.fpcore": {
+ "rewriting_programs/herbie-mathematics-sarnoff-000-quadratic-roots-full-range.fpcore": {
   "original": {
    "ulps": 4,
    "mean": 0.5258,
@@ -1672,7 +1672,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-mathematics-sarnoff-004-cubic-critical.fpcore": {
+ "rewriting_programs/herbie-mathematics-sarnoff-004-cubic-critical.fpcore": {
   "original": {
    "ulps": 5,
    "mean": 0.5916,
@@ -1694,7 +1694,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-numerics-conte-004-ena-section-1-4-exercise-4b-n-2.fpcore": {
+ "rewriting_programs/herbie-numerics-conte-004-ena-section-1-4-exercise-4b-n-2.fpcore": {
   "original": {
    "ulps": 4638089024936869888,
    "mean": 3.7042224869219424e+17,
@@ -1716,7 +1716,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-numerics-conte-005-ena-section-1-4-exercise-4b-n-5.fpcore": {
+ "rewriting_programs/herbie-numerics-conte-005-ena-section-1-4-exercise-4b-n-5.fpcore": {
   "original": {
    "ulps": 5047998312500128028,
    "mean": 1.986220409537903e+17,
@@ -1738,7 +1738,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-numerics-every-cs-008-complex-division-imag-part.fpcore": {
+ "rewriting_programs/herbie-numerics-every-cs-008-complex-division-imag-part.fpcore": {
   "original": {
    "ulps": 530298241024165,
    "mean": 9.6603,
@@ -1760,7 +1760,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-numerics-fma-000-fma-test1.fpcore": {
+ "rewriting_programs/herbie-numerics-fma-000-fma-test1.fpcore": {
   "original": {
    "ulps": 4138642943204596796,
    "mean": 4.136892554886354e+18,
@@ -1782,7 +1782,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-numerics-fma-001-fma-test2.fpcore": {
+ "rewriting_programs/herbie-numerics-fma-001-fma-test2.fpcore": {
   "original": {
    "ulps": 18446744073709551616,
    "mean": 1.8446744073709552e+19,
@@ -1794,7 +1794,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-numerics-great-debate-002-kahan-p9-example.fpcore": {
+ "rewriting_programs/herbie-numerics-great-debate-002-kahan-p9-example.fpcore": {
   "original": {
    "ulps": 18446744073709551616,
    "mean": 4.006632815214774e+18,
@@ -1806,7 +1806,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-numerics-martel-006-expression-p6.fpcore": {
+ "rewriting_programs/herbie-numerics-martel-006-expression-p6.fpcore": {
   "original": {
    "ulps": 4391009636686233600,
    "mean": 318.4666,
@@ -1828,7 +1828,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-numerics-rosa-000-rosa-s-dopplerbench.fpcore": {
+ "rewriting_programs/herbie-numerics-rosa-000-rosa-s-dopplerbench.fpcore": {
   "original": {
    "ulps": 4,
    "mean": 0.59,
@@ -1850,7 +1850,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-numerics-rosa-002-rosa-s-floatvsdoublebenchmark.fpcore": {
+ "rewriting_programs/herbie-numerics-rosa-002-rosa-s-floatvsdoublebenchmark.fpcore": {
   "original": {
    "ulps": 10,
    "mean": 1.402,
@@ -1872,7 +1872,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-numerics-rump-000-rump-s-expression-from-stadtherr-s-award.fpcore": {
+ "rewriting_programs/herbie-numerics-rump-000-rump-s-expression-from-stadtherr-s-award.fpcore": {
   "original": {
    "ulps": 316806651996147069,
    "mean": 3.168066519961471e+17,
@@ -1894,7 +1894,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-numerics-rump-001-from-rump-in-a-1983-paper.fpcore": {
+ "rewriting_programs/herbie-numerics-rump-001-from-rump-in-a-1983-paper.fpcore": {
   "original": {
    "ulps": 4503599627370496,
    "mean": 4503599627370496.0,
@@ -1916,7 +1916,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-numerics-rump-002-from-rump-in-a-1983-paper-rewritten.fpcore": {
+ "rewriting_programs/herbie-numerics-rump-002-from-rump-in-a-1983-paper-rewritten.fpcore": {
   "original": {
    "ulps": 4607182418800017408,
    "mean": 4.6071824188000174e+18,
@@ -1938,7 +1938,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-physics-kalman-001-kalman-filter-per-x.fpcore": {
+ "rewriting_programs/herbie-physics-kalman-001-kalman-filter-per-x.fpcore": {
   "original": {
    "ulps": 4446913119366017762,
    "mean": 2.586432604388147e+18,
@@ -1955,7 +1955,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-physics-kalman-002-kalman-filter-per-p.fpcore": {
+ "rewriting_programs/herbie-physics-kalman-002-kalman-filter-per-p.fpcore": {
   "original": {
    "ulps": 4386506037058863103,
    "mean": 2.0632379514276536e+18,
@@ -1972,7 +1972,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-physics-superfluidity-breakdown-003-toniolo-and-linder-equation-7.fpcore": {
+ "rewriting_programs/herbie-physics-superfluidity-breakdown-003-toniolo-and-linder-equation-7.fpcore": {
   "original": {
    "ulps": 11,
    "mean": 1.4148,
@@ -1989,7 +1989,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-physics-superfluidity-breakdown-006-toniolo-and-linder-equation-13.fpcore": {
+ "rewriting_programs/herbie-physics-superfluidity-breakdown-006-toniolo-and-linder-equation-13.fpcore": {
   "original": {
    "ulps": 4,
    "mean": 0.4761,
@@ -2006,7 +2006,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-physics-tea-whistle-003-henrywood-and-agarwal-equation-13.fpcore": {
+ "rewriting_programs/herbie-physics-tea-whistle-003-henrywood-and-agarwal-equation-13.fpcore": {
   "original": {
    "ulps": 5,
    "mean": 0.7261,
@@ -2023,7 +2023,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-physics-universal-linear-optics-000-bouland-and-aaronson-equation-24.fpcore": {
+ "rewriting_programs/herbie-physics-universal-linear-optics-000-bouland-and-aaronson-equation-24.fpcore": {
   "original": {
    "ulps": 4,
    "mean": 0.5593,
@@ -2045,7 +2045,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-physics-universal-linear-optics-001-bouland-and-aaronson-equation-25.fpcore": {
+ "rewriting_programs/herbie-physics-universal-linear-optics-001-bouland-and-aaronson-equation-25.fpcore": {
   "original": {
    "ulps": 12,
    "mean": 1.0905,
@@ -2067,7 +2067,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-proj-omerc-001-forward-half-diff.fpcore": {
+ "rewriting_programs/herbie-proj-omerc-001-forward-half-diff.fpcore": {
   "original": {
    "ulps": 33554432,
    "mean": 0.8863,
@@ -2089,7 +2089,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-proj-som-015-setup-w.fpcore": {
+ "rewriting_programs/herbie-proj-som-015-setup-w.fpcore": {
   "original": {
    "ulps": 8734607728375823679,
    "mean": 0.0163,
@@ -2111,7 +2111,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-proj-som-016-setup-t.fpcore": {
+ "rewriting_programs/herbie-proj-som-016-setup-t.fpcore": {
   "original": {
    "ulps": 71,
    "mean": 0.6347,
@@ -2133,7 +2133,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-regression-000-xlohi-overflows.fpcore": {
+ "rewriting_programs/herbie-regression-000-xlohi-overflows.fpcore": {
   "original": {
    "ulps": 4602678819172646912,
    "mean": 4.602678819172647e+18,
@@ -2150,7 +2150,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-regression-015-bug333-missed-optimization.fpcore": {
+ "rewriting_programs/herbie-regression-015-bug333-missed-optimization.fpcore": {
   "original": {
    "ulps": 4363988038922010624,
    "mean": 2.0703680494195922e+18,
@@ -2162,7 +2162,7 @@
    "equivalent": true
   }
  },
- "rewriting_cores/herbie-tutorial-002-commute-and-associate.fpcore": {
+ "rewriting_programs/herbie-tutorial-002-commute-and-associate.fpcore": {
   "original": {
    "ulps": 4395513236313604096,
    "mean": 1.152695423905553e+18,

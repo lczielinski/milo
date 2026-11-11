@@ -1,0 +1,8 @@
+(FPCore (x y z t a b)
+  :name "Development.Shake.Progress:decay from shake-0.15.5"
+  :milo-source "herbie:haskell.fpcore:161"
+  :milo-domain "widened"
+  :milo-widened "x"
+  :precision binary64
+  :pre (and (<= -2 x 2) (<= 4 y 8) (<= 16 z 32) (<= 64 t 128) (<= 256 a 512) (<= 1024 b 2048))
+  (/ (+ (* x y) (* z (- t a))) (+ y (* z (- b y)))))

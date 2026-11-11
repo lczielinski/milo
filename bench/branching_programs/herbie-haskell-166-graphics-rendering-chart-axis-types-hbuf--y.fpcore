@@ -1,0 +1,8 @@
+(FPCore (x y)
+  :name "Graphics.Rendering.Chart.Axis.Types:hBufferRect from Chart-1.5.3"
+  :milo-source "herbie:haskell.fpcore:166"
+  :milo-domain "widened"
+  :milo-widened "y"
+  :precision binary64
+  :pre (and (<= 1 x 2) (<= -8 y 8))
+  (+ x (/ (- x y) 2)))

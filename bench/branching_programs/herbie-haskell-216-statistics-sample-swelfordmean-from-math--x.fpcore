@@ -1,0 +1,8 @@
+(FPCore (x y z)
+  :name "Statistics.Sample:$swelfordMean from math-functions-0.1.5.2"
+  :milo-source "herbie:haskell.fpcore:216"
+  :milo-domain "widened"
+  :milo-widened "x"
+  :precision binary64
+  :pre (and (<= -2 x 2) (<= 4 y 8) (<= 16 z 32))
+  (+ x (/ (- y x) z)))

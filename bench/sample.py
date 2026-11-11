@@ -98,15 +98,16 @@ def real(e, env, peak):
 
 
 def exact(e, env):
-    """The value over the reals; None if it is undefined or never settles. The precision doubles
-    until two results agree and stand clear of the rounding noise of the largest value along
-    the way; a result still inside that noise at 16384 bits is 0."""
+    """The value over the reals; None if it is undefined (some value along the way is not finite,
+    since mpfr takes x/0 to an infinity and then 1/inf to 0) or never settles. The precision
+    doubles until two results agree and stand clear of the rounding noise of the largest value
+    along the way; a result still inside that noise at 16384 bits is 0."""
     before, clear = None, False
     with gmpy2.context(precision=128) as ctx:
         while ctx.precision <= 16384:
             peak = [mpfr(0)]
             now = real(e, env, peak)
-            if not gmpy2.is_finite(now):
+            if not (gmpy2.is_finite(now) and gmpy2.is_finite(peak[0])):
                 return None
             clear = abs(now) > peak[0] * gmpy2.exp2(64 - ctx.precision)
             if clear and before is not None and abs(now - before) <= abs(now) * 2.0 ** -64:

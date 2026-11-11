@@ -1,0 +1,8 @@
+(FPCore (x y)
+  :name "Numeric.Interval.Internal:bisect from intervals-0.7.1, A"
+  :milo-source "herbie:haskell.fpcore:63"
+  :milo-domain "widened"
+  :milo-widened "y"
+  :precision binary64
+  :pre (and (<= 1 x 2) (<= -8 y 8))
+  (+ x (/ (- y x) 2)))

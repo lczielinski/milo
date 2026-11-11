@@ -1,0 +1,5 @@
+(FPCore (x b)
+  :name "squareplus (x + sqrt(x*x + b)) / 2"
+  :milo-source "Barron 2021, Squareplus: A Softplus-Like Algebraic Rectifier (arXiv 2112.11687); JAX jax.nn.squareplus, which branches on the sign of x since commit ed61045"
+  :pre (and (<= -10 x 10) (<= 1 b 4))
+  (/ (+ x (sqrt (+ (* x x) b))) 2))

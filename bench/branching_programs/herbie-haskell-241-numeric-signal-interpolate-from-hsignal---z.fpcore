@@ -1,0 +1,8 @@
+(FPCore (x y z t a)
+  :name "Numeric.Signal:interpolate   from hsignal-0.2.7.1"
+  :milo-source "herbie:haskell.fpcore:241"
+  :milo-domain "widened"
+  :milo-widened "z"
+  :precision binary64
+  :pre (and (<= 1 x 2) (<= 4 y 8) (<= -32 z 32) (<= 64 t 128) (<= 256 a 512))
+  (+ x (* (- y z) (/ (- t x) (- a z)))))

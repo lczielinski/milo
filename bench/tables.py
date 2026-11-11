@@ -1,10 +1,12 @@
-"""The tables of the evaluation, from results/*.json into results/tables/<name>.tex. A tool that fails
-counts as returning its input, and each table says how many did. A relative bound of 1 or more says
-nothing, so it counts as no bound. Each table compares a row with a baseline, where lower is better."""
+"""The tables of the evaluation, from results/*.json, printed as LaTeX tabulars to compare with the
+paper's tables, whose files hold the captions: `uv run python bench/tables.py [accuracy ...]`. A tool
+that fails counts as returning its input, and each table says how many did. A relative bound of 1 or
+more says nothing, so it counts as no bound. Each table compares a row with a baseline, where lower is
+better."""
 
 import math
-import os
 import statistics
+import sys
 
 import run
 from run import SIZES
@@ -15,8 +17,6 @@ NAMES = {"fptaylor": "FPTaylor", "gappa": "Gappa", "precisa": "PRECiSA", "daisy"
          "ours": "Ours", "ours-plain": "No branch", "greedy": "Ours, greedy", "abs-only": "Absolute error only",
          "rel-only": "Relative error only"}
 SOUND = ("fptaylor", "gappa", "precisa")
-BSW = ("b/s/w counts the programs where {who} is better than {base} by at least one bit (a factor of 2), within one "
-       "bit of it, or worse by at least one bit")
 
 
 def num(x):
@@ -85,12 +85,11 @@ def compare(pairs):
     return ["/".join(str(found.count(k)) for k in range(3)), lognum(middle([quotient(a, b) for a, b in pairs]))]
 
 
-def table(caption, label, columns, head, rows):
-    """A row is a list of cells, or a string such as \\midrule."""
+def table(columns, head, rows):
+    """The tabular of a table, without its caption, which the paper's table file holds. A row is a list
+    of cells, or a string such as \\midrule."""
     body = "\n".join(r if isinstance(r, str) else " & ".join(map(str, r)) + " \\\\" for r in rows)
-    return (f"\\begin{{table}}[H] \\centering \\small\n\\caption{{{caption}}}\\label{{{label}}}\n"
-            f"\\begin{{tabular}}{{{columns}}}\n\\toprule\n{head} \\\\\n\\midrule\n{body}\n"
-            "\\bottomrule\n\\end{tabular}\n\\end{table}\n")
+    return f"\\begin{{tabular}}{{{columns}}}\n\\toprule\n{head} \\\\\n\\midrule\n{body}\n\\bottomrule\n\\end{{tabular}}\n"
 
 
 def metric(name):
@@ -108,9 +107,14 @@ def accuracy():
     names = [n for n in run.benchmark2() if "error" not in measured[n]]
     tools = ("herbie", "daisy", "ours")
 
+    def same(t, n):
+        """Whether t returned a program equivalent to the input over the reals: it agrees at the sampled checks
+        and is not undefined anywhere in the box, where the input is defined."""
+        return measured[n].get(t, {}).get("equivalent") and run.definedness()[n][t]["status"] != "undefined"
+
     def got(t, n):
-        """t's program, or the input if t returned none or one that disagrees with it over the reals."""
-        return t if measured[n].get(t, {}).get("equivalent") else "original"
+        """t's program, or the input if t returned none or one that is not equivalent to it over the reals."""
+        return t if same(t, n) else "original"
 
     def speed(t):
         return geomean([speeds[n][got(t, n)] / speeds[n]["original"] for n in names
@@ -125,16 +129,7 @@ def accuracy():
             "\\multicolumn{2}{c}{Avg Sampled Error} & & \\\\\n"
             "\\cmidrule(lr){2-3}\\cmidrule(lr){4-5}\\cmidrule(lr){6-7}\n"
             "Tool" + " & b/s/w & Median" * 3 + " & Speed & Failed")
-    left = len(run.benchmark2()) - len(names)
-    disagree = sum(t in measured[n] and not measured[n][t]["equivalent"] for t in tools for n in names)
-    return table(f"Accuracy of the rewrites of the {len(names)} programs of Benchmark (2), against the input. "
-                 + BSW.format(who="the rewrite's bound or error", base="the input's")
-                 + ", where a missing bound is infinite. Medians are of the rewrite's bound or error divided by the "
-                 "input's (lower is better). A tool that returns no program"
-                 + ", or one that disagrees with its input over the reals at one of 20 sampled inputs," * bool(disagree)
-                 + " counts as returning its input (Failed). Speed is the geomean of run time divided by the input's "
-                 "(lower is better)." + f" Programs whose measurement failed are left out ({left})." * bool(left),
-                 "tab:accuracy", "lcrcrcrrr", head, rows)
+    return table("lcrcrcrrr", head, rows)
 
 
 def tightness():
@@ -152,11 +147,7 @@ def tightness():
     head = ("& \\multicolumn{3}{c}{Absolute Error} & \\multicolumn{3}{c}{Relative Error} \\\\\n"
             "\\cmidrule(lr){2-4}\\cmidrule(lr){5-7}\n"
             "Tool" + " & Bounded & b/s/w & Median" * 2)
-    return table(f"Sound bounds on the {len(ours)} programs of Benchmark (1). Bounded counts the programs each tool "
-                 "bounds. The other columns cover the programs either tool bounds: "
-                 + BSW.format(who="the tool's bound", base="ours")
-                 + ", where a missing bound is infinite, and medians are of the tool's bound divided by ours (lower "
-                 "is better).", "tab:tightness", "lrcrrcr", head, rows)
+    return table("lrcrrcr", head, rows)
 
 
 def raw(name, who, m):
@@ -201,14 +192,7 @@ def extraction():
     rows = [[NAMES.get(w, f"Size, top-{w[4:]}"), *compare((bound(n, w, m[n]), bound(n, "ours", m[n])) for n in names),
              "--", failed(w), time(w)] for w in [f"size{k}" for k in SIZES] + ["greedy"]]
     rows.append(["Ours", "--", "--", optimal, failed("ours"), time("ours")])
-    return table(f"Other ways of choosing a program from the same e-graph as our extraction, on the {len(names)} "
-                 "programs of Benchmark (2): extracting by size and then bounding, and greedy readout. Bounds are in "
-                 "the error we report for each program. " + BSW.format(who="the method's bound", base="ours")
-                 + ", and medians are of the method's bound divided by ours (lower is better). A method with no "
-                 "program whose bound is finite counts as returning the input (Failed). Proved optimal counts the "
-                 "programs where our extraction reaches a fixed point, so that no program in the e-graph has a smaller "
-                 "bound. Time is the total over all programs, including building the e-graph (lower is better).",
-                 "tab:extraction", "lcrrrr", "Method & b/s/w & Median & Proved optimal & Failed & Time (s)", rows)
+    return table("lcrrrr", "Method & b/s/w & Median & Proved optimal & Failed & Time (s)", rows)
 
 
 def runtime():
@@ -230,11 +214,7 @@ def runtime():
     head = ("& \\multicolumn{3}{c}{Bounding} & \\multicolumn{3}{c}{Rewriting} \\\\\n"
             "\\cmidrule(lr){2-4}\\cmidrule(lr){5-7}\n"
             "Tool" + " & Median & Max & Failed" * 2)
-    return table(f"Running times in seconds (lower is better): bounding the {len(bounds)} programs of Benchmark (1), "
-                 f"and rewriting the {len(names)} of Benchmark (2). Failed counts the runs that give no bound or no "
-                 "program, including those stopped by a time limit; our extraction stopped by its limit still "
-                 "returns the minimal-cost set of the last round it finished. Times leave out each tool's startup, "
-                 "its least time on a trivial program.", "tab:runtime", "lrrrrrr", head, rows)
+    return table("lrrrrrr", head, rows)
 
 
 def conditions(text):
@@ -248,14 +228,14 @@ def conditions(text):
 
 def branching():
     results = run.branching()
-    rows, disagree = [], 0
+    rows = []
     for who in ("ours-plain", "ours", "herbie", "daisy"):
         branched = failed = 0
         errors, speeds = [], []
         for r in results.values():
             p = r.get(who) or {}
-            disagree += "program" in p and not p["measured"]["equivalent"]
-            if "program" not in p or not p["measured"]["equivalent"]:
+            same = "program" in p and p["measured"]["equivalent"] and p.get("defined", {}).get("status") != "undefined"
+            if not same:
                 failed += 1
                 p = None
             branched += bool(p and conditions(p["program"]))
@@ -265,13 +245,7 @@ def branching():
                 speeds.append(p["ns"] / base)
         rows.append([NAMES[who], branched, compare(errors)[0], num(median([a for a, _ in errors])),
                      num(median(speeds)), failed])
-    return table(f"Branching on the {len(results)} programs of Benchmark (3). Branched counts the programs where the "
-                 "tool's program has an if-statement. Max sampled error is in ulps (lower is better): "
-                 + BSW.format(who="it", base="the input's") + ", and its median is over all programs. Speed is the "
-                 "median of run time divided by our unbranched program's (lower is better). A tool that returns no "
-                 "program" + ", or one that disagrees with its input over the reals," * bool(disagree)
-                 + " counts as returning its input (Failed).", "tab:branching", "lrcrrr",
-                 "Tool & Branched & b/s/w & Median max error & Speed & Failed", rows)
+    return table("lrcrrr", "Tool & Branched & b/s/w & Median max error & Speed & Failed", rows)
 
 
 def ablation():
@@ -289,19 +263,14 @@ def ablation():
     head = ("& \\multicolumn{3}{c}{Absolute Bound} & \\multicolumn{3}{c}{Relative Bound} & \\\\\n"
             "\\cmidrule(lr){2-4}\\cmidrule(lr){5-7}\n"
             "Variant" + " & b/s/w & Median & Failed" * 2 + " & Time (s)")
-    return table(f"Ablations on the {len(names)} programs of Benchmark (2), without branching, against the input. "
-                 + BSW.format(who="the variant's bound", base="the input's")
-                 + ", where a missing bound is infinite, and medians are of the variant's bound divided by the "
-                 "input's (lower is better). A variant with no program whose bound is finite counts as returning the "
-                 "input (Failed). Each error compares the variants that track it. Time is the total over all programs "
-                 "(lower is better).", "tab:ablation", "lcrrcrrr", head, rows)
+    return table("lcrrcrrr", head, rows)
 
 
 if __name__ == "__main__":
     broken = [n for n, r in run.originals().items() if "error" in r]
     if broken:
-        print(f"warning: {len(broken)} inputs could not be measured, so Benchmark (2) leaves them out: {broken}")
-    os.makedirs(os.path.join(run.RESULTS, "tables"), exist_ok=True)
-    for f in (accuracy, tightness, extraction, runtime, branching, ablation):
-        with open(os.path.join(run.RESULTS, "tables", f.__name__ + ".tex"), "w") as out:
-            out.write(f())
+        print(f"warning: {len(broken)} inputs could not be measured, so Benchmark (2) leaves them out: {broken}",
+              file=sys.stderr)
+    every = (accuracy, tightness, extraction, runtime, branching, ablation)
+    for f in [f for f in every if f.__name__ in sys.argv[1:]] or every:
+        print(f"% {f.__name__}\n{f()}")

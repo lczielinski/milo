@@ -1,0 +1,8 @@
+(FPCore (a b c d)
+  :name "An eigenvalue calculation from TNG"
+  :milo-source "fpbench:graphics.fpcore:0"
+  :milo-domain "widened"
+  :milo-widened "a"
+  :precision binary64
+  :pre (and (<= -2 a 2) (<= 4 b 8) (<= 16 c 32) (<= 64 d 128))
+  (- (sqrt (+ (* (+ a d) (+ a d)) (* (- b c) (- b c)))) (sqrt (+ (* (- a d) (- a d)) (* (+ b c) (+ b c))))))

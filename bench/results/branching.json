@@ -1,5 +1,5 @@
 {
- "branching/complex-sqrt.fpcore": {
+ "branching_programs/complex-sqrt.fpcore": {
   "expected": "(> re 0)",
   "ours-plain": {
    "status": "no program"
@@ -37,201 +37,7 @@
    "ns": 1.42427
   }
  },
- "branching/guarded-hypot.fpcore": {
-  "expected": "(> x 0)",
-  "original": {
-   "program": "(- (sqrt (+ (* x x) 1)) x)",
-   "measured": {
-    "ulps": 173,
-    "mean": 0.0184,
-    "equivalent": true
-   },
-   "bound": {
-    "abs": 9.769962616701392e-15,
-    "rel": Infinity
-   },
-   "ns": 0.529589
-  },
-  "ours-plain": {
-   "program": "(- (sqrt (+ (* x x) 1)) x)",
-   "measured": {
-    "ulps": 173,
-    "mean": 0.0184,
-    "equivalent": true
-   },
-   "bound": {
-    "abs": 9.769962616701392e-15,
-    "rel": Infinity
-   },
-   "ns": 0.565083
-  },
-  "ours": {
-   "program": "(if (> x 0) (/ 1 (+ (sqrt (+ (* x x) 1)) x)) (+ (- x) (sqrt (+ (* x x) 1))))",
-   "measured": {
-    "ulps": 3,
-    "mean": 0.0195,
-    "equivalent": true
-   },
-   "bound": {
-    "abs": 9.769962616701392e-15,
-    "rel": 8.215650382226242e-15
-   },
-   "ns": 0.720887
-  },
-  "herbie": {
-   "program": "(/ 1 (+ (sqrt (- (* x x) -1)) x))",
-   "measured": {
-    "ulps": 132,
-    "mean": 0.0304,
-    "equivalent": true
-   },
-   "bound": {
-    "abs": Infinity,
-    "rel": Infinity
-   },
-   "ns": 0.818271
-  },
-  "daisy": {
-   "program": "(- (sqrt (+ (* x x) 1)) x)",
-   "measured": {
-    "ulps": 173,
-    "mean": 0.0184,
-    "equivalent": true
-   },
-   "bound": {
-    "abs": 9.769962616701392e-15,
-    "rel": Infinity
-   },
-   "ns": 0.529491
-  }
- },
- "branching/guarded-negated.fpcore": {
-  "expected": "(> x 0)",
-  "original": {
-   "program": "(- (- (sqrt (+ (* x x) 1))) x)",
-   "measured": {
-    "ulps": 177,
-    "mean": 0.0437,
-    "equivalent": true
-   },
-   "bound": {
-    "abs": 9.769962616701392e-15,
-    "rel": Infinity
-   },
-   "ns": 0.529393
-  },
-  "ours-plain": {
-   "program": "(- (- (sqrt (+ (* x x) 1))) x)",
-   "measured": {
-    "ulps": 177,
-    "mean": 0.0437,
-    "equivalent": true
-   },
-   "bound": {
-    "abs": 9.769962616701392e-15,
-    "rel": Infinity
-   },
-   "ns": 0.529323
-  },
-  "ours": {
-   "program": "(- (- (sqrt (+ (* x x) 1))) x)",
-   "measured": {
-    "ulps": 177,
-    "mean": 0.0437,
-    "equivalent": true
-   },
-   "bound": {
-    "abs": 9.769962616701392e-15,
-    "rel": Infinity
-   },
-   "ns": 0.529393
-  },
-  "herbie": {
-   "program": "(- (- (sqrt (- (* x x) -1))) x)",
-   "measured": {
-    "ulps": 177,
-    "mean": 0.0437,
-    "equivalent": true
-   },
-   "bound": {
-    "abs": 9.769962616701392e-15,
-    "rel": Infinity
-   },
-   "ns": 0.529421
-  },
-  "daisy": {
-   "program": "(- (- (sqrt (+ (* x x) 1))) x)",
-   "measured": {
-    "ulps": 177,
-    "mean": 0.0437,
-    "equivalent": true
-   },
-   "bound": {
-    "abs": 9.769962616701392e-15,
-    "rel": Infinity
-   },
-   "ns": 0.529309
-  }
- },
- "branching/guarded.fpcore": {
-  "expected": "(> b 0)",
-  "daisy": {
-   "status": "fail"
-  },
-  "original": {
-   "program": "(+ (- b) (sqrt (- (* b b) d)))",
-   "measured": {
-    "ulps": 245,
-    "mean": 0.03,
-    "equivalent": true
-   },
-   "bound": {
-    "abs": 9.769962616701392e-15,
-    "rel": Infinity
-   },
-   "ns": 0.529351
-  },
-  "ours-plain": {
-   "program": "(+ (- b) (sqrt (- (* b b) d)))",
-   "measured": {
-    "ulps": 245,
-    "mean": 0.03,
-    "equivalent": true
-   },
-   "bound": {
-    "abs": 9.769962616701392e-15,
-    "rel": Infinity
-   },
-   "ns": 0.529295
-  },
-  "ours": {
-   "program": "(if (> b 0) (/ (- d) (+ (sqrt (- (* b b) d)) b)) (- (sqrt (- (* b b) d)) b))",
-   "measured": {
-    "ulps": 2,
-    "mean": 0.2592,
-    "equivalent": true
-   },
-   "bound": {
-    "abs": 1.643130076445249e-14,
-    "rel": 8.215650382226242e-15
-   },
-   "ns": 0.709482
-  },
-  "herbie": {
-   "program": "(- (sqrt (- (* b b) d)) b)",
-   "measured": {
-    "ulps": 245,
-    "mean": 0.03,
-    "equivalent": true
-   },
-   "bound": {
-    "abs": 9.769962616701392e-15,
-    "rel": Infinity
-   },
-   "ns": 0.529423
-  }
- },
- "branching/householder-beta.fpcore": {
+ "branching_programs/householder-beta.fpcore": {
   "expected": "(> x1 0)",
   "daisy": {
    "status": "fail"
@@ -289,7 +95,7 @@
    "ns": 0.841822
   }
  },
- "branching/invariant-mass.fpcore": {
+ "branching_programs/invariant-mass.fpcore": {
   "expected": "(> p1 0), (> p2 0)",
   "daisy": {
    "status": "fail"
@@ -347,7 +153,7 @@
    "ns": 1.2091
   }
  },
- "branching/lightcone-energy.fpcore": {
+ "branching_programs/lightcone-energy.fpcore": {
   "expected": "(> p 0)",
   "daisy": {
    "status": "fail"
@@ -405,7 +211,7 @@
    "ns": 0.530883
   }
  },
- "branching/lightcone-momentum.fpcore": {
+ "branching_programs/lightcone-momentum.fpcore": {
   "expected": "(> p 0)",
   "daisy": {
    "status": "fail"
@@ -463,7 +269,7 @@
    "ns": 0.530617
   }
  },
- "branching/lightcone-pair.fpcore": {
+ "branching_programs/lightcone-pair.fpcore": {
   "expected": "(> p1 0), (> p2 0)",
   "daisy": {
    "status": "fail"
@@ -521,7 +327,7 @@
    "ns": 1.064
   }
  },
- "branching/projectile-time.fpcore": {
+ "branching_programs/projectile-time.fpcore": {
   "expected": "(> vy 0)",
   "daisy": {
    "status": "fail"
@@ -579,7 +385,7 @@
    "ns": 0.818673
   }
  },
- "branching/quadratic-root.fpcore": {
+ "branching_programs/quadp.fpcore": {
   "expected": "(> b 0)",
   "daisy": {
    "status": "fail"

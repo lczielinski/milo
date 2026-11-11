@@ -1,6 +1,0 @@
-(FPCore (b d)
-  :name "guarded conjugate"
-  :milo-expected "(> b 0)"
-  :milo-source "written for this paper"
-  :pre (and (<= -10 b 10) (<= -2 d -1))
-  (+ (- b) (sqrt (- (* b b) d))))

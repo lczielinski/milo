@@ -1,8 +1,0 @@
-(FPCore (m1 p1 m2 p2)
-  :name "m1^2 + m2^2 + p1+ p2- + p1- p2+"
-  :milo-expected "(> p1 0), (> p2 0)"
-  :milo-source "Collins 1997, Light-cone variables, rapidity and all that (arXiv hep-ph/9705393); Wikipedia, Light-cone coordinates: invariant mass of two particles moving along z"
-  :pre (and (<= 0.1 m1 1) (<= -10 p1 10) (<= 0.1 m2 1) (<= -10 p2 10))
-  (+ (+ (* m1 m1) (* m2 m2))
-     (+ (* (+ (sqrt (+ (* m1 m1) (* p1 p1))) p1) (- (sqrt (+ (* m2 m2) (* p2 p2))) p2))
-        (* (- (sqrt (+ (* m1 m1) (* p1 p1))) p1) (+ (sqrt (+ (* m2 m2) (* p2 p2))) p2)))))

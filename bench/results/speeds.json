@@ -1,589 +1,589 @@
 {
- "rewriting_cores/fpbench-daisy-005-matrixdeterminant.fpcore": {
+ "rewriting_programs/fpbench-daisy-005-matrixdeterminant.fpcore": {
   "original": 1.15379,
   "ours": 1.1524,
   "herbie": 0.963161,
   "daisy": 1.15386
  },
- "rewriting_cores/fpbench-daisy-006-matrixdeterminant2.fpcore": {
+ "rewriting_programs/fpbench-daisy-006-matrixdeterminant2.fpcore": {
   "original": 1.15148,
   "ours": 1.15087,
   "herbie": 0.962234,
   "daisy": 1.15325
  },
- "rewriting_cores/fpbench-fptaylor-extra-001-delta4.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-extra-001-delta4.fpcore": {
   "original": 1.11383,
   "ours": 1.03783,
   "herbie": 0.777493,
   "daisy": 1.16508
  },
- "rewriting_cores/fpbench-fptaylor-extra-002-delta.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-extra-002-delta.fpcore": {
   "original": 2.40091,
   "ours": 2.65653,
   "herbie": 2.19998,
   "daisy": 2.52646
  },
- "rewriting_cores/fpbench-fptaylor-extra-014-nonlin2.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-extra-014-nonlin2.fpcore": {
   "original": 0.359763,
   "ours": 0.292037,
   "herbie": 0.290805,
   "daisy": 0.494023
  },
- "rewriting_cores/fpbench-fptaylor-real2float-008-kepler0.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-real2float-008-kepler0.fpcore": {
   "original": 0.982657,
   "ours": 0.905432,
   "herbie": 0.774482,
   "daisy": 0.951792
  },
- "rewriting_cores/fpbench-fptaylor-real2float-009-kepler1.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-real2float-009-kepler1.fpcore": {
   "error": "CalledProcessError: Command '['/var/folders/h0/wbgyxl3j2pz_nq8wqnmgfs_h0000gp/T/tmpcd19_w4k/p']' died with <Signals.SIGKILL: 9>.",
   "seconds": 0.3293881416320801
  },
- "rewriting_cores/fpbench-fptaylor-real2float-010-kepler2.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-real2float-010-kepler2.fpcore": {
   "error": "CalledProcessError: Command '['/var/folders/h0/wbgyxl3j2pz_nq8wqnmgfs_h0000gp/T/tmp6fsaeyml/p']' died with <Signals.SIGKILL: 9>.",
   "seconds": 0.3115088939666748
  },
- "rewriting_cores/fpbench-fptaylor-tests-005-test04-dqmom9.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-tests-005-test04-dqmom9.fpcore": {
   "original": 1.58814,
   "ours": 1.20692,
   "herbie": 1.3906,
   "daisy": 1.42892
  },
- "rewriting_cores/fpbench-fptaylor-tests-006-test05-nonlin1-r4.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-tests-006-test05-nonlin1-r4.fpcore": {
   "original": 0.295274,
   "ours": 0.286765,
   "herbie": 0.295637,
   "daisy": 0.297435
  },
- "rewriting_cores/fpbench-fptaylor-tests-008-test06-sums4-sum1.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-tests-008-test06-sums4-sum1.fpcore": {
   "original": 0.312736,
   "ours": 0.316076,
   "herbie": 0.312369,
   "daisy": 0.312374
  },
- "rewriting_cores/fpbench-fptaylor-tests-009-test06-sums4-sum2.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-tests-009-test06-sums4-sum2.fpcore": {
   "original": 0.315767,
   "ours": 0.315952,
   "herbie": 0.312384,
   "daisy": 0.315448
  },
- "rewriting_cores/fpbench-graphics-000-an-eigenvalue-calculation-from-tng.fpcore": {
+ "rewriting_programs/fpbench-graphics-000-an-eigenvalue-calculation-from-tng.fpcore": {
   "original": 1.06292,
   "ours": 2.5916,
   "herbie": 2.23275,
   "daisy": 1.19332
  },
- "rewriting_cores/fpbench-hamming-ch3-000-nmse-example-3-1.fpcore": {
+ "rewriting_programs/fpbench-hamming-ch3-000-nmse-example-3-1.fpcore": {
   "original": 1.05887,
   "ours": 1.3384,
   "herbie": 1.05893,
   "daisy": 1.05887
  },
- "rewriting_cores/fpbench-hamming-ch3-005-nmse-problem-3-3-1.fpcore": {
+ "rewriting_programs/fpbench-hamming-ch3-005-nmse-problem-3-3-1.fpcore": {
   "original": 0.541607,
   "ours": 0.285085,
   "herbie": 0.284949,
   "daisy": 0.541695
  },
- "rewriting_cores/fpbench-hamming-ch3-012-nmse-p42-positive.fpcore": {
+ "rewriting_programs/fpbench-hamming-ch3-012-nmse-p42-positive.fpcore": {
   "original": 0.83275,
   "ours": 1.11389,
   "herbie": 0.833479,
   "daisy": 0.833966
  },
- "rewriting_cores/fpbench-hamming-ch3-014-nmse-problem-3-2-1-positive.fpcore": {
+ "rewriting_programs/fpbench-hamming-ch3-014-nmse-problem-3-2-1-positive.fpcore": {
   "original": 0.822951,
   "ours": 0.822443,
   "herbie": 0.820891,
   "daisy": 0.822207
  },
- "rewriting_cores/fpbench-rosa-002-doppler3.fpcore": {
+ "rewriting_programs/fpbench-rosa-002-doppler3.fpcore": {
   "error": "CalledProcessError: Command '['/var/folders/h0/wbgyxl3j2pz_nq8wqnmgfs_h0000gp/T/tmpvo7l5928/p']' died with <Signals.SIGKILL: 9>.",
   "seconds": 0.6168341636657715
  },
- "rewriting_cores/fpbench-rosa-003-rigidbody1.fpcore": {
+ "rewriting_programs/fpbench-rosa-003-rigidbody1.fpcore": {
   "original": 0.418852,
   "ours": 0.480297,
   "herbie": 0.419762,
   "daisy": 0.414546
  },
- "rewriting_cores/fpbench-rosa-004-rigidbody2.fpcore": {
+ "rewriting_programs/fpbench-rosa-004-rigidbody2.fpcore": {
   "original": 0.8114,
   "ours": 0.745434,
   "herbie": 0.548423,
   "daisy": 0.878393
  },
- "rewriting_cores/fpbench-rosa-005-jetengine.fpcore": {
+ "rewriting_programs/fpbench-rosa-005-jetengine.fpcore": {
   "original": 2.08062,
   "ours": 3.38926,
   "herbie": 2.44016
  },
- "rewriting_cores/fpbench-rosa-007-turbine2.fpcore": {
+ "rewriting_programs/fpbench-rosa-007-turbine2.fpcore": {
   "original": 0.744833,
   "ours": 0.695338,
   "herbie": 0.665834,
   "daisy": 0.752389
  },
- "rewriting_cores/fpbench-rosa-019-triangle.fpcore": {
+ "rewriting_programs/fpbench-rosa-019-triangle.fpcore": {
   "error": "CalledProcessError: Command '['/var/folders/h0/wbgyxl3j2pz_nq8wqnmgfs_h0000gp/T/tmpw0x_3tv8/p']' died with <Signals.SIGKILL: 9>.",
   "seconds": 0.29717302322387695
  },
- "rewriting_cores/fpbench-rump-000-rump-s-example-with-pow.fpcore": {
+ "rewriting_programs/fpbench-rump-000-rump-s-example-with-pow.fpcore": {
   "original": 1.60187,
   "ours": 1.4165,
   "herbie": 1.6334,
   "daisy": 2.22615
  },
- "rewriting_cores/fpbench-rump-001-rump-s-example-from-c-program.fpcore": {
+ "rewriting_programs/fpbench-rump-001-rump-s-example-from-c-program.fpcore": {
   "original": 1.3483,
   "ours": 1.55263,
   "herbie": 1.65229,
   "daisy": 2.22965
  },
- "rewriting_cores/fpbench-rump-002-rump-s-example-revisited-for-floating-po.fpcore": {
+ "rewriting_programs/fpbench-rump-002-rump-s-example-revisited-for-floating-po.fpcore": {
   "original": 1.3242,
   "ours": 1.59701,
   "herbie": 1.61711,
   "daisy": 1.94354
  },
- "rewriting_cores/herbie-demo-006-sqrt-sqr.fpcore": {
+ "rewriting_programs/herbie-demo-006-sqrt-sqr.fpcore": {
   "original": 1.09589,
   "ours": 0.0975259,
   "herbie": 0.813835
  },
- "rewriting_cores/herbie-demo-010-x-1-to-x-20.fpcore": {
+ "rewriting_programs/herbie-demo-010-x-1-to-x-20.fpcore": {
   "original": 2.77228,
   "ours": 2.59888,
   "herbie": 2.68123,
   "daisy": 2.6018
  },
- "rewriting_cores/herbie-hamming-rearrangement-000-2sqrt-example-3-1.fpcore": {
+ "rewriting_programs/herbie-hamming-rearrangement-000-2sqrt-example-3-1.fpcore": {
   "original": 1.05865,
   "ours": 1.32685,
   "herbie": 1.98758,
   "daisy": 1.05949
  },
- "rewriting_cores/herbie-hamming-rearrangement-001-2isqrt-example-3-6.fpcore": {
+ "rewriting_programs/herbie-hamming-rearrangement-001-2isqrt-example-3-6.fpcore": {
   "original": 1.55384,
   "ours": 1.60295,
   "herbie": 2.16448
  },
- "rewriting_cores/herbie-haskell-004-optimisation-circlepacking-place-from-ci.fpcore": {
+ "rewriting_programs/herbie-haskell-004-optimisation-circlepacking-place-from-ci.fpcore": {
   "original": 0.400769,
   "ours": 0.398871,
   "herbie": 0.431298,
   "daisy": 0.400725
  },
- "rewriting_cores/herbie-haskell-017-data-colour-rgbspace-hsl-hsl-from-colour.fpcore": {
+ "rewriting_programs/herbie-haskell-017-data-colour-rgbspace-hsl-hsl-from-colour.fpcore": {
   "original": 0.285671,
   "ours": 0.285545,
   "herbie": 0.285512,
   "daisy": 0.285398
  },
- "rewriting_cores/herbie-haskell-046-diagrams-solve-polynomial-cubform-from-d.fpcore": {
+ "rewriting_programs/herbie-haskell-046-diagrams-solve-polynomial-cubform-from-d.fpcore": {
   "error": "CalledProcessError: Command '['/var/folders/h0/wbgyxl3j2pz_nq8wqnmgfs_h0000gp/T/tmpfiohip6u/p']' died with <Signals.SIGKILL: 9>.",
   "seconds": 0.3061549663543701
  },
- "rewriting_cores/herbie-haskell-054-diagrams-solve-polynomial-cubform-from-d.fpcore": {
+ "rewriting_programs/herbie-haskell-054-diagrams-solve-polynomial-cubform-from-d.fpcore": {
   "original": 0.720705,
   "ours": 0.690727,
   "herbie": 0.630668,
   "daisy": 0.825056
  },
- "rewriting_cores/herbie-haskell-056-diagrams-solve-polynomial-quartform-from.fpcore": {
+ "rewriting_programs/herbie-haskell-056-diagrams-solve-polynomial-quartform-from.fpcore": {
   "original": 0.284876,
   "ours": 0.285398,
   "herbie": 0.285073,
   "daisy": 0.285179
  },
- "rewriting_cores/herbie-haskell-057-diagrams-solve-polynomial-quartform-from.fpcore": {
+ "rewriting_programs/herbie-haskell-057-diagrams-solve-polynomial-quartform-from.fpcore": {
   "original": 0.370602,
   "ours": 0.371883,
   "herbie": 0.420136,
   "daisy": 0.37048
  },
- "rewriting_cores/herbie-haskell-059-diagrams-solve-polynomial-quartform-from.fpcore": {
+ "rewriting_programs/herbie-haskell-059-diagrams-solve-polynomial-quartform-from.fpcore": {
   "original": 0.346734,
   "ours": 0.322654,
   "herbie": 0.811894,
   "daisy": 0.360957
  },
- "rewriting_cores/herbie-haskell-071-main-bigenough3-from-c.fpcore": {
+ "rewriting_programs/herbie-haskell-071-main-bigenough3-from-c.fpcore": {
   "original": 1.05966,
   "ours": 1.33914,
   "herbie": 1.35637,
   "daisy": 1.05927
  },
- "rewriting_cores/herbie-haskell-086-linear-matrix-det44-from-linear-1-19-1-3.fpcore": {
+ "rewriting_programs/herbie-haskell-086-linear-matrix-det44-from-linear-1-19-1-3.fpcore": {
   "original": 3.15042,
   "ours": 3.35194,
   "herbie": 3.14927,
   "daisy": 3.14794
  },
- "rewriting_cores/herbie-haskell-100-main-z-from.fpcore": {
+ "rewriting_programs/herbie-haskell-100-main-z-from.fpcore": {
   "original": 4.23703,
   "ours": 5.2876,
   "herbie": 5.38584,
   "daisy": 4.23703
  },
- "rewriting_cores/herbie-haskell-111-diagrams-tangent-catparam-from-diagrams-.fpcore": {
+ "rewriting_programs/herbie-haskell-111-diagrams-tangent-catparam-from-diagrams-.fpcore": {
   "original": 0.415243,
   "ours": 0.347113,
   "herbie": 1.00745,
   "daisy": 0.347017
  },
- "rewriting_cores/herbie-haskell-121-graphics-rendering-chart-axis-types-invl.fpcore": {
+ "rewriting_programs/herbie-haskell-121-graphics-rendering-chart-axis-types-invl.fpcore": {
   "original": 0.482836,
   "ours": 0.620186,
   "herbie": 0.680607,
   "daisy": 0.482207
  },
- "rewriting_cores/herbie-haskell-134-system-random-mwc-distributions-standard.fpcore": {
+ "rewriting_programs/herbie-haskell-134-system-random-mwc-distributions-standard.fpcore": {
   "original": 0.285154,
   "ours": 0.312701,
   "herbie": 0.285331,
   "daisy": 0.285122
  },
- "rewriting_cores/herbie-haskell-148-data-number-erf-cinvnormcdf-from-erf-2-0.fpcore": {
+ "rewriting_programs/herbie-haskell-148-data-number-erf-cinvnormcdf-from-erf-2-0.fpcore": {
   "original": 0.370135,
   "ours": 0.541592,
   "herbie": 0.824376,
   "daisy": 0.370039
  },
- "rewriting_cores/herbie-haskell-161-development-shake-progress-decay-from-sh.fpcore": {
+ "rewriting_programs/herbie-haskell-161-development-shake-progress-decay-from-sh.fpcore": {
   "original": 0.581881,
   "ours": 1.07129,
   "herbie": 0.682931,
   "daisy": 0.581712
  },
- "rewriting_cores/herbie-haskell-163-diagrams-backend-rasterific-crender-from.fpcore": {
+ "rewriting_programs/herbie-haskell-163-diagrams-backend-rasterific-crender-from.fpcore": {
   "original": 0.320987,
   "ours": 0.319612,
   "herbie": 0.318269,
   "daisy": 0.318259
  },
- "rewriting_cores/herbie-haskell-166-graphics-rendering-chart-axis-types-hbuf.fpcore": {
+ "rewriting_programs/herbie-haskell-166-graphics-rendering-chart-axis-types-hbuf.fpcore": {
   "original": 0.285439,
   "ours": 0.285602,
   "herbie": 0.311892,
   "daisy": 0.285427
  },
- "rewriting_cores/herbie-haskell-167-graphics-rendering-chart-axis-types-linm.fpcore": {
+ "rewriting_programs/herbie-haskell-167-graphics-rendering-chart-axis-types-linm.fpcore": {
   "original": 0.496623,
   "ours": 0.496759,
   "herbie": 0.577367,
   "daisy": 0.496315
  },
- "rewriting_cores/herbie-haskell-176-ai-clustering-hierarchical-internal-ward.fpcore": {
+ "rewriting_programs/herbie-haskell-176-ai-clustering-hierarchical-internal-ward.fpcore": {
   "original": 0.752936,
   "ours": 0.814572,
   "herbie": 0.682139,
   "daisy": 0.687485
  },
- "rewriting_cores/herbie-haskell-178-numeric-specfunctions-inverfc-from-math-.fpcore": {
+ "rewriting_programs/herbie-haskell-178-numeric-specfunctions-inverfc-from-math-.fpcore": {
   "original": 0.657128,
   "ours": 1.07406,
   "herbie": 0.734521,
   "daisy": 0.731164
  },
- "rewriting_cores/herbie-haskell-181-numeric-specfunctions-loggamma-from-math.fpcore": {
+ "rewriting_programs/herbie-haskell-181-numeric-specfunctions-loggamma-from-math.fpcore": {
   "original": 1.28335,
   "ours": 1.40375,
   "herbie": 1.4131,
   "daisy": 1.36126
  },
- "rewriting_cores/herbie-haskell-182-numeric-specfunctions-loggamma-from-math.fpcore": {
+ "rewriting_programs/herbie-haskell-182-numeric-specfunctions-loggamma-from-math.fpcore": {
   "original": 1.33324,
   "ours": 1.61047,
   "herbie": 1.47544,
   "daisy": 1.33652
  },
- "rewriting_cores/herbie-haskell-194-numeric-specfunctions-invincompletegamma.fpcore": {
+ "rewriting_programs/herbie-haskell-194-numeric-specfunctions-invincompletegamma.fpcore": {
   "original": 0.287867,
   "ours": 0.930193,
   "herbie": 0.345048,
   "daisy": 0.284975
  },
- "rewriting_cores/herbie-haskell-196-numeric-specfunctions-invincompletegamma.fpcore": {
+ "rewriting_programs/herbie-haskell-196-numeric-specfunctions-invincompletegamma.fpcore": {
   "original": 0.590296,
   "ours": 1.33616,
   "herbie": 0.656158,
   "daisy": 0.656761
  },
- "rewriting_cores/herbie-haskell-197-numeric-specfunctions-invincompletegamma.fpcore": {
+ "rewriting_programs/herbie-haskell-197-numeric-specfunctions-invincompletegamma.fpcore": {
   "original": 1.10533,
   "ours": 1.67107,
   "herbie": 1.09259,
   "daisy": 1.39399
  },
- "rewriting_cores/herbie-haskell-198-numeric-specfunctions-incompletebetaappr.fpcore": {
+ "rewriting_programs/herbie-haskell-198-numeric-specfunctions-incompletebetaappr.fpcore": {
   "original": 0.449299,
   "ours": 0.813743,
   "herbie": 0.796218,
   "daisy": 0.806329
  },
- "rewriting_cores/herbie-haskell-203-numeric-specfunctions-invincompletebetaw.fpcore": {
+ "rewriting_programs/herbie-haskell-203-numeric-specfunctions-invincompletebetaw.fpcore": {
   "original": 0.589861,
   "ours": 0.94331,
   "herbie": 0.660906,
   "daisy": 0.657085
  },
- "rewriting_cores/herbie-haskell-207-numeric-specfunctions-invincompletebetaw.fpcore": {
+ "rewriting_programs/herbie-haskell-207-numeric-specfunctions-invincompletebetaw.fpcore": {
   "original": 0.285553,
   "ours": 0.285519,
   "herbie": 0.285678,
   "daisy": 0.285301
  },
- "rewriting_cores/herbie-haskell-210-numeric-specfunctions-loggamma-from-math.fpcore": {
+ "rewriting_programs/herbie-haskell-210-numeric-specfunctions-loggamma-from-math.fpcore": {
   "original": 1.21203,
   "ours": 1.90486,
   "herbie": 1.48486,
   "daisy": 1.28492
  },
- "rewriting_cores/herbie-haskell-235-data-random-dice-roll-from-dice-0-1.fpcore": {
+ "rewriting_programs/herbie-haskell-235-data-random-dice-roll-from-dice-0-1.fpcore": {
   "original": 0.284412,
   "ours": 0.284785,
   "herbie": 0.287148,
   "daisy": 0.284902
  },
- "rewriting_cores/herbie-haskell-238-hakyll-web-tags-rendertagcloud-from-haky.fpcore": {
+ "rewriting_programs/herbie-haskell-238-hakyll-web-tags-rendertagcloud-from-haky.fpcore": {
   "original": 0.544868,
   "ours": 0.737055,
   "herbie": 0.605266,
   "daisy": 0.527327
  },
- "rewriting_cores/herbie-haskell-241-numeric-signal-interpolate-from-hsignal-.fpcore": {
+ "rewriting_programs/herbie-haskell-241-numeric-signal-interpolate-from-hsignal-.fpcore": {
   "original": 0.479836,
   "ours": 0.704399,
   "herbie": 0.867722,
   "daisy": 0.482976
  },
- "rewriting_cores/herbie-haskell-257-graphics-rendering-plot-render-plot-axis.fpcore": {
+ "rewriting_programs/herbie-haskell-257-graphics-rendering-plot-render-plot-axis.fpcore": {
   "original": 0.432735,
   "ours": 0.43266,
   "herbie": 0.67023,
   "daisy": 0.432969
  },
- "rewriting_cores/herbie-haskell-258-graphics-rendering-plot-render-plot-axis.fpcore": {
+ "rewriting_programs/herbie-haskell-258-graphics-rendering-plot-render-plot-axis.fpcore": {
   "original": 0.440997,
   "ours": 0.541856,
   "herbie": 0.563698,
   "daisy": 0.440725
  },
- "rewriting_cores/herbie-haskell-261-graphics-rendering-plot-render-plot-axis.fpcore": {
+ "rewriting_programs/herbie-haskell-261-graphics-rendering-plot-render-plot-axis.fpcore": {
   "original": 0.431391,
   "ours": 0.432024,
   "herbie": 0.666811,
   "daisy": 0.432454
  },
- "rewriting_cores/herbie-libraries-basilisk-018-drag-accel-mag.fpcore": {
+ "rewriting_programs/herbie-libraries-basilisk-018-drag-accel-mag.fpcore": {
   "original": 0.62764,
   "ours": 0.60054,
   "herbie": 0.542652,
   "daisy": 0.767881
  },
- "rewriting_cores/herbie-libraries-coolprop-007-b-delta2.fpcore": {
+ "rewriting_programs/herbie-libraries-coolprop-007-b-delta2.fpcore": {
   "error": "CalledProcessError: Command '['/var/folders/h0/wbgyxl3j2pz_nq8wqnmgfs_h0000gp/T/tmpwkarijfc/p']' died with <Signals.SIGKILL: 9>.",
   "seconds": 0.3714427947998047
  },
- "rewriting_cores/herbie-libraries-coolprop-008-b-tau3.fpcore": {
+ "rewriting_programs/herbie-libraries-coolprop-008-b-tau3.fpcore": {
   "original": 1.28548,
   "ours": 2.14304,
   "herbie": 1.67872,
   "daisy": 2.01035
  },
- "rewriting_cores/herbie-libraries-coolprop-013-d2psi-ddelta2-over-psi.fpcore": {
+ "rewriting_programs/herbie-libraries-coolprop-013-d2psi-ddelta2-over-psi.fpcore": {
   "original": 0.489597,
   "ours": 0.429581,
   "herbie": 0.817068,
   "daisy": 0.490088
  },
- "rewriting_cores/herbie-libraries-fast-math-007-fastmath-test5.fpcore": {
+ "rewriting_programs/herbie-libraries-fast-math-007-fastmath-test5.fpcore": {
   "original": 0.542783,
   "ours": 0.286289,
   "herbie": 0.966465,
   "daisy": 0.616592
  },
- "rewriting_cores/herbie-libraries-jmatjs-004-jmat-real-dawson.fpcore": {
+ "rewriting_programs/herbie-libraries-jmatjs-004-jmat-real-dawson.fpcore": {
   "original": 2.13595,
   "ours": 2.45695,
   "herbie": 2.50828
  },
- "rewriting_cores/herbie-libraries-octave-collocwt-000-octave-3-8-jcobi-1.fpcore": {
+ "rewriting_programs/herbie-libraries-octave-collocwt-000-octave-3-8-jcobi-1.fpcore": {
   "original": 0.441591,
   "ours": 0.832952,
   "herbie": 0.550219
  },
- "rewriting_cores/herbie-libraries-octave-collocwt-001-octave-3-8-jcobi-2.fpcore": {
+ "rewriting_programs/herbie-libraries-octave-collocwt-001-octave-3-8-jcobi-2.fpcore": {
   "original": 0.807078,
   "herbie": 0.884922
  },
- "rewriting_cores/herbie-libraries-octave-collocwt-003-octave-3-8-jcobi-4.fpcore": {
+ "rewriting_programs/herbie-libraries-octave-collocwt-003-octave-3-8-jcobi-4.fpcore": {
   "error": "CalledProcessError: Command '['/var/folders/h0/wbgyxl3j2pz_nq8wqnmgfs_h0000gp/T/tmpy5mndq3e/p']' died with <Signals.SIGKILL: 9>.",
   "seconds": 0.3308720588684082
  },
- "rewriting_cores/herbie-mathematics-beta-distribution-000-a-parameter-of-renormalized-beta-distrib.fpcore": {
+ "rewriting_programs/herbie-mathematics-beta-distribution-000-a-parameter-of-renormalized-beta-distrib.fpcore": {
   "original": 0.399764,
   "herbie": 0.371939
  },
- "rewriting_cores/herbie-mathematics-beta-distribution-001-b-parameter-of-renormalized-beta-distrib.fpcore": {
+ "rewriting_programs/herbie-mathematics-beta-distribution-001-b-parameter-of-renormalized-beta-distrib.fpcore": {
   "original": 0.39998,
   "herbie": 0.465831
  },
- "rewriting_cores/herbie-mathematics-excel-000-x0-1-x1-x0.fpcore": {
+ "rewriting_programs/herbie-mathematics-excel-000-x0-1-x1-x0.fpcore": {
   "original": 0.291892,
   "ours": 0.289053,
   "herbie": 0.540758,
   "daisy": 0.2917
  },
- "rewriting_cores/herbie-mathematics-gui-010-abcf-ab-angle-b.fpcore": {
+ "rewriting_programs/herbie-mathematics-gui-010-abcf-ab-angle-b.fpcore": {
   "original": 1.43631,
   "ours": 2.11248,
   "herbie": 2.06175
  },
- "rewriting_cores/herbie-mathematics-sarnoff-000-quadratic-roots-full-range.fpcore": {
+ "rewriting_programs/herbie-mathematics-sarnoff-000-quadratic-roots-full-range.fpcore": {
   "original": 0.83515,
   "ours": 1.11309,
   "herbie": 0.835324,
   "daisy": 0.834766
  },
- "rewriting_cores/herbie-mathematics-sarnoff-004-cubic-critical.fpcore": {
+ "rewriting_programs/herbie-mathematics-sarnoff-004-cubic-critical.fpcore": {
   "original": 0.823588,
   "ours": 1.10308,
   "herbie": 0.835429,
   "daisy": 0.8239
  },
- "rewriting_cores/herbie-numerics-conte-004-ena-section-1-4-exercise-4b-n-2.fpcore": {
+ "rewriting_programs/herbie-numerics-conte-004-ena-section-1-4-exercise-4b-n-2.fpcore": {
   "original": 0.316827,
   "ours": 0.287792,
   "herbie": 0.288911,
   "daisy": 0.31521
  },
- "rewriting_cores/herbie-numerics-conte-005-ena-section-1-4-exercise-4b-n-5.fpcore": {
+ "rewriting_programs/herbie-numerics-conte-005-ena-section-1-4-exercise-4b-n-5.fpcore": {
   "original": 0.681744,
   "ours": 1.48331,
   "herbie": 0.945406,
   "daisy": 0.564175
  },
- "rewriting_cores/herbie-numerics-every-cs-008-complex-division-imag-part.fpcore": {
+ "rewriting_programs/herbie-numerics-every-cs-008-complex-division-imag-part.fpcore": {
   "error": "CalledProcessError: Command '['/var/folders/h0/wbgyxl3j2pz_nq8wqnmgfs_h0000gp/T/tmpjeadue8s/p']' died with <Signals.SIGKILL: 9>.",
   "seconds": 0.3346700668334961
  },
- "rewriting_cores/herbie-numerics-fma-000-fma-test1.fpcore": {
+ "rewriting_programs/herbie-numerics-fma-000-fma-test1.fpcore": {
   "original": 0.411619,
   "ours": 0.285118,
   "herbie": 0.285549,
   "daisy": 0.285114
  },
- "rewriting_cores/herbie-numerics-fma-001-fma-test2.fpcore": {
+ "rewriting_programs/herbie-numerics-fma-001-fma-test2.fpcore": {
   "original": 0.284335,
   "herbie": 0.284263
  },
- "rewriting_cores/herbie-numerics-great-debate-002-kahan-p9-example.fpcore": {
+ "rewriting_programs/herbie-numerics-great-debate-002-kahan-p9-example.fpcore": {
   "original": 0.538124,
   "herbie": 0.537156
  },
- "rewriting_cores/herbie-numerics-martel-006-expression-p6.fpcore": {
+ "rewriting_programs/herbie-numerics-martel-006-expression-p6.fpcore": {
   "original": 0.343318,
   "ours": 0.484779,
   "herbie": 0.343218,
   "daisy": 0.344631
  },
- "rewriting_cores/herbie-numerics-rosa-000-rosa-s-dopplerbench.fpcore": {
+ "rewriting_programs/herbie-numerics-rosa-000-rosa-s-dopplerbench.fpcore": {
   "original": 0.314961,
   "ours": 0.807526,
   "herbie": 0.530897,
   "daisy": 0.542488
  },
- "rewriting_cores/herbie-numerics-rosa-002-rosa-s-floatvsdoublebenchmark.fpcore": {
+ "rewriting_programs/herbie-numerics-rosa-002-rosa-s-floatvsdoublebenchmark.fpcore": {
   "original": 2.06964,
   "ours": 3.18976,
   "herbie": 2.6946,
   "daisy": 2.26344
  },
- "rewriting_cores/herbie-numerics-rump-000-rump-s-expression-from-stadtherr-s-award.fpcore": {
+ "rewriting_programs/herbie-numerics-rump-000-rump-s-expression-from-stadtherr-s-award.fpcore": {
   "original": 1.71632,
   "ours": 1.75039,
   "herbie": 2.16017,
   "daisy": 1.72488
  },
- "rewriting_cores/herbie-numerics-rump-001-from-rump-in-a-1983-paper.fpcore": {
+ "rewriting_programs/herbie-numerics-rump-001-from-rump-in-a-1983-paper.fpcore": {
   "original": 0.67738,
   "ours": 0.609898,
   "herbie": 0.67667,
   "daisy": 0.613208
  },
- "rewriting_cores/herbie-numerics-rump-002-from-rump-in-a-1983-paper-rewritten.fpcore": {
+ "rewriting_programs/herbie-numerics-rump-002-from-rump-in-a-1983-paper-rewritten.fpcore": {
   "original": 0.56181,
   "ours": 0.609954,
   "herbie": 0.60905,
   "daisy": 0.55037
  },
- "rewriting_cores/herbie-physics-kalman-001-kalman-filter-per-x.fpcore": {
+ "rewriting_programs/herbie-physics-kalman-001-kalman-filter-per-x.fpcore": {
   "original": 2.05317,
   "ours": 1.40783,
   "herbie": 1.84588
  },
- "rewriting_cores/herbie-physics-kalman-002-kalman-filter-per-p.fpcore": {
+ "rewriting_programs/herbie-physics-kalman-002-kalman-filter-per-p.fpcore": {
   "original": 2.63774,
   "ours": 0.873515,
   "herbie": 0.946211
  },
- "rewriting_cores/herbie-physics-superfluidity-breakdown-003-toniolo-and-linder-equation-7.fpcore": {
+ "rewriting_programs/herbie-physics-superfluidity-breakdown-003-toniolo-and-linder-equation-7.fpcore": {
   "original": 1.14948,
   "ours": 2.1835,
   "herbie": 1.49507
  },
- "rewriting_cores/herbie-physics-superfluidity-breakdown-006-toniolo-and-linder-equation-13.fpcore": {
+ "rewriting_programs/herbie-physics-superfluidity-breakdown-006-toniolo-and-linder-equation-13.fpcore": {
   "original": 1.35103,
   "ours": 2.09204,
   "herbie": 1.15114
  },
- "rewriting_cores/herbie-physics-tea-whistle-003-henrywood-and-agarwal-equation-13.fpcore": {
+ "rewriting_programs/herbie-physics-tea-whistle-003-henrywood-and-agarwal-equation-13.fpcore": {
   "original": 1.16537,
   "herbie": 1.95275,
   "daisy": 4.16448
  },
- "rewriting_cores/herbie-physics-universal-linear-optics-000-bouland-and-aaronson-equation-24.fpcore": {
+ "rewriting_programs/herbie-physics-universal-linear-optics-000-bouland-and-aaronson-equation-24.fpcore": {
   "original": 0.809855,
   "ours": 1.07423,
   "herbie": 1.09283,
   "daisy": 1.13946
  },
- "rewriting_cores/herbie-physics-universal-linear-optics-001-bouland-and-aaronson-equation-25.fpcore": {
+ "rewriting_programs/herbie-physics-universal-linear-optics-001-bouland-and-aaronson-equation-25.fpcore": {
   "original": 0.883788,
   "ours": 1.08136,
   "herbie": 1.08383,
   "daisy": 1.21357
  },
- "rewriting_cores/herbie-proj-omerc-001-forward-half-diff.fpcore": {
+ "rewriting_programs/herbie-proj-omerc-001-forward-half-diff.fpcore": {
   "original": 0.284728,
   "ours": 0.350729,
   "herbie": 0.43399,
   "daisy": 0.284691
  },
- "rewriting_cores/herbie-proj-som-015-setup-w.fpcore": {
+ "rewriting_programs/herbie-proj-som-015-setup-w.fpcore": {
   "original": 0.429224,
   "ours": 0.694262,
   "herbie": 0.429267,
   "daisy": 0.48802
  },
- "rewriting_cores/herbie-proj-som-016-setup-t.fpcore": {
+ "rewriting_programs/herbie-proj-som-016-setup-t.fpcore": {
   "original": 0.413065,
   "ours": 0.414297,
   "herbie": 0.417348,
   "daisy": 0.414993
  },
- "rewriting_cores/herbie-regression-000-xlohi-overflows.fpcore": {
+ "rewriting_programs/herbie-regression-000-xlohi-overflows.fpcore": {
   "original": 0.290434,
   "ours": 0.44673,
   "herbie": 0.292594
  },
- "rewriting_cores/herbie-regression-015-bug333-missed-optimization.fpcore": {
+ "rewriting_programs/herbie-regression-015-bug333-missed-optimization.fpcore": {
   "original": 1.04183,
   "herbie": 1.3303
  },
- "rewriting_cores/herbie-tutorial-002-commute-and-associate.fpcore": {
+ "rewriting_programs/herbie-tutorial-002-commute-and-associate.fpcore": {
   "original": 0.350544,
   "ours": 0.0962798,
   "herbie": 0.0921549

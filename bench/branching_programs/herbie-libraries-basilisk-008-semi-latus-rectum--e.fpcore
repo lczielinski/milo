@@ -1,0 +1,8 @@
+(FPCore (a e)
+  :name "semi_latus_rectum"
+  :milo-source "herbie:libraries/basilisk.fpcore:8"
+  :milo-domain "widened"
+  :milo-widened "e"
+  :precision binary64
+  :pre (and (<= 1 a 2) (<= -8 e 8))
+  (* a (- 1 (* e e))))

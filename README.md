@@ -35,8 +35,8 @@ bounds don't hold.
 uv run python bench/run.py && uv run python bench/tables.py
 ```
 
-Benchmark (1) is `bench/bounding_cores/` and `bench/rewriting_cores/`, Benchmark (2) is `bench/rewriting_cores/`, and
-Benchmark (3) is `bench/branching/`. Herbie runs as `racket -l herbie`; the other tools are found at the paths in
+Benchmark (1) is `bench/bounding_programs/` and `bench/rewriting_programs/`, Benchmark (2) is `bench/rewriting_programs/`, and
+Benchmark (3) is `bench/branching_programs/`. Herbie runs as `racket -l herbie`; the other tools are found at the paths in
 `bench/tools/`, which environment variables override. We used:
 
 | Tool | Version | Local changes |

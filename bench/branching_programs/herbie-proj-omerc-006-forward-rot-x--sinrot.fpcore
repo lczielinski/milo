@@ -1,0 +1,8 @@
+(FPCore (u v cosrot sinrot u0)
+  :name "forward-rot-x"
+  :milo-source "herbie:proj/omerc.fpcore:6"
+  :milo-domain "widened"
+  :milo-widened "sinrot"
+  :precision binary64
+  :pre (and (<= 1 u 2) (<= 4 v 8) (<= 16 cosrot 32) (<= -128 sinrot 128) (<= 256 u0 512))
+  (+ (* v cosrot) (* (- u u0) sinrot)))

@@ -1,0 +1,8 @@
+(FPCore (x y z t a)
+  :name "Graphics.Rendering.Plot.Render.Plot.Axis:renderAxisLine from plot-0.2.3.4, B"
+  :milo-source "herbie:haskell.fpcore:257"
+  :milo-domain "widened"
+  :milo-widened "t"
+  :precision binary64
+  :pre (and (<= 1 x 2) (<= 4 y 8) (<= 16 z 32) (<= -128 t 128) (<= 256 a 512))
+  (+ x (* y (/ (- z t) (- a t)))))

@@ -1,0 +1,8 @@
+(FPCore (x y z t)
+  :name "Diagrams.Solve.Polynomial:quartForm  from diagrams-solve-0.1, B"
+  :milo-source "herbie:haskell.fpcore:57"
+  :milo-domain "widened"
+  :milo-widened "y"
+  :precision binary64
+  :pre (and (<= 1 x 2) (<= -8 y 8) (<= 16 z 32) (<= 64 t 128))
+  (+ (- (* (/ 1 8) x) (/ (* y z) 2)) t))

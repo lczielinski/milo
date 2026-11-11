@@ -16,6 +16,7 @@ from concurrent.futures import ProcessPoolExecutor
 BENCH = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.dirname(BENCH))
 
+import defined  # noqa: E402
 import sample  # noqa: E402
 import speed  # noqa: E402
 import variants  # noqa: E402
@@ -124,7 +125,7 @@ def ours_one(name):
     core = load(name)
     start = time.time()
     out = {"bound": bound_input(core, core.body), "bound_s": time.time() - start}
-    if not name.startswith("rewriting_cores/"):
+    if not name.startswith("rewriting_programs/"):
         return out
     start = time.time()
     try:
@@ -162,16 +163,16 @@ def originals():
 
 def benchmark1():
     """Every core: the ones we only bound, and the ones we also rewrite."""
-    return sorted(cores("bounding_cores") + cores("rewriting_cores"), key=os.path.basename)
+    return sorted(cores("bounding_programs") + cores("rewriting_programs"), key=os.path.basename)
 
 
 def benchmark2():
     """The rewriting cores: those whose input loses more than HEADROOM ulps somewhere, which the
     measured error of the inputs confirms."""
-    names = cores("rewriting_cores")
+    names = cores("rewriting_programs")
     lossy = {n for n, r in originals().items() if (r.get("ulps") or 0) > HEADROOM}
     if lossy != set(names):
-        print(f"warning: rewriting_cores/ is not the cores above {HEADROOM} ulps: {sorted(lossy ^ set(names))}")
+        print(f"warning: rewriting_programs/ is not the programs above {HEADROOM} ulps: {sorted(lossy ^ set(names))}")
     return names
 
 
@@ -238,6 +239,20 @@ def measured():
     return each(measured_one, names, [candidates(n) for n in names])
 
 
+def defined_one(name, texts):
+    core = load(name)
+    programs = {"original": core.body, **{w: program(t) for w, t in texts.items()}}
+    return {w: defined.check(p, core.box) for w, p in programs.items()}
+
+
+@step
+def definedness():
+    """Benchmark (2): whether each compared program is defined over the reals on all of its box. A
+    rewrite that is undefined somewhere there is not equivalent to its input, which is defined."""
+    names = benchmark2()
+    return each(defined_one, names, [candidates(n) for n in names])
+
+
 @step
 def bounds():
     """Sound bounds from FPTaylor, Gappa, PRECiSA and Daisy: on every input, and on Benchmark (2)'s rewrites."""
@@ -293,7 +308,7 @@ def speeds():
 def branching_one(name, reports):
     core = load(name)
     programs = {"original": core.body}
-    out = {"expected": core.props.get(":milo-expected", "").strip('"')}
+    out = {}
     for who, branch in (("ours-plain", False), ("ours", True)):
         try:
             g = build(core, 4, branch, EGGLOG_LIMIT)
@@ -313,14 +328,15 @@ def branching_one(name, reports):
             out[who] = {"status": report.get("status", "fail")}
     measured = sample.measure(core, core.body, programs)
     for who, p in programs.items():
-        out[who] = {"program": show(p), "measured": measured[who], "bound": safe(bound_input, core, p)}
+        out[who] = {"program": show(p), "measured": measured[who], "bound": safe(bound_input, core, p),
+                    "defined": defined.check(p, core.box)}
     return out
 
 
 @step
 def branching():
     """Benchmark (3): our branches against Herbie's and Daisy's regimes, timed one core at a time."""
-    names = cores("branching")
+    names = cores("branching_programs")
     texts = [fpcore(load(n)) for n in names]
     with tempfile.TemporaryDirectory() as d:
         found = {"herbie": herbie.rewrite(texts, d, TOOL_LIMIT, JOBS, branch=True),
@@ -337,5 +353,6 @@ def branching():
 
 
 if __name__ == "__main__":
-    for f in (ours, originals, rewrites, alternatives, measured, bounds, startup, speeds, branching):
+    for f in (ours, originals, rewrites, alternatives, measured, definedness, bounds, startup, speeds,
+              branching):
         f()

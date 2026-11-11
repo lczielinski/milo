@@ -1,0 +1,8 @@
+(FPCore (x y z)
+  :name "Numeric.SpecFunctions:logGamma from math-functions-0.1.5.2, C"
+  :milo-source "herbie:haskell.fpcore:181"
+  :milo-domain "widened"
+  :milo-widened "z"
+  :precision binary64
+  :pre (and (<= 1 x 2) (<= 4 y 8) (<= -32 z 32))
+  (/ (* (- x 2) (+ (* (+ (* (+ (* (+ (* x 4.16438922228) 78.6994924154) x) 137.519416416) x) y) x) z)) (+ (* (+ (* (+ (* (+ x 43.3400022514) x) 263.505074721) x) 313.399215894) x) 47.066876606)))

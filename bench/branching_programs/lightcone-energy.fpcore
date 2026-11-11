@@ -1,0 +1,5 @@
+(FPCore (m p)
+  :name "E - p"
+  :milo-source "Collins 1997, Light-cone variables, rapidity and all that (arXiv hep-ph/9705393), light-cone component E - p"
+  :pre (and (<= 0.1 m 1) (<= -10 p 10))
+  (- (sqrt (+ (* m m) (* p p))) p))

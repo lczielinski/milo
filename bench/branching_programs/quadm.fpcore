@@ -1,0 +1,5 @@
+(FPCore (a b c)
+  :name "(-b - sqrt(b*b - 4ac)) / 2a"
+  :milo-source "Goldberg 1991, eq. (4); Herbie bench/hamming/quadratic.fpcore, quadm"
+  :pre (and (<= 0.1 a 1) (<= -10 b 10) (<= -1 c -0.1))
+  (/ (- (- b) (sqrt (- (* b b) (* 4 (* a c))))) (* 2 a)))

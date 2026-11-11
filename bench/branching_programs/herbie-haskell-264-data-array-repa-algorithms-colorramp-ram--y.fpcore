@@ -1,0 +1,8 @@
+(FPCore (x y z)
+  :name "Data.Array.Repa.Algorithms.ColorRamp:rampColorHotToCold from repa-algorithms-3.4.0.1, B"
+  :milo-source "herbie:haskell.fpcore:264"
+  :milo-domain "widened"
+  :milo-widened "y"
+  :precision binary64
+  :pre (and (<= 1 x 2) (<= -8 y 8) (<= 16 z 32))
+  (/ (* 4 (- (- x y) (* z 0.5))) z))

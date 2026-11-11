@@ -1,0 +1,8 @@
+(FPCore (x y)
+  :name "Data.Colour.RGBSpace.HSL:hsl from colour-2.3.3, A"
+  :milo-source "herbie:haskell.fpcore:17"
+  :milo-domain "widened"
+  :milo-widened "x"
+  :precision binary64
+  :pre (and (<= -2 x 2) (<= 4 y 8))
+  (- (+ x y) (* x y)))

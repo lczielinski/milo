@@ -1,0 +1,8 @@
+(FPCore (a b c d)
+  :name "Complex division, real part"
+  :milo-source "herbie:numerics/every-cs.fpcore:7"
+  :milo-domain "widened"
+  :milo-widened "b"
+  :precision binary64
+  :pre (and (<= 1 a 2) (<= -8 b 8) (<= 16 c 32) (<= 64 d 128))
+  (/ (+ (* a c) (* b d)) (+ (* c c) (* d d))))

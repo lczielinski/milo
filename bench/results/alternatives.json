@@ -1,5 +1,5 @@
 {
- "rewriting_cores/fpbench-daisy-005-matrixdeterminant.fpcore": {
+ "rewriting_programs/fpbench-daisy-005-matrixdeterminant.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (+ (+ (* (+ (* (- e) g) (* d h)) c) (* (* (- b) d) i)) (* (* b f) g)) (* a (+ (* (- f) h) (* e i))))",
@@ -77,7 +77,7 @@
    "seconds": 0.3395252227783203
   }
  },
- "rewriting_cores/fpbench-daisy-006-matrixdeterminant2.fpcore": {
+ "rewriting_programs/fpbench-daisy-006-matrixdeterminant2.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (+ (+ (* (+ (* (- e) g) (* d h)) c) (* (* b f) g)) (* (* (- b) d) i)) (* a (+ (* (- f) h) (* e i))))",
@@ -155,7 +155,7 @@
    "seconds": 0.298429012298584
   }
  },
- "rewriting_cores/fpbench-fptaylor-extra-001-delta4.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-extra-001-delta4.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (+ (* (+ (- x3) x5) (+ (- x6) x2)) (* (- x1) x4)) (* (+ (+ (+ (+ (- (+ x1 x4)) x2) x3) x5) x6) x1))",
@@ -235,7 +235,7 @@
    "seconds": 1.098154067993164
   }
  },
- "rewriting_cores/fpbench-fptaylor-extra-002-delta.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-extra-002-delta.fpcore": {
   "size1": {
    "abs": {
     "program": "(- (+ (* (+ (+ (+ (+ (- (+ x1 x4)) x2) x3) x5) x6) (* x1 x4)) (* (+ (+ (- (+ x1 x3) (+ x2 x5)) x4) x6) (* x2 x5))) (+ (* x3 (+ (+ (* (+ (- x3 (+ (+ (+ x1 x2) x4) x5)) x6) x6) (* x2 x4)) (* x1 x5))) (* (+ (* x1 x2) (* x4 x5)) x6)))",
@@ -315,7 +315,7 @@
    "seconds": 2.554626941680908
   }
  },
- "rewriting_cores/fpbench-fptaylor-extra-014-nonlin2.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-extra-014-nonlin2.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ 1 (+ (* x y) 1))",
@@ -395,7 +395,7 @@
    "seconds": 0.9742300510406494
   }
  },
- "rewriting_cores/fpbench-fptaylor-real2float-008-kepler0.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-real2float-008-kepler0.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (* (+ (+ (+ (+ (- (+ x1 x4)) x2) x3) x5) x6) x1) (* (+ (- x2) x6) (- x3 x5)))",
@@ -475,7 +475,7 @@
    "seconds": 1.0391089916229248
   }
  },
- "rewriting_cores/fpbench-fptaylor-real2float-009-kepler1.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-real2float-009-kepler1.fpcore": {
   "size1": {
    "abs": {
     "program": "(- (+ (* (+ (+ (- x2) x3) x4) x2) (+ (* (+ (+ (+ (- x3) x1) x2) x4) x3) (* (+ (+ (- (+ x1 x4)) x2) x3) (* x1 x4)))) (+ (* (+ (* x2 x4) x1) x3) x4))",
@@ -553,7 +553,7 @@
    "seconds": 2.344180107116699
   }
  },
- "rewriting_cores/fpbench-fptaylor-real2float-010-kepler2.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-real2float-010-kepler2.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (- (+ (* (+ (+ (+ (- (+ (- x2) x1) x5) x3) x4) x6) (* x2 x5)) (* (+ (+ (+ (+ (- (+ x1 x4)) x2) x3) x5) x6) (* x1 x4))) (* x3 (+ (+ (* (+ (- x3 (+ (+ x1 x2) (+ x4 x5))) x6) x6) (* x2 x4)) (* x1 x5)))) (* (+ (* x1 x2) (* x4 x5)) (- x6)))",
@@ -633,7 +633,7 @@
    "seconds": 2.5697832107543945
   }
  },
- "rewriting_cores/fpbench-fptaylor-tests-005-test04-dqmom9.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-tests-005-test04-dqmom9.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (/ (* (- m0) -3) (/ (/ w0 a0) a0)) (* -3 (+ (/ (- m1) (/ (/ w1 a1) a1)) (/ (- m2) (/ (/ w2 a2) a2)))))",
@@ -711,7 +711,7 @@
    "seconds": 1.4155802726745605
   }
  },
- "rewriting_cores/fpbench-fptaylor-tests-006-test05-nonlin1-r4.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-tests-006-test05-nonlin1-r4.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ 1 (+ 1 x))",
@@ -791,7 +791,7 @@
    "seconds": 0.7894775867462158
   }
  },
- "rewriting_cores/fpbench-fptaylor-tests-008-test06-sums4-sum1.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-tests-008-test06-sums4-sum1.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (+ (+ x0 x1) x2) x3)",
@@ -869,7 +869,7 @@
    "seconds": 0.06476497650146484
   }
  },
- "rewriting_cores/fpbench-fptaylor-tests-009-test06-sums4-sum2.fpcore": {
+ "rewriting_programs/fpbench-fptaylor-tests-009-test06-sums4-sum2.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (+ (+ x0 x1) x2) x3)",
@@ -947,7 +947,7 @@
    "seconds": 0.08289027214050293
   }
  },
- "rewriting_cores/fpbench-graphics-000-an-eigenvalue-calculation-from-tng.fpcore": {
+ "rewriting_programs/fpbench-graphics-000-an-eigenvalue-calculation-from-tng.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (- (sqrt (+ (* (+ (- a) d) (+ (- a) d)) (* (+ b c) (+ b c))))) (sqrt (+ (* (+ (- b) c) (+ (- b) c)) (* (+ a d) (+ a d)))))",
@@ -1027,7 +1027,7 @@
    "seconds": 1.610496997833252
   }
  },
- "rewriting_cores/fpbench-hamming-ch3-000-nmse-example-3-1.fpcore": {
+ "rewriting_programs/fpbench-hamming-ch3-000-nmse-example-3-1.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (- (sqrt x)) (sqrt (+ 1 x)))",
@@ -1105,7 +1105,7 @@
    "seconds": 0.0991520881652832
   }
  },
- "rewriting_cores/fpbench-hamming-ch3-005-nmse-problem-3-3-1.fpcore": {
+ "rewriting_programs/fpbench-hamming-ch3-005-nmse-problem-3-3-1.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (/ -1 (+ 1 x)) x)",
@@ -1185,7 +1185,7 @@
    "seconds": 0.5314760208129883
   }
  },
- "rewriting_cores/fpbench-hamming-ch3-012-nmse-p42-positive.fpcore": {
+ "rewriting_programs/fpbench-hamming-ch3-012-nmse-p42-positive.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (+ (- (sqrt (+ (* (* -4 a) c) (* b b)))) b) (/ a -0.5))",
@@ -1265,7 +1265,7 @@
    "seconds": 0.8648083209991455
   }
  },
- "rewriting_cores/fpbench-hamming-ch3-014-nmse-problem-3-2-1-positive.fpcore": {
+ "rewriting_programs/fpbench-hamming-ch3-014-nmse-problem-3-2-1-positive.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (+ (- b2) (sqrt (+ (* (- a) c) (* b2 b2)))) a)",
@@ -1345,7 +1345,7 @@
    "seconds": 0.25503015518188477
   }
  },
- "rewriting_cores/fpbench-rosa-002-doppler3.fpcore": {
+ "rewriting_programs/fpbench-rosa-002-doppler3.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (/ v (+ (+ (* 0.6 T) 331.4) u)) (+ (/ u (+ (* -0.6 T) -331.4)) -1))",
@@ -1423,7 +1423,7 @@
    "seconds": 1.2940759658813477
   }
  },
- "rewriting_cores/fpbench-rosa-003-rigidbody1.fpcore": {
+ "rewriting_programs/fpbench-rosa-003-rigidbody1.fpcore": {
   "size1": {
    "abs": {
     "program": "(- (+ (+ (* (+ (+ x1 x3) x3) x2) x1) x3))",
@@ -1501,7 +1501,7 @@
    "seconds": 0.1260361671447754
   }
  },
- "rewriting_cores/fpbench-rosa-004-rigidbody2.fpcore": {
+ "rewriting_programs/fpbench-rosa-004-rigidbody2.fpcore": {
   "size1": {
    "abs": {
     "program": "(- (* (* x3 x3) 6) (+ (* (+ -2 x2) (* (* x1 x2) x3)) x2))",
@@ -1579,7 +1579,7 @@
    "seconds": 0.3123509883880615
   }
  },
- "rewriting_cores/fpbench-rosa-005-jetengine.fpcore": {
+ "rewriting_programs/fpbench-rosa-005-jetengine.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (+ (+ (/ (* (+ (+ (+ (* (* -3 x1) x1) x1) x2) x2) -3) (+ (* x1 x1) 1)) (/ (* (+ (+ (* (* -3 x1) x1) (* -2 x2)) x1) (* (* -3 x1) x1)) (+ (* x1 x1) 1))) (* (+ (* x1 x1) 1) (+ (+ (* (/ (+ (+ (- (* (* 3 x1) x1) x1) x2) x2) (+ (* x1 x1) 1)) (+ (/ (* (+ -3 (+ (+ (- x1) x2) x2)) (+ x1 x1)) (+ (* x1 x1) 1)) (* (* 4 x1) x1))) (* (* -6 x1) x1)) x1))) x1)",
@@ -1657,7 +1657,7 @@
    "seconds": 2.172173023223877
   }
  },
- "rewriting_cores/fpbench-rosa-007-turbine2.fpcore": {
+ "rewriting_programs/fpbench-rosa-007-turbine2.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (* (+ (/ (/ (* (* (* r r) w) w) 2) (+ -1 v)) 6) v) -2.5)",
@@ -1737,7 +1737,7 @@
    "seconds": 3.1212565898895264
   }
  },
- "rewriting_cores/fpbench-rosa-019-triangle.fpcore": {
+ "rewriting_programs/fpbench-rosa-019-triangle.fpcore": {
   "size1": {
    "abs": {
     "program": "(sqrt (/ (/ (* (- (+ a b) c) (/ (- (+ a c) b) 2)) 2) (/ (/ -4 (+ (+ a b) c)) (+ (- (+ b c)) a))))",
@@ -1817,7 +1817,7 @@
    "seconds": 1.6475462913513184
   }
  },
- "rewriting_cores/fpbench-rump-000-rump-s-example-with-pow.fpcore": {
+ "rewriting_programs/fpbench-rump-000-rump-s-example-with-pow.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (* (* (* (* (* (* b b) b) b) b) b) (+ (* (* 5.5 b) b) 333.75)) (* (- a) (+ (/ -0.5 b) (* (+ (* (* b b) (+ (* (* a a) -11) (* (* b b) (+ (* b b) 121)))) 2) a))))",
@@ -1897,7 +1897,7 @@
    "seconds": 2.7849233150482178
   }
  },
- "rewriting_cores/fpbench-rump-001-rump-s-example-from-c-program.fpcore": {
+ "rewriting_programs/fpbench-rump-001-rump-s-example-from-c-program.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (* (* (* (* (* (* b b) b) b) b) b) (+ (* (* 5.5 b) b) 333.75)) (* (- a) (+ (/ -0.5 b) (* (+ (* (* b b) (+ (* (* a a) -11) (* (* b b) (+ (* b b) 121)))) 2) a))))",
@@ -1977,7 +1977,7 @@
    "seconds": 2.7897820472717285
   }
  },
- "rewriting_cores/fpbench-rump-002-rump-s-example-revisited-for-floating-po.fpcore": {
+ "rewriting_programs/fpbench-rump-002-rump-s-example-revisited-for-floating-po.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (* (* (* (* (* (* (- b) b) b) b) b) b) (+ (+ (* a a) -333.75) (* (* -5.5 b) b))) (* a (+ (/ 0.5 b) (* (+ (* (+ (* (* -121 b) b) (* (* 11 a) a)) (* b b)) -2) a))))",
@@ -2057,7 +2057,7 @@
    "seconds": 2.8386709690093994
   }
  },
- "rewriting_cores/herbie-demo-006-sqrt-sqr.fpcore": {
+ "rewriting_programs/herbie-demo-006-sqrt-sqr.fpcore": {
   "size1": {
    "abs": {
     "program": "0",
@@ -2137,7 +2137,7 @@
    "seconds": 0.6689329147338867
   }
  },
- "rewriting_cores/herbie-demo-010-x-1-to-x-20.fpcore": {
+ "rewriting_programs/herbie-demo-010-x-1-to-x-20.fpcore": {
   "size1": {
    "abs": {
     "program": "(* (+ -20 x) (* (+ -19 x) (* (+ -18 x) (* (+ -17 x) (* (+ -16 x) (* (+ -15 x) (* (+ -14 x) (* (+ -13 x) (* (+ -12 x) (* (+ -11 x) (* (+ -10 x) (* (+ -9 x) (* (+ -8 x) (* (+ -7 x) (* (+ (* x (+ -3 x)) 2) (* (* (+ -4 x) (+ -3 x)) (* (+ -6 x) (+ -5 x))))))))))))))))))",
@@ -2215,7 +2215,7 @@
    "seconds": 7.6369030475616455
   }
  },
- "rewriting_cores/herbie-hamming-rearrangement-000-2sqrt-example-3-1.fpcore": {
+ "rewriting_programs/herbie-hamming-rearrangement-000-2sqrt-example-3-1.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (- (sqrt x)) (sqrt (+ 1 x)))",
@@ -2293,7 +2293,7 @@
    "seconds": 0.13667798042297363
   }
  },
- "rewriting_cores/herbie-hamming-rearrangement-001-2isqrt-example-3-6.fpcore": {
+ "rewriting_programs/herbie-hamming-rearrangement-001-2isqrt-example-3-6.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (/ -1 (sqrt (+ 1 x))) (/ 1 (sqrt x)))",
@@ -2371,7 +2371,7 @@
    "seconds": 0.7966389656066895
   }
  },
- "rewriting_cores/herbie-haskell-004-optimisation-circlepacking-place-from-ci.fpcore": {
+ "rewriting_programs/herbie-haskell-004-optimisation-circlepacking-place-from-ci.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (/ (+ (- t) z) (/ a y)) x)",
@@ -2451,7 +2451,7 @@
    "seconds": 0.9101002216339111
   }
  },
- "rewriting_cores/herbie-haskell-017-data-colour-rgbspace-hsl-hsl-from-colour.fpcore": {
+ "rewriting_programs/herbie-haskell-017-data-colour-rgbspace-hsl-hsl-from-colour.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (+ (* (- x) y) x) y)",
@@ -2531,7 +2531,7 @@
    "seconds": 0.14915871620178223
   }
  },
- "rewriting_cores/herbie-haskell-046-diagrams-solve-polynomial-cubform-from-d.fpcore": {
+ "rewriting_programs/herbie-haskell-046-diagrams-solve-polynomial-cubform-from-d.fpcore": {
   "size1": {
    "abs": {
     "program": "(- (* (* 3 x) y) z)",
@@ -2611,7 +2611,7 @@
    "seconds": 0.13063883781433105
   }
  },
- "rewriting_cores/herbie-haskell-054-diagrams-solve-polynomial-cubform-from-d.fpcore": {
+ "rewriting_programs/herbie-haskell-054-diagrams-solve-polynomial-cubform-from-d.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (+ (/ (+ (* (* 9 x) y) b) z) (* (* -4 t) a)) c)",
@@ -2691,7 +2691,7 @@
    "seconds": 1.0904364585876465
   }
  },
- "rewriting_cores/herbie-haskell-056-diagrams-solve-polynomial-quartform-from.fpcore": {
+ "rewriting_programs/herbie-haskell-056-diagrams-solve-polynomial-quartform-from.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (/ y -8/3) x)",
@@ -2771,7 +2771,7 @@
    "seconds": 0.4383118152618408
   }
  },
- "rewriting_cores/herbie-haskell-057-diagrams-solve-polynomial-quartform-from.fpcore": {
+ "rewriting_programs/herbie-haskell-057-diagrams-solve-polynomial-quartform-from.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (+ (/ (* y z) -2) (/ x 8)) t)",
@@ -2851,7 +2851,7 @@
    "seconds": 1.2217447757720947
   }
  },
- "rewriting_cores/herbie-haskell-059-diagrams-solve-polynomial-quartform-from.fpcore": {
+ "rewriting_programs/herbie-haskell-059-diagrams-solve-polynomial-quartform-from.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (/ (* x y) 2) (/ z -8))",
@@ -2931,7 +2931,7 @@
    "seconds": 1.0871424674987793
   }
  },
- "rewriting_cores/herbie-haskell-071-main-bigenough3-from-c.fpcore": {
+ "rewriting_programs/herbie-haskell-071-main-bigenough3-from-c.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (- (sqrt x)) (sqrt (+ 1 x)))",
@@ -3011,7 +3011,7 @@
    "seconds": 0.1653120517730713
   }
  },
- "rewriting_cores/herbie-haskell-086-linear-matrix-det44-from-linear-1-19-1-3.fpcore": {
+ "rewriting_programs/herbie-haskell-086-linear-matrix-det44-from-linear-1-19-1-3.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (+ (+ (+ (+ (* (+ (* (- a) b) (* c i)) (+ (* (- x) y) (* t z))) (* (+ (* (- a) y1) (* c y0)) (+ (* (- y3) z) (* x y2)))) (* (+ (* (- b) y0) (* i y1)) (+ (* (- k) z) (* j x)))) (* (+ (* (- a) y5) (* c y4)) (+ (* (- t) y2) (* y y3)))) (* (+ (* (- b) y4) (* i y5)) (+ (* (- j) t) (* k y)))) (* (+ (* (- j) y3) (* k y2)) (+ (* (- y0) y5) (* y1 y4))))",
@@ -3089,7 +3089,7 @@
    "seconds": 3.2684359550476074
   }
  },
- "rewriting_cores/herbie-haskell-100-main-z-from.fpcore": {
+ "rewriting_programs/herbie-haskell-100-main-z-from.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (- (+ (+ (+ (- (+ (sqrt x) (sqrt y))) (sqrt (+ 1 x))) (sqrt (+ 1 y))) (sqrt (+ 1 z))) (+ (sqrt z) (sqrt t))) (sqrt (+ 1 t)))",
@@ -3169,7 +3169,7 @@
    "seconds": 2.1459591388702393
   }
  },
- "rewriting_cores/herbie-haskell-111-diagrams-tangent-catparam-from-diagrams-.fpcore": {
+ "rewriting_programs/herbie-haskell-111-diagrams-tangent-catparam-from-diagrams-.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (+ (* (* x x) 9) (* -12 x)) 3)",
@@ -3249,7 +3249,7 @@
    "seconds": 0.4727442264556885
   }
  },
- "rewriting_cores/herbie-haskell-121-graphics-rendering-chart-axis-types-invl.fpcore": {
+ "rewriting_programs/herbie-haskell-121-graphics-rendering-chart-axis-types-invl.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (/ (+ (- t) x) (/ (+ (- a) z) (+ (- z) y))) x)",
@@ -3329,7 +3329,7 @@
    "seconds": 2.0835070610046387
   }
  },
- "rewriting_cores/herbie-haskell-134-system-random-mwc-distributions-standard.fpcore": {
+ "rewriting_programs/herbie-haskell-134-system-random-mwc-distributions-standard.fpcore": {
   "size1": {
    "abs": {
     "program": "(* (+ (* (- x) x) y) -0.5)",
@@ -3409,7 +3409,7 @@
    "seconds": 0.10209798812866211
   }
  },
- "rewriting_cores/herbie-haskell-148-data-number-erf-cinvnormcdf-from-erf-2-0.fpcore": {
+ "rewriting_programs/herbie-haskell-148-data-number-erf-cinvnormcdf-from-erf-2-0.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (/ -2 (+ (/ 2 y) x)) x)",
@@ -3489,7 +3489,7 @@
    "seconds": 0.7747790813446045
   }
  },
- "rewriting_cores/herbie-haskell-161-development-shake-progress-decay-from-sh.fpcore": {
+ "rewriting_programs/herbie-haskell-161-development-shake-progress-decay-from-sh.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (+ (* (+ (- a) t) z) (* x y)) (+ (* (+ (- y) b) z) y))",
@@ -3569,7 +3569,7 @@
    "seconds": 1.6579108238220215
   }
  },
- "rewriting_cores/herbie-haskell-163-diagrams-backend-rasterific-crender-from.fpcore": {
+ "rewriting_programs/herbie-haskell-163-diagrams-backend-rasterific-crender-from.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (* x (- y z)) z)",
@@ -3649,7 +3649,7 @@
    "seconds": 0.17110729217529297
   }
  },
- "rewriting_cores/herbie-haskell-166-graphics-rendering-chart-axis-types-hbuf.fpcore": {
+ "rewriting_programs/herbie-haskell-166-graphics-rendering-chart-axis-types-hbuf.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (/ y -2) (* 1.5 x))",
@@ -3729,7 +3729,7 @@
    "seconds": 0.6406650543212891
   }
  },
- "rewriting_cores/herbie-haskell-167-graphics-rendering-chart-axis-types-linm.fpcore": {
+ "rewriting_programs/herbie-haskell-167-graphics-rendering-chart-axis-types-linm.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (/ (+ (- t) z) (/ (+ (- a) t) (+ (- y) x))) x)",
@@ -3809,7 +3809,7 @@
    "seconds": 1.9770381450653076
   }
  },
- "rewriting_cores/herbie-haskell-176-ai-clustering-hierarchical-internal-ward.fpcore": {
+ "rewriting_programs/herbie-haskell-176-ai-clustering-hierarchical-internal-ward.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (+ (+ (* (+ t y) a) (* (+ x y) z)) (* (- b) y)) (+ (+ t x) y))",
@@ -3889,7 +3889,7 @@
    "seconds": 2.295560121536255
   }
  },
- "rewriting_cores/herbie-haskell-178-numeric-specfunctions-inverfc-from-math-.fpcore": {
+ "rewriting_programs/herbie-haskell-178-numeric-specfunctions-inverfc-from-math-.fpcore": {
   "size1": {
    "abs": {
     "program": "(* (+ (/ (+ (* -0.27061 x) -2.30753) (+ (* (+ (* 0.04481 x) 0.99229) x) 1)) x) -0.70711)",
@@ -3969,7 +3969,7 @@
    "seconds": 2.39241099357605
   }
  },
- "rewriting_cores/herbie-haskell-181-numeric-specfunctions-loggamma-from-math.fpcore": {
+ "rewriting_programs/herbie-haskell-181-numeric-specfunctions-loggamma-from-math.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (+ -2 x) (/ (+ (* (+ (* (+ (* (+ 43.3400022514 x) x) 263.505074721) x) 313.399215894) x) 47.066876606) (+ (* (+ (* (+ (* (+ (* 4.16438922228 x) 78.6994924154) x) 137.519416416) x) y) x) z)))",
@@ -4049,7 +4049,7 @@
    "seconds": 2.0165841579437256
   }
  },
- "rewriting_cores/herbie-haskell-182-numeric-specfunctions-loggamma-from-math.fpcore": {
+ "rewriting_programs/herbie-haskell-182-numeric-specfunctions-loggamma-from-math.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (/ (+ (* (+ (* (+ (* (+ (* 3.13060547623 z) 11.1667541262) z) t) z) a) z) b) (/ (+ (* (+ (* (+ (* (+ 15.234687407 z) z) 31.4690115749) z) 11.9400905721) z) 0.607771387771) y)) x)",
@@ -4129,7 +4129,7 @@
    "seconds": 5.541049957275391
   }
  },
- "rewriting_cores/herbie-haskell-194-numeric-specfunctions-invincompletegamma.fpcore": {
+ "rewriting_programs/herbie-haskell-194-numeric-specfunctions-invincompletegamma.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (* (+ (* -0.12 x) -0.253) x) 1)",
@@ -4209,7 +4209,7 @@
    "seconds": 0.29622411727905273
   }
  },
- "rewriting_cores/herbie-haskell-196-numeric-specfunctions-invincompletegamma.fpcore": {
+ "rewriting_programs/herbie-haskell-196-numeric-specfunctions-invincompletegamma.fpcore": {
   "size1": {
    "abs": {
     "program": "(- (/ (+ (* -0.27061 x) -2.30753) (+ (* (+ (* -0.04481 x) -0.99229) x) -1)) x)",
@@ -4289,7 +4289,7 @@
    "seconds": 2.2774112224578857
   }
  },
- "rewriting_cores/herbie-haskell-197-numeric-specfunctions-invincompletegamma.fpcore": {
+ "rewriting_programs/herbie-haskell-197-numeric-specfunctions-invincompletegamma.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (+ (/ (/ y -3) (sqrt x)) (/ -1/9 x)) 1)",
@@ -4369,7 +4369,7 @@
    "seconds": 1.6634840965270996
   }
  },
- "rewriting_cores/herbie-haskell-198-numeric-specfunctions-incompletebetaappr.fpcore": {
+ "rewriting_programs/herbie-haskell-198-numeric-specfunctions-incompletebetaappr.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (/ (/ (* x y) (+ (+ 1 x) y)) (+ x y)) (+ x y))",
@@ -4449,7 +4449,7 @@
    "seconds": 2.1276450157165527
   }
  },
- "rewriting_cores/herbie-haskell-203-numeric-specfunctions-invincompletebetaw.fpcore": {
+ "rewriting_programs/herbie-haskell-203-numeric-specfunctions-invincompletebetaw.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (/ (+ (* -0.27061 x) -2.30753) (+ (* (+ (* 0.04481 x) 0.99229) x) 1)) x)",
@@ -4529,7 +4529,7 @@
    "seconds": 2.1273820400238037
   }
  },
- "rewriting_cores/herbie-haskell-207-numeric-specfunctions-invincompletebetaw.fpcore": {
+ "rewriting_programs/herbie-haskell-207-numeric-specfunctions-invincompletebetaw.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (/ (* x x) 6) -0.5)",
@@ -4609,7 +4609,7 @@
    "seconds": 0.3932340145111084
   }
  },
- "rewriting_cores/herbie-haskell-210-numeric-specfunctions-loggamma-from-math.fpcore": {
+ "rewriting_programs/herbie-haskell-210-numeric-specfunctions-loggamma-from-math.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (+ (* (+ (* (+ (* (+ (* x y) z) y) 27464.7644705) y) 230661.510616) y) t) (+ (* (+ (* (+ (* (+ a y) y) b) y) c) y) i))",
@@ -4689,7 +4689,7 @@
    "seconds": 2.0576698780059814
   }
  },
- "rewriting_cores/herbie-haskell-235-data-random-dice-roll-from-dice-0-1.fpcore": {
+ "rewriting_programs/herbie-haskell-235-data-random-dice-roll-from-dice-0-1.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (* x x) -1)",
@@ -4769,7 +4769,7 @@
    "seconds": 0.20966196060180664
   }
  },
- "rewriting_cores/herbie-haskell-238-hakyll-web-tags-rendertagcloud-from-haky.fpcore": {
+ "rewriting_programs/herbie-haskell-238-hakyll-web-tags-rendertagcloud-from-haky.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (/ (+ (- a) x) (/ (+ (+ (- t) -1) z) (+ (- z) y))) x)",
@@ -4849,7 +4849,7 @@
    "seconds": 1.7789323329925537
   }
  },
- "rewriting_cores/herbie-haskell-241-numeric-signal-interpolate-from-hsignal-.fpcore": {
+ "rewriting_programs/herbie-haskell-241-numeric-signal-interpolate-from-hsignal-.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (/ (+ (- x) t) (/ (+ (- a) z) (+ (- y) z))) x)",
@@ -4929,7 +4929,7 @@
    "seconds": 1.0749080181121826
   }
  },
- "rewriting_cores/herbie-haskell-257-graphics-rendering-plot-render-plot-axis.fpcore": {
+ "rewriting_programs/herbie-haskell-257-graphics-rendering-plot-render-plot-axis.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (/ (+ (- t) z) (/ (+ (- t) a) y)) x)",
@@ -5009,7 +5009,7 @@
    "seconds": 1.0549991130828857
   }
  },
- "rewriting_cores/herbie-haskell-258-graphics-rendering-plot-render-plot-axis.fpcore": {
+ "rewriting_programs/herbie-haskell-258-graphics-rendering-plot-render-plot-axis.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (/ (+ (- y) z) (/ (+ (- a) z) t)) x)",
@@ -5089,7 +5089,7 @@
    "seconds": 1.4208829402923584
   }
  },
- "rewriting_cores/herbie-haskell-261-graphics-rendering-plot-render-plot-axis.fpcore": {
+ "rewriting_programs/herbie-haskell-261-graphics-rendering-plot-render-plot-axis.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (/ (+ (- t) z) (/ (+ (- t) a) y)) x)",
@@ -5169,7 +5169,7 @@
    "seconds": 1.3702211380004883
   }
  },
- "rewriting_cores/herbie-libraries-basilisk-018-drag-accel-mag.fpcore": {
+ "rewriting_programs/herbie-libraries-basilisk-018-drag-accel-mag.fpcore": {
   "size1": {
    "abs": {
     "program": "(* (/ -500 (/ (/ (/ m A) Cd) density)) (* v v))",
@@ -5249,7 +5249,7 @@
    "seconds": 1.357210397720337
   }
  },
- "rewriting_cores/herbie-libraries-coolprop-007-b-delta2.fpcore": {
+ "rewriting_programs/herbie-libraries-coolprop-007-b-delta2.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (- (* (+ (* delta du_ddelta) di) (+ (* delta du_ddelta) di)) di) (* (* d2u_ddelta2 delta) delta))",
@@ -5329,7 +5329,7 @@
    "seconds": 0.816551685333252
   }
  },
- "rewriting_cores/herbie-libraries-coolprop-008-b-tau3.fpcore": {
+ "rewriting_programs/herbie-libraries-coolprop-008-b-tau3.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (* (+ (+ (* du_dtau tau) -2) ti) (+ (+ (- ti) (* (+ (* du_dtau tau) ti) (+ (* du_dtau tau) ti))) (* (* d2u_dtau2 tau) tau))) (* (+ (* (+ (+ (* d3u_dtau3 tau) d2u_dtau2) d2u_dtau2) tau) (* (+ (* d2u_dtau2 tau) du_dtau) (* (+ (* du_dtau tau) ti) 2))) tau))",
@@ -5409,7 +5409,7 @@
    "seconds": 2.6501569747924805
   }
  },
- "rewriting_cores/herbie-libraries-coolprop-013-d2psi-ddelta2-over-psi.fpcore": {
+ "rewriting_programs/herbie-libraries-coolprop-013-d2psi-ddelta2-over-psi.fpcore": {
   "size1": {
    "abs": {
     "program": "(* (* (+ (+ (* (* (+ -2 delta) delta) Ci) Ci) -0.5) 4) Ci)",
@@ -5487,7 +5487,7 @@
    "seconds": 1.2627739906311035
   }
  },
- "rewriting_cores/herbie-libraries-fast-math-007-fastmath-test5.fpcore": {
+ "rewriting_programs/herbie-libraries-fast-math-007-fastmath-test5.fpcore": {
   "size1": {
    "abs": {
     "program": "(* (* (* (* (* (* (* (* (* d1 d1) d1) d1) d1) d1) d1) d1) d1) d1)",
@@ -5567,7 +5567,7 @@
    "seconds": 0.0673367977142334
   }
  },
- "rewriting_cores/herbie-libraries-jmatjs-004-jmat-real-dawson.fpcore": {
+ "rewriting_programs/herbie-libraries-jmatjs-004-jmat-real-dawson.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (+ (+ (* (* (* (* (* (* (* (* x x) x) x) x) x) x) x) (+ (* (* x x) 0.0001789971) 0.0005064034)) 1) (* (* x x) (+ 0.1049934947 (* (* x x) (+ 0.0424060604 (* (* x x) 0.0072644182)))))) (/ (+ (+ (* (+ (* (* 0.2909738639 x) x) 0.7715471019) (* x x)) 1) (* (* x x) (+ (* (* (* (* x x) x) x) (+ 0.0694555761 (* (* x x) 0.0140005442))) (* (* (* (* (* (* (* (* x x) x) x) x) x) x) x) (+ 0.0008327945 (* (* x x) 0.0003579942)))))) x))",
@@ -5647,7 +5647,7 @@
    "seconds": 10.479052066802979
   }
  },
- "rewriting_cores/herbie-libraries-octave-collocwt-000-octave-3-8-jcobi-1.fpcore": {
+ "rewriting_programs/herbie-libraries-octave-collocwt-000-octave-3-8-jcobi-1.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (+ (+ 2 beta) beta) (+ (/ (+ alpha beta) 0.5) 4))",
@@ -5723,7 +5723,7 @@
    "seconds": 0.6389670372009277
   }
  },
- "rewriting_cores/herbie-libraries-octave-collocwt-001-octave-3-8-jcobi-2.fpcore": {
+ "rewriting_programs/herbie-libraries-octave-collocwt-001-octave-3-8-jcobi-2.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (/ (/ (+ (- alpha) beta) (+ 1 (/ (+ (+ 2 i) i) (+ alpha beta)))) (/ (+ (+ (+ alpha beta) i) i) 0.5)) 0.5)",
@@ -5797,7 +5797,7 @@
    "seconds": 1.0876941680908203
   }
  },
- "rewriting_cores/herbie-libraries-octave-collocwt-003-octave-3-8-jcobi-4.fpcore": {
+ "rewriting_programs/herbie-libraries-octave-collocwt-003-octave-3-8-jcobi-4.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (/ (+ (* (+ (+ alpha beta) i) i) (* alpha beta)) (+ (+ (+ alpha beta) i) i)) (* (/ (+ 2 (/ (+ alpha beta) i)) (+ (+ alpha beta) i)) (+ (* (+ (+ (+ alpha beta) i) i) (+ (+ (+ alpha beta) i) i)) -1)))",
@@ -5877,7 +5877,7 @@
    "seconds": 4.01272177696228
   }
  },
- "rewriting_cores/herbie-mathematics-beta-distribution-000-a-parameter-of-renormalized-beta-distrib.fpcore": {
+ "rewriting_programs/herbie-mathematics-beta-distribution-000-a-parameter-of-renormalized-beta-distrib.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (* (+ (* (+ -1 m) m) v) (- m)) v)",
@@ -5951,7 +5951,7 @@
    "seconds": 0.5497457981109619
   }
  },
- "rewriting_cores/herbie-mathematics-beta-distribution-001-b-parameter-of-renormalized-beta-distrib.fpcore": {
+ "rewriting_programs/herbie-mathematics-beta-distribution-001-b-parameter-of-renormalized-beta-distrib.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (* (+ (* (+ -1 m) m) v) (+ -1 m)) v)",
@@ -6025,7 +6025,7 @@
    "seconds": 0.8154470920562744
   }
  },
- "rewriting_cores/herbie-mathematics-excel-000-x0-1-x1-x0.fpcore": {
+ "rewriting_programs/herbie-mathematics-excel-000-x0-1-x1-x0.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (* (- x0) x1) (+ -1 x1))",
@@ -6105,7 +6105,7 @@
    "seconds": 0.8410491943359375
   }
  },
- "rewriting_cores/herbie-mathematics-gui-010-abcf-ab-angle-b.fpcore": {
+ "rewriting_programs/herbie-mathematics-gui-010-abcf-ab-angle-b.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (- (sqrt (* (+ (+ (- (sqrt (+ (* (+ (- A) C) (+ (- A) C)) (* B B)))) A) C) (* (+ (* (+ B B) B) (* (* A C) -8)) F)))) (+ (* (* -4 A) C) (* B B)))",
@@ -6185,7 +6185,7 @@
    "seconds": 2.130808115005493
   }
  },
- "rewriting_cores/herbie-mathematics-sarnoff-000-quadratic-roots-full-range.fpcore": {
+ "rewriting_programs/herbie-mathematics-sarnoff-000-quadratic-roots-full-range.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (+ (- (sqrt (+ (* (* -4 a) c) (* b b)))) b) (/ a -0.5))",
@@ -6265,7 +6265,7 @@
    "seconds": 0.9154999256134033
   }
  },
- "rewriting_cores/herbie-mathematics-sarnoff-004-cubic-critical.fpcore": {
+ "rewriting_programs/herbie-mathematics-sarnoff-004-cubic-critical.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (+ (- (sqrt (+ (* (* -3 a) c) (* b b)))) b) (* -3 a))",
@@ -6345,7 +6345,7 @@
    "seconds": 0.9059140682220459
   }
  },
- "rewriting_cores/herbie-numerics-conte-004-ena-section-1-4-exercise-4b-n-2.fpcore": {
+ "rewriting_programs/herbie-numerics-conte-004-ena-section-1-4-exercise-4b-n-2.fpcore": {
   "size1": {
    "abs": {
     "program": "(* (+ (+ eps x) x) eps)",
@@ -6423,7 +6423,7 @@
    "seconds": 0.24561381340026855
   }
  },
- "rewriting_cores/herbie-numerics-conte-005-ena-section-1-4-exercise-4b-n-5.fpcore": {
+ "rewriting_programs/herbie-numerics-conte-005-ena-section-1-4-exercise-4b-n-5.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (* (+ eps x) (* (+ eps x) (* (+ eps x) (* (+ eps x) (+ eps x))))) (* (* (* (* (- x) x) x) x) x))",
@@ -6501,7 +6501,7 @@
    "seconds": 0.4192662239074707
   }
  },
- "rewriting_cores/herbie-numerics-every-cs-008-complex-division-imag-part.fpcore": {
+ "rewriting_programs/herbie-numerics-every-cs-008-complex-division-imag-part.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (+ (* (- a) d) (* b c)) (+ (* c c) (* d d)))",
@@ -6581,7 +6581,7 @@
    "seconds": 0.8571603298187256
   }
  },
- "rewriting_cores/herbie-numerics-fma-000-fma-test1.fpcore": {
+ "rewriting_programs/herbie-numerics-fma-000-fma-test1.fpcore": {
   "size1": {
    "abs": {
     "program": "(* (* 4e-32 t) t)",
@@ -6661,7 +6661,7 @@
    "seconds": 1.7281692028045654
   }
  },
- "rewriting_cores/herbie-numerics-fma-001-fma-test2.fpcore": {
+ "rewriting_programs/herbie-numerics-fma-001-fma-test2.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (* 170000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 t) -170000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)",
@@ -6735,7 +6735,7 @@
    "seconds": 0.10725855827331543
   }
  },
- "rewriting_cores/herbie-numerics-great-debate-002-kahan-p9-example.fpcore": {
+ "rewriting_programs/herbie-numerics-great-debate-002-kahan-p9-example.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (+ (* (- y) y) (* x x)) (+ (* x x) (* y y)))",
@@ -6809,7 +6809,7 @@
    "seconds": 0.21255111694335938
   }
  },
- "rewriting_cores/herbie-numerics-martel-006-expression-p6.fpcore": {
+ "rewriting_programs/herbie-numerics-martel-006-expression-p6.fpcore": {
   "size1": {
    "abs": {
     "program": "(* (+ (+ (+ a b) c) d) 2)",
@@ -6889,7 +6889,7 @@
    "seconds": 0.3554267883300781
   }
  },
- "rewriting_cores/herbie-numerics-rosa-000-rosa-s-dopplerbench.fpcore": {
+ "rewriting_programs/herbie-numerics-rosa-000-rosa-s-dopplerbench.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (/ (* (- t1) v) (+ t1 u)) (+ t1 u))",
@@ -6969,7 +6969,7 @@
    "seconds": 0.911344051361084
   }
  },
- "rewriting_cores/herbie-numerics-rosa-002-rosa-s-floatvsdoublebenchmark.fpcore": {
+ "rewriting_programs/herbie-numerics-rosa-002-rosa-s-floatvsdoublebenchmark.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (+ (+ (/ (* (+ (+ (+ (* (* -3 x1) x1) x1) x2) x2) -3) (+ (* x1 x1) 1)) (/ (* (+ (+ (- (* (* 3 x1) x1) x1) x2) x2) (* 3 x1)) (+ (/ 1 x1) x1))) (* (+ (* x1 x1) 1) (+ (+ (* (/ (+ (+ (- (* (* 3 x1) x1) x1) x2) x2) (+ (* x1 x1) 1)) (+ (/ (* (+ -3 (+ (+ (- x1) x2) x2)) (+ x1 x1)) (+ (* x1 x1) 1)) (* (* 4 x1) x1))) (* (* -6 x1) x1)) x1))) x1)",
@@ -7049,7 +7049,7 @@
    "seconds": 3.299360990524292
   }
  },
- "rewriting_cores/herbie-numerics-rump-000-rump-s-expression-from-stadtherr-s-award.fpcore": {
+ "rewriting_programs/herbie-numerics-rump-000-rump-s-expression-from-stadtherr-s-award.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (* (* (* (* (* (* y y) y) y) y) y) (+ (* (* 5.5 y) y) 333.75)) (* (- x) (+ (/ -0.5 y) (* (+ (* (* y y) (+ (* (* x x) -11) (* (* y y) (+ (* y y) 121)))) 2) x))))",
@@ -7129,7 +7129,7 @@
    "seconds": 4.242117166519165
   }
  },
- "rewriting_cores/herbie-numerics-rump-001-from-rump-in-a-1983-paper.fpcore": {
+ "rewriting_programs/herbie-numerics-rump-001-from-rump-in-a-1983-paper.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (* (+ (* (- y) y) 2) (* y y)) (* (* (* (* 9 x) x) x) x))",
@@ -7209,7 +7209,7 @@
    "seconds": 0.42865705490112305
   }
  },
- "rewriting_cores/herbie-numerics-rump-002-from-rump-in-a-1983-paper-rewritten.fpcore": {
+ "rewriting_programs/herbie-numerics-rump-002-from-rump-in-a-1983-paper-rewritten.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (* (+ (* (- y) y) 2) (* y y)) (* (* (* (* 9 x) x) x) x))",
@@ -7289,7 +7289,7 @@
    "seconds": 0.6581852436065674
   }
  },
- "rewriting_cores/herbie-physics-kalman-001-kalman-filter-per-x.fpcore": {
+ "rewriting_programs/herbie-physics-kalman-001-kalman-filter-per-x.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (+ (+ (/ (- (+ (+ (/ (* (* dt dt) x2) 2) x0) x1) sensor) (+ (/ r (+ (+ (* (* (* (* dt dt) dt) dt) -0.5) (* (* -10 dt) dt)) -25)) -1)) (/ (* (* dt dt) x2) 2)) x1) x0)",
@@ -7367,7 +7367,7 @@
    "seconds": 2.9020566940307617
   }
  },
- "rewriting_cores/herbie-physics-kalman-002-kalman-filter-per-p.fpcore": {
+ "rewriting_programs/herbie-physics-kalman-002-kalman-filter-per-p.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ r (+ (/ r (+ (+ (* (* 10 dt) dt) (* 2 (* (* (* (* dt dt) dt) 0.25) dt))) 25)) 1))",
@@ -7445,7 +7445,7 @@
    "seconds": 1.9688239097595215
   }
  },
- "rewriting_cores/herbie-physics-superfluidity-breakdown-003-toniolo-and-linder-equation-7.fpcore": {
+ "rewriting_programs/herbie-physics-superfluidity-breakdown-003-toniolo-and-linder-equation-7.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ t (sqrt (/ (+ (/ (+ (* (+ t t) t) (* l l)) (/ (+ (- x) 1) (+ 1 x))) (* l l)) -2)))",
@@ -7525,7 +7525,7 @@
    "seconds": 2.1380112171173096
   }
  },
- "rewriting_cores/herbie-physics-superfluidity-breakdown-006-toniolo-and-linder-equation-13.fpcore": {
+ "rewriting_programs/herbie-physics-superfluidity-breakdown-006-toniolo-and-linder-equation-13.fpcore": {
   "size1": {
    "abs": {
     "program": "(sqrt (* (+ (* (/ (/ (* l l) Om) Om) (+ (* (+ (- U) U*) n) (* Om -2))) t) (* (+ U U) n)))",
@@ -7605,7 +7605,7 @@
    "seconds": 14.598627090454102
   }
  },
- "rewriting_cores/herbie-physics-tea-whistle-003-henrywood-and-agarwal-equation-13.fpcore": {
+ "rewriting_programs/herbie-physics-tea-whistle-003-henrywood-and-agarwal-equation-13.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (+ (/ (/ (/ (/ (* (* c0 d) d) D) D) h) w) (sqrt (+ (/ (/ (/ (/ (/ (/ (/ (/ (* (* c0 d) d) D) D) h) w) h) w) D) (/ (/ (/ D d) d) c0)) (* (- M) M)))) (/ (+ w w) c0))",
@@ -7683,7 +7683,7 @@
    "seconds": 121.62289500236511
   }
  },
- "rewriting_cores/herbie-physics-universal-linear-optics-000-bouland-and-aaronson-equation-24.fpcore": {
+ "rewriting_programs/herbie-physics-universal-linear-optics-000-bouland-and-aaronson-equation-24.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (+ (* (+ (* (+ (* (- a) a) a) a) (* (+ 3 a) (* b b))) 4) (* (+ (* a a) (* b b)) (+ (* a a) (* b b)))) -1)",
@@ -7763,7 +7763,7 @@
    "seconds": 1.8855650424957275
   }
  },
- "rewriting_cores/herbie-physics-universal-linear-optics-001-bouland-and-aaronson-equation-25.fpcore": {
+ "rewriting_programs/herbie-physics-universal-linear-optics-001-bouland-and-aaronson-equation-25.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (+ (* (+ (* (+ (+ (* a a) a) (* (* -3 b) b)) a) (* b b)) 4) (* (+ (* a a) (* b b)) (+ (* a a) (* b b)))) -1)",
@@ -7843,7 +7843,7 @@
    "seconds": 1.2794098854064941
   }
  },
- "rewriting_cores/herbie-proj-omerc-001-forward-half-diff.fpcore": {
+ "rewriting_programs/herbie-proj-omerc-001-forward-half-diff.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (/ -0.5 W) (/ W 2))",
@@ -7923,7 +7923,7 @@
    "seconds": 0.5069429874420166
   }
  },
- "rewriting_cores/herbie-proj-som-015-setup-w.fpcore": {
+ "rewriting_programs/herbie-proj-som-015-setup-w.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (* (+ (* (* (* (* ca ca) es) (+ (* (* ca ca) es) -2)) rone_es) rone_es) rone_es) -1)",
@@ -8003,7 +8003,7 @@
    "seconds": 0.9254019260406494
   }
  },
- "rewriting_cores/herbie-proj-som-016-setup-t.fpcore": {
+ "rewriting_programs/herbie-proj-som-016-setup-t.fpcore": {
   "size1": {
    "abs": {
     "program": "(* (+ (- es) 2) (* (* (* (* es sa) rone_es) sa) rone_es))",
@@ -8081,7 +8081,7 @@
    "seconds": 0.42088913917541504
   }
  },
- "rewriting_cores/herbie-regression-000-xlohi-overflows.fpcore": {
+ "rewriting_programs/herbie-regression-000-xlohi-overflows.fpcore": {
   "size1": {
    "abs": {
     "program": "(/ (+ (- lo) x) (+ (- lo) hi))",
@@ -8161,7 +8161,7 @@
    "seconds": 0.4720127582550049
   }
  },
- "rewriting_cores/herbie-regression-015-bug333-missed-optimization.fpcore": {
+ "rewriting_programs/herbie-regression-015-bug333-missed-optimization.fpcore": {
   "size1": {
    "abs": {
     "program": "(+ (- (sqrt (+ (- x) 1))) (sqrt (+ 1 x)))",
@@ -8235,7 +8235,7 @@
    "seconds": 0.06826186180114746
   }
  },
- "rewriting_cores/herbie-tutorial-002-commute-and-associate.fpcore": {
+ "rewriting_programs/herbie-tutorial-002-commute-and-associate.fpcore": {
   "size1": {
    "abs": {
     "program": "0",

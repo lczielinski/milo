@@ -1,0 +1,8 @@
+(FPCore (x)
+  :name "Data.Random.Dice:roll from dice-0.1"
+  :milo-source "herbie:haskell.fpcore:235"
+  :milo-domain "widened"
+  :milo-widened "x"
+  :precision binary64
+  :pre (and (<= -2 x 2))
+  (- (* x x) 1))

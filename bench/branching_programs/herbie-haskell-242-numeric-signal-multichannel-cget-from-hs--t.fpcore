@@ -1,0 +1,8 @@
+(FPCore (x y z t)
+  :name "Numeric.Signal.Multichannel:$cget from hsignal-0.2.7.1"
+  :milo-source "herbie:haskell.fpcore:242"
+  :milo-domain "widened"
+  :milo-widened "t"
+  :precision binary64
+  :pre (and (<= 1 x 2) (<= 4 y 8) (<= 16 z 32) (<= -128 t 128))
+  (+ (* (/ x y) (- z t)) t))

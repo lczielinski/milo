@@ -1,0 +1,6 @@
+(FPCore (x1 x2)
+  :name "Householder beta = 2 v1^2 / (x2^2 + v1^2)"
+  :milo-source "Golub and Van Loan, Matrix Computations, Algorithm 5.1.1 (house)"
+  :pre (and (<= -10 x1 10) (<= 0.1 x2 1))
+  (/ (* 2 (* (- x1 (sqrt (+ (* x1 x1) (* x2 x2)))) (- x1 (sqrt (+ (* x1 x1) (* x2 x2))))))
+     (+ (* x2 x2) (* (- x1 (sqrt (+ (* x1 x1) (* x2 x2)))) (- x1 (sqrt (+ (* x1 x1) (* x2 x2))))))))

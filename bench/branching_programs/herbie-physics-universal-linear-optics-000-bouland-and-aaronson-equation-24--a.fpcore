@@ -1,0 +1,8 @@
+(FPCore (a b)
+  :name "Bouland and Aaronson, Equation (24)"
+  :milo-source "herbie:physics/universal-linear-optics.fpcore:0"
+  :milo-domain "widened"
+  :milo-widened "a"
+  :precision binary64
+  :pre (and (<= -2 a 2) (<= 4 b 8))
+  (- (+ (* (+ (* a a) (* b b)) (+ (* a a) (* b b))) (* 4 (+ (* (* a a) (- 1 a)) (* (* b b) (+ 3 a))))) 1))

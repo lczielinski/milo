@@ -1,6 +1,0 @@
-(FPCore (vy g h)
-  :name "projectile time of flight from height h"
-  :milo-expected "(> vy 0)"
-  :milo-source "Wikipedia, Projectile motion, time of flight from an initial height"
-  :pre (and (<= -100 vy 100) (<= 9.78 g 9.84) (<= 0.1 h 100))
-  (/ (+ vy (sqrt (+ (* vy vy) (* 2 (* g h))))) g))

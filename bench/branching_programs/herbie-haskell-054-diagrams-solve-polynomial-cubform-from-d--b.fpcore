@@ -1,0 +1,8 @@
+(FPCore (x y z t a b c)
+  :name "Diagrams.Solve.Polynomial:cubForm  from diagrams-solve-0.1, J"
+  :milo-source "herbie:haskell.fpcore:54"
+  :milo-domain "widened"
+  :milo-widened "b"
+  :precision binary64
+  :pre (and (<= 1 x 2) (<= 4 y 8) (<= 16 z 32) (<= 64 t 128) (<= 256 a 512) (<= -2048 b 2048) (<= 4096 c 8192))
+  (/ (+ (- (* (* x 9) y) (* (* (* z 4) t) a)) b) (* z c)))

@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "Numeric.Log:$clog1p from log-domain-0.10.2.1, A"
-  :cx-source "herbie:haskell.fpcore:153"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:153"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8))
   (+ (+ (* x 2) (* x x)) (* y y)))

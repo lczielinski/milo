@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "Cancel like terms"
-  :cx-source "herbie:tutorial.fpcore:0"
-  :cx-box "default"
+  :milo-source "herbie:tutorial.fpcore:0"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2))
   (- (+ 1 x) x))

@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "bug333 (missed optimization)"
-  :cx-source "herbie:regression.fpcore:15"
-  :cx-box "pre"
+  :milo-source "herbie:regression.fpcore:15"
+  :milo-domain "pre"
   :precision binary64
   :pre (and (<= -1 x 1))
   (- (sqrt (+ 1 x)) (sqrt (- 1 x))))

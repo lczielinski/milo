@@ -1,7 +1,7 @@
 (FPCore (x y z)
   :name "Data.Histogram.Bin.BinF:$cfromIndex from histogram-fill-0.8.4.1"
-  :cx-source "herbie:haskell.fpcore:239"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:239"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8) (<= 16 z 32))
   (+ (+ (/ x 2) (* y x)) z))

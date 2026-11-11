@@ -1,7 +1,7 @@
 (FPCore (sin_arg_r cosh_arg_i cos_arg_r sinh_arg_i hr hi)
   :name "clenshaw-final-real"
-  :cx-source "herbie:proj/tmerc.fpcore:12"
-  :cx-box "default"
+  :milo-source "herbie:proj/tmerc.fpcore:12"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 sin_arg_r 2) (<= 4 cosh_arg_i 8) (<= 16 cos_arg_r 32) (<= 64 sinh_arg_i 128) (<= 256 hr 512) (<= 1024 hi 2048))
   (- (* (* sin_arg_r cosh_arg_i) hr) (* (* cos_arg_r sinh_arg_i) hi)))

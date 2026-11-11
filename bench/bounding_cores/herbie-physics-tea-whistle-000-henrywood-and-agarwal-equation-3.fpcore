@@ -1,7 +1,7 @@
 (FPCore (c0 A V l)
   :name "Henrywood and Agarwal, Equation (3)"
-  :cx-source "herbie:physics/tea-whistle.fpcore:0"
-  :cx-box "default"
+  :milo-source "herbie:physics/tea-whistle.fpcore:0"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 c0 2) (<= 4 A 8) (<= 16 V 32) (<= 64 l 128))
   (* c0 (sqrt (/ A (* V l)))))

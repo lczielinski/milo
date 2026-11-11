@@ -1,7 +1,7 @@
 (FPCore (d)
   :name "FastMath test1"
-  :cx-source "herbie:libraries/fast-math.fpcore:1"
-  :cx-box "default"
+  :milo-source "herbie:libraries/fast-math.fpcore:1"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 d 2))
   (+ (* d 10) (* d 20)))

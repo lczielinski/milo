@@ -1,7 +1,7 @@
 (FPCore (re im)
   :name "Complex square root"
-  :cx-source "fpbench:herbie.fpcore:0"
-  :cx-box "default"
+  :milo-source "fpbench:herbie.fpcore:0"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 re 2) (<= 4 im 8))
   (* 0.5 (sqrt (* 2 (+ (sqrt (+ (* re re) (* im im))) re)))))

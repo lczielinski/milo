@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "x_by_xy"
-  :cx-source "fpbench:fptaylor-extra.fpcore:8"
-  :cx-box "pre"
+  :milo-source "fpbench:fptaylor-extra.fpcore:8"
+  :milo-domain "pre"
   :precision binary32
   :pre (and (<= 1 x 4) (<= 1 y 4))
   (/ x (+ x y)))

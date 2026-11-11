@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "Numeric.SpecFunctions:invErfc from math-functions-0.1.5.2, B"
-  :cx-source "herbie:haskell.fpcore:178"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:178"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2))
   (* 0.70711 (- (/ (+ 2.30753 (* x 0.27061)) (+ 1 (* x (+ 0.99229 (* x 0.04481))))) x)))

@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "Data.Octree.Internal:octantDistance  from Octree-0.5.4.2"
-  :cx-source "herbie:haskell.fpcore:123"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:123"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8))
   (sqrt (+ (* x x) (* y y))))

@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "Statistics.Sample:$skurtosis from math-functions-0.1.5.2"
-  :cx-source "herbie:haskell.fpcore:217"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:217"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8))
   (- (/ x (* y y)) 3))

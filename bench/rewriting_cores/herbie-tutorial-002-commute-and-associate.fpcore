@@ -1,7 +1,7 @@
 (FPCore (x y z)
   :name "Commute and associate"
-  :cx-source "herbie:tutorial.fpcore:2"
-  :cx-box "default"
+  :milo-source "herbie:tutorial.fpcore:2"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8) (<= 16 z 32))
   (- (+ (+ x y) z) (+ x (+ y z))))

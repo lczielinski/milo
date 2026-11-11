@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "Numeric.Interval.Internal:scale from intervals-0.7.1, B"
-  :cx-source "herbie:haskell.fpcore:64"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:64"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8))
   (/ (* x y) 2))

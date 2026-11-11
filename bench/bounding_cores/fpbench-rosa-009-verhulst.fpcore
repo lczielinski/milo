@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "verhulst"
-  :cx-source "fpbench:rosa.fpcore:9"
-  :cx-box "pre"
+  :milo-source "fpbench:rosa.fpcore:9"
+  :milo-domain "pre"
   :precision binary64
   :pre (and (<= 0.09999999999999999167332731531132594682276248931884765625 x 0.3000000000000000444089209850062616169452667236328125))
   (/ (* 4 x) (+ 1 (/ x 1.11))))

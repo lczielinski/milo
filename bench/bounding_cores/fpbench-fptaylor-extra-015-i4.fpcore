@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "i4"
-  :cx-source "fpbench:fptaylor-extra.fpcore:15"
-  :cx-box "pre"
+  :milo-source "fpbench:fptaylor-extra.fpcore:15"
+  :milo-domain "pre"
   :precision binary32
   :pre (and (<= 0.09999999999999999167332731531132594682276248931884765625 x 10) (<= -5 y 5))
   (sqrt (+ x (* y y))))

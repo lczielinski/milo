@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "Data.Colour.CIE:lightness from colour-2.3.3"
-  :cx-source "herbie:haskell.fpcore:29"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:29"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2))
   (- (* x 116) 16))

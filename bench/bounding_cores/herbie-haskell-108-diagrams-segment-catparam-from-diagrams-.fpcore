@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "Diagrams.Segment:$catParam from diagrams-lib-1.3.0.3, A"
-  :cx-source "herbie:haskell.fpcore:108"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:108"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8))
   (* (* (* x 3) x) y))

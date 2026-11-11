@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "Numeric.SpecFunctions:incompleteBetaApprox from math-functions-0.1.5.2, A"
-  :cx-source "herbie:haskell.fpcore:198"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:198"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8))
   (/ (* x y) (* (* (+ x y) (+ x y)) (+ (+ x y) 1))))

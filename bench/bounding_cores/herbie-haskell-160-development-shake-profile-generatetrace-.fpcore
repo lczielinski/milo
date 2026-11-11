@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "Development.Shake.Profile:generateTrace from shake-0.15.5"
-  :cx-source "herbie:haskell.fpcore:160"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:160"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2))
   (* 1000000 (- x x)))

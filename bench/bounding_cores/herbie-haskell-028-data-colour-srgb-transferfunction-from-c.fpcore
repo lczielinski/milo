@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "Data.Colour.SRGB:transferFunction from colour-2.3.3"
-  :cx-source "herbie:haskell.fpcore:28"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:28"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8))
   (- (* (+ x 1) y) x))

@@ -1,7 +1,7 @@
 (FPCore (x y z)
   :name "Data.Colour.RGBSpace.HSV:hsv from colour-2.3.3, J"
-  :cx-source "herbie:haskell.fpcore:26"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:26"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8) (<= 16 z 32))
   (* x (- 1 (* (- 1 y) z))))

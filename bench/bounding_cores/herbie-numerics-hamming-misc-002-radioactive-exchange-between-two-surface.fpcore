@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "Radioactive exchange between two surfaces"
-  :cx-source "herbie:numerics/hamming-misc.fpcore:2"
-  :cx-box "default"
+  :milo-source "herbie:numerics/hamming-misc.fpcore:2"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8))
   (- (* (* (* x x) x) x) (* (* (* y y) y) y)))

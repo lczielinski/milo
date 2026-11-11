@@ -1,7 +1,7 @@
 (FPCore (A B C F)
   :name "ABCF->ab-angle b"
-  :cx-source "herbie:mathematics/gui.fpcore:10"
-  :cx-box "default"
+  :milo-source "herbie:mathematics/gui.fpcore:10"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= -2 A -1) (<= 4 B 8) (<= 16 C 32) (<= -128 F -64))
   (/ (- (sqrt (* (* 2 (* (- (* B B) (* (* 4 A) C)) F)) (- (+ A C) (sqrt (+ (* (- A C) (- A C)) (* B B))))))) (- (* B B) (* (* 4 A) C))))

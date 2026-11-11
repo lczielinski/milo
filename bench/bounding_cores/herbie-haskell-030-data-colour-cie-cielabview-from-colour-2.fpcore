@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "Data.Colour.CIE:cieLABView from colour-2.3.3, A"
-  :cx-source "herbie:haskell.fpcore:30"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:30"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2))
   (+ (* (/ 841 108) x) (/ 4 29)))

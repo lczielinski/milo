@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "Main:i from "
-  :cx-source "herbie:haskell.fpcore:99"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:99"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2))
   (+ (+ (+ (+ x x) x) x) x))

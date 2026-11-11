@@ -1,7 +1,7 @@
 (FPCore (x l t)
   :name "Toniolo and Linder, Equation (7)"
-  :cx-source "herbie:physics/superfluidity-breakdown.fpcore:3"
-  :cx-box "default"
+  :milo-source "herbie:physics/superfluidity-breakdown.fpcore:3"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 16 x 32) (<= 4 l 8) (<= 1 t 2))
   (/ (* (sqrt 2) t) (sqrt (- (* (/ (+ x 1) (- x 1)) (+ (* l l) (* 2 (* t t)))) (* l l)))))

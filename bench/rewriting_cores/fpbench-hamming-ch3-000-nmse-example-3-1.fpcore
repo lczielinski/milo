@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "NMSE example 3.1"
-  :cx-source "fpbench:hamming-ch3.fpcore:0"
-  :cx-box "pre"
+  :milo-source "fpbench:hamming-ch3.fpcore:0"
+  :milo-domain "pre"
   :precision binary64
   :pre (and (<= 0 x 2))
   (- (sqrt (+ x 1)) (sqrt x)))

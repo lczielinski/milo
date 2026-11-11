@@ -1,7 +1,7 @@
 (FPCore (x y z t)
   :name "Graphics.Rendering.Chart.Plot.AreaSpots:renderAreaSpots4D from Chart-1.5.3"
-  :cx-source "herbie:haskell.fpcore:170"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:170"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8) (<= 16 z 32) (<= 64 t 128))
   (/ (* x (- y z)) (- t z)))

@@ -1,7 +1,7 @@
 (FPCore (x1 x2)
   :name "himmilbeau"
-  :cx-source "fpbench:fptaylor-extra.fpcore:17"
-  :cx-box "pre"
+  :milo-source "fpbench:fptaylor-extra.fpcore:17"
+  :milo-domain "pre"
   :precision binary64
   :pre (and (<= -5 x1 5) (<= -5 x2 5))
   (+ (* (- (+ (* x1 x1) x2) 11) (- (+ (* x1 x1) x2) 11)) (* (- (+ x1 (* x2 x2)) 7) (- (+ x1 (* x2 x2)) 7))))

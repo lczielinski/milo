@@ -1,7 +1,7 @@
 (FPCore (a b)
   :name "Bouland and Aaronson, Equation (24)"
-  :cx-source "herbie:physics/universal-linear-optics.fpcore:0"
-  :cx-box "default"
+  :milo-source "herbie:physics/universal-linear-optics.fpcore:0"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 a 2) (<= 4 b 8))
   (- (+ (* (+ (* a a) (* b b)) (+ (* a a) (* b b))) (* 4 (+ (* (* a a) (- 1 a)) (* (* b b) (+ 3 a))))) 1))

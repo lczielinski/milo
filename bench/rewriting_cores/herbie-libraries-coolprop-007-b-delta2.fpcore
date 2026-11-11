@@ -1,7 +1,7 @@
 (FPCore (delta di du_ddelta d2u_ddelta2)
   :name "B-delta2"
-  :cx-source "herbie:libraries/coolprop.fpcore:7"
-  :cx-box "default"
+  :milo-source "herbie:libraries/coolprop.fpcore:7"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 delta 2) (<= 4 di 8) (<= 16 du_ddelta 32) (<= 64 d2u_ddelta2 128))
   (+ (* delta (+ (* delta d2u_ddelta2) du_ddelta)) (* (- (+ (* delta du_ddelta) di) 1) (+ (* delta du_ddelta) di))))

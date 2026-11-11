@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "sqrt A (should all be same)"
-  :cx-source "herbie:regression.fpcore:6"
-  :cx-box "default"
+  :milo-source "herbie:regression.fpcore:6"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2))
   (sqrt (+ (* x x) (* x x))))

@@ -1,7 +1,7 @@
 (FPCore (a e)
   :name "semi_latus_rectum"
-  :cx-source "herbie:libraries/basilisk.fpcore:8"
-  :cx-box "default"
+  :milo-source "herbie:libraries/basilisk.fpcore:8"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 a 2) (<= 4 e 8))
   (* a (- 1 (* e e))))

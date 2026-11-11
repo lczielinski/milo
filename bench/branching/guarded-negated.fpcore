@@ -1,6 +1,6 @@
 (FPCore (x)
   :name "-sqrt(x*x+1) - x"
-  :cx-expected "(> x 0)"
-  :cx-source "written for this paper"
+  :milo-expected "(> x 0)"
+  :milo-source "written for this paper"
   :pre (<= -10 x 10)
   (- (- (sqrt (+ (* x x) 1))) x))

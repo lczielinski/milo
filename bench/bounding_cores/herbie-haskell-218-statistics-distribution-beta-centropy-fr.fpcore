@@ -1,7 +1,7 @@
 (FPCore (x y z t a b)
   :name "Statistics.Distribution.Beta:$centropy from math-functions-0.1.5.2"
-  :cx-source "herbie:haskell.fpcore:218"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:218"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8) (<= 16 z 32) (<= 64 t 128) (<= 256 a 512) (<= 1024 b 2048))
   (+ (- (- x (* (- y 1) z)) (* (- t 1) a)) (* (- (+ y t) 2) b)))

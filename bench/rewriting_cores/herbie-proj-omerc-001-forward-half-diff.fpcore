@@ -1,7 +1,7 @@
 (FPCore (W)
   :name "forward-half-diff"
-  :cx-source "herbie:proj/omerc.fpcore:1"
-  :cx-box "default"
+  :milo-source "herbie:proj/omerc.fpcore:1"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 W 2))
   (* 0.5 (- W (/ 1 W))))

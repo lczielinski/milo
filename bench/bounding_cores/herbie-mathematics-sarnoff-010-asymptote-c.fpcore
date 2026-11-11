@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "Asymptote C"
-  :cx-source "herbie:mathematics/sarnoff.fpcore:10"
-  :cx-box "default"
+  :milo-source "herbie:mathematics/sarnoff.fpcore:10"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 0.25 x 0.5))
   (- (/ x (+ x 1)) (/ (+ x 1) (- x 1))))

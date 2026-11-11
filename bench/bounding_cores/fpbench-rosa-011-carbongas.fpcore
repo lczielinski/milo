@@ -1,7 +1,7 @@
 (FPCore (v)
   :name "carbonGas"
-  :cx-source "fpbench:rosa.fpcore:11"
-  :cx-box "pre"
+  :milo-source "fpbench:rosa.fpcore:11"
+  :milo-domain "pre"
   :precision binary64
   :pre (and (<= 0.09999999999999999167332731531132594682276248931884765625 v 0.5))
   (- (* (+ 35000000 (* (* 0.401 (/ 1000 v)) (/ 1000 v))) (- v (* 1000 4.27e-05))) (* (* 1.3806503e-23 1000) 300)))

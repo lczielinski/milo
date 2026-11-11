@@ -1,7 +1,7 @@
 (FPCore (a b c)
   :name "Cubic critical"
-  :cx-source "herbie:mathematics/sarnoff.fpcore:4"
-  :cx-box "default"
+  :milo-source "herbie:mathematics/sarnoff.fpcore:4"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= -2 a -1) (<= 4 b 8) (<= 16 c 32))
   (/ (+ (- b) (sqrt (- (* b b) (* (* 3 a) c)))) (* 3 a)))

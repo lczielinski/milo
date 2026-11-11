@@ -1,7 +1,7 @@
 (FPCore (density Cd A m v)
   :name "drag_accel_mag"
-  :cx-source "herbie:libraries/basilisk.fpcore:18"
-  :cx-box "default"
+  :milo-source "herbie:libraries/basilisk.fpcore:18"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 density 2) (<= 4 Cd 8) (<= 16 A 32) (<= 64 m 128) (<= 256 v 512))
   (/ (* (* (* (- 0.5) density) (/ (* Cd A) m)) (* (* v 1000) (* v 1000))) 1000))

@@ -1,7 +1,7 @@
 (FPCore (x y z)
   :name "FRP.Yampa.Vector3:vector3Rho from Yampa-0.10.2"
-  :cx-source "herbie:haskell.fpcore:267"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:267"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8) (<= 16 z 32))
   (sqrt (+ (+ (* x x) (* y y)) (* z z))))

@@ -1,7 +1,7 @@
 (FPCore (v)
   :name "Falkner and Boettcher, Appendix B, 2"
-  :cx-source "herbie:physics/quantum-walk.fpcore:4"
-  :cx-box "default"
+  :milo-source "herbie:physics/quantum-walk.fpcore:4"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 0.25 v 0.5))
   (* (* (/ (sqrt 2) 4) (sqrt (- 1 (* 3 (* v v))))) (- 1 (* v v))))

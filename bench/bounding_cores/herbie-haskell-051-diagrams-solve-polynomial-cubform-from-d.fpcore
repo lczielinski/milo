@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "Diagrams.Solve.Polynomial:cubForm  from diagrams-solve-0.1, G"
-  :cx-source "herbie:haskell.fpcore:51"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:51"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8))
   (* (/ 1 2) (+ x y)))

@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "Numeric.SpecFunctions:invIncompleteGamma from math-functions-0.1.5.2, A"
-  :cx-source "herbie:haskell.fpcore:194"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:194"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2))
   (- 1 (* x (+ 0.253 (* x 0.12)))))

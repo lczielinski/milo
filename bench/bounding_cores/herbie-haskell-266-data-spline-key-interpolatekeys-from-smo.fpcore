@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "Data.Spline.Key:interpolateKeys from smoothie-0.4.0.2"
-  :cx-source "herbie:haskell.fpcore:266"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:266"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2))
   (* (* x x) (- 3 (* x 2))))

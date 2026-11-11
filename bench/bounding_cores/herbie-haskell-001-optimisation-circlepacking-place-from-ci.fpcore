@@ -1,7 +1,7 @@
 (FPCore (x y z t)
   :name "Optimisation.CirclePacking:place from circle-packing-0.1.0.4, B"
-  :cx-source "herbie:haskell.fpcore:1"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:1"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8) (<= 16 z 32) (<= 64 t 128))
   (/ (- (+ x y) z) (* t 2)))

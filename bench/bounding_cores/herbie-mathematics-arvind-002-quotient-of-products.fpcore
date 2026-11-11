@@ -1,7 +1,7 @@
 (FPCore (a1 a2 b1 b2)
   :name "Quotient of products"
-  :cx-source "herbie:mathematics/arvind.fpcore:2"
-  :cx-box "default"
+  :milo-source "herbie:mathematics/arvind.fpcore:2"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 a1 2) (<= 4 a2 8) (<= 16 b1 32) (<= 64 b2 128))
   (/ (* a1 a2) (* b1 b2)))

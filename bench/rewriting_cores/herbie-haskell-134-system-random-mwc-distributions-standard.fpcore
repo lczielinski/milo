@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "System.Random.MWC.Distributions:standard from mwc-random-0.13.3.2"
-  :cx-source "herbie:haskell.fpcore:134"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:134"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8))
   (* 0.5 (- (* x x) y)))

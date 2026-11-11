@@ -1,6 +1,6 @@
 (FPCore (re im)
   :name "Re sqrt(re + i im)"
-  :cx-expected "(> re 0)"
-  :cx-source "FPBench benchmarks/herbie.fpcore, Complex square root; Herbie bench/libraries/mathjs/arithmetic.fpcore"
+  :milo-expected "(> re 0)"
+  :milo-source "FPBench benchmarks/herbie.fpcore, Complex square root; Herbie bench/libraries/mathjs/arithmetic.fpcore"
   :pre (and (<= -10 re 10) (<= 0.1 im 1))
   (* 0.5 (sqrt (* 2 (+ (sqrt (+ (* re re) (* im im))) re)))))

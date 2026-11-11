@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "Graphics.Rendering.Chart.Plot.Vectors:renderPlotVectors from Chart-1.5.3"
-  :cx-source "herbie:haskell.fpcore:168"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:168"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8))
   (+ x (* (- 1 x) (- 1 y))))

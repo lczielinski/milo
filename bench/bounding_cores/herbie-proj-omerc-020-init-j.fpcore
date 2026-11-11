@@ -1,7 +1,7 @@
 (FPCore (E_var L H)
   :name "init-J"
-  :cx-source "herbie:proj/omerc.fpcore:20"
-  :cx-box "default"
+  :milo-source "herbie:proj/omerc.fpcore:20"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 E_var 2) (<= 4 L 8) (<= 16 H 32))
   (/ (- (* E_var E_var) (* L H)) (+ (* E_var E_var) (* L H))))

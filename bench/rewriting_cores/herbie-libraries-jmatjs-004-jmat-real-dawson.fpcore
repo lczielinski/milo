@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "Jmat.Real.dawson"
-  :cx-source "herbie:libraries/jmatjs.fpcore:4"
-  :cx-box "default"
+  :milo-source "herbie:libraries/jmatjs.fpcore:4"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2))
   (* (/ (+ (+ (+ (+ (+ 1 (* 0.1049934947 (* x x))) (* 0.0424060604 (* (* x x) (* x x)))) (* 0.0072644182 (* (* (* x x) (* x x)) (* x x)))) (* 0.0005064034 (* (* (* (* x x) (* x x)) (* x x)) (* x x)))) (* 0.0001789971 (* (* (* (* (* x x) (* x x)) (* x x)) (* x x)) (* x x)))) (+ (+ (+ (+ (+ (+ 1 (* 0.7715471019 (* x x))) (* 0.2909738639 (* (* x x) (* x x)))) (* 0.0694555761 (* (* (* x x) (* x x)) (* x x)))) (* 0.0140005442 (* (* (* (* x x) (* x x)) (* x x)) (* x x)))) (* 0.0008327945 (* (* (* (* (* x x) (* x x)) (* x x)) (* x x)) (* x x)))) (* (* 2 0.0001789971) (* (* (* (* (* (* x x) (* x x)) (* x x)) (* x x)) (* x x)) (* x x))))) x))

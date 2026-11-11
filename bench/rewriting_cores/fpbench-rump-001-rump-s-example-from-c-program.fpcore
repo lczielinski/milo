@@ -1,7 +1,7 @@
 (FPCore (a b)
   :name "Rump's example, from C program"
-  :cx-source "fpbench:rump.fpcore:1"
-  :cx-box "default"
+  :milo-source "fpbench:rump.fpcore:1"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 a 2) (<= 4 b 8))
   (+ (+ (+ (* 333.75 (* (* (* b b) (* b b)) (* b b))) (* (* a a) (- (- (- (* (* 11 (* a a)) (* b b)) (* (* (* b b) (* b b)) (* b b))) (* 121 (* (* b b) (* b b)))) 2))) (* 5.5 (* (* (* b b) (* b b)) (* (* b b) (* b b))))) (/ a (* 2 b))))

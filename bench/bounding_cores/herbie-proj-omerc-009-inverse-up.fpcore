@@ -1,7 +1,7 @@
 (FPCore (Sp Tp Vp singam cosgam)
   :name "inverse-Up"
-  :cx-source "herbie:proj/omerc.fpcore:9"
-  :cx-box "default"
+  :milo-source "herbie:proj/omerc.fpcore:9"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 Sp 2) (<= 4 Tp 8) (<= 16 Vp 32) (<= 64 singam 128) (<= 256 cosgam 512))
   (/ (+ (* Vp cosgam) (* Sp singam)) Tp))

@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "sine"
-  :cx-source "fpbench:rosa.fpcore:12"
-  :cx-box "pre"
+  :milo-source "fpbench:rosa.fpcore:12"
+  :milo-domain "pre"
   :precision binary64
   :pre (and (<= -1.5707963267899998083265700188349001109600067138671875 x 1.5707963267899998083265700188349001109600067138671875))
   (- (+ (- x (/ (* (* x x) x) 6)) (/ (* (* (* (* x x) x) x) x) 120)) (/ (* (* (* (* (* (* x x) x) x) x) x) x) 5040)))

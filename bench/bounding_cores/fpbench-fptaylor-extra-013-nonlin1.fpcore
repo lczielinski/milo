@@ -1,7 +1,7 @@
 (FPCore (z)
   :name "nonlin1"
-  :cx-source "fpbench:fptaylor-extra.fpcore:13"
-  :cx-box "pre"
+  :milo-source "fpbench:fptaylor-extra.fpcore:13"
+  :milo-domain "pre"
   :precision binary64
   :pre (and (<= 0 z 999))
   (/ z (+ z 1)))

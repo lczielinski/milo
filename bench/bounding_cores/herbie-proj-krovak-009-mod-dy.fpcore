@@ -1,7 +1,7 @@
 (FPCore (Xr Yr)
   :name "mod-dY"
-  :cx-source "herbie:proj/krovak.fpcore:9"
-  :cx-box "default"
+  :milo-source "herbie:proj/krovak.fpcore:9"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 Xr 2) (<= 4 Yr 8))
   (+ 0.02515965696 (+ (* 1.193845912e-07 Yr) (+ (* -4.668270147e-07 Xr) (+ (* 2 (* 9.233980362e-12 (* Xr Yr))) (+ (* 1.523735715e-12 (- (* Xr Xr) (* Yr Yr))) (+ (* 4.408314235e-18 (* Xr (- (* Xr Xr) (* 3 (* Yr Yr))))) (+ (* 1.696780024e-18 (* Yr (- (* 3 (* Xr Xr)) (* Yr Yr)))) (+ (* -4 (* -3.689471323e-24 (* Xr (* Yr (- (* Xr Xr) (* Yr Yr)))))) (* -8.331083518e-24 (+ (* (* Xr Xr) (* Xr Xr)) (+ (* (* Yr Yr) (* Yr Yr)) (* -6 (* (* Xr Xr) (* Yr Yr)))))))))))))))

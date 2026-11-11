@@ -1,7 +1,7 @@
 (FPCore (f n)
   :name "subtraction fraction"
-  :cx-source "herbie:demo.fpcore:2"
-  :cx-box "default"
+  :milo-source "herbie:demo.fpcore:2"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 f 2) (<= 4 n 8))
   (/ (- (+ f n)) (- f n)))

@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "Statistics.Correlation.Kendall:numOfTiesBy from math-functions-0.1.5.2"
-  :cx-source "herbie:haskell.fpcore:214"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:214"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2))
   (* x (- x 1)))

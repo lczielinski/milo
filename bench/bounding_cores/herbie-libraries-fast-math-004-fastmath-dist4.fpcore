@@ -1,7 +1,7 @@
 (FPCore (d1 d2 d3 d4)
   :name "FastMath dist4"
-  :cx-source "herbie:libraries/fast-math.fpcore:4"
-  :cx-box "default"
+  :milo-source "herbie:libraries/fast-math.fpcore:4"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 d1 2) (<= 4 d2 8) (<= 16 d3 32) (<= 64 d4 128))
   (- (+ (- (* d1 d2) (* d1 d3)) (* d4 d1)) (* d1 d1)))

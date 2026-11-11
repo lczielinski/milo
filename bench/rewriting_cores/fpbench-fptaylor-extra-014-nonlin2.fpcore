@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "nonlin2"
-  :cx-source "fpbench:fptaylor-extra.fpcore:14"
-  :cx-box "pre"
+  :milo-source "fpbench:fptaylor-extra.fpcore:14"
+  :milo-domain "pre"
   :precision binary64
   :pre (and (<= 1.000999999999999889865875957184471189975738525390625 x 2) (<= 1.000999999999999889865875957184471189975738525390625 y 2))
   (/ (- (* x y) 1) (- (* (* x y) (* x y)) 1)))

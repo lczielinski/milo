@@ -1,7 +1,7 @@
 (FPCore (x.re x.im y.re y.im)
   :name "_multiplyComplex, imaginary part"
-  :cx-source "herbie:libraries/mathjs/arithmetic.fpcore:18"
-  :cx-box "default"
+  :milo-source "herbie:libraries/mathjs/arithmetic.fpcore:18"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x.re 2) (<= 4 x.im 8) (<= 16 y.re 32) (<= 64 y.im 128))
   (+ (* x.re y.im) (* x.im y.re)))

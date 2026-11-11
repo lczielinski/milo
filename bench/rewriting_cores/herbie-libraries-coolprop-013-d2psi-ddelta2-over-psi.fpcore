@@ -1,7 +1,7 @@
 (FPCore (delta Ci)
   :name "d2PSI-dDelta2-over-PSI"
-  :cx-source "herbie:libraries/coolprop.fpcore:13"
-  :cx-box "default"
+  :milo-source "herbie:libraries/coolprop.fpcore:13"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 delta 2) (<= 4 Ci 8))
   (* (- (* 2 (* Ci (* (- delta 1) (- delta 1)))) 1) (* 2 Ci)))

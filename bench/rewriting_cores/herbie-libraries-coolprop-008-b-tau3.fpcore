@@ -1,7 +1,7 @@
 (FPCore (tau ti du_dtau d2u_dtau2 d3u_dtau3)
   :name "B-tau3"
-  :cx-source "herbie:libraries/coolprop.fpcore:8"
-  :cx-box "default"
+  :milo-source "herbie:libraries/coolprop.fpcore:8"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 tau 2) (<= 4 ti 8) (<= 16 du_dtau 32) (<= 64 d2u_dtau2 128) (<= 256 d3u_dtau3 512))
   (+ (* tau (+ (* tau (+ (* tau d3u_dtau3) (* 2 d2u_dtau2))) (* (* 2 (+ (* tau du_dtau) ti)) (+ (* tau d2u_dtau2) du_dtau)))) (* (- (+ (* tau du_dtau) ti) 2) (+ (* tau (+ (* tau d2u_dtau2) du_dtau)) (* (- (+ (* tau du_dtau) ti) 1) (+ (* tau du_dtau) ti))))))

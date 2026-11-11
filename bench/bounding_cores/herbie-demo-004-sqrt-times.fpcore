@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "sqrt times"
-  :cx-source "herbie:demo.fpcore:4"
-  :cx-box "default"
+  :milo-source "herbie:demo.fpcore:4"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2))
   (* (sqrt (- x 1)) (sqrt x)))

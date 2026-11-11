@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "Development.Shake.Progress:message from shake-0.15.5"
-  :cx-source "herbie:haskell.fpcore:162"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:162"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8))
   (/ (* x 100) (+ x y)))

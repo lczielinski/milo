@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "Data.Approximate.Numerics:blog from approximate-0.2.2.1"
-  :cx-source "herbie:haskell.fpcore:155"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:155"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2))
   (/ (* 6 (- x 1)) (+ (+ x 1) (* 4 (sqrt x)))))

@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "Main:bigenough3 from C"
-  :cx-source "herbie:haskell.fpcore:71"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:71"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2))
   (- (sqrt (+ x 1)) (sqrt x)))

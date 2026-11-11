@@ -1,7 +1,7 @@
 (FPCore (a b c d)
   :name "Expression, p6"
-  :cx-source "herbie:numerics/martel.fpcore:6"
-  :cx-box "pre"
+  :milo-source "herbie:numerics/martel.fpcore:6"
+  :milo-domain "pre"
   :precision binary64
   :pre (and (<= -14 a -13) (<= -3 b -2) (<= 3 c 3.5) (<= 12.5 d 13.5))
   (* (+ a (+ b (+ c d))) 2))

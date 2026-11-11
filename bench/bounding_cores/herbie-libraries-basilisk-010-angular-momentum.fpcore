@@ -1,7 +1,7 @@
 (FPCore (mu p)
   :name "angular_momentum"
-  :cx-source "herbie:libraries/basilisk.fpcore:10"
-  :cx-box "default"
+  :milo-source "herbie:libraries/basilisk.fpcore:10"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 mu 2) (<= 4 p 8))
   (sqrt (* mu p)))

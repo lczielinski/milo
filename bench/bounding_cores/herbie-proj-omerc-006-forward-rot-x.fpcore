@@ -1,7 +1,7 @@
 (FPCore (u v cosrot sinrot u0)
   :name "forward-rot-x"
-  :cx-source "herbie:proj/omerc.fpcore:6"
-  :cx-box "default"
+  :milo-source "herbie:proj/omerc.fpcore:6"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 u 2) (<= 4 v 8) (<= 16 cosrot 32) (<= 64 sinrot 128) (<= 256 u0 512))
   (+ (* v cosrot) (* (- u u0) sinrot)))

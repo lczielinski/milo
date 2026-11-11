@@ -1,7 +1,7 @@
 (FPCore (x1 x2)
   :name "floudas3"
-  :cx-source "fpbench:fptaylor-real2float.fpcore:5"
-  :cx-box "pre"
+  :milo-source "fpbench:fptaylor-real2float.fpcore:5"
+  :milo-domain "pre"
   :precision binary64
   :pre (and (<= 0 x1 2) (<= 0 x2 3))
   (+ (- (* -12 x1) (* 7 x2)) (* x2 x2)))

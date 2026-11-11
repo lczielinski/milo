@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "carthesianToPolar, radius"
-  :cx-source "fpbench:daisy.fpcore:0"
-  :cx-box "pre"
+  :milo-source "fpbench:daisy.fpcore:0"
+  :milo-domain "pre"
   :precision binary64
   :pre (and (<= 1 x 100) (<= 1 y 100))
   (sqrt (+ (* x x) (* y y))))

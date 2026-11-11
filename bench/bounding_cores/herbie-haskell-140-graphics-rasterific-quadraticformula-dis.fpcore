@@ -1,7 +1,7 @@
 (FPCore (x y z)
   :name "Graphics.Rasterific.QuadraticFormula:discriminant from Rasterific-0.6.1"
-  :cx-source "herbie:haskell.fpcore:140"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:140"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8) (<= 16 z 32))
   (- (* x x) (* (* y 4) z)))

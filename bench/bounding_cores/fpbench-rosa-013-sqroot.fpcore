@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "sqroot"
-  :cx-source "fpbench:rosa.fpcore:13"
-  :cx-box "pre"
+  :milo-source "fpbench:rosa.fpcore:13"
+  :milo-domain "pre"
   :precision binary64
   :pre (and (<= 0 x 1))
   (- (+ (- (+ 1 (* 0.5 x)) (* (* 0.125 x) x)) (* (* (* 0.0625 x) x) x)) (* (* (* (* 0.0390625 x) x) x) x)))

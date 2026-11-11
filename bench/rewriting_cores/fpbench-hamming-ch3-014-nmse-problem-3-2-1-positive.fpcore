@@ -1,7 +1,7 @@
 (FPCore (a b2 c)
   :name "NMSE problem 3.2.1, positive"
-  :cx-source "fpbench:hamming-ch3.fpcore:14"
-  :cx-box "default"
+  :milo-source "fpbench:hamming-ch3.fpcore:14"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= -2 a -1) (<= 4 b2 8) (<= 16 c 32))
   (/ (+ (- b2) (sqrt (- (* b2 b2) (* a c)))) a))

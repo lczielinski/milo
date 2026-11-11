@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "From Rump in a 1983 paper"
-  :cx-source "herbie:numerics/rump.fpcore:1"
-  :cx-box "pre"
+  :milo-source "herbie:numerics/rump.fpcore:1"
+  :milo-domain "pre"
   :precision binary64
   :pre (and (<= 10864 x 10864) (<= 18817 y 18817))
   (+ (- (* 9 (* (* (* x x) x) x)) (* (* (* y y) y) y)) (* 2 (* y y))))

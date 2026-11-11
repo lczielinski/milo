@@ -1,7 +1,7 @@
 (FPCore (x y z t a)
   :name "Statistics.Math.RootFinding:ridders from math-functions-0.1.5.2"
-  :cx-source "herbie:haskell.fpcore:211"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:211"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 256 x 512) (<= 64 y 128) (<= 16 z 32) (<= 4 t 8) (<= 1 a 2))
   (/ (* (* x y) z) (sqrt (- (* z z) (* t a)))))

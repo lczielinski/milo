@@ -1,7 +1,7 @@
 (FPCore (p x)
   :name "Given's Rotation SVD example"
-  :cx-source "herbie:physics/sidey.fpcore:0"
-  :cx-box "default"
+  :milo-source "herbie:physics/sidey.fpcore:0"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 p 2) (<= 4 x 8))
   (sqrt (* 0.5 (+ 1 (/ x (sqrt (+ (* (* 4 p) p) (* x x))))))))

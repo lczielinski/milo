@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "x / (x^2 + 1)"
-  :cx-source "herbie:numerics/every-cs.fpcore:6"
-  :cx-box "default"
+  :milo-source "herbie:numerics/every-cs.fpcore:6"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2))
   (/ x (+ (* x x) 1)))

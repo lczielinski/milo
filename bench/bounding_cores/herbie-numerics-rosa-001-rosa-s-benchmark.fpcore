@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "Rosa's Benchmark"
-  :cx-source "herbie:numerics/rosa.fpcore:1"
-  :cx-box "default"
+  :milo-source "herbie:numerics/rosa.fpcore:1"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2))
   (- (* 0.954929658551372 x) (* 0.12900613773279798 (* (* x x) x))))

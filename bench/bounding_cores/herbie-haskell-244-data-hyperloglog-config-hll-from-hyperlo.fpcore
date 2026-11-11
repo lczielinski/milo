@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "Data.HyperLogLog.Config:hll from hyperloglog-0.3.4"
-  :cx-source "herbie:haskell.fpcore:244"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:244"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8))
   (* (* x y) y))

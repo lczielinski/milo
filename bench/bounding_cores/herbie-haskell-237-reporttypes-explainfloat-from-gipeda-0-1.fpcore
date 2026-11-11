@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "ReportTypes:explainFloat from gipeda-0.1.2.1"
-  :cx-source "herbie:haskell.fpcore:237"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:237"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2))
   (* 100 (/ (- x x) x)))

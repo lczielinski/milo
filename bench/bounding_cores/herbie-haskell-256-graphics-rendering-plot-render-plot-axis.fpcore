@@ -1,7 +1,7 @@
 (FPCore (x y z t a)
   :name "Graphics.Rendering.Plot.Render.Plot.Axis:renderAxisLine from plot-0.2.3.4, A"
-  :cx-source "herbie:haskell.fpcore:256"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:256"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8) (<= 16 z 32) (<= 64 t 128) (<= 256 a 512))
   (+ x (* y (/ (- z t) (- z a)))))

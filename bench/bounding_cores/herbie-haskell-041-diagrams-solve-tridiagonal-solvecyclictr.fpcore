@@ -1,7 +1,7 @@
 (FPCore (x y z t a b)
   :name "Diagrams.Solve.Tridiagonal:solveCyclicTriDiagonal from diagrams-solve-0.1, B"
-  :cx-source "herbie:haskell.fpcore:41"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:41"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8) (<= 16 z 32) (<= 64 t 128) (<= 256 a 512) (<= 1024 b 2048))
   (/ (+ x (/ (* y z) t)) (+ (+ a 1) (/ (* y b) t))))

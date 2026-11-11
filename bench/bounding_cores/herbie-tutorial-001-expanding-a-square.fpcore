@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "Expanding a square"
-  :cx-source "herbie:tutorial.fpcore:1"
-  :cx-box "default"
+  :milo-source "herbie:tutorial.fpcore:1"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2))
   (- (* (+ x 1) (+ x 1)) 1))

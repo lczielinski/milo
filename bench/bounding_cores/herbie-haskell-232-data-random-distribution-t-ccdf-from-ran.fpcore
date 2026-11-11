@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "Data.Random.Distribution.T:$ccdf from random-fu-0.2.6.2"
-  :cx-source "herbie:haskell.fpcore:232"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:232"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8))
   (/ (+ x y) (+ y y)))

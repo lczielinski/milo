@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "Data.Random.Distribution.Normal:doubleStdNormalZ from random-fu-0.2.6.2"
-  :cx-source "herbie:haskell.fpcore:231"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:231"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2))
   (- (+ x x) 1))

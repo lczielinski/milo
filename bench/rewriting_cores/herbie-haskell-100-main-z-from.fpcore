@@ -1,7 +1,7 @@
 (FPCore (x y z t)
   :name "Main:z from "
-  :cx-source "herbie:haskell.fpcore:100"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:100"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8) (<= 16 z 32) (<= 64 t 128))
   (+ (+ (+ (- (sqrt (+ x 1)) (sqrt x)) (- (sqrt (+ y 1)) (sqrt y))) (- (sqrt (+ z 1)) (sqrt z))) (- (sqrt (+ t 1)) (sqrt t))))

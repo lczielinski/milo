@@ -1,7 +1,7 @@
 (FPCore (x y z)
   :name "bug366 (missed optimization)"
-  :cx-source "herbie:regression.fpcore:16"
-  :cx-box "default"
+  :milo-source "herbie:regression.fpcore:16"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8) (<= 16 z 32))
   (sqrt (+ (* x x) (+ (* y y) (* z z)))))

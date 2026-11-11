@@ -1,7 +1,7 @@
 (FPCore (alpha beta)
   :name "Octave 3.8, jcobi/3"
-  :cx-source "herbie:libraries/octave/CollocWt.fpcore:2"
-  :cx-box "pre"
+  :milo-source "herbie:libraries/octave/CollocWt.fpcore:2"
+  :milo-domain "pre"
   :precision binary64
   :pre (and (<= -0.99999999999999988897769753748434595763683319091796875 alpha 1) (<= -0.99999999999999988897769753748434595763683319091796875 beta 7))
   (/ (/ (/ (+ (+ (+ alpha beta) (* beta alpha)) 1) (+ (+ alpha beta) (* 2 1))) (+ (+ alpha beta) (* 2 1))) (+ (+ (+ alpha beta) (* 2 1)) 1)))

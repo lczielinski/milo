@@ -1,7 +1,7 @@
 (FPCore (u v t1)
   :name "Rosa's DopplerBench"
-  :cx-source "herbie:numerics/rosa.fpcore:0"
-  :cx-box "default"
+  :milo-source "herbie:numerics/rosa.fpcore:0"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 u 2) (<= 4 v 8) (<= 16 t1 32))
   (/ (* (- t1) v) (* (+ t1 u) (+ t1 u))))

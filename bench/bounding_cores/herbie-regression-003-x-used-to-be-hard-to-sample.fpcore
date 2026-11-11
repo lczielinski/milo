@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "x (used to be hard to sample)"
-  :cx-source "herbie:regression.fpcore:3"
-  :cx-box "pre"
+  :milo-source "herbie:regression.fpcore:3"
+  :milo-domain "pre"
   :precision binary64
   :pre (and (<= 0 x 10))
   x)

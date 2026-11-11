@@ -1,7 +1,7 @@
 (FPCore (x eps)
   :name "ENA, Section 1.4, Exercise 4b, n=2"
-  :cx-source "herbie:numerics/conte.fpcore:4"
-  :cx-box "pre"
+  :milo-source "herbie:numerics/conte.fpcore:4"
+  :milo-domain "pre"
   :precision binary64
   :pre (and (<= -1000000000 x 1000000000) (<= -1 eps 1))
   (- (* (+ x eps) (+ x eps)) (* x x)))

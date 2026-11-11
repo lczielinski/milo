@@ -1,7 +1,7 @@
 (FPCore (x y z)
   :name "Text.Parsec.Token:makeTokenParser from parsec-3.1.9, B"
-  :cx-source "herbie:haskell.fpcore:62"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:62"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8) (<= 16 z 32))
   (* (+ x y) z))

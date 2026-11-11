@@ -293,7 +293,7 @@ def speeds():
 def branching_one(name, reports):
     core = load(name)
     programs = {"original": core.body}
-    out = {"expected": core.props.get(":cx-expected", "").strip('"')}
+    out = {"expected": core.props.get(":milo-expected", "").strip('"')}
     for who, branch in (("ours-plain", False), ("ours", True)):
         try:
             g = build(core, 4, branch, EGGLOG_LIMIT)

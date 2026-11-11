@@ -1,7 +1,7 @@
 (FPCore (re im)
   :name "math.square on complex, imaginary part"
-  :cx-source "herbie:libraries/mathjs/arithmetic.fpcore:3"
-  :cx-box "default"
+  :milo-source "herbie:libraries/mathjs/arithmetic.fpcore:3"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 re 2) (<= 4 im 8))
   (+ (* re im) (* im re)))

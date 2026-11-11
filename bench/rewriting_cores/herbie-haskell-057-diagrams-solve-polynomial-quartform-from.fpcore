@@ -1,7 +1,7 @@
 (FPCore (x y z t)
   :name "Diagrams.Solve.Polynomial:quartForm  from diagrams-solve-0.1, B"
-  :cx-source "herbie:haskell.fpcore:57"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:57"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8) (<= 16 z 32) (<= 64 t 128))
   (+ (- (* (/ 1 8) x) (/ (* y z) 2)) t))

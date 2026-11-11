@@ -1,7 +1,7 @@
 (FPCore (x1 x2 x3 x4)
   :name "kepler1"
-  :cx-source "fpbench:fptaylor-real2float.fpcore:9"
-  :cx-box "pre"
+  :milo-source "fpbench:fptaylor-real2float.fpcore:9"
+  :milo-domain "pre"
   :precision binary64
   :pre (and (<= 4 x1 6.36000000000000031974423109204508364200592041015625) (<= 4 x2 6.36000000000000031974423109204508364200592041015625) (<= 4 x3 6.36000000000000031974423109204508364200592041015625) (<= 4 x4 6.36000000000000031974423109204508364200592041015625))
   (- (- (- (- (+ (+ (* (* x1 x4) (- (+ (+ (- x1) x2) x3) x4)) (* x2 (+ (+ (- x1 x2) x3) x4))) (* x3 (+ (- (+ x1 x2) x3) x4))) (* (* x2 x3) x4)) (* x1 x3)) (* x1 x2)) x4))

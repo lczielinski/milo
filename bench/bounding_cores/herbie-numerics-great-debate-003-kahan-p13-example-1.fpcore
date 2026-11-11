@@ -1,7 +1,7 @@
 (FPCore (t)
   :name "Kahan p13 Example 1"
-  :cx-source "herbie:numerics/great-debate.fpcore:3"
-  :cx-box "default"
+  :milo-source "herbie:numerics/great-debate.fpcore:3"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 t 2))
   (/ (+ 1 (* (/ (* 2 t) (+ 1 t)) (/ (* 2 t) (+ 1 t)))) (+ 2 (* (/ (* 2 t) (+ 1 t)) (/ (* 2 t) (+ 1 t))))))

@@ -1,7 +1,7 @@
 (FPCore (x y z)
   :name "Data.Array.Repa.Algorithms.Pixel:doubleRmsOfRGB8 from repa-algorithms-3.4.0.1"
-  :cx-source "herbie:haskell.fpcore:262"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:262"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8) (<= 16 z 32))
   (sqrt (/ (+ (+ (* x x) (* y y)) (* z z)) 3)))

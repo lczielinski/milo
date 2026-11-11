@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "test05_nonlin1, r4"
-  :cx-source "fpbench:fptaylor-tests.fpcore:6"
-  :cx-box "pre"
+  :milo-source "fpbench:fptaylor-tests.fpcore:6"
+  :milo-domain "pre"
   :precision binary64
   :pre (and (<= 1.000010000000000065512040237081237137317657470703125 x 1.9999999999999997779553950749686919152736663818359375))
   (/ (- x 1) (- (* x x) 1)))

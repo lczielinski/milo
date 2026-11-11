@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "Graphics.Rasterific.Linear:$cquadrance from Rasterific-0.6.1"
-  :cx-source "herbie:haskell.fpcore:77"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:77"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8))
   (+ (* x x) (* y y)))

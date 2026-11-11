@@ -1,7 +1,7 @@
 (FPCore (ux uy maxCos)
   :name "UniformSampleCone, z"
-  :cx-source "herbie:graphics/pbrt.fpcore:6"
-  :cx-box "pre"
+  :milo-source "herbie:graphics/pbrt.fpcore:6"
+  :milo-domain "pre"
   :precision binary32
   :pre (and (<= 0.000000000232830643699999992403472101064917758328487451535693253390491008758544921875 ux 1) (<= 0.000000000232830643699999992403472101064917758328487451535693253390491008758544921875 uy 1) (<= 0 maxCos 1))
   (+ (- 1 ux) (* ux maxCos)))

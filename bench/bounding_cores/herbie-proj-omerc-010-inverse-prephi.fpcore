@@ -1,7 +1,7 @@
 (FPCore (Up Esc)
   :name "inverse-prephi"
-  :cx-source "herbie:proj/omerc.fpcore:10"
-  :cx-box "default"
+  :milo-source "herbie:proj/omerc.fpcore:10"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 0.25 Up 0.5) (<= 0.0625 Esc 0.125))
   (/ Esc (sqrt (/ (+ 1 Up) (- 1 Up)))))

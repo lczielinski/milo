@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "Graphics.Rendering.Plot.Render.Plot.Legend:renderLegendOutside from plot-0.2.3.4, A"
-  :cx-source "herbie:haskell.fpcore:251"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:251"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8))
   (+ (+ x y) x))

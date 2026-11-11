@@ -1,7 +1,7 @@
 (FPCore (x y)
   :name "Examples.Basics.BasicTests:f3 from sbv-4.4"
-  :cx-source "herbie:haskell.fpcore:224"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:224"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8))
   (* (+ x y) (+ x y)))

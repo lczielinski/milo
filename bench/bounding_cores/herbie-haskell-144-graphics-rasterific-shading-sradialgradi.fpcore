@@ -1,7 +1,7 @@
 (FPCore (x)
   :name "Graphics.Rasterific.Shading:$sradialGradientWithFocusShader from Rasterific-0.6.1, A"
-  :cx-source "herbie:haskell.fpcore:144"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:144"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2))
   (+ (* x x) 1))

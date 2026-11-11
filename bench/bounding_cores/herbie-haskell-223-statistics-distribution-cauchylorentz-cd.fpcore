@@ -1,7 +1,7 @@
 (FPCore (x y z)
   :name "Statistics.Distribution.CauchyLorentz:$cdensity from math-functions-0.1.5.2"
-  :cx-source "herbie:haskell.fpcore:223"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:223"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= 4 y 8) (<= 16 z 32))
   (/ (/ 1 x) (* y (+ 1 (* z z)))))

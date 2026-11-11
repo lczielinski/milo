@@ -1,7 +1,7 @@
 (FPCore (mult h xj s)
   :name "seraz0-fc-c1"
-  :cx-source "herbie:proj/som.fpcore:3"
-  :cx-box "default"
+  :milo-source "herbie:proj/som.fpcore:3"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 mult 2) (<= 4 h 8) (<= 16 xj 32) (<= 64 s 128))
   (* mult (/ (* s (+ h xj)) (sqrt (+ (* xj xj) (* s s))))))

@@ -1,7 +1,7 @@
 (FPCore (x1 x2)
   :name "hypot32"
-  :cx-source "fpbench:fptaylor-extra.fpcore:10"
-  :cx-box "pre"
+  :milo-source "fpbench:fptaylor-extra.fpcore:10"
+  :milo-domain "pre"
   :precision binary32
   :pre (and (<= 1 x1 100) (<= 1 x2 100))
   (sqrt (+ (* x1 x1) (* x2 x2))))

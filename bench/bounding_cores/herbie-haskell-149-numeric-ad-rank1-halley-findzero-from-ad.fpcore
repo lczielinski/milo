@@ -1,7 +1,7 @@
 (FPCore (x y z t)
   :name "Numeric.AD.Rank1.Halley:findZero from ad-4.2.4"
-  :cx-source "herbie:haskell.fpcore:149"
-  :cx-box "default"
+  :milo-source "herbie:haskell.fpcore:149"
+  :milo-domain "default"
   :precision binary64
   :pre (and (<= 1 x 2) (<= -8 y -4) (<= 16 z 32) (<= 64 t 128))
   (- x (/ (* (* y 2) z) (- (* (* z 2) z) (* y t)))))

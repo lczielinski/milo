@@ -18,10 +18,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.32,
+    "seconds": 1.17,
     "status": "ok",
     "abs": 1.907348647023355e-06,
-    "rel": 1.6858739529965014e-07
+    "rel": 8.429369764982507e-08
    }
   },
   "daisy": {
@@ -88,25 +88,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.31,
+    "seconds": 1.47,
     "status": "ok",
     "abs": 1.9042545318370685e-12,
     "rel": null
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 1.45,
     "status": "ok",
     "abs": 1.7905676941154525e-12,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.28,
+    "seconds": 1.47,
     "status": "ok",
     "abs": 1.8758328224066645e-12,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.31,
+    "seconds": 1.47,
     "status": "ok",
     "abs": 1.9042545318370685e-12,
     "rel": null
@@ -182,25 +182,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.53,
     "status": "ok",
     "abs": 1.9042545318370685e-12,
     "rel": null
    },
    "ours": {
-    "seconds": 0.29,
+    "seconds": 0.56,
     "status": "ok",
     "abs": 1.7905676941154525e-12,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.3,
+    "seconds": 0.53,
     "status": "ok",
     "abs": 1.8758328224066645e-12,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.51,
     "status": "ok",
     "abs": 1.7905676941154525e-12,
     "rel": null
@@ -270,27 +270,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.53,
     "status": "ok",
-    "abs": 7.13481274061678e-14,
+    "abs": 6.922045159285517e-14,
     "rel": null
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.27,
     "status": "ok",
-    "abs": 3.380105084715979e-14,
+    "abs": 3.088813649299027e-14,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.26,
+    "seconds": 0.28,
     "status": "ok",
     "abs": 3.684981209062243e-14,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.54,
     "status": "ok",
-    "abs": 5.339124697911757e-14,
+    "abs": 5.0779380700305416e-14,
     "rel": null
    }
   },
@@ -358,27 +358,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 3.51,
+    "seconds": 9.11,
     "status": "ok",
-    "abs": 1.6468175817863081e-12,
+    "abs": 1.6426424326709817e-12,
     "rel": null
    },
    "ours": {
-    "seconds": 0.53,
+    "seconds": 1.68,
     "status": "ok",
-    "abs": 1.0109349273079717e-12,
+    "abs": 9.398806537319617e-13,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.79,
+    "seconds": 2.22,
     "status": "ok",
-    "abs": 1.0422099093432282e-12,
+    "abs": 1.0143883565660873e-12,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.78,
+    "seconds": 2.78,
     "status": "ok",
-    "abs": 1.2561983504610909e-12,
+    "abs": 1.2451562542992179e-12,
     "rel": null
    }
   },
@@ -410,10 +410,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.28,
     "status": "ok",
-    "abs": 7.231256746973014e-09,
-    "rel": 5.981560124922731e-08
+    "abs": 3.6156282317979954e-09,
+    "rel": 1.6789522809937553e-08
    }
   },
   "daisy": {
@@ -444,7 +444,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.27,
     "status": "ok",
     "abs": 4.440892098500626e-16,
     "rel": null
@@ -547,7 +547,7 @@
     "seconds": 0.27,
     "status": "ok",
     "abs": 2.886579864025407e-15,
-    "rel": 9.62193288008469e-16
+    "rel": 5.791257407449092e-16
    }
   },
   "daisy": {
@@ -580,7 +580,7 @@
    "original": {
     "seconds": 0.28,
     "status": "ok",
-    "abs": 2.861599845971423e-14,
+    "abs": 1.9550333574258655e-15,
     "rel": null
    }
   },
@@ -648,28 +648,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.28,
     "status": "ok",
-    "abs": 1.2724593109911055e-11,
-    "rel": 3.8586858415407985e-09
+    "abs": 5.35465530638862e-12,
+    "rel": 7.464225294317227e-10
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.28,
     "status": "ok",
-    "abs": 2.4935653519792038e-16,
-    "rel": 1.2467826759896018e-15
+    "abs": 1.696369649426732e-16,
+    "rel": 3.190642002044694e-16
    },
    "herbie": {
     "seconds": 0.26,
     "status": "ok",
-    "abs": 2.4935653519792038e-16,
-    "rel": 1.2467826759896018e-15
+    "abs": 1.696369649426732e-16,
+    "rel": 3.190642002044694e-16
    },
    "daisy": {
     "seconds": 0.26,
     "status": "ok",
-    "abs": 1.2462235092717294e-11,
-    "rel": 3.779126742274059e-09
+    "abs": 5.293563512015042e-12,
+    "rel": 7.379065206366387e-10
    }
   },
   "daisy": {
@@ -801,7 +801,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.28,
     "status": "ok",
     "abs": 4.440892098500626e-16,
     "rel": null
@@ -835,7 +835,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.26,
     "status": "ok",
     "abs": 1.1546319456101628e-14,
     "rel": null
@@ -905,28 +905,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
-    "status": "ok",
-    "abs": 6.274536445971534e-14,
-    "rel": null
-   },
-   "ours": {
-    "seconds": 0.3,
-    "status": "ok",
-    "abs": 3.0961899710746365e-14,
-    "rel": 2.711009711293989e-15
-   },
-   "herbie": {
     "seconds": 0.33,
     "status": "ok",
-    "abs": 3.3377745012330705e-14,
-    "rel": 6.91878116795388e-15
+    "abs": 6.270983732292733e-14,
+    "rel": 1.3953503921260145e-14
+   },
+   "ours": {
+    "seconds": 0.27,
+    "status": "ok",
+    "abs": 3.0568880760029064e-14,
+    "rel": 1.4653743269687197e-15
+   },
+   "herbie": {
+    "seconds": 0.54,
+    "status": "ok",
+    "abs": 3.231859224683831e-14,
+    "rel": 1.144986733719758e-15
    },
    "daisy": {
-    "seconds": 0.32,
+    "seconds": 0.33,
     "status": "ok",
-    "abs": 3.5278446830488973e-14,
-    "rel": 4.870291958485975e-15
+    "abs": 3.5016434196677435e-14,
+    "rel": 3.0980318325262265e-15
    }
   },
   "daisy": {
@@ -993,27 +993,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.51,
+    "seconds": 1.31,
     "status": "ok",
-    "abs": 2.7102275979018486e-13,
+    "abs": 2.4761037664688955e-13,
     "rel": null
    },
    "ours": {
-    "seconds": 0.28,
+    "seconds": 0.26,
     "status": "ok",
-    "abs": 1.7583703382229031e-13,
+    "abs": 1.68098734931732e-13,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.29,
+    "seconds": 0.27,
     "status": "ok",
-    "abs": 2.2042083713813556e-13,
+    "abs": 2.1287243079370912e-13,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.29,
+    "seconds": 0.51,
     "status": "ok",
-    "abs": 2.0234915965033907e-13,
+    "abs": 1.883037725747272e-13,
     "rel": null
    }
   },
@@ -1081,27 +1081,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 3.32,
+    "seconds": 8.91,
     "status": "ok",
-    "abs": 1.648561465117382e-12,
+    "abs": 1.6443692629763976e-12,
     "rel": null
    },
    "ours": {
-    "seconds": 0.54,
+    "seconds": 1.59,
     "status": "ok",
-    "abs": 1.1183217907273502e-12,
+    "abs": 1.0450221132884963e-12,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.53,
+    "seconds": 1.11,
     "status": "ok",
-    "abs": 1.0406520978278877e-12,
+    "abs": 1.0134793448912662e-12,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.51,
+    "seconds": 1.63,
     "status": "ok",
-    "abs": 1.2856165909624908e-12,
+    "abs": 1.2812750860291545e-12,
     "rel": null
    }
   },
@@ -1166,10 +1166,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.28,
     "status": "ok",
     "abs": 5.995204332975845e-15,
-    "rel": 7.494005416219805e-16
+    "rel": 5.273559366969493e-16
    }
   },
   "daisy": {
@@ -1200,9 +1200,9 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.29,
     "status": "ok",
-    "abs": 7.938094626069901e-15,
+    "abs": 6.314393452555579e-16,
     "rel": null
    }
   },
@@ -1270,15 +1270,15 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.5,
+    "seconds": 1.62,
     "status": "ok",
-    "abs": 3.884154571614582e-05,
+    "abs": 3.8420970582532396e-05,
     "rel": null
    },
    "ours": {
-    "seconds": 0.25,
+    "seconds": 0.54,
     "status": "ok",
-    "abs": 3.383062734896302e-06,
+    "abs": 3.344031846999606e-06,
     "rel": null
    },
    "herbie": {
@@ -1288,9 +1288,9 @@
     "rel": null
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.83,
     "status": "ok",
-    "abs": 3.158451689466232e-05,
+    "abs": 3.124767613252714e-05,
     "rel": null
    }
   },
@@ -1358,28 +1358,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.27,
     "status": "ok",
-    "abs": 4.611833077137883e-09,
-    "rel": 1.4533793405916529e-05
+    "abs": 1.1039705474148193e-09,
+    "rel": 8.663694338915641e-07
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.28,
     "status": "ok",
     "abs": 8.326617173953774e-17,
     "rel": 2.4979851521861323e-16
    },
    "herbie": {
-    "seconds": 0.25,
+    "seconds": 0.26,
     "status": "ok",
-    "abs": 4.768096112484147e-10,
-    "rel": 1.5026242858166343e-06
+    "abs": 2.976892033669447e-11,
+    "rel": 2.336193000806017e-08
    },
    "daisy": {
-    "seconds": 0.29,
+    "seconds": 0.27,
     "status": "ok",
-    "abs": 4.611833077137883e-09,
-    "rel": 1.4533793405916529e-05
+    "abs": 1.1039705474148193e-09,
+    "rel": 8.663694338915641e-07
    }
   },
   "daisy": {
@@ -1416,7 +1416,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.27,
     "status": "ok",
     "abs": 8.326617173953774e-17,
     "rel": 2.4979851521861323e-16
@@ -1678,27 +1678,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.31,
     "status": "ok",
-    "abs": 4.95724878535736e-06,
+    "abs": 4.957248785135315e-06,
     "rel": null
    },
    "ours": {
-    "seconds": 0.58,
+    "seconds": 0.82,
     "status": "ok",
-    "abs": 1.1264217146455613e-07,
+    "abs": 1.019475057271506e-07,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.63,
+    "seconds": 1.8,
     "status": "ok",
-    "abs": 2.5929803266384154e-07,
+    "abs": 2.0568860541850387e-07,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.32,
+    "seconds": 0.28,
     "status": "ok",
-    "abs": 4.625579983493453e-06,
+    "abs": 4.623979534263871e-06,
     "rel": null
    }
   },
@@ -1766,25 +1766,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.25,
     "status": "ok",
     "abs": 1.4901161526914567e-08,
     "rel": 4.688299358288152e-08
    },
    "ours": {
-    "seconds": 0.28,
+    "seconds": 0.26,
     "status": "ok",
-    "abs": 1.0536712730780206e-08,
-    "rel": 1.2562727468736231e-08
+    "abs": 1.0536712607038053e-08,
+    "rel": 1.1509114161691184e-08
    },
    "herbie": {
-    "seconds": 0.25,
+    "seconds": 0.26,
     "status": "ok",
     "abs": 2.1073424588513928e-08,
     "rel": 6.630256493550058e-08
    },
    "daisy": {
-    "seconds": 0.28,
+    "seconds": 0.25,
     "status": "ok",
     "abs": 1.4901161526914567e-08,
     "rel": 4.688299358288152e-08
@@ -1860,25 +1860,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.26,
     "status": "ok",
     "abs": 2.7755575615628914e-16,
     "rel": 1.6653345369377348e-15
    },
    "ours": {
-    "seconds": 0.25,
+    "seconds": 0.26,
     "status": "ok",
-    "abs": 2.7755575615628943e-16,
-    "rel": 1.6653345369377366e-15
+    "abs": 1.6653345369377353e-16,
+    "rel": 3.317658647805644e-16
    },
    "herbie": {
-    "seconds": 0.24,
+    "seconds": 0.25,
     "status": "ok",
-    "abs": 2.7755575615628943e-16,
-    "rel": 1.6653345369377366e-15
+    "abs": 1.6653345369377353e-16,
+    "rel": 3.317658647805644e-16
    },
    "daisy": {
-    "seconds": 0.25,
+    "seconds": 0.26,
     "status": "ok",
     "abs": 2.7755575615628914e-16,
     "rel": 1.6653345369377348e-15
@@ -1918,10 +1918,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.26,
     "status": "ok",
-    "abs": 2.7911006839076436e-15,
-    "rel": 6.15683974391392e-16
+    "abs": 2.600142323672117e-15,
+    "rel": 3.879943253460201e-16
    }
   },
   "daisy": {
@@ -1988,28 +1988,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
-    "status": "ok",
-    "abs": 9.71883202398851e-08,
-    "rel": 8.112418016486568e-08
-   },
-   "ours": {
     "seconds": 0.26,
     "status": "ok",
-    "abs": 7.422942333287185e-08,
-    "rel": 3.0328459443253886e-08
+    "abs": 9.71883202398851e-08,
+    "rel": 6.710251459160798e-08
+   },
+   "ours": {
+    "seconds": 0.51,
+    "status": "ok",
+    "abs": 6.329954218341123e-08,
+    "rel": 2.1885908580923685e-08
    },
    "herbie": {
-    "seconds": 0.28,
+    "seconds": 0.26,
     "status": "ok",
     "abs": 9.71883202398851e-08,
-    "rel": 8.112418016486568e-08
+    "rel": 6.710251459160798e-08
    },
    "daisy": {
-    "seconds": 0.28,
+    "seconds": 0.26,
     "status": "ok",
     "abs": 9.71883202398851e-08,
-    "rel": 8.112418016486568e-08
+    "rel": 6.710251459160798e-08
    }
   },
   "daisy": {
@@ -2055,7 +2055,7 @@
     "seconds": 0.26,
     "status": "ok",
     "abs": 9.71883211419413e-08,
-    "rel": 1.4690886745041006e-08
+    "rel": 1.3391973330349579e-08
    }
   },
   "daisy": {
@@ -2122,28 +2122,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
-    "status": "ok",
-    "abs": 1.4161004123743906e-07,
-    "rel": 1.8745930030573163e-07
-   },
-   "ours": {
     "seconds": 0.26,
     "status": "ok",
-    "abs": 1.5512602871987258e-07,
-    "rel": 2.0535137585530185e-07
+    "abs": 1.374450400311039e-07,
+    "rel": 1.5465392275957697e-07
+   },
+   "ours": {
+    "seconds": 0.25,
+    "status": "ok",
+    "abs": 1.5056349846993645e-07,
+    "rel": 1.694148850879724e-07
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.26,
     "status": "ok",
-    "abs": 1.3328003910232457e-07,
-    "rel": 1.764322830253993e-07
+    "abs": 1.332800390606912e-07,
+    "rel": 1.499674405247433e-07
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.26,
     "status": "ok",
-    "abs": 1.4161004123743906e-07,
-    "rel": 1.8745930030573163e-07
+    "abs": 1.374450400311039e-07,
+    "rel": 1.5465392275957697e-07
    }
   },
   "daisy": {
@@ -2180,10 +2180,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.25,
     "status": "ok",
-    "abs": 1.4161004444320804e-07,
-    "rel": 1.2675555315478224e-08
+    "abs": 1.3744504318830063e-07,
+    "rel": 1.110183406207491e-08
    }
   },
   "daisy": {
@@ -2214,10 +2214,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.25,
     "status": "ok",
     "abs": 0.0002460260225964759,
-    "rel": 0.00011597620629091277
+    "rel": 0.00011567770439414869
    }
   },
   "daisy": {
@@ -2250,8 +2250,8 @@
    "original": {
     "seconds": 0.28,
     "status": "ok",
-    "abs": 1.7349847139791254e-13,
-    "rel": 2.028556191302102e-13
+    "abs": 1.6884364549154482e-13,
+    "rel": 6.234545174740301e-14
    }
   },
   "daisy": {
@@ -2282,10 +2282,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.28,
     "status": "ok",
-    "abs": 2.4623380080167304e-13,
-    "rel": 8.640548201629892e-13
+    "abs": 3.2602864258927016e-13,
+    "rel": 2.310148575541523e-13
    }
   },
   "daisy": {
@@ -2352,28 +2352,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.29,
     "status": "ok",
-    "abs": 8.042737831473773e-14,
-    "rel": 1.0060199112250637e-14
+    "abs": 9.695192089576515e-14,
+    "rel": 5.360179500253416e-15
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.29,
     "status": "ok",
-    "abs": 3.9838935370622573e-14,
-    "rel": 1.018315266135348e-14
+    "abs": 4.6558844861619445e-14,
+    "rel": 1.7720232430928082e-15
    },
    "herbie": {
-    "seconds": 0.28,
+    "seconds": 0.26,
     "status": "ok",
-    "abs": 8.076068104431289e-14,
-    "rel": 9.343522811187043e-15
+    "abs": 9.839867668116769e-14,
+    "rel": 5.271064251115984e-15
    },
    "daisy": {
-    "seconds": 0.28,
+    "seconds": 0.26,
     "status": "ok",
-    "abs": 5.968796841859482e-14,
-    "rel": 7.158938916825128e-15
+    "abs": 7.873199402421618e-14,
+    "rel": 4.1113841047011095e-15
    }
   },
   "daisy": {
@@ -2440,25 +2440,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.26,
     "status": "ok",
     "abs": 2.1316282072803006e-13,
     "rel": null
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.25,
     "status": "ok",
     "abs": 1.4210854715202004e-13,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.31,
     "status": "ok",
     "abs": 2.504663143554353e-13,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.31,
+    "seconds": 0.32,
     "status": "ok",
     "abs": 1.1546319456101628e-13,
     "rel": null
@@ -2528,19 +2528,19 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.27,
     "status": "ok",
     "abs": 2.2716051262250403e-11,
     "rel": null
    },
    "ours": {
-    "seconds": 0.31,
+    "seconds": 0.29,
     "status": "ok",
     "abs": 1.531930138298776e-11,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.26,
     "status": "ok",
     "abs": 2.3929302983560774e-11,
     "rel": null
@@ -2604,20 +2604,20 @@
   },
   "precisa": {
    "original": {
-    "seconds": 9.83,
+    "seconds": 13.75,
     "status": "ok",
-    "abs": 1.4416350268665116e-11,
+    "abs": 1.264575816222811e-11,
     "rel": null
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.31,
     "status": "ok",
-    "abs": 6.220345372088845e-12,
+    "abs": 5.849830091773803e-12,
     "rel": null
    },
    "herbie": {
-    "seconds": 1.46,
-    "status": "memory",
+    "seconds": 3.98,
+    "status": "fail",
     "abs": null,
     "rel": null
    }
@@ -2650,10 +2650,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.37,
     "status": "ok",
-    "abs": 1.953220376667948e-14,
-    "rel": 1.0470959892223804e-14
+    "abs": 1.5906140887956087e-14,
+    "rel": 2.1354882363805506e-15
    }
   },
   "daisy": {
@@ -2720,27 +2720,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.33,
     "status": "ok",
-    "abs": 2.110007100938598e-14,
+    "abs": 1.720804216301121e-14,
     "rel": null
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.28,
     "status": "ok",
-    "abs": 2.0234845854330767e-14,
+    "abs": 1.6762510304688865e-14,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.28,
+    "seconds": 0.27,
     "status": "ok",
-    "abs": 1.7611958704394688e-14,
+    "abs": 1.4230038019031174e-14,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.28,
+    "seconds": 0.29,
     "status": "ok",
-    "abs": 2.0389617977291548e-14,
+    "abs": 1.7031761136207465e-14,
     "rel": null
    }
   },
@@ -2772,10 +2772,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.29,
     "status": "ok",
-    "abs": 1.095244968807636e-14,
-    "rel": 8.095599052715351e-15
+    "abs": 8.681437813103916e-15,
+    "rel": 3.34673959333106e-15
    }
   },
   "daisy": {
@@ -2806,10 +2806,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.28,
     "status": "ok",
-    "abs": 2.511670113595161e-16,
-    "rel": 7.976249685065715e-16
+    "abs": 2.751898686917509e-16,
+    "rel": 2.8108568126465017e-16
    }
   },
   "daisy": {
@@ -2840,10 +2840,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.27,
     "status": "ok",
-    "abs": 1.0416043030544902e-16,
-    "rel": 2.794223376893803e-15
+    "abs": 1.0871531893960319e-16,
+    "rel": 3.9647831150360704e-16
    }
   },
   "daisy": {
@@ -2874,10 +2874,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.31,
+    "seconds": 0.3,
     "status": "ok",
-    "abs": 4.962321105450847e-09,
-    "rel": 9.193103103352256e-15
+    "abs": 5.027144316675927e-09,
+    "rel": 7.780070012420555e-16
    }
   },
   "daisy": {
@@ -2910,7 +2910,7 @@
    "original": {
     "seconds": 0.33,
     "status": "ok",
-    "abs": 8.512030981720888e-16,
+    "abs": 4.626250395532841e-16,
     "rel": null
    }
   },
@@ -2942,10 +2942,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.32,
     "status": "ok",
     "abs": 5.620504062164855e-16,
-    "rel": 6.723593644458892e-16
+    "rel": 4.990674091493377e-16
    }
   },
   "daisy": {
@@ -2976,9 +2976,9 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.31,
     "status": "ok",
-    "abs": 5.586696773931958e-16,
+    "abs": 4.992007543440609e-16,
     "rel": null
    }
   },
@@ -3046,28 +3046,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.36,
     "status": "ok",
-    "abs": 7.466103466910144e-07,
-    "rel": 1.1313686819552448e-07
+    "abs": 7.449372023035395e-07,
+    "rel": 1.121820271753199e-07
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.37,
     "status": "ok",
-    "abs": 5.492672501370964e-07,
-    "rel": 8.169504872931155e-08
+    "abs": 5.486758216445526e-07,
+    "rel": 8.110961985141065e-08
    },
    "herbie": {
-    "seconds": 0.28,
+    "seconds": 0.37,
     "status": "ok",
-    "abs": 6.213552926705102e-07,
-    "rel": 9.184433922291154e-08
+    "abs": 6.200494974188198e-07,
+    "rel": 9.088762308931663e-08
    },
    "daisy": {
-    "seconds": 0.29,
+    "seconds": 0.72,
     "status": "ok",
-    "abs": 7.413100301377331e-07,
-    "rel": 1.1320421082841637e-07
+    "abs": 7.39659761809693e-07,
+    "rel": 1.1215763946563658e-07
    }
   },
   "daisy": {
@@ -3098,7 +3098,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.4,
     "status": "ok",
     "abs": 5.088522196198634e-17,
     "rel": null
@@ -3168,28 +3168,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.41,
     "status": "ok",
-    "abs": 1.7488893044349807e-07,
-    "rel": 1.0999246729914645e-13
+    "abs": 1.7488892679765142e-07,
+    "rel": 1.0999246500617304e-13
    },
    "ours": {
-    "seconds": 0.28,
+    "seconds": 0.4,
     "status": "ok",
-    "abs": 2.036334666026844e-07,
-    "rel": 1.2807069812542446e-13
+    "abs": 2.036327944191295e-07,
+    "rel": 1.2807027537066523e-13
    },
    "herbie": {
-    "seconds": 0.25,
+    "seconds": 0.33,
     "status": "ok",
-    "abs": 1.675080374687861e-07,
-    "rel": 1.0535042033196124e-13
+    "abs": 1.6750803563675306e-07,
+    "rel": 1.0535041917974518e-13
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.35,
     "status": "ok",
-    "abs": 1.319225817423414e-07,
-    "rel": 8.296974669303848e-14
+    "abs": 1.3192257809649475e-07,
+    "rel": 8.296974440006507e-14
    }
   },
   "daisy": {
@@ -3256,28 +3256,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.29,
     "status": "ok",
-    "abs": 1.7488893044349807e-07,
-    "rel": 1.0999246729914645e-13
+    "abs": 1.7488892679765142e-07,
+    "rel": 1.0999246500617304e-13
    },
    "ours": {
-    "seconds": 0.25,
+    "seconds": 0.28,
     "status": "ok",
-    "abs": 2.0396966700353666e-07,
-    "rel": 1.282821438212894e-13
+    "abs": 2.0396899481998176e-07,
+    "rel": 1.2828172106653018e-13
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.5629885875335664e-07,
-    "rel": 9.83006589766793e-14
+    "abs": 1.5629885510734493e-07,
+    "rel": 9.830065668360207e-14
    },
    "daisy": {
-    "seconds": 0.32,
+    "seconds": 0.16,
     "status": "ok",
-    "abs": 1.3656646168959397e-07,
-    "rel": 8.589041075075804e-14
+    "abs": 1.3656645804374732e-07,
+    "rel": 8.589040845778462e-14
    }
   },
   "daisy": {
@@ -3344,28 +3344,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.33,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.8120446165260928e-07,
-    "rel": 1.139644788966405e-13
+    "abs": 1.8120445800676264e-07,
+    "rel": 1.139644766036671e-13
    },
    "ours": {
-    "seconds": 0.3,
+    "seconds": 0.22,
     "status": "ok",
     "abs": 2.0704067262011796e-07,
-    "rel": 8.628194537852822e-15
+    "rel": 1.2382033085584002e-15
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.7663086374097595e-07,
-    "rel": 1.1108801714769465e-13
+    "abs": 1.766308637408109e-07,
+    "rel": 1.1108801714759085e-13
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.4526123103854316e-07,
-    "rel": 9.135879077265364e-14
+    "abs": 1.4526122739269651e-07,
+    "rel": 9.135878847968023e-14
    }
   },
   "daisy": {
@@ -3396,10 +3396,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 3.1086244689504403e-15,
-    "rel": 4.352074256530616e-15
+    "abs": 8.326672684688675e-16,
+    "rel": 3.7398614074790487e-16
    }
   },
   "daisy": {
@@ -3430,7 +3430,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.4901161572901514e-08,
     "rel": null
@@ -3488,21 +3488,21 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.0619678810780443e-08,
+    "abs": 1.0557332361146481e-08,
     "rel": null
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 0.0,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.0714118945270532e-08,
+    "abs": 1.0577992169251984e-08,
     "rel": null
    }
   },
@@ -3570,27 +3570,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 306.52,
-    "status": "timeout",
+    "seconds": 1.03,
+    "status": "memory",
     "abs": null,
     "rel": null
    },
    "ours": {
-    "seconds": 1.04,
+    "seconds": 1.93,
     "status": "ok",
-    "abs": 120.26888937281822,
+    "abs": 48.4154861593251,
     "rel": null
    },
    "herbie": {
-    "seconds": 306.27,
-    "status": "timeout",
+    "seconds": 1.02,
+    "status": "memory",
     "abs": null,
     "rel": null
    },
    "daisy": {
-    "seconds": 64.91,
-    "status": "ok",
-    "abs": 116.63950069274088,
+    "seconds": 18.64,
+    "status": "memory",
+    "abs": null,
     "rel": null
    }
   },
@@ -3691,27 +3691,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.67,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 9.98959551044922e+145,
+    "abs": 9.989595510013116e+145,
     "rel": null
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.29,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.67,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 9.98959551044922e+145,
+    "abs": 9.989595510013116e+145,
     "rel": null
    }
   },
@@ -3773,19 +3773,19 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.31,
+    "seconds": 0.11,
     "status": "fail",
     "abs": null,
     "rel": null
    },
    "ours": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
@@ -3819,10 +3819,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.35,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 2.9802322609739924e-08,
-    "rel": 1.088226957293386e-08
+    "rel": 1.0705310306843446e-08
    }
   },
   "daisy": {
@@ -3853,10 +3853,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.39,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 5.551115123125783e-17,
-    "rel": 2.3684757858670005e-15
+    "rel": 5.617728504603292e-16
    }
   },
   "daisy": {
@@ -3887,10 +3887,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.37,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.5543122344752192e-15,
-    "rel": 1.0812606848523264e-15
+    "abs": 1.1657341758564144e-15,
+    "rel": 4.862182085523566e-16
    }
   },
   "daisy": {
@@ -3957,27 +3957,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.37,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.3322676295501878e-15,
+    "abs": 9.159339953157541e-16,
     "rel": null
    },
    "ours": {
-    "seconds": 0.43,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.0547118733938987e-15,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.45,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.5543122344752192e-15,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.37,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.3322676295501878e-15,
+    "abs": 9.159339953157541e-16,
     "rel": null
    }
   },
@@ -4015,10 +4015,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 4.2,
+    "seconds": 0.16,
     "status": "ok",
-    "abs": 1.5543122344752192e-15,
-    "rel": 1.2434497875801752e-15
+    "abs": 1.1657341758564144e-15,
+    "rel": 5.662137425588299e-16
    }
   },
   "daisy": {
@@ -4049,10 +4049,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.91,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 9.325873406851315e-14,
-    "rel": 1.0971615772766253e-15
+    "rel": 4.475859752819529e-16
    }
   },
   "daisy": {
@@ -4083,10 +4083,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 7.37188088351104e-14,
-    "rel": 9.829174511348053e-16
+    "rel": 4.511382449270477e-16
    }
   },
   "daisy": {
@@ -4117,7 +4117,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.33,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 4.440892098500626e-15,
     "rel": 2.1147105230955362e-16
@@ -4151,10 +4151,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.31,
+    "seconds": 0.33,
     "status": "ok",
     "abs": 0.0001588464074870899,
-    "rel": 3.0346177490108367e-15
+    "rel": 8.049424913761906e-16
    }
   },
   "daisy": {
@@ -4185,10 +4185,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.17,
     "status": "ok",
-    "abs": 6.231126725708691e-15,
-    "rel": 3.1650167495663195e-15
+    "abs": 3.6013943563451e-15,
+    "rel": 5.826725395009949e-16
    }
   },
   "daisy": {
@@ -4219,10 +4219,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 9.992007221626409e-16,
-    "rel": 2.498001805406602e-16
+    "rel": 1.6653345369377348e-16
    }
   },
   "daisy": {
@@ -4253,10 +4253,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 8.881784197001252e-16,
-    "rel": 3.552713678800501e-16
+    "rel": 2.5376526277146434e-16
    }
   },
   "daisy": {
@@ -4287,7 +4287,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 7.285783087951359e-12,
     "rel": 2.371591467729665e-16
@@ -4321,10 +4321,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.24,
+    "seconds": 0.05,
     "status": "ok",
-    "abs": 1.9984014443252845e-15,
-    "rel": 7.993605777301138e-15
+    "abs": 4.996003610813205e-16,
+    "rel": 5.288108660638978e-16
    }
   },
   "daisy": {
@@ -4355,10 +4355,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 5.373479439185759e-16,
-    "rel": 2.6867397195928795e-15
+    "abs": 2.458350983098561e-16,
+    "rel": 4.0077347152588006e-16
    }
   },
   "daisy": {
@@ -4389,10 +4389,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
-    "abs": 1.3322676295501878e-15,
-    "rel": 1.3322676295501878e-15
+    "abs": 9.43689570931383e-16,
+    "rel": 2.9423194562082337e-16
    }
   },
   "daisy": {
@@ -4459,27 +4459,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 3.552713678800501e-15,
+    "abs": 3.1086244689504383e-15,
     "rel": null
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 2.220446049250313e-15,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.35,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 2.220446049250313e-15,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 3.552713678800501e-15,
+    "abs": 3.1086244689504383e-15,
     "rel": null
    }
   },
@@ -4517,10 +4517,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.35,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 3.552713678800501e-15,
-    "rel": 7.105427357601002e-16
+    "rel": 3.1720657846433045e-16
    }
   },
   "daisy": {
@@ -4551,7 +4551,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.33,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 4.440892098500626e-16,
     "rel": null
@@ -4585,10 +4585,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.33,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 4.991192644373161e-13,
-    "rel": 2.7424135408643743e-15
+    "rel": 7.744618946961657e-16
    }
   },
   "daisy": {
@@ -4619,10 +4619,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 4.263256414560601e-13,
-    "rel": 2.208941147440726e-15
+    "rel": 5.821866286550499e-16
    }
   },
   "daisy": {
@@ -4653,7 +4653,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 2.498001805406602e-16,
     "rel": 1.8735013540549517e-16
@@ -4687,7 +4687,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.3,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.3877787807814457e-16,
     "rel": 2.0816681711721683e-16
@@ -4721,10 +4721,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.32,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.7763568394002505e-15,
-    "rel": 5.921189464667501e-16
+    "rel": 2.983906501879686e-16
    }
   },
   "daisy": {
@@ -4755,10 +4755,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.1368683772161603e-13,
-    "rel": 1.804552979708191e-15
+    "rel": 4.900294729380001e-16
    }
   },
   "daisy": {
@@ -4789,10 +4789,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.1368683772161603e-13,
-    "rel": 2.3201395453391025e-15
+    "rel": 6.59355896431839e-16
    }
   },
   "daisy": {
@@ -4823,10 +4823,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
-    "abs": 8.970602038971267e-16,
-    "rel": 1.614708367014828e-15
+    "abs": 4.1916583582786527e-16,
+    "rel": 4.0474619540704973e-16
    }
   },
   "daisy": {
@@ -4857,10 +4857,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 5.329070518200751e-15,
-    "rel": 8.881784197001252e-16
+    "rel": 4.440892098500626e-16
    }
   },
   "daisy": {
@@ -4891,7 +4891,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.44,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 2.842170943040401e-14,
     "rel": 2.842170943040401e-16
@@ -4925,10 +4925,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.42,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 2.67841304690819e-15,
-    "rel": 3.3797146218590914e-16
+    "rel": 3.0995310262645556e-16
    }
   },
   "daisy": {
@@ -4959,10 +4959,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.4,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 4.4941828036826337e-13,
-    "rel": 4.494182803682634e-16
+    "rel": 2.9961218691217557e-16
    }
   },
   "daisy": {
@@ -4993,10 +4993,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.39,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 2.0250467969162855e-13,
-    "rel": 5.062616992290713e-16
+    "rel": 2.5313084961453567e-16
    }
   },
   "daisy": {
@@ -5027,10 +5027,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.0103029524088925e-14,
-    "rel": 9.76626187328596e-16
+    "rel": 3.954444205306851e-16
    }
   },
   "daisy": {
@@ -5061,7 +5061,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 2.919120883712696e-17,
     "rel": 1.9918707206510162e-16
@@ -5095,10 +5095,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.3,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 2.237793284010081e-16,
-    "rel": 2.220033019851271e-16
+    "rel": 1.483947801067693e-16
    }
   },
   "daisy": {
@@ -5129,7 +5129,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.3,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.1449174941446927e-16,
     "rel": 1.192622389734055e-16
@@ -5163,10 +5163,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.31,
+    "seconds": 0.17,
     "status": "ok",
     "abs": 9.531772989123784e-17,
-    "rel": 9.3850944940398e-15
+    "rel": 1.047972648168487e-15
    }
   },
   "daisy": {
@@ -5197,10 +5197,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.5384525662351542e-18,
-    "rel": 6.295347901034251e-15
+    "rel": 5.22348768559709e-16
    }
   },
   "daisy": {
@@ -5231,10 +5231,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 4.263256414560601e-14,
-    "rel": 6.87622002348484e-16
+    "rel": 3.0235861096174475e-16
    }
   },
   "daisy": {
@@ -5265,10 +5265,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 3.3306690738754696e-16,
-    "rel": 2.6645352591003757e-15
+    "abs": 2.237793284010081e-16,
+    "rel": 3.700743415417188e-16
    }
   },
   "daisy": {
@@ -5299,10 +5299,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.17,
     "status": "ok",
     "abs": 3.238246722396553e-17,
-    "rel": 8.951185232727378e-15
+    "rel": 2.275997118069723e-15
    }
   },
   "daisy": {
@@ -5333,10 +5333,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.7053025658242404e-13,
-    "rel": 6.713789629229293e-16
+    "rel": 2.976095228314556e-16
    }
   },
   "daisy": {
@@ -5367,10 +5367,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 9.728597593957559e-15,
-    "rel": 1.1445408934067716e-15
+    "rel": 5.99539491259393e-16
    }
   },
   "daisy": {
@@ -5401,10 +5401,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 2.7755575615628914e-17,
-    "rel": 4.440892098500626e-16
+    "rel": 1.7763568394002506e-16
    }
   },
   "daisy": {
@@ -5435,10 +5435,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 5.704350769519806e-09,
-    "rel": 8.409802846949829e-16
+    "rel": 4.099283944767945e-16
    }
   },
   "daisy": {
@@ -5505,25 +5505,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.0658141036401503e-14,
     "rel": null
    },
    "ours": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.2434497875801753e-14,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.0658141036401503e-14,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.25,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.0658141036401503e-14,
     "rel": null
@@ -5563,10 +5563,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.24,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 3.854941057726239e-17,
-    "rel": 9.251858538542974e-16
+    "rel": 3.025357742103552e-16
    }
   },
   "daisy": {
@@ -5597,10 +5597,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 0.00036621716571971774,
-    "rel": 7.895356971590122e-16
+    "rel": 4.035335286646492e-16
    }
   },
   "daisy": {
@@ -5631,10 +5631,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.24,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 5.684341886080802e-14,
-    "rel": 5.26327952414889e-16
+    "rel": 3.1189804587548977e-16
    }
   },
   "daisy": {
@@ -5665,10 +5665,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.4432899320127035e-15,
-    "rel": 5.773159728050814e-16
+    "rel": 4.123685520036296e-16
    }
   },
   "daisy": {
@@ -5699,10 +5699,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 8.218734335072349e-16,
-    "rel": 8.965892001897108e-16
+    "abs": 5.63592382639576e-16,
+    "rel": 3.809160850367066e-16
    }
   },
   "daisy": {
@@ -5733,10 +5733,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 2.9757663347340646e-14,
-    "rel": 5.53682703550452e-15
+    "rel": 6.59050762696375e-16
    }
   },
   "daisy": {
@@ -5803,28 +5803,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.27,
     "status": "ok",
     "abs": 5.106901230025885e-14,
-    "rel": 9.58582153800815e-15
+    "rel": 2.021278514311637e-15
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.21,
     "status": "ok",
-    "abs": 2.35494742738436e-14,
-    "rel": 4.8980529413873005e-15
+    "abs": 2.1605344771547744e-14,
+    "rel": 7.009518792922927e-16
    },
    "herbie": {
-    "seconds": 0.25,
+    "seconds": 0.16,
     "status": "ok",
-    "abs": 1.9556920102456465e-14,
-    "rel": 3.117974930608316e-15
+    "abs": 1.4388895111484227e-14,
+    "rel": 5.7704169630529e-16
    },
    "daisy": {
-    "seconds": 0.25,
+    "seconds": 0.27,
     "status": "ok",
     "abs": 4.208239252944182e-14,
-    "rel": 9.263205960936182e-15
+    "rel": 1.8595752107539844e-15
    }
   },
   "daisy": {
@@ -5891,25 +5891,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 6.661338147750939e-16,
     "rel": null
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 4.440892098500626e-16,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 4.440892098500626e-16,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 4.440892098500626e-16,
     "rel": null
@@ -5979,25 +5979,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 3.913536161803677e-14,
     "rel": null
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 3.200217868482014e-14,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
-    "abs": 3.555489236362064e-14,
+    "abs": 3.200217868482014e-14,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 3.910760604242114e-14,
     "rel": null
@@ -6031,10 +6031,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.33,
+    "seconds": 0.16,
     "status": "ok",
     "abs": 8.739853285533172e-11,
-    "rel": 1.5313732277707409e-15
+    "rel": 5.235549504113201e-16
    }
   },
   "daisy": {
@@ -6101,25 +6101,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 2.6645352591003757e-15,
     "rel": null
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 2.6645352591003757e-15,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.25,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.7763568394002505e-15,
     "rel": null
@@ -6153,7 +6153,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 3.3306690738754696e-16,
     "rel": null
@@ -6187,10 +6187,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.9984014443252818e-16,
-    "rel": 3.9968028886505636e-16
+    "rel": 2.498001805406602e-16
    }
   },
   "daisy": {
@@ -6221,10 +6221,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.24,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 5.684341886080802e-14,
-    "rel": 7.105427357601002e-16
+    "rel": 2.9605947323337506e-16
    }
   },
   "daisy": {
@@ -6255,10 +6255,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 8.881784197001252e-16,
-    "rel": 4.440892098500626e-16
+    "rel": 2.9605947323337506e-16
    }
   },
   "daisy": {
@@ -6289,10 +6289,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.24,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.7763568394002505e-15,
-    "rel": 8.881784197001252e-16
+    "rel": 2.9605947323337506e-16
    }
   },
   "daisy": {
@@ -6323,10 +6323,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 9.112710586123285e-13,
-    "rel": 8.864504461209421e-16
+    "rel": 2.964439660557561e-16
    }
   },
   "daisy": {
@@ -6357,10 +6357,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 6.838973831690964e-13,
-    "rel": 6.784696261598178e-16
+    "rel": 3.003445445564897e-16
    }
   },
   "daisy": {
@@ -6391,10 +6391,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 2.3374191471248196e-10,
-    "rel": 8.881716699059245e-16
+    "rel": 2.975989308284898e-16
    }
   },
   "daisy": {
@@ -6425,10 +6425,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.17,
     "status": "ok",
     "abs": 5.983838669010311e-08,
-    "rel": 8.881783933337432e-16
+    "rel": 2.9760344236368e-16
    }
   },
   "daisy": {
@@ -6459,10 +6459,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 8.526512829121202e-14,
-    "rel": 1.2357264969740872e-15
+    "rel": 3.9666220685636663e-16
    }
   },
   "daisy": {
@@ -6493,10 +6493,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 8.881784197001252e-16,
-    "rel": 4.440892098500626e-16
+    "rel": 2.3684757858670006e-16
    }
   },
   "daisy": {
@@ -6563,25 +6563,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.4901161471403416e-08,
     "rel": 4.688299340822876e-08
    },
    "ours": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 2.556635195163366e-09,
-    "rel": 6.206255714312734e-09
+    "rel": 6.180781076408111e-09
    },
    "herbie": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 2.556635195163366e-09,
-    "rel": 6.206255714312734e-09
+    "rel": 6.180781076408111e-09
    },
    "daisy": {
-    "seconds": 0.25,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.4901161471403416e-08,
     "rel": 4.688299340822876e-08
@@ -6621,10 +6621,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 9.112710586123285e-13,
-    "rel": 1.180402925663638e-15
+    "rel": 3.867873763210223e-16
    }
   },
   "daisy": {
@@ -6655,10 +6655,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.0125233984581428e-13,
-    "rel": 2.1094237467877974e-15
+    "rel": 6.743576890315766e-16
    }
   },
   "daisy": {
@@ -6689,10 +6689,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 7.993605777301127e-14,
-    "rel": 1.6653345369377348e-15
+    "rel": 5.427757009278544e-16
    }
   },
   "daisy": {
@@ -6723,10 +6723,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 6.394884621840902e-14,
-    "rel": 1.3322676295501878e-15
+    "rel": 4.605369583630279e-16
    }
   },
   "daisy": {
@@ -6757,10 +6757,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 5.728750807065808e-14,
-    "rel": 1.1691328177685322e-15
+    "rel": 3.870777572341762e-16
    }
   },
   "daisy": {
@@ -6791,10 +6791,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.4654943925052066e-14,
-    "rel": 8.620555250030627e-16
+    "rel": 2.9309887850104134e-16
    }
   },
   "daisy": {
@@ -6825,10 +6825,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 3.650024172193318e-08,
-    "rel": 1.331414214812821e-08
+    "rel": 1.3107970873109992e-08
    }
   },
   "daisy": {
@@ -6895,27 +6895,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 1.27,
+    "seconds": 4.52,
     "status": "ok",
-    "abs": 35184381026601.94,
+    "abs": 35184380904601.97,
     "rel": null
    },
    "ours": {
-    "seconds": 7.25,
+    "seconds": 24.92,
     "status": "ok",
-    "abs": 35184380973942.09,
+    "abs": 35184380867851.03,
     "rel": null
    },
    "herbie": {
-    "seconds": 1.25,
+    "seconds": 4.56,
     "status": "ok",
-    "abs": 39582427537449.94,
+    "abs": 39582427415449.97,
     "rel": null
    },
    "daisy": {
-    "seconds": 1.27,
+    "seconds": 4.52,
     "status": "ok",
-    "abs": 35184381026601.94,
+    "abs": 35184380904601.97,
     "rel": null
    }
   },
@@ -6953,10 +6953,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.33,
     "status": "ok",
     "abs": 5.9187441422636766e-05,
-    "rel": 8.627191160852454e-15
+    "rel": 4.33527307033581e-15
    }
   },
   "daisy": {
@@ -6987,7 +6987,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.31,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 6.217248937900877e-15,
     "rel": 1.0362081563168128e-15
@@ -7021,10 +7021,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 7.993605777301127e-15,
-    "rel": 7.993605777301127e-16
+    "rel": 2.7068294695622867e-16
    }
   },
   "daisy": {
@@ -7055,10 +7055,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 7.503331289626658e-12,
-    "rel": 2.4424906541753444e-15
+    "rel": 5.397921558487583e-16
    }
   },
   "daisy": {
@@ -7089,10 +7089,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.33,
+    "seconds": 0.16,
     "status": "ok",
     "abs": 5.252357191152023e-18,
-    "rel": 4.727891319733247e-15
+    "rel": 6.264938063276823e-16
    }
   },
   "daisy": {
@@ -7123,10 +7123,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
-    "abs": 6.66133814775095e-16,
-    "rel": 4.329869796038113e-15
+    "abs": 1.8349519434776894e-16,
+    "rel": 4.106090823088945e-16
    }
   },
   "daisy": {
@@ -7157,10 +7157,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
-    "abs": 1.1102230246251583e-15,
-    "rel": 7.105427357601013e-15
+    "abs": 2.4980018054066027e-16,
+    "rel": 4.1980748120641314e-16
    }
   },
   "daisy": {
@@ -7191,10 +7191,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 3.1086244689504403e-15,
-    "rel": 4.352074256530616e-15
+    "abs": 8.326672684688675e-16,
+    "rel": 3.7398614074790487e-16
    }
   },
   "daisy": {
@@ -7225,10 +7225,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.1546319456101636e-14,
-    "rel": 1.0103029524088932e-14
+    "abs": 2.8033131371785207e-15,
+    "rel": 4.204969705767781e-16
    }
   },
   "daisy": {
@@ -7259,10 +7259,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 6.938893903907238e-17,
-    "rel": 4.4408920985006325e-15
+    "rel": 2.996117799593105e-16
    }
   },
   "daisy": {
@@ -7293,10 +7293,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 6.938893903907229e-16,
-    "rel": 1.8503717077085944e-15
+    "abs": 3.930903072066008e-16,
+    "rel": 4.8296237524272e-16
    }
   },
   "daisy": {
@@ -7327,10 +7327,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 2.6645352591003757e-15,
-    "rel": 5.329070518200751e-16
+    "rel": 3.552713678800501e-16
    }
   },
   "daisy": {
@@ -7397,27 +7397,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 2.2351742207799013e-07,
+    "abs": 2.2351742207452069e-07,
     "rel": null
    },
    "ours": {
-    "seconds": 0.28,
+    "seconds": 0.48,
     "status": "ok",
-    "abs": 4.8318108340330666e-09,
-    "rel": 6.71038731542241e-09
+    "abs": 4.696477043831209e-09,
+    "rel": 6.543077508594165e-09
    },
    "herbie": {
-    "seconds": 0.28,
+    "seconds": 0.6,
     "status": "ok",
-    "abs": 4.831811475428351e-09,
-    "rel": 6.710388510356729e-09
+    "abs": 4.6964776784507485e-09,
+    "rel": 6.543078672821089e-09
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 2.2351742207799013e-07,
+    "abs": 2.2351742207452069e-07,
     "rel": null
    }
   },
@@ -7455,10 +7455,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.22,
     "status": "ok",
     "abs": 5.0000000000018225,
-    "rel": 8.881242129133188e-15
+    "rel": 8.315710954468456e-16
    }
   },
   "daisy": {
@@ -7489,10 +7489,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 4.263256414560601e-14,
-    "rel": 1.2918958832001822e-15
+    "rel": 4.440892098500626e-16
    }
   },
   "daisy": {
@@ -7523,10 +7523,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 1.5987211554602254e-14,
-    "rel": 1.9984014443252818e-15
+    "abs": 1.2434497875801753e-14,
+    "rel": 3.5616177231082714e-16
    }
   },
   "daisy": {
@@ -7557,10 +7557,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.5543122344752192e-15,
-    "rel": 7.105427357601002e-15
+    "abs": 6.427209482693933e-16,
+    "rel": 6.451755229837007e-16
    }
   },
   "daisy": {
@@ -7591,10 +7591,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 2.1316282072803006e-14,
-    "rel": 1.7763568394002505e-15
+    "rel": 3.8668992422318376e-16
    }
   },
   "daisy": {
@@ -7625,10 +7625,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 8.526512829121202e-14,
-    "rel": 1.7763568394002505e-15
+    "rel": 4.042198674546348e-16
    }
   },
   "daisy": {
@@ -7659,10 +7659,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.7763568394002505e-15,
-    "rel": 1.7763568394002505e-15
+    "rel": 2.694799116364232e-16
    }
   },
   "daisy": {
@@ -7729,25 +7729,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 1.2434497875801753e-14,
+    "abs": 8.881784197001252e-15,
     "rel": null
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 6.661338147750939e-15,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 1.2989609388114332e-14,
+    "abs": 1.0436096431476471e-14,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 6.661338147750939e-15,
     "rel": null
@@ -7781,10 +7781,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 8.881784197001252e-15,
-    "rel": 2.960594732333751e-15
+    "rel": 5.566463828535347e-16
    }
   },
   "daisy": {
@@ -7815,10 +7815,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.7763568394002505e-15,
-    "rel": 5.921189464667501e-16
+    "rel": 2.631639762074445e-16
    }
   },
   "daisy": {
@@ -7849,10 +7849,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 6.630954428301653e-16,
-    "rel": 1.959616914882988e-15
+    "abs": 2.750674415692749e-16,
+    "rel": 4.50026572116351e-16
    }
   },
   "daisy": {
@@ -7883,10 +7883,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
-    "abs": 1.429967255717202e-15,
-    "rel": 3.2174263253637045e-15
+    "abs": 4.944137409206535e-16,
+    "rel": 4.1080571465408266e-16
    }
   },
   "daisy": {
@@ -7917,10 +7917,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 9.128500424695735e-16,
-    "rel": 3.1949751486435073e-15
+    "abs": 3.8857805861880484e-16,
+    "rel": 4.212899870229389e-16
    }
   },
   "daisy": {
@@ -7951,10 +7951,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 1.2567724638756774e-15,
-    "rel": 1.2567724638756774e-15
+    "abs": 4.86154753516656e-16,
+    "rel": 2.9381725810521055e-16
    }
   },
   "daisy": {
@@ -7985,9 +7985,9 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.3,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 1.495717130397781e-16,
+    "abs": 9.714451465470123e-17,
     "rel": null
    }
   },
@@ -8019,10 +8019,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 6.330504825146683e-15,
-    "rel": 5.45182133056444e-15
+    "abs": 5.855497304831921e-16,
+    "rel": 5.910887375024576e-16
    }
   },
   "daisy": {
@@ -8053,7 +8053,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.32,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 9.125060430483295e-09,
     "rel": 1.0536712191822267e-08
@@ -8123,27 +8123,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.0235010118342837e-14,
+    "abs": 6.175543369546072e-15,
     "rel": null
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.3374788804821021e-14,
+    "abs": 9.702485728426938e-15,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.1768364061026662e-14,
+    "abs": 6.631732200427603e-15,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.0235010118342837e-14,
+    "abs": 6.175543369546072e-15,
     "rel": null
    }
   },
@@ -8181,10 +8181,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 4.440892098500626e-14,
-    "rel": 1.3877787807814457e-15
+    "rel": 4.440892098500626e-16
    }
   },
   "daisy": {
@@ -8215,10 +8215,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.2105760670066785e-07,
-    "rel": 1.5208288430399694e-08
+    "rel": 1.5126818296074026e-08
    }
   },
   "daisy": {
@@ -8249,10 +8249,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.0658141036401503e-14,
-    "rel": 7.61295788314393e-16
+    "rel": 2.5376526277146434e-16
    }
   },
   "daisy": {
@@ -8283,10 +8283,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 5.397430180157461e-07,
-    "rel": 1.765806673420285e-08
+    "rel": 1.7206378942277193e-08
    }
   },
   "daisy": {
@@ -8317,10 +8317,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 3.437528039995641e-14,
-    "rel": 4.544827871018726e-15
+    "abs": 3.164829509572087e-14,
+    "rel": 4.607385425210882e-16
    }
   },
   "daisy": {
@@ -8351,10 +8351,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 3.3717479092932325e-06,
-    "rel": 2.0857281150102076e-08
+    "rel": 1.896608208155287e-08
    }
   },
   "daisy": {
@@ -8385,10 +8385,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 6.217248937900877e-15,
-    "rel": 3.490385368646106e-15
+    "abs": 3.027305393321846e-15,
+    "rel": 5.274591815113824e-16
    }
   },
   "daisy": {
@@ -8419,10 +8419,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 9.796850830579034e-15,
-    "rel": 1.2911829760235958e-14
+    "abs": 1.537658889105842e-15,
+    "rel": 1.458862313529408e-15
    }
   },
   "daisy": {
@@ -8453,10 +8453,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.2789769243681803e-13,
-    "rel": 8.881784197001252e-16
+    "rel": 3.632167339348755e-16
    }
   },
   "daisy": {
@@ -8487,10 +8487,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 4.440892098500626e-16,
-    "rel": 8.881784197001252e-16
+    "rel": 2.900174431673878e-16
    }
   },
   "daisy": {
@@ -8557,25 +8557,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 6.661338147750939e-16,
     "rel": null
    },
    "ours": {
-    "seconds": 0.29,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.1102230246251565e-15,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.28,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 6.661338147750939e-16,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.28,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 6.661338147750939e-16,
     "rel": null
@@ -8621,10 +8621,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 4.263256414560601e-14,
-    "rel": 7.47939721852737e-16
+    "rel": 4.0513401600356587e-16
    }
   },
   "daisy": {
@@ -8655,10 +8655,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 9.880984919163896e-17,
-    "rel": 9.880984919163896e-16
+    "rel": 3.014170545809497e-16
    }
   },
   "daisy": {
@@ -8689,10 +8689,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 2.220446049250313e-16,
-    "rel": 6.661338147750939e-16
+    "rel": 2.8548592061789737e-16
    }
   },
   "daisy": {
@@ -8723,10 +8723,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.709743457922741e-13,
-    "rel": 6.784696261598178e-16
+    "rel": 3.003445445564897e-16
    }
   },
   "daisy": {
@@ -8757,10 +8757,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.119047965403297e-08,
-    "rel": 2.6575958395168203e-15
+    "rel": 4.510532166790545e-16
    }
   },
   "daisy": {
@@ -8791,10 +8791,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 7.105427357601002e-15,
-    "rel": 4.440892098500626e-16
+    "rel": 1.9737298215558337e-16
    }
   },
   "daisy": {
@@ -8825,10 +8825,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 4.440892098500629e-16,
-    "rel": 6.217248937900881e-15
+    "abs": 2.4980018054066027e-16,
+    "rel": 5.401403230411178e-16
    }
   },
   "daisy": {
@@ -8859,10 +8859,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 8.881784197001252e-16,
-    "rel": 4.440892098500626e-16
+    "rel": 2.7328566760003855e-16
    }
   },
   "daisy": {
@@ -8893,10 +8893,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 9.095391106939132e-12,
-    "rel": 4.4497999544711996e-15
+    "rel": 7.229480446737522e-16
    }
   },
   "daisy": {
@@ -8963,27 +8963,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 2.701542693254554e-15,
+    "abs": 6.389164359165549e-16,
     "rel": null
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 8.61533067109122e-16,
+    "abs": 5.218048215738237e-16,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 7.97356008380096e-15,
+    "abs": 1.4051817386346105e-15,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 2.701542693254554e-15,
+    "abs": 6.389164359165549e-16,
     "rel": null
    }
   },
@@ -9021,10 +9021,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.32,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.067047684778625e-15,
-    "rel": 1.02436577738748e-15
+    "abs": 3.838729039519165e-16,
+    "rel": 2.439605378022878e-16
    }
   },
   "daisy": {
@@ -9055,10 +9055,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.3,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 1.7763568394002505e-15,
-    "rel": 1.1842378929335002e-15
+    "abs": 1.4432899320127035e-15,
+    "rel": 3.2671684672333576e-16
    }
   },
   "daisy": {
@@ -9089,10 +9089,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.32,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 8.881784197001252e-16,
-    "rel": 4.440892098500626e-16
+    "rel": 1.9737298215558337e-16
    }
   },
   "daisy": {
@@ -9123,10 +9123,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 5.329070518200751e-15,
-    "rel": 5.921189464667501e-16
+    "rel": 3.089316242435218e-16
    }
   },
   "daisy": {
@@ -9157,10 +9157,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.554312234475219e-14,
-    "rel": 8.180590707764311e-16
+    "rel": 2.9890619893754217e-16
    }
   },
   "daisy": {
@@ -9191,10 +9191,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 4.0059881720136575e-09,
-    "rel": 6.283021238499723e-09
+    "abs": 3.9960533610946786e-09,
+    "rel": 6.199916658222152e-09
    }
   },
   "daisy": {
@@ -9225,9 +9225,9 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.05,
     "status": "ok",
-    "abs": 6.370476445586794e-16,
+    "abs": 4.0142306640884574e-16,
     "rel": null
    }
   },
@@ -9259,10 +9259,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 5.551115123125791e-16,
-    "rel": 1.0391687510491474e-14
+    "abs": 2.3678975447083417e-16,
+    "rel": 1.0495604385596384e-15
    }
   },
   "daisy": {
@@ -9293,7 +9293,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 2.47033e-318,
     "rel": null
@@ -9363,28 +9363,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.22,
     "status": "ok",
-    "abs": 1.3226706367073393e-15,
-    "rel": 9.971822935953881e-15
+    "abs": 3.40855245978674e-16,
+    "rel": 2.4211548904177005e-15
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.22,
     "status": "ok",
     "abs": 1.67967470087232e-16,
-    "rel": 2.7282637356380453e-15
+    "rel": 6.709757801776125e-16
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.22,
     "status": "ok",
-    "abs": 1.5454462972002932e-15,
-    "rel": 1.0433798509027194e-14
+    "abs": 3.211119917710858e-16,
+    "rel": 2.388896038121804e-15
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.22,
     "status": "ok",
-    "abs": 1.3226706367073393e-15,
-    "rel": 9.971822935953881e-15
+    "abs": 3.40855245978674e-16,
+    "rel": 2.4211548904177005e-15
    }
   },
   "daisy": {
@@ -9421,10 +9421,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 1.634248292248231e-14,
-    "rel": 1.6342482922482309e-15
+    "abs": 8.650085478818612e-15,
+    "rel": 3.985188907956828e-16
    }
   },
   "daisy": {
@@ -9491,25 +9491,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.0658141036401503e-14,
     "rel": null
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.4210854715202004e-14,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.0658141036401503e-14,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.0658141036401503e-14,
     "rel": null
@@ -9555,10 +9555,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.5543122344752192e-15,
-    "rel": 1.2434497875801752e-15
+    "abs": 1.1657341758564144e-15,
+    "rel": 5.088522196198635e-16
    }
   },
   "daisy": {
@@ -9589,10 +9589,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.2434497875801753e-14,
-    "rel": 3.1086244689504383e-15
+    "rel": 3.552713678800501e-16
    }
   },
   "daisy": {
@@ -9659,25 +9659,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 6.661338147750939e-16,
     "rel": null
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 8.881784197001252e-16,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 9.992007221626409e-16,
+    "abs": 9.43689570931383e-16,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 6.661338147750939e-16,
     "rel": null
@@ -9753,27 +9753,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 6.5225602696727994e-15,
+    "abs": 3.0184188481996447e-15,
     "rel": null
    },
    "ours": {
-    "seconds": 0.25,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 7.97972798949332e-15,
+    "abs": 4.603956105242447e-15,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.26,
+    "seconds": 0.16,
     "status": "ok",
-    "abs": 5.884182030513333e-15,
+    "abs": 3.6637359812630166e-15,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 4.385380947269371e-15,
+    "abs": 2.831068712794149e-15,
     "rel": null
    }
   },
@@ -9805,10 +9805,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 2.55351295663786e-15,
-    "rel": 2.55351295663786e-15
+    "rel": 3.8543591798307323e-16
    }
   },
   "daisy": {
@@ -9839,10 +9839,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.276756478318931e-15,
-    "rel": 6.4392935428259095e-15
+    "abs": 5.689893001203928e-16,
+    "rel": 1.09532136447241e-15
    }
   },
   "daisy": {
@@ -9873,10 +9873,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.7763568394002505e-15,
-    "rel": 4.440892098500626e-16
+    "rel": 2.9605947323337506e-16
    }
   },
   "daisy": {
@@ -9907,10 +9907,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.33,
+    "seconds": 0.22,
     "status": "ok",
-    "abs": 2.8163620241616557e-13,
-    "rel": 1.0367547768032582e-14
+    "abs": 2.501265863364531e-13,
+    "rel": 2.1578331216637645e-15
    }
   },
   "daisy": {
@@ -9941,10 +9941,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.3,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 9.325873406851318e-15,
-    "rel": 1.6320278461989806e-15
+    "abs": 8.150343145483505e-15,
+    "rel": 5.068280611477138e-16
    }
   },
   "daisy": {
@@ -9975,10 +9975,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.31,
+    "seconds": 0.17,
     "status": "ok",
-    "abs": 1.3322676295501878e-15,
-    "rel": 7.66053886991358e-15
+    "abs": 4.6876083261951055e-16,
+    "rel": 1.177077641086044e-15
    }
   },
   "daisy": {
@@ -10009,10 +10009,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 9.880984919163896e-17,
-    "rel": 9.880984919163896e-16
+    "rel": 3.014170545809497e-16
    }
   },
   "daisy": {
@@ -10079,28 +10079,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.17,
     "status": "ok",
-    "abs": 3.978065798570646e-13,
-    "rel": 1.1963500207291171e-14
+    "abs": 3.866137511977869e-13,
+    "rel": 9.546253178656526e-15
    },
    "ours": {
-    "seconds": 0.26,
-    "status": "ok",
-    "abs": 2.936283156686761e-13,
-    "rel": 9.092603015441382e-15
-   },
-   "herbie": {
-    "seconds": 0.25,
-    "status": "ok",
-    "abs": 2.525478717608153e-13,
-    "rel": 8.359786703438421e-15
-   },
-   "daisy": {
     "seconds": 0.27,
     "status": "ok",
-    "abs": 3.0086073996812556e-13,
-    "rel": 1.001376808299351e-14
+    "abs": 2.842887306227053e-13,
+    "rel": 4.444552954249793e-15
+   },
+   "herbie": {
+    "seconds": 0.21,
+    "status": "ok",
+    "abs": 2.408472730455051e-13,
+    "rel": 4.440582785554975e-15
+   },
+   "daisy": {
+    "seconds": 0.16,
+    "status": "ok",
+    "abs": 2.9286031599751547e-13,
+    "rel": 7.942142633802713e-15
    }
   },
   "daisy": {
@@ -10167,27 +10167,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 6.922434820650417e-16,
+    "abs": 4.987221696517893e-16,
     "rel": null
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 7.570855894277964e-16,
+    "abs": 6.223844063579439e-16,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 1.5053881118093723e-15,
+    "abs": 7.91016100969941e-16,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 5.911953891149113e-16,
+    "abs": 4.89337271487094e-16,
     "rel": null
    }
   },
@@ -10219,10 +10219,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 3.9968028886505635e-15,
-    "rel": 2.0828196523709426e-15
+    "abs": 3.999410764892673e-15,
+    "rel": 2.084178672577679e-15
    }
   },
   "daisy": {
@@ -10253,10 +10253,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 4.952482570947204e-15,
-    "rel": 4.564972658360435e-15
+    "abs": 8.292569614161493e-16,
+    "rel": 4.786789946049414e-16
    }
   },
   "daisy": {
@@ -10323,27 +10323,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 6.683281051870154e-15,
+    "abs": 4.85224977371922e-16,
     "rel": null
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 5.368924141598764e-15,
+    "abs": 4.871768966376512e-16,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.29,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 4.042224768928947e-15,
+    "abs": 4.701918626317916e-16,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.17,
     "status": "ok",
-    "abs": 5.538503143409595e-15,
+    "abs": 4.799310830157999e-16,
     "rel": null
    }
   },
@@ -10411,28 +10411,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 2.9,
     "status": "ok",
-    "abs": 3.692204439834847e-14,
-    "rel": 8.939668464551919e-15
+    "abs": 3.290320421156621e-14,
+    "rel": 2.1770020947010723e-15
    },
    "ours": {
-    "seconds": 0.25,
+    "seconds": 2.02,
     "status": "ok",
-    "abs": 2.844266399874342e-14,
-    "rel": 1.0449110247687072e-14
+    "abs": 2.4274772698985076e-14,
+    "rel": 1.6967691731824009e-15
    },
    "herbie": {
-    "seconds": 0.24,
+    "seconds": 2.63,
     "status": "ok",
-    "abs": 3.4581079974448906e-14,
-    "rel": 8.666657879916439e-15
+    "abs": 3.076863641462291e-14,
+    "rel": 2.0510654133016433e-15
    },
    "daisy": {
-    "seconds": 0.28,
+    "seconds": 3.71,
     "status": "ok",
-    "abs": 3.6102608855681365e-14,
-    "rel": 1.0617569222495535e-14
+    "abs": 3.2444100867079536e-14,
+    "rel": 2.181312139192122e-15
    }
   },
   "daisy": {
@@ -10463,10 +10463,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 5.551115123125791e-16,
-    "rel": 2.2204460492503162e-15
+    "abs": 2.220446049250313e-16,
+    "rel": 3.004214490208098e-16
    }
   },
   "daisy": {
@@ -10497,10 +10497,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.24,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.3322676295501878e-15,
-    "rel": 1.3322676295501878e-15
+    "rel": 3.3306690738754696e-16
    }
   },
   "daisy": {
@@ -10531,10 +10531,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 7.105427357601002e-15,
-    "rel": 2.3684757858670005e-15
+    "rel": 3.9650822308041307e-16
    }
   },
   "daisy": {
@@ -10565,10 +10565,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 2.220446049250313e-15,
-    "rel": 3.552713678800501e-15
+    "abs": 8.396281507192334e-16,
+    "rel": 4.029623961475078e-16
    }
   },
   "daisy": {
@@ -10599,10 +10599,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.24,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.3077614940688649e-14,
-    "rel": 1.4266489026205802e-15
+    "abs": 1.295602125075486e-14,
+    "rel": 5.927015008436266e-16
    }
   },
   "daisy": {
@@ -10669,28 +10669,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 1.942890293094024e-16,
-    "rel": 1.3877787807814444e-14
+    "abs": 2.1738166822160565e-16,
+    "rel": 1.1686088604737462e-14
    },
    "ours": {
-    "seconds": 0.25,
+    "seconds": 0.05,
     "status": "ok",
-    "abs": 6.176238578107504e-16,
-    "rel": 2.0069922749371505e-14
+    "abs": 3.098092951682339e-16,
+    "rel": 1.532421051857849e-14
    },
    "herbie": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 2.220446049250313e-16,
-    "rel": 1.5860328923216507e-14
+    "abs": 2.451372438372346e-16,
+    "rel": 1.3668629720139528e-14
    },
    "daisy": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 1.942890293094024e-16,
-    "rel": 1.3877787807814444e-14
+    "abs": 2.1738166822160565e-16,
+    "rel": 1.1686088604737462e-14
    }
   },
   "daisy": {
@@ -10763,27 +10763,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 9.004713988400445e-16,
+    "abs": 6.787795495187619e-16,
     "rel": null
    },
    "ours": {
-    "seconds": 0.29,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 1.03619994776097e-15,
+    "abs": 7.102346509383531e-16,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.31,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.9719220621216737e-15,
+    "abs": 1.013573828054995e-15,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.33,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 7.575684658449936e-16,
+    "abs": 6.655073596689573e-16,
     "rel": null
    }
   },
@@ -10851,27 +10851,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 1.1082527214178746e-15,
+    "abs": 8.99914573586981e-16,
     "rel": null
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 1.0543934644580324e-15,
+    "abs": 8.973842185896546e-16,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 2.6490954167974492e-08,
+    "abs": 2.649095415972467e-08,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.0055949174928424e-15,
+    "abs": 9.46008847854251e-16,
     "rel": null
    }
   },
@@ -10939,28 +10939,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 4.954764993354207e-16,
-    "rel": 9.682035420313371e-15
+    "abs": 9.879627979911602e-17,
+    "rel": 1.1398888196571392e-15
    },
    "ours": {
-    "seconds": 0.29,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 4.9147849317852445e-17,
-    "rel": 7.028142452452899e-15
+    "rel": 5.82505899119488e-16
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.16,
     "status": "ok",
-    "abs": 4.566334964471996e-16,
-    "rel": 9.672364144187746e-15
+    "abs": 9.869759330803821e-17,
+    "rel": 9.518166738395966e-16
    },
    "daisy": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.164562273774866e-16,
-    "rel": 6.4856934822644205e-15
+    "rel": 8.738793281461334e-16
    }
   },
   "daisy": {
@@ -10991,10 +10991,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 7.461192157936441e-15,
-    "rel": 3.4076899726855203e-15
+    "abs": 7.277390622133214e-15,
+    "rel": 6.245603842164636e-16
    }
   },
   "daisy": {
@@ -11061,27 +11061,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 9.004713988400445e-16,
+    "abs": 6.787795495187619e-16,
     "rel": null
    },
    "ours": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 6.643264975848441e-16,
+    "abs": 5.815383270250379e-16,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 1.9719220621216737e-15,
+    "abs": 1.0424954124029696e-15,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 7.575684658449936e-16,
+    "abs": 6.655073596689573e-16,
     "rel": null
    }
   },
@@ -11113,10 +11113,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 2.7755575615628914e-15,
-    "rel": 9.251858538542972e-16
+    "rel": 3.9885790143940814e-16
    }
   },
   "daisy": {
@@ -11183,25 +11183,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.3877787807814457e-16,
     "rel": null
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.3877787807814457e-16,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.3877787807814457e-16,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.3877787807814457e-16,
     "rel": null
@@ -11283,28 +11283,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 1.61,
     "status": "ok",
-    "abs": 2.8306931628969615e-14,
-    "rel": 8.005243925316732e-15
+    "abs": 2.667468780130454e-14,
+    "rel": 2.337113585402179e-15
    },
    "ours": {
-    "seconds": 0.28,
+    "seconds": 1.56,
     "status": "ok",
-    "abs": 2.2478719581740463e-14,
-    "rel": 8.31553345069164e-15
+    "abs": 2.0550718818446924e-14,
+    "rel": 1.7138160311500715e-15
    },
    "herbie": {
-    "seconds": 0.53,
+    "seconds": 2.93,
     "status": "ok",
-    "abs": 2.4578900041922754e-14,
-    "rel": 7.205806902885233e-15
+    "abs": 2.5203718537895356e-14,
+    "rel": 2.0883853138434014e-15
    },
    "daisy": {
-    "seconds": 0.3,
+    "seconds": 1.24,
     "status": "ok",
-    "abs": 2.6523210588693875e-14,
-    "rel": 7.687791178942516e-15
+    "abs": 2.6510893226468343e-14,
+    "rel": 2.243644869821473e-15
    }
   },
   "daisy": {
@@ -11335,10 +11335,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.16,
     "status": "ok",
-    "abs": 0.001123931145944221,
-    "rel": 3.806620983506479e-08
+    "abs": 0.0010908743469385395,
+    "rel": 2.8273673971032318e-08
    }
   },
   "daisy": {
@@ -11369,7 +11369,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 4.440892098500626e-16,
     "rel": null
@@ -11403,10 +11403,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.24,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 2.7284841053187847e-12,
-    "rel": 2.6619357125061314e-15
+    "rel": 3.9628708073625218e-16
    }
   },
   "daisy": {
@@ -11437,10 +11437,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 3.0531133177191805e-16,
-    "rel": 2.873518416676876e-16
+    "rel": 1.9539925233402755e-16
    }
   },
   "daisy": {
@@ -11471,7 +11471,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 2.914335439641037e-16,
     "rel": 1.0136818920490563e-16
@@ -11505,10 +11505,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.1281997558398871e-10,
-    "rel": 3.694473046252238e-15
+    "rel": 1.233235836002728e-15
    }
   },
   "daisy": {
@@ -11539,10 +11539,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.2702047458828691e-17,
-    "rel": 6.042645118416621e-15
+    "rel": 9.921872893593755e-16
    }
   },
   "daisy": {
@@ -11573,10 +11573,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 2.6645352591003757e-14,
-    "rel": 2.220446049250313e-15
+    "rel": 4.1136684701900537e-16
    }
   },
   "daisy": {
@@ -11607,10 +11607,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.32,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 3.4975504558584214e-18,
-    "rel": 7.234679683421638e-15
+    "rel": 1.1084211656138166e-15
    }
   },
   "daisy": {
@@ -11641,10 +11641,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.31,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 2.4868995751603507e-14,
-    "rel": 9.947598300641404e-16
+    "rel": 4.105358028836134e-16
    }
   },
   "daisy": {
@@ -11675,10 +11675,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.1102230246251565e-14,
-    "rel": 9.251858538542972e-16
+    "rel": 3.3306690738754696e-16
    }
   },
   "daisy": {
@@ -11709,10 +11709,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.05,
     "status": "ok",
-    "abs": 1.7763568394002505e-14,
-    "rel": 1.7763568394002505e-15
+    "abs": 1.3822276656583199e-14,
+    "rel": 3.9227880203422196e-16
    }
   },
   "daisy": {
@@ -11743,10 +11743,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 2.1760371282653068e-14,
-    "rel": 8.704148513061227e-16
+    "rel": 3.0829333576367984e-16
    }
   },
   "daisy": {
@@ -11777,10 +11777,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 3.1086244689504383e-15,
-    "rel": 3.4540271877227093e-16
+    "rel": 2.391249591500337e-16
    }
   },
   "daisy": {
@@ -11811,10 +11811,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 6.661338147750939e-16,
-    "rel": 6.661338147750939e-16
+    "rel": 3.3306690738754696e-16
    }
   },
   "daisy": {
@@ -11845,10 +11845,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
-    "abs": 6.106226635438363e-16,
-    "rel": 1.953992523340276e-15
+    "abs": 2.3314683517128293e-16,
+    "rel": 3.747002708109904e-16
    }
   },
   "daisy": {
@@ -11879,7 +11879,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 6.238809072530882e-17,
     "rel": 6.266785794829227e-17
@@ -11913,10 +11913,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.9949319973733855e-17,
-    "rel": 8.189041731222774e-15
+    "rel": 1.4088952403114505e-15
    }
   },
   "daisy": {
@@ -11983,25 +11983,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 6.661338147750939e-16,
     "rel": null
    },
    "ours": {
-    "seconds": 0.29,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 7.771561172376096e-16,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 7.771561172376096e-16,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 6.661338147750939e-16,
     "rel": null
@@ -12041,10 +12041,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 8.881784197001254e-16,
-    "rel": 5.329070518200752e-16
+    "abs": 8.326672684688675e-16,
+    "rel": 3.210130574059024e-16
    }
   },
   "daisy": {
@@ -12075,7 +12075,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 0.0,
     "rel": null
@@ -12145,28 +12145,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.16,
     "status": "ok",
-    "abs": 2.868677135445123e-13,
-    "rel": 9.467549346999415e-15
+    "abs": 2.818665105421237e-13,
+    "rel": 1.9605240117728345e-15
    },
    "ours": {
-    "seconds": 0.28,
+    "seconds": 0.43,
     "status": "ok",
-    "abs": 2.0928751953740838e-13,
-    "rel": 7.365125995333728e-15
+    "abs": 2.0117201237622867e-13,
+    "rel": 1.7559921565949655e-15
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.22,
     "status": "ok",
-    "abs": 2.362440413685384e-13,
-    "rel": 1.0208952923724697e-14
+    "abs": 2.2095660675066958e-13,
+    "rel": 1.8791600402911267e-15
    },
    "daisy": {
-    "seconds": 0.26,
+    "seconds": 0.17,
     "status": "ok",
-    "abs": 2.1212049564044813e-13,
-    "rel": 6.6438290313841005e-15
+    "abs": 2.077358793095869e-13,
+    "rel": 1.634867829922865e-15
    }
   },
   "daisy": {
@@ -12197,10 +12197,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 7.216449660063518e-15,
-    "rel": 3.5202193463724477e-16
+    "rel": 2.6361459945437505e-16
    }
   },
   "daisy": {
@@ -12231,10 +12231,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 2.6645352591003757e-15,
-    "rel": 1.3322676295501878e-15
+    "rel": 3.089316242435218e-16
    }
   },
   "daisy": {
@@ -12301,27 +12301,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 8.318742520227068e-15,
+    "abs": 6.923350781562477e-15,
     "rel": null
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.438390223256067e-14,
+    "abs": 1.0649184198862277e-14,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.26,
+    "seconds": 0.16,
     "status": "ok",
-    "abs": 1.1151776093924538e-14,
+    "abs": 6.484732238266311e-15,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.0235010118342837e-14,
+    "abs": 6.175543369546072e-15,
     "rel": null
    }
   },
@@ -12353,10 +12353,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.1,
     "status": "ok",
     "abs": 2.042810365310288e-14,
-    "rel": 2.55351295663786e-15
+    "rel": 4.037174635000569e-16
    }
   },
   "daisy": {
@@ -12387,10 +12387,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 3.6415315207705135e-14,
-    "rel": 8.881784197001255e-15
+    "abs": 3.552713678800501e-14,
+    "rel": 1.0356751274298186e-15
    }
   },
   "daisy": {
@@ -12421,10 +12421,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 2.842170943040401e-14,
-    "rel": 1.7763568394002505e-15
+    "rel": 2.9605947323337506e-16
    }
   },
   "daisy": {
@@ -12455,10 +12455,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 4.440892098500626e-15,
-    "rel": 4.440892098500626e-15
+    "abs": 2.886579864025407e-15,
+    "rel": 5.736714716908104e-16
    }
   },
   "daisy": {
@@ -12489,10 +12489,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 7.105427357601002e-15,
-    "rel": 8.881784197001252e-16
+    "rel": 2.972204907754667e-16
    }
   },
   "daisy": {
@@ -12523,10 +12523,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 4.263256414560601e-14,
-    "rel": 2.507797890918001e-15
+    "rel": 4.072711689105999e-16
    }
   },
   "daisy": {
@@ -12557,10 +12557,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.33,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 8.79296635503124e-13,
-    "rel": 1.7799527034476195e-15
+    "rel": 6.200490854510308e-16
    }
   },
   "daisy": {
@@ -12591,10 +12591,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.31,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.7763568394002505e-15,
-    "rel": 2.9605947323337506e-16
+    "rel": 2.5376526277146434e-16
    }
   },
   "daisy": {
@@ -12625,10 +12625,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.2434497875801753e-13,
-    "rel": 1.002782086758206e-15
+    "rel": 5.1031303938910705e-16
    }
   },
   "daisy": {
@@ -12659,10 +12659,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.1546319456101628e-14,
-    "rel": 4.276414613370973e-16
+    "rel": 3.724619179387622e-16
    }
   },
   "daisy": {
@@ -12693,10 +12693,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 4.263256414560601e-14,
-    "rel": 4.263256414560601e-16
+    "rel": 2.880578658486893e-16
    }
   },
   "daisy": {
@@ -12727,10 +12727,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.27675647831893e-15,
-    "rel": 1.021405182655144e-15
+    "rel": 4.85722573273506e-16
    }
   },
   "daisy": {
@@ -12761,10 +12761,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.17,
     "status": "ok",
-    "abs": 2.401706951229931e-15,
-    "rel": 1.9090491150802018e-15
+    "abs": 1.7525663460154258e-15,
+    "rel": 7.065234722814218e-16
    }
   },
   "daisy": {
@@ -12831,27 +12831,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 4.4408920985006285e-15,
+    "abs": 2.6645352591003757e-15,
     "rel": null
    },
    "ours": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 8.326672684688682e-15,
+    "abs": 4.593547764386587e-15,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 5.329070518200753e-15,
+    "abs": 4.218847493575595e-15,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 4.4408920985006285e-15,
+    "abs": 2.6645352591003757e-15,
     "rel": null
    }
   },
@@ -12925,27 +12925,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 9.189927730366604e-15,
+    "abs": 5.818474953545718e-15,
     "rel": null
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.3077974077829397e-14,
+    "abs": 9.483278360120394e-15,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.16,
     "status": "ok",
-    "abs": 1.0349997503036154e-14,
+    "abs": 6.327375005903605e-15,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 9.189927730366604e-15,
+    "abs": 5.818474953545718e-15,
     "rel": null
    }
   },
@@ -12983,10 +12983,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 7.771561172376099e-15,
-    "rel": 1.4702953569360188e-15
+    "abs": 4.9960036108132044e-15,
+    "rel": 4.520193743116708e-16
    }
   },
   "daisy": {
@@ -13017,10 +13017,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.16,
     "status": "ok",
-    "abs": 2.5195265375166824e-15,
-    "rel": 2.002700581103004e-15
+    "abs": 1.679987896715784e-15,
+    "rel": 7.624346221045915e-16
    }
   },
   "daisy": {
@@ -13087,27 +13087,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 5.551115123125787e-15,
+    "abs": 2.720046410331634e-15,
     "rel": null
    },
    "ours": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 8.326672684688682e-15,
+    "abs": 4.593547764386587e-15,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 5.329070518200753e-15,
+    "abs": 4.218847493575595e-15,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 4.4408920985006285e-15,
+    "abs": 2.6645352591003757e-15,
     "rel": null
    }
   },
@@ -13139,10 +13139,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 3.302997382075244e-07,
-    "rel": 1.8348553186666303e-08
+    "rel": 1.797970420024207e-08
    }
   },
   "daisy": {
@@ -13173,10 +13173,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 9.769962616701378e-15,
-    "rel": 3.2566542055671257e-15
+    "abs": 6.147859998861804e-15,
+    "rel": 6.903946717127924e-16
    }
   },
   "daisy": {
@@ -13207,10 +13207,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.05,
     "status": "ok",
-    "abs": 2.4424906541753444e-15,
-    "rel": 1.9539925233402757e-15
+    "abs": 9.225454388496057e-16,
+    "rel": 3.719900204861701e-16
    }
   },
   "daisy": {
@@ -13241,10 +13241,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 8.43769498715119e-15,
-    "rel": 1.6875389974302379e-15
+    "abs": 5.793976409762536e-15,
+    "rel": 4.522660905393654e-16
    }
   },
   "daisy": {
@@ -13275,7 +13275,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.3322676295501878e-15,
     "rel": null
@@ -13309,10 +13309,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.31,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 4.91964046312227e-07,
-    "rel": 1.566135794462606e-08
+    "rel": 1.5577619791790656e-08
    }
   },
   "daisy": {
@@ -13343,10 +13343,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 2.842170943040401e-14,
-    "rel": 1.8947806286936005e-15
+    "rel": 4.2511103848894885e-16
    }
   },
   "daisy": {
@@ -13377,10 +13377,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 4.214684895498325e-08,
-    "rel": 1.1470919320806279e-08
+    "rel": 1.102090279972688e-08
    }
   },
   "daisy": {
@@ -13447,28 +13447,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.22,
     "status": "ok",
-    "abs": 8.247531950473786e-07,
-    "rel": 1.0588385634946463e-14
+    "abs": 7.956493645906449e-07,
+    "rel": 4.652822988004957e-15
    },
    "ours": {
-    "seconds": 0.31,
+    "seconds": 0.17,
     "status": "ok",
     "abs": 6.444752216339112e-07,
-    "rel": 1.025625806505559e-14
+    "rel": 3.2239252933941032e-15
    },
    "herbie": {
-    "seconds": 0.28,
+    "seconds": 0.16,
     "status": "ok",
     "abs": 4.712492227554322e-07,
-    "rel": 8.948175533873837e-15
+    "rel": 2.7471522998810004e-15
    },
    "daisy": {
-    "seconds": 0.29,
+    "seconds": 0.32,
     "status": "ok",
     "abs": 5.946829915046692e-07,
-    "rel": 1.0754539053542195e-14
+    "rel": 4.00533565162412e-15
    }
   },
   "daisy": {
@@ -13535,28 +13535,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.34,
+    "seconds": 0.22,
     "status": "ok",
     "abs": 3.6237679523765114e-12,
-    "rel": 7.877756418209807e-15
+    "rel": 9.016040370439078e-16
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.17,
     "status": "ok",
     "abs": 3.3635316754043743e-12,
-    "rel": 7.312025381313856e-15
+    "rel": 8.506454736494954e-16
    },
    "herbie": {
-    "seconds": 0.28,
+    "seconds": 0.16,
     "status": "ok",
     "abs": 2.7178259642823832e-12,
-    "rel": 5.908317313657355e-15
+    "rel": 7.249909540616854e-16
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.16,
     "status": "ok",
     "abs": 2.6787461138155777e-12,
-    "rel": 5.823361116990387e-15
+    "rel": 6.779851380993907e-16
    }
   },
   "daisy": {
@@ -13623,28 +13623,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.43,
     "status": "ok",
     "abs": 4.890523541689619e-10,
-    "rel": 8.78236570902403e-15
+    "rel": 1.82924777445741e-15
    },
    "ours": {
-    "seconds": 0.29,
+    "seconds": 1.93,
     "status": "ok",
     "abs": 3.5558045397010574e-10,
-    "rel": 1.0281646251737963e-14
+    "rel": 1.531263209599876e-15
    },
    "herbie": {
-    "seconds": 0.29,
+    "seconds": 0.75,
     "status": "ok",
     "abs": 4.406714992910566e-10,
-    "rel": 8.458057809989898e-15
+    "rel": 1.7767036671215097e-15
    },
    "daisy": {
-    "seconds": 0.29,
+    "seconds": 0.75,
     "status": "ok",
     "abs": 3.891678090894857e-10,
-    "rel": 7.256351809229076e-15
+    "rel": 1.5818402841798862e-15
    }
   },
   "daisy": {
@@ -13711,25 +13711,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.4210854715202004e-13,
     "rel": null
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.4210854715202004e-13,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.9184653865522705e-13,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.4210854715202004e-13,
     "rel": null
@@ -13769,10 +13769,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.5987211554602254e-14,
-    "rel": 7.993605777301127e-16
+    "rel": 2.854859206178974e-16
    }
   },
   "daisy": {
@@ -13803,10 +13803,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 8.881784197001252e-15,
-    "rel": 2.9605947323337506e-16
+    "rel": 2.0724163126336256e-16
    }
   },
   "daisy": {
@@ -13837,10 +13837,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.7763568394002505e-14,
-    "rel": 5.224578939412502e-16
+    "rel": 2.9854736796642867e-16
    }
   },
   "daisy": {
@@ -13871,10 +13871,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 3.730349362740526e-14,
-    "rel": 6.544472566211449e-16
+    "rel": 3.2794280112004626e-16
    }
   },
   "daisy": {
@@ -13905,7 +13905,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 6.972200594645983e-14,
     "rel": 1.992057312755995e-15
@@ -13939,10 +13939,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.8207657603852567e-14,
-    "rel": 7.916372871240246e-16
+    "rel": 3.026385726385612e-16
    }
   },
   "daisy": {
@@ -13973,10 +13973,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 5.329070518200751e-15,
-    "rel": 5.329070518200751e-15
+    "rel": 4.311678586182771e-16
    }
   },
   "daisy": {
@@ -14043,28 +14043,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.0231815394945443e-12,
-    "rel": 6.3820849375683525e-15
+    "rel": 1.0807250702106093e-15
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.0231815394945443e-12,
-    "rel": 6.58485615481156e-15
+    "rel": 1.0976488244759043e-15
    },
    "herbie": {
-    "seconds": 0.56,
+    "seconds": 0.59,
     "status": "ok",
     "abs": 3.5785032915719884e-05,
-    "rel": 3.925468799162489e-08
+    "rel": 3.5978424544736466e-08
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.0231815394945443e-12,
-    "rel": 6.2624415337686826e-15
+    "rel": 1.0807250702106093e-15
    }
   },
   "daisy": {
@@ -14119,19 +14119,19 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.55,
+    "seconds": 4.05,
     "status": "ok",
-    "abs": 6.372451748453693e-15,
-    "rel": 1.0801754771648795e-14
+    "abs": 8.863772442908702e-16,
+    "rel": 1.950559352647425e-15
    },
    "ours": {
-    "seconds": 0.3,
+    "seconds": 1.82,
     "status": "ok",
-    "abs": 3.669585830293397e-15,
-    "rel": 9.59584774973574e-15
+    "abs": 5.487682161613263e-16,
+    "rel": 1.5899920710381025e-15
    },
    "herbie": {
-    "seconds": 1.82,
+    "seconds": 20.13,
     "status": "memory",
     "abs": null,
     "rel": null
@@ -14165,10 +14165,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 7.105427357601002e-15,
-    "rel": 8.881784197001252e-16
+    "rel": 2.9605947323337506e-16
    }
   },
   "daisy": {
@@ -14199,10 +14199,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.1,
     "status": "ok",
     "abs": 1.7763568394002505e-13,
-    "rel": 9.251858538542972e-16
+    "rel": 3.3306690738754696e-16
    }
   },
   "daisy": {
@@ -14233,10 +14233,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.1368683772161603e-13,
-    "rel": 8.881784197001252e-16
+    "rel": 3.304849933767908e-16
    }
   },
   "daisy": {
@@ -14291,19 +14291,19 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.33,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
    },
    "ours": {
-    "seconds": 0.3,
+    "seconds": 0.11,
     "status": "fail",
     "abs": null,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.32,
+    "seconds": 0.11,
     "status": "fail",
     "abs": null,
     "rel": null
@@ -14349,13 +14349,13 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.36,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
@@ -14389,7 +14389,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
@@ -14447,19 +14447,19 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "fail",
     "abs": null,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "fail",
     "abs": null,
     "rel": null
@@ -14493,10 +14493,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.3,
+    "seconds": 0.16,
     "status": "ok",
-    "abs": 4.3715970984339254e-08,
-    "rel": 1.3585974100954249e-08
+    "abs": 4.236393066193014e-08,
+    "rel": 1.2632793935665662e-08
    }
   },
   "daisy": {
@@ -14527,10 +14527,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.561251128379129e-17,
-    "rel": 7.993605777301132e-15
+    "rel": 9.036029431175215e-16
    }
   },
   "daisy": {
@@ -14573,13 +14573,13 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
@@ -14625,13 +14625,13 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "fail",
     "abs": null,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
@@ -14701,27 +14701,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 5.051081070675047e-16,
+    "abs": 4.495969558362469e-16,
     "rel": null
    },
    "ours": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.374031003096166e-17,
-    "rel": 8.80532955523739e-15
+    "rel": 7.36488401663361e-16
    },
    "herbie": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 2.1307371595534358e-17,
-    "rel": 7.122224371454632e-15
+    "rel": 6.437650122200501e-16
    },
    "daisy": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 5.051081070675047e-16,
+    "abs": 4.495969558362469e-16,
     "rel": null
    }
   },
@@ -14759,10 +14759,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 8.526512829121202e-14,
-    "rel": 5.329070518200751e-15
+    "rel": 4.0111283470328235e-16
    }
   },
   "daisy": {
@@ -14793,10 +14793,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.53,
+    "seconds": 1.03,
     "status": "ok",
-    "abs": 0.0021143375852997128,
-    "rel": 0.00046468585402907353
+    "abs": 0.0016273373315802782,
+    "rel": 0.0002997564300512899
    }
   },
   "daisy": {
@@ -14851,19 +14851,19 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
    },
    "ours": {
-    "seconds": 2.02,
+    "seconds": 7.87,
     "status": "ok",
-    "abs": 0.0005078155852920555,
-    "rel": 0.0004183916658071733
+    "abs": 0.0003536098200393109,
+    "rel": 0.00024395991590501896
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
@@ -14933,28 +14933,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 9.71883202398851e-08,
-    "rel": 8.112418016486568e-08
+    "rel": 6.710251459160798e-08
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.37,
     "status": "ok",
-    "abs": 7.422942333287185e-08,
-    "rel": 3.0328459443253886e-08
+    "abs": 6.329954218341123e-08,
+    "rel": 2.1885908580923685e-08
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 9.71883202398851e-08,
-    "rel": 8.112418016486568e-08
+    "rel": 6.710251459160798e-08
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 9.71883202398851e-08,
-    "rel": 8.112418016486568e-08
+    "rel": 6.710251459160798e-08
    }
   },
   "daisy": {
@@ -15033,28 +15033,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 6.675561383171722e-08,
-    "rel": 8.615275349357529e-08
+    "abs": 6.479221329784873e-08,
+    "rel": 8.361884881508729e-08
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
-    "abs": 7.001387870232808e-08,
-    "rel": 9.035777048169176e-08
+    "abs": 6.795464698667356e-08,
+    "rel": 8.770018901098338e-08
    },
    "herbie": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
-    "abs": 6.282881323221107e-08,
-    "rel": 8.108494474088369e-08
+    "abs": 6.282881306263002e-08,
+    "rel": 8.108494452202758e-08
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 6.675561383171722e-08,
-    "rel": 8.615275349357529e-08
+    "abs": 6.479221329784873e-08,
+    "rel": 8.361884881508729e-08
    }
   },
   "daisy": {
@@ -15091,10 +15091,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.3,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 7.926992395823618e-16,
-    "rel": 3.963496197911809e-16
+    "rel": 3.4427978212580056e-16
    }
   },
   "daisy": {
@@ -15125,10 +15125,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 6.183942247162122e-16,
-    "rel": 6.625652407673703e-16
+    "rel": 4.263995149916293e-16
    }
   },
   "daisy": {
@@ -15159,10 +15159,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.1735057370287907e-15,
-    "rel": 6.400940383793404e-16
+    "abs": 1.1118287190822591e-15,
+    "rel": 4.1510321337764483e-16
    }
   },
   "daisy": {
@@ -15229,27 +15229,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.31,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 251.20928966999054,
+    "abs": 248.20928966999054,
     "rel": null
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 2.384185791015625e-07,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 3.5762786865234375e-07,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.31,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 251.20928966999054,
+    "abs": 248.20928966999054,
     "rel": null
    }
   },
@@ -15323,27 +15323,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 8.7939597687676e+29,
+    "abs": 8.719683366410478e+29,
     "rel": null
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.16,
     "status": "ok",
     "abs": 2.2222497137337754e+21,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 3.2108992928272786e+21,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.29,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 8.598220244052968e+29,
+    "abs": 8.523943841695845e+29,
     "rel": null
    }
   },
@@ -15375,10 +15375,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 5.551115123125788e-16,
-    "rel": 2.7755575615628937e-15
+    "abs": 2.2204460492503136e-16,
+    "rel": 3.3800002727235606e-16
    }
   },
   "daisy": {
@@ -15409,10 +15409,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 4.587833381171618e-16,
-    "rel": 6.177296275423022e-15
+    "abs": 9.925739584343423e-17,
+    "rel": 8.251659291262349e-16
    }
   },
   "daisy": {
@@ -15479,25 +15479,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.0680854509180419e-16,
     "rel": null
    },
    "ours": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.0680854509180419e-16,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.0680854509180419e-16,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.0680854509180419e-16,
     "rel": null
@@ -15579,28 +15579,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 4.440892098500628e-16,
     "rel": null
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 5.747513232582258e-48,
-    "rel": 1.7739238372167464e-16
+    "abs": 8.456331035432366e-48,
+    "rel": 2.60997871463962e-16
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 5.747513232582258e-48,
-    "rel": 1.7739238372167464e-16
+    "abs": 8.456331035432366e-48,
+    "rel": 2.60997871463962e-16
    },
    "daisy": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 8.160329786528865e-48,
-    "rel": 2.5186203044842186e-16
+    "abs": 1.0183664031642316e-47,
+    "rel": 3.143106182605654e-16
    }
   },
   "daisy": {
@@ -15643,13 +15643,13 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.31,
+    "seconds": 0.05,
     "status": "fail",
     "abs": null,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
@@ -15695,13 +15695,13 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.34,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.34,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
@@ -15741,10 +15741,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.1,
     "status": "ok",
-    "abs": 5.127211786450735e-15,
-    "rel": 4.116498730788047e-15
+    "abs": 5.649941313227303e-16,
+    "rel": 8.082417695194038e-16
    }
   },
   "daisy": {
@@ -15775,10 +15775,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 3.483324739761436e-15,
-    "rel": 1.0249013176605762e-14
+    "abs": 8.574448393573166e-16,
+    "rel": 1.2620594389419028e-15
    }
   },
   "daisy": {
@@ -15809,10 +15809,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 5.539645877003633e-16,
-    "rel": 9.374785330313839e-16
+    "abs": 3.0014626020970845e-16,
+    "rel": 4.063549743211018e-16
    }
   },
   "daisy": {
@@ -15843,10 +15843,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.5969447986208252e-12,
-    "rel": 6.6539366609201045e-15
+    "rel": 5.185666710853335e-16
    }
   },
   "daisy": {
@@ -15877,7 +15877,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 2.920619301960414e-11,
     "rel": null
@@ -15911,10 +15911,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.4210854715202004e-14,
-    "rel": 4.584146682323227e-16
+    "rel": 4.306319610667274e-16
    }
   },
   "daisy": {
@@ -15945,7 +15945,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 8.881784197001252e-16,
     "rel": null
@@ -15979,7 +15979,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 3.1086244689504383e-15,
     "rel": null
@@ -16013,10 +16013,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.3,
+    "seconds": 0.1,
     "status": "ok",
     "abs": 2.4870772108442906e-14,
-    "rel": 9.948308843377162e-16
+    "rel": 4.02672463274535e-16
    }
   },
   "daisy": {
@@ -16083,27 +16083,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.31,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 5.773159728050814e-15,
     "rel": null
    },
    "ours": {
-    "seconds": 0.32,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 8.881784197001252e-16,
+    "abs": 7.771561172376096e-16,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.5543122344752192e-15,
+    "abs": 1.3322676295501878e-15,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 8.881784197001252e-16,
+    "abs": 7.771561172376096e-16,
     "rel": null
    }
   },
@@ -16171,28 +16171,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.5378325587675716e-15,
-    "rel": 5.424341296386047e-15
+    "abs": 2.6732267178311292e-16,
+    "rel": 7.517115378751386e-16
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 2.892864887432884e-16,
-    "rel": 2.766302048607695e-15
+    "abs": 1.594592201457226e-16,
+    "rel": 4.571847597144935e-16
    },
    "herbie": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 9.16838898662237e-16,
-    "rel": 4.364462243770147e-15
+    "abs": 1.8528464053971864e-16,
+    "rel": 5.866033854396058e-16
    },
    "daisy": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 8.198543953778346e-16,
-    "rel": 3.918024829675078e-15
+    "abs": 2.371135884895324e-16,
+    "rel": 7.57016701006542e-16
    }
   },
   "daisy": {
@@ -16223,10 +16223,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.05,
     "status": "ok",
-    "abs": 5.622278424738134e-16,
-    "rel": 6.807262758621871e-16
+    "abs": 6.137812218871942e-16,
+    "rel": 7.431453475000625e-16
    }
   },
   "daisy": {
@@ -16293,28 +16293,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 7.61,
+    "seconds": 8.36,
     "status": "ok",
-    "abs": 1.2516957913141092e-12,
-    "rel": 1.6255789497585835e-14
+    "abs": 1.2236313526788503e-12,
+    "rel": 1.58913162685565e-14
    },
    "ours": {
-    "seconds": 9.61,
+    "seconds": 69.21,
     "status": "ok",
-    "abs": 1.1320705804052115e-12,
-    "rel": 1.0325614868359975e-14
+    "abs": 1.0989075248039259e-12,
+    "rel": 3.0284499804172046e-15
    },
    "herbie": {
-    "seconds": 1.87,
+    "seconds": 2.8,
     "status": "ok",
-    "abs": 1.1270486283758476e-12,
-    "rel": 1.4636995173712308e-14
+    "abs": 1.0853597476921281e-12,
+    "rel": 1.4095581138858807e-14
    },
    "daisy": {
     "seconds": 0.82,
     "status": "ok",
-    "abs": 1.0654971113119548e-12,
-    "rel": 1.383762482223318e-14
+    "abs": 1.0378344391203192e-12,
+    "rel": 1.3478369339224925e-14
    }
   },
   "daisy": {
@@ -16381,25 +16381,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.4960231715102997e+22,
     "rel": 12.671809161250948
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 9.92287518540334e+21,
     "rel": 137.4830721876487
    },
    "herbie": {
-    "seconds": 0.53,
+    "seconds": 0.37,
     "status": "ok",
     "abs": 2.5986735454819375e+22,
     "rel": 23.601034478288042
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.310888790642946e+22,
     "rel": 9.426703715754112
@@ -16469,25 +16469,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 64.59021964669228,
     "rel": 32.29510982334614
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 61.383525758981705,
     "rel": 30.691762879490852
    },
    "herbie": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 69.20711117982864,
     "rel": 69.20711117982864
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 58.60389342904091,
     "rel": 29.301946714520454
@@ -16557,25 +16557,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 76.50701335072517,
     "rel": null
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 73.50293145911019,
     "rel": 36.75146572955509
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 71.93591675162315,
     "rel": 71.93591675162315
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 69.15628439188004,
     "rel": null
@@ -16609,10 +16609,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.38,
     "status": "ok",
-    "abs": 5.951773271588028e-15,
-    "rel": 4.85011844121512e-15
+    "abs": 1.465451362547388e-15,
+    "rel": 1.56438649946094e-15
    }
   },
   "daisy": {
@@ -16667,19 +16667,19 @@
   },
   "precisa": {
    "original": {
-    "seconds": 1.57,
+    "seconds": 1.44,
     "status": "ok",
-    "abs": 8.661516576704356e-10,
+    "abs": 8.248010453255505e-10,
     "rel": null
    },
    "ours": {
-    "seconds": 0.28,
+    "seconds": 0.32,
     "status": "ok",
-    "abs": 6.859427230667141e-10,
+    "abs": 4.8251786211041115e-11,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "fail",
     "abs": null,
     "rel": null
@@ -16737,22 +16737,22 @@
   },
   "precisa": {
    "original": {
-    "seconds": 1.83,
+    "seconds": 2.43,
     "status": "ok",
-    "abs": 1.2027562320020374e-13,
+    "abs": 1.1156910088029079e-13,
     "rel": null
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.17,
     "status": "ok",
-    "abs": 4.181188728580317e-15,
-    "rel": 5.736624882674064e+306
+    "abs": 1.5234027164213366e-15,
+    "rel": 1.4118748763755174e+306
    },
    "herbie": {
-    "seconds": 0.32,
+    "seconds": 0.28,
     "status": "ok",
-    "abs": 4.978417678103149e-15,
-    "rel": 8.541026173059277e+306
+    "abs": 1.9580079493539265e-15,
+    "rel": 2.1138178676287873e+306
    }
   },
   "daisy": {
@@ -16783,10 +16783,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.31,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 3.647351685489468e-09,
-    "rel": 2.594346858753013e-08
+    "abs": 3.640402920449485e-09,
+    "rel": 2.5843142233899652e-08
    }
   },
   "daisy": {
@@ -16817,10 +16817,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.17,
     "status": "ok",
-    "abs": 8.62867118690772e-05,
-    "rel": 8.802706696269886e-05
+    "abs": 8.533206613976598e-05,
+    "rel": 8.680569568872425e-05
    }
   },
   "daisy": {
@@ -16875,22 +16875,22 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.31,
+    "seconds": 0.05,
     "status": "fail",
     "abs": null,
     "rel": null
    },
    "ours": {
-    "seconds": 20.17,
+    "seconds": 80.01,
     "status": "ok",
-    "abs": 5.0222873004489e-08,
-    "rel": 9.864738401068703e-08
+    "abs": 4.349771288978225e-08,
+    "rel": 7.753808823425259e-08
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.8,
     "status": "ok",
-    "abs": 5.714875363847748e-08,
-    "rel": 1.1223532718783279e-07
+    "abs": 4.582119231630831e-08,
+    "rel": 7.821181684672628e-08
    }
   },
   "daisy": {
@@ -16945,19 +16945,19 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.35,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
    },
    "ours": {
-    "seconds": 0.29,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.33,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
@@ -16991,10 +16991,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.16,
     "status": "ok",
     "abs": 2.634178059686453e-09,
-    "rel": 3.3759640830676156e-08
+    "rel": 2.5086310954607577e-08
    }
   },
   "daisy": {
@@ -17025,10 +17025,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.48,
     "status": "ok",
-    "abs": 1.5914447353271435e-08,
-    "rel": 8.113310111476311e-09
+    "abs": 1.580506841362987e-08,
+    "rel": 8.019694996091491e-09
    }
   },
   "daisy": {
@@ -17083,22 +17083,22 @@
   },
   "precisa": {
    "original": {
-    "seconds": 1.87,
+    "seconds": 4.91,
     "status": "ok",
-    "abs": 3.066622894987928e-05,
-    "rel": 7.062959198560389e-07
+    "abs": 2.6025876173332342e-05,
+    "rel": 3.237891618047535e-07
    },
    "herbie": {
-    "seconds": 70.7,
+    "seconds": 278.47,
     "status": "ok",
-    "abs": 4.833951511637047e-05,
-    "rel": 1.407844043541791e-06
+    "abs": 4.063214796110254e-05,
+    "rel": 5.977793707498272e-07
    },
    "daisy": {
-    "seconds": 30.98,
+    "seconds": 96.03,
     "status": "ok",
-    "abs": 3.65099746553465e-05,
-    "rel": 7.614106361212926e-07
+    "abs": 2.9022444398708043e-05,
+    "rel": 3.4502368584776995e-07
    }
   },
   "daisy": {
@@ -17165,28 +17165,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 3.845812557301542e-12,
-    "rel": 7.283735903980194e-15
+    "rel": 7.562301109694779e-16
    },
    "ours": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 3.163691530971846e-12,
-    "rel": 5.902409572708668e-15
+    "rel": 6.2087189029633e-16
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 3.1086244689504383e-12,
-    "rel": 5.978123978750843e-15
+    "rel": 7.05710730610986e-16
    },
    "daisy": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 3.0198066269804258e-12,
-    "rel": 5.719330732917473e-15
+    "rel": 6.503139083769365e-16
    }
   },
   "daisy": {
@@ -17253,28 +17253,28 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 3.966604822380759e-12,
-    "rel": 1.139291859676287e-13
+    "abs": 3.5118574714942956e-12,
+    "rel": 3.50952692626982e-14
    },
    "ours": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 2.5153212845907547e-12,
-    "rel": 3.306743947287183e-14
+    "abs": 2.2453150450019166e-12,
+    "rel": 2.0035576406305227e-14
    },
    "herbie": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 3.254285729781259e-12,
-    "rel": 9.346989193582433e-14
+    "rel": 3.252126114783161e-14
    },
    "daisy": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 2.829736445164599e-12,
-    "rel": 8.127594861013546e-14
+    "rel": 2.8278585703327377e-14
    }
   },
   "daisy": {
@@ -17305,10 +17305,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 3.3857361358968778e-12,
-    "rel": 9.618568567888857e-15
+    "rel": 8.02681568546866e-16
    }
   },
   "daisy": {
@@ -17339,10 +17339,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.53,
+    "seconds": 0.43,
     "status": "ok",
-    "abs": 1.735597248194988e-18,
-    "rel": 5.88991354811301e-17
+    "abs": 3.378906906263644e-18,
+    "rel": 1.1466640423469372e-16
    }
   },
   "daisy": {
@@ -17373,10 +17373,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.54,
+    "seconds": 0.48,
     "status": "ok",
-    "abs": 1.7349882881200477e-18,
-    "rel": 6.896038949649308e-17
+    "abs": 3.108418828626282e-18,
+    "rel": 1.2354998279127822e-16
    }
   },
   "daisy": {
@@ -17443,25 +17443,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.6653345369377348e-16,
     "rel": null
    },
    "ours": {
-    "seconds": 0.29,
+    "seconds": 0.05,
     "status": "ok",
-    "abs": 8.326672684688675e-16,
+    "abs": 3.744170506516472e-16,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 1.387778780781449e-15,
+    "abs": 3.2524078298447295e-16,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.6653345369377348e-16,
     "rel": null
@@ -17501,7 +17501,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 2.7755575615628914e-16,
     "rel": 3.7007434154171886e-16
@@ -17535,10 +17535,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.0942358130705543e-11,
-    "rel": 6.838973831690964e-16
+    "rel": 3.9968028886505636e-16
    }
   },
   "daisy": {
@@ -17569,10 +17569,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 3.751665644813329e-12,
-    "rel": 8.684411214845669e-16
+    "rel": 3.8574524199788286e-16
    }
   },
   "daisy": {
@@ -17603,10 +17603,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.33,
+    "seconds": 0.16,
     "status": "ok",
-    "abs": 1.4286349880876514e-12,
-    "rel": 4.3998992483606205e-15
+    "abs": 1.3856693570346579e-12,
+    "rel": 5.200048312739981e-16
    }
   },
   "daisy": {
@@ -17637,10 +17637,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 1.518412167853022e-09,
-    "rel": 2.0175836747460024e-08
+    "abs": 1.4918963702686763e-09,
+    "rel": 1.8512944835883036e-08
    }
   },
   "daisy": {
@@ -17671,10 +17671,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.32,
+    "seconds": 0.16,
     "status": "ok",
-    "abs": 6.330504825146683e-15,
-    "rel": 9.362539233920998e-15
+    "abs": 6.404275991539926e-16,
+    "rel": 7.912775190720307e-16
    }
   },
   "daisy": {
@@ -17705,10 +17705,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.16,
     "status": "ok",
-    "abs": 3.9189887905632145e-06,
-    "rel": 2.5928563651526582e-08
+    "abs": 3.858475843917792e-06,
+    "rel": 2.1436784082835097e-08
    }
   },
   "daisy": {
@@ -17739,10 +17739,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.16,
     "status": "ok",
-    "abs": 1.2433600217072301e-06,
-    "rel": 3.8571759673376584e-08
+    "abs": 1.20557251785329e-06,
+    "rel": 2.9328172516520637e-08
    }
   },
   "daisy": {
@@ -17809,25 +17809,25 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.29512045532465e-08,
     "rel": null
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.588318809808698e-08,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.29512045532465e-08,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.29512045532465e-08,
     "rel": null
@@ -17903,27 +17903,27 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
-    "abs": 5.093170329928399e-11,
+    "abs": 4.7293724492192275e-11,
     "rel": null
    },
    "ours": {
-    "seconds": 0.29,
+    "seconds": 0.05,
     "status": "ok",
-    "abs": 4.729372449219227e-11,
+    "abs": 4.547473508864641e-11,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 4.6384229790419347e-11,
     "rel": null
    },
    "daisy": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
-    "abs": 5.275069270282984e-11,
+    "abs": 4.8203219193965197e-11,
     "rel": null
    }
   },
@@ -17955,7 +17955,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 1.7763568394002505e-15,
     "rel": null
@@ -17989,10 +17989,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 2.330125425942242e-09,
-    "rel": 2.2396782591257095e-15
+    "rel": 4.529238758285122e-16
    }
   },
   "daisy": {
@@ -18023,10 +18023,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.28,
+    "seconds": 0.16,
     "status": "ok",
     "abs": 7.057678885757923e-10,
-    "rel": 2.650870975720374e-15
+    "rel": 4.590585090584917e-16
    }
   },
   "daisy": {
@@ -18081,19 +18081,19 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.31,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
    },
    "ours": {
-    "seconds": 0.28,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.31,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
@@ -18133,7 +18133,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.27,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 0.0,
     "rel": 0.0
@@ -18167,10 +18167,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.29,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 4.2146848732938646e-08,
-    "rel": 1.5018493250874745e-08
+    "rel": 1.4930322057621076e-08
    }
   },
   "daisy": {
@@ -18201,10 +18201,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 2.9802322609739924e-08,
-    "rel": 1.0619678444072451e-08
+    "rel": 1.0557331995281419e-08
    }
   },
   "daisy": {
@@ -18235,10 +18235,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.05,
     "status": "ok",
     "abs": 2.9802322609739924e-08,
-    "rel": 1.0619678444072451e-08
+    "rel": 1.0557331995281419e-08
    }
   },
   "daisy": {
@@ -18281,13 +18281,13 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
-    "abs": 2.1073424533002777e-08,
+    "abs": 2.1073424478358987e-08,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.32,
+    "seconds": 0.06,
     "status": "fail",
     "abs": null,
     "rel": null
@@ -18321,10 +18321,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 5.904320739319397e-07,
-    "rel": 1.844814401193643e-08
+    "rel": 1.834950547061306e-08
    }
   },
   "daisy": {
@@ -18355,10 +18355,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.24,
+    "seconds": 0.11,
     "status": "ok",
     "abs": 1.053671217213243e-07,
-    "rel": 1.6858739522781405e-08
+    "rel": 1.6247422228415605e-08
    }
   },
   "daisy": {
@@ -18389,7 +18389,7 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.25,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 3.3306690738754696e-16,
     "rel": 3.3306690738754696e-16
@@ -18423,10 +18423,10 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 3.1086244689504383e-15,
-    "rel": 1.0362081563168128e-15
+    "rel": 5.368545114631868e-16
    }
   },
   "daisy": {
@@ -18481,19 +18481,19 @@
   },
   "precisa": {
    "original": {
-    "seconds": 0.26,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 1.1546319456101628e-14,
     "rel": null
    },
    "ours": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 0.0,
     "rel": null
    },
    "herbie": {
-    "seconds": 0.27,
+    "seconds": 0.06,
     "status": "ok",
     "abs": 0.0,
     "rel": null

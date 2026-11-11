@@ -206,7 +206,7 @@ def extraction():
                  "the error we report for each program. " + BSW.format(who="the method's bound", base="ours")
                  + ", and medians are of the method's bound divided by ours (lower is better). A method with no "
                  "program whose bound is finite counts as returning the input (Failed). Proved optimal counts the "
-                 "programs where our extraction reaches its fixpoint, so that no program in the e-graph has a smaller "
+                 "programs where our extraction reaches a fixed point, so that no program in the e-graph has a smaller "
                  "bound. Time is the total over all programs, including building the e-graph (lower is better).",
                  "tab:extraction", "lcrrrr", "Method & b/s/w & Median & Proved optimal & Failed & Time (s)", rows)
 
@@ -233,8 +233,8 @@ def runtime():
     return table(f"Running times in seconds (lower is better): bounding the {len(bounds)} programs of Benchmark (1), "
                  f"and rewriting the {len(names)} of Benchmark (2). Failed counts the runs that give no bound or no "
                  "program, including those stopped by a time limit; our extraction stopped by its limit still "
-                 "returns the frontier of the last round it finished. Times leave out each tool's startup, its least "
-                 "time on a trivial program.", "tab:runtime", "lrrrrrr", head, rows)
+                 "returns the minimal-cost set of the last round it finished. Times leave out each tool's startup, "
+                 "its least time on a trivial program.", "tab:runtime", "lrrrrrr", head, rows)
 
 
 def conditions(text):
@@ -266,7 +266,7 @@ def branching():
         rows.append([NAMES[who], branched, compare(errors)[0], num(median([a for a, _ in errors])),
                      num(median(speeds)), failed])
     return table(f"Branching on the {len(results)} programs of Benchmark (3). Branched counts the programs where the "
-                 "tool's program has a conditional. Max sampled error is in ulps (lower is better): "
+                 "tool's program has an if-statement. Max sampled error is in ulps (lower is better): "
                  + BSW.format(who="it", base="the input's") + ", and its median is over all programs. Speed is the "
                  "median of run time divided by our unbranched program's (lower is better). A tool that returns no "
                  "program" + ", or one that disagrees with its input over the reals," * bool(disagree)

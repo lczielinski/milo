@@ -1,9 +1,12 @@
 """PRECiSA's bounds. PRECISA names its executable (default ~/.cabal/bin/precisa), built from its
 checkout with the initial error of an input set to zero, so that inputs are exact floats as for the
-other tools. It analyzes FPCore input in binary64 only, so a binary32 program is unsupported. Some
-runs take more memory than the machine has, so a run is stopped past MEMORY bytes, and fewer run
-at once than for the other tools."""
+other tools, and with decimal constants read exactly, so that their rounding error is counted. Its
+branch and bound runs deeper than its defaults (-d 7 -p 14), which leave relative bounds loose. It
+analyzes FPCore input in binary64 only, so a binary32 program is unsupported. Some runs take more
+memory than the machine has, gigabytes a second, so a run is stopped once its footprint passes
+MEMORY bytes, and fewer run at once than for the other tools."""
 
+import ctypes
 import decimal
 import json
 import os
@@ -18,14 +21,23 @@ from milo.fpcore import fpcore, parse
 from .common import cached
 
 PRECISA = os.path.expanduser(os.environ.get("PRECISA", "~/.cabal/bin/precisa"))
-OPTIONS = ["--fpcore", "--relative-error", "--json"]
+OPTIONS = ["--fpcore", "--relative-error", "--json", "-d", "9", "-p", "16"]
 MEMORY, JOBS, CHUNK = 2 << 30, 4, 32
+LIBC = ctypes.CDLL("/usr/lib/libSystem.B.dylib")
 
 
-def resident(group):
-    """Bytes of memory used by the processes of a process group."""
-    rows = subprocess.run(["ps", "-A", "-o", "pgid=,rss="], capture_output=True, text=True).stdout.split("\n")
-    return 1024 * sum(int(r.split()[1]) for r in rows if r.split()[:1] == [str(group)])
+class RusageInfo(ctypes.Structure):
+    """macOS's rusage_info_v0, filled by proc_pid_rusage."""
+    _fields_ = [("uuid", ctypes.c_uint8 * 16)] + [(f, ctypes.c_uint64) for f in (
+        "user_time", "system_time", "pkg_idle_wkups", "interrupt_wkups", "pageins", "wired_size",
+        "resident_size", "phys_footprint", "proc_start_abstime", "proc_exit_abstime")]
+
+
+def footprint(pid):
+    """Bytes of memory a process uses, counting its compressed and swapped pages. Its resident size
+    leaves those out, so under memory pressure it stays small while the footprint grows."""
+    info = RusageInfo()
+    return info.phys_footprint if LIBC.proc_pid_rusage(pid, 0, ctypes.byref(info)) == 0 else 0
 
 
 def run(cmd, timeout, cwd):
@@ -34,7 +46,7 @@ def run(cmd, timeout, cwd):
     with tempfile.TemporaryFile("w+") as log:
         proc = subprocess.Popen(cmd, stdout=log, stderr=subprocess.STDOUT, text=True, cwd=cwd, start_new_session=True)
         while proc.poll() is None:
-            status = "timeout" if time.time() - start > timeout else "memory" if resident(proc.pid) > MEMORY else "ok"
+            status = "timeout" if time.time() - start > timeout else "memory" if footprint(proc.pid) > MEMORY else "ok"
             if status != "ok":
                 try:
                     os.killpg(proc.pid, signal.SIGKILL)
@@ -42,7 +54,7 @@ def run(cmd, timeout, cwd):
                     pass
                 proc.wait()
                 break
-            time.sleep(0.2)
+            time.sleep(0.05)
         log.seek(0)
         return log.read(), round(time.time() - start, 2), status
 
@@ -99,5 +111,5 @@ def bound(texts, workdir, timeout, jobs):
 
     out = {}
     for i in range(0, len(texts), CHUNK):
-        out.update(cached(f"precisa exact-inputs {OPTIONS} {timeout}", texts[i:i + CHUNK], work))
+        out.update(cached(f"precisa exact-inputs exact-constants {OPTIONS} {timeout}", texts[i:i + CHUNK], work))
     return out

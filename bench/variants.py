@@ -1,4 +1,4 @@
-"""The alternatives to frontier extraction that the evaluation compares it with."""
+"""The alternatives to our extraction of the minimal-cost set that the evaluation compares it with."""
 
 import heapq
 import time

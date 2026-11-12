@@ -102,11 +102,6 @@ def readout(m):
     return lambda e: (BOUNDS[m](e), BOUNDS[other](e))
 
 
-def ours_metric(o):
-    """metric() of our program on a core, or of the input when we found none."""
-    return metric(o["bounds"] if o["programs"] else o["original"])
-
-
 def failure(e):
     return "timeout" if isinstance(e, subprocess.TimeoutExpired) else f"{type(e).__name__}: {e}"[:300]
 
@@ -139,8 +134,8 @@ def ours_one(name):
 
 @step
 def ours():
-    """Benchmark (2): our rewrite of each input, without branches."""
-    return each(ours_one, benchmark2())
+    """Rewriting: our rewrite of each input, without branches."""
+    return each(ours_one, rewriting())
 
 
 def original_one(name):
@@ -159,24 +154,24 @@ def bound_only_one(name):
 
 @step
 def bound_only():
-    """Benchmark (1): our bound on each input in the e-graph, as milo --bound-only gives it."""
-    return each(bound_only_one, benchmark1())
+    """Bounding: our bound on each input in the e-graph, as milo --bound-only gives it."""
+    return each(bound_only_one, bounding())
 
 
 @step
 def originals():
-    """Benchmark (1): the measured error of each input."""
-    return each(original_one, benchmark1())
+    """Bounding: the measured error of each input."""
+    return each(original_one, bounding())
 
 
-def benchmark1():
-    """Every core: the ones we only bound, and the ones we also rewrite."""
+def bounding():
+    """The Bounding benchmark: the programs we only bound, and the ones we also rewrite."""
     return sorted(cores("bounding_programs") + cores("rewriting_programs"), key=os.path.basename)
 
 
-def benchmark2():
-    """The rewriting cores: those whose input loses more than HEADROOM ulps somewhere, which the
-    measured error of the inputs confirms."""
+def rewriting():
+    """The Rewriting benchmark: the inputs that lose more than HEADROOM ulps (2 bits) somewhere, which
+    their measured error confirms."""
     names = cores("rewriting_programs")
     lossy = {n for n, r in originals().items() if (r.get("ulps") or 0) > HEADROOM}
     if lossy != set(names):
@@ -186,8 +181,8 @@ def benchmark2():
 
 @step
 def rewrites():
-    """Benchmark (2): Herbie's and Daisy's rewrites, without branches."""
-    texts = {n: fpcore(load(n)) for n in benchmark2()}
+    """Rewriting: Herbie's and Daisy's rewrites, without branches."""
+    texts = {n: fpcore(load(n)) for n in rewriting()}
     with tempfile.TemporaryDirectory() as d:
         found = {"herbie": herbie.rewrite(list(texts.values()), d, TOOL_LIMIT, JOBS, branch=False),
                  "daisy": daisy.rewrite(list(texts.values()), d, TOOL_LIMIT, JOBS)}
@@ -214,8 +209,8 @@ def variants_one(name):
 
 @step
 def alternatives():
-    """Benchmark (2): the best of the smallest programs, for each size in SIZES."""
-    return each(variants_one, benchmark2())
+    """Rewriting: the best of the smallest programs, for each size in SIZES."""
+    return each(variants_one, rewriting())
 
 
 def single_one(name):
@@ -233,12 +228,12 @@ def single_one(name):
 
 @step
 def single_bounds():
-    """Benchmark (2): the program extracted by each single-metric analysis, with its bound there."""
-    return each(single_one, benchmark2())
+    """Rewriting: the program extracted by each single-metric analysis, with its bound there."""
+    return each(single_one, rewriting())
 
 
 def candidates(name):
-    """The rewrites of a Benchmark (2) core by our tool, Herbie and Daisy, by who produced them."""
+    """The rewrites of a Rewriting program by our tool, Herbie and Daisy, by who produced them."""
     o, r = ours()[name], rewrites()[name]
     out = {"ours": o.get("programs", {}).get(pick(o["bounds"])), **{tool: r[tool].get("program") for tool in r}}
     return {who: p for who, p in out.items() if p}
@@ -251,8 +246,8 @@ def measured_one(name, texts):
 
 @step
 def measured():
-    """Benchmark (2): the measured error of every compared program."""
-    names = benchmark2()
+    """Rewriting: the measured error of every compared program."""
+    names = rewriting()
     return each(measured_one, names, [candidates(n) for n in names])
 
 
@@ -264,17 +259,17 @@ def defined_one(name, texts):
 
 @step
 def definedness():
-    """Benchmark (2): whether each compared program is defined over the reals on all of its box. A
+    """Rewriting: whether each compared program is defined over the reals on all of its box. A
     rewrite that is undefined somewhere there is not equivalent to its input, which is defined."""
-    names = benchmark2()
+    names = rewriting()
     return each(defined_one, names, [candidates(n) for n in names])
 
 
 @step
 def bounds():
-    """Sound bounds from FPTaylor, Gappa, PRECiSA and Daisy: on every input, and on Benchmark (2)'s rewrites."""
-    texts, b2 = {}, set(benchmark2())
-    for n in benchmark1():
+    """Sound bounds from FPTaylor, Gappa, PRECiSA and Daisy: on every input, and on the Rewriting rewrites."""
+    texts, b2 = {}, set(rewriting())
+    for n in bounding():
         core = load(n)
         texts[n] = {"original": fpcore(core)}
         if n in b2:
@@ -316,9 +311,8 @@ def speed_one(name, texts):
 
 @step
 def speeds():
-    """Benchmark (2): run time of the input and of each rewrite, one core at a time."""
-    return {n: safe(speed_one, n, candidates(n))
-            for n in benchmark2()}
+    """Rewriting: run time of the input and of each rewrite, one program at a time."""
+    return {n: safe(speed_one, n, candidates(n)) for n in rewriting()}
 
 
 def branching_one(name, reports):
@@ -348,8 +342,9 @@ def branching_one(name, reports):
             out[who] = {"status": report.get("status", "fail"), "seconds": report.get("seconds")}
     measured = sample.measure(core, core.body, programs)
     for who, p in programs.items():
-        out[who] = {"program": show(p), "measured": measured[who], "bound": safe(bound_input, core, p),
-                    "defined": defined.check(p, core.box), **extra.get(who, {})}
+        out[who] = {"program": show(p), "measured": measured[who], "defined": defined.check(p, core.box),
+                    **extra.get(who, {})}
+    out["original"]["bound"] = safe(bound_input, core, core.body)  # picks the metric if ours finds nothing
     return out
 
 
@@ -405,7 +400,7 @@ def pieces(core, body):
 
 @step
 def branching():
-    """Benchmark (3): our branches against Herbie's and Daisy's regimes, timed one core at a time."""
+    """Branching: our branches against Herbie's and Daisy's regimes, timed one program at a time."""
     names = cores("branching_programs")
     texts = [fpcore(load(n)) for n in names]
     with tempfile.TemporaryDirectory() as d:
@@ -427,7 +422,7 @@ def branching():
 
 @step
 def branching_bounds():
-    """Sound bounds on Benchmark (3)'s programs from FPTaylor, Gappa and PRECiSA, which take no
+    """Sound bounds on the Branching programs from FPTaylor, Gappa and PRECiSA, which take no
     if-statements: each program's pieces(), bounded one at a time, as a list per tool."""
     texts = {}
     for name, r in branching().items():
@@ -447,6 +442,6 @@ def branching_bounds():
 
 
 if __name__ == "__main__":
-    for f in (originals, ours, bound_only, rewrites, alternatives, measured, definedness, bounds, startup, speeds,
-              branching, branching_bounds):
+    for f in (originals, ours, bound_only, rewrites, alternatives, single_bounds, measured, definedness, bounds,
+              startup, speeds, branching, branching_bounds):
         f()

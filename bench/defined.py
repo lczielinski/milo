@@ -62,46 +62,46 @@ def restrict(box, op, x, k, taken):
     return dict(box, **{x: (lo, min(hi, khi))})
 
 
-def walk(e, box, path, issues, seen=None):
-    """An interval holding e's values on the box, all of whose points take the conditions on the path.
-    Adds each division and square root that may be undefined to issues, and raises Undefined for one
-    that is undefined on all of the box. seen, if given, records each divisor's interval."""
+def walk(e, box, issues, seen=None):
+    """An interval holding e's values on the box. Adds each division and square root that may be
+    undefined to issues, as (kind, node, continuous), and raises Undefined for one that is undefined on
+    all of the box. seen, if given, records each divisor's interval."""
     match e:
         case ("Var", x):
             return box[x]
         case ("Num", q):
             return constant(q)
         case ("Neg", a):
-            lo, hi = walk(a, box, path, issues, seen)
+            lo, hi = walk(a, box, issues, seen)
             return -hi, -lo
         case ("Sqrt", a):
-            lo, hi = walk(a, box, path, issues, seen)
+            lo, hi = walk(a, box, issues, seen)
             if hi < 0:
                 raise Undefined(f"square root of a negative number at {point(box)}")
             if lo < 0:
-                issues.append(("sqrt", e, box, path, False))
+                issues.append(("sqrt", e, False))
             return (DOWN.sqrt(lo) if lo > 0 else mpfr(0)), UP.sqrt(hi)
         case ("If", (op, x, k), a, b):
-            parts = [walk(c, cut, path + ((op, x, k, t),), issues, seen)
+            parts = [walk(c, cut, issues, seen)
                      for c, t in ((a, True), (b, False)) if (cut := restrict(box, op, x, k, t))]
             return min(p[0] for p in parts), max(p[1] for p in parts)
         case ("Div", a, b):
-            num, inner = walk(a, box, path, issues, seen), []
-            den = walk(b, box, path, inner, seen)
+            num, inner = walk(a, box, issues, seen), []
+            den = walk(b, box, inner, seen)
             issues += inner
             if seen is not None:
                 seen[id(e)] = den
             if den[0] == 0 == den[1]:
                 raise Undefined(f"divides {show(b)} = 0 at {point(box)}")
             if den[0] <= 0 <= den[1]:
-                issues.append(("div", e, box, path, not inner and not branches(b)))
+                issues.append(("div", e, not inner and not branches(b)))
                 return WHOLE
             return combine(DOWN.div, UP.div, num, den)
         case ("Add", a, b):
-            (alo, ahi), (blo, bhi) = walk(a, box, path, issues, seen), walk(b, box, path, issues, seen)
+            (alo, ahi), (blo, bhi) = walk(a, box, issues, seen), walk(b, box, issues, seen)
             return (DOWN.add(alo, blo), UP.add(ahi, bhi)) if finite((alo, ahi), (blo, bhi)) else WHOLE
         case ("Mul", a, b):
-            return combine(DOWN.mul, UP.mul, walk(a, box, path, issues, seen), walk(b, box, path, issues, seen))
+            return combine(DOWN.mul, UP.mul, walk(a, box, issues, seen), walk(b, box, issues, seen))
     raise ValueError(f"unknown expression {e}")
 
 
@@ -120,13 +120,13 @@ def corners(box):
 
 def witness(e, box, issues):
     """Raises Undefined if a corner of the box is undefined, or if a continuous divisor of an issue
-    has opposite signs at two corners that take its path."""
+    has opposite signs at two corners that reach it (a corner that takes another branch never does)."""
     values = []
     for c in corners(box):
         seen = {}
-        walk(e, {x: (v, v) for x, v in c.items()}, (), [], seen)
+        walk(e, {x: (v, v) for x, v in c.items()}, [], seen)
         values.append(seen)
-    for kind, node, _, path, continuous in issues:
+    for kind, node, continuous in issues:
         if kind == "div" and continuous:
             signs = {(den[1] < 0) - (den[0] > 0) for seen in values if (den := seen.get(id(node)))}
             if {-1, 1} <= signs:
@@ -169,7 +169,7 @@ def check(e, box):
         b = work.pop()
         issues = []
         try:
-            walk(e, b, (), issues)
+            walk(e, b, issues)
             if issues:
                 witness(e, b, issues)
         except Undefined as u:

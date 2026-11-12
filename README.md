@@ -36,8 +36,9 @@ bounds don't hold.
 uv run python bench/run.py && uv run python bench/tables.py
 ```
 
-Benchmark (1) is `bench/bounding_programs/` and `bench/rewriting_programs/`, Benchmark (2) is `bench/rewriting_programs/`, and
-Benchmark (3) is `bench/branching_programs/`. Herbie runs as `racket -l herbie`; the other tools are found at the paths in
+The paper's Bounding benchmark is `bench/bounding_programs/` and `bench/rewriting_programs/` together, Rewriting is
+`bench/rewriting_programs/`, and Branching is `bench/branching_programs/`. `tables.py` prints the numbers the
+evaluation's text gives and the data of its figures. Herbie runs as `racket -l herbie`; the other tools are found at the paths in
 `bench/tools/`, which environment variables override. We used:
 
 | Tool | Version | Local changes |
@@ -45,7 +46,7 @@ Benchmark (3) is `bench/branching_programs/`. Herbie runs as `racket -l herbie`;
 | [Herbie] | 2.3 (`9297b52`) | platform `bench/tools/herbie_platform.rkt` |
 | [FPBench] | `50b1227` | |
 | [Daisy] | `6a6f47a` | `Taylor.scala` overrides `max`/`min` to compile on newer JDKs |
-| Daisy, for Benchmark (3) | branch `regimes`, `8e58ff0` | the same fix, upstream's `137379b`, sbt 1.9.9, scala-smtlib from Maven, mpfr_java 1.4 |
+| Daisy, for Branching | branch `regimes`, `8e58ff0` | the same fix, upstream's `137379b`, sbt 1.9.9, scala-smtlib from Maven, mpfr_java 1.4 |
 | [PRECiSA] | `2626ba1` (v4.2.0) | inputs have no initial error (`initErrorMark`); decimal constants are read exactly (`fpcoreNum2Expr`) |
 | [FPTaylor] | `b5a77ca` | |
 | [Gappa] | 1.8.2 | |

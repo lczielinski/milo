@@ -1,9 +1,8 @@
 """Extraction on the e-graph read back from egglog. Each e-class's minimal-cost set F_k(c) is a
 list of (cost, program) entries whose costs are Min(X_k(c)).
 
-A round keeps Min(F_k(c) | X_{k+1}(c)), which is Min(X_{k+1}(c)) for a monotone cost and also lets
-the bench's greedy order, which is not monotone, reach a fixed point. A cost that is FAIL is left
-out of every minimal-cost set."""
+A round keeps Min(F_k(c) | X_{k+1}(c)), which is Min(X_{k+1}(c)) for a monotone cost. A cost that is
+FAIL is left out of every minimal-cost set."""
 
 import time
 from itertools import product

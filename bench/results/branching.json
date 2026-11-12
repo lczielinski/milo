@@ -35,10 +35,6 @@
     "bits": 0.032,
     "equivalent": true
    },
-   "bound": {
-    "abs": 8.068126182222823e-13,
-    "rel": 3.60829292826254e-13
-   },
    "defined": {
     "status": "defined"
    },
@@ -78,10 +74,6 @@
     "bits": 0.7263655208537994,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.0137727044402392e-14,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -99,10 +91,6 @@
     "bits": 0.725222062103006,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.0429518596995553e-14,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -119,10 +107,6 @@
     "ulps": 8779885183039680008,
     "bits": 2.1156145049708512,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.633124123312539e-13,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -159,10 +143,6 @@
     "bits": 0.2848076815597051,
     "equivalent": true
    },
-   "bound": {
-    "abs": 7.105427357601003e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -180,10 +160,6 @@
     "bits": 0.29918691750158655,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.2204460492503203e-14,
-    "rel": 1.4432899320127063e-15
-   },
    "defined": {
     "status": "defined"
    },
@@ -200,10 +176,6 @@
     "ulps": 7,
     "bits": 0.28429248125036055,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 7.105427357601003e-15,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -240,10 +212,6 @@
     "bits": 0.44975488750216347,
     "equivalent": true
    },
-   "bound": {
-    "abs": 5.3408825778296537e-14,
-    "rel": 6.616449812189637e-16
-   },
    "defined": {
     "status": "defined"
    },
@@ -261,10 +229,6 @@
     "bits": 0.44975488750216347,
     "equivalent": true
    },
-   "bound": {
-    "abs": 4.004029380568502e-14,
-    "rel": 5.505585514404734e-16
-   },
    "defined": {
     "status": "defined"
    },
@@ -281,10 +245,6 @@
     "ulps": 4,
     "bits": 0.15680030125382213,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.0725539782837705e-13,
-    "rel": 1.1986468756673355e-15
    },
    "defined": {
     "status": "defined"
@@ -317,10 +277,6 @@
     "bits": 0.2657799281621522,
     "equivalent": true
    },
-   "bound": {
-    "abs": 6.245004513516507e-17,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -337,10 +293,6 @@
     "ulps": 2582843712975,
     "bits": 0.251662935662008,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 6.678685382510707e-17,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -359,10 +311,6 @@
     "bits": 0.23328073549220577,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.2143064331837652e-16,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -375,10 +323,6 @@
     "ulps": 5139316702988,
     "bits": 0.2659384244122243,
     "equivalent": true
-   },
-   "bound": {
-    "error": "ValueError: guards on z are nested, which is not supported",
-    "seconds": 0.0006351470947265625
    },
    "defined": {
     "status": "defined"
@@ -411,10 +355,6 @@
     "bits": 0.04722992080183873,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.2628786905111156e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -431,10 +371,6 @@
     "ulps": 1206047470673398,
     "bits": 0.04182992080183873,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.1032841307212495e-15,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -453,10 +389,6 @@
     "bits": 0.038974924093902234,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.7763568394002505e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -469,10 +401,6 @@
     "ulps": 1206047470673398,
     "bits": 0.03987492409390223,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.5543122344752192e-15,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -505,10 +433,6 @@
     "bits": 0.011933985000288461,
     "equivalent": true
    },
-   "bound": {
-    "abs": 3.552713678800501e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -525,10 +449,6 @@
     "ulps": 4378509847873226696,
     "bits": 0.011933985000288461,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 3.1086244689504383e-15,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -547,10 +467,6 @@
     "bits": 0.0013491853096329674,
     "equivalent": true
    },
-   "bound": {
-    "abs": 4.440892098500626e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -563,10 +479,6 @@
     "ulps": 8754342974481411480,
     "bits": 0.0015169925001442311,
     "equivalent": true
-   },
-   "bound": {
-    "error": "ValueError: guards on x are nested, which is not supported",
-    "seconds": 0.0004329681396484375
    },
    "defined": {
     "status": "defined"
@@ -603,10 +515,6 @@
     "bits": 0.41691325879350005,
     "equivalent": true
    },
-   "bound": {
-    "abs": 9.281808284339726e-18,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -624,10 +532,6 @@
     "bits": 0.41660574004386064,
     "equivalent": true
    },
-   "bound": {
-    "abs": 9.281808284339726e-18,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -644,10 +548,6 @@
     "ulps": 203243640,
     "bits": 0.4130207775431395,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.4023361990276478e-17,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -684,10 +584,6 @@
     "bits": 0.3405738350031731,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.7769328218043834e-14,
-    "rel": 4.449150993919215e-16
-   },
    "defined": {
     "status": "defined"
    },
@@ -705,10 +601,6 @@
     "bits": 0.3405738350031731,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.776737665413336e-14,
-    "rel": 4.443577561735678e-16
-   },
    "defined": {
     "status": "defined"
    },
@@ -725,10 +617,6 @@
     "ulps": 2,
     "bits": 0.34606797000057693,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.7774559493526076e-14,
-    "rel": 1.4502630621312098e-15
    },
    "defined": {
     "status": "defined"
@@ -761,10 +649,6 @@
     "bits": 0.016556224242422108,
     "equivalent": true
    },
-   "bound": {
-    "abs": 5.684341886080802e-14,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -781,10 +665,6 @@
     "ulps": 4394417297881826192,
     "bits": 0.009797727992349993,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 5.684341886080802e-14,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -803,10 +683,6 @@
     "bits": 0.0016977279923499917,
     "equivalent": true
    },
-   "bound": {
-    "abs": 6.394884621840902e-14,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -819,10 +695,6 @@
     "ulps": 4394417297881826192,
     "bits": 0.004397727992349992,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 6.394884621840902e-14,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -855,10 +727,6 @@
     "bits": 0.027580735492205757,
     "equivalent": true
    },
-   "bound": {
-    "abs": 5.916067635780564e-11,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -875,10 +743,6 @@
     "ulps": 204376577072,
     "bits": 0.027580735492205757,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 5.916067635780564e-11,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -897,10 +761,6 @@
     "bits": 0.01669772799234999,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.0194955990527887e-10,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -913,10 +773,6 @@
     "ulps": 204376577072,
     "bits": 0.025880735492205757,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.0190692734113327e-10,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -949,10 +805,6 @@
     "bits": 0.001968825030913318,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.7763568394002505e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -969,10 +821,6 @@
     "ulps": 4372984787934924308,
     "bits": 0.001968825030913318,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.7763568394002505e-15,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -991,10 +839,6 @@
     "bits": 0.001968825030913318,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.220446049250313e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -1007,10 +851,6 @@
     "ulps": 4372984787934924308,
     "bits": 0.001968825030913318,
     "equivalent": true
-   },
-   "bound": {
-    "error": "ValueError: guards on y are nested, which is not supported",
-    "seconds": 0.0005462169647216797
    },
    "defined": {
     "status": "defined"
@@ -1043,10 +883,6 @@
     "bits": 0.0,
     "equivalent": true
    },
-   "bound": {
-    "abs": 8.881784197001252e-16,
-    "rel": 1.0000000000000002
-   },
    "defined": {
     "status": "defined"
    },
@@ -1063,10 +899,6 @@
     "ulps": 0,
     "bits": 0.0,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 4.440892098500626e-16,
-    "rel": 1.0000000000000002
    },
    "defined": {
     "status": "defined"
@@ -1085,10 +917,6 @@
     "bits": 0.0,
     "equivalent": true
    },
-   "bound": {
-    "abs": 8.881784197001252e-16,
-    "rel": 1.0000000000000002
-   },
    "defined": {
     "status": "defined"
    },
@@ -1101,10 +929,6 @@
     "ulps": 4368491638549381120,
     "bits": 0.0013584962500721156,
     "equivalent": true
-   },
-   "bound": {
-    "error": "ValueError: guards on x are nested, which is not supported",
-    "seconds": 0.0007140636444091797
    },
    "defined": {
     "status": "defined"
@@ -1137,10 +961,6 @@
     "bits": 0.0127,
     "equivalent": true
    },
-   "bound": {
-    "abs": 5.684341886080802e-14,
-    "rel": 1.0000000000000002
-   },
    "defined": {
     "status": "defined"
    },
@@ -1157,10 +977,6 @@
     "ulps": 1,
     "bits": 0.0145,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 4.3520742565306136e-14,
-    "rel": 1.0000000000000002
    },
    "defined": {
     "status": "defined"
@@ -1179,10 +995,6 @@
     "bits": 0.0127,
     "equivalent": true
    },
-   "bound": {
-    "abs": 5.684341886080802e-14,
-    "rel": 1.0000000000000002
-   },
    "defined": {
     "status": "defined"
    },
@@ -1195,10 +1007,6 @@
     "ulps": 1,
     "bits": 0.0138,
     "equivalent": true
-   },
-   "bound": {
-    "error": "ValueError: guards on y are nested, which is not supported",
-    "seconds": 0.00045800209045410156
    },
    "defined": {
     "status": "defined"
@@ -1231,10 +1039,6 @@
     "bits": 0.0161,
     "equivalent": true
    },
-   "bound": {
-    "abs": 5.684341886080802e-14,
-    "rel": 1.0000000000000002
-   },
    "defined": {
     "status": "defined"
    },
@@ -1251,10 +1055,6 @@
     "ulps": 1,
     "bits": 0.0164,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 4.3520742565306136e-14,
-    "rel": 1.0000000000000002
    },
    "defined": {
     "status": "defined"
@@ -1273,10 +1073,6 @@
     "bits": 0.0161,
     "equivalent": true
    },
-   "bound": {
-    "abs": 5.684341886080802e-14,
-    "rel": 1.0000000000000002
-   },
    "defined": {
     "status": "defined"
    },
@@ -1289,10 +1085,6 @@
     "ulps": 5,
     "bits": 0.4490898417560152,
     "equivalent": true
-   },
-   "bound": {
-    "error": "ValueError: guards on z are nested, which is not supported",
-    "seconds": 0.0009400844573974609
    },
    "defined": {
     "status": "defined"
@@ -1325,10 +1117,6 @@
     "bits": 0.0136,
     "equivalent": true
    },
-   "bound": {
-    "abs": 5.684341886080802e-14,
-    "rel": 1.0000000000000002
-   },
    "defined": {
     "status": "defined"
    },
@@ -1345,10 +1133,6 @@
     "ulps": 1,
     "bits": 0.0137,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 4.3520742565306136e-14,
-    "rel": 1.0000000000000002
    },
    "defined": {
     "status": "defined"
@@ -1367,10 +1151,6 @@
     "bits": 0.0136,
     "equivalent": true
    },
-   "bound": {
-    "abs": 5.684341886080802e-14,
-    "rel": 1.0000000000000002
-   },
    "defined": {
     "status": "defined"
    },
@@ -1383,10 +1163,6 @@
     "ulps": 30702707691,
     "bits": 0.01429772799234999,
     "equivalent": true
-   },
-   "bound": {
-    "error": "ValueError: guards on y are nested, which is not supported",
-    "seconds": 0.0004818439483642578
    },
    "defined": {
     "status": "defined"
@@ -1423,10 +1199,6 @@
     "bits": 1.9763043875377828,
     "equivalent": true
    },
-   "bound": {
-    "abs": 28587310881299.062,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -1444,10 +1216,6 @@
     "bits": 1.9763043875377828,
     "equivalent": true
    },
-   "bound": {
-    "abs": 28587310881299.062,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -1464,10 +1232,6 @@
     "ulps": 1432830263524,
     "bits": 1.9818615038179508,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 32985359672223.984,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -1504,10 +1268,6 @@
     "bits": 0.5023361181433526,
     "equivalent": true
    },
-   "bound": {
-    "abs": 4.968047872466741e-05,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -1525,10 +1285,6 @@
     "bits": 0.5024606293931363,
     "equivalent": true
    },
-   "bound": {
-    "abs": 4.771353999899475e-05,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -1545,10 +1301,6 @@
     "ulps": 22,
     "bits": 0.5024021331430641,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 5.3435600449347476e-05,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -1581,10 +1333,6 @@
     "bits": 0.0137,
     "equivalent": true
    },
-   "bound": {
-    "abs": 7.105427357601002e-15,
-    "rel": 1.0000000000000002
-   },
    "defined": {
     "status": "defined"
    },
@@ -1601,10 +1349,6 @@
     "ulps": 1,
     "bits": 0.0127,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 5.773159728050814e-15,
-    "rel": 1.0000000000000002
    },
    "defined": {
     "status": "defined"
@@ -1623,10 +1367,6 @@
     "bits": 0.014632192809488737,
     "equivalent": true
    },
-   "bound": {
-    "abs": 5.773159728050814e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -1639,10 +1379,6 @@
     "ulps": 31,
     "bits": 0.0136,
     "equivalent": true
-   },
-   "bound": {
-    "error": "ValueError: guards on x are nested, which is not supported",
-    "seconds": 0.00045490264892578125
    },
    "defined": {
     "status": "defined"
@@ -1675,10 +1411,6 @@
     "bits": 0.0148,
     "equivalent": true
    },
-   "bound": {
-    "abs": 7.105427357601002e-15,
-    "rel": 1.0000000000000002
-   },
    "defined": {
     "status": "defined"
    },
@@ -1695,10 +1427,6 @@
     "ulps": 1,
     "bits": 0.014,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 5.773159728050814e-15,
-    "rel": 1.0000000000000002
    },
    "defined": {
     "status": "defined"
@@ -1717,10 +1445,6 @@
     "bits": 0.0148,
     "equivalent": true
    },
-   "bound": {
-    "abs": 9.325873406851317e-15,
-    "rel": 1.0000000000000004
-   },
    "defined": {
     "status": "defined"
    },
@@ -1733,10 +1457,6 @@
     "ulps": 1,
     "bits": 0.0146,
     "equivalent": true
-   },
-   "bound": {
-    "error": "ValueError: guards on y are nested, which is not supported",
-    "seconds": 0.0005018711090087891
    },
    "defined": {
     "status": "defined"
@@ -1769,10 +1489,6 @@
     "bits": 0.2669,
     "equivalent": true
    },
-   "bound": {
-    "abs": 9.2086338554509e-12,
-    "rel": 1.0000000000000004
-   },
    "defined": {
     "status": "defined"
    },
@@ -1789,10 +1505,6 @@
     "ulps": 2,
     "bits": 0.26465849625007215,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 9.208633855450898e-12,
-    "rel": 1.0000000000000004
    },
    "defined": {
     "status": "defined"
@@ -1811,10 +1523,6 @@
     "bits": 0.2669,
     "equivalent": true
    },
-   "bound": {
-    "abs": 9.2086338554509e-12,
-    "rel": 1.0000000000000004
-   },
    "defined": {
     "status": "defined"
    },
@@ -1827,10 +1535,6 @@
     "ulps": 2,
     "bits": 0.26015849625007215,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.0913936421275139e-11,
-    "rel": 3.0000000000000004
    },
    "defined": {
     "status": "defined"
@@ -1863,10 +1567,6 @@
     "bits": 0.015436959734627867,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.3322676295501878e-14,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -1883,10 +1583,6 @@
     "ulps": 4384754784145433176,
     "bits": 0.01613695973462787,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.199040866595169e-14,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -1905,10 +1601,6 @@
     "bits": 0.0032732167425663385,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.4210854715202004e-14,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -1921,10 +1613,6 @@
     "ulps": 8752615141979278192,
     "bits": 0.02167094473491633,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.4210854715202004e-14,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -1957,10 +1645,6 @@
     "bits": 0.12228317030992143,
     "equivalent": true
    },
-   "bound": {
-    "abs": 4.554998353809324e-16,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -1977,10 +1661,6 @@
     "ulps": 8708047588787182294,
     "bits": 0.7642477155966417,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 4.554998353809324e-16,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -1999,10 +1679,6 @@
     "bits": 0.1213661778097772,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.0130785099704555e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -2015,10 +1691,6 @@
     "ulps": 8733310674345136925,
     "bits": 1.4039309947293173,
     "equivalent": true
-   },
-   "bound": {
-    "error": "ValueError: guards on x are nested, which is not supported",
-    "seconds": 0.0005240440368652344
    },
    "defined": {
     "status": "defined"
@@ -2051,10 +1723,6 @@
     "bits": 0.27808760972185725,
     "equivalent": true
    },
-   "bound": {
-    "abs": 9.60739424523841e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -2071,10 +1739,6 @@
     "ulps": 1427410761862,
     "bits": 0.2781876097218573,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 9.571708505161174e-15,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -2093,10 +1757,6 @@
     "bits": 0.25897548875021636,
     "equivalent": true
    },
-   "bound": {
-    "abs": Infinity,
-    "rel": Infinity
-   },
    "defined": {
     "status": "undefined",
     "witness": "divisor (- y z) changes sign on x in [1, 2], y in [4, 8], z in [-32, 32], t in [64, 128], a in [256, 512]"
@@ -2110,10 +1770,6 @@
     "ulps": 221856679802,
     "bits": 0.26558317030992146,
     "equivalent": true
-   },
-   "bound": {
-    "error": "ValueError: guards on z are nested, which is not supported",
-    "seconds": 0.0005860328674316406
    },
    "defined": {
     "status": "defined"
@@ -2146,10 +1802,6 @@
     "bits": 0.015975488750216347,
     "equivalent": true
    },
-   "bound": {
-    "abs": 7.771561172376096e-16,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -2166,10 +1818,6 @@
     "ulps": 4368471496794368686,
     "bits": 0.015975488750216347,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 5.551115123125783e-16,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -2188,10 +1836,6 @@
     "bits": 0.015975488750216347,
     "equivalent": true
    },
-   "bound": {
-    "abs": 9.992007221626409e-16,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -2204,10 +1848,6 @@
     "ulps": 4368471496794368686,
     "bits": 0.015975488750216347,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 9.992007221626409e-16,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -2244,10 +1884,6 @@
     "bits": 0.4434972950135578,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.0628443814050468e-16,
-    "rel": 5.60813259664987e-16
-   },
    "defined": {
     "status": "defined"
    },
@@ -2265,10 +1901,6 @@
     "bits": 0.36831924875483174,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.9029577155422786e-16,
-    "rel": 5.694288789371803e-16
-   },
    "defined": {
     "status": "defined"
    },
@@ -2285,10 +1917,6 @@
     "ulps": 4,
     "bits": 0.4995400037787741,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 4.2709458693022984e-16,
-    "rel": 1.34514889231601e-15
    },
    "defined": {
     "status": "defined"
@@ -2325,10 +1953,6 @@
     "bits": 0.18602992080183875,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.3877787807814457e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -2346,10 +1970,6 @@
     "bits": 0.276218630494225,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.1102230246251565e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -2366,10 +1986,6 @@
     "ulps": 1729624175049368,
     "bits": 0.18083695973462785,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.6098233857064772e-15,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -2402,10 +2018,6 @@
     "bits": 0.04567313190310251,
     "equivalent": true
    },
-   "bound": {
-    "abs": 8.881784197001252e-16,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -2422,10 +2034,6 @@
     "ulps": 4372995238176751616,
     "bits": 0.04567313190310251,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 6.661338147750939e-16,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -2444,10 +2052,6 @@
     "bits": 0.04567313190310251,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.1102230246251565e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -2460,10 +2064,6 @@
     "ulps": 4503599627370496,
     "bits": 0.042673131903102506,
     "equivalent": true
-   },
-   "bound": {
-    "error": "ValueError: guards on y are nested, which is not supported",
-    "seconds": 0.0004258155822753906
    },
    "defined": {
     "status": "defined"
@@ -2500,10 +2100,6 @@
     "bits": 0.10349068905956085,
     "equivalent": true
    },
-   "bound": {
-    "abs": 3.747002708109905e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -2521,10 +2117,6 @@
     "bits": 0.09645849625007212,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.7339241981394503e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -2541,10 +2133,6 @@
     "ulps": 733323048076,
     "bits": 0.0968,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 4.968248035197578e-15,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -2581,10 +2169,6 @@
     "bits": 0.4199406153205945,
     "equivalent": true
    },
-   "bound": {
-    "abs": 4.672519926576256e-13,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -2602,10 +2186,6 @@
     "bits": 0.41746269175266254,
     "equivalent": true
    },
-   "bound": {
-    "abs": 4.65964777556611e-13,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -2622,10 +2202,6 @@
     "ulps": 1071742117154,
     "bits": 0.46515413751658663,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 7.898075204640157e-13,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -2662,10 +2238,6 @@
     "bits": 0.5320822728464119,
     "equivalent": true
    },
-   "bound": {
-    "abs": 7.196934683675142e-15,
-    "rel": 5.71580949880682e-14
-   },
    "defined": {
     "status": "defined"
    },
@@ -2683,10 +2255,6 @@
     "bits": 0.2709959425203366,
     "equivalent": true
    },
-   "bound": {
-    "abs": 6.162048224104828e-15,
-    "rel": 5.715246310516823e-14
-   },
    "defined": {
     "status": "defined"
    },
@@ -2703,10 +2271,6 @@
     "ulps": 4,
     "bits": 0.0011584962500721155,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 2.003210832275891e-15,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -2743,10 +2307,6 @@
     "bits": 0.5710908581675834,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.1698251306934633e-15,
-    "rel": 1.0000000000000042
-   },
    "defined": {
     "status": "defined"
    },
@@ -2764,10 +2324,6 @@
     "bits": 0.5908893428642966,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.143642676337675e-15,
-    "rel": 1.0000000000000042
-   },
    "defined": {
     "status": "defined"
    },
@@ -2784,10 +2340,6 @@
     "ulps": 6,
     "bits": 0.6588931784870223,
     "equivalent": true
-   },
-   "bound": {
-    "abs": Infinity,
-    "rel": Infinity
    },
    "defined": {
     "status": "undefined",
@@ -2825,10 +2377,6 @@
     "bits": 0.7017589075650448,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.929644109549061e-13,
-    "rel": 1.895689395571274e-15
-   },
    "defined": {
     "status": "defined"
    },
@@ -2846,10 +2394,6 @@
     "bits": 0.7020648213002594,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.8199132956032427e-13,
-    "rel": 1.8313569426570914e-15
-   },
    "defined": {
     "status": "defined"
    },
@@ -2866,10 +2410,6 @@
     "ulps": 6,
     "bits": 0.7470275749783478,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 3.2544886296268577e-13,
-    "rel": 2.6397330334915124e-15
    },
    "defined": {
     "status": "defined"
@@ -2902,10 +2442,6 @@
     "bits": 0.00043219280948873616,
     "equivalent": true
    },
-   "bound": {
-    "abs": 3.3306690738754696e-16,
-    "rel": 1.5971351225679783e-14
-   },
    "defined": {
     "status": "defined"
    },
@@ -2922,10 +2458,6 @@
     "ulps": 57,
     "bits": 0.013958496250072117,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 9.811371715073855e-16,
-    "rel": 1.5877570841719372e-14
    },
    "defined": {
     "status": "defined"
@@ -2944,10 +2476,6 @@
     "bits": 0.00043219280948873616,
     "equivalent": true
    },
-   "bound": {
-    "abs": 3.3306690738754696e-16,
-    "rel": 1.5971351225679783e-14
-   },
    "defined": {
     "status": "defined"
    },
@@ -2960,10 +2488,6 @@
     "ulps": 39,
     "bits": 0.00043219280948873616,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 3.3306690738754696e-16,
-    "rel": 1.5971351225679783e-14
    },
    "defined": {
     "status": "defined"
@@ -3000,10 +2524,6 @@
     "bits": 0.32392872250533655,
     "equivalent": true
    },
-   "bound": {
-    "abs": 5.119361724660454e-16,
-    "rel": 1.0000000000000013
-   },
    "defined": {
     "status": "defined"
    },
@@ -3021,10 +2541,6 @@
     "bits": 0.38446496376031253,
     "equivalent": true
    },
-   "bound": {
-    "abs": 4.736951571734009e-16,
-    "rel": 1.0000000000000013
-   },
    "defined": {
     "status": "defined"
    },
@@ -3041,10 +2557,6 @@
     "ulps": 5,
     "bits": 0.38875821032838304,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.02387234493209e-15,
-    "rel": 7.000000000000004
    },
    "defined": {
     "status": "defined"
@@ -3081,10 +2593,6 @@
     "bits": 0.554080456289303,
     "equivalent": true
    },
-   "bound": {
-    "abs": 3.054919634734177e-14,
-    "rel": 9.057051743888246e-16
-   },
    "defined": {
     "status": "defined"
    },
@@ -3102,10 +2610,6 @@
     "bits": 0.554080456289303,
     "equivalent": true
    },
-   "bound": {
-    "abs": 3.054919634734177e-14,
-    "rel": 9.05171046793385e-16
-   },
    "defined": {
     "status": "defined"
    },
@@ -3122,10 +2626,6 @@
     "ulps": 3,
     "bits": 0.5656163962904569,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 5.418063393621135e-14,
-    "rel": 1.2234864823283643e-15
    },
    "defined": {
     "status": "defined"
@@ -3158,10 +2658,6 @@
     "bits": 0.019652141641076232,
     "equivalent": true
    },
-   "bound": {
-    "abs": 3.122502256758253e-16,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -3178,10 +2674,6 @@
     "ulps": 4360466757811329431,
     "bits": 0.019252141641076234,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 3.3306690738754696e-16,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -3200,10 +2692,6 @@
     "bits": 0.018109275714091985,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.5543122344752192e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -3216,10 +2704,6 @@
     "ulps": 4361883348834463384,
     "bits": 0.020386145044260836,
     "equivalent": true
-   },
-   "bound": {
-    "error": "ValueError: guards on y are nested, which is not supported",
-    "seconds": 0.00046896934509277344
    },
    "defined": {
     "status": "defined"
@@ -3256,10 +2740,6 @@
     "bits": 0.24824870549278266,
     "equivalent": true
    },
-   "bound": {
-    "abs": 8.555289809919486e-11,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -3277,10 +2757,6 @@
     "bits": 0.2483562242424221,
     "equivalent": true
    },
-   "bound": {
-    "abs": 8.555289809919486e-11,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -3297,10 +2773,6 @@
     "ulps": 2120775260574,
     "bits": 0.2503679700005769,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.4917134194547543e-10,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -3333,10 +2805,6 @@
     "bits": 0.0005,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.486899575160351e-14,
-    "rel": 1.0000000000000004
-   },
    "defined": {
     "status": "defined"
    },
@@ -3353,10 +2821,6 @@
     "ulps": 1,
     "bits": 0.0005,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.7763568394002508e-14,
-    "rel": 1.0000000000000004
    },
    "defined": {
     "status": "defined"
@@ -3375,10 +2839,6 @@
     "bits": 0.0005,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.486899575160351e-14,
-    "rel": 1.0000000000000004
-   },
    "defined": {
     "status": "defined"
    },
@@ -3391,10 +2851,6 @@
     "ulps": 2333115587377016,
     "bits": 0.007439231742277876,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 7.327471962526033e-15,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -3427,10 +2883,6 @@
     "bits": 0.030567970000576924,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.486899575160351e-14,
-    "rel": 1.0000000000000004
-   },
    "defined": {
     "status": "defined"
    },
@@ -3447,10 +2899,6 @@
     "ulps": 2,
     "bits": 0.025275488750216346,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.6209256159527285e-14,
-    "rel": 1.0000000000000004
    },
    "defined": {
     "status": "defined"
@@ -3469,10 +2917,6 @@
     "bits": 0.023858496250072116,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.4868995751603507e-14,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -3485,10 +2929,6 @@
     "ulps": 8748318398691969024,
     "bits": 0.022366177809777198,
     "equivalent": true
-   },
-   "bound": {
-    "error": "ValueError: guards on y are nested, which is not supported",
-    "seconds": 0.000438690185546875
    },
    "defined": {
     "status": "defined"
@@ -3521,10 +2961,6 @@
     "bits": 0.0217,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.2204460492503135e-15,
-    "rel": 1.0000000000000004
-   },
    "defined": {
     "status": "defined"
    },
@@ -3541,10 +2977,6 @@
     "ulps": 1,
     "bits": 0.0217,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 6.106226635438362e-16,
-    "rel": 1.0000000000000004
    },
    "defined": {
     "status": "defined"
@@ -3563,10 +2995,6 @@
     "bits": 0.001790689059560852,
     "equivalent": true
    },
-   "bound": {
-    "abs": 4.440892098500626e-16,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -3579,10 +3007,6 @@
     "ulps": 33554432,
     "bits": 0.001790689059560852,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 4.440892098500626e-16,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -3615,10 +3039,6 @@
     "bits": 0.0158,
     "equivalent": true
    },
-   "bound": {
-    "abs": 3.552713678800501e-15,
-    "rel": 1.0000000000000002
-   },
    "defined": {
     "status": "defined"
    },
@@ -3635,10 +3055,6 @@
     "ulps": 1,
     "bits": 0.005,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 2.6645352591003757e-15,
-    "rel": 1.0000000000000002
    },
    "defined": {
     "status": "defined"
@@ -3657,10 +3073,6 @@
     "bits": 0.001939231742277876,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.6645352591003757e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -3673,10 +3085,6 @@
     "ulps": 536292572,
     "bits": 0.001939231742277876,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 2.6645352591003757e-15,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -3709,10 +3117,6 @@
     "bits": 0.27094870549278266,
     "equivalent": true
    },
-   "bound": {
-    "abs": 9.496371942775898e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -3729,10 +3133,6 @@
     "ulps": 323789797484,
     "bits": 0.2728924812503606,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 7.754213937616331e-15,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -3751,10 +3151,6 @@
     "bits": 0.2716509775004327,
     "equivalent": true
    },
-   "bound": {
-    "abs": Infinity,
-    "rel": Infinity
-   },
    "defined": {
     "status": "undefined",
     "witness": "divisor (- y z) changes sign on x in [1, 2], y in [4, 8], z in [-32, 32], t in [64, 128], a in [256, 512]"
@@ -3768,10 +3164,6 @@
     "ulps": 323789797484,
     "bits": 0.2733924812503606,
     "equivalent": true
-   },
-   "bound": {
-    "error": "ValueError: guards on z are nested, which is not supported",
-    "seconds": 0.0005400180816650391
    },
    "defined": {
     "status": "defined"
@@ -3804,10 +3196,6 @@
     "bits": 0.26873510772583076,
     "equivalent": true
    },
-   "bound": {
-    "abs": 3.2862601528904634e-14,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -3824,10 +3212,6 @@
     "ulps": 3523467518566262,
     "bits": 0.2636936039759029,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 2.930988785010413e-14,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -3846,10 +3230,6 @@
     "bits": 0.2717719228369956,
     "equivalent": true
    },
-   "bound": {
-    "abs": 8.526512829121202e-14,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -3862,10 +3242,6 @@
     "ulps": 4387486169167667338,
     "bits": 0.2710936039759029,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 3.552713678800501e-14,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -3902,10 +3278,6 @@
     "bits": 0.12449068905956084,
     "equivalent": true
    },
-   "bound": {
-    "abs": 4.551914400963143e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -3923,10 +3295,6 @@
     "bits": 0.11304918530963295,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.5535129566378612e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -3943,10 +3311,6 @@
     "ulps": 5941282777982,
     "bits": 0.11959068905956086,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 5.9952043329758485e-15,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -3979,10 +3343,6 @@
     "bits": 0.11868073549220576,
     "equivalent": true
    },
-   "bound": {
-    "abs": 4.551914400963143e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -3999,10 +3359,6 @@
     "ulps": 23742789727078,
     "bits": 0.11571699250014424,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 2.5535129566378612e-15,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -4021,10 +3377,6 @@
     "bits": 0.12143219280948875,
     "equivalent": true
    },
-   "bound": {
-    "abs": 5.9952043329758485e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -4037,10 +3389,6 @@
     "ulps": 23742789727078,
     "bits": 0.11691699250014424,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 2.553512956637861e-15,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -4073,10 +3421,6 @@
     "bits": 0.1034,
     "equivalent": true
    },
-   "bound": {
-    "abs": 4.718447854656915e-16,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -4093,10 +3437,6 @@
     "ulps": 4367977107317922826,
     "bits": 0.0985,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 4.718447854656915e-16,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -4115,10 +3455,6 @@
     "bits": 0.098,
     "equivalent": true
    },
-   "bound": {
-    "abs": Infinity,
-    "rel": Infinity
-   },
    "defined": {
     "status": "undefined",
     "witness": "divisor (* -4 (- y x)) changes sign on x in [1, 2], y in [-8, 8], z in [16, 32]"
@@ -4132,10 +3468,6 @@
     "ulps": 4370357539939472648,
     "bits": 0.1517,
     "equivalent": true
-   },
-   "bound": {
-    "error": "ValueError: guards on z are nested, which is not supported",
-    "seconds": 0.0004930496215820312
    },
    "defined": {
     "status": "defined"
@@ -4168,10 +3500,6 @@
     "bits": 0.01783398500028846,
     "equivalent": true
    },
-   "bound": {
-    "abs": 6.039613253960853e-14,
-    "rel": 3.000000000000001
-   },
    "defined": {
     "status": "defined"
    },
@@ -4188,10 +3516,6 @@
     "ulps": 2,
     "bits": 0.01783398500028846,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 3.4638958368304897e-14,
-    "rel": 3.000000000000001
    },
    "defined": {
     "status": "defined"
@@ -4210,10 +3534,6 @@
     "bits": 0.006266177809777199,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.1316282072803006e-14,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -4226,10 +3546,6 @@
     "ulps": 175081,
     "bits": 0.006266177809777199,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 2.1316282072803006e-14,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -4266,10 +3582,6 @@
     "bits": 0.403898139949614,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.6534152652857306e-10,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -4287,10 +3599,6 @@
     "bits": 0.40483033275910274,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.671605159321189e-10,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -4307,10 +3615,6 @@
     "ulps": 184289328480762,
     "bits": 0.40130405705883393,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 4.3021231022066827e-10,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -4343,10 +3647,6 @@
     "bits": 0.0152,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.4210854715202004e-14,
-    "rel": 1.0000000000000002
-   },
    "defined": {
     "status": "defined"
    },
@@ -4363,10 +3663,6 @@
     "ulps": 1,
     "bits": 0.015,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.1546319456101628e-14,
-    "rel": 1.0000000000000002
    },
    "defined": {
     "status": "defined"
@@ -4385,10 +3681,6 @@
     "bits": 0.0152,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.4210854715202004e-14,
-    "rel": 1.0000000000000002
-   },
    "defined": {
     "status": "defined"
    },
@@ -4401,10 +3693,6 @@
     "ulps": 15497769050329,
     "bits": 0.016352160043972372,
     "equivalent": true
-   },
-   "bound": {
-    "error": "ValueError: guards on d3 are nested, which is not supported",
-    "seconds": 0.00045108795166015625
    },
    "defined": {
     "status": "defined"
@@ -4441,10 +3729,6 @@
     "bits": 0.0017169925001442312,
     "equivalent": true
    },
-   "bound": {
-    "abs": 7.500000000000004,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -4462,10 +3746,6 @@
     "bits": 0.0015169925001442311,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.3750000000000007,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -4482,10 +3762,6 @@
     "ulps": 551,
     "bits": 0.0017169925001442312,
     "equivalent": true
-   },
-   "bound": {
-    "abs": Infinity,
-    "rel": Infinity
    },
    "defined": {
     "status": "undefined",
@@ -4523,10 +3799,6 @@
     "bits": 0.3463169925001442,
     "equivalent": true
    },
-   "bound": {
-    "abs": 3.0538732585485372e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -4544,10 +3816,6 @@
     "bits": 0.37648496250072117,
     "equivalent": true
    },
-   "bound": {
-    "abs": 3.0538732585485372e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -4564,10 +3832,6 @@
     "ulps": 4367533160072449678,
     "bits": 0.3414147204924942,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 5.5141642746670436e-15,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -4600,10 +3864,6 @@
     "bits": 0.40804259468776916,
     "equivalent": true
    },
-   "bound": {
-    "abs": 4.4167560820288446e-17,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -4620,10 +3880,6 @@
     "ulps": 4055737199982147,
     "bits": 0.40804259468776916,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 4.4167560820288446e-17,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -4642,10 +3898,6 @@
     "bits": 0.41522362282045033,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.119406854792093e-16,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -4658,10 +3910,6 @@
     "ulps": 1346771128750695,
     "bits": 0.416674600320883,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.2326740935176378e-16,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -4698,10 +3946,6 @@
     "bits": 0.09344001281295028,
     "equivalent": true
    },
-   "bound": {
-    "abs": 8.382183835919971e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -4719,10 +3963,6 @@
     "bits": 0.21521533875310098,
     "equivalent": true
    },
-   "bound": {
-    "abs": 8.38218383591997e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -4739,10 +3979,6 @@
     "ulps": 166400730574698,
     "bits": 0.01839772799234999,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 9.603429163007685e-15,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -4779,10 +4015,6 @@
     "bits": 0.06206256906186856,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.4815705046421527e-12,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -4800,10 +4032,6 @@
     "bits": 0.06377370517276332,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.812639010585376e-12,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -4820,10 +4048,6 @@
     "ulps": 8822660434084989928,
     "bits": 0.06939217285692266,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 3.777134160998239e-11,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -4860,10 +4084,6 @@
     "bits": 0.2326189475010096,
     "equivalent": true
    },
-   "bound": {
-    "abs": 13.1488700667533,
-    "rel": 1.5000000030500895
-   },
    "defined": {
     "status": "defined"
    },
@@ -4881,10 +4101,6 @@
     "bits": 56.59370430175711,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1682.2994308584173,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -4901,10 +4117,6 @@
     "ulps": 8896469327279156999,
     "bits": 25.46014397314406,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 4200.425215981024,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -4941,10 +4153,6 @@
     "bits": 0.47513910001730775,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.469136006766348e-12,
-    "rel": 5.670096834584606e-15
-   },
    "defined": {
     "status": "defined"
    },
@@ -4962,10 +4170,6 @@
     "bits": 0.479182558768101,
     "equivalent": true
    },
-   "bound": {
-    "abs": 3.065991904804833e-12,
-    "rel": 2.470992940874072e-15
-   },
    "defined": {
     "status": "defined"
    },
@@ -4982,10 +4186,6 @@
     "ulps": 2,
     "bits": 0.33524932375338945,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 3.1796787425264483e-12,
-    "rel": 1.0166119688587936e-14
    },
    "defined": {
     "status": "defined"
@@ -5022,10 +4222,6 @@
     "bits": 0.50843940127113,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.3163693185779266e-12,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -5043,10 +4239,6 @@
     "bits": 0.5083978975212019,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.311040248059726e-12,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -5063,10 +4255,6 @@
     "ulps": 7,
     "bits": 0.383128405498552,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 3.4070524179696804e-12,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -5099,10 +4287,6 @@
     "bits": 0.022175488750216344,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.0999201549566351e-11,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -5119,10 +4303,6 @@
     "ulps": 625657677820,
     "bits": 0.022175488750216344,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.0970779840135947e-11,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -5141,10 +4321,6 @@
     "bits": 0.016233985000288463,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.4566126083082054e-11,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -5157,10 +4333,6 @@
     "ulps": 120053577565,
     "bits": 0.016233985000288463,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.4566126083082054e-11,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -5197,10 +4369,6 @@
     "bits": 0.016970761417933997,
     "equivalent": true
    },
-   "bound": {
-    "abs": 3.583555674426515e-11,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -5218,10 +4386,6 @@
     "bits": 0.06430391000173077,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.0807399419843141e-10,
-    "rel": 1.080857625624923e-12
-   },
    "defined": {
     "status": "defined"
    },
@@ -5238,10 +4402,6 @@
     "ulps": 29899,
     "bits": 0.04262732348741499,
     "equivalent": true
-   },
-   "bound": {
-    "abs": Infinity,
-    "rel": Infinity
    },
    "defined": {
     "status": "unknown"
@@ -5278,10 +4438,6 @@
     "bits": 0.33430782000346154,
     "equivalent": true
    },
-   "bound": {
-    "abs": 4.539788141651302e-12,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -5299,10 +4455,6 @@
     "bits": 0.3444983462529568,
     "equivalent": true
    },
-   "bound": {
-    "abs": 2.9127892482203894e-10,
-    "rel": 1.4452883079492164e-12
-   },
    "defined": {
     "status": "defined"
    },
@@ -5319,10 +4471,6 @@
     "ulps": 3,
     "bits": 0.2752509775004327,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 6.105334949370895e-12,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -5359,10 +4507,6 @@
     "bits": 0.020196454967744824,
     "equivalent": true
    },
-   "bound": {
-    "abs": 7.399636459127947e-14,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -5380,10 +4524,6 @@
     "bits": 0.05445849625007212,
     "equivalent": true
    },
-   "bound": {
-    "abs": 7.224554288149791e-12,
-    "rel": 7.225331444267022e-13
-   },
    "defined": {
     "status": "defined"
    },
@@ -5400,10 +4540,6 @@
     "ulps": 15645,
     "bits": 0.020196454967744824,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 7.399636459127947e-14,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -5440,10 +4576,6 @@
     "bits": 0.022371443770537507,
     "equivalent": true
    },
-   "bound": {
-    "abs": 7.399636459127947e-14,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -5461,10 +4593,6 @@
     "bits": 0.05371699250014423,
     "equivalent": true
    },
-   "bound": {
-    "abs": 7.224554288149791e-12,
-    "rel": 7.225331444267022e-13
-   },
    "defined": {
     "status": "defined"
    },
@@ -5481,10 +4609,6 @@
     "ulps": 14852,
     "bits": 0.022371443770537507,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 7.399636459127947e-14,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -5521,10 +4645,6 @@
     "bits": 0.07842829142110466,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.5154544286135944e-13,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -5542,10 +4662,6 @@
     "bits": 0.10549248125036058,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.4450884933138983e-11,
-    "rel": 7.226441667291648e-13
-   },
    "defined": {
     "status": "defined"
    },
@@ -5562,10 +4678,6 @@
     "ulps": 183,
     "bits": 0.08028202266603919,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.5154544286135944e-13,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -5602,10 +4714,6 @@
     "bits": 0.2885068599963798,
     "equivalent": true
    },
-   "bound": {
-    "abs": 7.460490538514893e-14,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -5623,10 +4731,6 @@
     "bits": 0.3485816550066346,
     "equivalent": true
    },
-   "bound": {
-    "abs": 7.186350325348377e-11,
-    "rel": 4.995624752734021e-13
-   },
    "defined": {
     "status": "defined"
    },
@@ -5643,10 +4747,6 @@
     "ulps": 9990,
     "bits": 0.28909389646833816,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.0785147931537244e-13,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -5683,10 +4783,6 @@
     "bits": 0.2949486093281086,
     "equivalent": true
    },
-   "bound": {
-    "abs": 7.53397344510761e-13,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -5704,10 +4800,6 @@
     "bits": 0.2949486093281086,
     "equivalent": true
    },
-   "bound": {
-    "abs": 7.53397344510761e-13,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -5724,10 +4816,6 @@
     "ulps": 23154,
     "bits": 0.34779960188160275,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 1.4363004884393461e-10,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -5764,10 +4852,6 @@
     "bits": 0.30418749649598603,
     "equivalent": true
    },
-   "bound": {
-    "abs": 7.533973445107608e-13,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -5785,10 +4869,6 @@
     "bits": 0.35523789500201924,
     "equivalent": true
    },
-   "bound": {
-    "abs": 7.253575518013552e-11,
-    "rel": 7.254197242907334e-13
-   },
    "defined": {
     "status": "defined"
    },
@@ -5805,10 +4885,6 @@
     "ulps": 14713,
     "bits": 0.3059330240157957,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 5.322076113145743e-12,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -5845,10 +4921,6 @@
     "bits": 0.2948552895565929,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.9906298831529897e-13,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -5866,10 +4938,6 @@
     "bits": 0.2948552895565929,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.9906298831529897e-13,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -5886,10 +4954,6 @@
     "ulps": 3241,
     "bits": 0.29584669244614364,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 2.0916492928080329e-13,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -5926,10 +4990,6 @@
     "bits": 0.2994954068242899,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.9906298831529892e-13,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -5947,10 +5007,6 @@
     "bits": 0.3534888725024519,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.8517853916937137e-11,
-    "rel": 1.8529622280998136e-13
-   },
    "defined": {
     "status": "defined"
    },
@@ -5967,10 +5023,6 @@
     "ulps": 2366,
     "bits": 0.29699600571263696,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 2.1205150914482872e-13,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"
@@ -6007,10 +5059,6 @@
     "bits": 0.01916200900796329,
     "equivalent": true
    },
-   "bound": {
-    "abs": 5.3290705182007585e-15,
-    "rel": Infinity
-   },
    "defined": {
     "status": "defined"
    },
@@ -6028,10 +5076,6 @@
     "bits": 0.2513584962500721,
     "equivalent": true
    },
-   "bound": {
-    "abs": 1.6372213536479436e-14,
-    "rel": 8.186106768239712e-15
-   },
    "defined": {
     "status": "defined"
    },
@@ -6048,10 +5092,6 @@
     "ulps": 235,
     "bits": 0.01916200900796329,
     "equivalent": true
-   },
-   "bound": {
-    "abs": 5.773159728050821e-15,
-    "rel": Infinity
    },
    "defined": {
     "status": "defined"

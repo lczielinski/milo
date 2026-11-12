@@ -11,7 +11,7 @@ from collections import namedtuple
 from fractions import Fraction
 from itertools import pairwise
 
-Core = namedtuple("Core", "name args box precision body props")
+Core = namedtuple("Core", "name args box precision body")
 SYMBOLS = {"Add": "+", "Mul": "*", "Div": "/", "Neg": "-", "Sqrt": "sqrt"}
 FLIP = {">": "<", ">=": "<=", "<": ">", "<=": ">="}
 
@@ -110,7 +110,7 @@ def parse(text):
     if not variables(body) <= set(args):
         raise SyntaxError(f"free variables {variables(body) - set(args)}")
     name = props.get(":name", name or "").strip('"')
-    return Core(name, args, box, props.get(":precision", "binary64"), body, props)
+    return Core(name, args, box, props.get(":precision", "binary64"), body)
 
 
 def numeral(q):

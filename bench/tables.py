@@ -1,6 +1,6 @@
-"""The evaluation's tables from results/*.json, as LaTeX tabulars without captions (the paper holds
-those): `uv run python bench/tables.py [accuracy ...]`. A tool that fails counts as returning its
-input, and a relative bound of 1 or more counts as no bound."""
+"""The numbers the evaluation's text gives, and the data of its figures, from results/*.json:
+`uv run python bench/tables.py [accuracy ...]`. A tool that fails counts as returning its input, and a
+relative bound of 1 or more counts as no bound."""
 
 import math
 import statistics
@@ -11,7 +11,7 @@ from run import SIZES
 
 INF = math.inf
 NAMES = {"fptaylor": "FPTaylor", "gappa": "Gappa", "precisa": "PRECiSA", "daisy": "Daisy", "herbie": "Herbie",
-         "ours": "\\tool", "bound-only": "\\tool", "ours-plain": "\\tool, no branch",
+         "ours": "Milo", "bound-only": "Milo", "ours-plain": "Milo, no branch",
          "abs-only": "Absolute error only", "rel-only": "Relative error only"}
 SOUND = ("fptaylor", "gappa", "precisa")
 BELOW, LOW, HIGH = 1e-3, 1e-5, 1e20
@@ -28,8 +28,7 @@ def percent(ratio):
     """A ratio as the percent change it is, such as 8% for 1.08."""
     if ratio is None:
         return "--"
-    x = round((ratio - 1) * 100)
-    return f"{'$-$' if x < 0 else ''}{abs(x)}\\%"
+    return f"{round((ratio - 1) * 100)}%"
 
 
 def median(xs):
@@ -78,49 +77,36 @@ def error_gain_loss(pairs):
     return [sum(a <= b - 1 for a, b in pairs), sum(a >= b + 1 for a, b in pairs)]
 
 
-def wide(text, width):
-    """A header cell at least width wide, so the columns under a group header share its width evenly
-    instead of the last one taking all of it."""
-    return f"\\makebox[{width}]{{{text}}}"
-
-
-def gain_loss_head(width):
-    return f" & {wide('Gain', width)} & {wide('Loss', width)}"
-
-
-def table(columns, head, rows):
-    """The tabular of a table, without its caption, which the paper's table file holds. A row is a list
-    of cells, or a string such as \\midrule."""
-    body = "\n".join(r if isinstance(r, str) else " & ".join(map(str, r)) + " \\\\" for r in rows)
-    return f"\\begin{{tabular}}{{{columns}}}\n\\toprule\n{head} \\\\\n\\midrule\n{body}\n\\bottomrule\n\\end{{tabular}}\n"
+def table(head, rows):
+    """Rows of cells as aligned columns under a header row."""
+    rows = [head, *[[str(c) for c in r] for r in rows]]
+    widths = [max(map(len, column)) for column in zip(*rows)]
+    return "\n".join("  ".join(c.ljust(w) for c, w in zip(r, widths)).rstrip() for r in rows) + "\n"
 
 
 def metric(name):
-    return run.ours_metric(run.ours()[name])
+    """run.metric() of our program on a Rewriting program, or of the input when we found none."""
+    o = run.ours()[name]
+    return run.metric(o["bounds"] if o["programs"] else o["original"])
 
 
 def sound(name, who):
-    """The smallest of FPTaylor's, Gappa's and PRECiSA's bounds on who's program, on the core's metric."""
+    """The smallest of FPTaylor's, Gappa's and PRECiSA's bounds on who's program, in the program's metric()."""
     m = metric(name)
     return min(said(m, run.bounds()[name][t].get(who, {}).get(m)) for t in SOUND)
 
 
-def rewriting():
-    """The Benchmark (2) programs that could be measured."""
-    return [n for n in run.benchmark2() if "error" not in run.measured()[n]]
-
-
 def got(t, n):
-    """t's program on a Benchmark (2) core, or the input if t returned none or one that is not equivalent
+    """t's program on a Rewriting program, or the input if t returned none or one that is not equivalent
     to it over the reals: one that disagrees at the sampled checks or is undefined somewhere in the box."""
     same = run.measured()[n].get(t, {}).get("equivalent") and run.definedness()[n][t]["status"] != "undefined"
     return t if same else "original"
 
 
 def accuracy():
-    """Benchmark (2) against the input, the numbers Q1's text gives (the paper plots versus() instead)."""
+    """Rewriting against the input, the numbers Q1's text gives (the paper plots versus() instead)."""
     measured, speeds = run.measured(), run.speeds()
-    names = rewriting()
+    names = run.rewriting()
     tools = ("herbie", "daisy", "ours")
 
     def speed(t):
@@ -136,10 +122,8 @@ def accuracy():
     rows = [[NAMES[t], *gain_loss(bounds(t)), *error_gain_loss(errors(t)), percent(speed(t)),
              median_time(rewriting_seconds(t, n) for n in names), sum(got(t, n) == "original" for n in names)]
             for t in tools]
-    head = ("& \\multicolumn{2}{c}{Sound Bound} & \\multicolumn{2}{c}{Avg Sampled Error} & & & \\\\\n"
-            "\\cmidrule(lr){2-3}\\cmidrule(lr){4-5}\n"
-            "Tool" + gain_loss_head("3.6em") * 2 + " & Slowdown & Time (s) & Failed")
-    return table("l" + "c" * 7, head, rows)
+    return table(["Tool", "Bound gain", "Bound loss", "Error gain", "Error loss", "Slowdown", "Time (s)", "Failed"],
+                 rows)
 
 
 def improvement(base, value):
@@ -158,12 +142,12 @@ def windowed(m, v):
 
 
 def versus():
-    """Our rewrite's improvement on each Benchmark (2) input against Herbie's and Daisy's, as pgfplots rows:
+    """Our rewrite's improvement on each Rewriting input against Herbie's and Daisy's, as pgfplots rows:
     in sound bound by improvement(), and in average sampled error as the bits it drops."""
     measured, out = run.measured(), []
     for t in ("herbie", "daisy"):
         bounds, errors = [f"% {t} bound", "x y"], [f"% {t} error", "x y"]
-        for n in rewriting():
+        for n in run.rewriting():
             base, bits = sound(n, "original"), measured[n]["original"]["bits"]
             bounds.append(" ".join(improvement(base, sound(n, got(w, n))) for w in ("ours", t)))
             errors.append(" ".join(f"{bits - measured[n][got(w, n)]['bits']:.3g}" for w in ("ours", t)))
@@ -189,7 +173,7 @@ def median_time(xs):
 
 
 def rewriting_seconds(t, n):
-    """t's running time on a Benchmark (2) program, less its startup (Herbie's own times have none)."""
+    """t's running time on a Rewriting program, less its startup (Herbie's own times have none)."""
     start = run.startup()
     if t == "ours":
         return max(0.0, seconds(n, "ours") - start["egglog"])
@@ -211,11 +195,11 @@ def tightness():
 
     rows = [[NAMES[t], *(sum(bound(t, m, n) < INF for n in only) for m in ("abs", "rel")),
              median_time(seconds(t, n) for n in only)] for t in ("bound-only", *SOUND, "daisy")]
-    return table("lccc", "Tool & Absolute & Relative & Time", rows)
+    return table(["Tool", "Absolute", "Relative", "Time (s)"], rows)
 
 
 def raw(name, who, m):
-    """The m-bound of who's program on a Benchmark (2) core, with our analysis in our e-graph."""
+    """The m-bound of who's program on a Rewriting program, with our analysis in our e-graph."""
     o = run.ours()[name]
     if who == "ours":
         x = o["bounds"][m] if o.get("programs") else None
@@ -236,7 +220,7 @@ def bound(name, who, m):
 
 
 def seconds(name, who):
-    """who's running time on a Benchmark (2) core, building the e-graph included."""
+    """who's running time on a Rewriting program, building the e-graph included."""
     if who == "ours":
         return run.ours()[name]["egglog_s"] + run.ours()[name]["extract_s"]
     if who.endswith("-only"):
@@ -245,15 +229,15 @@ def seconds(name, who):
 
 
 def own(n, m):
-    """The m-bound of the m-only analysis's program on a Benchmark (2) core, by that analysis."""
+    """The m-bound of the m-only analysis's program on a Rewriting program, by that analysis."""
     return said(m, run.single_bounds()[n][m]["own"])
 
 
 def extraction():
-    """Gain and Loss of each method's bound against ours, in each error: the numbers Q3's text gives. Extraction by size is bounded
-    by our analysis and counts as returning the input when no bound is finite; the single-metric analyses
-    are bounded by their own."""
-    names = run.benchmark2()
+    """Gain and loss of each method's bound against ours, in each error: the numbers Q3's text gives.
+    Extraction by size is bounded by our analysis and counts as returning the input when no bound is
+    finite; the single-metric analyses are bounded by their own."""
+    names = run.rewriting()
     sizes = [f"size{k}" for k in SIZES]
     tracks = {"abs": sizes + ["abs-only"], "rel": sizes + ["rel-only"]}
 
@@ -268,21 +252,18 @@ def extraction():
     rows = [[NAMES.get(w, f"Size, top-{w[4:]}"), *cells(w, "abs"), *cells(w, "rel"),
              optimal if w == "ours" else "--", median_time(seconds(n, w) for n in names)]
             for w in sizes + ["abs-only", "rel-only", "ours"]]
-    head = ("& \\multicolumn{2}{c}{Absolute Bound} & \\multicolumn{2}{c}{Relative Bound} & & \\\\\n"
-            "\\cmidrule(lr){2-3}\\cmidrule(lr){4-5}\n"
-            "Method" + gain_loss_head("3em") * 2 + " & Optimal & Time")
-    return table("l" + "c" * 6, head, rows)
+    return table(["Method", "Abs gain", "Abs loss", "Rel gain", "Rel loss", "Optimal", "Time (s)"], rows)
 
 
 def branch_got(t, n):
-    """t's program on a Benchmark (3) core, or the input if t returned none or one not equivalent to it."""
+    """t's program on a Branching program, or the input if t returned none or one not equivalent to it."""
     p = run.branching()[n].get(t) or {}
     same = "program" in p and p["measured"]["equivalent"] and p.get("defined", {}).get("status") != "undefined"
     return t if same else "original"
 
 
 def branch_sound(n, who):
-    """The largest over the pieces of who's program on a Benchmark (3) core of the smallest of FPTaylor's,
+    """The largest over the pieces of who's program on a Branching program of the smallest of FPTaylor's,
     Gappa's and PRECiSA's bounds, in relative error where our branched program's is below 1."""
     o = run.branching()[n].get("ours") or {}
     m = run.metric(o.get("bounds") or {"rel": run.branching()[n]["original"]["bound"].get("rel", INF)})
@@ -293,7 +274,7 @@ def branch_sound(n, who):
 
 
 def branching():
-    """Benchmark (3) as accuracy(), with how many programs branch: the numbers Q4's text gives."""
+    """Branching as accuracy(), with how many programs branch: the numbers Q4's text gives."""
     results, start = run.branching(), run.startup()
     names = list(results)
     got, sound = branch_got, branch_sound
@@ -313,17 +294,11 @@ def branching():
                               for n in names),
              percent(speed(t)), median_time(seconds(t, n) for n in names), sum(got(t, n) == "original" for n in names)]
             for t in ("herbie", "daisy", "ours-plain", "ours")]
-    head = ("& & \\multicolumn{2}{c}{Sound Bound} & \\multicolumn{2}{c}{Avg Sampled Error} & & & \\\\\n"
-            "\\cmidrule(lr){3-4}\\cmidrule(lr){5-6}\n"
-            "Tool & Branched" + gain_loss_head("3.6em") * 2 + " & Slowdown & Time & Failed")
-    return table("l" + "c" * 8, head, rows)
+    return table(["Tool", "Branched", "Bound gain", "Bound loss", "Error gain", "Error loss", "Slowdown", "Time (s)",
+                  "Failed"], rows)
 
 
 if __name__ == "__main__":
-    broken = [n for n, r in run.originals().items() if "error" in r]
-    if broken:
-        print(f"warning: {len(broken)} inputs could not be measured, so Benchmark (2) leaves them out: {broken}",
-              file=sys.stderr)
     every = (accuracy, tightness, extraction, branching, versus, analyzers)
     for f in [f for f in every if f.__name__ in sys.argv[1:]] or every:
         print(f"% {f.__name__}\n{f()}")

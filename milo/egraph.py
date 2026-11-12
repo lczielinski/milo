@@ -132,7 +132,42 @@ def node(op, args, precision):
             return Node(op, None, tuple(map(str, args)))
 
 
-def read_dump(text, precision):
+def evaluate(n, kids, box):
+    """The exact value of node n from its children's, or None: a constant, an input whose range is a
+    single value, or +, *, /, - of known values."""
+    if None in kids:
+        return None
+    match n.op, kids:
+        case "Num" | "Lit", []:
+            return n.payload
+        case "Var", [] if box[n.payload][0] == box[n.payload][1]:
+            return Fraction(box[n.payload][0])
+        case "Add", [a, b]:
+            return a + b
+        case "Mul", [a, b]:
+            return a * b
+        case "Div", [a, b] if b:
+            return a / b
+        case "Neg", [a]:
+            return -a
+    return None
+
+
+def fixed_values(nodes, box):
+    """The exact value of each e-class whose value is fixed on the box, from any of its e-nodes, since
+    they are all equal over the reals."""
+    value, changed = {}, True
+    while changed:
+        changed = False
+        for c, ns in nodes.items():
+            if c not in value:
+                v = next((v for n in ns if (v := evaluate(n, [value.get(k) for k in n.children], box)) is not None), None)
+                if v is not None:
+                    value[c], changed = v, True
+    return value
+
+
+def read_dump(text, precision, box):
     """The e-graph from egglog's print-function output, one table per entry of TABLES."""
     tables = []
     for line in text.splitlines():
@@ -152,14 +187,13 @@ def read_dump(text, precision):
                 raise BadBox(lhs)
             else:
                 root = str(args[0])
-    interval = {}
-    for c, ns in nodes.items():
-        q = next((n.payload for n in ns if n.op in ("Num", "Lit")), None)
-        if q is None:
-            interval[c] = Iv(mpfr(ends["lo"].get(c, -INF)), mpfr(ends["hi"].get(c, INF)))
-        else:  # the range of a class holding a constant is the 200-bit enclosure of its exact value
-            n, d = mpz(q.numerator), mpz(q.denominator)
+    interval, value = {}, fixed_values(nodes, box)
+    for c in nodes:
+        if c in value:  # the range of a class with a fixed value is the 200-bit enclosure of that value
+            n, d = mpz(value[c].numerator), mpz(value[c].denominator)
             interval[c] = Iv(DOWN.div(n, d), UP.div(n, d))
+        else:
+            interval[c] = Iv(mpfr(ends["lo"].get(c, -INF)), mpfr(ends["hi"].get(c, INF)))
     return EGraph(nodes, interval, root)
 
 
@@ -170,4 +204,4 @@ def build(core, iters=4, branch=True, timeout=None):
         run = subprocess.run([EGGLOG, f.name], capture_output=True, text=True, timeout=timeout)
     if run.returncode:
         raise RuntimeError(f"egglog failed: {run.stderr[-1000:]}")
-    return read_dump(run.stdout, core.precision)
+    return read_dump(run.stdout, core.precision, core.box)

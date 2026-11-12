@@ -1,8 +1,8 @@
 import argparse
 
-from .analysis import BOUNDS, set_format
-from .egraph import build
-from .extract import best, extract
+from .analysis import BOUNDS, FAIL, set_format
+from .egraph import build, guarded
+from .extract import analyze, best, extract
 from .fpcore import parse, show
 
 
@@ -14,13 +14,21 @@ def main(argv=None):
     parser.add_argument("--no-branch", action="store_true", help="do not add if-statements")
     parser.add_argument("--time-limit", type=float, default=120,
                         help="seconds for extraction, after which F_k of the last finished round is reported")
+    parser.add_argument("--bound-only", action="store_true",
+                        help="build the e-graph as usual, then bound only the input program")
     args = parser.parse_args(argv)
     with open(args.file) as f:
         core = parse(f.read())
     set_format(core.precision)
     g = build(core, args.iters, not args.no_branch)
-    F, k, cut = extract(g, args.time_limit)
     I = g.interval[g.root]
+    if args.bound_only:
+        e = analyze(g, guarded(core.body, core.box, core.precision))
+        print(f"{core.name}: {sum(map(len, g.nodes.values()))} e-nodes, {len(g.nodes)} e-classes, range in {I}")
+        for name, bound in BOUNDS.items():
+            print(f"{name} none: the input may fail" if e is FAIL else f"{name} {float(bound(e)):.3e}")
+        return
+    F, k, cut = extract(g, args.time_limit)
     print(f"{core.name}: {sum(map(len, g.nodes.values()))} e-nodes, {len(g.nodes)} e-classes, "
           f"range in {I}, minimal-cost set of {len(F[g.root])}")
     if cut:

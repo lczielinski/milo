@@ -119,3 +119,28 @@ def extract(g, time_limit=None, cost=err, leq=precedes):
 def best(front, bound):
     """The entry minimizing a monotone readout, such as a bound from analysis.BOUNDS."""
     return min(front, key=lambda entry: bound(entry[0]))
+
+
+def analyze(g, p):
+    """The cost of one program p as a term of g, with its ifs written as egraph.guarded writes them.
+    Each e-class's range is the one the e-graph gives it, so the bound can be tighter than the
+    program's own analysis: the ranges of the other terms in its e-classes narrow it."""
+    index = {(n.op, n.payload, n.children): c for c, ns in g.nodes.items() for n in ns}
+
+    def node(op, payload, kids):
+        c = index[(op, payload, tuple(k for k, _ in kids))]
+        Xs = [g.interval[k] for k, _ in kids]
+        return c, err(op, g.interval[c], Xs, [e for _, e in kids])
+
+    def walk(p, guard):
+        match p:
+            case ("Var", x) if x in guard:
+                return node("Ctx", guard[x], [walk(p, {})])
+            case ("Var" | "Num", v):
+                return node(p[0] if (p[0], v, ()) in index else "Lit", v, [])
+            case ("If", (_, x, k), a, b):
+                return node("If", (x, k), [walk(a, guard | {x: (x, k, True)}), walk(b, guard | {x: (x, k, False)})])
+            case (op, *args):
+                return node(op, None, [walk(a, guard) for a in args])
+
+    return walk(p, {})[1]

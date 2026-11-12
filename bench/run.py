@@ -22,7 +22,7 @@ import speed  # noqa: E402
 import variants  # noqa: E402
 from milo.analysis import BOUNDS, FAIL, set_format  # noqa: E402
 from milo.egraph import EGGLOG, build, guarded  # noqa: E402
-from milo.extract import best, extract  # noqa: E402
+from milo.extract import analyze, best, extract  # noqa: E402
 from milo.fpcore import expr, fpcore, parse, read, show  # noqa: E402
 from tools import daisy, fptaylor, gappa, herbie, precisa  # noqa: E402
 
@@ -91,9 +91,8 @@ def metric(bounds):
 
 
 def pick(bounds):
-    """The metric our program is picked by, from the best bound on each: relative error wherever it is
-    finite. Even a relative bound of 1 or more makes the error shrink with the real value near its zeros,
-    which no absolute bound does."""
+    """The metric our program is picked by: relative error wherever its bound is finite, since even a
+    bound of 1 or more makes the error shrink with the value near its zeros."""
     return "rel" if math.isfinite(bounds["rel"]) else "abs"
 
 
@@ -104,8 +103,8 @@ def readout(m):
 
 
 def ours_metric(o):
-    """metric() of our program on a core, which is the input when we found none."""
-    return metric(o["bounds"] if o.get("programs") else o.get("original") or o.get("bound") or bound(FAIL))
+    """metric() of our program on a core, or of the input when we found none."""
+    return metric(o["bounds"] if o["programs"] else o["original"])
 
 
 def failure(e):
@@ -120,39 +119,48 @@ def bound_input(core, body):
 
 
 def ours_one(name):
-    """Our bound on the input, then, for a rewriting core, our rewrite of it. When the rewrite fails,
-    the input's bound survives and stands for the input's bound in our e-graph."""
+    """Our rewrite without branches; original is the input's bound in the e-graph, or on its own if
+    that fails. cut is whether extraction stopped before its fixed point."""
     core = load(name)
-    start = time.time()
-    out = {"bound": bound_input(core, core.body), "bound_s": time.time() - start}
-    if not name.startswith("rewriting_programs/"):
-        return out
     start = time.time()
     try:
         g = build(core, 4, False, EGGLOG_LIMIT)
         built = time.time()
-        F, k, cut = extract(g, EXTRACT_LIMIT)
+        F, _, cut = extract(g, EXTRACT_LIMIT)
         chosen = {m: best(F[g.root], readout(m)) for m in BOUNDS} if F[g.root] else {}
-        return dict(out, egglog_s=built - start, extract_s=time.time() - built, rounds=k, cut=cut,
-                    nodes=sum(map(len, g.nodes.values())), classes=len(g.nodes), root_frontier=len(F[g.root]),
-                    max_frontier=max(map(len, F.values())),
-                    original=bound(variants.analyze(g, guarded(core.body, core.box, core.precision))),
+        return dict(egglog_s=built - start, extract_s=time.time() - built, cut=cut,
+                    original=bound(analyze(g, guarded(core.body, core.box, core.precision))),
                     programs={m: show(p) for m, (e, p) in chosen.items()},
                     bounds={m: bound(e)[m] for m, (e, p) in chosen.items()} or bound(FAIL))
     except Exception as e:
-        return dict(out, egglog_s=time.time() - start, extract_s=0, failed=failure(e), original=out["bound"],
-                    programs={}, bounds=bound(FAIL))
+        return dict(egglog_s=time.time() - start, extract_s=0, failed=failure(e),
+                    original=bound_input(core, core.body), programs={}, bounds=bound(FAIL))
 
 
 @step
 def ours():
-    """Benchmark (1): our bound on each input, and our rewrite without branches of Benchmark (2)'s."""
-    return each(ours_one, benchmark1())
+    """Benchmark (2): our rewrite of each input, without branches."""
+    return each(ours_one, benchmark2())
 
 
 def original_one(name):
     core = load(name)
     return sample.measure(core, core.body, {"original": core.body})["original"]
+
+
+def bound_only_one(name):
+    """milo --bound-only: the input's bound in its e-graph, built as usual (4 rounds, branching on)."""
+    core = load(name)
+    start = time.time()
+    g = build(core, 4, True, EGGLOG_LIMIT)
+    out = bound(analyze(g, guarded(core.body, core.box, core.precision)))
+    return dict(out, seconds=time.time() - start)
+
+
+@step
+def bound_only():
+    """Benchmark (1): our bound on each input in the e-graph, as milo --bound-only gives it."""
+    return each(bound_only_one, benchmark1())
 
 
 @step
@@ -193,31 +201,40 @@ def variants_one(name):
     built = time.time() - start
 
     def chosen(p):
-        return {"program": show(p), **bound(variants.analyze(g, p))} if p else bound(FAIL)
+        return {"program": show(p), **bound(analyze(g, p))} if p else bound(FAIL)
 
     out = {}
     for n in SIZES:
         start = time.time()
-        found = [(p, bound(variants.analyze(g, p))) for p in variants.smallest(g, n, EXTRACT_LIMIT)]
+        found = [(p, bound(analyze(g, p))) for p in variants.smallest(g, n, EXTRACT_LIMIT)]
         out[f"size{n}"] = {m: chosen(min(found, key=lambda f: f[1][m])[0] if found else None) for m in BOUNDS}
         out[f"size{n}"]["seconds"] = built + time.time() - start
-    start = time.time()
-    out["greedy"] = {}
-    for m in BOUNDS:
-        F, _, _ = extract(g, EXTRACT_LIMIT, leq=variants.greedy(m))
-        out["greedy"][m] = chosen(F[g.root][0][1] if F[g.root] else None)
-    out["greedy"]["seconds"] = built + time.time() - start
-    for m in BOUNDS:
-        start = time.time()
-        p = chosen(variants.single(g, m, EXTRACT_LIMIT))
-        out[f"{m}-only"] = {"abs": p, "rel": p, "seconds": built + time.time() - start}
     return out
 
 
 @step
 def alternatives():
-    """Benchmark (2): extraction by size, greedy readout, and single-metric analyses."""
+    """Benchmark (2): the best of the smallest programs, for each size in SIZES."""
     return each(variants_one, benchmark2())
+
+
+def single_one(name):
+    core = load(name)
+    start = time.time()
+    g = build(core, 4, False, EGGLOG_LIMIT)
+    built = time.time() - start
+    out = {}
+    for m in BOUNDS:
+        start = time.time()
+        p, own = variants.single_bound(g, m, EXTRACT_LIMIT)
+        out[m] = {"program": show(p) if p else None, "own": own, "seconds": built + time.time() - start}
+    return out
+
+
+@step
+def single_bounds():
+    """Benchmark (2): the program extracted by each single-metric analysis, with its bound there."""
+    return each(single_one, benchmark2())
 
 
 def candidates(name):
@@ -274,8 +291,7 @@ def bounds():
 
 @step
 def startup():
-    """Each tool's startup, left out of its running times: for the tools launched once per program, the
-    least time of a few runs, one at a time, on a trivial program."""
+    """Each tool's startup, left out of its running times: its least time on a trivial program."""
     texts = [f'(FPCore (x) :name "startup {i}" :precision binary64 :pre (<= 1 x 2) (+ x 1))' for i in range(5)]
     with tempfile.TemporaryDirectory() as d:
         found = {"fptaylor": fptaylor.bound(texts, d, TOOL_LIMIT, 1), "gappa": gappa.bound(texts, d, TOOL_LIMIT, 1),
@@ -308,28 +324,82 @@ def speeds():
 def branching_one(name, reports):
     core = load(name)
     programs = {"original": core.body}
-    out = {}
+    out, extra = {}, {}
     for who, branch in (("ours-plain", False), ("ours", True)):
+        start = time.time()
         try:
             g = build(core, 4, branch, EGGLOG_LIMIT)
             F, _, _ = extract(g, EXTRACT_LIMIT)
         except Exception as e:
-            out[who] = {"status": failure(e)}
+            out[who] = {"status": failure(e), "seconds": time.time() - start}
             continue
         if not F[g.root]:
-            out[who] = {"status": "no program"}
+            out[who] = {"status": "no program", "seconds": time.time() - start}
             continue
         chosen = {m: best(F[g.root], readout(m)) for m in BOUNDS}
-        programs[who] = chosen[pick({m: bound(e)[m] for m, (e, p) in chosen.items()})][1]
+        bounds = {m: bound(e)[m] for m, (e, p) in chosen.items()}
+        programs[who] = chosen[pick(bounds)][1]
+        extra[who] = {"seconds": time.time() - start, "bounds": bounds}
     for who, report in reports.items():
         if report.get("program"):
             programs[who] = program(report["program"])
+            extra[who] = {"seconds": report.get("seconds")}
         else:
-            out[who] = {"status": report.get("status", "fail")}
+            out[who] = {"status": report.get("status", "fail"), "seconds": report.get("seconds")}
     measured = sample.measure(core, core.body, programs)
     for who, p in programs.items():
         out[who] = {"program": show(p), "measured": measured[who], "bound": safe(bound_input, core, p),
-                    "defined": defined.check(p, core.box)}
+                    "defined": defined.check(p, core.box), **extra.get(who, {})}
+    return out
+
+
+def first_condition(e):
+    """The condition of the first if-statement in e, or None if it has none."""
+    match e:
+        case ("If", c, _, _):
+            return c
+        case ("Var", _) | ("Num", _):
+            return None
+    return next((c for a in e[1:] if (c := first_condition(a))), None)
+
+
+def resolve(e, c, taken):
+    """e with every if-statement on condition c replaced by the branch it takes."""
+    match e:
+        case ("If", d, a, b):
+            if d == c:
+                return resolve(a if taken else b, c, taken)
+            return ("If", d, resolve(a, c, taken), resolve(b, c, taken))
+        case ("Var", _) | ("Num", _):
+            return e
+    return (e[0], *(resolve(a, c, taken) for a in e[1:]))
+
+
+def side(box, c, taken, fmt):
+    """The box cut to the floats that take (or skip) the condition x op k, comparing x with k rounded
+    to the format as the program does; None if no float does."""
+    op, x, k = c
+    kf = sample.rounded(k, fmt)
+    above, strict = (op[0] == ">") == taken, (op in (">", "<")) == taken
+    lo, hi = box[x]
+    if above:
+        lo = max(lo, sample.from_ordinal(sample.ordinal(kf, fmt) + 1, fmt) if strict else kf)
+    else:
+        hi = min(hi, sample.from_ordinal(sample.ordinal(kf, fmt) - 1, fmt) if strict else kf)
+    return dict(box, **{x: (lo, hi)}) if lo <= hi else None
+
+
+def pieces(core, body):
+    """(box, straight-line program) for each way through body's if-statements, where box holds the floats
+    that go that way. The boxes cover core's box, so the largest bound over the pieces bounds body."""
+    c = first_condition(body)
+    if c is None:
+        return [(core.box, body)]
+    out = []
+    for taken in (True, False):
+        box = side(core.box, c, taken, core.precision)
+        if box is not None:
+            out += pieces(core._replace(box=box), resolve(body, c, taken))
     return out
 
 
@@ -345,14 +415,38 @@ def branching():
     for name, r in out.items():
         whos = [w for w in r if isinstance(r[w], dict) and "program" in r[w]]
         if whos:
-            times = speed.measure(load(name), {w: program(r[w]["program"]) for w in whos},
-                                  sample.points(load(name), 1000))
+            times = safe(speed.measure, load(name), {w: program(r[w]["program"]) for w in whos},
+                         sample.points(load(name), 1000))
             for w in whos:
-                r[w]["ns"] = times[w]
+                if w in times:
+                    r[w]["ns"] = times[w]
+                else:
+                    r[w]["speed_error"] = times.get("error")
+    return out
+
+
+@step
+def branching_bounds():
+    """Sound bounds on Benchmark (3)'s programs from FPTaylor, Gappa and PRECiSA, which take no
+    if-statements: each program's pieces(), bounded one at a time, as a list per tool."""
+    texts = {}
+    for name, r in branching().items():
+        core = load(name)
+        for who, p in r.items():
+            if "program" in p:
+                texts[name, who] = [fpcore(core._replace(box=box, name=f"{core.name} {i}"), body)
+                                    for i, (box, body) in enumerate(pieces(core, program(p["program"])))]
+    every = sorted({t for ts in texts.values() for t in ts})
+    with tempfile.TemporaryDirectory() as d:
+        found = {"fptaylor": fptaylor.bound(every, d, TOOL_LIMIT, JOBS), "gappa": gappa.bound(every, d, TOOL_LIMIT, JOBS),
+                 "precisa": precisa.bound(every, d, TOOL_LIMIT, JOBS)}
+    out = {}
+    for (name, who), ts in texts.items():
+        out.setdefault(name, {})[who] = {tool: [got[t] for t in ts] for tool, got in found.items()}
     return out
 
 
 if __name__ == "__main__":
-    for f in (ours, originals, rewrites, alternatives, measured, definedness, bounds, startup, speeds,
-              branching):
+    for f in (originals, ours, bound_only, rewrites, alternatives, measured, definedness, bounds, startup, speeds,
+              branching, branching_bounds):
         f()

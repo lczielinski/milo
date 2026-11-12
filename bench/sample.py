@@ -1,9 +1,6 @@
-"""Measured error: programs against an exact reference, on the same points of their box.
-
-The points are uniform over the floats in the box, plus the points a hill climb finds
-from each program's worst ones, so every program is also scored where its rivals do
-worst. Each program is checked against the original over the reals at the first points.
-"""
+"""Measured error against an exact reference, on points uniform over the floats in the box plus those a
+hill climb finds from each program's worst ones, so every program is also scored where its rivals do
+worst. Each program is checked against the original over the reals at the first CHECKS points."""
 
 import math
 import random
@@ -98,10 +95,9 @@ def real(e, env, peak):
 
 
 def exact(e, env):
-    """The value over the reals; None if it is undefined (some value along the way is not finite,
-    since mpfr takes x/0 to an infinity and then 1/inf to 0) or never settles. The precision
-    doubles until two results agree and stand clear of the rounding noise of the largest value
-    along the way; a result still inside that noise at 16384 bits is 0."""
+    """The value over the reals, or None if some value along the way is not finite or it never settles.
+    The precision doubles until two results agree and stand clear of the rounding noise of the largest
+    value along the way; a result still inside that noise at 16384 bits is 0."""
     before, clear = None, False
     with gmpy2.context(precision=128) as ctx:
         while ctx.precision <= 16384:
@@ -161,8 +157,8 @@ def points(core, n=POINTS):
 
 
 def measure(core, original, programs):
-    """For each named program: its worst and mean error in ulps, and whether it agreed with the
-    original over the reals."""
+    """For each named program: its worst error in ulps, its average error in bits, log2(1 + ulps), as
+    Herbie reports it, and whether it agreed with the original over the reals."""
     fmt, box, refs = core.precision, spans(core), {}
 
     def ref(env):
@@ -185,5 +181,6 @@ def measure(core, original, programs):
         agrees = all((v := exact(e, env)) is not None and abs(v - ref(env)) <= 1e-12 * max(abs(v), abs(ref(env)))
                      for env in uniform[:CHECKS])
         out[name] = {"ulps": max(scores, default=None),
-                     "mean": statistics.fmean(scores[:len(uniform)]) if uniform else None, "equivalent": agrees}
+                     "bits": statistics.fmean(math.log2(1 + s) for s in scores[:len(uniform)]) if uniform else None,
+                     "equivalent": agrees}
     return out

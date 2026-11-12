@@ -1,10 +1,7 @@
-"""PRECiSA's bounds. PRECISA names its executable (default ~/.cabal/bin/precisa), built from its
-checkout with the initial error of an input set to zero, so that inputs are exact floats as for the
-other tools, and with decimal constants read exactly, so that their rounding error is counted. Its
-branch and bound runs deeper than its defaults (-d 7 -p 14), which leave relative bounds loose. It
-analyzes FPCore input in binary64 only, so a binary32 program is unsupported. Some runs take more
-memory than the machine has, gigabytes a second, so a run is stopped once its footprint passes
-MEMORY bytes, and fewer run at once than for the other tools."""
+"""PRECiSA's bounds. PRECISA names its executable (default ~/.cabal/bin/precisa), patched as the README
+says. Branch and bound runs deeper than the defaults (-d 7 -p 14), which leave relative bounds loose.
+It takes binary64 only. Some runs grow by gigabytes a second, so a run stops past MEMORY bytes and
+fewer run at once."""
 
 import ctypes
 import decimal
@@ -34,8 +31,8 @@ class RusageInfo(ctypes.Structure):
 
 
 def footprint(pid):
-    """Bytes of memory a process uses, counting its compressed and swapped pages. Its resident size
-    leaves those out, so under memory pressure it stays small while the footprint grows."""
+    """Bytes of memory a process uses, counting compressed and swapped pages, which its resident size
+    leaves out."""
     info = RusageInfo()
     return info.phys_footprint if LIBC.proc_pid_rusage(pid, 0, ctypes.byref(info)) == 0 else 0
 

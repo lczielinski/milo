@@ -1,446 +1,6063 @@
 {
  "branching_programs/complex-sqrt.fpcore": {
-  "expected": "(> re 0)",
   "ours-plain": {
-   "status": "no program"
+   "status": "no program",
+   "seconds": 0.11599493026733398
   },
   "herbie": {
-   "status": "crash"
+   "status": "crash",
+   "seconds": 0.507876220703125
   },
   "daisy": {
-   "status": "fail"
+   "status": "fail",
+   "seconds": 1.8
   },
   "original": {
    "program": "(* 0.5 (sqrt (* 2 (+ (sqrt (+ (* re re) (* im im))) re))))",
    "measured": {
     "ulps": 5748,
-    "mean": 0.2501,
+    "bits": 0.016350014011394347,
     "equivalent": true
    },
    "bound": {
     "abs": Infinity,
     "rel": Infinity
    },
-   "ns": 1.05909
+   "defined": {
+    "status": "unknown"
+   },
+   "ns": 1.09379
   },
   "ours": {
    "program": "(* 0.5 (if (> re 0) (sqrt (+ (+ (sqrt (+ (* re re) (* im im))) (* re 2)) (sqrt (+ (* re re) (* im im))))) (sqrt (/ (* 2 (* im im)) (* 0.5 (+ (+ (sqrt (+ (* re re) (* im im))) (* -2 re)) (sqrt (+ (* re re) (* im im)))))))))",
    "measured": {
     "ulps": 1,
-    "mean": 0.032,
+    "bits": 0.032,
     "equivalent": true
    },
    "bound": {
     "abs": 8.068126182222823e-13,
     "rel": 3.60829292826254e-13
    },
-   "ns": 1.42427
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 5.167745113372803,
+   "bounds": {
+    "abs": 8.068126182222821e-13,
+    "rel": 3.60829292826254e-13
+   },
+   "ns": 1.44401
   }
  },
- "branching_programs/householder-beta.fpcore": {
-  "expected": "(> x1 0)",
+ "branching_programs/fpbench-graphics-000-an-eigenvalue-calculation-from-tng--a.fpcore": {
   "daisy": {
-   "status": "fail"
+   "status": "fail",
+   "seconds": 24.34
   },
   "original": {
-   "program": "(/ (* 2 (* (- x1 (sqrt (+ (* x1 x1) (* x2 x2)))) (- x1 (sqrt (+ (* x1 x1) (* x2 x2)))))) (+ (* x2 x2) (* (- x1 (sqrt (+ (* x1 x1) (* x2 x2)))) (- x1 (sqrt (+ (* x1 x1) (* x2 x2)))))))",
+   "program": "(- (sqrt (+ (* (+ a d) (+ a d)) (* (- b c) (- b c)))) (sqrt (+ (* (- a d) (- a d)) (* (+ b c) (+ b c)))))",
    "measured": {
-    "ulps": 29899,
-    "mean": 0.8869,
+    "ulps": 4384863156953711734,
+    "bits": 3.3996040468639803,
     "equivalent": true
    },
    "bound": {
-    "abs": 2.4085999088962115e-05,
+    "abs": 9.52562266323984e-14,
     "rel": Infinity
    },
-   "ns": 0.827472
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 1.08601
   },
   "ours-plain": {
-   "program": "(+ (/ x1 (- (sqrt (+ (* x1 x1) (* x2 x2))))) 1)",
+   "program": "(/ (+ (+ (* (- b c) (- b c)) (+ (* a a) (* 2 (* a d)))) (+ (+ (* 2 (* a d)) (* (- a) a)) (+ (+ (* -2 (* b c)) (* (- b) b)) (* (- c) c)))) (+ (sqrt (+ (+ (* (- b c) (- b c)) (+ (* a a) (* 2 (* a d)))) (* d d))) (sqrt (+ (* (- a d) (- a d)) (+ (+ (* b b) (* 2 (* b c))) (* c c))))))",
    "measured": {
-    "ulps": 16818,
-    "mean": 0.6161,
+    "ulps": 1102978480310205,
+    "bits": 0.7263655208537994,
     "equivalent": true
    },
    "bound": {
-    "abs": 3.583555674426515e-11,
+    "abs": 2.0137727044402392e-14,
     "rel": Infinity
    },
-   "ns": 0.818472
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.351883888244629,
+   "bounds": {
+    "abs": 1.970869836928457e-14,
+    "rel": Infinity
+   },
+   "ns": 2.08757
   },
   "ours": {
-   "program": "(if (> x1 0) (/ (/ (* (- x2) x2) (+ (sqrt (+ (* x1 x1) (* x2 x2))) x1)) (- (sqrt (+ (* x1 x1) (* x2 x2))))) (* (/ (- (sqrt (+ (* x1 x1) (* x2 x2))) x1) (- (sqrt (+ (* x1 x1) (* x2 x2))))) -1))",
+   "program": "(/ (+ (+ (* (- b c) (- b c)) (+ (* a a) (* 2 (* a d)))) (+ (+ (* 2 (* a d)) (* (- a) a)) (+ (+ (* -2 (* b c)) (* (- b) b)) (* (- c) c)))) (+ (sqrt (+ (+ (* (- b c) (- b c)) (+ (* a a) (* 2 (* a d)))) (* d d))) (sqrt (if (> a 0) (+ (+ (* c c) (+ (+ (* b b) (* 2 (* b c))) (+ (* a a) (* 2 (* a (- d)))))) (* d d)) (+ (+ (+ (* b b) (* 2 (* b c))) (+ (+ (* a a) (* 2 (* a (- d)))) (* c c))) (* d d))))))",
    "measured": {
-    "ulps": 4,
-    "mean": 0.0659,
+    "ulps": 1102978480310205,
+    "bits": 0.725222062103006,
     "equivalent": true
    },
    "bound": {
-    "abs": 1.0807399419843141e-10,
-    "rel": 1.080857625624923e-12
+    "abs": 2.0429518596995553e-14,
+    "rel": Infinity
    },
-   "ns": 0.961957
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 4.876454830169678,
+   "bounds": {
+    "abs": 1.966044140974223e-14,
+    "rel": Infinity
+   },
+   "ns": 2.39648
   },
   "herbie": {
-   "program": "(* -2 (/ (* (- (sqrt (+ (* x2 x2) (* x1 x1))) x1) (- x1 (sqrt (+ (* x2 x2) (* x1 x1))))) (- (* x2 x2) (* (- (sqrt (+ (* x2 x2) (* x1 x1))) x1) (- x1 (sqrt (+ (* x2 x2) (* x1 x1))))))))",
+   "program": "(/ (- (* (+ d a) a) (- (* (- c b) (- b c)) (+ (- (* (+ d a) d) (* (+ c b) (+ c b))) (* (- d a) (- a d))))) (+ (sqrt (- (* (+ c b) (+ c b)) (* (- d a) (- a d)))) (sqrt (- (* (+ d a) (+ d a)) (* (- c b) (- b c))))))",
    "measured": {
-    "ulps": 29899,
-    "mean": 0.8869,
+    "ulps": 8779885183039680008,
+    "bits": 2.1156145049708512,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.633124123312539e-13,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 3.493879150390625,
+   "ns": 1.7089
+  }
+ },
+ "branching_programs/fpbench-hamming-ch3-014-nmse-problem-3-2-1-positive--b2.fpcore": {
+  "daisy": {
+   "status": "fail",
+   "seconds": 14.84
+  },
+  "original": {
+   "program": "(/ (+ (- b2) (sqrt (- (* b2 b2) (* a c)))) a)",
+   "measured": {
+    "ulps": 7,
+    "bits": 0.28429248125036055,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 7.105427357601003e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.841474
+  },
+  "ours-plain": {
+   "program": "(+ (* (/ b2 a) -1) (/ (sqrt (+ (* b2 b2) (* (* a -1) c))) a))",
+   "measured": {
+    "ulps": 8,
+    "bits": 0.2848076815597051,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 7.105427357601003e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.17063689231872559,
+   "bounds": {
+    "abs": 6.66133814775094e-15,
+    "rel": Infinity
+   },
+   "ns": 1.12095
+  },
+  "ours": {
+   "program": "(if (> b2 0) (/ (/ (* a c) (* a -1)) (+ (sqrt (+ (* b2 b2) (* (* a -1) c))) b2)) (/ (+ (sqrt (+ (* b2 b2) (* (* a -1) c))) (* b2 -1)) a))",
+   "measured": {
+    "ulps": 2,
+    "bits": 0.29918691750158655,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.2204460492503203e-14,
+    "rel": 1.4432899320127063e-15
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.8730897903442383,
+   "bounds": {
+    "abs": 6.66133814775094e-15,
+    "rel": 1.33226762955019e-15
+   },
+   "ns": 1.41753
+  },
+  "herbie": {
+   "program": "(/ (- (sqrt (- (* b2 b2) (* c a))) b2) a)",
+   "measured": {
+    "ulps": 7,
+    "bits": 0.28429248125036055,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 7.105427357601003e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.792488037109375,
+   "ns": 0.840937
+  }
+ },
+ "branching_programs/fpbench-rosa-002-doppler3.fpcore": {
+  "daisy": {
+   "status": "fail",
+   "seconds": 36.19
+  },
+  "original": {
+   "program": "(/ (* (- (+ 331.4 (* 0.6 T))) v) (* (+ (+ 331.4 (* 0.6 T)) u) (+ (+ 331.4 (* 0.6 T)) u)))",
+   "measured": {
+    "ulps": 4,
+    "bits": 0.3030117300051923,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.0477361732365762e-13,
+    "rel": 1.1986468756673355e-15
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.470466
+  },
+  "ours-plain": {
+   "program": "(/ (* v -1) (+ (+ 331.4 (+ (* 0.6 T) u)) (+ u (/ (* u u) (+ 331.4 (* 0.6 T))))))",
+   "measured": {
+    "ulps": 2,
+    "bits": 0.44975488750216347,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.3408825778296537e-14,
+    "rel": 6.616449812189637e-16
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.6634712219238281,
+   "bounds": {
+    "abs": 5.239689116762221e-14,
+    "rel": 6.56273663052339e-16
+   },
+   "ns": 0.779362
+  },
+  "ours": {
+   "program": "(if (> u 0) (if (> T 0) (/ (- v) (+ (+ 331.4 (+ (* 0.6 T) u)) (+ u (/ (* u u) (+ 331.4 (* 0.6 T)))))) (/ (- v) (+ (+ 331.4 (+ (* 0.6 T) u)) (+ u (/ (* u u) (+ 331.4 (* 0.6 T))))))) (/ (- v) (+ (+ 331.4 (+ (* 0.6 T) u)) (+ u (/ (* u u) (+ 331.4 (* 0.6 T)))))))",
+   "measured": {
+    "ulps": 2,
+    "bits": 0.44975488750216347,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.004029380568502e-14,
+    "rel": 5.505585514404734e-16
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 11.607419967651367,
+   "bounds": {
+    "abs": 3.9353053862292966e-14,
+    "rel": 5.505585514404734e-16
+   },
+   "ns": 0.777424
+  },
+  "herbie": {
+   "program": "(* v (/ (- -331.4 (* T 0.6)) (* (- u (- -331.4 (* T 0.6))) (- u (- -331.4 (* T 0.6))))))",
+   "measured": {
+    "ulps": 4,
+    "bits": 0.15680030125382213,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.0725539782837705e-13,
+    "rel": 1.1986468756673355e-15
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.836817138671875,
+   "ns": 0.492357
+  }
+ },
+ "branching_programs/herbie-haskell-001-optimisation-circlepacking-place-from-ci--z.fpcore": {
+  "original": {
+   "program": "(/ (- (+ x y) z) (* t 2))",
+   "measured": {
+    "ulps": 2582843712975,
+    "bits": 0.2657799281621522,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 6.245004513516507e-17,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.363346
+  },
+  "ours-plain": {
+   "program": "(/ (+ (+ x y) (* z -1)) (* t 2))",
+   "measured": {
+    "ulps": 2582843712975,
+    "bits": 0.2657799281621522,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 6.245004513516507e-17,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.474139928817749,
+   "bounds": {
+    "abs": 6.245004513516507e-17,
+    "rel": Infinity
+   },
+   "ns": 0.359667
+  },
+  "ours": {
+   "program": "(if (> z 0) (/ (+ (* z -1) (+ x y)) (* t 2)) (* (+ (/ z (* -1 t)) (+ (/ y t) (/ x t))) 0.5))",
+   "measured": {
+    "ulps": 2582843712975,
+    "bits": 0.251662935662008,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 6.678685382510707e-17,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.2683618068695068,
+   "bounds": {
+    "abs": 5.2909066017292616e-17,
+    "rel": Infinity
+   },
+   "ns": 1.21521
+  },
+  "herbie": {
+   "program": "(- (/ x (+ t t)) (/ (- z y) (+ t t)))",
+   "measured": {
+    "ulps": 1457753063668,
+    "bits": 0.23328073549220577,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.2143064331837652e-16,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.694427978515625,
+   "ns": 0.571592
+  },
+  "daisy": {
+   "program": "(if (<= z 10.666666666666666) (if (<= x 1.5) (if (<= y 6) (if (<= z -10.666666666666666) (if (<= t 96) (/ (- (+ x y) z) (* t 2)) (- (/ (+ x y) (* t 2)) (/ z (* t 2)))) (if (<= t 96) (- (/ (+ x y) (* t 2)) (/ z (* t 2))) (- (/ (+ x y) (* t 2)) (/ z (* t 2))))) (if (<= t 96) (/ (- (+ x y) z) (* t 2)) (- (/ (+ x y) (* t 2)) (/ z (* t 2))))) (if (<= t 96) (/ (- (+ x y) z) (* t 2)) (- (/ (+ x y) (* t 2)) (/ z (* t 2))))) (if (<= y 6) (if (<= t 96) (if (<= x 1.5) (/ (- (+ x y) z) (* t 2)) (/ (- (+ x y) z) (* t 2))) (if (<= x 1.5) (/ (- (+ x y) z) (* t 2)) (/ (- (+ x y) z) (* t 2)))) (if (<= x 1.5) (if (<= t 96) (/ (- (+ x y) z) (* t 2)) (/ (- (+ x y) z) (* t 2))) (if (<= t 96) (/ (- (+ x y) z) (* t 2)) (/ (- (+ x y) z) (* t 2))))))",
+   "measured": {
+    "ulps": 5139316702988,
+    "bits": 0.2659384244122243,
+    "equivalent": true
+   },
+   "bound": {
+    "error": "ValueError: guards on z are nested, which is not supported",
+    "seconds": 0.0006351470947265625
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 99.81,
+   "ns": 1.25919
+  }
+ },
+ "branching_programs/herbie-haskell-003-optimisation-circlepacking-place-from-ci--z.fpcore": {
+  "original": {
+   "program": "(+ x (/ (* y (- z x)) t))",
+   "measured": {
+    "ulps": 1206047470673398,
+    "bits": 0.038974924093902234,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.7763568394002505e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.378277
+  },
+  "ours-plain": {
+   "program": "(+ (* z (/ y t)) (+ (* (* x -1) (/ y t)) x))",
+   "measured": {
+    "ulps": 1206047470673398,
+    "bits": 0.04722992080183873,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.2628786905111156e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.21972084045410156,
+   "bounds": {
+    "abs": 1.2628786905111156e-15,
+    "rel": Infinity
+   },
+   "ns": 0.448109
+  },
+  "ours": {
+   "program": "(if (> z 0) (+ (* (+ (* x -1) z) (/ y t)) x) (+ (+ (* (* x -1) (/ y t)) x) (* z (/ y t))))",
+   "measured": {
+    "ulps": 1206047470673398,
+    "bits": 0.04182992080183873,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.1032841307212495e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.6339550018310547,
+   "bounds": {
+    "abs": 1.1032841307212495e-15,
+    "rel": Infinity
+   },
+   "ns": 0.825866
+  },
+  "herbie": {
+   "program": "(- x (/ (* (- x z) y) t))",
+   "measured": {
+    "ulps": 1206047470673398,
+    "bits": 0.038974924093902234,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.7763568394002505e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.471736083984375,
+   "ns": 0.375629
+  },
+  "daisy": {
+   "program": "(if (<= z -10.666666666666666) (if (<= y 6) (if (<= t 96) (+ x (/ (* y (- z x)) t)) (+ x (/ (* y (- z x)) t))) (if (<= t 96) (+ x (/ (* y (- z x)) t)) (+ x (* y (- (/ z t) (/ x t)))))) (if (<= y 6) (if (<= t 96) (+ x (* y (/ (- z x) t))) (+ x (/ (* y (- z x)) t))) (if (<= t 96) (+ x (/ (* y (- z x)) t)) (+ x (/ (* y (- z x)) t)))))",
+   "measured": {
+    "ulps": 1206047470673398,
+    "bits": 0.03987492409390223,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.5543122344752192e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 102.7,
+   "ns": 0.982995
+  }
+ },
+ "branching_programs/herbie-haskell-017-data-colour-rgbspace-hsl-hsl-from-colour--x.fpcore": {
+  "original": {
+   "program": "(- (+ x y) (* x y))",
+   "measured": {
+    "ulps": 4378509847873226696,
+    "bits": 0.011933985000288461,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.552713678800501e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.297814
+  },
+  "ours-plain": {
+   "program": "(+ (+ x y) (* (- x) y))",
+   "measured": {
+    "ulps": 4378509847873226696,
+    "bits": 0.011933985000288461,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.552713678800501e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.048252105712890625,
+   "bounds": {
+    "abs": 3.552713678800501e-15,
+    "rel": Infinity
+   },
+   "ns": 0.294455
+  },
+  "ours": {
+   "program": "(if (> x 0) (+ (* x (- y)) (+ y x)) (+ (* x (- y)) (+ y x)))",
+   "measured": {
+    "ulps": 4378509847873226696,
+    "bits": 0.011933985000288461,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.1086244689504383e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.23427462577819824,
+   "bounds": {
+    "abs": 3.1086244689504383e-15,
+    "rel": Infinity
+   },
+   "ns": 0.294183
+  },
+  "herbie": {
+   "program": "(- y (- (* y x) x))",
+   "measured": {
+    "ulps": 8758846574108781976,
+    "bits": 0.0013491853096329674,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.440892098500626e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.361802001953125,
+   "ns": 0.293997
+  },
+  "daisy": {
+   "program": "(if (<= x 0.4) (if (<= x -0.4) (- (+ x y) (* x y)) (+ y (- x (* x y)))) (if (<= x 1.2) (if (<= y 6.4) (if (<= y 5.6) (+ x (- y (* x y))) (- (+ x y) (* x y))) (+ x (- y (* x y)))) (if (<= y 6.4) (if (<= y 5.6) (- (+ x y) (* x y)) (- (+ x y) (* x y))) (- (+ x y) (* x y)))))",
+   "measured": {
+    "ulps": 8754342974481411480,
+    "bits": 0.0015169925001442311,
+    "equivalent": true
+   },
+   "bound": {
+    "error": "ValueError: guards on x are nested, which is not supported",
+    "seconds": 0.0004329681396484375
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 11.05,
+   "ns": 1.50636
+  }
+ },
+ "branching_programs/herbie-haskell-041-diagrams-solve-tridiagonal-solvecyclictr--x.fpcore": {
+  "daisy": {
+   "status": "timeout",
+   "seconds": 300.01
+  },
+  "original": {
+   "program": "(/ (+ x (/ (* y z) t)) (+ (+ a 1) (/ (* y b) t)))",
+   "measured": {
+    "ulps": 507596541,
+    "bits": 0.4348592458148195,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.1336482328337083e-17,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.844238
+  },
+  "ours-plain": {
+   "program": "(+ (/ x (+ (+ a 1) (* y (/ b t)))) (* (- z) (/ (- y) (+ (* t a) (+ (* y b) t)))))",
+   "measured": {
+    "ulps": 1415223168,
+    "bits": 0.41691325879350005,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 9.281808284339726e-18,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.135368824005127,
+   "bounds": {
+    "abs": 8.70686748715749e-18,
+    "rel": Infinity
+   },
+   "ns": 0.885936
+  },
+  "ours": {
+   "program": "(if (> x 0) (+ (* z (/ y (+ (+ (* y b) t) (* t a)))) (/ x (+ (+ a 1) (/ y (/ t b))))) (/ (+ (* x t) (* y z)) (+ (+ (* y b) t) (* t a))))",
+   "measured": {
+    "ulps": 203243641,
+    "bits": 0.41660574004386064,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 9.281808284339726e-18,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 3.639418840408325,
+   "bounds": {
+    "abs": 8.706867487157488e-18,
+    "rel": Infinity
+   },
+   "ns": 0.975134
+  },
+  "herbie": {
+   "program": "(/ (+ (* t x) (* z y)) (- (* b y) (* (- -1 a) t)))",
+   "measured": {
+    "ulps": 203243640,
+    "bits": 0.4130207775431395,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.4023361990276478e-17,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.722639892578125,
+   "ns": 0.6832
+  }
+ },
+ "branching_programs/herbie-haskell-054-diagrams-solve-polynomial-cubform-from-d--b.fpcore": {
+  "daisy": {
+   "status": "timeout",
+   "seconds": 300.01
+  },
+  "original": {
+   "program": "(/ (+ (- (* (* x 9) y) (* (* (* z 4) t) a)) b) (* z c))",
+   "measured": {
+    "ulps": 4,
+    "bits": 0.4846678225226443,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 7.81635430750598e-14,
+    "rel": 2.558191582696162e-15
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.746102
+  },
+  "ours-plain": {
+   "program": "(/ (+ (* -4 (* t a)) (+ (/ (* (* y x) 9) z) (/ b z))) c)",
+   "measured": {
+    "ulps": 2,
+    "bits": 0.3405738350031731,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.7769328218043834e-14,
+    "rel": 4.449150993919215e-16
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.2663459777832031,
+   "bounds": {
+    "abs": 1.7769328218043834e-14,
+    "rel": 4.449150993919215e-16
+   },
+   "ns": 0.836925
+  },
+  "ours": {
+   "program": "(/ (if (> b 0) (+ (* -4 (* t a)) (+ (/ (* (* y x) 9) z) (/ b z))) (+ (* -4 (* t a)) (/ (+ b (* (* y x) 9)) z))) c)",
+   "measured": {
+    "ulps": 2,
+    "bits": 0.3405738350031731,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.776737665413336e-14,
+    "rel": 4.443577561735678e-16
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.9515531063079834,
+   "bounds": {
+    "abs": 1.776737665413336e-14,
+    "rel": 4.443577561735678e-16
+   },
+   "ns": 1.15359
+  },
+  "herbie": {
+   "program": "(- (/ (- b (* -9 (* y x))) (* c z)) (* 1 (/ (* (* a t) 4) c)))",
+   "measured": {
+    "ulps": 2,
+    "bits": 0.34606797000057693,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.7774559493526076e-14,
+    "rel": 1.4502630621312098e-15
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.541548828125,
+   "ns": 0.828466
+  }
+ },
+ "branching_programs/herbie-haskell-057-diagrams-solve-polynomial-quartform-from--y.fpcore": {
+  "original": {
+   "program": "(+ (- (* (/ 1 8) x) (/ (* y z) 2)) t)",
+   "measured": {
+    "ulps": 4394417297881826192,
+    "bits": 0.0016977279923499917,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 6.397660179402465e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.393631
+  },
+  "ours-plain": {
+   "program": "(+ (+ t (* 0.125 x)) (* y (* z -0.5)))",
+   "measured": {
+    "ulps": 4394417297881826192,
+    "bits": 0.016556224242422108,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.684341886080802e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.5171489715576172,
+   "bounds": {
+    "abs": 5.684341886080802e-14,
+    "rel": Infinity
+   },
+   "ns": 0.393678
+  },
+  "ours": {
+   "program": "(if (> y 0) (+ (+ (* 0.125 x) (* y (* z -0.5))) t) (* (+ (+ (* t 2) (* x 0.25)) (* (* z -1) y)) 0.5))",
+   "measured": {
+    "ulps": 4394417297881826192,
+    "bits": 0.009797727992349993,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.684341886080802e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.9562258720397949,
+   "bounds": {
+    "abs": 4.973799150320701e-14,
+    "rel": Infinity
+   },
+   "ns": 0.898432
+  },
+  "herbie": {
+   "program": "(- t (* -0.5 (- (* 0.25 x) (* z y))))",
+   "measured": {
+    "ulps": 4394417297881826192,
+    "bits": 0.0016977279923499917,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 6.394884621840902e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.527406982421875,
+   "ns": 0.403865
+  },
+  "daisy": {
+   "program": "(if (<= y 0) (if (<= t 106.66666666666667) (if (<= z 24) (+ (- (* 0.125 x) (/ (* y z) 2)) t) (- (+ t (* 0.125 x)) (/ (* y z) 2))) (if (<= z 24) (+ (- (* 0.125 x) (/ (* y z) 2)) t) (+ (- (* 0.125 x) (/ (* y z) 2)) t))) (if (<= z 24) (+ (- (* 0.125 x) (/ (* y z) 2)) t) (+ (- (* 0.125 x) (/ (* y z) 2)) t)))",
+   "measured": {
+    "ulps": 4394417297881826192,
+    "bits": 0.004397727992349992,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 6.394884621840902e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 54.08,
+   "ns": 1.08873
+  }
+ },
+ "branching_programs/herbie-haskell-058-diagrams-solve-polynomial-quartform-from--a.fpcore": {
+  "original": {
+   "program": "(+ (- (+ (* x y) (/ (* z t) 16)) (/ (* a b) 4)) c)",
+   "measured": {
+    "ulps": 204376577072,
+    "bits": 0.01539772799234999,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.0190692734113327e-10,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.61841
+  },
+  "ours-plain": {
+   "program": "(+ (+ c (+ (* x y) (* (* z t) 0.0625))) (* a (* b -0.25)))",
+   "measured": {
+    "ulps": 204376577072,
+    "bits": 0.027580735492205757,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.916067635780564e-11,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.5799129009246826,
+   "bounds": {
+    "abs": 5.916067635780564e-11,
+    "rel": Infinity
+   },
+   "ns": 0.596641
+  },
+  "ours": {
+   "program": "(if (> a 0) (+ (* a (* b -0.25)) (+ c (+ (* x y) (* (* z t) 0.0625)))) (* (+ (+ (* c 4) (+ (* (* z t) 0.25) (* (* x y) 4))) (* (* b -1) a)) 0.25))",
+   "measured": {
+    "ulps": 204376577072,
+    "bits": 0.027580735492205757,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.916067635780564e-11,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.3699889183044434,
+   "bounds": {
+    "abs": 4.460876112943879e-11,
+    "rel": Infinity
+   },
+   "ns": 1.23457
+  },
+  "herbie": {
+   "program": "(+ (- (+ (* x y) (/ t (/ 16 z))) (* 0.25 (* b a))) c)",
+   "measured": {
+    "ulps": 204376577072,
+    "bits": 0.01669772799234999,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.0194955990527887e-10,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.279077880859375,
+   "ns": 0.667379
+  },
+  "daisy": {
+   "program": "(if (<= b 1536) (if (<= z 24) (if (<= t 96) (- (+ c (+ (* (/ t 16) z) (* y x))) (/ (* a b) 4)) (- (+ c (+ (/ (* z t) 16) (* y x))) (/ (* a b) 4))) (if (<= t 96) (- (+ c (+ (* x y) (/ (* t z) 16))) (/ (* a b) 4)) (- (+ c (+ (* x y) (/ (* t z) 16))) (/ (* a b) 4)))) (if (<= z 24) (if (<= t 96) (- (+ c (+ (* (/ t 16) z) (* y x))) (/ (* a b) 4)) (- (+ c (+ (/ (* z t) 16) (* y x))) (/ (* a b) 4))) (if (<= t 96) (- (+ c (+ (* x y) (/ (* t z) 16))) (/ (* a b) 4)) (+ (- (+ (* x y) (/ (* z t) 16)) (/ (* a b) 4)) c))))",
+   "measured": {
+    "ulps": 204376577072,
+    "bits": 0.025880735492205757,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.0190692734113327e-10,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 195.47,
+   "ns": 1.76345
+  }
+ },
+ "branching_programs/herbie-haskell-059-diagrams-solve-polynomial-quartform-from--y.fpcore": {
+  "original": {
+   "program": "(- (/ (* x y) 2) (/ z 8))",
+   "measured": {
+    "ulps": 4372984787934924308,
+    "bits": 0.001968825030913318,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.220446049250313e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.325669
+  },
+  "ours-plain": {
+   "program": "(+ (* y (* x 0.5)) (* z -0.125))",
+   "measured": {
+    "ulps": 4372984787934924308,
+    "bits": 0.001968825030913318,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.7763568394002505e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.3150053024291992,
+   "bounds": {
+    "abs": 1.7763568394002505e-15,
+    "rel": Infinity
+   },
+   "ns": 0.321481
+  },
+  "ours": {
+   "program": "(if (> y 0) (+ (* y (* x 0.5)) (* z -0.125)) (* (+ (* z 0.25) (* (* x -1) y)) -0.5))",
+   "measured": {
+    "ulps": 4372984787934924308,
+    "bits": 0.001968825030913318,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.7763568394002505e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.7423770427703857,
+   "bounds": {
+    "abs": 1.3322676295501878e-15,
+    "rel": Infinity
+   },
+   "ns": 0.687805
+  },
+  "herbie": {
+   "program": "(* 0.125 (- (* 4 (* y x)) z))",
+   "measured": {
+    "ulps": 4372984787934924308,
+    "bits": 0.001968825030913318,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.220446049250313e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.62111083984375,
+   "ns": 0.320273
+  },
+  "daisy": {
+   "program": "(if (<= y 2.6666666666666665) (if (<= x 1.6666666666666667) (if (<= x 1.3333333333333333) (if (<= y -2.6666666666666665) (if (<= z 26.666666666666668) (- (/ (* x y) 2) (/ z 8)) (- (/ (* y x) 2) (* z 0.125))) (if (<= z 26.666666666666668) (- (/ (* x y) 2) (/ z 8)) (/ (- (* (* x y) 8) (* 2 z)) 16))) (if (<= y -2.6666666666666665) (if (<= z 26.666666666666668) (- (/ (* x y) 2) (/ z 8)) (- (/ (* y x) 2) (* z 0.125))) (if (<= z 26.666666666666668) (- (* x (/ y 2)) (/ z 8)) (/ (- (* (* x y) 8) (* 2 z)) 16)))) (if (<= y -2.6666666666666665) (if (<= z 26.666666666666668) (/ (- (* (* x y) 8) (* 2 z)) 16) (/ (- (* (* x y) 8) (* 2 z)) 16)) (if (<= z 26.666666666666668) (- (/ (* y (* 8 x)) 16) (* z 0.125)) (/ (- (* (* x y) 8) (* 2 z)) 16)))) (if (<= x 1.6666666666666667) (if (<= z 26.666666666666668) (/ (- (* (* x y) 8) (* 2 z)) 16) (/ (- (* (* x y) 8) (* 2 z)) 16)) (if (<= z 26.666666666666668) (/ (- (* (* x y) 8) (* 2 z)) 16) (/ (- (* (* x y) 8) (* 2 z)) 16))))",
+   "measured": {
+    "ulps": 4372984787934924308,
+    "bits": 0.001968825030913318,
+    "equivalent": true
+   },
+   "bound": {
+    "error": "ValueError: guards on y are nested, which is not supported",
+    "seconds": 0.0005462169647216797
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 146.87,
+   "ns": 1.88448
+  }
+ },
+ "branching_programs/herbie-haskell-063-numeric-interval-internal-bisect-from-in--y.fpcore": {
+  "original": {
+   "program": "(+ x (/ (- y x) 2))",
+   "measured": {
+    "ulps": 4368491638549381120,
+    "bits": 0.0016584962500721153,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.3322676295501878e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.303532
+  },
+  "ours-plain": {
+   "program": "(* (+ y x) 0.5)",
+   "measured": {
+    "ulps": 0,
+    "bits": 0.0,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 8.881784197001252e-16,
+    "rel": 1.0000000000000002
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.3503739833831787,
+   "bounds": {
+    "abs": 6.661338147750939e-16,
+    "rel": 1.0000000000000002
+   },
+   "ns": 0.306678
+  },
+  "ours": {
+   "program": "(if (> y 0) (* 0.5 (+ x y)) (* 0.5 (+ x y)))",
+   "measured": {
+    "ulps": 0,
+    "bits": 0.0,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.440892098500626e-16,
+    "rel": 1.0000000000000002
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.8579678535461426,
+   "bounds": {
+    "abs": 4.440892098500626e-16,
+    "rel": 1.0000000000000002
+   },
+   "ns": 0.301777
+  },
+  "herbie": {
+   "program": "(* 0.5 (+ x y))",
+   "measured": {
+    "ulps": 0,
+    "bits": 0.0,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 8.881784197001252e-16,
+    "rel": 1.0000000000000002
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.461587890625,
+   "ns": 0.302902
+  },
+  "daisy": {
+   "program": "(if (<= x 1.8) (if (<= x 1.6) (if (<= y 1.6) (if (<= y -1.6) (+ x (/ (- y x) 2)) (- (* 0.5 y) (- (* 0.5 x) x))) (+ x (/ (- y x) 2))) (if (<= y 1.6) (if (<= y -1.6) (+ x (/ (- y x) 2)) (+ (- (* 0.5 y) (* x 0.5)) x)) (+ x (/ (- y x) 2)))) (+ x (/ (- y x) 2)))",
+   "measured": {
+    "ulps": 4368491638549381120,
+    "bits": 0.0013584962500721156,
+    "equivalent": true
+   },
+   "bound": {
+    "error": "ValueError: guards on x are nested, which is not supported",
+    "seconds": 0.0007140636444091797
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 18.64,
+   "ns": 1.37947
+  }
+ },
+ "branching_programs/herbie-haskell-073-linear-quaternion-c-from-linear-1-19-1-3--z.fpcore": {
+  "original": {
+   "program": "(+ (- (- (* x y) (* y z)) (* y y)) (* y y))",
+   "measured": {
+    "ulps": 1090534390589,
+    "bits": 0.7192329878643733,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.0746958878371515e-13,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.445087
+  },
+  "ours-plain": {
+   "program": "(* y (- x z))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0127,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.684341886080802e-14,
+    "rel": 1.0000000000000002
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.18984222412109375,
+   "bounds": {
+    "abs": 4.3520742565306136e-14,
+    "rel": 1.0000000000000002
+   },
+   "ns": 0.29649
+  },
+  "ours": {
+   "program": "(if (> z 0) (* (- y) (- z x)) (+ (* (- y) z) (* x y)))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0145,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.3520742565306136e-14,
+    "rel": 1.0000000000000002
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.2181048393249512,
+   "bounds": {
+    "abs": 4.3520742565306136e-14,
+    "rel": 1.0000000000000002
+   },
+   "ns": 0.499438
+  },
+  "herbie": {
+   "program": "(* y (- x z))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0127,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.684341886080802e-14,
+    "rel": 1.0000000000000002
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.54413720703125,
+   "ns": 0.295444
+  },
+  "daisy": {
+   "program": "(if (<= y 6.666666666666667) (if (<= z 10.666666666666666) (if (<= y 5.333333333333333) (if (<= z -10.666666666666666) (+ (* (- (- x y) z) y) (* y y)) (- (* y x) (* z y))) (if (<= z -10.666666666666666) (- (* y x) (* z y)) (* y (- x z)))) (if (<= y 5.333333333333333) (* y (- x z)) (* y (- x z)))) (if (<= z -10.666666666666666) (- (* y (+ y x)) (* y (+ z y))) (* y (- x z))))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0138,
+    "equivalent": true
+   },
+   "bound": {
+    "error": "ValueError: guards on y are nested, which is not supported",
+    "seconds": 0.00045800209045410156
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 33.33,
+   "ns": 1.2518
+  }
+ },
+ "branching_programs/herbie-haskell-074-linear-quaternion-c-from-linear-1-19-1-3--z.fpcore": {
+  "original": {
+   "program": "(- (- (+ (* x y) (* y y)) (* y z)) (* y y))",
+   "measured": {
+    "ulps": 1635211223843387,
+    "bits": 1.0885750377228085,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 8.615330671091215e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.423352
+  },
+  "ours-plain": {
+   "program": "(* y (+ (- z) x))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0161,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.684341886080802e-14,
+    "rel": 1.0000000000000002
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.14721202850341797,
+   "bounds": {
+    "abs": 4.3520742565306136e-14,
+    "rel": 1.0000000000000002
+   },
+   "ns": 0.28941
+  },
+  "ours": {
+   "program": "(if (> z 0) (* (- y) (- z x)) (+ (* (- y) z) (* x y)))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0164,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.3520742565306136e-14,
+    "rel": 1.0000000000000002
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.9075949192047119,
+   "bounds": {
+    "abs": 4.3520742565306136e-14,
+    "rel": 1.0000000000000002
+   },
+   "ns": 0.485272
+  },
+  "herbie": {
+   "program": "(* y (- x z))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0161,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.684341886080802e-14,
+    "rel": 1.0000000000000002
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.602780029296875,
+   "ns": 0.2931
+  },
+  "daisy": {
+   "program": "(if (<= x 1.6666666666666667) (if (<= y 6.666666666666667) (if (<= z 10.666666666666666) (if (<= x 1.3333333333333333) (if (<= y 5.333333333333333) (if (<= z -10.666666666666666) (- (+ (* x y) (* y y)) (* y (+ z y))) (- (+ (* y y) (- (* x y) (* y y))) (* y z))) (if (<= z -10.666666666666666) (- (* y x) (* y z)) (- (- (+ (* y y) (* x y)) (* y y)) (* y z)))) (if (<= y 5.333333333333333) (if (<= z -10.666666666666666) (- (* y (+ x y)) (* y (+ z y))) (- (+ (* y y) (- (* x y) (* y y))) (* y z))) (if (<= z -10.666666666666666) (- (* y x) (* y z)) (- (- (+ (* y y) (* x y)) (* y y)) (* y z))))) (if (<= y 5.333333333333333) (- (+ (* y y) (- (* x y) (* y y))) (* y z)) (- (- (+ (* x y) (* y y)) (* y z)) (* y y)))) (if (<= z 10.666666666666666) (if (<= z -10.666666666666666) (- (* y (+ x y)) (* y (+ z y))) (* y (- x z))) (- (- (+ (* x y) (* y y)) (* y z)) (* y y)))) (if (<= y 6.666666666666667) (if (<= z 10.666666666666666) (if (<= y 5.333333333333333) (if (<= z -10.666666666666666) (- (* y (+ x y)) (* y (+ z y))) (- (+ (* y y) (- (* x y) (* y y))) (* y z))) (if (<= z -10.666666666666666) (- (* y x) (* y z)) (* y (- x z)))) (if (<= y 5.333333333333333) (- (+ (* y y) (- (* x y) (* y y))) (* y z)) (- (- (+ (* x y) (* y y)) (* y z)) (* y y)))) (if (<= z 10.666666666666666) (if (<= z -10.666666666666666) (- (* y (+ x y)) (* y (+ z y))) (* y (- x z))) (- (- (+ (* x y) (* y y)) (* y z)) (* y y)))))",
+   "measured": {
+    "ulps": 5,
+    "bits": 0.4490898417560152,
+    "equivalent": true
+   },
+   "bound": {
+    "error": "ValueError: guards on z are nested, which is not supported",
+    "seconds": 0.0009400844573974609
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 37.82,
+   "ns": 1.83385
+  }
+ },
+ "branching_programs/herbie-haskell-075-linear-quaternion-c-from-linear-1-19-1-3--z.fpcore": {
+  "original": {
+   "program": "(- (+ (- (* x y) (* y y)) (* y y)) (* y z))",
+   "measured": {
+    "ulps": 8776636074767158577,
+    "bits": 0.7246205340998867,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 6.128431095930864e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.439464
+  },
+  "ours-plain": {
+   "program": "(* y (- x z))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0136,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.684341886080802e-14,
+    "rel": 1.0000000000000002
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.670036792755127,
+   "bounds": {
+    "abs": 4.3520742565306136e-14,
+    "rel": 1.0000000000000002
+   },
+   "ns": 0.297934
+  },
+  "ours": {
+   "program": "(if (> z 0) (* (- y) (+ (- x) z)) (+ (* x y) (* z (- y))))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0137,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.3520742565306136e-14,
+    "rel": 1.0000000000000002
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.145843982696533,
+   "bounds": {
+    "abs": 4.3520742565306136e-14,
+    "rel": 1.0000000000000002
+   },
+   "ns": 0.504465
+  },
+  "herbie": {
+   "program": "(* y (- x z))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0136,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.684341886080802e-14,
+    "rel": 1.0000000000000002
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.483421142578125,
+   "ns": 0.309483
+  },
+  "daisy": {
+   "program": "(if (<= z 10.666666666666666) (if (<= y 6.666666666666667) (if (<= z -10.666666666666666) (if (<= y 5.333333333333333) (- (* x y) (* z y)) (- (* x y) (* z y))) (if (<= y 5.333333333333333) (- (* x y) (* z y)) (* y (- x z)))) (* y (- x z))) (if (<= y 6.666666666666667) (if (<= y 5.333333333333333) (* y (- x z)) (* y (- x z))) (* y (- x z))))",
+   "measured": {
+    "ulps": 30702707691,
+    "bits": 0.01429772799234999,
+    "equivalent": true
+   },
+   "bound": {
+    "error": "ValueError: guards on y are nested, which is not supported",
+    "seconds": 0.0004818439483642578
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 28.13,
+   "ns": 1.24261
+  }
+ },
+ "branching_programs/herbie-haskell-086-linear-matrix-det44-from-linear-1-19-1-3--a.fpcore": {
+  "daisy": {
+   "status": "timeout",
+   "seconds": 300.01
+  },
+  "original": {
+   "program": "(+ (- (+ (+ (- (* (- (* x y) (* z t)) (- (* a b) (* c i))) (* (- (* x j) (* z k)) (- (* y0 b) (* y1 i)))) (* (- (* x y2) (* z y3)) (- (* y0 c) (* y1 a)))) (* (- (* t j) (* y k)) (- (* y4 b) (* y5 i)))) (* (- (* t y2) (* y y3)) (- (* y4 c) (* y5 a)))) (* (- (* k y2) (* j y3)) (- (* y4 y1) (* y5 y0))))",
+   "measured": {
+    "ulps": 1432840605924,
+    "bits": 1.9763043875377828,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 28587313169311.984,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 3.41256
+  },
+  "ours-plain": {
+   "program": "(+ (+ (+ (+ (- (+ (* (+ (* (- z) y3) (* x y2)) (* y0 c)) (* (+ (* (- z) y3) (* x y2)) (* (- y1) a))) (+ (+ (+ (+ (* (* (- b) a) (+ (* (- z) t) (* x y))) (* (* c i) (+ (* (- z) t) (* x y)))) (* (+ (* (- y1) i) (* y0 b)) (* x j))) (* (+ (* (- y1) i) (* y0 b)) (* (- z) k))) (* (+ (* y k) (* (- j) t)) (* y4 b)))) (* (+ (* t j) (* (- y) k)) (* (- y5) i))) (* (* y5 a) (+ (* t y2) (* (- y) y3)))) (* (* (- c) y4) (+ (* t y2) (* (- y) y3)))) (* (+ (* k y2) (* (- j) y3)) (+ (* y4 y1) (* (- y5) y0))))",
+   "measured": {
+    "ulps": 1432840605924,
+    "bits": 1.9763043875377828,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 28587310881299.062,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 4.264151096343994,
+   "bounds": {
+    "abs": 28587310881299.062,
+    "rel": Infinity
+   },
+   "ns": 3.84487
+  },
+  "ours": {
+   "program": "(+ (if (> a 0) (+ (* (* (- c) y4) (+ (* t y2) (* (- y) y3))) (+ (+ (* (+ (* t j) (* (- y) k)) (* (- y5) i)) (- (+ (* (* (- y1) a) (+ (* (- z) y3) (* x y2))) (* (+ (* (- z) y3) (* x y2)) (* y0 c))) (+ (+ (* (+ (* (- z) k) (* x j)) (+ (* (- y1) i) (* y0 b))) (* (+ (* c i) (* (- b) a)) (+ (* (- z) t) (* x y)))) (* (+ (* y k) (* (- j) t)) (* y4 b))))) (* (* y5 a) (+ (* t y2) (* (- y) y3))))) (+ (* (* (- c) y4) (+ (* t y2) (* (- y) y3))) (+ (+ (* (+ (* t j) (* (- y) k)) (* (- y5) i)) (+ (+ (+ (+ (* (+ (* (- z) t) (* x y)) (* (- c) i)) (* (* a b) (+ (* (- z) t) (* x y)))) (* (+ (* y1 i) (* (- b) y0)) (* x j))) (* (+ (* y1 i) (* (- b) y0)) (* (- z) k))) (- (* (+ (* (- z) y3) (* x y2)) (* y0 c)) (+ (* (* y1 a) (+ (* (- z) y3) (* x y2))) (* (+ (* y k) (* (- j) t)) (* y4 b)))))) (* (* y5 a) (+ (* t y2) (* (- y) y3)))))) (* (+ (* k y2) (* (- j) y3)) (+ (* y4 y1) (* (- y5) y0))))",
+   "measured": {
+    "ulps": 1432840605924,
+    "bits": 1.9763043875377828,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 28587310881299.062,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 22.73767614364624,
+   "bounds": {
+    "abs": 28587310881299.062,
+    "rel": Infinity
+   },
+   "ns": 4.77195
+  },
+  "herbie": {
+   "program": "(- (- (* (- (* b a) (* i c)) (- (* y x) (* t z))) (* (- (* y0 b) (* y1 i)) (- (* j x) (* k z)))) (- (- (- (* (- (* y5 i) (* y4 b)) (- (* j t) (* k y))) (* (- (* y0 c) (* y1 a)) (- (* y2 x) (* y3 z)))) (* (- (* y3 y) (* y2 t)) (- (* y4 c) (* y5 a)))) (* (- (* y4 y1) (* y5 y0)) (- (* y2 k) (* y3 j)))))",
+   "measured": {
+    "ulps": 1432830263524,
+    "bits": 1.9818615038179508,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 32985359672223.984,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 5.74226708984375,
+   "ns": 3.39593
+  }
+ },
+ "branching_programs/herbie-haskell-087-linear-matrix-det33-from-linear-1-19-1-3--a.fpcore": {
+  "daisy": {
+   "status": "timeout",
+   "seconds": 300.01
+  },
+  "original": {
+   "program": "(+ (- (* x (- (* y z) (* t a))) (* b (- (* c z) (* i a)))) (* j (- (* c t) (* i y))))",
+   "measured": {
+    "ulps": 22,
+    "bits": 0.5024021331430641,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.3435600449347476e-05,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 1.01374
+  },
+  "ours-plain": {
+   "program": "(+ (+ (* a (+ (* x (- t)) (* b i))) (* z (+ (* x y) (* (- c) b)))) (* j (+ (* c t) (* (- i) y))))",
+   "measured": {
+    "ulps": 22,
+    "bits": 0.5023361181433526,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.968047872466741e-05,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.33615732192993164,
+   "bounds": {
+    "abs": 4.968047872466741e-05,
+    "rel": Infinity
+   },
+   "ns": 1.00675
+  },
+  "ours": {
+   "program": "(if (> a 0) (+ (+ (* (+ (* (- t) a) (* y z)) x) (* b (+ (* i a) (* (- z) c)))) (* j (+ (* c t) (* (- i) y)))) (+ (+ (* (* b i) a) (+ (* (* x (- t)) a) (+ (* (* c z) (- b)) (* x (* y z))))) (* j (+ (* c t) (* (- i) y)))))",
+   "measured": {
+    "ulps": 22,
+    "bits": 0.5024606293931363,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.771353999899475e-05,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.8757679462432861,
+   "bounds": {
+    "abs": 4.771353999899475e-05,
+    "rel": Infinity
+   },
+   "ns": 1.74963
+  },
+  "herbie": {
+   "program": "(- (* (- (* c t) (* i y)) j) (- (* (- (* c z) (* i a)) b) (* (- (* z y) (* a t)) x)))",
+   "measured": {
+    "ulps": 22,
+    "bits": 0.5024021331430641,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.3435600449347476e-05,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.798083984375,
+   "ns": 0.9997
+  }
+ },
+ "branching_programs/herbie-haskell-088-linear-matrix-fromquaternion-from-linear--y.fpcore": {
+  "original": {
+   "program": "(* 2 (- (* x x) (* x y)))",
+   "measured": {
+    "ulps": 1478662717569449,
+    "bits": 0.014632192809488737,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.773159728050814e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.31738
+  },
+  "ours-plain": {
+   "program": "(* x (+ (* 2 x) (* -2 y)))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0137,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 7.105427357601002e-15,
+    "rel": 1.0000000000000002
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.10001301765441895,
+   "bounds": {
+    "abs": 5.773159728050814e-15,
+    "rel": 1.0000000000000002
+   },
+   "ns": 0.316868
+  },
+  "ours": {
+   "program": "(* 2 (if (> y 0) (* (- x) (+ (- x) y)) (+ (* (- x) y) (* x x))))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0127,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.773159728050814e-15,
+    "rel": 1.0000000000000002
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.786829948425293,
+   "bounds": {
+    "abs": 5.773159728050814e-15,
+    "rel": 1.0000000000000002
+   },
+   "ns": 0.548561
+  },
+  "herbie": {
+   "program": "(* 2 (- (* x x) (* x y)))",
+   "measured": {
+    "ulps": 1478662717569449,
+    "bits": 0.014632192809488737,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.773159728050814e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.3266259765625,
+   "ns": 0.317264
+  },
+  "daisy": {
+   "program": "(if (<= y -1.6) (if (<= x 1.6) (if (<= y -4.8) (if (<= x 1.2) (* 2 (- (* x x) (* x y))) (* 2 (- (* x x) (* x y)))) (if (<= x 1.2) (* 2 (* x (- x y))) (* 2 (- (* x x) (* x y))))) (if (<= y -4.8) (if (<= x 1.8) (* 2 (- (* x x) (* x y))) (* 2 (* x (- x y)))) (if (<= x 1.8) (* 2 (* x (- x y))) (* 2 (* x (- x y)))))) (if (<= x 1.6) (if (<= y 1.6) (if (<= x 1.2) (* 2 (- (* x x) (* x y))) (* 2 (* x (- x y)))) (if (<= x 1.2) (* 2 (* x (- x y))) (* 2 (* x (- x y))))) (if (<= x 1.8) (* 2 (* x (- x y))) (* 2 (* x (- x y))))))",
+   "measured": {
+    "ulps": 31,
+    "bits": 0.0136,
+    "equivalent": true
+   },
+   "bound": {
+    "error": "ValueError: guards on x are nested, which is not supported",
+    "seconds": 0.00045490264892578125
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 83.69,
+   "ns": 1.09135
+  }
+ },
+ "branching_programs/herbie-haskell-089-linear-matrix-fromquaternion-from-linear--y.fpcore": {
+  "original": {
+   "program": "(* 2 (+ (* x x) (* x y)))",
+   "measured": {
+    "ulps": 4379778926452127788,
+    "bits": 0.015775488750216345,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.773159728050814e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.319371
+  },
+  "ours-plain": {
+   "program": "(* 2 (* x (+ x y)))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0148,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 7.105427357601002e-15,
+    "rel": 1.0000000000000002
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.09468507766723633,
+   "bounds": {
+    "abs": 5.773159728050814e-15,
+    "rel": 1.0000000000000002
+   },
+   "ns": 0.293893
+  },
+  "ours": {
+   "program": "(* 2 (if (> y 0) (+ (* y x) (* x x)) (* x (+ x y))))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.014,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.773159728050814e-15,
+    "rel": 1.0000000000000002
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.6848208904266357,
+   "bounds": {
+    "abs": 5.773159728050814e-15,
+    "rel": 1.0000000000000002
+   },
+   "ns": 0.555787
+  },
+  "herbie": {
+   "program": "(* (+ x x) (+ y x))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0148,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 9.325873406851317e-15,
+    "rel": 1.0000000000000004
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.3280498046875,
+   "ns": 0.295007
+  },
+  "daisy": {
+   "program": "(if (<= y 1.6) (if (<= x 1.6) (if (<= y -1.6) (if (<= x 1.2) (* 2 (* x (+ x y))) (* 2 (* x (+ x y)))) (if (<= x 1.2) (* 2 (+ (* x x) (* x y))) (* 2 (* x (+ x y))))) (if (<= x 1.8) (* 2 (* x (+ x y))) (* 2 (* x (+ x y))))) (if (<= x 1.6) (if (<= y 4.8) (if (<= x 1.2) (* 2 (* x (+ x y))) (* 2 (+ (* x x) (* x y)))) (if (<= x 1.2) (* 2 (+ (* x x) (* x y))) (* 2 (+ (* x x) (* x y))))) (if (<= y 4.8) (if (<= x 1.8) (* 2 (* x (+ x y))) (* 2 (* x (+ x y)))) (if (<= x 1.8) (* 2 (+ (* x x) (* x y))) (* 2 (* x (+ x y)))))))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0146,
+    "equivalent": true
+   },
+   "bound": {
+    "error": "ValueError: guards on y are nested, which is not supported",
+    "seconds": 0.0005018711090087891
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 73.56,
+   "ns": 1.10254
+  }
+ },
+ "branching_programs/herbie-haskell-090-linear-projection-inverseinfiniteperspec--z.fpcore": {
+  "original": {
+   "program": "(* (- (* x y) (* z y)) t)",
+   "measured": {
+    "ulps": 3558255142,
+    "bits": 0.26449248125036057,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 9.208633855450898e-12,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.358327
+  },
+  "ours-plain": {
+   "program": "(* (* t y) (- x z))",
+   "measured": {
+    "ulps": 2,
+    "bits": 0.2669,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 9.2086338554509e-12,
+    "rel": 1.0000000000000004
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.047987937927246094,
+   "bounds": {
+    "abs": 9.208633855450898e-12,
+    "rel": 1.0000000000000004
+   },
+   "ns": 0.322836
+  },
+  "ours": {
+   "program": "(if (> z 0) (* (* (- t) y) (- z x)) (* (+ (* z (- y)) (* x y)) t))",
+   "measured": {
+    "ulps": 2,
+    "bits": 0.26465849625007215,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 9.208633855450898e-12,
+    "rel": 1.0000000000000004
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.21102070808410645,
+   "bounds": {
+    "abs": 9.208633855450898e-12,
+    "rel": 1.0000000000000004
+   },
+   "ns": 0.622394
+  },
+  "herbie": {
+   "program": "(* (* t y) (- x z))",
+   "measured": {
+    "ulps": 2,
+    "bits": 0.2669,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 9.2086338554509e-12,
+    "rel": 1.0000000000000004
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.52298388671875,
+   "ns": 0.322113
+  },
+  "daisy": {
+   "program": "(if (<= y 6) (if (<= t 96) (if (<= z -10.666666666666666) (* (- (* x y) (* z y)) t) (* (* y (- x z)) t)) (if (<= z -10.666666666666666) (* (- (* x y) (* z y)) t) (* y (* (- x z) t)))) (if (<= z -10.666666666666666) (if (<= t 96) (* y (* (- x z) t)) (* (* y (- x z)) t)) (if (<= t 96) (* (* y (- x z)) t) (* (* y (- x z)) t))))",
+   "measured": {
+    "ulps": 2,
+    "bits": 0.26015849625007215,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.0913936421275139e-11,
+    "rel": 3.0000000000000004
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 116.25,
+   "ns": 1.61259
+  }
+ },
+ "branching_programs/herbie-haskell-106-diagrams-color-hsv-lerp-from-diagrams-co--x.fpcore": {
+  "original": {
+   "program": "(+ (* (- 1 x) y) (* x z))",
+   "measured": {
+    "ulps": 8752615141979278192,
+    "bits": 0.02167094473491633,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.4210854715202004e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.320031
+  },
+  "ours-plain": {
+   "program": "(+ (+ (* y (- x)) y) (* x z))",
+   "measured": {
+    "ulps": 4384754784145433176,
+    "bits": 0.015436959734627867,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.3322676295501878e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.06244802474975586,
+   "bounds": {
+    "abs": 1.3322676295501878e-14,
+    "rel": Infinity
+   },
+   "ns": 0.321849
+  },
+  "ours": {
+   "program": "(if (> x 0) (+ (* (* -1 y) (+ x -1)) (* x z)) (+ (+ (* (* -1 y) x) y) (* x z)))",
+   "measured": {
+    "ulps": 4384754784145433176,
+    "bits": 0.01613695973462787,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.199040866595169e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.18227672576904297,
+   "bounds": {
+    "abs": 1.199040866595169e-14,
+    "rel": Infinity
+   },
+   "ns": 0.622723
+  },
+  "herbie": {
+   "program": "(- y (* x (- y z)))",
+   "measured": {
+    "ulps": 4379178723289867791,
+    "bits": 0.0032732167425663385,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.4210854715202004e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.517613037109375,
+   "ns": 0.290225
+  },
+  "daisy": {
+   "program": "(+ (* (- 1 x) y) (* x z))",
+   "measured": {
+    "ulps": 8752615141979278192,
+    "bits": 0.02167094473491633,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.4210854715202004e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 18.39,
+   "ns": 0.357009
+  }
+ },
+ "branching_programs/herbie-haskell-117-diagrams-trail-splitatparam-from-diagram--x.fpcore": {
+  "original": {
+   "program": "(- 1 (/ (* (- 1 x) y) (+ y 1)))",
+   "measured": {
+    "ulps": 8737814273972507421,
+    "bits": 1.237281864252523,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.90958360235527e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.449762
+  },
+  "ours-plain": {
+   "program": "(- (/ 1 (+ y 1)) (/ (- x) (+ 1 (/ 1 y))))",
+   "measured": {
+    "ulps": 8708047588787182294,
+    "bits": 0.12228317030992143,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.554998353809324e-16,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.725560188293457,
+   "bounds": {
+    "abs": 4.554998353809324e-16,
+    "rel": Infinity
+   },
+   "ns": 0.843419
+  },
+  "ours": {
+   "program": "(* (if (> x 0) (+ (/ (+ x -1) (+ -1 (/ -1 y))) -1) (+ (/ (- x) (+ 1 (/ 1 y))) (/ -1 (+ y 1)))) -1)",
+   "measured": {
+    "ulps": 8708047588787182294,
+    "bits": 0.7642477155966417,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.554998353809324e-16,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.0964839458465576,
+   "bounds": {
+    "abs": 4.554998353809324e-16,
+    "rel": Infinity
+   },
+   "ns": 1.45751
+  },
+  "herbie": {
+   "program": "(- (/ -1 (- -1 y)) (/ (* y x) (- -1 y)))",
+   "measured": {
+    "ulps": 4348563149492542166,
+    "bits": 0.1213661778097772,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.0130785099704555e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.9334619140625,
+   "ns": 0.571082
+  },
+  "daisy": {
+   "program": "(if (<= y 6.4) (if (<= x 0.4) (if (<= x -0.4) (if (<= x -1.2) (if (<= y 5.6) (if (<= y 4.8) (- 1 (* (- 1 x) (/ y (+ y 1)))) (- 1 (* (- 1 x) (/ y (+ y 1))))) (- 1 (* y (/ (- 1 x) (+ y 1))))) (if (<= y 5.6) (if (<= y 4.8) (- 1 (* y (- (/ 1 (+ y 1)) (/ x (+ y 1))))) (- 1 (* (- 1 x) (/ y (+ y 1))))) (- 1 (* (- 1 x) (/ y (+ y 1)))))) (if (<= y 5.6) (if (<= y 4.8) (- 1 (* (- 1 x) (/ y (+ y 1)))) (- 1 (/ (* (- 1 x) y) (+ y 1)))) (- 1 (* y (/ (- 1 x) (+ y 1)))))) (if (<= x 1.2) (if (<= y 4.8) (- 1 (* y (/ (- 1 x) (+ y 1)))) (- 1 (* (- 1 x) (/ y (+ y 1))))) (if (<= y 4.8) (- 1 (* (- 1 x) (/ y (+ 1 y)))) (- 1 (* (- 1 x) (/ y (+ y 1))))))) (if (<= x 0.4) (if (<= x -0.4) (if (<= y 7.2) (if (<= y 6.8) (if (<= x -1.2) (- 1 (* (- 1 x) (/ y (+ 1 y)))) (- 1 (/ (* (- 1 x) y) (+ y 1)))) (if (<= x -1.2) (- 1 (* (- 1 x) (/ y (+ 1 y)))) (- 1 (/ (* (- 1 x) y) (+ y 1))))) (- 1 (* (- 1 x) (/ y (+ y 1))))) (if (<= y 7.2) (- 1 (* y (/ (- 1 x) (+ y 1)))) (- 1 (* (- 1 x) (/ y (+ y 1)))))) (if (<= x 1.2) (if (<= y 7.2) (- 1 (* (- 1 x) (/ y (+ 1 y)))) (- 1 (* (- 1 x) (/ y (+ y 1))))) (if (<= y 7.2) (- 1 (* (- 1 x) (/ y (+ y 1)))) (- 1 (* y (/ (- 1 x) (+ y 1))))))))",
+   "measured": {
+    "ulps": 8733310674345136925,
+    "bits": 1.4039309947293173,
+    "equivalent": true
+   },
+   "bound": {
+    "error": "ValueError: guards on x are nested, which is not supported",
+    "seconds": 0.0005240440368652344
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 79.37,
+   "ns": 1.48247
+  }
+ },
+ "branching_programs/herbie-haskell-121-graphics-rendering-chart-axis-types-invl--z.fpcore": {
+  "original": {
+   "program": "(+ x (/ (* (- y z) (- t x)) (- a z)))",
+   "measured": {
+    "ulps": 221856679802,
+    "bits": 0.26004166655999356,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.1383751084638664e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.530152
+  },
+  "ours-plain": {
+   "program": "(+ (/ (* t (/ z -1)) (+ a (/ z -1))) (+ (/ (* t y) (+ a (/ z -1))) (+ (/ (+ (* z x) (* (* x -1) y)) (+ a (/ z -1))) x)))",
+   "measured": {
+    "ulps": 1427410761862,
+    "bits": 0.27808760972185725,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 9.60739424523841e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.9694311618804932,
+   "bounds": {
+    "abs": 8.588368111921749e-15,
+    "rel": Infinity
+   },
+   "ns": 0.926913
+  },
+  "ours": {
+   "program": "(+ (/ (* t (/ z -1)) (+ a (/ z -1))) (+ (/ (* t y) (+ a (/ z -1))) (if (> z 0) (+ (/ (* x (- z y)) (+ a (/ z -1))) x) (+ (/ (+ (* z x) (* (* x -1) y)) (+ a (/ z -1))) x))))",
+   "measured": {
+    "ulps": 1427410761862,
+    "bits": 0.2781876097218573,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 9.571708505161174e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.4801111221313477,
+   "bounds": {
+    "abs": 8.556647454075315e-15,
+    "rel": Infinity
+   },
+   "ns": 1.16469
+  },
+  "herbie": {
+   "program": "(- x (/ (- t x) (/ (- z a) (- y z))))",
+   "measured": {
+    "ulps": 221856679802,
+    "bits": 0.25897548875021636,
     "equivalent": true
    },
    "bound": {
     "abs": Infinity,
     "rel": Infinity
    },
-   "ns": 0.841822
+   "defined": {
+    "status": "undefined",
+    "witness": "divisor (- y z) changes sign on x in [1, 2], y in [4, 8], z in [-32, 32], t in [64, 128], a in [256, 512]"
+   },
+   "seconds": 1.901625,
+   "ns": 0.576302
+  },
+  "daisy": {
+   "program": "(if (<= z 0) (if (<= z -16) (if (<= t 96) (if (<= a 384) (+ x (/ (* (- y z) (- t x)) (- a z))) (+ x (* (- y z) (/ (- t x) (- a z))))) (if (<= a 384) (+ x (* (- y z) (/ (- t x) (- a z)))) (+ (* (- t x) (/ (- y z) (- a z))) x))) (if (<= t 96) (if (<= a 384) (+ x (/ (* (- y z) (- t x)) (- a z))) (+ x (* (- y z) (/ (- t x) (- a z))))) (if (<= a 384) (+ x (* (- y z) (/ (- t x) (- a z)))) (+ (* (- t x) (/ (- y z) (- a z))) x)))) (if (<= y 6) (if (<= a 384) (if (<= t 96) (+ x (* (- y z) (- (/ t (- a z)) (/ x (- a z))))) (+ x (/ (* (- y z) (- t x)) (- a z)))) (if (<= t 96) (+ x (/ (* (- y z) (- t x)) (- a z))) (+ x (/ (* (- y z) (- t x)) (- a z))))) (if (<= t 96) (if (<= a 384) (+ x (* (- y z) (- (/ t (- a z)) (/ x (- a z))))) (+ x (/ (* (- y z) (- t x)) (- a z)))) (if (<= a 384) (+ (* (- t x) (/ (- y z) (- a z))) x) (+ x (/ (* (- y z) (- t x)) (- a z)))))))",
+   "measured": {
+    "ulps": 221856679802,
+    "bits": 0.26558317030992146,
+    "equivalent": true
+   },
+   "bound": {
+    "error": "ValueError: guards on z are nested, which is not supported",
+    "seconds": 0.0005860328674316406
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 213.21,
+   "ns": 1.76897
+  }
+ },
+ "branching_programs/herbie-haskell-134-system-random-mwc-distributions-standard--y.fpcore": {
+  "original": {
+   "program": "(* 0.5 (- (* x x) y))",
+   "measured": {
+    "ulps": 4368471496794368686,
+    "bits": 0.015975488750216347,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 9.992007221626409e-16,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.334241
+  },
+  "ours-plain": {
+   "program": "(+ (* 0.5 (* x x)) (* -0.5 y))",
+   "measured": {
+    "ulps": 4368471496794368686,
+    "bits": 0.015975488750216347,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 7.771561172376096e-16,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.03611612319946289,
+   "bounds": {
+    "abs": 7.771561172376096e-16,
+    "rel": Infinity
+   },
+   "ns": 0.334823
+  },
+  "ours": {
+   "program": "(if (> y 0) (+ (* -0.5 y) (* 0.5 (* x x))) (* (+ (- y) (* x x)) 0.5))",
+   "measured": {
+    "ulps": 4368471496794368686,
+    "bits": 0.015975488750216347,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.551115123125783e-16,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.1076500415802002,
+   "bounds": {
+    "abs": 5.551115123125783e-16,
+    "rel": Infinity
+   },
+   "ns": 0.571184
+  },
+  "herbie": {
+   "program": "(* 0.5 (- (* x x) y))",
+   "measured": {
+    "ulps": 4368471496794368686,
+    "bits": 0.015975488750216347,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 9.992007221626409e-16,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.64926708984375,
+   "ns": 0.306269
+  },
+  "daisy": {
+   "program": "(* 0.5 (- (* x x) y))",
+   "measured": {
+    "ulps": 4368471496794368686,
+    "bits": 0.015975488750216347,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 9.992007221626409e-16,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 39.79,
+   "ns": 0.310887
+  }
+ },
+ "branching_programs/herbie-haskell-161-development-shake-progress-decay-from-sh--x.fpcore": {
+  "daisy": {
+   "status": "fail",
+   "seconds": 215.79
+  },
+  "original": {
+   "program": "(/ (+ (* x y) (* z (- t a))) (+ y (* z (- b y))))",
+   "measured": {
+    "ulps": 4,
+    "bits": 0.5398406062864184,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.173410198643817e-16,
+    "rel": 1.4507069803371065e-15
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.722517
+  },
+  "ours-plain": {
+   "program": "(* (/ (+ (/ (* x y) (* z (- t a))) 1) (+ b (/ (* (+ (- z) 1) y) z))) (- t a))",
+   "measured": {
+    "ulps": 3,
+    "bits": 0.4434972950135578,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.0628443814050468e-16,
+    "rel": 5.60813259664987e-16
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.678863763809204,
+   "bounds": {
+    "abs": 1.3397318991480238e-16,
+    "rel": 5.607934335198806e-16
+   },
+   "ns": 0.887513
+  },
+  "ours": {
+   "program": "(if (> x 0) (* (+ (* (/ (* x y) (+ (* z b) (* (+ (- z) 1) y))) (/ (+ b (/ (* (+ (- z) 1) y) z)) (- t a))) 1) (/ (- t a) (+ b (/ (* (+ (- z) 1) y) z)))) (* (+ (* (/ (* x y) (+ (* z b) (* (+ (- z) 1) y))) (/ (+ b (/ (* (+ (- z) 1) y) z)) (- t a))) 1) (/ (- t a) (+ b (/ (* (+ (- z) 1) y) z)))))",
+   "measured": {
+    "ulps": 3,
+    "bits": 0.36831924875483174,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.9029577155422786e-16,
+    "rel": 5.694288789371803e-16
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.2052359580993652,
+   "bounds": {
+    "abs": 1.3397318991480238e-16,
+    "rel": 5.69338296165215e-16
+   },
+   "ns": 1.3976
+  },
+  "herbie": {
+   "program": "(/ (- (* y x) (* (- a t) z)) (- (* b z) (- (* z y) y)))",
+   "measured": {
+    "ulps": 4,
+    "bits": 0.4995400037787741,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.2709458693022984e-16,
+    "rel": 1.34514889231601e-15
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.5039140625,
+   "ns": 0.738798
+  }
+ },
+ "branching_programs/herbie-haskell-164-numeric-histogram-binbounds-from-chart-1--y.fpcore": {
+  "daisy": {
+   "status": "fail",
+   "seconds": 49.49
+  },
+  "original": {
+   "program": "(+ x (/ (* (- y x) z) t))",
+   "measured": {
+    "ulps": 522175638635880,
+    "bits": 0.1823147204924942,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.7763568394002505e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.401389
+  },
+  "ours-plain": {
+   "program": "(+ (+ x (* (/ z t) (* x -1))) (* (/ z t) y))",
+   "measured": {
+    "ulps": 713655087124628,
+    "bits": 0.18602992080183875,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.3877787807814457e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.1604471206665039,
+   "bounds": {
+    "abs": 1.3877787807814457e-15,
+    "rel": Infinity
+   },
+   "ns": 0.455176
+  },
+  "ours": {
+   "program": "(if (> y 0) (+ (* (+ (* x -1) y) (/ z t)) x) (/ (+ (* y z) (* x (+ t (* z -1)))) t))",
+   "measured": {
+    "ulps": 297296558881704,
+    "bits": 0.276218630494225,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.1102230246251565e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.3843839168548584,
+   "bounds": {
+    "abs": 1.1102230246251565e-15,
+    "rel": Infinity
+   },
+   "ns": 0.889759
+  },
+  "herbie": {
+   "program": "(- x (* (/ z t) (- x y)))",
+   "measured": {
+    "ulps": 1729624175049368,
+    "bits": 0.18083695973462785,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.6098233857064772e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.287515869140625,
+   "ns": 0.374995
+  }
+ },
+ "branching_programs/herbie-haskell-166-graphics-rendering-chart-axis-types-hbuf--y.fpcore": {
+  "original": {
+   "program": "(+ x (/ (- x y) 2))",
+   "measured": {
+    "ulps": 4503599627370496,
+    "bits": 0.042673131903102506,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.3322676295501878e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.299088
+  },
+  "ours-plain": {
+   "program": "(+ (* 1.5 x) (* y -0.5))",
+   "measured": {
+    "ulps": 4372995238176751616,
+    "bits": 0.04567313190310251,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 8.881784197001252e-16,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.2189321517944336,
+   "bounds": {
+    "abs": 8.881784197001252e-16,
+    "rel": Infinity
+   },
+   "ns": 0.296952
+  },
+  "ours": {
+   "program": "(if (> y 0) (+ (* y -0.5) (* x 1.5)) (* (+ (* x -3) y) -0.5))",
+   "measured": {
+    "ulps": 4372995238176751616,
+    "bits": 0.04567313190310251,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 6.661338147750939e-16,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.6670730113983154,
+   "bounds": {
+    "abs": 6.661338147750939e-16,
+    "rel": Infinity
+   },
+   "ns": 0.564924
+  },
+  "herbie": {
+   "program": "(* 0.5 (- (* 3 x) y))",
+   "measured": {
+    "ulps": 4372995238176751616,
+    "bits": 0.04567313190310251,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.1102230246251565e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.282577880859375,
+   "ns": 0.293019
+  },
+  "daisy": {
+   "program": "(if (<= y 1.6) (if (<= y -1.6) (if (<= x 1.8) (+ x (/ (- x y) 2)) (+ x (/ (- x y) 2))) (if (<= x 1.8) (+ (- (* 0.5 x) (* y 0.5)) x) (+ x (/ (- x y) 2)))) (if (<= x 1.8) (+ x (/ (- x y) 2)) (+ x (/ (- x y) 2))))",
+   "measured": {
+    "ulps": 4503599627370496,
+    "bits": 0.042673131903102506,
+    "equivalent": true
+   },
+   "bound": {
+    "error": "ValueError: guards on y are nested, which is not supported",
+    "seconds": 0.0004258155822753906
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 16.33,
+   "ns": 1.09963
+  }
+ },
+ "branching_programs/herbie-haskell-167-graphics-rendering-chart-axis-types-linm--t.fpcore": {
+  "daisy": {
+   "status": "fail",
+   "seconds": 13.63
+  },
+  "original": {
+   "program": "(+ x (/ (* (- y x) (- z t)) (- a t)))",
+   "measured": {
+    "ulps": 733323048076,
+    "bits": 0.0968,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.968248035197578e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.490316
+  },
+  "ours-plain": {
+   "program": "(+ (+ x (* z (/ (+ y (* x -1)) (+ a (/ t -1))))) (* (/ t -1) (/ (+ y (* x -1)) (+ a (/ t -1)))))",
+   "measured": {
+    "ulps": 8062769974132,
+    "bits": 0.10349068905956085,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.747002708109905e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.057974100112915,
+   "bounds": {
+    "abs": 3.747002708109904e-15,
+    "rel": Infinity
+   },
+   "ns": 0.570467
+  },
+  "ours": {
+   "program": "(+ x (if (> t 0) (* (+ (/ t -1) z) (/ (- x y) (+ t (/ a -1)))) (* (+ (/ t -1) z) (/ (- x y) (+ t (/ a -1))))))",
+   "measured": {
+    "ulps": 4112895907616,
+    "bits": 0.09645849625007212,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.7339241981394503e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.504871129989624,
+   "bounds": {
+    "abs": 2.733924198139449e-15,
+    "rel": Infinity
+   },
+   "ns": 0.48572
+  },
+  "herbie": {
+   "program": "(- x (/ (* (- z t) (- y x)) (- t a)))",
+   "measured": {
+    "ulps": 733323048076,
+    "bits": 0.0968,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.968248035197578e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.2740791015625,
+   "ns": 0.524384
+  }
+ },
+ "branching_programs/herbie-haskell-176-ai-clustering-hierarchical-internal-ward--a.fpcore": {
+  "daisy": {
+   "status": "timeout",
+   "seconds": 300.01
+  },
+  "original": {
+   "program": "(/ (- (+ (* (+ x y) z) (* (+ t y) a)) (* y b)) (+ (+ x t) y))",
+   "measured": {
+    "ulps": 220323338336,
+    "bits": 0.4642580475183174,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 8.219041329469883e-13,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.792362
+  },
+  "ours-plain": {
+   "program": "(+ (+ (/ (+ (* (/ y -1) b) (+ (* z y) (* z x))) (+ (+ x y) t)) (/ (* a y) (+ (+ x y) t))) (/ (* a t) (+ (+ x y) t)))",
+   "measured": {
+    "ulps": 1127281138398,
+    "bits": 0.4199406153205945,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.672519926576256e-13,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.0421431064605713,
+   "bounds": {
+    "abs": 4.5395599342871003e-13,
+    "rel": Infinity
+   },
+   "ns": 1.12133
+  },
+  "ours": {
+   "program": "(if (> a 0) (/ (+ (+ (* (/ y -1) b) (+ (* a y) (+ (* z y) (* z x)))) (* a t)) (+ (+ x y) t)) (+ (/ (+ (* (/ y -1) b) (+ (+ (* z y) (* z x)) (* a y))) (+ (+ x y) t)) (/ (* a t) (+ (+ x y) t))))",
+   "measured": {
+    "ulps": 220323338336,
+    "bits": 0.41746269175266254,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.65964777556611e-13,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.5833640098571777,
+   "bounds": {
+    "abs": 4.5266877832769533e-13,
+    "rel": Infinity
+   },
+   "ns": 1.404
+  },
+  "herbie": {
+   "program": "(- (/ (+ (* a (+ t y)) (* z (+ y x))) (+ (+ t x) y)) (* y (/ b (+ (+ t x) y))))",
+   "measured": {
+    "ulps": 1071742117154,
+    "bits": 0.46515413751658663,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 7.898075204640157e-13,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.375652099609375,
+   "ns": 0.861995
+  }
+ },
+ "branching_programs/herbie-haskell-180-numeric-specfunctions-loggamma-from-math--y.fpcore": {
+  "daisy": {
+   "status": "timeout",
+   "seconds": 300.01
+  },
+  "original": {
+   "program": "(+ x (/ (* y (+ (* (+ (* z 0.0692910599291889) 0.4917317610505968) z) 0.279195317918525)) (+ (* (+ z 6.012459259764103) z) 3.350343815022304)))",
+   "measured": {
+    "ulps": 4,
+    "bits": 0.0011584962500721155,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.003210832275891e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.761876
+  },
+  "ours-plain": {
+   "program": "(/ (+ (+ (* y 0.279195317918525) (* x 3.350343815022304)) (* z (+ (+ (* x z) (* x 6.012459259764103)) (+ (* (* y z) 0.0692910599291889) (* y 0.4917317610505968))))) (+ (+ (* z 6.012459259764103) 3.350343815022304) (* z z)))",
+   "measured": {
+    "ulps": 4,
+    "bits": 0.5320822728464119,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 7.196934683675142e-15,
+    "rel": 5.71580949880682e-14
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.1047160625457764,
+   "bounds": {
+    "abs": 1.6007179541898267e-15,
+    "rel": 5.71580949880676e-14
+   },
+   "ns": 1.30149
+  },
+  "ours": {
+   "program": "(if (> y 0) (+ x (* (+ (* (* z z) (/ 0.0692910599291889 (+ (+ (* z 6.012459259764103) 3.350343815022304) (* z z)))) (+ (/ (* z 0.4917317610505968) (+ (+ (* z 6.012459259764103) 3.350343815022304) (* z z))) (/ 0.279195317918525 (+ (+ (* z 6.012459259764103) 3.350343815022304) (* z z))))) y)) (/ (+ (+ (* y 0.279195317918525) (* x 3.350343815022304)) (* z (+ (+ (* x z) (* x 6.012459259764103)) (+ (* -0.0692910599291889 (* (- z) y)) (* y 0.4917317610505968))))) (+ (+ (* z 6.012459259764103) 3.350343815022304) (* z z))))",
+   "measured": {
+    "ulps": 4,
+    "bits": 0.2709959425203366,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 6.162048224104828e-15,
+    "rel": 5.715246310516823e-14
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 3.147732973098755,
+   "bounds": {
+    "abs": 1.6007179541898267e-15,
+    "rel": 5.715246310516763e-14
+   },
+   "ns": 2.46275
+  },
+  "herbie": {
+   "program": "(- x (/ (* (- (* (- (* 0.0692910599291889 z) -0.4917317610505968) z) -0.279195317918525) y) (- -3.350343815022304 (* (- z -6.012459259764103) z))))",
+   "measured": {
+    "ulps": 4,
+    "bits": 0.0011584962500721155,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.003210832275891e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.6125419921875,
+   "ns": 0.756115
+  }
+ },
+ "branching_programs/herbie-haskell-181-numeric-specfunctions-loggamma-from-math--z.fpcore": {
+  "daisy": {
+   "status": "timeout",
+   "seconds": 300.01
+  },
+  "original": {
+   "program": "(/ (* (- x 2) (+ (* (+ (* (+ (* (+ (* x 4.16438922228) 78.6994924154) x) 137.519416416) x) y) x) z)) (+ (* (+ (* (+ (* (+ x 43.3400022514) x) 263.505074721) x) 313.399215894) x) 47.066876606))",
+   "measured": {
+    "ulps": 5,
+    "bits": 0.6924970384760573,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.6108694727767027e-15,
+    "rel": 3.0000000000000173
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 1.31156
+  },
+  "ours-plain": {
+   "program": "(* (+ x -2) (/ (+ (+ (+ z (* x y)) (* (* x x) 137.519416416)) (* x (* (* x x) (+ 78.6994924154 (* x 4.16438922228))))) (+ (+ (* x 313.399215894) 47.066876606) (* (* x x) (+ (* (+ 43.3400022514 x) x) 263.505074721)))))",
+   "measured": {
+    "ulps": 4,
+    "bits": 0.5710908581675834,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.1698251306934633e-15,
+    "rel": 1.0000000000000042
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.2491650581359863,
+   "bounds": {
+    "abs": 2.14353088940759e-15,
+    "rel": 1.0000000000000042
+   },
+   "ns": 1.43544
+  },
+  "ours": {
+   "program": "(* (+ x -2) (if (> z 0) (+ (* (* x x) (/ (+ (* (+ 78.6994924154 (* x 4.16438922228)) x) 137.519416416) (+ (+ (* x 313.399215894) 47.066876606) (* (* x x) (+ (* (+ 43.3400022514 x) x) 263.505074721))))) (/ (+ z (* x y)) (+ (+ (* x 313.399215894) 47.066876606) (* (* x x) (+ (* (+ 43.3400022514 x) x) 263.505074721))))) (/ (+ (+ (+ z (* x y)) (* (* x x) 137.519416416)) (* x (* (* x x) (+ 78.6994924154 (* x 4.16438922228))))) (+ (+ (* x 313.399215894) 47.066876606) (* (* x x) (+ (* (+ 43.3400022514 x) x) 263.505074721))))))",
+   "measured": {
+    "ulps": 4,
+    "bits": 0.5908893428642966,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.143642676337675e-15,
+    "rel": 1.0000000000000042
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 3.761660099029541,
+   "bounds": {
+    "abs": 2.14353088940759e-15,
+    "rel": 1.0000000000000042
+   },
+   "ns": 1.56785
+  },
+  "herbie": {
+   "program": "(/ (- z (* (- (- (* -137.519416416 x) (* (* x x) (- (* 4.16438922228 x) -78.6994924154))) y) x)) (/ (- (* (- (* (- (* (- x -43.3400022514) x) -263.505074721) x) -313.399215894) x) -47.066876606) (- x 2)))",
+   "measured": {
+    "ulps": 6,
+    "bits": 0.6588931784870223,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": Infinity,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "undefined",
+    "witness": "divides (- x 2) = 0 at x=2, y=4, z=-32"
+   },
+   "seconds": 1.812501953125,
+   "ns": 1.44349
+  }
+ },
+ "branching_programs/herbie-haskell-182-numeric-specfunctions-loggamma-from-math--t.fpcore": {
+  "daisy": {
+   "status": "fail",
+   "seconds": 27.28
+  },
+  "original": {
+   "program": "(+ x (/ (* y (+ (* (+ (* (+ (* (+ (* z 3.13060547623) 11.1667541262) z) t) z) a) z) b)) (+ (* (+ (* (+ (* (+ z 15.234687407) z) 31.4690115749) z) 11.9400905721) z) 0.607771387771)))",
+   "measured": {
+    "ulps": 7,
+    "bits": 0.8127109320438147,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.4573892729636186e-13,
+    "rel": 2.775207591427059e-15
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 1.37521
+  },
+  "ours-plain": {
+   "program": "(/ (+ (* (* y (* z z)) (+ (+ t (* z 11.1667541262)) (* (* z z) 3.13060547623))) (+ (* (* y z) a) (- (* (* x z) (+ (* (* z z) 15.234687407) (+ (* z (* z z)) (+ 11.9400905721 (* z 31.4690115749))))) (+ (* x -0.607771387771) (* (- b) y))))) (+ (* (* z (* z z)) (+ z 15.234687407)) (+ (* (* z z) 31.4690115749) (+ (* z 11.9400905721) 0.607771387771))))",
+   "measured": {
+    "ulps": 5,
+    "bits": 0.7017589075650448,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.929644109549061e-13,
+    "rel": 1.895689395571274e-15
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 12.480870962142944,
+   "bounds": {
+    "abs": 2.570159946195268e-13,
+    "rel": 1.895689395571274e-15
+   },
+   "ns": 2.2109
+  },
+  "ours": {
+   "program": "(/ (+ (* y (if (> t 0) (* (* z z) (+ (+ t (* z 11.1667541262)) (* (* z z) 3.13060547623))) (* (* z z) (+ (* (* z z) 3.13060547623) (+ t (* z 11.1667541262)))))) (+ (* (* y z) a) (- (* (* x z) (+ (* (* z z) 15.234687407) (+ (* z (* z z)) (+ 11.9400905721 (* z 31.4690115749))))) (+ (* x -0.607771387771) (* (- b) y))))) (+ (* (* z (* z z)) (+ z 15.234687407)) (+ (* (* z z) 31.4690115749) (+ (* z 11.9400905721) 0.607771387771))))",
+   "measured": {
+    "ulps": 5,
+    "bits": 0.7020648213002594,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.8199132956032427e-13,
+    "rel": 1.8313569426570914e-15
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 13.002947092056274,
+   "bounds": {
+    "abs": 2.570159946195268e-13,
+    "rel": 1.8313569426570914e-15
+   },
+   "ns": 2.39275
+  },
+  "herbie": {
+   "program": "(+ x (* y (/ (+ (+ (* a z) b) (* (* z z) (- t (* (- -11.1667541262 (* 3.13060547623 z)) z)))) (- (* (- (* (- (* z z) (- (* -15.234687407 z) 31.4690115749)) z) -11.9400905721) z) -0.607771387771))))",
+   "measured": {
+    "ulps": 6,
+    "bits": 0.7470275749783478,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.2544886296268577e-13,
+    "rel": 2.6397330334915124e-15
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.5212900390625,
+   "ns": 1.45539
+  }
+ },
+ "branching_programs/herbie-haskell-194-numeric-specfunctions-invincompletegamma--x.fpcore": {
+  "original": {
+   "program": "(- 1 (* x (+ 0.253 (* x 0.12))))",
+   "measured": {
+    "ulps": 39,
+    "bits": 0.00043219280948873616,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.3306690738754696e-16,
+    "rel": 1.5971351225679783e-14
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.296687
+  },
+  "ours-plain": {
+   "program": "(+ 1 (* (- x) (+ 0.253 (* x 0.12))))",
+   "measured": {
+    "ulps": 39,
+    "bits": 0.00043219280948873616,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.3306690738754696e-16,
+    "rel": 1.5971351225679783e-14
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.23729205131530762,
+   "bounds": {
+    "abs": 3.3306690738754696e-16,
+    "rel": 1.5971351225679534e-14
+   },
+   "ns": 0.301182
+  },
+  "ours": {
+   "program": "(if (> x 0) (/ (+ 1 (* (* x (- x)) (+ (+ (* (* x x) 0.0144) (* 2 (* (* 0.12 x) 0.253))) 0.064009))) (+ 1 (* (- x) (+ (* -0.12 x) -0.253)))) (+ (* (- x) (+ (* 0.12 x) 0.253)) 1))",
+   "measured": {
+    "ulps": 57,
+    "bits": 0.013958496250072117,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 9.811371715073855e-16,
+    "rel": 1.5877570841719372e-14
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.605515956878662,
+   "bounds": {
+    "abs": 3.3306690738754696e-16,
+    "rel": 1.587757084171928e-14
+   },
+   "ns": 0.832917
+  },
+  "herbie": {
+   "program": "(- 1 (* (- (* 0.12 x) -0.253) x))",
+   "measured": {
+    "ulps": 39,
+    "bits": 0.00043219280948873616,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.3306690738754696e-16,
+    "rel": 1.5971351225679783e-14
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.466801025390625,
+   "ns": 0.294542
+  },
+  "daisy": {
+   "program": "(- 1 (* x (+ 0.253 (* x 0.12))))",
+   "measured": {
+    "ulps": 39,
+    "bits": 0.00043219280948873616,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.3306690738754696e-16,
+    "rel": 1.5971351225679783e-14
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 26.69,
+   "ns": 0.303168
+  }
+ },
+ "branching_programs/herbie-haskell-198-numeric-specfunctions-incompletebetaappr--x.fpcore": {
+  "daisy": {
+   "status": "timeout",
+   "seconds": 300.01
+  },
+  "original": {
+   "program": "(/ (* x y) (* (* (+ x y) (+ x y)) (+ (+ x y) 1)))",
+   "measured": {
+    "ulps": 4,
+    "bits": 0.47560180752293274,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.0597583416876515e-15,
+    "rel": 3.0000000000000027
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.477521
+  },
+  "ours-plain": {
+   "program": "(/ x (* (* (+ x y) (+ (+ 1 x) y)) (+ 1 (/ x y))))",
+   "measured": {
+    "ulps": 2,
+    "bits": 0.32392872250533655,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.119361724660454e-16,
+    "rel": 1.0000000000000013
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.9515438079833984,
+   "bounds": {
+    "abs": 4.749287383118731e-16,
+    "rel": 1.0000000000000013
+   },
+   "ns": 0.585995
+  },
+  "ours": {
+   "program": "(/ x (if (> x 0) (* (* (+ x y) (+ y (+ x 1))) (+ 1 (/ x y))) (* (* (+ x y) (+ x y)) (+ (/ (+ x 1) y) 1))))",
+   "measured": {
+    "ulps": 3,
+    "bits": 0.38446496376031253,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.736951571734009e-16,
+    "rel": 1.0000000000000013
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 18.151292085647583,
+   "bounds": {
+    "abs": 4.440892098500632e-16,
+    "rel": 1.0000000000000013
+   },
+   "ns": 0.925544
+  },
+  "herbie": {
+   "program": "(* y (/ (/ x (* (- y (- -1 x)) (+ y x))) (+ y x)))",
+   "measured": {
+    "ulps": 5,
+    "bits": 0.38875821032838304,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.02387234493209e-15,
+    "rel": 7.000000000000004
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.48343701171875,
+   "ns": 0.576302
+  }
+ },
+ "branching_programs/herbie-haskell-210-numeric-specfunctions-loggamma-from-math--z.fpcore": {
+  "daisy": {
+   "status": "timeout",
+   "seconds": 300.01
+  },
+  "original": {
+   "program": "(/ (+ (* (+ (* (+ (* (+ (* x y) z) y) 27464.7644705) y) 230661.510616) y) t) (+ (* (+ (* (+ (* (+ y a) y) b) y) c) y) i))",
+   "measured": {
+    "ulps": 5,
+    "bits": 0.6404301209949568,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.894597404097757e-14,
+    "rel": 1.2547327117422783e-15
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 1.25548
+  },
+  "ours-plain": {
+   "program": "(+ (/ (+ (+ 230661.510616 (* (* y y) (+ (* x y) z))) (* y 27464.7644705)) (+ (* (+ (+ b (* y y)) (* y a)) y) (/ (+ i (* y c)) y))) (/ t (+ (+ (+ i (* y c)) (* y (* y b))) (* y (* (* y y) (+ y a))))))",
+   "measured": {
+    "ulps": 4,
+    "bits": 0.554080456289303,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.054919634734177e-14,
+    "rel": 9.057051743888246e-16
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 5.153103828430176,
+   "bounds": {
+    "abs": 2.3650579405084655e-14,
+    "rel": 9.054784129669526e-16
+   },
+   "ns": 1.96396
+  },
+  "ours": {
+   "program": "(+ (/ (+ (if (> z 0) (+ (* (+ z (* x y)) (* y y)) 230661.510616) (+ (* (+ z (* x y)) (* y y)) 230661.510616)) (* y 27464.7644705)) (+ (* (+ (+ b (* y y)) (* y a)) y) (/ (+ i (* y c)) y))) (/ t (+ (+ (+ i (* y c)) (* y (* y b))) (* y (* (* y y) (+ y a))))))",
+   "measured": {
+    "ulps": 4,
+    "bits": 0.554080456289303,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.054919634734177e-14,
+    "rel": 9.05171046793385e-16
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 6.1405627727508545,
+   "bounds": {
+    "abs": 2.3650579405084655e-14,
+    "rel": 9.049442856830264e-16
+   },
+   "ns": 1.97375
+  },
+  "herbie": {
+   "program": "(/ (- (- t (* (- -27464.7644705 (* (+ z (* y x)) y)) (* y y))) (* -230661.510616 y)) (+ (+ (* y (+ (* b y) c)) (* (* (* y y) y) (+ a y))) i))",
+   "measured": {
+    "ulps": 3,
+    "bits": 0.5656163962904569,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.418063393621135e-14,
+    "rel": 1.2234864823283643e-15
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 3.11352001953125,
+   "ns": 1.37259
+  }
+ },
+ "branching_programs/herbie-haskell-216-statistics-sample-swelfordmean-from-math--x.fpcore": {
+  "original": {
+   "program": "(+ x (/ (- y x) z))",
+   "measured": {
+    "ulps": 4361883348834463384,
+    "bits": 0.01912764879418872,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.3306690738754696e-16,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.311667
+  },
+  "ours-plain": {
+   "program": "(+ x (+ (/ y z) (* (/ x z) -1)))",
+   "measured": {
+    "ulps": 4360466757811329431,
+    "bits": 0.019652141641076232,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.122502256758253e-16,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.539086103439331,
+   "bounds": {
+    "abs": 3.122502256758253e-16,
+    "rel": Infinity
+   },
+   "ns": 0.561309
+  },
+  "ours": {
+   "program": "(if (> x 0) (+ (/ (+ x (* y -1)) (* z -1)) x) (+ (+ (/ y z) (/ x (* z -1))) x))",
+   "measured": {
+    "ulps": 4360466757811329431,
+    "bits": 0.019252141641076234,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.3306690738754696e-16,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.9811570644378662,
+   "bounds": {
+    "abs": 3.0531133177191805e-16,
+    "rel": Infinity
+   },
+   "ns": 0.971581
+  },
+  "herbie": {
+   "program": "(/ (- y (- x (* z x))) z)",
+   "measured": {
+    "ulps": 4361883348834463384,
+    "bits": 0.018109275714091985,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.5543122344752192e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.795710205078125,
+   "ns": 0.342009
+  },
+  "daisy": {
+   "program": "(if (<= z 26.666666666666668) (if (<= x 0.6666666666666666) (if (<= x -0.6666666666666666) (if (<= y 6.666666666666667) (if (<= y 5.333333333333333) (+ x (/ (- y x) z)) (+ x (- (/ y z) (/ x z)))) (if (<= z 21.333333333333332) (+ x (/ (- y x) z)) (+ x (- (/ y z) (/ x z))))) (if (<= y 6.666666666666667) (if (<= y 5.333333333333333) (+ x (/ (- y x) z)) (+ x (/ (- y x) z))) (if (<= z 21.333333333333332) (+ x (/ (- y x) z)) (+ x (- (/ y z) (/ x z)))))) (if (<= y 6.666666666666667) (if (<= y 5.333333333333333) (+ x (/ (- y x) z)) (+ x (/ (- y x) z))) (+ x (/ (- y x) z)))) (if (<= x 0.6666666666666666) (if (<= y 6.666666666666667) (if (<= x -0.6666666666666666) (if (<= y 5.333333333333333) (+ x (/ (- y x) z)) (+ x (/ (- y x) z))) (if (<= y 5.333333333333333) (+ x (- (/ y z) (/ x z))) (+ x (/ (- y x) z)))) (if (<= x -0.6666666666666666) (+ x (/ (- y x) z)) (+ x (- (/ y z) (/ x z))))) (if (<= y 6.666666666666667) (if (<= y 5.333333333333333) (+ x (/ (- y x) z)) (+ x (/ (- y x) z))) (+ x (/ (- y x) z)))))",
+   "measured": {
+    "ulps": 4361883348834463384,
+    "bits": 0.020386145044260836,
+    "equivalent": true
+   },
+   "bound": {
+    "error": "ValueError: guards on y are nested, which is not supported",
+    "seconds": 0.00046896934509277344
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 26.4,
+   "ns": 1.46017
+  }
+ },
+ "branching_programs/herbie-haskell-218-statistics-distribution-beta-centropy-fr--t.fpcore": {
+  "daisy": {
+   "status": "fail",
+   "seconds": 64.2
+  },
+  "original": {
+   "program": "(+ (- (- x (* (- y 1) z)) (* (- t 1) a)) (* (- (+ y t) 2) b))",
+   "measured": {
+    "ulps": 628003808866,
+    "bits": 0.25485817924328746,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.382858272336307e-10,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.717463
+  },
+  "ours-plain": {
+   "program": "(+ (+ (+ (+ (* (- y) z) (+ x z)) a) (* (- t) a)) (+ (* b (+ -2 y)) (* b t)))",
+   "measured": {
+    "ulps": 1548573609563,
+    "bits": 0.24824870549278266,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 8.555289809919486e-11,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.5444736480712891,
+   "bounds": {
+    "abs": 8.555289809919486e-11,
+    "rel": Infinity
+   },
+   "ns": 0.800416
+  },
+  "ours": {
+   "program": "(if (> t 0) (+ (+ (* (* a -1) t) (+ (+ (* (- y) z) (+ x z)) a)) (+ (* b (+ -2 y)) (* b t))) (+ (+ (* (* a -1) t) (+ (+ (* (- y) z) (+ x z)) a)) (* (+ t (+ -2 y)) b)))",
+   "measured": {
+    "ulps": 311104535962,
+    "bits": 0.2483562242424221,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 8.555289809919486e-11,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.5612781047821045,
+   "bounds": {
+    "abs": 8.191491929210315e-11,
+    "rel": Infinity
+   },
+   "ns": 1.05803
+  },
+  "herbie": {
+   "program": "(- (* b (- y (- 2 t))) (- (- (- (* z y) (- a (* a t))) z) x))",
+   "measured": {
+    "ulps": 2120775260574,
+    "bits": 0.2503679700005769,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.4917134194547543e-10,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.68481396484375,
+   "ns": 0.725189
+  }
+ },
+ "branching_programs/herbie-haskell-225-examples-basics-basictests-f2-from-sbv-4--y.fpcore": {
+  "original": {
+   "program": "(- (* x x) (* y y))",
+   "measured": {
+    "ulps": 2333115587377016,
+    "bits": 0.007439231742277876,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 7.327471962526033e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.30391
+  },
+  "ours-plain": {
+   "program": "(* (+ x y) (- x y))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0005,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.486899575160351e-14,
+    "rel": 1.0000000000000004
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.06876182556152344,
+   "bounds": {
+    "abs": 7.327471962526033e-15,
+    "rel": 1.0000000000000004
+   },
+   "ns": 0.301727
+  },
+  "ours": {
+   "program": "(- (if (> y 0) (* (+ y x) (- y x)) (* (+ y x) (- y x))))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0005,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.7763568394002508e-14,
+    "rel": 1.0000000000000004
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.1114811897277832,
+   "bounds": {
+    "abs": 7.327471962526033e-15,
+    "rel": 1.0000000000000004
+   },
+   "ns": 0.304104
+  },
+  "herbie": {
+   "program": "(* (+ y x) (- x y))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0005,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.486899575160351e-14,
+    "rel": 1.0000000000000004
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.8624169921875,
+   "ns": 0.338078
+  },
+  "daisy": {
+   "program": "(- (* x x) (* y y))",
+   "measured": {
+    "ulps": 2333115587377016,
+    "bits": 0.007439231742277876,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 7.327471962526033e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 12.7,
+   "ns": 0.299155
+  }
+ },
+ "branching_programs/herbie-haskell-227-examples-basics-prooftests-f4-from-sbv-4--y.fpcore": {
+  "original": {
+   "program": "(+ (+ (* x x) (* (* x 2) y)) (* y y))",
+   "measured": {
+    "ulps": 8753008387358761961,
+    "bits": 0.022824674059849316,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.7985612998927536e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.440665
+  },
+  "ours-plain": {
+   "program": "(* (+ x y) (+ x y))",
+   "measured": {
+    "ulps": 2,
+    "bits": 0.030567970000576924,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.486899575160351e-14,
+    "rel": 1.0000000000000004
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.07431769371032715,
+   "bounds": {
+    "abs": 1.6209256159527285e-14,
+    "rel": 1.0000000000000004
+   },
+   "ns": 0.310411
+  },
+  "ours": {
+   "program": "(if (> y 0) (+ (+ (* (* y x) 2) (* x x)) (* y y)) (* (+ x y) (+ x y)))",
+   "measured": {
+    "ulps": 2,
+    "bits": 0.025275488750216346,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.6209256159527285e-14,
+    "rel": 1.0000000000000004
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.39950013160705566,
+   "bounds": {
+    "abs": 1.6209256159527285e-14,
+    "rel": 1.0000000000000004
+   },
+   "ns": 0.721475
+  },
+  "herbie": {
+   "program": "(+ (* (+ y x) x) (* (+ y x) y))",
+   "measured": {
+    "ulps": 1833914624,
+    "bits": 0.023858496250072116,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.4868995751603507e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.658197998046875,
+   "ns": 0.345077
+  },
+  "daisy": {
+   "program": "(if (<= y 1.6) (if (<= y -1.6) (if (<= y -4.8) (if (<= x 1.6) (+ (* x (+ x (* 2 y))) (* y y)) (+ (* x (+ x (* 2 y))) (* y y))) (if (<= x 1.6) (+ (+ (* x x) (* (* x 2) y)) (* y y)) (+ (* x (+ x (* 2 y))) (* y y)))) (if (<= x 1.6) (+ (+ (* x x) (* (* x 2) y)) (* y y)) (+ (* y (* 2 x)) (+ (* x x) (* y y))))) (if (<= x 1.8) (if (<= y 4.8) (if (<= x 1.6) (+ (+ (* x x) (* (* x 2) y)) (* y y)) (+ (* x (+ x (* 2 y))) (* y y))) (if (<= x 1.6) (+ (+ (* x x) (* (* x 2) y)) (* y y)) (+ (+ (* x x) (* (* x 2) y)) (* y y)))) (+ (* x (+ x (* 2 y))) (* y y))))",
+   "measured": {
+    "ulps": 8748318398691969024,
+    "bits": 0.022366177809777198,
+    "equivalent": true
+   },
+   "bound": {
+    "error": "ValueError: guards on y are nested, which is not supported",
+    "seconds": 0.000438690185546875
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 46.28,
+   "ns": 1.66792
+  }
+ },
+ "branching_programs/herbie-haskell-235-data-random-dice-roll-from-dice-0-1--x.fpcore": {
+  "original": {
+   "program": "(- (* x x) 1)",
+   "measured": {
+    "ulps": 33554432,
+    "bits": 0.001790689059560852,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.440892098500626e-16,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.316822
+  },
+  "ours-plain": {
+   "program": "(* (+ x 1) (+ x -1))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0217,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.2204460492503135e-15,
+    "rel": 1.0000000000000004
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.10810494422912598,
+   "bounds": {
+    "abs": 4.440892098500626e-16,
+    "rel": 1.0000000000000004
+   },
+   "ns": 0.304968
+  },
+  "ours": {
+   "program": "(if (> x 0) (* (+ 1 x) (+ -1 x)) (* (+ 1 x) (+ -1 x)))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0217,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 6.106226635438362e-16,
+    "rel": 1.0000000000000004
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.2173292636871338,
+   "bounds": {
+    "abs": 4.440892098500626e-16,
+    "rel": 1.0000000000000004
+   },
+   "ns": 0.306096
+  },
+  "herbie": {
+   "program": "(- (* x x) 1)",
+   "measured": {
+    "ulps": 33554432,
+    "bits": 0.001790689059560852,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.440892098500626e-16,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.3756201171875,
+   "ns": 0.307182
+  },
+  "daisy": {
+   "program": "(- (* x x) 1)",
+   "measured": {
+    "ulps": 33554432,
+    "bits": 0.001790689059560852,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.440892098500626e-16,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 5.03,
+   "ns": 0.313082
+  }
+ },
+ "branching_programs/herbie-haskell-240-data-histogram-bin-logbind-cbinsizen-fro--y.fpcore": {
+  "original": {
+   "program": "(- (* x y) x)",
+   "measured": {
+    "ulps": 536292572,
+    "bits": 0.001939231742277876,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.6645352591003757e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.286385
+  },
+  "ours-plain": {
+   "program": "(* (+ (- y) 1) (- x))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0158,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.552713678800501e-15,
+    "rel": 1.0000000000000002
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.030198097229003906,
+   "bounds": {
+    "abs": 2.6645352591003757e-15,
+    "rel": 1.0000000000000002
+   },
+   "ns": 0.286262
+  },
+  "ours": {
+   "program": "(if (> y 0) (* (+ (- y) 1) (- x)) (+ (- x) (* y x)))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.005,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.6645352591003757e-15,
+    "rel": 1.0000000000000002
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.11699128150939941,
+   "bounds": {
+    "abs": 2.6645352591003757e-15,
+    "rel": 1.0000000000000002
+   },
+   "ns": 0.414964
+  },
+  "herbie": {
+   "program": "(- (* x y) x)",
+   "measured": {
+    "ulps": 536292572,
+    "bits": 0.001939231742277876,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.6645352591003757e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.26577197265625,
+   "ns": 0.287923
+  },
+  "daisy": {
+   "program": "(- (* x y) x)",
+   "measured": {
+    "ulps": 536292572,
+    "bits": 0.001939231742277876,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.6645352591003757e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 7.96,
+   "ns": 0.286849
+  }
+ },
+ "branching_programs/herbie-haskell-241-numeric-signal-interpolate-from-hsignal---z.fpcore": {
+  "original": {
+   "program": "(+ x (* (- y z) (/ (- t x) (- a z))))",
+   "measured": {
+    "ulps": 323789797484,
+    "bits": 0.2739732167425663,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.1574075031717262e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.480943
+  },
+  "ours-plain": {
+   "program": "(+ (+ (/ (* y (+ x (* t -1))) (+ z (/ a -1))) x) (/ (* (/ z -1) (+ x (* t -1))) (+ z (/ a -1))))",
+   "measured": {
+    "ulps": 114940442144,
+    "bits": 0.27094870549278266,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 9.496371942775898e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.31199312210083,
+   "bounds": {
+    "abs": 9.496371942775895e-15,
+    "rel": Infinity
+   },
+   "ns": 0.598301
+  },
+  "ours": {
+   "program": "(if (> z 0) (+ (/ (* (+ z (* -1 y)) (- t x)) (+ z (/ a -1))) x) (+ (* (/ z -1) (/ (+ x (* t -1)) (+ z (/ a -1)))) (+ (* y (/ (+ x (* t -1)) (+ z (/ a -1)))) x)))",
+   "measured": {
+    "ulps": 323789797484,
+    "bits": 0.2728924812503606,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 7.754213937616331e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.5653152465820312,
+   "bounds": {
+    "abs": 7.75421393761633e-15,
+    "rel": Infinity
+   },
+   "ns": 1.05781
+  },
+  "herbie": {
+   "program": "(- x (/ (- t x) (/ (- z a) (- y z))))",
+   "measured": {
+    "ulps": 209019617870,
+    "bits": 0.2716509775004327,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": Infinity,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "undefined",
+    "witness": "divisor (- y z) changes sign on x in [1, 2], y in [4, 8], z in [-32, 32], t in [64, 128], a in [256, 512]"
+   },
+   "seconds": 2.0722470703125,
+   "ns": 0.560805
+  },
+  "daisy": {
+   "program": "(if (<= z 0) (if (<= z -16) (if (<= t 96) (if (<= a 384) (+ x (/ (* (- y z) (- t x)) (- a z))) (+ x (* (- y z) (/ (- t x) (- a z))))) (if (<= a 384) (+ x (* (- y z) (/ (- t x) (- a z)))) (+ x (* (- t x) (/ (- y z) (- a z)))))) (if (<= t 96) (if (<= a 384) (+ x (/ (* (- y z) (- t x)) (- a z))) (+ x (* (- y z) (/ (- t x) (- a z))))) (if (<= a 384) (+ x (* (- y z) (/ (- t x) (- a z)))) (+ x (* (- t x) (/ (- y z) (- a z))))))) (if (<= y 6) (if (<= a 384) (if (<= t 96) (+ x (* (- y z) (- (/ t (- a z)) (/ x (- a z))))) (+ x (/ (* (- y z) (- t x)) (- a z)))) (if (<= t 96) (+ x (/ (* (- y z) (- t x)) (- a z))) (+ x (/ (* (- y z) (- t x)) (- a z))))) (if (<= t 96) (if (<= a 384) (+ x (* (- y z) (- (/ t (- a z)) (/ x (- a z))))) (+ x (/ (* (- y z) (- t x)) (- a z)))) (if (<= a 384) (+ x (* (- t x) (/ (- y z) (- a z)))) (+ x (/ (* (- y z) (- t x)) (- a z)))))))",
+   "measured": {
+    "ulps": 323789797484,
+    "bits": 0.2733924812503606,
+    "equivalent": true
+   },
+   "bound": {
+    "error": "ValueError: guards on z are nested, which is not supported",
+    "seconds": 0.0005400180816650391
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 213.18,
+   "ns": 1.65017
+  }
+ },
+ "branching_programs/herbie-haskell-242-numeric-signal-multichannel-cget-from-hs--t.fpcore": {
+  "original": {
+   "program": "(+ (* (/ x y) (- z t)) t)",
+   "measured": {
+    "ulps": 4387486169167667338,
+    "bits": 0.2616105964760471,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.2862601528904634e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.345363
+  },
+  "ours-plain": {
+   "program": "(+ (* x (+ (/ z y) (* -1 (/ t y)))) t)",
+   "measured": {
+    "ulps": 3523467518566262,
+    "bits": 0.26873510772583076,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.2862601528904634e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.4924588203430176,
+   "bounds": {
+    "abs": 3.2862601528904634e-14,
+    "rel": Infinity
+   },
+   "ns": 0.573181
+  },
+  "ours": {
+   "program": "(if (> t 0) (+ (* (* -1 (/ x y)) (+ t (* -1 z))) t) (+ (* x (+ (/ t (* y -1)) (/ z y))) t))",
+   "measured": {
+    "ulps": 3523467518566262,
+    "bits": 0.2636936039759029,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.930988785010413e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.5972800254821777,
+   "bounds": {
+    "abs": 2.5757174171303632e-14,
+    "rel": Infinity
+   },
+   "ns": 1.0337
+  },
+  "herbie": {
+   "program": "(/ (- (* t y) (* (- t z) x)) y)",
+   "measured": {
+    "ulps": 4387486169167667338,
+    "bits": 0.2717719228369956,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 8.526512829121202e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.3573271484375,
+   "ns": 0.37785
+  },
+  "daisy": {
+   "program": "(if (<= t 42.666666666666664) (if (<= x 1.5) (if (<= y 6) (+ t (/ (* x (- z t)) y)) (+ t (/ (* x (- z t)) y))) (if (<= y 6) (+ t (/ (* x (- z t)) y)) (+ (* (/ x y) (- z t)) t))) (if (<= x 1.5) (if (<= y 6) (+ (* (/ x y) (- z t)) t) (+ t (/ (* x (- z t)) y))) (if (<= y 6) (+ t (/ (* x (- z t)) y)) (+ t (/ (* x (- z t)) y)))))",
+   "measured": {
+    "ulps": 4387486169167667338,
+    "bits": 0.2710936039759029,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.552713678800501e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 88.53,
+   "ns": 1.64212
+  }
+ },
+ "branching_programs/herbie-haskell-257-graphics-rendering-plot-render-plot-axis--t.fpcore": {
+  "daisy": {
+   "status": "fail",
+   "seconds": 158.84
+  },
+  "original": {
+   "program": "(+ x (* y (/ (- z t) (- a t))))",
+   "measured": {
+    "ulps": 5941282777982,
+    "bits": 0.11304918530963295,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.662936703425658e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.435227
+  },
+  "ours-plain": {
+   "program": "(+ (+ x (/ (* y z) (+ a (* t -1)))) (/ (* y (* t -1)) (+ a (* t -1))))",
+   "measured": {
+    "ulps": 5941282777982,
+    "bits": 0.12449068905956084,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.551914400963143e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.5174779891967773,
+   "bounds": {
+    "abs": 4.10782519111308e-15,
+    "rel": Infinity
+   },
+   "ns": 0.549617
+  },
+  "ours": {
+   "program": "(+ x (* y (if (> t 0) (/ (+ t (* z -1)) (+ t (/ a -1))) (/ (+ t (* z -1)) (+ t (/ a -1))))))",
+   "measured": {
+    "ulps": 5941282777982,
+    "bits": 0.11304918530963295,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.5535129566378612e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.405513048171997,
+   "bounds": {
+    "abs": 2.553512956637861e-15,
+    "rel": Infinity
+   },
+   "ns": 0.434235
+  },
+  "herbie": {
+   "program": "(- x (* (/ 1 (/ (- t a) y)) (- z t)))",
+   "measured": {
+    "ulps": 5941282777982,
+    "bits": 0.11959068905956086,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.9952043329758485e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.64081591796875,
+   "ns": 0.550934
+  }
+ },
+ "branching_programs/herbie-haskell-261-graphics-rendering-plot-render-plot-axis--t.fpcore": {
+  "original": {
+   "program": "(+ x (/ (* y (- z t)) (- a t)))",
+   "measured": {
+    "ulps": 23742789727078,
+    "bits": 0.1104584962500721,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.662936703425659e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.458695
+  },
+  "ours-plain": {
+   "program": "(+ (+ x (/ (* y z) (+ a (/ t -1)))) (/ (* y (/ t -1)) (+ a (/ t -1))))",
+   "measured": {
+    "ulps": 23742789727078,
+    "bits": 0.11868073549220576,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.551914400963143e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.5480787754058838,
+   "bounds": {
+    "abs": 4.10782519111308e-15,
+    "rel": Infinity
+   },
+   "ns": 0.569525
+  },
+  "ours": {
+   "program": "(+ x (* y (if (> t 0) (/ (- t z) (+ t (/ a -1))) (/ (- t z) (+ t (/ a -1))))))",
+   "measured": {
+    "ulps": 23742789727078,
+    "bits": 0.11571699250014424,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.5535129566378612e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.275718927383423,
+   "bounds": {
+    "abs": 2.553512956637861e-15,
+    "rel": Infinity
+   },
+   "ns": 0.458379
+  },
+  "herbie": {
+   "program": "(+ x (* (- t z) (/ 1 (/ (- t a) y))))",
+   "measured": {
+    "ulps": 116994698628250,
+    "bits": 0.12143219280948875,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.9952043329758485e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.52615185546875,
+   "ns": 0.576004
+  },
+  "daisy": {
+   "program": "(if (<= t 0) (if (<= a 384) (if (<= y 6) (+ x (/ (* y (- z t)) (- a t))) (+ x (* y (/ (- z t) (- a t))))) (if (<= y 6) (+ x (/ (* y (- z t)) (- a t))) (+ x (* y (- (/ z (- a t)) (/ t (- a t))))))) (if (<= a 384) (if (<= y 6) (+ x (* y (/ (- z t) (- a t)))) (+ x (* y (/ (- z t) (- a t))))) (if (<= y 6) (+ x (* y (/ (- z t) (- a t)))) (+ x (* y (/ (- z t) (- a t)))))))",
+   "measured": {
+    "ulps": 23742789727078,
+    "bits": 0.11691699250014424,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.553512956637861e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 185.43,
+   "ns": 1.87073
+  }
+ },
+ "branching_programs/herbie-haskell-264-data-array-repa-algorithms-colorramp-ram--y.fpcore": {
+  "original": {
+   "program": "(/ (* 4 (- (- x y) (* z 0.5))) z)",
+   "measured": {
+    "ulps": 4370357539939472648,
+    "bits": 0.299,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.1102230246251565e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.439947
+  },
+  "ours-plain": {
+   "program": "(+ (+ -2 (* 4 (/ x z))) (* 4 (* (/ y z) -1)))",
+   "measured": {
+    "ulps": 4367977107317922826,
+    "bits": 0.1034,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.718447854656915e-16,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.4269428253173828,
+   "bounds": {
+    "abs": 4.718447854656915e-16,
+    "rel": Infinity
+   },
+   "ns": 0.544188
+  },
+  "ours": {
+   "program": "(* 4 (if (> y 0) (+ -0.5 (/ (- y x) (* z -1))) (+ (/ y (* z -1)) (+ (/ x z) -0.5))))",
+   "measured": {
+    "ulps": 4367977107317922826,
+    "bits": 0.0985,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.718447854656915e-16,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.3900508880615234,
+   "bounds": {
+    "abs": 4.440892098500626e-16,
+    "rel": Infinity
+   },
+   "ns": 0.726691
+  },
+  "herbie": {
+   "program": "(- (/ 1 (/ z (* -4 (- y x)))) 2)",
+   "measured": {
+    "ulps": 4370357539939472648,
+    "bits": 0.098,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": Infinity,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "undefined",
+    "witness": "divisor (* -4 (- y x)) changes sign on x in [1, 2], y in [-8, 8], z in [16, 32]"
+   },
+   "seconds": 1.489724853515625,
+   "ns": 0.54308
+  },
+  "daisy": {
+   "program": "(if (<= y 2.6666666666666665) (if (<= z 26.666666666666668) (if (<= y -2.6666666666666665) (if (<= z 21.333333333333332) (/ (* 4 (- (- x y) (* z 0.5))) z) (/ (* 4 (- (- x y) (* z 0.5))) z)) (if (<= z 21.333333333333332) (/ (* 4 (- (- x y) (* z 0.5))) z) (* 4 (- (/ (- x y) z) 0.5)))) (if (<= y -2.6666666666666665) (/ (* 4 (- (- x y) (* z 0.5))) z) (* (- (- (/ x z) (/ y z)) 0.5) 4))) (if (<= z 26.666666666666668) (if (<= z 21.333333333333332) (* 4 (- (/ (- x y) z) 0.5)) (* 4 (- (/ (- x y) z) 0.5))) (* 4 (- (/ (- x y) z) 0.5))))",
+   "measured": {
+    "ulps": 4370357539939472648,
+    "bits": 0.1517,
+    "equivalent": true
+   },
+   "bound": {
+    "error": "ValueError: guards on z are nested, which is not supported",
+    "seconds": 0.0004930496215820312
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 165.99,
+   "ns": 2.39894
+  }
+ },
+ "branching_programs/herbie-libraries-basilisk-008-semi-latus-rectum--e.fpcore": {
+  "original": {
+   "program": "(* a (- 1 (* e e)))",
+   "measured": {
+    "ulps": 175081,
+    "bits": 0.006266177809777199,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.1316282072803006e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.311468
+  },
+  "ours-plain": {
+   "program": "(* (* -1 a) (* (+ e 1) (+ e -1)))",
+   "measured": {
+    "ulps": 2,
+    "bits": 0.01783398500028846,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 6.039613253960853e-14,
+    "rel": 3.000000000000001
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.23119807243347168,
+   "bounds": {
+    "abs": 2.1316282072803006e-14,
+    "rel": 3.000000000000001
+   },
+   "ns": 0.313151
+  },
+  "ours": {
+   "program": "(* (* -1 a) (if (> e 0) (* (+ 1 e) (+ -1 e)) (* (+ 1 e) (+ -1 e))))",
+   "measured": {
+    "ulps": 2,
+    "bits": 0.01783398500028846,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.4638958368304897e-14,
+    "rel": 3.000000000000001
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.35996532440185547,
+   "bounds": {
+    "abs": 2.1316282072803006e-14,
+    "rel": 3.000000000000001
+   },
+   "ns": 0.313004
+  },
+  "herbie": {
+   "program": "(* a (- 1 (* e e)))",
+   "measured": {
+    "ulps": 175081,
+    "bits": 0.006266177809777199,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.1316282072803006e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.472,
+   "ns": 0.286779
+  },
+  "daisy": {
+   "program": "(* a (- 1 (* e e)))",
+   "measured": {
+    "ulps": 175081,
+    "bits": 0.006266177809777199,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.1316282072803006e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 41.71,
+   "ns": 0.286969
+  }
+ },
+ "branching_programs/herbie-libraries-coolprop-008-b-tau3--du_dtau.fpcore": {
+  "daisy": {
+   "status": "fail",
+   "seconds": 119.77
+  },
+  "original": {
+   "program": "(+ (* tau (+ (* tau (+ (* tau d3u_dtau3) (* 2 d2u_dtau2))) (* (* 2 (+ (* tau du_dtau) ti)) (+ (* tau d2u_dtau2) du_dtau)))) (* (- (+ (* tau du_dtau) ti) 2) (+ (* tau (+ (* tau d2u_dtau2) du_dtau)) (* (- (+ (* tau du_dtau) ti) 1) (+ (* tau du_dtau) ti)))))",
+   "measured": {
+    "ulps": 184289328480762,
+    "bits": 0.4027901672303669,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.2287950918762404e-10,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 1.27934
+  },
+  "ours-plain": {
+   "program": "(+ (* (+ (* (* tau tau) (* du_dtau du_dtau)) (+ (* (* tau du_dtau) (+ ti -1)) (+ (* (+ (* tau du_dtau) (+ ti -1)) ti) (* tau (+ (* tau d2u_dtau2) du_dtau))))) (* tau du_dtau)) (+ (* (+ (* (* tau tau) (* du_dtau du_dtau)) (+ (* (* tau du_dtau) (+ ti -1)) (+ (* (+ (* tau du_dtau) (+ ti -1)) ti) (* tau (+ (* tau d2u_dtau2) du_dtau))))) (+ ti -2)) (* tau (+ (* (* (* tau d2u_dtau2) (* tau du_dtau)) 2) (+ (* (* (* tau d2u_dtau2) ti) 2) (+ (* du_dtau (* 2 (* tau du_dtau))) (+ (* (* du_dtau ti) 2) (* tau (+ (* tau d3u_dtau3) (* 2 d2u_dtau2))))))))))",
+   "measured": {
+    "ulps": 36609858444239,
+    "bits": 0.403898139949614,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.6534152652857306e-10,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.7211270332336426,
+   "bounds": {
+    "abs": 2.6534152652857306e-10,
+    "rel": Infinity
+   },
+   "ns": 2.40442
+  },
+  "ours": {
+   "program": "(+ (if (> du_dtau 0) (* (+ (* (* du_dtau du_dtau) (* tau tau)) (+ (* (+ ti -1) (* du_dtau tau)) (+ (* (* ti -1) (+ (* (* -1 tau) du_dtau) (+ (* ti -1) 1))) (* tau (+ (* tau d2u_dtau2) du_dtau))))) (* du_dtau tau)) (* du_dtau (* tau (+ (* (+ ti (* du_dtau tau)) (* du_dtau tau)) (+ (* (+ ti (* du_dtau tau)) (+ ti -1)) (* tau (+ (* tau d2u_dtau2) du_dtau))))))) (+ (* (+ (* (* tau tau) (* du_dtau du_dtau)) (+ (* (* tau du_dtau) (+ ti -1)) (+ (* (+ (* tau du_dtau) (+ ti -1)) ti) (* tau (+ (* tau d2u_dtau2) du_dtau))))) (+ ti -2)) (* tau (+ (* (* (* tau d2u_dtau2) (* tau du_dtau)) 2) (+ (* (* (* tau d2u_dtau2) ti) 2) (+ (* du_dtau (* 2 (* tau du_dtau))) (+ (* (* du_dtau ti) 2) (* tau (+ (* tau d3u_dtau3) (* 2 d2u_dtau2))))))))))",
+   "measured": {
+    "ulps": 308291880762886,
+    "bits": 0.40483033275910274,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.671605159321189e-10,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 3.2471721172332764,
+   "bounds": {
+    "abs": 2.6534152652857306e-10,
+    "rel": Infinity
+   },
+   "ns": 3.76667
+  },
+  "herbie": {
+   "program": "(+ (+ (* tau (* (* d3u_dtau3 tau) tau)) (* tau (* 2 (+ (* d2u_dtau2 tau) (* (+ (* d2u_dtau2 tau) du_dtau) (+ ti (* du_dtau tau))))))) (* (- (+ (* tau du_dtau) ti) 2) (+ (* tau (+ (* tau d2u_dtau2) du_dtau)) (* (- (+ (* tau du_dtau) ti) 1) (+ (* tau du_dtau) ti)))))",
+   "measured": {
+    "ulps": 184289328480762,
+    "bits": 0.40130405705883393,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.3021231022066827e-10,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.4001298828125,
+   "ns": 1.28023
+  }
+ },
+ "branching_programs/herbie-libraries-fast-math-000-fastmath-dist--d3.fpcore": {
+  "original": {
+   "program": "(+ (* d1 d2) (* d1 d3))",
+   "measured": {
+    "ulps": 15497769050329,
+    "bits": 0.016552160043972374,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.1546319456101628e-14,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.290973
+  },
+  "ours-plain": {
+   "program": "(* d1 (+ d2 d3))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0152,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.4210854715202004e-14,
+    "rel": 1.0000000000000002
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.0373377799987793,
+   "bounds": {
+    "abs": 1.1546319456101628e-14,
+    "rel": 1.0000000000000002
+   },
+   "ns": 0.287464
+  },
+  "ours": {
+   "program": "(if (> d3 0) (+ (* d3 d1) (* d1 d2)) (* d1 (+ d2 d3)))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.015,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.1546319456101628e-14,
+    "rel": 1.0000000000000002
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.20301389694213867,
+   "bounds": {
+    "abs": 1.1546319456101628e-14,
+    "rel": 1.0000000000000002
+   },
+   "ns": 0.479065
+  },
+  "herbie": {
+   "program": "(* d1 (+ d3 d2))",
+   "measured": {
+    "ulps": 1,
+    "bits": 0.0152,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.4210854715202004e-14,
+    "rel": 1.0000000000000002
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.55895703125,
+   "ns": 0.287204
+  },
+  "daisy": {
+   "program": "(if (<= d3 10.666666666666666) (if (<= d1 1.6666666666666667) (if (<= d3 -10.666666666666666) (* d1 (+ d2 d3)) (+ (* d1 d2) (* d1 d3))) (if (<= d3 -10.666666666666666) (* d1 (+ d2 d3)) (+ (* d1 d2) (* d1 d3)))) (if (<= d1 1.6666666666666667) (+ (* d1 d2) (* d1 d3)) (* d1 (+ d2 d3))))",
+   "measured": {
+    "ulps": 15497769050329,
+    "bits": 0.016352160043972372,
+    "equivalent": true
+   },
+   "bound": {
+    "error": "ValueError: guards on d3 are nested, which is not supported",
+    "seconds": 0.00045108795166015625
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 21.99,
+   "ns": 1.2051
+  }
+ },
+ "branching_programs/herbie-libraries-octave-collocwt-000-octave-3-8-jcobi-1.fpcore": {
+  "daisy": {
+   "status": "fail",
+   "seconds": 1.16
+  },
+  "original": {
+   "program": "(/ (+ (/ (- beta alpha) (+ (+ alpha beta) 2)) 1) 2)",
+   "measured": {
+    "ulps": 295,
+    "bits": 0.0014169925001442313,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": Infinity,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.447638
+  },
+  "ours-plain": {
+   "program": "(+ (/ (* beta -1) (* -2 (+ (+ beta 1) (+ 1 alpha)))) (+ (/ (* alpha -1) (+ (* (+ beta 1) 2) (/ (+ 1 alpha) 0.5))) 0.5))",
+   "measured": {
+    "ulps": 295,
+    "bits": 0.0017169925001442312,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 7.500000000000004,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.7640359401702881,
+   "bounds": {
+    "abs": 7.5000000000000036,
+    "rel": Infinity
+   },
+   "ns": 0.815993
+  },
+  "ours": {
+   "program": "(+ (* (if (> alpha 0) (if (> beta 0) (/ (+ beta (/ alpha -1)) (+ (+ 1 beta) (+ 1 alpha))) (/ (+ beta (/ alpha -1)) (+ (+ alpha beta) 2))) (if (> beta 0) (/ (+ beta (/ alpha -1)) (+ (+ 1 beta) (+ 1 alpha))) (/ (+ beta (/ alpha -1)) (+ (+ 1 beta) (+ 1 alpha))))) 0.5) 0.5)",
+   "measured": {
+    "ulps": 295,
+    "bits": 0.0015169925001442311,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.3750000000000007,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 3.372058153152466,
+   "bounds": {
+    "abs": 1.3750000000000004,
+    "rel": Infinity
+   },
+   "ns": 1.17343
+  },
+  "herbie": {
+   "program": "(* -0.5 (- -1 (/ -1 (/ (- (- -2 beta) alpha) (- beta alpha)))))",
+   "measured": {
+    "ulps": 551,
+    "bits": 0.0017169925001442312,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": Infinity,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "undefined",
+    "witness": "divides (- beta alpha) = 0 at alpha=-0.99999999999999989, beta=-0.99999999999999989"
+   },
+   "seconds": 1.133987060546875,
+   "ns": 0.551892
+  }
+ },
+ "branching_programs/herbie-libraries-octave-randgamma-000-octave-3-8-oct-fill-randg--rand.fpcore": {
+  "daisy": {
+   "status": "fail",
+   "seconds": 216.92
+  },
+  "original": {
+   "program": "(* (- a (/ 1 3)) (+ 1 (* (/ 1 (sqrt (* 9 (- a (/ 1 3))))) rand)))",
+   "measured": {
+    "ulps": 4340255324482992868,
+    "bits": 0.3470019550008654,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.7274840933958786e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.828157
+  },
+  "ours-plain": {
+   "program": "(+ (+ a -1/3) (/ (* (+ a -1/3) rand) (sqrt (* 9 (+ a -1/3)))))",
+   "measured": {
+    "ulps": 4367108960308579837,
+    "bits": 0.3463169925001442,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.0538732585485372e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.0322890281677246,
+   "bounds": {
+    "abs": 3.0538732585485372e-15,
+    "rel": Infinity
+   },
+   "ns": 0.818666
+  },
+  "ours": {
+   "program": "(if (> rand 0) (+ (+ a -1/3) (/ (* (+ a -1/3) rand) (sqrt (* 9 (+ a -1/3))))) (* (+ 3 (/ rand (sqrt (+ a -1/3)))) (/ (+ a -1/3) 3)))",
+   "measured": {
+    "ulps": 8709784111149504916,
+    "bits": 0.37648496250072117,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.0538732585485372e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.5713417530059814,
+   "bounds": {
+    "abs": 3.0538732585485372e-15,
+    "rel": Infinity
+   },
+   "ns": 1.93349
+  },
+  "herbie": {
+   "program": "(* (/ (- (* (* 2 a) -3) -2) -6) (+ 1 (* (/ 1 (sqrt (* 9 (/ (- (* (* 2 a) -3) -2) -6)))) rand)))",
+   "measured": {
+    "ulps": 4367533160072449678,
+    "bits": 0.3414147204924942,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.5141642746670436e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.732755126953125,
+   "ns": 1.23478
+  }
+ },
+ "branching_programs/herbie-numerics-every-cs-007-complex-division-real-part--b.fpcore": {
+  "original": {
+   "program": "(/ (+ (* a c) (* b d)) (+ (* c c) (* d d)))",
+   "measured": {
+    "ulps": 1346771128750695,
+    "bits": 0.416674600320883,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.2326740935176378e-16,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.581784
+  },
+  "ours-plain": {
+   "program": "(+ (* a (/ c (+ (* d d) (* c c)))) (/ b (+ d (/ (* c c) d))))",
+   "measured": {
+    "ulps": 4055737199982147,
+    "bits": 0.40804259468776916,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.4167560820288446e-17,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.40163612365722656,
+   "bounds": {
+    "abs": 4.398615182933663e-17,
+    "rel": Infinity
+   },
+   "ns": 0.823316
+  },
+  "ours": {
+   "program": "(if (> b 0) (+ (/ b (+ d (/ (* c c) d))) (* a (/ c (+ (* d d) (* c c))))) (+ (/ b (+ d (/ (* c c) d))) (* a (/ c (+ (* d d) (* c c))))))",
+   "measured": {
+    "ulps": 4055737199982147,
+    "bits": 0.40804259468776916,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4.4167560820288446e-17,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.1034257411956787,
+   "bounds": {
+    "abs": 4.3986151829336624e-17,
+    "rel": Infinity
+   },
+   "ns": 0.820277
+  },
+  "herbie": {
+   "program": "(+ (* (/ a (+ (* d d) (* c c))) c) (/ (* d b) (+ (* d d) (* c c))))",
+   "measured": {
+    "ulps": 4055737199982147,
+    "bits": 0.41522362282045033,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.119406854792093e-16,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.739805908203125,
+   "ns": 0.648298
+  },
+  "daisy": {
+   "program": "(/ (+ (* a c) (* b d)) (+ (* c c) (* d d)))",
+   "measured": {
+    "ulps": 1346771128750695,
+    "bits": 0.416674600320883,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.2326740935176378e-16,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 260.01,
+   "ns": 0.582242
+  }
+ },
+ "branching_programs/herbie-numerics-every-cs-008-complex-division-imag-part--d.fpcore": {
+  "daisy": {
+   "status": "fail",
+   "seconds": 71.99
+  },
+  "original": {
+   "program": "(/ (- (* b c) (* a d)) (+ (* c c) (* d d)))",
+   "measured": {
+    "ulps": 132316745994397,
+    "bits": 0.3464738350031731,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 8.326672684688717e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.573773
+  },
+  "ours-plain": {
+   "program": "(+ (/ b (/ (+ (* c c) (* d d)) c)) (/ (* (- a) d) (+ (* c c) (* d d))))",
+   "measured": {
+    "ulps": 166400730574698,
+    "bits": 0.09344001281295028,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 8.382183835919971e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.414320707321167,
+   "bounds": {
+    "abs": 6.217248937900906e-15,
+    "rel": Infinity
+   },
+   "ns": 0.808113
+  },
+  "ours": {
+   "program": "(if (> d 0) (/ (+ (* (- a) d) (* b c)) (+ (* c c) (* d d))) (+ (/ (* (- a) d) (+ (* c c) (* d d))) (/ b (/ (+ (* c c) (* d d)) c))))",
+   "measured": {
+    "ulps": 132316745994397,
+    "bits": 0.21521533875310098,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 8.38218383591997e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.638936996459961,
+   "bounds": {
+    "abs": 6.217248937900905e-15,
+    "rel": Infinity
+   },
+   "ns": 1.34039
+  },
+  "herbie": {
+   "program": "(- (/ b (+ (/ (* d d) c) c)) (/ (* d a) (+ (* d d) (* c c))))",
+   "measured": {
+    "ulps": 166400730574698,
+    "bits": 0.01839772799234999,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 9.603429163007685e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.57851416015625,
+   "ns": 0.810406
+  }
+ },
+ "branching_programs/herbie-numerics-rosa-002-rosa-s-floatvsdoublebenchmark--x1.fpcore": {
+  "daisy": {
+   "status": "fail",
+   "seconds": 171.53
+  },
+  "original": {
+   "program": "(+ x1 (+ (+ (+ (+ (* (+ (* (* (* 2 x1) (/ (- (+ (* (* 3 x1) x1) (* 2 x2)) x1) (+ (* x1 x1) 1))) (- (/ (- (+ (* (* 3 x1) x1) (* 2 x2)) x1) (+ (* x1 x1) 1)) 3)) (* (* x1 x1) (- (* 4 (/ (- (+ (* (* 3 x1) x1) (* 2 x2)) x1) (+ (* x1 x1) 1))) 6))) (+ (* x1 x1) 1)) (* (* (* 3 x1) x1) (/ (- (+ (* (* 3 x1) x1) (* 2 x2)) x1) (+ (* x1 x1) 1)))) (* (* x1 x1) x1)) x1) (* 3 (/ (- (- (* (* 3 x1) x1) (* 2 x2)) x1) (+ (* x1 x1) 1)))))",
+   "measured": {
+    "ulps": 8806588705098018748,
+    "bits": 0.0667296124084008,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.9291014886089305e-11,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 2.09929
+  },
+  "ours-plain": {
+   "program": "(+ (+ (* (* x1 x1) (+ (+ (+ (* (* x1 x1) -6) -6) (* 4 (* x1 -1))) (* 4 (+ (* 3 (* x1 x1)) (* 2 x2))))) (* (* 2 (* x1 (/ (+ (+ (* x1 -1) (* 3 (* x1 x1))) (* 2 x2)) (+ (* x1 x1) 1)))) (+ -3 (+ (* 2 x2) (* x1 -1))))) (+ (+ (* (* (/ (+ (* 3 (* x1 x1)) (* 2 x2)) (+ (* x1 x1) 1)) (* x1 x1)) 3) (+ (* (* x1 -1) (* (/ 3 (+ (* x1 x1) 1)) (* x1 x1))) (* (+ (* x1 x1) 1) x1))) (+ (/ (+ (* 9 (* x1 x1)) (* 3 (* -2 x2))) (+ (* x1 x1) 1)) (+ (* (* x1 -1) (/ 3 (+ (* x1 x1) 1))) x1))))",
+   "measured": {
+    "ulps": 8815060609713802216,
+    "bits": 0.06206256906186856,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.4815705046421527e-12,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.770183801651001,
+   "bounds": {
+    "abs": 2.4815705046421523e-12,
+    "rel": Infinity
+   },
+   "ns": 2.76066
+  },
+  "ours": {
+   "program": "(if (> x1 0) (+ (* (* (/ (+ (+ x1 (* -3 (* x1 x1))) (* -2 x2)) (+ -1 (* (* x1 -1) x1))) (* x1 x1)) 3) (+ (+ (+ (* (* x1 x1) x1) (* (+ (+ (+ (* (* x1 x1) -6) -6) (* 4 (* x1 -1))) (* 4 (+ (* 3 (* x1 x1)) (* 2 x2)))) (* x1 x1))) (* (* 2 (* (/ (+ (+ x1 (* -3 (* x1 x1))) (* -2 x2)) (+ -1 (* (* x1 -1) x1))) x1)) (+ -3 (+ (* 2 x2) (* x1 -1))))) (+ (/ (+ (* 3 (+ (* x1 -1) (* 3 (* x1 x1)))) (* 3 (* -2 x2))) (+ (* x1 x1) 1)) (* x1 2)))) (+ (* (* (/ (+ (+ x1 (* -3 (* x1 x1))) (* -2 x2)) (+ -1 (* (* x1 -1) x1))) (* x1 x1)) 3) (+ (+ (+ (* (* x1 x1) x1) (* (+ (+ (+ (* (* x1 x1) -6) -6) (* 4 (* x1 -1))) (* 4 (+ (* 3 (* x1 x1)) (* 2 x2)))) (* x1 x1))) (* (* 2 (* (/ (+ (+ x1 (* -3 (* x1 x1))) (* -2 x2)) (+ -1 (* (* x1 -1) x1))) x1)) (+ -3 (+ (* 2 x2) (* x1 -1))))) (+ (* (+ (+ (* x1 -1) (* 3 (* x1 x1))) (* -2 x2)) (/ 3 (+ (* x1 x1) 1))) (* x1 2)))))",
+   "measured": {
+    "ulps": 8813934709806959592,
+    "bits": 0.06377370517276332,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.812639010585376e-12,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 7.09180212020874,
+   "bounds": {
+    "abs": 2.3330226639473064e-12,
+    "rel": Infinity
+   },
+   "ns": 2.90543
+  },
+  "herbie": {
+   "program": "(+ x1 (+ (- (* (- (* (* (- (/ (* 4 (- x2 (- (- x1 x2) (* (* 3 x1) x1)))) (- (* x1 x1) -1)) 6) x1) x1) (* (* (- 3 (/ (- x2 (- (- x1 x2) (* (* 3 x1) x1))) (- (* x1 x1) -1))) (+ x1 x1)) (/ (- x2 (- (- x1 x2) (* (* 3 x1) x1))) (- (* x1 x1) -1)))) (- (* x1 x1) -1)) (/ (- (* (* (- x2 (- (- x1 x2) (* (* 3 x1) x1))) (* x1 x1)) -3) (- (* (- (- (* (* 3 x1) x1) x2) x2) 3) (* 3 x1))) (- (* x1 x1) -1))) (+ (* (* x1 x1) x1) x1)))",
+   "measured": {
+    "ulps": 8822660434084989928,
+    "bits": 0.06939217285692266,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.777134160998239e-11,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.2277919921875,
+   "ns": 2.43576
+  }
+ },
+ "branching_programs/herbie-physics-kalman-001-kalman-filter-per-x--x0.fpcore": {
+  "daisy": {
+   "status": "fail",
+   "seconds": 238.27
+  },
+  "original": {
+   "program": "(+ (+ x0 (+ x1 (* 0.5 (* dt (* dt x2))))) (* (/ (+ (+ (+ (* 1 (+ (+ (* 25 1) (* 0 dt)) (* 0 (* 0.5 (* dt dt))))) (* dt (+ (+ (* 0 1) (* 10 dt)) (* 0 (* 0.5 (* dt dt)))))) (* (* 0.5 (* dt dt)) (+ (+ (* 0 1) (* 0 dt)) (* 1 (* 0.5 (* dt dt)))))) (* 0.25 (* dt (* dt (* dt dt))))) (+ (+ (+ (+ (* 1 (+ (+ (* 25 1) (* 0 dt)) (* 0 (* 0.5 (* dt dt))))) (* dt (+ (+ (* 0 1) (* 10 dt)) (* 0 (* 0.5 (* dt dt)))))) (* (* 0.5 (* dt dt)) (+ (+ (* 0 1) (* 0 dt)) (* 1 (* 0.5 (* dt dt)))))) (* 0.25 (* dt (* dt (* dt dt))))) r)) (- sensor (+ x0 (+ x1 (* 0.5 (* dt (* dt x2))))))))",
+   "measured": {
+    "ulps": 4446912984946315747,
+    "bits": 56.5927368202122,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3993.709535305103,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 2.06409
+  },
+  "ours-plain": {
+   "program": "(/ (+ (* (+ (+ x0 x1) (* (* dt dt) (* x2 0.5))) r) (* sensor (+ (+ 25 (* dt (* 10 dt))) (* (* (* dt dt) (* dt dt)) 0.5)))) (* (+ (* (* dt dt) (* dt dt)) (/ (+ (+ r 25) (* dt (* 10 dt))) 0.5)) 0.5))",
+   "measured": {
+    "ulps": 2,
+    "bits": 0.2326189475010096,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 13.1488700667533,
+    "rel": 1.5000000030500895
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 121.97516202926636,
+   "bounds": {
+    "abs": 0.0007821962381989223,
+    "rel": 1.5000000030500895
+   },
+   "ns": 1.41703
+  },
+  "ours": {
+   "program": "(+ (if (> x0 0) (+ (+ x0 x1) (* (* dt dt) (* x2 0.5))) (+ (+ x0 x1) (* (* dt dt) (* x2 0.5)))) (* (/ (+ (+ 25 (* dt (* 10 dt))) (* (* (* dt dt) (* dt dt)) 0.5)) (/ (+ (* (* dt dt) (* dt dt)) (/ (+ (+ r 25) (* dt (* 10 dt))) 0.5)) 2)) (+ (+ sensor (- (- x1) x0)) (* (* dt dt) (* x2 -0.5)))))",
+   "measured": {
+    "ulps": 4448483307398197943,
+    "bits": 56.59370430175711,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1682.2994308584173,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 122.48746275901794,
+   "bounds": {
+    "abs": 0.0007821962381989223,
+    "rel": Infinity
+   },
+   "ns": 1.61799
+  },
+  "herbie": {
+   "program": "(if (<= sensor 1.0843168883541514e-91) (/ (+ (* (- (- (* (* (* (* dt dt) dt) -0.5) dt) r) (* (* 10 dt) dt)) (- x1 (- (* (* -0.5 (* x2 dt)) dt) x0))) (- (* -25 (- x1 (- (* (* -0.5 (* x2 dt)) dt) x0))) (* (- (- (- sensor x0) (* (* (* x2 dt) dt) 0.5)) x1) (- (- (* (* (* 0.25 dt) (* dt dt)) dt) -25) (* dt (- (* -0.25 (* (* dt dt) dt)) (* 10 dt))))))) (- (* (* -0.25 (* (* dt dt) dt)) dt) (- (- r (* (- (* -0.25 (* (* dt dt) dt)) (* 10 dt)) dt)) -25))) (- x0 (/ (- (* (- (* (- (* (* (* dt dt) dt) -0.5) (* 10 dt)) dt) 25) (- (- sensor x0) (* (* (* x2 dt) dt) 0.5))) (+ (* (- 25 (* (- (* (* (* dt dt) dt) -0.5) (* 10 dt)) dt)) (- x1)) (* (- r (- (* (- (* (* (* dt dt) dt) -0.5) (* 10 dt)) dt) 25)) (- x1 (* (* -0.5 (* x2 dt)) dt))))) (- r (- (* dt (- (* (* (* dt dt) dt) -0.5) (* 10 dt))) 25)))))",
+   "measured": {
+    "ulps": 8896469327279156999,
+    "bits": 25.46014397314406,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 4200.425215981024,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 3.486761962890625,
+   "ns": 2.30203
+  }
+ },
+ "branching_programs/herbie-physics-universal-linear-optics-000-bouland-and-aaronson-equation-24--a.fpcore": {
+  "daisy": {
+   "status": "fail",
+   "seconds": 81.43
+  },
+  "original": {
+   "program": "(- (+ (* (+ (* a a) (* b b)) (+ (* a a) (* b b))) (* 4 (+ (* (* a a) (- 1 a)) (* (* b b) (+ 3 a))))) 1)",
+   "measured": {
+    "ulps": 4,
+    "bits": 0.478182558768101,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.2658320492373613e-12,
+    "rel": 5.847165960427607e-15
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.810406
+  },
+  "ours-plain": {
+   "program": "(+ (+ (* (* b b) (* b b)) (+ (* (* a a) (+ (* (* b b) 2) (* a a))) (* 4 (* (+ (* -1 a) (* a a)) (* -1 a))))) (* 4 (+ (* (* b b) (+ 3 a)) -0.25)))",
+   "measured": {
+    "ulps": 2,
+    "bits": 0.47513910001730775,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.469136006766348e-12,
+    "rel": 5.670096834584606e-15
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 4.839952230453491,
+   "bounds": {
+    "abs": 2.0747847884194925e-12,
+    "rel": 4.649431139282388e-15
+   },
+   "ns": 1.07608
+  },
+  "ours": {
+   "program": "(+ (if (> a 0) (+ (+ (+ (* (* (+ a -1) (* a a)) -4) (* (+ (* a (* b b)) (* (* b b) 3)) 4)) (* (* a a) (* a a))) (* (* b b) (+ (* (* a a) 2) (* b b)))) (+ (* (+ (* a a) (* b b)) (+ (* a a) (* b b))) (* (+ (* (+ (* a -1) (* a a)) (* a -1)) (* (* b b) (+ 3 a))) 4))) -1)",
+   "measured": {
+    "ulps": 2,
+    "bits": 0.479182558768101,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.065991904804833e-12,
+    "rel": 2.470992940874072e-15
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 14.034915924072266,
+   "bounds": {
+    "abs": 2.0676793610618915e-12,
+    "rel": 2.4497993323938834e-15
+   },
+   "ns": 1.87048
+  },
+  "herbie": {
+   "program": "(- (* (+ (* b b) (* a a)) (* a a)) (- (- (* -4 (- (* (- a (* a a)) a) (* (* (- -3 a) b) b))) -1) (* (* (+ (* b b) (* a a)) b) b)))",
+   "measured": {
+    "ulps": 2,
+    "bits": 0.33524932375338945,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.1796787425264483e-12,
+    "rel": 1.0166119688587936e-14
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.394285888671875,
+   "ns": 1.08713
+  }
+ },
+ "branching_programs/herbie-physics-universal-linear-optics-001-bouland-and-aaronson-equation-25--a.fpcore": {
+  "daisy": {
+   "status": "fail",
+   "seconds": 129.6
+  },
+  "original": {
+   "program": "(- (+ (* (+ (* a a) (* b b)) (+ (* a a) (* b b))) (* 4 (+ (* (* a a) (+ 1 a)) (* (* b b) (- 1 (* 3 a)))))) 1)",
+   "measured": {
+    "ulps": 7,
+    "bits": 0.5109508300225001,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.4079405963893813e-12,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.884643
+  },
+  "ours-plain": {
+   "program": "(+ (+ (+ (+ -1 (* 4 (* a (+ (* a a) a)))) (* 4 (* b (+ (* (* a b) -3) b)))) (* (* a a) (+ (* (* b b) 2) (* a a)))) (* (* b b) (* b b)))",
+   "measured": {
+    "ulps": 6,
+    "bits": 0.50843940127113,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.3163693185779266e-12,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.765507698059082,
+   "bounds": {
+    "abs": 2.3163693185779266e-12,
+    "rel": Infinity
+   },
+   "ns": 1.21736
+  },
+  "ours": {
+   "program": "(+ (* (* b b) (* b b)) (+ (+ (* (* a a) (* a a)) (* 2 (* (* a a) (* b b)))) (if (> a 0) (+ (* (* (+ (* -3 a) 1) (* b b)) 4) (+ (* (* (+ (* a a) a) a) 4) -1)) (+ (* (* (+ (* -3 (* a b)) b) b) 4) (+ (* (* (+ a 1) (* a a)) 4) -1)))))",
+   "measured": {
+    "ulps": 5,
+    "bits": 0.5083978975212019,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.311040248059726e-12,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.606161117553711,
+   "bounds": {
+    "abs": 2.311040248059726e-12,
+    "rel": Infinity
+   },
+   "ns": 2.01015
+  },
+  "herbie": {
+   "program": "(- (- (* b (* (+ (* b b) (* a a)) b)) (- (* -4 (- (* (+ (* a a) a) a) (* (- (* (* 3 a) b) b) b))) (* (+ (* b b) (* a a)) (* a a)))) 1)",
+   "measured": {
+    "ulps": 7,
+    "bits": 0.383128405498552,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.4070524179696804e-12,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.272465087890625,
+   "ns": 1.15108
+  }
+ },
+ "branching_programs/herbie-proj-omerc-006-forward-rot-x--sinrot.fpcore": {
+  "original": {
+   "program": "(+ (* v cosrot) (* (- u u0) sinrot))",
+   "measured": {
+    "ulps": 120053577565,
+    "bits": 0.016233985000288463,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.4566126083082054e-11,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.4004
+  },
+  "ours-plain": {
+   "program": "(+ (+ (* v cosrot) (* sinrot u)) (* sinrot (- u0)))",
+   "measured": {
+    "ulps": 625657677820,
+    "bits": 0.022175488750216344,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.0999201549566351e-11,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.06299495697021484,
+   "bounds": {
+    "abs": 1.0999201549566351e-11,
+    "rel": Infinity
+   },
+   "ns": 0.430543
+  },
+  "ours": {
+   "program": "(if (> sinrot 0) (+ (+ (* v cosrot) (* sinrot u)) (* sinrot (- u0))) (+ (+ (* v cosrot) (* sinrot u)) (* sinrot (- u0))))",
+   "measured": {
+    "ulps": 625657677820,
+    "bits": 0.022175488750216344,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.0970779840135947e-11,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.3494141101837158,
+   "bounds": {
+    "abs": 1.0970779840135947e-11,
+    "rel": Infinity
+   },
+   "ns": 0.430784
+  },
+  "herbie": {
+   "program": "(- (* cosrot v) (* (- u0 u) sinrot))",
+   "measured": {
+    "ulps": 120053577565,
+    "bits": 0.016233985000288463,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.4566126083082054e-11,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.4676318359375,
+   "ns": 0.399648
+  },
+  "daisy": {
+   "program": "(+ (* v cosrot) (* (- u u0) sinrot))",
+   "measured": {
+    "ulps": 120053577565,
+    "bits": 0.016233985000288463,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.4566126083082054e-11,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 28.34,
+   "ns": 0.400384
+  }
+ },
+ "branching_programs/householder-beta.fpcore": {
+  "daisy": {
+   "status": "fail",
+   "seconds": 58.84
+  },
+  "original": {
+   "program": "(/ (* 2 (* (- x1 (sqrt (+ (* x1 x1) (* x2 x2)))) (- x1 (sqrt (+ (* x1 x1) (* x2 x2)))))) (+ (* x2 x2) (* (- x1 (sqrt (+ (* x1 x1) (* x2 x2)))) (- x1 (sqrt (+ (* x1 x1) (* x2 x2)))))))",
+   "measured": {
+    "ulps": 29899,
+    "bits": 0.04262732348741499,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.4085999088962115e-05,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "unknown"
+   },
+   "ns": 0.828432
+  },
+  "ours-plain": {
+   "program": "(+ (/ x1 (- (sqrt (+ (* x1 x1) (* x2 x2))))) 1)",
+   "measured": {
+    "ulps": 16818,
+    "bits": 0.016970761417933997,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 3.583555674426515e-11,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.0677130222320557,
+   "bounds": {
+    "abs": 3.583555674426515e-11,
+    "rel": Infinity
+   },
+   "ns": 0.818063
+  },
+  "ours": {
+   "program": "(if (> x1 0) (/ (/ (* (- x2) x2) (+ (sqrt (+ (* x1 x1) (* x2 x2))) x1)) (- (sqrt (+ (* x1 x1) (* x2 x2))))) (* (/ (- (sqrt (+ (* x1 x1) (* x2 x2))) x1) (- (sqrt (+ (* x1 x1) (* x2 x2))))) -1))",
+   "measured": {
+    "ulps": 4,
+    "bits": 0.06430391000173077,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.0807399419843141e-10,
+    "rel": 1.080857625624923e-12
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 123.16473388671875,
+   "bounds": {
+    "abs": 3.583555674426515e-11,
+    "rel": 1.080857625624923e-12
+   },
+   "ns": 1.00929
+  },
+  "herbie": {
+   "program": "(* -2 (/ (* (- (sqrt (+ (* x2 x2) (* x1 x1))) x1) (- x1 (sqrt (+ (* x2 x2) (* x1 x1))))) (- (* x2 x2) (* (- (sqrt (+ (* x2 x2) (* x1 x1))) x1) (- x1 (sqrt (+ (* x2 x2) (* x1 x1))))))))",
+   "measured": {
+    "ulps": 29899,
+    "bits": 0.04262732348741499,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": Infinity,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "unknown"
+   },
+   "seconds": 0.592169921875,
+   "ns": 0.843882
   }
  },
  "branching_programs/invariant-mass.fpcore": {
-  "expected": "(> p1 0), (> p2 0)",
   "daisy": {
-   "status": "fail"
+   "status": "fail",
+   "seconds": 9.94
   },
   "original": {
    "program": "(+ (+ (* m1 m1) (* m2 m2)) (+ (* (+ (sqrt (+ (* m1 m1) (* p1 p1))) p1) (- (sqrt (+ (* m2 m2) (* p2 p2))) p2)) (* (- (sqrt (+ (* m1 m1) (* p1 p1))) p1) (+ (sqrt (+ (* m2 m2) (* p2 p2))) p2))))",
    "measured": {
     "ulps": 3,
-    "mean": 0.2755,
+    "bits": 0.2752509775004327,
     "equivalent": true
    },
    "bound": {
     "abs": 6.105334949370895e-12,
     "rel": Infinity
    },
-   "ns": 1.20903
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 1.21058
   },
   "ours-plain": {
    "program": "(+ (+ (+ (+ (* m1 m1) (* m2 m2)) (* (sqrt (+ (* m2 m2) (* p2 p2))) p1)) (* (sqrt (+ (* m2 m2) (* p2 p2))) (sqrt (+ (* m1 m1) (* p1 p1))))) (+ (* (- p2) p1) (+ (+ (* (sqrt (+ (* m2 m2) (* p2 p2))) (- p1)) (* (sqrt (+ (* m2 m2) (* p2 p2))) (sqrt (+ (* m1 m1) (* p1 p1))))) (* (- p2) p1))))",
    "measured": {
     "ulps": 2,
-    "mean": 0.3363,
+    "bits": 0.33430782000346154,
     "equivalent": true
    },
    "bound": {
     "abs": 4.539788141651302e-12,
     "rel": Infinity
    },
-   "ns": 1.25983
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.3680908679962158,
+   "bounds": {
+    "abs": 4.539788141651302e-12,
+    "rel": Infinity
+   },
+   "ns": 1.26231
   },
   "ours": {
    "program": "(if (> p1 0) (if (> p2 0) (+ (/ (* (* (- m2) m2) (+ p1 (sqrt (+ (* m1 m1) (* p1 p1))))) (- (- p2) (sqrt (+ (* m2 m2) (* p2 p2))))) (+ (* (* m1 m1) (/ (+ p2 (sqrt (+ (* m2 m2) (* p2 p2)))) (+ p1 (sqrt (+ (* m1 m1) (* p1 p1)))))) (+ (* m1 m1) (* m2 m2)))) (+ (* (- (sqrt (+ (* m2 m2) (* p2 p2))) p2) (+ p1 (sqrt (+ (* m1 m1) (* p1 p1))))) (+ (* (/ (* m1 m1) (+ p1 (sqrt (+ (* m1 m1) (* p1 p1))))) (/ (* m2 m2) (- (sqrt (+ (* m2 m2) (* p2 p2))) p2))) (+ (* m1 m1) (* m2 m2))))) (+ (if (> p2 0) (/ (* (/ (* (- m2) m2) (+ p2 (sqrt (+ (* m2 m2) (* p2 p2))))) (* m1 (- m1))) (- (sqrt (+ (* m1 m1) (* p1 p1))) p1)) (* (* m1 m1) (/ (- (sqrt (+ (* m2 m2) (* p2 p2))) p2) (- (sqrt (+ (* m1 m1) (* p1 p1))) p1)))) (if (> p2 0) (+ (* (+ p2 (sqrt (+ (* m2 m2) (* p2 p2)))) (- (sqrt (+ (* m1 m1) (* p1 p1))) p1)) (+ (* m1 m1) (* m2 m2))) (+ (/ (* (* m2 m2) (- (sqrt (+ (* m1 m1) (* p1 p1))) p1)) (- (sqrt (+ (* m2 m2) (* p2 p2))) p2)) (+ (* m1 m1) (* m2 m2))))))",
    "measured": {
     "ulps": 3,
-    "mean": 0.3462,
+    "bits": 0.3444983462529568,
     "equivalent": true
    },
    "bound": {
     "abs": 2.9127892482203894e-10,
     "rel": 1.4452883079492164e-12
    },
-   "ns": 2.26637
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 3.676177978515625,
+   "bounds": {
+    "abs": 3.794490419605476e-12,
+    "rel": 1.4452883079492164e-12
+   },
+   "ns": 2.27192
   },
   "herbie": {
    "program": "(- (+ (* m2 m2) (* m1 m1)) (- (* (- p2 (sqrt (+ (* p2 p2) (* m2 m2)))) (+ (sqrt (+ (* p1 p1) (* m1 m1))) p1)) (* (+ (sqrt (+ (* p2 p2) (* m2 m2))) p2) (- (sqrt (+ (* p1 p1) (* m1 m1))) p1))))",
    "measured": {
     "ulps": 3,
-    "mean": 0.2755,
+    "bits": 0.2752509775004327,
     "equivalent": true
    },
    "bound": {
     "abs": 6.105334949370895e-12,
     "rel": Infinity
    },
-   "ns": 1.2091
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.642765869140625,
+   "ns": 1.21029
   }
  },
  "branching_programs/lightcone-energy.fpcore": {
-  "expected": "(> p 0)",
   "daisy": {
-   "status": "fail"
+   "status": "fail",
+   "seconds": 7.13
   },
   "original": {
    "program": "(- (sqrt (+ (* m m) (* p p))) p)",
    "measured": {
     "ulps": 15645,
-    "mean": 1.245,
+    "bits": 0.020196454967744824,
     "equivalent": true
    },
    "bound": {
     "abs": 7.399636459127947e-14,
     "rel": Infinity
    },
-   "ns": 0.531998
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.531689
   },
   "ours-plain": {
    "program": "(- (sqrt (+ (* m m) (* p p))) p)",
    "measured": {
     "ulps": 15645,
-    "mean": 1.245,
+    "bits": 0.020196454967744824,
     "equivalent": true
    },
    "bound": {
     "abs": 7.399636459127947e-14,
     "rel": Infinity
    },
-   "ns": 0.530981
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.04408407211303711,
+   "bounds": {
+    "abs": 7.399636459127947e-14,
+    "rel": Infinity
+   },
+   "ns": 0.53322
   },
   "ours": {
    "program": "(if (> p 0) (/ (* m m) (+ (sqrt (+ (* m m) (* p p))) p)) (+ (- p) (sqrt (+ (* m m) (* p p)))))",
    "measured": {
     "ulps": 2,
-    "mean": 0.0545,
+    "bits": 0.05445849625007212,
     "equivalent": true
    },
    "bound": {
     "abs": 7.224554288149791e-12,
     "rel": 7.225331444267022e-13
    },
-   "ns": 0.72591
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.1712348461151123,
+   "bounds": {
+    "abs": 7.399636459127947e-14,
+    "rel": 7.225331444267022e-13
+   },
+   "ns": 0.72619
   },
   "herbie": {
    "program": "(- (sqrt (+ (* m m) (* p p))) p)",
    "measured": {
     "ulps": 15645,
-    "mean": 1.245,
+    "bits": 0.020196454967744824,
     "equivalent": true
    },
    "bound": {
     "abs": 7.399636459127947e-14,
     "rel": Infinity
    },
-   "ns": 0.530883
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.393739990234375,
+   "ns": 0.532893
   }
  },
  "branching_programs/lightcone-momentum.fpcore": {
-  "expected": "(> p 0)",
   "daisy": {
-   "status": "fail"
+   "status": "fail",
+   "seconds": 6.77
   },
   "original": {
    "program": "(+ (sqrt (+ (* m m) (* p p))) p)",
    "measured": {
     "ulps": 14852,
-    "mean": 0.8057,
+    "bits": 0.022371443770537507,
     "equivalent": true
    },
    "bound": {
     "abs": 7.399636459127947e-14,
     "rel": Infinity
    },
-   "ns": 0.531251
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.532722
   },
   "ours-plain": {
    "program": "(+ (sqrt (+ (* m m) (* p p))) p)",
    "measured": {
     "ulps": 14852,
-    "mean": 0.8057,
+    "bits": 0.022371443770537507,
     "equivalent": true
    },
    "bound": {
     "abs": 7.399636459127947e-14,
     "rel": Infinity
    },
-   "ns": 0.530699
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.04402804374694824,
+   "bounds": {
+    "abs": 7.399636459127947e-14,
+    "rel": Infinity
+   },
+   "ns": 0.532666
   },
   "ours": {
    "program": "(if (> p 0) (+ p (sqrt (+ (* m m) (* p p)))) (/ (* m m) (- (sqrt (+ (* m m) (* p p))) p)))",
    "measured": {
     "ulps": 2,
-    "mean": 0.0538,
+    "bits": 0.05371699250014423,
     "equivalent": true
    },
    "bound": {
     "abs": 7.224554288149791e-12,
     "rel": 7.225331444267022e-13
    },
-   "ns": 0.823256
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.1610097885131836,
+   "bounds": {
+    "abs": 7.399636459127947e-14,
+    "rel": 7.225331444267022e-13
+   },
+   "ns": 0.83382
   },
   "herbie": {
    "program": "(+ (sqrt (+ (* m m) (* p p))) p)",
    "measured": {
     "ulps": 14852,
-    "mean": 0.8057,
+    "bits": 0.022371443770537507,
     "equivalent": true
    },
    "bound": {
     "abs": 7.399636459127947e-14,
     "rel": Infinity
    },
-   "ns": 0.530617
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.4502587890625,
+   "ns": 0.532694
   }
  },
  "branching_programs/lightcone-pair.fpcore": {
-  "expected": "(> p1 0), (> p2 0)",
   "daisy": {
-   "status": "fail"
+   "status": "fail",
+   "seconds": 3.7
   },
   "original": {
    "program": "(+ (- (sqrt (+ (* m1 m1) (* p1 p1))) p1) (- (sqrt (+ (* m2 m2) (* p2 p2))) p2))",
    "measured": {
     "ulps": 119,
-    "mean": 0.0848,
+    "bits": 0.07842829142110466,
     "equivalent": true
    },
    "bound": {
     "abs": 1.5154544286135944e-13,
     "rel": Infinity
    },
-   "ns": 1.06224
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 1.06587
   },
   "ours-plain": {
    "program": "(+ (- (sqrt (+ (* m1 m1) (* p1 p1))) p1) (- (sqrt (+ (* m2 m2) (* p2 p2))) p2))",
    "measured": {
     "ulps": 119,
-    "mean": 0.0848,
+    "bits": 0.07842829142110466,
     "equivalent": true
    },
    "bound": {
     "abs": 1.5154544286135944e-13,
     "rel": Infinity
    },
-   "ns": 1.06258
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.08612513542175293,
+   "bounds": {
+    "abs": 1.5154544286135944e-13,
+    "rel": Infinity
+   },
+   "ns": 1.06564
   },
   "ours": {
    "program": "(if (> p1 0) (+ (/ (* m1 m1) (+ (sqrt (+ (* m1 m1) (* p1 p1))) p1)) (if (> p2 0) (/ (* m2 m2) (+ (sqrt (+ (* m2 m2) (* p2 p2))) p2)) (+ (- p2) (sqrt (+ (* m2 m2) (* p2 p2)))))) (if (> p2 0) (+ (/ (* m2 m2) (+ (sqrt (+ (* m2 m2) (* p2 p2))) p2)) (+ (- p1) (sqrt (+ (* m1 m1) (* p1 p1))))) (+ (+ (- p1) (sqrt (+ (* m1 m1) (* p1 p1)))) (+ (- p2) (sqrt (+ (* m2 m2) (* p2 p2)))))))",
    "measured": {
     "ulps": 2,
-    "mean": 0.1057,
+    "bits": 0.10549248125036058,
     "equivalent": true
    },
    "bound": {
     "abs": 1.4450884933138983e-11,
     "rel": 7.226441667291648e-13
    },
-   "ns": 1.40279
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.5940227508544922,
+   "bounds": {
+    "abs": 1.5154544286135944e-13,
+    "rel": 7.226441667291648e-13
+   },
+   "ns": 1.3946
   },
   "herbie": {
    "program": "(- (- (sqrt (+ (* p1 p1) (* m1 m1))) p2) (- p1 (sqrt (+ (* p2 p2) (* m2 m2)))))",
    "measured": {
     "ulps": 183,
-    "mean": 0.0959,
+    "bits": 0.08028202266603919,
     "equivalent": true
    },
    "bound": {
     "abs": 1.5154544286135944e-13,
     "rel": Infinity
    },
-   "ns": 1.064
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.49094384765625,
+   "ns": 1.06741
   }
  },
  "branching_programs/projectile-time.fpcore": {
-  "expected": "(> vy 0)",
   "daisy": {
-   "status": "fail"
+   "status": "fail",
+   "seconds": 7.75
   },
   "original": {
    "program": "(/ (+ vy (sqrt (+ (* vy vy) (* 2 (* g h))))) g)",
    "measured": {
     "ulps": 7549,
-    "mean": 0.3477,
+    "bits": 0.2885068599963798,
     "equivalent": true
    },
    "bound": {
     "abs": 7.460490538514893e-14,
     "rel": Infinity
    },
-   "ns": 0.819169
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.82021
   },
   "ours-plain": {
    "program": "(/ (+ vy (sqrt (+ (* vy vy) (* 2 (* g h))))) g)",
    "measured": {
     "ulps": 7549,
-    "mean": 0.3477,
+    "bits": 0.2885068599963798,
     "equivalent": true
    },
    "bound": {
     "abs": 7.460490538514893e-14,
     "rel": Infinity
    },
-   "ns": 0.818941
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.22322416305541992,
+   "bounds": {
+    "abs": 7.460490538514893e-14,
+    "rel": Infinity
+   },
+   "ns": 0.819907
   },
   "ours": {
    "program": "(if (> vy 0) (/ (+ (sqrt (+ (* vy vy) (* 2 (* g h)))) vy) g) (/ (/ (* 2 (* g h)) (+ (sqrt (+ (* vy vy) (* 2 (* g h)))) (* vy -1))) g))",
    "measured": {
     "ulps": 3,
-    "mean": 0.3524,
+    "bits": 0.3485816550066346,
     "equivalent": true
    },
    "bound": {
     "abs": 7.186350325348377e-11,
     "rel": 4.995624752734021e-13
    },
-   "ns": 1.10711
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.6382038593292236,
+   "bounds": {
+    "abs": 7.460490538514893e-14,
+    "rel": 4.99562475273402e-13
+   },
+   "ns": 1.11638
   },
   "herbie": {
    "program": "(/ (+ vy (sqrt (+ (* h g) (+ (* h g) (* vy vy))))) g)",
    "measured": {
     "ulps": 9990,
-    "mean": 0.3503,
+    "bits": 0.28909389646833816,
     "equivalent": true
    },
    "bound": {
     "abs": 1.0785147931537244e-13,
     "rel": Infinity
    },
-   "ns": 0.818673
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.24547900390625,
+   "ns": 0.82085
   }
  },
- "branching_programs/quadp.fpcore": {
-  "expected": "(> b 0)",
+ "branching_programs/quad2m.fpcore": {
   "daisy": {
-   "status": "fail"
+   "status": "fail",
+   "seconds": 13.45
   },
   "original": {
-   "program": "(/ (+ (- b) (sqrt (- (* b b) (* 4 (* a c))))) (* 2 a))",
+   "program": "(/ (- (- b_2) (sqrt (- (* b_2 b_2) (* a c)))) a)",
    "measured": {
-    "ulps": 2366,
-    "mean": 0.3891,
+    "ulps": 16824,
+    "bits": 0.2958095733995837,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 7.541745006279968e-13,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.826276
+  },
+  "ours-plain": {
+   "program": "(+ (* (/ b_2 a) -1) (/ (sqrt (+ (* b_2 b_2) (* (* a -1) c))) (* a -1)))",
+   "measured": {
+    "ulps": 23579,
+    "bits": 0.2949486093281086,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 7.53397344510761e-13,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.18059206008911133,
+   "bounds": {
+    "abs": 7.506217869491963e-13,
+    "rel": Infinity
+   },
+   "ns": 1.10199
+  },
+  "ours": {
+   "program": "(+ (* (/ b_2 a) -1) (/ (sqrt (+ (* b_2 b_2) (* (* a -1) c))) (* a -1)))",
+   "measured": {
+    "ulps": 23579,
+    "bits": 0.2949486093281086,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 7.53397344510761e-13,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.6291358470916748,
+   "bounds": {
+    "abs": 7.506217869491963e-13,
+    "rel": Infinity
+   },
+   "ns": 1.1026
+  },
+  "herbie": {
+   "program": "(/ (- (* (/ (* (- a) b_2) (sqrt (* a a))) a) (sqrt (* (* a a) (- (* b_2 b_2) (* c a))))) (* (sqrt (* a a)) a))",
+   "measured": {
+    "ulps": 23154,
+    "bits": 0.34779960188160275,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.4363004884393461e-10,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.701763916015625,
+   "ns": 1.67906
+  }
+ },
+ "branching_programs/quad2p.fpcore": {
+  "daisy": {
+   "status": "fail",
+   "seconds": 17.56
+  },
+  "original": {
+   "program": "(/ (+ (- b_2) (sqrt (- (* b_2 b_2) (* a c)))) a)",
+   "measured": {
+    "ulps": 14713,
+    "bits": 0.3048250998854962,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 7.541745006279968e-13,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.824912
+  },
+  "ours-plain": {
+   "program": "(+ (* (/ b_2 a) -1) (/ (sqrt (+ (* b_2 b_2) (* (* a -1) c))) a))",
+   "measured": {
+    "ulps": 24995,
+    "bits": 0.30418749649598603,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 7.533973445107608e-13,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.14383697509765625,
+   "bounds": {
+    "abs": 7.506217869491963e-13,
+    "rel": Infinity
+   },
+   "ns": 1.09938
+  },
+  "ours": {
+   "program": "(if (> b_2 0) (/ (/ (* (* a -1) c) (+ (sqrt (+ (* b_2 b_2) (* (* a -1) c))) b_2)) a) (/ (+ (sqrt (+ (* b_2 b_2) (* (* a -1) c))) (* b_2 -1)) a))",
+   "measured": {
+    "ulps": 3,
+    "bits": 0.35523789500201924,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 7.253575518013552e-11,
+    "rel": 7.254197242907334e-13
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.5841469764709473,
+   "bounds": {
+    "abs": 7.506217869491963e-13,
+    "rel": 7.226441667291648e-13
+   },
+   "ns": 0.954654
+  },
+  "herbie": {
+   "program": "(/ (- (sqrt (- (* b_2 b_2) (* c a))) (/ (* (* a a) b_2) (* a a))) a)",
+   "measured": {
+    "ulps": 14713,
+    "bits": 0.3059330240157957,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.322076113145743e-12,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 2.060885009765625,
+   "ns": 1.11266
+  }
+ },
+ "branching_programs/quadm.fpcore": {
+  "daisy": {
+   "status": "fail",
+   "seconds": 27.12
+  },
+  "original": {
+   "program": "(/ (- (- b) (sqrt (- (* b b) (* 4 (* a c))))) (* 2 a))",
+   "measured": {
+    "ulps": 3474,
+    "bits": 0.2959227010510822,
     "equivalent": true
    },
    "bound": {
     "abs": 2.0083934515469922e-13,
     "rel": Infinity
    },
-   "ns": 0.826453
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.861178
+  },
+  "ours-plain": {
+   "program": "(+ (/ (* b -1) (* 2 a)) (* (/ (sqrt (+ (* b b) (* -4 (* a c)))) (* -1 a)) 0.5))",
+   "measured": {
+    "ulps": 7225,
+    "bits": 0.2948552895565929,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.9906298831529897e-13,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.4947080612182617,
+   "bounds": {
+    "abs": 1.9906298831529892e-13,
+    "rel": Infinity
+   },
+   "ns": 1.12177
+  },
+  "ours": {
+   "program": "(+ (/ (- b) (* 2 a)) (* (/ (sqrt (+ (* b b) (* -4 (* a c)))) (* -1 a)) 0.5))",
+   "measured": {
+    "ulps": 7225,
+    "bits": 0.2948552895565929,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.9906298831529897e-13,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.1382951736450195,
+   "bounds": {
+    "abs": 1.9906298831529892e-13,
+    "rel": Infinity
+   },
+   "ns": 1.12063
+  },
+  "herbie": {
+   "program": "(- (* b (/ -0.5 a)) (/ (sqrt (- (* b b) (* (* c a) 4))) (+ a a)))",
+   "measured": {
+    "ulps": 3241,
+    "bits": 0.29584669244614364,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.0916492928080329e-13,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.727458984375,
+   "ns": 1.11234
+  }
+ },
+ "branching_programs/quadp.fpcore": {
+  "daisy": {
+   "status": "fail",
+   "seconds": 31.46
+  },
+  "original": {
+   "program": "(/ (+ (- b) (sqrt (- (* b b) (* 4 (* a c))))) (* 2 a))",
+   "measured": {
+    "ulps": 2366,
+    "bits": 0.29699600571263696,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 2.0083934515469922e-13,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.827746
   },
   "ours-plain": {
    "program": "(+ (/ (* b -1) (* 2 a)) (* (/ (sqrt (+ (* b b) (* -4 (* a c)))) a) 0.5))",
    "measured": {
     "ulps": 3685,
-    "mean": 0.5732,
+    "bits": 0.2994954068242899,
     "equivalent": true
    },
    "bound": {
     "abs": 1.9906298831529892e-13,
     "rel": Infinity
    },
-   "ns": 1.11912
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.5628302097320557,
+   "bounds": {
+    "abs": 1.9906298831529892e-13,
+    "rel": Infinity
+   },
+   "ns": 1.12038
   },
   "ours": {
    "program": "(* (if (> b 0) (/ (/ (* -4 (* a c)) (+ (sqrt (+ (* b b) (* -4 (* a c)))) b)) a) (/ (+ (sqrt (+ (* b b) (* -4 (* a c)))) (* b -1)) a)) 0.5)",
    "measured": {
     "ulps": 2,
-    "mean": 0.3549,
+    "bits": 0.3534888725024519,
     "equivalent": true
    },
    "bound": {
     "abs": 1.8517853916937137e-11,
     "rel": 1.8529622280998136e-13
    },
-   "ns": 0.968243
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 5.45394492149353,
+   "bounds": {
+    "abs": 1.9906298831529892e-13,
+    "rel": 1.8529622280998136e-13
+   },
+   "ns": 0.973852
   },
   "herbie": {
    "program": "(/ (- (sqrt (- (* b b) (* (* c a) 4))) b) (+ a a))",
    "measured": {
     "ulps": 2366,
-    "mean": 0.3891,
+    "bits": 0.29699600571263696,
     "equivalent": true
    },
    "bound": {
     "abs": 2.1205150914482872e-13,
     "rel": Infinity
    },
-   "ns": 0.826419
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.96722998046875,
+   "ns": 0.829497
+  }
+ },
+ "branching_programs/squareplus.fpcore": {
+  "daisy": {
+   "status": "fail",
+   "seconds": 4.98
+  },
+  "original": {
+   "program": "(/ (+ x (sqrt (+ (* x x) b))) 2)",
+   "measured": {
+    "ulps": 235,
+    "bits": 0.01916200900796329,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.773159728050821e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "ns": 0.534217
+  },
+  "ours-plain": {
+   "program": "(+ (* x 0.5) (* (sqrt (+ (* x x) b)) 0.5))",
+   "measured": {
+    "ulps": 235,
+    "bits": 0.01916200900796329,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.3290705182007585e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.1567070484161377,
+   "bounds": {
+    "abs": 5.3290705182007585e-15,
+    "rel": Infinity
+   },
+   "ns": 0.537663
+  },
+  "ours": {
+   "program": "(* (if (> x 0) (+ (sqrt (+ (* x x) b)) x) (/ b (/ (+ (sqrt (+ (* x x) b)) (+ (sqrt (+ (* x x) b)) (* x -2))) 2))) 0.5)",
+   "measured": {
+    "ulps": 2,
+    "bits": 0.2513584962500721,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 1.6372213536479436e-14,
+    "rel": 8.186106768239712e-15
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 1.5537819862365723,
+   "bounds": {
+    "abs": 4.884981308350696e-15,
+    "rel": 8.186106768239712e-15
+   },
+   "ns": 0.916762
+  },
+  "herbie": {
+   "program": "(* 0.5 (+ (sqrt (+ b (* x x))) x))",
+   "measured": {
+    "ulps": 235,
+    "bits": 0.01916200900796329,
+    "equivalent": true
+   },
+   "bound": {
+    "abs": 5.773159728050821e-15,
+    "rel": Infinity
+   },
+   "defined": {
+    "status": "defined"
+   },
+   "seconds": 0.443322998046875,
+   "ns": 0.533817
   }
  }
 }

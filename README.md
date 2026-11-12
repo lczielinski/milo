@@ -13,11 +13,12 @@ cargo install egglog-experimental --version 3.0.0
 ## Usage
 
 ```
-uv run milo program.fpcore [--iters N] [--no-branch] [--time-limit S]
+uv run milo program.fpcore [--iters N] [--no-branch] [--time-limit S] [--bound-only]
 ```
 
 prints the programs with the smallest absolute (`abs`) and relative (`rel`) error bounds. `--iters` sets the rewriting
 iterations (default 4), `--no-branch` adds no if-statements, and `--time-limit` caps extraction (default 120 s).
+`--bound-only` runs a sound error analysis.
 
 The input is an [FPCore] program with:
 

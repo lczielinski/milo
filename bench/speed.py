@@ -3,6 +3,7 @@ points, one core at a time on an otherwise idle machine."""
 
 import os
 import subprocess
+import sys
 import tempfile
 
 from sample import rounded
@@ -68,7 +69,10 @@ int main(void) {{
     with tempfile.TemporaryDirectory() as d:
         with open(os.path.join(d, "p.c"), "w") as f:
             f.write(source)
-        subprocess.run(["cc", "-O2", "-ffp-contract=off", "-fno-vectorize", "-fno-slp-vectorize",
-                        "-o", os.path.join(d, "p"), os.path.join(d, "p.c"), "-lm"], check=True, capture_output=True)
-        out = subprocess.run([os.path.join(d, "p")], check=True, capture_output=True, text=True).stdout
+        library = os.path.join(d, "p.dylib")
+        subprocess.run(["cc", "-O2", "-ffp-contract=off", "-fno-vectorize", "-fno-slp-vectorize", "-shared", "-fPIC",
+                        "-o", library, os.path.join(d, "p.c"), "-lm"], check=True, capture_output=True)
+        # The loops run as a library loaded by a fresh Python, not as an executable of their own.
+        out = subprocess.run([sys.executable, "-c", "import ctypes, sys; ctypes.CDLL(sys.argv[1]).main()", library],
+                             check=True, capture_output=True, text=True).stdout
     return dict(zip(programs, map(float, out.split())))

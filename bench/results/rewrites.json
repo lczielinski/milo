@@ -2,11 +2,11 @@
  "rewriting_programs/fpbench-daisy-005-matrixdeterminant.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.27480810546875,
+   "seconds": 1.9272880859375,
    "program": "(- (- (* (- (* h d) (* g e)) c) (* (- (* d i) (* g f)) b)) (* a (- (* h f) (* i e))))"
   },
   "daisy": {
-   "seconds": 8.45,
+   "seconds": 4.2,
    "status": "ok",
    "program": "(- (+ (+ (* (* a e) i) (* (* b f) g)) (* (* c d) h)) (+ (+ (* (* c e) g) (* (* b d) i)) (* (* a f) h)))"
   }
@@ -14,11 +14,11 @@
  "rewriting_programs/fpbench-daisy-006-matrixdeterminant2.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.272905029296875,
+   "seconds": 1.974550048828125,
    "program": "(- (- (* (- (* f g) (* d i)) b) (* (- (* f a) (* d c)) h)) (* (- (* c g) (* i a)) e))"
   },
   "daisy": {
-   "seconds": 8.83,
+   "seconds": 3.58,
    "status": "ok",
    "program": "(+ (+ (* g (* f b)) (* d (* h c))) (- (- (* (* a i) e) (* (* g e) c)) (+ (* f (* h a)) (* i (* d b)))))"
   }
@@ -26,11 +26,11 @@
  "rewriting_programs/fpbench-fptaylor-extra-001-delta4.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.58223193359375,
+   "seconds": 5.23617919921875,
    "program": "(- (* (- x2 x6) (- x5 x3)) (* (- (- x1 x2) (- (- x5 (- x4 x3)) (- x4 x6))) x1))"
   },
   "daisy": {
-   "seconds": 10.32,
+   "seconds": 4.59,
    "status": "ok",
    "program": "(+ (+ (- (* x3 (- x2)) (- (- (* x1 x4) (* x2 x5)) (* x6 (- x3 x5)))) (+ (* (- x2 x1) x1) (* (- x3 x4) x1))) (* x1 (+ x5 x6)))"
   }
@@ -38,11 +38,11 @@
  "rewriting_programs/fpbench-fptaylor-extra-002-delta.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.99206298828125,
+   "seconds": 5.337952880859375,
    "program": "(- (* (- (- x6 (- (- x2 x3) x1)) (- x5 x4)) (* x5 x2)) (- (* (+ (* x5 x4) (* x2 x1)) x6) (- (* (- (- (* (- (- x4 (- x6 x5)) (- (- x3 x1) x2)) x6) (* x2 x4)) (* x5 x1)) x3) (* (* (- (- (- x4 x5) x6) (- x3 (- x1 x2))) x4) x1))))"
   },
   "daisy": {
-   "seconds": 20.31,
+   "seconds": 9.24,
    "status": "ok",
    "program": "(+ (+ (+ (+ (* (* (- x1) x3) x5) (+ (* x3 (+ (* x6 (+ x4 (+ x1 (- x2 x3)))) (* x6 (- x5 x6)))) (* (* (- x3) x2) x4))) (* (* (- x1) x2) x6)) (* x6 (* x5 (- x4)))) (+ (+ (* (* x1 x4) (+ (+ (- x2 x1) (- x3 x4)) x5)) (* (* x1 x4) x6)) (+ (* (* x2 x5) x6) (* (* x2 x5) (- x1 (- (- x2 x3) (- x4 x5)))))))"
   }
@@ -50,11 +50,11 @@
  "rewriting_programs/fpbench-fptaylor-extra-014-nonlin2.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.54581591796875,
+   "seconds": 2.425285888671875,
    "program": "(/ -1 (- -1 (* y x)))"
   },
   "daisy": {
-   "seconds": 10.91,
+   "seconds": 4.58,
    "status": "ok",
    "program": "(/ (- (* x y) 1) (- (* x (* y (* x y))) 1))"
   }
@@ -62,11 +62,11 @@
  "rewriting_programs/fpbench-fptaylor-real2float-008-kepler0.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.832724853515625,
+   "seconds": 3.397904052734375,
    "program": "(- (* x1 x6) (- (* (- (- (- x4 x5) x2) (- x3 x1)) x1) (* (- x6 x2) (- x3 x5))))"
   },
   "daisy": {
-   "seconds": 9.1,
+   "seconds": 3.39,
    "status": "ok",
    "program": "(+ (+ (+ (* x3 (- x6 x2)) (* x5 (- x2 x6))) (+ (* x1 (- x2 x1)) (* x1 (- x3 x4)))) (* x1 (+ x6 x5)))"
   }
@@ -74,11 +74,11 @@
  "rewriting_programs/fpbench-fptaylor-real2float-009-kepler1.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.147985107421875,
+   "seconds": 4.09234912109375,
    "program": "(+ (* x3 (- (- x1 (- (- x3 x2) x4)) (* x2 x4))) (- (- (* (- x3 (- (- x2 x1) x4)) x2) (* (- (- x4 (- x3 x1)) x2) (* x4 x1))) (+ (* x1 (+ x3 x2)) x4)))"
   },
   "daisy": {
-   "seconds": 9.55,
+   "seconds": 4.23,
    "status": "ok",
    "program": "(- (+ (* x1 (+ (* (- x2 x1) x4) (* x4 (- x3 x4)))) (- (+ (* x3 (+ (- x2 x3) x4)) (* x3 x1)) (- (* (* x2 x3) x4) (+ (* x2 x3) (* x2 (+ (- x1 x2) x4)))))) (+ (+ x4 (* x1 x2)) (* x3 x1)))"
   }
@@ -86,11 +86,11 @@
  "rewriting_programs/fpbench-fptaylor-real2float-010-kepler2.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.36766796875,
+   "seconds": 4.423008056640625,
    "program": "(- (* (- (- (* (- (- x5 x6) (- (- (- x3 x1) x2) x4)) x6) (* x2 x4)) (* x5 x1)) x3) (- (* (- (- (- x4 x5) x6) (- x3 (- x1 x2))) (* x4 x1)) (- (* (- (- x6 (- (- x2 x3) x1)) (- x5 x4)) (* x5 x2)) (* (+ (* x5 x4) (* x2 x1)) x6))))"
   },
   "daisy": {
-   "seconds": 11.37,
+   "seconds": 5.1,
    "status": "ok",
    "program": "(+ (+ (+ (* (* x2 x5) (+ x3 (+ (- x1 x2) (- x4 x5)))) (* (* x2 x5) x6)) (+ (* (* x4 x1) (+ (+ (- x2 x1) (- x3 x4)) x5)) (* (* x1 x4) x6))) (- (- (- (* x3 (+ (* (+ (+ x1 (- x2 x3)) x4) x6) (* (- x5 x6) x6))) (+ (* (* x2 x3) x4) (* x3 (* x1 x5)))) (* (* x1 x2) x6)) (* (* x4 x5) x6)))"
   }
@@ -98,11 +98,11 @@
  "rewriting_programs/fpbench-fptaylor-tests-005-test04-dqmom9.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 6.3040830078125,
+   "seconds": 7.058176025390625,
    "program": "(- (- (- (* (/ (* (* a2 -3) a2) w2) m2) (* (* (* 3 m1) a1) (/ a1 w1)))) (* (* m0 w0) (* a0 (/ (* a0 -3) (* w0 w0)))))"
   },
   "daisy": {
-   "seconds": 16.72,
+   "seconds": 8.4,
    "status": "ok",
    "program": "(+ (* (* w0 (- m0)) (* (- 3) (* (/ a0 w0) (/ a0 w0)))) (+ (* (* w1 (- m1)) (* (- 3) (* (/ a1 w1) (/ a1 w1)))) (* (* w2 (- m2)) (* (- 3) (* (/ a2 w2) (/ a2 w2))))))"
   }
@@ -110,11 +110,11 @@
  "rewriting_programs/fpbench-fptaylor-tests-006-test05-nonlin1-r4.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.654112060546875,
+   "seconds": 2.36335205078125,
    "program": "(/ (- x 1) (+ (* x (- x 1)) (- x 1)))"
   },
   "daisy": {
-   "seconds": 7.62,
+   "seconds": 3.95,
    "status": "ok",
    "program": "(/ (- x 1) (- (* x x) 1))"
   }
@@ -122,11 +122,11 @@
  "rewriting_programs/fpbench-fptaylor-tests-008-test06-sums4-sum1.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 1.162591064453125,
+   "seconds": 1.133964111328125,
    "program": "(+ (+ (+ x0 x1) x2) x3)"
   },
   "daisy": {
-   "seconds": 5.62,
+   "seconds": 3.58,
    "status": "ok",
    "program": "(+ (+ (+ x0 x1) x2) x3)"
   }
@@ -134,11 +134,11 @@
  "rewriting_programs/fpbench-fptaylor-tests-009-test06-sums4-sum2.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 1.19314892578125,
+   "seconds": 1.024544921875,
    "program": "(+ x3 (+ x2 (+ x1 x0)))"
   },
   "daisy": {
-   "seconds": 6.01,
+   "seconds": 2.58,
    "status": "ok",
    "program": "(+ (+ x0 x1) (+ x2 x3))"
   }
@@ -146,11 +146,11 @@
  "rewriting_programs/fpbench-graphics-000-an-eigenvalue-calculation-from-tng.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 5.0633759765625,
+   "seconds": 4.844541015625,
    "program": "(* (- (- (- (* (+ (+ c b) (+ d a)) (- (- a c) (- b d))) (* d d)) (- (* a a) (* (+ a a) d))) (* (- c b) (- b c))) (/ 1 (+ (sqrt (- (* (+ c b) (+ c b)) (* (- d a) (- a d)))) (sqrt (- (* (+ d a) (+ d a)) (* (- c b) (- b c)))))))"
   },
   "daisy": {
-   "seconds": 8.37,
+   "seconds": 3.78,
    "status": "ok",
    "program": "(- (sqrt (+ (* (+ a d) d) (+ (* (- b c) (- b c)) (* (+ a d) a)))) (sqrt (+ (* (- a d) (- a d)) (+ (* (+ b c) b) (* (+ b c) c)))))"
   }
@@ -158,11 +158,11 @@
  "rewriting_programs/fpbench-hamming-ch3-000-nmse-example-3-1.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 1.529662841796875,
+   "seconds": 2.000302978515625,
    "program": "(- (sqrt (- 0.5 (- -0.5 x))) (sqrt x))"
   },
   "daisy": {
-   "seconds": 7.2,
+   "seconds": 3.25,
    "status": "ok",
    "program": "(- (sqrt (+ x 1)) (sqrt x))"
   }
@@ -170,11 +170,11 @@
  "rewriting_programs/fpbench-hamming-ch3-005-nmse-problem-3-3-1.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.932574951171875,
+   "seconds": 2.9633779296875,
    "program": "(/ -1 (+ (* x x) x))"
   },
   "daisy": {
-   "seconds": 6.11,
+   "seconds": 2.84,
    "status": "ok",
    "program": "(- (/ 1 (+ x 1)) (/ 1 x))"
   }
@@ -182,11 +182,11 @@
  "rewriting_programs/fpbench-hamming-ch3-012-nmse-p42-positive.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.696869873046875,
+   "seconds": 4.90564013671875,
    "program": "(/ (+ (- b) (sqrt (- (* b b) (* 4 (* a c))))) (* 2 a))"
   },
   "daisy": {
-   "seconds": 7.44,
+   "seconds": 3.39,
    "status": "ok",
    "program": "(/ (+ (- b) (sqrt (- (* b b) (* 4 (* a c))))) (* 2 a))"
   }
@@ -194,11 +194,11 @@
  "rewriting_programs/fpbench-hamming-ch3-014-nmse-problem-3-2-1-positive.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 6.726126953125,
+   "seconds": 8.159256103515625,
    "program": "(* (- b2 (sqrt (- (* b2 b2) (* c a)))) (/ -1 a))"
   },
   "daisy": {
-   "seconds": 7.29,
+   "seconds": 3.45,
    "status": "ok",
    "program": "(/ (+ (- b2) (sqrt (- (* b2 b2) (* a c)))) a)"
   }
@@ -206,11 +206,11 @@
  "rewriting_programs/fpbench-rosa-002-doppler3.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 1.759944091796875,
+   "seconds": 1.876329833984375,
    "program": "(* v (/ (- -331.4 (* T 0.6)) (* (- u (- -331.4 (* T 0.6))) (- u (- -331.4 (* T 0.6))))))"
   },
   "daisy": {
-   "seconds": 18.37,
+   "seconds": 9.55,
    "status": "ok",
    "program": "(/ (* v (/ (- (- 331.4) (* 0.6 T)) (+ (+ (* 0.6 T) u) 331.4))) (+ (+ (* 0.6 T) u) 331.4))"
   }
@@ -218,11 +218,11 @@
  "rewriting_programs/fpbench-rosa-003-rigidbody1.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 1.278791015625,
+   "seconds": 1.475492919921875,
    "program": "(- (- (* (- (- (- x3) x1) x3) x2) x1) x3)"
   },
   "daisy": {
-   "seconds": 6.21,
+   "seconds": 3.27,
    "status": "ok",
    "program": "(- (- (- (* x1 x2)) (+ x1 x3)) (* (* 2 x2) x3))"
   }
@@ -230,11 +230,11 @@
  "rewriting_programs/fpbench-rosa-004-rigidbody2.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 1.6986279296875,
+   "seconds": 1.6695810546875,
    "program": "(- (- (* (* x3 x1) (* x2 (- 2 x2))) (* (* x3 x3) -6)) x2)"
   },
   "daisy": {
-   "seconds": 6.68,
+   "seconds": 3.45,
    "status": "ok",
    "program": "(- (+ (- (* 3 (* x3 x3)) x2) (* (+ (* (* 2 x1) x2) (* x3 3)) x3)) (* (* x1 x2) (* x2 x3)))"
   }
@@ -242,22 +242,22 @@
  "rewriting_programs/fpbench-rosa-005-jetengine.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.23085595703125,
+   "seconds": 4.747259033203125,
    "program": "(+ x1 (* (- (* (+ (+ (+ (* (/ (- (- (- x1 x2) x2) (* (* 3 x1) x1)) (- -1 (* x1 x1))) (* (* 3 x1) x1)) (* (* x1 x1) x1)) (* (+ (* (- (* (/ (- (- (- x1 x2) x2) (* (* 3 x1) x1)) (- -1 (* x1 x1))) 4) 6) (* x1 x1)) (* (* (- (/ (- (- (- x1 x2) x2) (* (* 3 x1) x1)) (- -1 (* x1 x1))) 3) (/ (- (- (- x1 x2) x2) (* (* 3 x1) x1)) (- -1 (* x1 x1)))) (+ x1 x1))) (- (* x1 x1) -1))) x1) (/ (- (* x1 x1) -1) (- (- (- (* (* 3 x1) x1) x2) x2) x1))) -3) (/ (- (- (- (* (* 3 x1) x1) x2) x2) x1) (- (* x1 x1) -1))))"
   },
   "daisy": {
-   "seconds": 5.87,
+   "seconds": 2.81,
    "status": "fail"
   }
  },
  "rewriting_programs/fpbench-rosa-007-turbine2.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 3.246607177734375,
+   "seconds": 4.04381396484375,
    "program": "(- (* v (- 6 (* (* r r) (/ (* (* w w) -0.5) (- v 1))))) 2.5)"
   },
   "daisy": {
-   "seconds": 12.47,
+   "seconds": 5.89,
    "status": "ok",
    "program": "(- (- (* v 6) 2.5) (/ (* (* (* v 0.5) (* w w)) (* r r)) (- 1 v)))"
   }
@@ -265,11 +265,11 @@
  "rewriting_programs/fpbench-rosa-019-triangle.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 3.524179931640625,
+   "seconds": 4.483994140625,
    "program": "(sqrt (* (- (* 0.5 b) (- a (* (+ c a) 0.5))) (* (* (* (+ (+ c b) a) 0.5) (- (* (+ (+ c b) a) 0.5) c)) (- (* (+ (+ c b) a) 0.5) b))))"
   },
   "daisy": {
-   "seconds": 17.98,
+   "seconds": 8.89,
    "status": "ok",
    "program": "(sqrt (* (/ (+ (+ (* c (- (/ (+ c (+ a b)) 2) a)) (* (- (/ (+ (+ a b) c) 2) a) b)) (* (- (/ (+ (+ a b) c) 2) a) a)) 2) (* (- (/ (+ (+ c b) a) 2) b) (- (/ (+ (+ b a) c) 2) c))))"
   }
@@ -277,11 +277,11 @@
  "rewriting_programs/fpbench-rump-000-rump-s-example-with-pow.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.652637939453125,
+   "seconds": 4.440553955078125,
    "program": "(- (* (* (* (* (* (* b b) b) b) b) b) 333.75) (- (* (- (* b (- (* (* (* b b) b) (- (* b b) -121)) (* (* 11 (* a a)) b))) -2) (* a a)) (- (/ a (+ b b)) (* -5.5 (* (* (* (* (* (* (* b b) b) b) b) b) b) b)))))"
   },
   "daisy": {
-   "seconds": 10.53,
+   "seconds": 4.71,
    "status": "ok",
    "program": "(+ (* (* b (* (* (* (* 333.75 b) b) b) b)) b) (+ (+ (* (* a a) (- (- (* (* 11 (* a a)) (* b b)) (* (* b (* (* (* b b) b) b)) b)) (+ (* (* (* b b) b) (* b 121)) 2))) (/ a (* 2 b))) (* (* (* (* (* (* (* 5.5 (* b b)) b) b) b) b) b) b)))"
   }
@@ -289,11 +289,11 @@
  "rewriting_programs/fpbench-rump-001-rump-s-example-from-c-program.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.83502001953125,
+   "seconds": 5.281940185546875,
    "program": "(- (- (/ a (+ b b)) (* (* (* (* (* (* -333.75 b) b) b) b) b) b)) (- (* (- (- (* (* (* b b) (* b b)) (- (* b b) -121)) -2) (* (* 11 (* a a)) (* b b))) (* a a)) (* (* (* (* (* b b) (* b b)) (* b b)) (* b b)) 5.5)))"
   },
   "daisy": {
-   "seconds": 12.68,
+   "seconds": 5.95,
    "status": "ok",
    "program": "(+ (+ (* b (* (* (* b (* b (* b (* (* 5.5 b) b)))) b) b)) (/ a (* b 2))) (+ (* (* (* (* (* (* 333.75 b) b) b) b) b) b) (* (- (- (- (* (* 11 (* a a)) (* b b)) (* (* (* (* b b) b) b) (* b b))) (* 121 (* (* b b) (* b b)))) 2) (* a a))))"
   }
@@ -301,11 +301,11 @@
  "rewriting_programs/fpbench-rump-002-rump-s-example-revisited-for-floating-po.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 5.800201171875,
+   "seconds": 5.92277392578125,
    "program": "(+ (* (- (* (* b b) (- (* 11 (* a a)) (* 121 (* b b)))) 2) (* a a)) (- (* (* (* (* b (* (* b b) b)) (- 333.75 (* a a))) b) b) (- (* -5.5 (* b (* (* (* b (* (* b b) b)) (* b b)) b))) (/ a (+ b b)))))"
   },
   "daisy": {
-   "seconds": 11.82,
+   "seconds": 5.98,
    "status": "ok",
    "program": "(+ (+ (* (* (* (* (* b (* b (* (* b 5.5) b))) b) b) b) b) (/ a (* 2 b))) (+ (* b (* b (* (* b b) (* b (* (- 333.75 (* a a)) b))))) (* (* a a) (- (- (* (* b b) (* 11 (* a a))) (* (* (* b b) (* b b)) 121)) 2))))"
   }
@@ -313,22 +313,22 @@
  "rewriting_programs/herbie-demo-006-sqrt-sqr.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 0.86198779296875,
+   "seconds": 0.804676025390625,
    "program": "(/ (- x (sqrt (* x x))) x)"
   },
   "daisy": {
-   "seconds": 4.89,
+   "seconds": 2.8,
    "status": "fail"
   }
  },
  "rewriting_programs/herbie-demo-010-x-1-to-x-20.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 8.631309814453125,
+   "seconds": 8.350406982421875,
    "program": "(* (* (* (* (* (* (* (* (- x 14) (* (* (- x 11) (* (- x 8) (* (- x 7) (* (- x 6) (* (- x 5) (* (- x 4) (* (- x 3) (* (- x 2) (- x 1))))))))) (* (- x 10) (- x 9)))) (* (- x 13) (- x 12))) (- x 15)) (- x 16)) (- x 17)) (- x 18)) (- x 19)) (- x 20))"
   },
   "daisy": {
-   "seconds": 160.01,
+   "seconds": 125.61,
    "status": "ok",
    "program": "(* (* (* (- x 20) (* (* (- x 12) (- x 10)) (* (* (* (* (- x 1) (- x 2)) (* (* (* (* (- x 3) (- x 5)) (- x 4)) (- x 6)) (- x 7))) (- x 8)) (- x 9)))) (* (- x 13) (- x 11))) (* (- x 14) (* (* (* (* (- x 16) (- x 17)) (- x 18)) (- x 15)) (- x 19))))"
   }
@@ -336,11 +336,11 @@
  "rewriting_programs/herbie-hamming-rearrangement-000-2sqrt-example-3-1.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.052760009765625,
+   "seconds": 2.14066796875,
    "program": "(/ (sqrt (/ -2 (- (- -2 x) x))) (- (sqrt (/ (+ x x) (- x (- -2 x)))) -1))"
   },
   "daisy": {
-   "seconds": 5.25,
+   "seconds": 2.79,
    "status": "ok",
    "program": "(- (sqrt (+ x 1)) (sqrt x))"
   }
@@ -348,22 +348,22 @@
  "rewriting_programs/herbie-hamming-rearrangement-001-2isqrt-example-3-6.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 5.46010791015625,
+   "seconds": 5.274096923828125,
    "program": "(/ (- (- x -1) x) (* (+ (sqrt (- x -1)) (/ x (sqrt x))) (sqrt (+ (* x x) x))))"
   },
   "daisy": {
-   "seconds": 4.16,
+   "seconds": 2.48,
    "status": "fail"
   }
  },
  "rewriting_programs/herbie-haskell-004-optimisation-circlepacking-place-from-ci.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 7.36654296875,
+   "seconds": 7.662654052734375,
    "program": "(+ (* (/ y a) z) (+ (* (/ y a) (- t)) x))"
   },
   "daisy": {
-   "seconds": 6.12,
+   "seconds": 2.95,
    "status": "ok",
    "program": "(+ x (/ (* y (- z t)) a))"
   }
@@ -371,11 +371,11 @@
  "rewriting_programs/herbie-haskell-017-data-colour-rgbspace-hsl-hsl-from-colour.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.001934814453125,
+   "seconds": 2.023530029296875,
    "program": "(- x (* y (- x 1)))"
   },
   "daisy": {
-   "seconds": 5.49,
+   "seconds": 2.79,
    "status": "ok",
    "program": "(- (+ x y) (* x y))"
   }
@@ -383,11 +383,11 @@
  "rewriting_programs/herbie-haskell-046-diagrams-solve-polynomial-cubform-from-d.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 1.102654052734375,
+   "seconds": 0.64893798828125,
    "program": "(- (* x (* y 3)) z)"
   },
   "daisy": {
-   "seconds": 5.74,
+   "seconds": 2.76,
    "status": "ok",
    "program": "(- (* (* x 3) y) z)"
   }
@@ -395,11 +395,11 @@
  "rewriting_programs/herbie-haskell-054-diagrams-solve-polynomial-cubform-from-d.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.804244873046875,
+   "seconds": 2.7846689453125,
    "program": "(/ (- (/ (- b (* -9 (* y x))) z) (* (* a t) 4)) c)"
   },
   "daisy": {
-   "seconds": 7.21,
+   "seconds": 3.31,
    "status": "ok",
    "program": "(/ (/ (- (+ b (* y (* x 9))) (* (* z (* 4 t)) a)) z) c)"
   }
@@ -407,11 +407,11 @@
  "rewriting_programs/herbie-haskell-056-diagrams-solve-polynomial-quartform-from.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 0.533364013671875,
+   "seconds": 0.477294921875,
    "program": "(- x (* y 0.375))"
   },
   "daisy": {
-   "seconds": 5.78,
+   "seconds": 2.91,
    "status": "ok",
    "program": "(- x (* 0.375 y))"
   }
@@ -419,11 +419,11 @@
  "rewriting_programs/herbie-haskell-057-diagrams-solve-polynomial-quartform-from.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.447446044921875,
+   "seconds": 2.643463134765625,
    "program": "(* -0.5 (- (+ (* z y) (- (* -0.25 x) t)) t))"
   },
   "daisy": {
-   "seconds": 6.41,
+   "seconds": 3.07,
    "status": "ok",
    "program": "(+ (- (* 0.125 x) (/ (* y z) 2)) t)"
   }
@@ -431,11 +431,11 @@
  "rewriting_programs/herbie-haskell-059-diagrams-solve-polynomial-quartform-from.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.516650146484375,
+   "seconds": 2.850658935546875,
    "program": "(/ (/ 1 (/ -8 (* z (- z (* 4 (* y x)))))) z)"
   },
   "daisy": {
-   "seconds": 6.33,
+   "seconds": 2.68,
    "status": "ok",
    "program": "(/ (- (* (* x y) 8) (* 2 z)) 16)"
   }
@@ -443,11 +443,11 @@
  "rewriting_programs/herbie-haskell-071-main-bigenough3-from-c.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.180071044921875,
+   "seconds": 2.289453857421875,
    "program": "(/ 1 (+ (sqrt x) (sqrt (- x -1))))"
   },
   "daisy": {
-   "seconds": 6.18,
+   "seconds": 2.66,
    "status": "ok",
    "program": "(- (sqrt (+ x 1)) (sqrt x))"
   }
@@ -455,11 +455,11 @@
  "rewriting_programs/herbie-haskell-086-linear-matrix-det44-from-linear-1-19-1-3.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 6.914492919921875,
+   "seconds": 6.8525869140625,
    "program": "(- (* (- (* b a) (* i c)) (- (* y x) (* t z))) (- (- (- (- (* (- (* y0 b) (* y1 i)) (- (* j x) (* k z))) (* (- (* y0 c) (* y1 a)) (- (* y2 x) (* y3 z)))) (* (- (* y4 b) (* y5 i)) (- (* j t) (* k y)))) (* (- (* y3 y) (* y2 t)) (- (* y4 c) (* y5 a)))) (* (- (* y4 y1) (* y5 y0)) (- (* y2 k) (* y3 j)))))"
   },
   "daisy": {
-   "seconds": 10.88,
+   "seconds": 4.37,
    "status": "ok",
    "program": "(+ (- (+ (+ (- (* (- (* x y) (* z t)) (- (* a b) (* c i))) (* (- (* x j) (* z k)) (- (* y0 b) (* y1 i)))) (* (- (* x y2) (* z y3)) (- (* y0 c) (* y1 a)))) (* (- (* t j) (* y k)) (- (* y4 b) (* y5 i)))) (* (- (* t y2) (* y y3)) (- (* y4 c) (* y5 a)))) (* (- (* k y2) (* j y3)) (- (* y4 y1) (* y5 y0))))"
   }
@@ -467,11 +467,11 @@
  "rewriting_programs/herbie-haskell-100-main-z-from.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.03285986328125,
+   "seconds": 3.796172119140625,
    "program": "(+ (+ (+ (/ (- (- x -1) x) (+ (sqrt (- x -1)) (sqrt x))) (/ (- (- y -1) y) (+ (sqrt (- y -1)) (sqrt y)))) (/ (- (- z -1) z) (+ (sqrt (- z -1)) (sqrt z)))) (/ 1 (+ (sqrt t) (sqrt (- t -1)))))"
   },
   "daisy": {
-   "seconds": 9.59,
+   "seconds": 4.32,
    "status": "ok",
    "program": "(+ (+ (+ (- (sqrt (+ x 1)) (sqrt x)) (- (sqrt (+ y 1)) (sqrt y))) (- (sqrt (+ z 1)) (sqrt z))) (- (sqrt (+ t 1)) (sqrt t)))"
   }
@@ -479,11 +479,11 @@
  "rewriting_programs/herbie-haskell-111-diagrams-tangent-catparam-from-diagrams-.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.83790185546875,
+   "seconds": 2.741376220703125,
    "program": "(- (* (/ (- (- (- -3 (- (* -12 x) -3)) (* (- -12 (* -9 x)) x)) (- (* -9 (* x x)))) -2) 0.5) (* (- -3 (* x (- -12 (* -9 x)))) 0.5))"
   },
   "daisy": {
-   "seconds": 6.2,
+   "seconds": 3.0,
    "status": "ok",
    "program": "(+ (* x (* (- (* x 3) 4) 3)) 3)"
   }
@@ -491,11 +491,11 @@
  "rewriting_programs/herbie-haskell-121-graphics-rendering-chart-axis-types-invl.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 3.330913818359375,
+   "seconds": 3.600199951171875,
    "program": "(/ (- (* t (- y z)) (* x (- (- z (- a y)) z))) (- a z))"
   },
   "daisy": {
-   "seconds": 8.14,
+   "seconds": 3.7,
    "status": "ok",
    "program": "(+ x (/ (* (- y z) (- t x)) (- a z)))"
   }
@@ -503,11 +503,11 @@
  "rewriting_programs/herbie-haskell-134-system-random-mwc-distributions-standard.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 1.228403076171875,
+   "seconds": 1.515989013671875,
    "program": "(* 0.5 (- (* x x) y))"
   },
   "daisy": {
-   "seconds": 6.49,
+   "seconds": 2.82,
    "status": "ok",
    "program": "(* 0.5 (- (* x x) y))"
   }
@@ -515,11 +515,11 @@
  "rewriting_programs/herbie-haskell-148-data-number-erf-cinvnormcdf-from-erf-2-0.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.41485400390625,
+   "seconds": 2.804801025390625,
    "program": "(/ (- (* (/ (+ (/ (* y -2) (* y x)) x) -2) (* y x)) x) (- -1 (* (* 0.5 x) y)))"
   },
   "daisy": {
-   "seconds": 7.1,
+   "seconds": 3.13,
    "status": "ok",
    "program": "(- x (/ y (+ 1 (/ (* x y) 2))))"
   }
@@ -527,11 +527,11 @@
  "rewriting_programs/herbie-haskell-161-development-shake-progress-decay-from-sh.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.95302490234375,
+   "seconds": 3.717455078125,
    "program": "(/ (+ (* x y) (* z (- t a))) (+ y (- (* b z) (* z y))))"
   },
   "daisy": {
-   "seconds": 7.51,
+   "seconds": 4.08,
    "status": "ok",
    "program": "(/ (+ (* x y) (* z (- t a))) (+ y (* z (- b y))))"
   }
@@ -539,11 +539,11 @@
  "rewriting_programs/herbie-haskell-163-diagrams-backend-rasterific-crender-from.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 1.056455078125,
+   "seconds": 1.170427978515625,
    "program": "(+ (* x y) (* (- 1 x) z))"
   },
   "daisy": {
-   "seconds": 5.69,
+   "seconds": 3.45,
    "status": "ok",
    "program": "(+ (* x y) (* (- 1 x) z))"
   }
@@ -551,11 +551,11 @@
  "rewriting_programs/herbie-haskell-166-graphics-rendering-chart-axis-types-hbuf.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 0.787031982421875,
+   "seconds": 0.8190390625,
    "program": "(- (* 0.5 x) (- (* 0.5 y) x))"
   },
   "daisy": {
-   "seconds": 5.57,
+   "seconds": 3.52,
    "status": "ok",
    "program": "(+ x (/ (- x y) 2))"
   }
@@ -563,11 +563,11 @@
  "rewriting_programs/herbie-haskell-167-graphics-rendering-chart-axis-types-linm.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 3.949182861328125,
+   "seconds": 4.216152099609375,
    "program": "(+ (* (/ (- x y) (- t a)) z) (+ (* (/ (- x y) (- t a)) (- t)) x))"
   },
   "daisy": {
-   "seconds": 7.79,
+   "seconds": 3.43,
    "status": "ok",
    "program": "(+ x (* (- y x) (/ (- z t) (- a t))))"
   }
@@ -575,11 +575,11 @@
  "rewriting_programs/herbie-haskell-176-ai-clustering-hierarchical-internal-ward.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 5.536239013671875,
+   "seconds": 5.408712890625,
    "program": "(/ (+ (* a t) (+ (* y (- a b)) (* (+ y x) z))) (+ t (+ y x)))"
   },
   "daisy": {
-   "seconds": 8.05,
+   "seconds": 3.34,
    "status": "ok",
    "program": "(/ (+ (- (* z (+ y x)) (* b y)) (* a (+ t y))) (+ t (+ y x)))"
   }
@@ -587,11 +587,11 @@
  "rewriting_programs/herbie-haskell-178-numeric-specfunctions-inverfc-from-math-.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 3.259255859375,
+   "seconds": 3.78722802734375,
    "program": "(* 0.70711 (/ (- (* x (- 0.27061 (* (- (* 0.04481 x) -0.99229) x))) (- x 2.30753)) (- (* (- (* 0.04481 x) -0.99229) x) -1)))"
   },
   "daisy": {
-   "seconds": 12.89,
+   "seconds": 5.38,
    "status": "ok",
    "program": "(* (- (/ (+ (* x 0.27061) 2.30753) (+ (* 0.99229 x) (+ (* (* x 0.04481) x) 1))) x) 0.70711)"
   }
@@ -599,11 +599,11 @@
  "rewriting_programs/herbie-haskell-181-numeric-specfunctions-loggamma-from-math.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 3.435782958984375,
+   "seconds": 3.654419921875,
    "program": "(* (- z (+ (* x (* -137.519416416 x)) (* x (- (- y) (* (* x x) (- (* 4.16438922228 x) -78.6994924154)))))) (/ (- 2 x) (- -47.066876606 (* (- (* (- (* (- x -43.3400022514) x) -263.505074721) x) -313.399215894) x))))"
   },
   "daisy": {
-   "seconds": 17.99,
+   "seconds": 7.37,
    "status": "ok",
    "program": "(* (- x 2) (/ (+ z (* x (+ (+ y (* (* (+ (* x 4.16438922228) 78.6994924154) x) x)) (* 137.519416416 x)))) (+ 47.066876606 (* x (+ (* (+ 263.505074721 (* x (+ x 43.3400022514))) x) 313.399215894)))))"
   }
@@ -611,11 +611,11 @@
  "rewriting_programs/herbie-haskell-182-numeric-specfunctions-loggamma-from-math.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 3.2344609375,
+   "seconds": 3.687472900390625,
    "program": "(+ x (/ (* y (- (* a z) (- (* (* (- (* (- -11.1667541262 (* 3.13060547623 z)) z) t) z) z) b))) (+ (* (- (* (* z z) (- z -15.234687407)) (- -11.9400905721 (* 31.4690115749 z))) z) 0.607771387771)))"
   },
   "daisy": {
-   "seconds": 24.51,
+   "seconds": 9.73,
    "status": "ok",
    "program": "(+ x (* (+ (* (+ (* (+ t (* (+ (* z 3.13060547623) 11.1667541262) z)) z) a) z) b) (/ y (+ 0.607771387771 (* (+ 11.9400905721 (* z (+ 31.4690115749 (* z (+ 15.234687407 z))))) z)))))"
   }
@@ -623,11 +623,11 @@
  "rewriting_programs/herbie-haskell-194-numeric-specfunctions-invincompletegamma.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.80006298828125,
+   "seconds": 2.4523291015625,
    "program": "(- (* -0.253 x) (- (* (* 0.12 x) x) 1))"
   },
   "daisy": {
-   "seconds": 6.61,
+   "seconds": 2.53,
    "status": "ok",
    "program": "(- 1 (* x (+ 0.253 (* x 0.12))))"
   }
@@ -635,11 +635,11 @@
  "rewriting_programs/herbie-haskell-196-numeric-specfunctions-invincompletegamma.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 3.768329833984375,
+   "seconds": 4.05343798828125,
    "program": "(/ (- (* x (- 0.27061 (* (- (* 0.04481 x) -0.99229) x))) (- x 2.30753)) (- (* (- (* 0.04481 x) -0.99229) x) -1))"
   },
   "daisy": {
-   "seconds": 9.61,
+   "seconds": 3.43,
    "status": "ok",
    "program": "(- (/ (+ 2.30753 (* 0.27061 x)) (+ (+ 1 (* (* x 0.04481) x)) (* 0.99229 x))) x)"
   }
@@ -647,11 +647,11 @@
  "rewriting_programs/herbie-haskell-197-numeric-specfunctions-invincompletegamma.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.93819287109375,
+   "seconds": 5.03810302734375,
    "program": "(- (/ -1/9 x) (- (/ y (sqrt (* 9 x))) 1))"
   },
   "daisy": {
-   "seconds": 7.16,
+   "seconds": 3.42,
    "status": "ok",
    "program": "(- (- 1 (/ 0.1111111111111111 x)) (/ (/ y 3) (sqrt x)))"
   }
@@ -659,11 +659,11 @@
  "rewriting_programs/herbie-haskell-198-numeric-specfunctions-incompletebetaappr.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 5.12810498046875,
+   "seconds": 5.33066796875,
    "program": "(/ (* x y) (+ (* (- y (- -1 x)) (- (* x x) (* -2 (* y x)))) (* (- y (- -1 x)) (* y y))))"
   },
   "daisy": {
-   "seconds": 10.94,
+   "seconds": 5.61,
    "status": "ok",
    "program": "(* (/ (/ x (+ x y)) (+ x y)) (/ y (+ y (+ x 1))))"
   }
@@ -671,11 +671,11 @@
  "rewriting_programs/herbie-haskell-203-numeric-specfunctions-invincompletebetaw.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 3.2769619140625,
+   "seconds": 3.35831396484375,
    "program": "(/ (+ (- (* x (- (* (- (* 0.04481 x) -0.99229) x) 0.27061)) 2.30753) x) (- (* (- (* 0.04481 x) -0.99229) x) -1))"
   },
   "daisy": {
-   "seconds": 8.4,
+   "seconds": 4.38,
    "status": "ok",
    "program": "(- x (/ (+ 2.30753 (* 0.27061 x)) (+ (+ 1 (* x (* x 0.04481))) (* x 0.99229))))"
   }
@@ -683,11 +683,11 @@
  "rewriting_programs/herbie-haskell-207-numeric-specfunctions-invincompletebetaw.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 5.038051025390625,
+   "seconds": 5.6127421875,
    "program": "(/ (- (* x x) 3) 6)"
   },
   "daisy": {
-   "seconds": 4.89,
+   "seconds": 3.08,
    "status": "ok",
    "program": "(/ (- (* x x) 3) 6)"
   }
@@ -695,11 +695,11 @@
  "rewriting_programs/herbie-haskell-210-numeric-specfunctions-loggamma-from-math.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.554326904296875,
+   "seconds": 4.970176025390625,
    "program": "(+ (/ (- t (* y -230661.510616)) (+ i (* (+ c (* (+ b (* (+ a y) y)) y)) y))) (/ (* (* y y) (- (* (+ z (* y x)) y) -27464.7644705)) (+ i (* (+ c (* (+ b (* (+ a y) y)) y)) y))))"
   },
   "daisy": {
-   "seconds": 7.59,
+   "seconds": 4.45,
    "status": "ok",
    "program": "(/ (+ (* y (* (+ (* y (+ (* x y) z)) 27464.7644705) y)) (+ (* y 230661.510616) t)) (+ i (* y (+ (* y (+ (* (+ a y) y) b)) c))))"
   }
@@ -707,11 +707,11 @@
  "rewriting_programs/herbie-haskell-235-data-random-dice-roll-from-dice-0-1.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 1.488651123046875,
+   "seconds": 1.0043408203125,
    "program": "(- (* (- x 1) x) (- 1 x))"
   },
   "daisy": {
-   "seconds": 4.65,
+   "seconds": 2.86,
    "status": "ok",
    "program": "(- (* x x) 1)"
   }
@@ -719,11 +719,11 @@
  "rewriting_programs/herbie-haskell-238-hakyll-web-tags-rendertagcloud-from-haky.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 3.489782958984375,
+   "seconds": 4.480466796875,
    "program": "(/ (- (* x (- (- (- t z) -1) (- y z))) (* (- z y) a)) (- (- t z) -1))"
   },
   "daisy": {
-   "seconds": 8.31,
+   "seconds": 4.2,
    "status": "ok",
    "program": "(+ x (* (- y z) (/ (- a x) (+ (- 1 z) t))))"
   }
@@ -731,11 +731,11 @@
  "rewriting_programs/herbie-haskell-241-numeric-signal-interpolate-from-hsignal-.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.78818603515625,
+   "seconds": 5.061573974609375,
    "program": "(* (- (+ (* (/ (- z a) (- y z)) x) x) t) (/ (- z y) (- a z)))"
   },
   "daisy": {
-   "seconds": 7.77,
+   "seconds": 3.45,
    "status": "ok",
    "program": "(+ x (/ (* (- y z) (- t x)) (- a z)))"
   }
@@ -743,11 +743,11 @@
  "rewriting_programs/herbie-haskell-257-graphics-rendering-plot-render-plot-axis.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.3622060546875,
+   "seconds": 4.593073974609375,
    "program": "(- (- x (* (/ y (- a t)) t)) (* (/ y (- t a)) z))"
   },
   "daisy": {
-   "seconds": 6.7,
+   "seconds": 3.27,
    "status": "ok",
    "program": "(+ x (* y (/ (- z t) (- a t))))"
   }
@@ -755,11 +755,11 @@
  "rewriting_programs/herbie-haskell-258-graphics-rendering-plot-render-plot-axis.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.809140869140625,
+   "seconds": 5.285013916015625,
    "program": "(* (/ (+ y (- (* (/ (- a z) t) x) z)) (- a z)) t)"
   },
   "daisy": {
-   "seconds": 6.92,
+   "seconds": 3.33,
    "status": "ok",
    "program": "(+ x (/ (* (- y z) t) (- a z)))"
   }
@@ -767,11 +767,11 @@
  "rewriting_programs/herbie-haskell-261-graphics-rendering-plot-render-plot-axis.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.708160888671875,
+   "seconds": 4.106153076171875,
    "program": "(+ (* (/ y (- a t)) z) (+ (* t (/ y (- t a))) x))"
   },
   "daisy": {
-   "seconds": 6.62,
+   "seconds": 3.18,
    "status": "ok",
    "program": "(+ x (* y (/ (- z t) (- a t))))"
   }
@@ -779,11 +779,11 @@
  "rewriting_programs/herbie-libraries-basilisk-018-drag-accel-mag.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.223028076171875,
+   "seconds": 2.135076904296875,
    "program": "(* (* (* (* -500 density) (* A Cd)) v) (/ v m))"
   },
   "daisy": {
-   "seconds": 8.33,
+   "seconds": 3.9,
    "status": "ok",
    "program": "(* (- (* density 0.5)) (* A (/ (* (* Cd (* v (* 1000 v))) (/ 1000 m)) 1000)))"
   }
@@ -791,11 +791,11 @@
  "rewriting_programs/herbie-libraries-coolprop-007-b-delta2.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.889838134765625,
+   "seconds": 2.884375,
    "program": "(+ (* du_ddelta (* (+ (* du_ddelta delta) di) delta)) (+ (* (- di 1) (+ di (* du_ddelta delta))) (* (+ du_ddelta (* d2u_ddelta2 delta)) delta)))"
   },
   "daisy": {
-   "seconds": 6.8,
+   "seconds": 3.38,
    "status": "ok",
    "program": "(+ (* du_ddelta (* delta (+ di (* du_ddelta delta)))) (+ (* (+ du_ddelta (* delta d2u_ddelta2)) delta) (+ (* (* (- di 1) du_ddelta) delta) (* (- di 1) di))))"
   }
@@ -803,11 +803,11 @@
  "rewriting_programs/herbie-libraries-coolprop-008-b-tau3.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.32197705078125,
+   "seconds": 3.862718017578125,
    "program": "(- (* (- (* (+ (+ d2u_dtau2 d2u_dtau2) (* d3u_dtau3 tau)) tau) (* (* (+ (* d2u_dtau2 tau) du_dtau) (+ ti (* du_dtau tau))) -2)) tau) (* (- (+ (* (- 1 ti) (+ (* du_dtau tau) ti)) (* (- du_dtau) (+ (* tau (* du_dtau tau)) (* tau ti)))) (* (+ (* d2u_dtau2 tau) du_dtau) tau)) (- ti (- 2 (* du_dtau tau)))))"
   },
   "daisy": {
-   "seconds": 9.48,
+   "seconds": 4.08,
    "status": "ok",
    "program": "(+ (+ (* tau (+ (* (* tau (+ (* ti 2) (* (* tau du_dtau) 2))) d2u_dtau2) (+ (* du_dtau (* (+ (* tau du_dtau) ti) 2)) (* tau (+ (* 2 d2u_dtau2) (* d3u_dtau3 tau)))))) (+ (* (* tau du_dtau) (* tau (+ (* tau d2u_dtau2) du_dtau))) (* (- ti 2) (* tau (+ (* tau d2u_dtau2) du_dtau))))) (* (* (+ (- ti 1) (* du_dtau tau)) (+ (* tau du_dtau) ti)) (+ (* tau du_dtau) (- ti 2))))"
   }
@@ -815,11 +815,11 @@
  "rewriting_programs/herbie-libraries-coolprop-013-d2psi-ddelta2-over-psi.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.78354296875,
+   "seconds": 2.9384228515625,
    "program": "(- (- (* (* (+ Ci Ci) Ci) (* (- delta 1) (- delta 1))) Ci) (* (- 1 (* (* (- 1 delta) (+ Ci Ci)) (- 1 delta))) Ci))"
   },
   "daisy": {
-   "seconds": 6.4,
+   "seconds": 3.03,
    "status": "ok",
    "program": "(* (- (* 2 (* Ci (* (- delta 1) (- delta 1)))) 1) (* 2 Ci))"
   }
@@ -827,11 +827,11 @@
  "rewriting_programs/herbie-libraries-fast-math-007-fastmath-test5.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.099873046875,
+   "seconds": 4.24880810546875,
    "program": "(* (* d1 (* (* d1 (sqrt (* (* (* (* (* d1 d1) d1) (- d1)) (* (* (* (* (* d1 d1) d1) d1) (* d1 d1)) (- d1))) d1))) d1)) d1)"
   },
   "daisy": {
-   "seconds": 7.93,
+   "seconds": 3.65,
    "status": "ok",
    "program": "(* (* d1 (* (* (* (* (* (* d1 (* d1 d1)) d1) d1) d1) d1) d1)) d1)"
   }
@@ -839,77 +839,77 @@
  "rewriting_programs/herbie-libraries-jmatjs-004-jmat-real-dawson.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.233448974609375,
+   "seconds": 4.57572509765625,
    "program": "(* (- (* (* -0.0001789971 (* (* (* (* (* (* x x) (* x x)) x) x) (* x x)) x)) x) (- (* (- (- (- (* 0.0424060604 (* x x)) -0.1049934947) (* -0.0072644182 (* (* x x) (* x x)))) (* -0.0005064034 (* (* (* (* x x) (* x x)) x) x))) (* x x)) -1)) (/ x (- -1 (- (* (- (* (* (* (* x x) x) 0.0694555761) x) (- (* -0.0140005442 (* (* (* (* x x) (* x x)) x) x)) (- (* 0.0003579942 (* (* (* (* (* (* x x) (* x x)) x) x) (* x x)) (* x x))) (* -0.0008327945 (* (* (* (* (* x x) (* x x)) x) x) (* x x)))))) (* x x)) (* (- -0.7715471019 (* 0.2909738639 (* x x))) (* x x))))))"
   },
   "daisy": {
-   "seconds": 300.01,
+   "seconds": 300.04,
    "status": "timeout"
   }
  },
  "rewriting_programs/herbie-libraries-octave-collocwt-000-octave-3-8-jcobi-1.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 1.166781982421875,
+   "seconds": 1.677169189453125,
    "program": "(* -0.5 (- -1 (/ -1 (/ (- (- -2 beta) alpha) (- beta alpha)))))"
   },
   "daisy": {
-   "seconds": 5.91,
+   "seconds": 2.52,
    "status": "fail"
   }
  },
  "rewriting_programs/herbie-libraries-octave-collocwt-001-octave-3-8-jcobi-2.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.035676025390625,
+   "seconds": 3.332281982421875,
    "program": "(/ (- (- (- (- -2 i) (+ beta alpha)) i) (* (- beta alpha) (/ (+ beta alpha) (+ (+ i i) (+ beta alpha))))) (* (- (- (- -2 i) (+ beta alpha)) i) 2))"
   },
   "daisy": {
-   "seconds": 5.49,
+   "seconds": 2.61,
    "status": "fail"
   }
  },
  "rewriting_programs/herbie-libraries-octave-collocwt-003-octave-3-8-jcobi-4.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.16211279296875,
+   "seconds": 5.9110029296875,
    "program": "(/ (/ (* (* (+ (* (+ (+ beta i) alpha) i) (* beta alpha)) (+ (+ beta i) alpha)) i) (+ (- (* i i) (* -2 (* (+ (+ beta i) alpha) i))) (* (+ (+ beta i) alpha) (+ (+ beta i) alpha)))) (+ (- (* i i) (* -2 (* (+ (+ beta i) alpha) i))) (- (* (+ (+ beta i) alpha) (+ (+ beta i) alpha)) 1)))"
   },
   "daisy": {
-   "seconds": 5.8,
+   "seconds": 2.02,
    "status": "fail"
   }
  },
  "rewriting_programs/herbie-mathematics-beta-distribution-000-a-parameter-of-renormalized-beta-distrib.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.062841064453125,
+   "seconds": 2.082760009765625,
    "program": "(* (/ (- (- m (* m m)) v) v) m)"
   },
   "daisy": {
-   "seconds": 5.54,
+   "seconds": 1.87,
    "status": "fail"
   }
  },
  "rewriting_programs/herbie-mathematics-beta-distribution-001-b-parameter-of-renormalized-beta-distrib.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 1.2953369140625,
+   "seconds": 1.432343017578125,
    "program": "(* (- (/ (- m (* m m)) v) 1) (- 1 m))"
   },
   "daisy": {
-   "seconds": 5.1,
+   "seconds": 1.88,
    "status": "fail"
   }
  },
  "rewriting_programs/herbie-mathematics-excel-000-x0-1-x1-x0.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.110092041015625,
+   "seconds": 1.7099169921875,
    "program": "(/ x1 (/ (- 1 x1) x0))"
   },
   "daisy": {
-   "seconds": 7.44,
+   "seconds": 2.53,
    "status": "ok",
    "program": "(- (/ x0 (- 1 x1)) x0)"
   }
@@ -917,22 +917,22 @@
  "rewriting_programs/herbie-mathematics-gui-010-abcf-ab-angle-b.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 3.048990966796875,
+   "seconds": 3.924413818359375,
    "program": "(/ (- (sqrt (* (/ (+ F F) (/ -1 (- (* (* C A) 4) (* B B)))) (+ A (- C (sqrt (- (- (* B B) (* (- C A) A)) (* (- A C) C)))))))) (- (* B B) (* (* 4 A) C)))"
   },
   "daisy": {
-   "seconds": 5.18,
+   "seconds": 2.05,
    "status": "fail"
   }
  },
  "rewriting_programs/herbie-mathematics-sarnoff-000-quadratic-roots-full-range.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.743014892578125,
+   "seconds": 4.549475830078125,
    "program": "(/ (+ (- b) (sqrt (- (* b b) (* (* 4 a) c)))) (* 2 a))"
   },
   "daisy": {
-   "seconds": 7.11,
+   "seconds": 2.71,
    "status": "ok",
    "program": "(/ (+ (- b) (sqrt (- (* b b) (* (* 4 a) c)))) (* 2 a))"
   }
@@ -940,11 +940,11 @@
  "rewriting_programs/herbie-mathematics-sarnoff-004-cubic-critical.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 5.8972470703125,
+   "seconds": 6.811751953125,
    "program": "(* (- b (sqrt (- (* b b) (* c (* a 3))))) (/ -1 (* a 3)))"
   },
   "daisy": {
-   "seconds": 7.26,
+   "seconds": 3.04,
    "status": "ok",
    "program": "(/ (+ (- b) (sqrt (- (* b b) (* (* 3 a) c)))) (* 3 a))"
   }
@@ -952,11 +952,11 @@
  "rewriting_programs/herbie-numerics-conte-004-ena-section-1-4-exercise-4b-n-2.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 0.880317138671875,
+   "seconds": 1.48931689453125,
    "program": "(* eps (+ eps (+ x x)))"
   },
   "daisy": {
-   "seconds": 6.04,
+   "seconds": 2.58,
    "status": "ok",
    "program": "(- (* (+ x eps) (+ x eps)) (* x x))"
   }
@@ -964,11 +964,11 @@
  "rewriting_programs/herbie-numerics-conte-005-ena-section-1-4-exercise-4b-n-5.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.22723291015625,
+   "seconds": 2.743876953125,
    "program": "(- (* (* (* (* (+ eps x) (+ eps x)) (+ eps x)) (+ eps x)) eps) (* x (* (* (+ (* (+ eps x) (+ eps x)) (* x x)) (+ (+ eps x) x)) (- (- x x) eps))))"
   },
   "daisy": {
-   "seconds": 7.88,
+   "seconds": 3.3,
    "status": "ok",
    "program": "(- (* (* (+ x eps) (+ x eps)) (* (* (+ x eps) (+ x eps)) (+ x eps))) (* (* (* x x) x) (* x x)))"
   }
@@ -976,11 +976,11 @@
  "rewriting_programs/herbie-numerics-every-cs-008-complex-division-imag-part.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.596960205078125,
+   "seconds": 5.168494873046875,
    "program": "(/ (- (* b c) (* a d)) (+ (* c c) (* d d)))"
   },
   "daisy": {
-   "seconds": 6.76,
+   "seconds": 2.96,
    "status": "ok",
    "program": "(/ (- (* b c) (* a d)) (+ (* c c) (* d d)))"
   }
@@ -988,11 +988,11 @@
  "rewriting_programs/herbie-numerics-fma-000-fma-test1.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 1.343347900390625,
+   "seconds": 1.207631103515625,
    "program": "(* t (* 4e-32 t))"
   },
   "daisy": {
-   "seconds": 9.52,
+   "seconds": 4.28,
    "status": "ok",
    "program": "(* (* 2e-16 t) (* t 2e-16))"
   }
@@ -1000,33 +1000,33 @@
  "rewriting_programs/herbie-numerics-fma-001-fma-test2.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 1.260989990234375,
+   "seconds": 1.7944560546875,
    "program": "(* -170000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 (- 1 t))"
   },
   "daisy": {
-   "seconds": 5.42,
+   "seconds": 2.52,
    "status": "fail"
   }
  },
  "rewriting_programs/herbie-numerics-great-debate-002-kahan-p9-example.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 1.06714404296875,
+   "seconds": 1.036652099609375,
    "program": "(/ (* (- x y) (+ x y)) (+ (* x x) (* y y)))"
   },
   "daisy": {
-   "seconds": 4.93,
+   "seconds": 1.95,
    "status": "fail"
   }
  },
  "rewriting_programs/herbie-numerics-martel-006-expression-p6.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 0.96789404296875,
+   "seconds": 1.183156005859375,
    "program": "(* (+ c (+ (+ d a) b)) 2)"
   },
   "daisy": {
-   "seconds": 6.03,
+   "seconds": 2.61,
    "status": "ok",
    "program": "(* (+ (+ a d) (+ c b)) 2)"
   }
@@ -1034,11 +1034,11 @@
  "rewriting_programs/herbie-numerics-rosa-000-rosa-s-dopplerbench.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.304755859375,
+   "seconds": 4.463780029296875,
    "program": "(* v (/ t1 (- (* (- u) (+ (+ u t1) t1)) (* t1 t1))))"
   },
   "daisy": {
-   "seconds": 7.82,
+   "seconds": 3.53,
    "status": "ok",
    "program": "(/ (* (- t1) (/ v (+ t1 u))) (+ t1 u))"
   }
@@ -1046,11 +1046,11 @@
  "rewriting_programs/herbie-numerics-rosa-002-rosa-s-floatvsdoublebenchmark.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.982986083984375,
+   "seconds": 5.792501953125,
    "program": "(+ (- (* (- (* (- (* 4 (/ (- (- (+ x2 x2) x1) (* -3 (* x1 x1))) (- (* x1 x1) -1))) 6) (* x1 x1)) (* (/ (* (- (- (+ x2 x2) x1) (* -3 (* x1 x1))) (+ (- (* (- (* x1 x1) -1) 3) (- x2 (- x1 x2))) (* -3 (* x1 x1)))) (* (- (* x1 x1) -1) (- (* x1 x1) -1))) (+ x1 x1))) (- (* x1 x1) -1)) (- (* (* -3 (* x1 x1)) (/ (- (- (+ x2 x2) x1) (* -3 (* x1 x1))) (- (* x1 x1) -1))) (* (* x1 x1) x1))) (- x1 (- (/ (* (- x1 (- (- (* (* 3 x1) x1) x2) x2)) -3) (- -1 (* x1 x1))) x1)))"
   },
   "daisy": {
-   "seconds": 27.85,
+   "seconds": 14.52,
    "status": "ok",
    "program": "(+ (+ (* (+ (* (- (/ (+ (- (* 2 x2) x1) (* 3 (* x1 x1))) (+ (* x1 x1) 1)) 3) (* (* 2 x1) (/ (+ (- (* 2 x2) x1) (* 3 (* x1 x1))) (+ (* x1 x1) 1)))) (* (* x1 x1) (- (* 4 (/ (+ (* 3 (* x1 x1)) (- (* 2 x2) x1)) (+ (* x1 x1) 1))) 6))) (+ (* x1 x1) 1)) x1) (+ (* (* x1 (* 3 x1)) (/ (+ (* x1 (* 3 x1)) (- (* x2 2) x1)) (+ 1 (* x1 x1)))) (+ (+ x1 (* (/ (- (- (* 3 (* x1 x1)) (* 2 x2)) x1) (+ (* x1 x1) 1)) 3)) (* (* x1 x1) x1))))"
   }
@@ -1058,11 +1058,11 @@
  "rewriting_programs/herbie-numerics-rump-000-rump-s-expression-from-stadtherr-s-award.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.562902099609375,
+   "seconds": 3.085244873046875,
    "program": "(/ (- (* (* (- (* (* (* (* (* (* y y) y) y) y) 333.75) y) (* (* (- 2 (* (* (- (* (* 11 x) x) (* (- (* y y) -121) (* y y))) y) y)) x) x)) (* (* y y) y)) (* (* (* y y) y) y)) (* (* (* y y) y) (* (* (- (* -0.5 x) (* (* (* (* (* (* (* (* y y) y) y) y) y) y) 5.5) (* y y))) y) (* y y)))) (* (* (* (* (* (* y y) y) y) y) y) y))"
   },
   "daisy": {
-   "seconds": 8.17,
+   "seconds": 3.6,
    "status": "ok",
    "program": "(+ (+ (+ (* y (* (* 5.5 (* (* (* (* (* y y) y) y) y) y)) y)) (* (- (- (* (* y y) (* 11 (* x x))) (* (* (* (* (* y y) y) y) y) y)) (+ (* 121 (* y (* (* y y) y))) 2)) (* x x))) (* (* (* 333.75 (* y (* (* y y) y))) y) y)) (/ x (* 2 y)))"
   }
@@ -1070,11 +1070,11 @@
  "rewriting_programs/herbie-numerics-rump-001-from-rump-in-a-1983-paper.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 1.4574990234375,
+   "seconds": 0.960236083984375,
    "program": "(- (* y y) (- (* y (- (* (* y y) y) y)) (* (* (* x 9) x) (* x x))))"
   },
   "daisy": {
-   "seconds": 6.25,
+   "seconds": 2.29,
    "status": "ok",
    "program": "(+ (- (* (* 9 (* x x)) (* x x)) (* (* (* y y) y) y)) (* 2 (* y y)))"
   }
@@ -1082,11 +1082,11 @@
  "rewriting_programs/herbie-numerics-rump-002-from-rump-in-a-1983-paper-rewritten.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 1.04831787109375,
+   "seconds": 0.986164794921875,
    "program": "(+ (* y y) (- (* (- 1 (* y y)) (* y y)) (* (* (* -9 x) x) (* x x))))"
   },
   "daisy": {
-   "seconds": 6.79,
+   "seconds": 2.25,
    "status": "ok",
    "program": "(- (* (* 9 (* x x)) (* x x)) (* y (* y (- (* y y) 2))))"
   }
@@ -1094,7 +1094,7 @@
  "rewriting_programs/herbie-physics-kalman-001-kalman-filter-per-x.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 5.66835888671875,
+   "seconds": 5.47349609375,
    "program": "(- x0 (/ (- (/ 1 (/ (/ 1 (- (* (- (* (* (* dt dt) dt) -0.5) (* 10 dt)) dt) 25)) (- (- sensor x0) (- x1 (* (* -0.5 (* x2 dt)) dt))))) (* (- r (- (* dt (- (* (* (* dt dt) dt) -0.5) (* 10 dt))) 25)) (- x1 (* (* -0.5 (* x2 dt)) dt)))) (- r (- (* dt (- (* (* (* dt dt) dt) -0.5) (* 10 dt))) 25))))"
   },
   "daisy": {
@@ -1105,7 +1105,7 @@
  "rewriting_programs/herbie-physics-kalman-002-kalman-filter-per-p.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.884191162109375,
+   "seconds": 4.7944619140625,
    "program": "(* r (/ 1 (- 1 (/ r (- (* dt (- (* (* (* dt dt) dt) -0.5) (* 10 dt))) 25)))))"
   },
   "daisy": {
@@ -1116,33 +1116,33 @@
  "rewriting_programs/herbie-physics-superfluidity-breakdown-003-toniolo-and-linder-equation-7.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.3714169921875,
+   "seconds": 4.29660693359375,
    "program": "(/ (* 6369051672525773/4503599627370496 t) (sqrt (- (* (* (+ t t) t) (/ (- x -1) (- x 1))) (* l (/ (* l (- (- x 1) (- x -1))) (- x 1))))))"
   },
   "daisy": {
-   "seconds": 5.19,
+   "seconds": 2.0,
    "status": "fail"
   }
  },
  "rewriting_programs/herbie-physics-superfluidity-breakdown-006-toniolo-and-linder-equation-13.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 4.1812490234375,
+   "seconds": 4.212287109375,
    "program": "(sqrt (* (- t (/ (* (- (* (+ l l) Om) (* (* l n) (- U* U))) l) (* Om Om))) (* (+ n n) U)))"
   },
   "daisy": {
-   "seconds": 4.46,
+   "seconds": 1.98,
    "status": "fail"
   }
  },
  "rewriting_programs/herbie-physics-tea-whistle-003-henrywood-and-agarwal-equation-13.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 7.706632080078125,
+   "seconds": 5.777924072265625,
    "program": "(/ (* (+ (sqrt (- (* (* d d) (* c0 (* (* d d) (/ c0 (* (* D (* (* h (* D w)) (* h (* D w)))) D))))) (* M M))) (* (* d (/ d (* (* (* D D) h) w))) c0)) c0) (+ w w))"
   },
   "daisy": {
-   "seconds": 18.56,
+   "seconds": 18.23,
    "status": "ok",
    "program": "(/ (* c0 (+ (sqrt (- (/ (* (* (/ d h) (/ d w)) (/ (* (/ c0 D) (/ (* (/ (* d (/ c0 D)) D) d) w)) h)) D) (* M M))) (* (/ (/ (* c0 d) w) h) (/ (/ d D) D)))) (* w 2))"
   }
@@ -1150,11 +1150,11 @@
  "rewriting_programs/herbie-physics-universal-linear-optics-000-bouland-and-aaronson-equation-24.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.402528076171875,
+   "seconds": 3.020903076171875,
    "program": "(+ (* b (* (+ (* b b) (* a a)) b)) (- (* (+ (* b b) (* a a)) (* a a)) (- (* (- (* (* (- -3 a) b) b) (* (- a (* a a)) a)) 4) -1)))"
   },
   "daisy": {
-   "seconds": 5.92,
+   "seconds": 2.8,
    "status": "ok",
    "program": "(+ (* b (* b (+ (* a a) (* b b)))) (+ (* 4 (+ (* (* a a) (- 1 a)) (* b (* b (+ a 3))))) (- (* a (* a (+ (* a a) (* b b)))) 1)))"
   }
@@ -1162,11 +1162,11 @@
  "rewriting_programs/herbie-physics-universal-linear-optics-001-bouland-and-aaronson-equation-25.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 3.76538720703125,
+   "seconds": 3.0964951171875,
    "program": "(- (+ (* b (* (+ (* b b) (* a a)) b)) (- (* (+ (* b b) (* a a)) (* a a)) (* -4 (+ (* (* b b) (- 1 (* 3 a))) (* (+ (* a a) a) a))))) 1)"
   },
   "daisy": {
-   "seconds": 6.55,
+   "seconds": 2.79,
    "status": "ok",
    "program": "(+ (+ (* 4 (* (* b b) (- 1 (* a 3)))) (+ (- (* (* 4 a) (+ a (* a a))) 1) (* a (* a (+ (* a a) (* b b)))))) (* (* b (+ (* a a) (* b b))) b))"
   }
@@ -1174,11 +1174,11 @@
  "rewriting_programs/herbie-proj-omerc-001-forward-half-diff.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 2.172505126953125,
+   "seconds": 1.833891845703125,
    "program": "(* (+ 0.5 (/ W (* (+ W W) W))) (- W 1))"
   },
   "daisy": {
-   "seconds": 4.93,
+   "seconds": 2.1,
    "status": "ok",
    "program": "(* 0.5 (- W (/ 1 W)))"
   }
@@ -1186,11 +1186,11 @@
  "rewriting_programs/herbie-proj-som-015-setup-w.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 1.58810791015625,
+   "seconds": 1.26864794921875,
    "program": "(- (* (* (- 1 (* es (* ca ca))) rone_es) (* (- 1 (* es (* ca ca))) rone_es)) 1)"
   },
   "daisy": {
-   "seconds": 8.67,
+   "seconds": 5.03,
    "status": "ok",
    "program": "(- (* (* (* rone_es (- 1 (* es (* ca ca)))) rone_es) (- 1 (* es (* ca ca)))) 1)"
   }
@@ -1198,11 +1198,11 @@
  "rewriting_programs/herbie-proj-som-016-setup-t.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 1.707676025390625,
+   "seconds": 1.366134033203125,
    "program": "(* (* (* rone_es sa) sa) (* (* (- 2 es) es) rone_es))"
   },
   "daisy": {
-   "seconds": 5.02,
+   "seconds": 2.48,
    "status": "ok",
    "program": "(* es (* sa (* sa (* (* rone_es rone_es) (- 2 es)))))"
   }
@@ -1210,33 +1210,33 @@
  "rewriting_programs/herbie-regression-000-xlohi-overflows.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 0.43945703125,
+   "seconds": 0.806178955078125,
    "program": "(/ (- x lo) (- hi lo))"
   },
   "daisy": {
-   "seconds": 3.88,
+   "seconds": 1.83,
    "status": "fail"
   }
  },
  "rewriting_programs/herbie-regression-015-bug333-missed-optimization.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 1.59201513671875,
+   "seconds": 1.455203125,
    "program": "(/ (+ x x) (+ (sqrt (- 1 x)) (sqrt (- (- x -0.5) -0.5))))"
   },
   "daisy": {
-   "seconds": 3.65,
+   "seconds": 1.78,
    "status": "fail"
   }
  },
  "rewriting_programs/herbie-tutorial-002-commute-and-associate.fpcore": {
   "herbie": {
    "status": "ok",
-   "seconds": 1.261841064453125,
+   "seconds": 0.929157958984375,
    "program": "0"
   },
   "daisy": {
-   "seconds": 2.86,
+   "seconds": 1.79,
    "status": "fail"
   }
  }

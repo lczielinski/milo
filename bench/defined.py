@@ -1,8 +1,7 @@
-"""Whether a program is defined over the reals at every point of its box: it never divides by zero or
-takes the square root of a negative number. Interval arithmetic with outward rounding proves a box
-defined, and a box it cannot prove is bisected. A program is undefined when, at some corner of a box,
-it divides by exactly zero or takes the square root of a negative number, or when a divisor that is
-continuous on the box has opposite signs at two corners, so is zero on the segment between them."""
+"""Whether a program is defined over the reals on all of its box: no division by zero and no square
+root of a negative number. Outward-rounded interval arithmetic proves boxes defined, bisecting those it
+cannot. An undefined program's witness is a corner, or a continuous divisor with opposite signs at two
+corners."""
 
 import itertools
 import math

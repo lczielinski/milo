@@ -1,25 +1,8 @@
 {
- "bounding_programs/fpbench-daisy-000-carthesiantopolar-radius.fpcore": {
-  "bound": {
-   "abs": 2.991177930203976e-14,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.05020713806152344
- },
  "rewriting_programs/fpbench-daisy-005-matrixdeterminant.fpcore": {
-  "bound": {
-   "abs": 1.9042545318370685e-12,
-   "rel": Infinity
-  },
-  "bound_s": 0.04180908203125,
-  "egglog_s": 0.28830504417419434,
-  "extract_s": 0.07320690155029297,
-  "rounds": 9,
+  "egglog_s": 0.2946360111236572,
+  "extract_s": 0.0642859935760498,
   "cut": false,
-  "nodes": 2460,
-  "classes": 815,
-  "root_frontier": 1,
-  "max_frontier": 1,
   "original": {
    "abs": 1.9042545318370685e-12,
    "rel": Infinity
@@ -34,19 +17,9 @@
   }
  },
  "rewriting_programs/fpbench-daisy-006-matrixdeterminant2.fpcore": {
-  "bound": {
-   "abs": 1.9042545318370685e-12,
-   "rel": Infinity
-  },
-  "bound_s": 0.03713488578796387,
-  "egglog_s": 0.27152299880981445,
-  "extract_s": 0.0799400806427002,
-  "rounds": 9,
+  "egglog_s": 0.27368712425231934,
+  "extract_s": 0.0565180778503418,
   "cut": false,
-  "nodes": 2396,
-  "classes": 790,
-  "root_frontier": 1,
-  "max_frontier": 1,
   "original": {
    "abs": 1.9042545318370685e-12,
    "rel": Infinity
@@ -61,19 +34,9 @@
   }
  },
  "rewriting_programs/fpbench-fptaylor-extra-001-delta4.fpcore": {
-  "bound": {
-   "abs": 8.933014328249556e-14,
-   "rel": Infinity
-  },
-  "bound_s": 0.06418299674987793,
-  "egglog_s": 0.8743999004364014,
-  "extract_s": 0.6814637184143066,
-  "rounds": 13,
+  "egglog_s": 0.8880050182342529,
+  "extract_s": 0.7657129764556885,
   "cut": false,
-  "nodes": 8885,
-  "classes": 4209,
-  "root_frontier": 1,
-  "max_frontier": 16,
   "original": {
    "abs": 7.511928856729356e-14,
    "rel": Infinity
@@ -88,19 +51,9 @@
   }
  },
  "rewriting_programs/fpbench-fptaylor-extra-002-delta.fpcore": {
-  "bound": {
-   "abs": 1.9467367030756582e-12,
-   "rel": Infinity
-  },
-  "bound_s": 0.0892338752746582,
-  "egglog_s": 1.8417701721191406,
-  "extract_s": 3.5221078395843506,
-  "rounds": 15,
+  "egglog_s": 1.9027440547943115,
+  "extract_s": 4.6002748012542725,
   "cut": false,
-  "nodes": 16508,
-  "classes": 7923,
-  "root_frontier": 1,
-  "max_frontier": 68,
   "original": {
    "abs": 1.9467367030756582e-12,
    "rel": Infinity
@@ -114,62 +67,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/fpbench-fptaylor-extra-003-sqrt-add.fpcore": {
-  "bound": {
-   "abs": 1.420184467151624e-16,
-   "rel": 3.868772755466981e-16
-  },
-  "bound_s": 0.08570599555969238
- },
- "bounding_programs/fpbench-fptaylor-extra-006-floudas.fpcore": {
-  "bound": {
-   "abs": 4.440892098500626e-16,
-   "rel": 1.1102230246251565e-16
-  },
-  "bound_s": 0.05279898643493652
- },
- "bounding_programs/fpbench-fptaylor-extra-008-x-by-xy.fpcore": {
-  "bound": {
-   "abs": 2.3841858620699033e-07,
-   "rel": 1.1920929665620903e-07
-  },
-  "bound_s": 0.07068586349487305
- },
- "bounding_programs/fpbench-fptaylor-extra-010-hypot32.fpcore": {
-  "bound": {
-   "abs": 1.605876423342881e-05,
-   "rel": 1.1920929310349493e-07
-  },
-  "bound_s": 0.04051923751831055
- },
- "bounding_programs/fpbench-fptaylor-extra-012-sum.fpcore": {
-  "bound": {
-   "abs": 2.6645352591003757e-15,
-   "rel": Infinity
-  },
-  "bound_s": 0.09502720832824707
- },
- "bounding_programs/fpbench-fptaylor-extra-013-nonlin1.fpcore": {
-  "bound": {
-   "abs": 1.6775469902086118e-13,
-   "rel": 1.0000000000000002
-  },
-  "bound_s": 0.05004119873046875
- },
  "rewriting_programs/fpbench-fptaylor-extra-014-nonlin2.fpcore": {
-  "bound": {
-   "abs": 6.276325837521833e-11,
-   "rel": 1.3940249643177136e-13
-  },
-  "bound_s": 0.04871416091918945,
-  "egglog_s": 0.7361199855804443,
-  "extract_s": 122.35523891448975,
-  "rounds": 10,
+  "egglog_s": 0.7174150943756104,
+  "extract_s": 120.09845209121704,
   "cut": true,
-  "nodes": 6292,
-  "classes": 1946,
-  "root_frontier": 1,
-  "max_frontier": 1839,
   "original": {
    "abs": 6.960388172605526e-14,
    "rel": 1.3940249643176871e-13
@@ -183,55 +84,10 @@
    "rel": 3.108624468950439e-16
   }
  },
- "bounding_programs/fpbench-fptaylor-extra-015-i4.fpcore": {
-  "bound": {
-   "abs": 4.762103910613164e-06,
-   "rel": 4.857789490273401e-06
-  },
-  "bound_s": 0.0421900749206543
- },
- "bounding_programs/fpbench-fptaylor-extra-017-himmilbeau.fpcore": {
-  "bound": {
-   "abs": 5.897504706808836e-13,
-   "rel": Infinity
-  },
-  "bound_s": 0.05784797668457031
- },
- "bounding_programs/fpbench-fptaylor-real2float-003-floudas1.fpcore": {
-  "bound": {
-   "abs": 2.851052727237402e-13,
-   "rel": Infinity
-  },
-  "bound_s": 0.06632399559020996
- },
- "bounding_programs/fpbench-fptaylor-real2float-004-floudas2.fpcore": {
-  "bound": {
-   "abs": 4.440892098500626e-16,
-   "rel": 1.1102230246251565e-16
-  },
-  "bound_s": 0.06594085693359375
- },
- "bounding_programs/fpbench-fptaylor-real2float-005-floudas3.fpcore": {
-  "bound": {
-   "abs": 1.1546319456101628e-14,
-   "rel": Infinity
-  },
-  "bound_s": 0.04894304275512695
- },
  "rewriting_programs/fpbench-fptaylor-real2float-008-kepler0.fpcore": {
-  "bound": {
-   "abs": 7.87103715538251e-14,
-   "rel": Infinity
-  },
-  "bound_s": 0.03996396064758301,
-  "egglog_s": 0.7729740142822266,
-  "extract_s": 0.6874818801879883,
-  "rounds": 13,
+  "egglog_s": 0.9574630260467529,
+  "extract_s": 0.7349939346313477,
   "cut": false,
-  "nodes": 8023,
-  "classes": 3693,
-  "root_frontier": 1,
-  "max_frontier": 7,
   "original": {
    "abs": 6.494360604847316e-14,
    "rel": 7.771302379130286e-15
@@ -246,19 +102,9 @@
   }
  },
  "rewriting_programs/fpbench-fptaylor-real2float-009-kepler1.fpcore": {
-  "bound": {
-   "abs": 3.559769368166599e-13,
-   "rel": Infinity
-  },
-  "bound_s": 0.06023883819580078,
-  "egglog_s": 1.7470018863677979,
-  "extract_s": 1.727916955947876,
-  "rounds": 15,
+  "egglog_s": 1.755486249923706,
+  "extract_s": 2.1929478645324707,
   "cut": false,
-  "nodes": 15974,
-  "classes": 7323,
-  "root_frontier": 1,
-  "max_frontier": 8,
   "original": {
    "abs": 3.559769368166599e-13,
    "rel": Infinity
@@ -273,19 +119,9 @@
   }
  },
  "rewriting_programs/fpbench-fptaylor-real2float-010-kepler2.fpcore": {
-  "bound": {
-   "abs": 2.0627574315312817e-12,
-   "rel": Infinity
-  },
-  "bound_s": 0.05933499336242676,
-  "egglog_s": 1.982875108718872,
-  "extract_s": 6.845754861831665,
-  "rounds": 18,
+  "egglog_s": 2.1789441108703613,
+  "extract_s": 8.497807741165161,
   "cut": false,
-  "nodes": 15983,
-  "classes": 7530,
-  "root_frontier": 1,
-  "max_frontier": 87,
   "original": {
    "abs": 1.9490705938096657e-12,
    "rel": Infinity
@@ -299,41 +135,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/fpbench-fptaylor-tests-002-test01-sum3.fpcore": {
-  "bound": {
-   "abs": 1.430511474609375e-06,
-   "rel": 536871008.0000058
-  },
-  "bound_s": 0.07517004013061523
- },
- "bounding_programs/fpbench-fptaylor-tests-003-test02-sum8.fpcore": {
-  "bound": {
-   "abs": 5.995204332975845e-15,
-   "rel": 5.849589999986938e-16
-  },
-  "bound_s": 0.046710968017578125
- },
- "bounding_programs/fpbench-fptaylor-tests-004-test03-nonlin2.fpcore": {
-  "bound": {
-   "abs": 2.5535129566378604e-15,
-   "rel": 1.0000000000000004
-  },
-  "bound_s": 0.05494809150695801
- },
  "rewriting_programs/fpbench-fptaylor-tests-005-test04-dqmom9.fpcore": {
-  "bound": {
-   "abs": 6.409672653262534e-05,
-   "rel": Infinity
-  },
-  "bound_s": 0.05676007270812988,
-  "egglog_s": 0.832413911819458,
-  "extract_s": 1.2520411014556885,
-  "rounds": 10,
+  "egglog_s": 0.9319472312927246,
+  "extract_s": 1.505201816558838,
   "cut": false,
-  "nodes": 11037,
-  "classes": 3696,
-  "root_frontier": 1,
-  "max_frontier": 17,
   "original": {
    "abs": 3.73941367115549e-05,
    "rel": Infinity
@@ -348,19 +153,9 @@
   }
  },
  "rewriting_programs/fpbench-fptaylor-tests-006-test05-nonlin1-r4.fpcore": {
-  "bound": {
-   "abs": 2.7756772077692414e-07,
-   "rel": 5.551420434650116e-12
-  },
-  "bound_s": 0.03539395332336426,
-  "egglog_s": 0.491286039352417,
-  "extract_s": 0.493804931640625,
-  "rounds": 11,
+  "egglog_s": 0.5776679515838623,
+  "extract_s": 0.605381965637207,
   "cut": false,
-  "nodes": 5429,
-  "classes": 1752,
-  "root_frontier": 1,
-  "max_frontier": 8,
   "original": {
    "abs": 2.775668583515638e-12,
    "rel": 5.551392679015169e-12
@@ -374,27 +169,10 @@
    "rel": 1.9428847420066569e-16
   }
  },
- "bounding_programs/fpbench-fptaylor-tests-007-test05-nonlin1-test2.fpcore": {
-  "bound": {
-   "abs": 8.326617173953775e-17,
-   "rel": 1.9428847420066569e-16
-  },
-  "bound_s": 0.03567814826965332
- },
  "rewriting_programs/fpbench-fptaylor-tests-008-test06-sums4-sum1.fpcore": {
-  "bound": {
-   "abs": 4.76837158203125e-07,
-   "rel": Infinity
-  },
-  "bound_s": 0.04146003723144531,
-  "egglog_s": 0.06354594230651855,
-  "extract_s": 0.00783681869506836,
-  "rounds": 7,
+  "egglog_s": 0.05463886260986328,
+  "extract_s": 0.00952005386352539,
   "cut": false,
-  "nodes": 389,
-  "classes": 132,
-  "root_frontier": 1,
-  "max_frontier": 1,
   "original": {
    "abs": 4.76837158203125e-07,
    "rel": Infinity
@@ -409,19 +187,9 @@
   }
  },
  "rewriting_programs/fpbench-fptaylor-tests-009-test06-sums4-sum2.fpcore": {
-  "bound": {
-   "abs": 4.172325134277344e-07,
-   "rel": Infinity
-  },
-  "bound_s": 0.042318105697631836,
-  "egglog_s": 0.05573391914367676,
-  "extract_s": 0.00746607780456543,
-  "rounds": 7,
+  "egglog_s": 0.05354118347167969,
+  "extract_s": 0.013167858123779297,
   "cut": false,
-  "nodes": 388,
-  "classes": 135,
-  "root_frontier": 1,
-  "max_frontier": 2,
   "original": {
    "abs": 4.172325134277344e-07,
    "rel": Infinity
@@ -436,19 +204,9 @@
   }
  },
  "rewriting_programs/fpbench-graphics-000-an-eigenvalue-calculation-from-tng.fpcore": {
-  "bound": {
-   "abs": 9.462019894354602e-14,
-   "rel": Infinity
-  },
-  "bound_s": 0.06561994552612305,
-  "egglog_s": 1.1986510753631592,
-  "extract_s": 1.661557912826538,
-  "rounds": 14,
+  "egglog_s": 1.2826807498931885,
+  "extract_s": 2.275505781173706,
   "cut": false,
-  "nodes": 11576,
-  "classes": 5073,
-  "root_frontier": 1,
-  "max_frontier": 42,
   "original": {
    "abs": 8.840295000564513e-14,
    "rel": Infinity
@@ -463,19 +221,9 @@
   }
  },
  "rewriting_programs/fpbench-hamming-ch3-000-nmse-example-3-1.fpcore": {
-  "bound": {
-   "abs": 4.2921504170672523e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.04467892646789551,
-  "egglog_s": 0.11129903793334961,
-  "extract_s": 0.032438039779663086,
-  "rounds": 9,
+  "egglog_s": 0.08474493026733398,
+  "extract_s": 0.05335497856140137,
   "cut": false,
-  "nodes": 762,
-  "classes": 291,
-  "root_frontier": 2,
-  "max_frontier": 3,
   "original": {
    "abs": 4.2921504170672523e-16,
    "rel": 1.1121407807208098e-15
@@ -490,19 +238,9 @@
   }
  },
  "rewriting_programs/fpbench-hamming-ch3-005-nmse-problem-3-3-1.fpcore": {
-  "bound": {
-   "abs": 2.220446049250313e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.06320691108703613,
-  "egglog_s": 0.368729829788208,
-  "extract_s": 0.3035762310028076,
-  "rounds": 9,
+  "egglog_s": 0.3862268924713135,
+  "extract_s": 0.37035107612609863,
   "cut": false,
-  "nodes": 4433,
-  "classes": 1185,
-  "root_frontier": 2,
-  "max_frontier": 6,
   "original": {
    "abs": 2.220446049250313e-16,
    "rel": 1.1102230246251573e-15
@@ -516,27 +254,10 @@
    "rel": 3.108624468950439e-16
   }
  },
- "bounding_programs/fpbench-hamming-ch3-007-nmse-problem-3-3-3.fpcore": {
-  "bound": {
-   "abs": 2.347011474057581e-15,
-   "rel": 3.9001921350653955e-16
-  },
-  "bound_s": 0.0425717830657959
- },
  "rewriting_programs/fpbench-hamming-ch3-012-nmse-p42-positive.fpcore": {
-  "bound": {
-   "abs": 2.7693705006991605e-15,
-   "rel": 2.3252812908491074e-15
-  },
-  "bound_s": 0.04383587837219238,
-  "egglog_s": 0.7101988792419434,
-  "extract_s": 0.5565431118011475,
-  "rounds": 12,
+  "egglog_s": 0.6089122295379639,
+  "extract_s": 0.7867748737335205,
   "cut": false,
-  "nodes": 5886,
-  "classes": 2018,
-  "root_frontier": 3,
-  "max_frontier": 10,
   "original": {
    "abs": 2.7693705006991605e-15,
    "rel": 2.3252812908491074e-15
@@ -550,27 +271,10 @@
    "rel": 2.1798687304937996e-15
   }
  },
- "bounding_programs/fpbench-hamming-ch3-013-nmse-p42-negative.fpcore": {
-  "bound": {
-   "abs": 3.657548920399286e-15,
-   "rel": 4.0351189109354283e-16
-  },
-  "bound_s": 0.048439979553222656
- },
  "rewriting_programs/fpbench-hamming-ch3-014-nmse-problem-3-2-1-positive.fpcore": {
-  "bound": {
-   "abs": 3.032430806347271e-15,
-   "rel": Infinity
-  },
-  "bound_s": 0.045819997787475586,
-  "egglog_s": 0.21733808517456055,
-  "extract_s": 0.10101509094238281,
-  "rounds": 10,
+  "egglog_s": 0.2870969772338867,
+  "extract_s": 0.12152099609375,
   "cut": false,
-  "nodes": 2017,
-  "classes": 661,
-  "root_frontier": 1,
-  "max_frontier": 6,
   "original": {
    "abs": 3.032430806347271e-15,
    "rel": Infinity
@@ -584,48 +288,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/fpbench-hamming-ch3-015-nmse-problem-3-2-1-negative.fpcore": {
-  "bound": {
-   "abs": 5.696966065447647e-15,
-   "rel": 3.8609029862885145e-16
-  },
-  "bound_s": 0.06258797645568848
- },
- "bounding_programs/fpbench-herbie-000-complex-square-root.fpcore": {
-  "bound": {
-   "abs": 5.718033384051869e-16,
-   "rel": 2.6554842694372303e-16
-  },
-  "bound_s": 0.04463696479797363
- },
- "bounding_programs/fpbench-rosa-000-doppler1.fpcore": {
-  "bound": {
-   "abs": 1.9559111269961653e-13,
-   "rel": 1.3264138206193348e-15
-  },
-  "bound_s": 0.037687063217163086
- },
- "bounding_programs/fpbench-rosa-001-doppler2.fpcore": {
-  "bound": {
-   "abs": 3.8916406651326354e-13,
-   "rel": 1.461179350774336e-15
-  },
-  "bound_s": 0.03311276435852051
- },
  "rewriting_programs/fpbench-rosa-002-doppler3.fpcore": {
-  "bound": {
-   "abs": 1.0477361732365762e-13,
-   "rel": 1.1986468756673355e-15
-  },
-  "bound_s": 0.03777718544006348,
-  "egglog_s": 1.1468679904937744,
-  "extract_s": 0.772233247756958,
-  "rounds": 12,
+  "egglog_s": 1.39534592628479,
+  "extract_s": 1.244370937347412,
   "cut": false,
-  "nodes": 8397,
-  "classes": 3250,
-  "root_frontier": 1,
-  "max_frontier": 6,
   "original": {
    "abs": 9.744928077395736e-14,
    "rel": 1.1986468756673355e-15
@@ -640,19 +306,9 @@
   }
  },
  "rewriting_programs/fpbench-rosa-003-rigidbody1.fpcore": {
-  "bound": {
-   "abs": 2.1316282072803006e-13,
-   "rel": Infinity
-  },
-  "bound_s": 0.04050183296203613,
-  "egglog_s": 0.11655521392822266,
-  "extract_s": 0.03864479064941406,
-  "rounds": 7,
+  "egglog_s": 0.11543083190917969,
+  "extract_s": 0.04455709457397461,
   "cut": false,
-  "nodes": 1334,
-  "classes": 383,
-  "root_frontier": 1,
-  "max_frontier": 2,
   "original": {
    "abs": 2.1316282072803006e-13,
    "rel": Infinity
@@ -667,19 +323,9 @@
   }
  },
  "rewriting_programs/fpbench-rosa-004-rigidbody2.fpcore": {
-  "bound": {
-   "abs": 2.2716051262250403e-11,
-   "rel": Infinity
-  },
-  "bound_s": 0.04779815673828125,
-  "egglog_s": 0.2951090335845947,
-  "extract_s": 0.13542485237121582,
-  "rounds": 9,
+  "egglog_s": 0.30133509635925293,
+  "extract_s": 0.13344097137451172,
   "cut": false,
-  "nodes": 3008,
-  "classes": 874,
-  "root_frontier": 1,
-  "max_frontier": 2,
   "original": {
    "abs": 2.2716051262250403e-11,
    "rel": Infinity
@@ -694,19 +340,9 @@
   }
  },
  "rewriting_programs/fpbench-rosa-005-jetengine.fpcore": {
-  "bound": {
-   "abs": 2.045354285940004e-08,
-   "rel": Infinity
-  },
-  "bound_s": 0.058583974838256836,
-  "egglog_s": 2.240140914916992,
-  "extract_s": 0.740649938583374,
-  "rounds": 18,
+  "egglog_s": 2.2001264095306396,
+  "extract_s": 0.9281396865844727,
   "cut": false,
-  "nodes": 10326,
-  "classes": 3433,
-  "root_frontier": 1,
-  "max_frontier": 4,
   "original": {
    "abs": 8.254341876678996e-09,
    "rel": Infinity
@@ -720,27 +356,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/fpbench-rosa-006-turbine1.fpcore": {
-  "bound": {
-   "abs": 3.8889708154795766e-14,
-   "rel": 2.2901311440469242e-14
-  },
-  "bound_s": 0.05183577537536621
- },
  "rewriting_programs/fpbench-rosa-007-turbine2.fpcore": {
-  "bound": {
-   "abs": 5.601723358676756e-14,
-   "rel": Infinity
-  },
-  "bound_s": 0.04363393783569336,
-  "egglog_s": 1.2718830108642578,
-  "extract_s": 4.479244947433472,
-  "rounds": 14,
+  "egglog_s": 1.3979110717773438,
+  "extract_s": 5.231729030609131,
   "cut": false,
-  "nodes": 10722,
-  "classes": 3578,
-  "root_frontier": 1,
-  "max_frontier": 103,
   "original": {
    "abs": 1.8296566282251887e-14,
    "rel": Infinity
@@ -754,69 +373,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/fpbench-rosa-008-turbine3.fpcore": {
-  "bound": {
-   "abs": 3.4263511293308086e-14,
-   "rel": 5.86083086880488e-14
-  },
-  "bound_s": 0.04333186149597168
- },
- "bounding_programs/fpbench-rosa-009-verhulst.fpcore": {
-  "bound": {
-   "abs": 2.7256808010149643e-16,
-   "rel": 2.577718452126407e-16
-  },
-  "bound_s": 0.03883504867553711
- },
- "bounding_programs/fpbench-rosa-010-predatorprey.fpcore": {
-  "bound": {
-   "abs": 1.075631774963681e-16,
-   "rel": 3.6843283455116584e-16
-  },
-  "bound_s": 0.04079937934875488
- },
- "bounding_programs/fpbench-rosa-011-carbongas.fpcore": {
-  "bound": {
-   "abs": 2.0805410195777483e-08,
-   "rel": 8.378494113436496e-16
-  },
-  "bound_s": 0.04048728942871094
- },
- "bounding_programs/fpbench-rosa-012-sine.fpcore": {
-  "bound": {
-   "abs": 8.512030981720889e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.042363882064819336
- },
- "bounding_programs/fpbench-rosa-013-sqroot.fpcore": {
-  "bound": {
-   "abs": 5.238864897449957e-16,
-   "rel": 6.04915909678941e-16
-  },
-  "bound_s": 0.03839993476867676
- },
- "bounding_programs/fpbench-rosa-014-sineorder3.fpcore": {
-  "bound": {
-   "abs": 7.807142823182272e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.03443002700805664
- },
  "rewriting_programs/fpbench-rosa-019-triangle.fpcore": {
-  "bound": {
-   "abs": 3.012694457542886e-14,
-   "rel": 3.830344058292365e-15
-  },
-  "bound_s": 0.03847384452819824,
-  "egglog_s": 1.2521381378173828,
-  "extract_s": 3.179271936416626,
-  "rounds": 15,
+  "egglog_s": 1.2439181804656982,
+  "extract_s": 3.893791913986206,
   "cut": false,
-  "nodes": 9549,
-  "classes": 3622,
-  "root_frontier": 1,
-  "max_frontier": 17,
   "original": {
    "abs": 2.8544277112018827e-14,
    "rel": 3.824050276973577e-15
@@ -830,27 +390,10 @@
    "rel": 4.32913551205645e-16
   }
  },
- "bounding_programs/fpbench-rosa-032-bspline3.fpcore": {
-  "bound": {
-   "abs": 4.163336342344337e-17,
-   "rel": 7.0
-  },
-  "bound_s": 0.03921175003051758
- },
  "rewriting_programs/fpbench-rump-000-rump-s-example-with-pow.fpcore": {
-  "bound": {
-   "abs": 1.6457245924361708e-07,
-   "rel": Infinity
-  },
-  "bound_s": 0.043045997619628906,
-  "egglog_s": 1.9062752723693848,
-  "extract_s": 49.39979386329651,
-  "rounds": 17,
+  "egglog_s": 2.140205144882202,
+  "extract_s": 60.2589910030365,
   "cut": false,
-  "nodes": 11984,
-  "classes": 4746,
-  "root_frontier": 54,
-  "max_frontier": 236,
   "original": {
    "abs": 1.6457234200406567e-07,
    "rel": 3.911478259221043e-14
@@ -865,19 +408,9 @@
   }
  },
  "rewriting_programs/fpbench-rump-001-rump-s-example-from-c-program.fpcore": {
-  "bound": {
-   "abs": 1.392657691667854e-07,
-   "rel": Infinity
-  },
-  "bound_s": 0.045050859451293945,
-  "egglog_s": 1.9556920528411865,
-  "extract_s": 36.39453077316284,
-  "rounds": 17,
+  "egglog_s": 2.0965118408203125,
+  "extract_s": 43.03252577781677,
   "cut": false,
-  "nodes": 12491,
-  "classes": 4924,
-  "root_frontier": 46,
-  "max_frontier": 213,
   "original": {
    "abs": 1.39265651927234e-07,
    "rel": 3.911478259221043e-14
@@ -892,19 +425,9 @@
   }
  },
  "rewriting_programs/fpbench-rump-002-rump-s-example-revisited-for-floating-po.fpcore": {
-  "bound": {
-   "abs": 1.4579957910432212e-07,
-   "rel": Infinity
-  },
-  "bound_s": 0.044055938720703125,
-  "egglog_s": 1.9012458324432373,
-  "extract_s": 6.987943172454834,
-  "rounds": 16,
+  "egglog_s": 2.240537166595459,
+  "extract_s": 8.060995101928711,
   "cut": false,
-  "nodes": 13135,
-  "classes": 5194,
-  "root_frontier": 11,
-  "max_frontier": 45,
   "original": {
    "abs": 1.4579946186477072e-07,
    "rel": 3.856029826283473e-15
@@ -918,34 +441,10 @@
    "rel": 1.2201995092248792e-15
   }
  },
- "bounding_programs/herbie-demo-002-subtraction-fraction.fpcore": {
-  "bound": {
-   "abs": 1.4432899320127039e-15,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.03626394271850586
- },
- "bounding_programs/herbie-demo-004-sqrt-times.fpcore": {
-  "bound": {
-   "abs": 3.790538507934089e-16,
-   "rel": 3.0000000000000004
-  },
-  "bound_s": 0.041194915771484375
- },
  "rewriting_programs/herbie-demo-006-sqrt-sqr.fpcore": {
-  "bound": {
-   "abs": 8.881784197001254e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.03436899185180664,
-  "egglog_s": 0.4146749973297119,
-  "extract_s": 0.49533796310424805,
-  "rounds": 9,
+  "egglog_s": 0.3658409118652344,
+  "extract_s": 0.633307933807373,
   "cut": false,
-  "nodes": 5453,
-  "classes": 912,
-  "root_frontier": 1,
-  "max_frontier": 19,
   "original": {
    "abs": 3.885780586188048e-16,
    "rel": Infinity
@@ -960,19 +459,9 @@
   }
  },
  "rewriting_programs/herbie-demo-010-x-1-to-x-20.fpcore": {
-  "bound": {
-   "abs": 358157795.2997034,
-   "rel": 524287.00000000116
-  },
-  "bound_s": 0.060498952865600586,
-  "egglog_s": 6.095689058303833,
-  "extract_s": 7.58779501914978,
-  "rounds": 21,
+  "egglog_s": 6.237502336502075,
+  "extract_s": 9.557749032974243,
   "cut": false,
-  "nodes": 21240,
-  "classes": 9452,
-  "root_frontier": 6,
-  "max_frontier": 8,
   "original": {
    "abs": 358157795.29970336,
    "rel": 524287.00000000116
@@ -986,27 +475,10 @@
    "rel": 524287.00000000116
   }
  },
- "bounding_programs/herbie-graphics-pbrt-006-uniformsamplecone-z.fpcore": {
-  "bound": {
-   "abs": 1.7881393432617188e-07,
-   "rel": Infinity
-  },
-  "bound_s": 0.03547406196594238
- },
  "rewriting_programs/herbie-hamming-rearrangement-000-2sqrt-example-3-1.fpcore": {
-  "bound": {
-   "abs": 2.787960073348683e+138,
-   "rel": Infinity
-  },
-  "bound_s": 0.04155278205871582,
-  "egglog_s": 0.08836579322814941,
-  "extract_s": 0.02048206329345703,
-  "rounds": 8,
+  "egglog_s": 0.0739600658416748,
+  "extract_s": 0.027478694915771484,
   "cut": false,
-  "nodes": 816,
-  "classes": 311,
-  "root_frontier": 1,
-  "max_frontier": 2,
   "original": {
    "abs": 2.0436772196699815e+138,
    "rel": 4.087354439339965e+292
@@ -1021,19 +493,9 @@
   }
  },
  "rewriting_programs/herbie-hamming-rearrangement-001-2isqrt-example-3-6.fpcore": {
-  "bound": {
-   "abs": 5.06334993020088e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.03872489929199219,
-  "egglog_s": 0.48862385749816895,
-  "extract_s": 0.41184520721435547,
-  "rounds": 11,
+  "egglog_s": 0.5481300354003906,
+  "extract_s": 0.46741604804992676,
   "cut": false,
-  "nodes": 5450,
-  "classes": 1737,
-  "root_frontier": 2,
-  "max_frontier": 5,
   "original": {
    "abs": 4.2306826617320124e-16,
    "rel": Infinity
@@ -1047,41 +509,10 @@
    "rel": 1.0000000000000016
   }
  },
- "bounding_programs/herbie-haskell-000-optimisation-circlepacking-place-from-ci.fpcore": {
-  "bound": {
-   "abs": 3.9758627835386644e-16,
-   "rel": 1.5481251736114876e-16
-  },
-  "bound_s": 0.03260493278503418
- },
- "bounding_programs/herbie-haskell-001-optimisation-circlepacking-place-from-ci.fpcore": {
-  "bound": {
-   "abs": 3.469446951953615e-17,
-   "rel": 3.7007434154171896e-16
-  },
-  "bound_s": 0.04365682601928711
- },
- "bounding_programs/herbie-haskell-003-optimisation-circlepacking-place-from-ci.fpcore": {
-  "bound": {
-   "abs": 1.1102230246251565e-15,
-   "rel": 3.757677929500531e-16
-  },
-  "bound_s": 0.0434110164642334
- },
  "rewriting_programs/herbie-haskell-004-optimisation-circlepacking-place-from-ci.fpcore": {
-  "bound": {
-   "abs": 8.881784197001252e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.04206418991088867,
-  "egglog_s": 0.48329806327819824,
-  "extract_s": 0.6565759181976318,
-  "rounds": 10,
+  "egglog_s": 0.48215699195861816,
+  "extract_s": 0.7063150405883789,
   "cut": false,
-  "nodes": 5871,
-  "classes": 2240,
-  "root_frontier": 1,
-  "max_frontier": 31,
   "original": {
    "abs": 8.881784197001252e-16,
    "rel": Infinity
@@ -1095,104 +526,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-haskell-005-optimisation-circlepacking-place-from-ci.fpcore": {
-  "bound": {
-   "abs": 1.1102230246251565e-15,
-   "rel": 3.7007434154171896e-16
-  },
-  "bound_s": 0.04570174217224121
- },
- "bounding_programs/herbie-haskell-006-optimisation-circlepacking-place-from-ci.fpcore": {
-  "bound": {
-   "abs": 9.325873406851316e-14,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.04767322540283203
- },
- "bounding_programs/herbie-haskell-007-optimisation-circlepacking-place-from-ci.fpcore": {
-  "bound": {
-   "abs": 7.371880883511041e-14,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.03609180450439453
- },
- "bounding_programs/herbie-haskell-008-optimisation-circlepacking-place-from-ci.fpcore": {
-  "bound": {
-   "abs": 4.440892098500626e-15,
-   "rel": 1.533165129244264e-16
-  },
-  "bound_s": 0.040024757385253906
- },
- "bounding_programs/herbie-haskell-009-data-colour-matrix-determinant-from-colo.fpcore": {
-  "bound": {
-   "abs": 0.00012591483394430725,
-   "rel": 5.337685366136418e-16
-  },
-  "bound_s": 0.044183969497680664
- },
- "bounding_programs/herbie-haskell-010-data-colour-matrix-inverse-from-colour-2.fpcore": {
-  "bound": {
-   "abs": 2.6680047060523293e-15,
-   "rel": 3.3659142492603956e-16
-  },
-  "bound_s": 0.04570913314819336
- },
- "bounding_programs/herbie-haskell-011-data-colour-cie-chromaticity-chromacoord.fpcore": {
-  "bound": {
-   "abs": 8.881784197001252e-16,
-   "rel": 1.1102230246251565e-16
-  },
-  "bound_s": 0.03473806381225586
- },
- "bounding_programs/herbie-haskell-012-data-colour-rgb-hslsv-from-colour-2-3-3-.fpcore": {
-  "bound": {
-   "abs": 4.440892098500626e-16,
-   "rel": 1.1102230246251565e-16
-  },
-  "bound_s": 0.05577492713928223
- },
- "bounding_programs/herbie-haskell-013-data-colour-rgb-hslsv-from-colour-2-3-3-.fpcore": {
-  "bound": {
-   "abs": 7.280023806011116e-12,
-   "rel": 2.2218684568835953e-16
-  },
-  "bound_s": 0.04683971405029297
- },
- "bounding_programs/herbie-haskell-014-data-colour-rgb-hslsv-from-colour-2-3-3-.fpcore": {
-  "bound": {
-   "abs": 1.0608797790862617e-15,
-   "rel": 5.181040781584065e-16
-  },
-  "bound_s": 0.0437312126159668
- },
- "bounding_programs/herbie-haskell-015-data-colour-rgb-hslsv-from-colour-2-3-3-.fpcore": {
-  "bound": {
-   "abs": 3.552713678800502e-16,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.03355073928833008
- },
- "bounding_programs/herbie-haskell-016-data-colour-rgb-hslsv-from-colour-2-3-3-.fpcore": {
-  "bound": {
-   "abs": 8.881784197001252e-16,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.04154801368713379
- },
  "rewriting_programs/herbie-haskell-017-data-colour-rgbspace-hsl-hsl-from-colour.fpcore": {
-  "bound": {
-   "abs": 2.6645352591003757e-15,
-   "rel": Infinity
-  },
-  "bound_s": 0.04443478584289551,
-  "egglog_s": 0.12152314186096191,
-  "extract_s": 0.05335497856140137,
-  "rounds": 9,
+  "egglog_s": 0.10077524185180664,
+  "extract_s": 0.05751681327819824,
   "cut": false,
-  "nodes": 759,
-  "classes": 289,
-  "root_frontier": 1,
-  "max_frontier": 2,
   "original": {
    "abs": 2.220446049250313e-15,
    "rel": Infinity
@@ -1206,216 +543,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-haskell-018-data-colour-rgbspace-hsl-hsl-from-colour.fpcore": {
-  "bound": {
-   "abs": 3.552713678800501e-15,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.036414146423339844
- },
- "bounding_programs/herbie-haskell-019-data-colour-rgbspace-hsl-hsl-from-colour.fpcore": {
-  "bound": {
-   "abs": 4.440892098500626e-16,
-   "rel": 1.1102230246251565e-16
-  },
-  "bound_s": 0.04555678367614746
- },
- "bounding_programs/herbie-haskell-020-data-colour-rgbspace-hsl-hsl-from-colour.fpcore": {
-  "bound": {
-   "abs": 4.991192644373163e-13,
-   "rel": 5.636516894250796e-16
-  },
-  "bound_s": 0.03408408164978027
- },
- "bounding_programs/herbie-haskell-021-data-colour-rgbspace-hsl-hsl-from-colour.fpcore": {
-  "bound": {
-   "abs": 4.263256414560601e-13,
-   "rel": 4.4384157646167045e-16
-  },
-  "bound_s": 0.04483199119567871
- },
- "bounding_programs/herbie-haskell-022-data-colour-rgbspace-hsl-hsl-from-colour.fpcore": {
-  "bound": {
-   "abs": 2.498001805406602e-16,
-   "rel": 1.3183898417423734e-16
-  },
-  "bound_s": 0.03941082954406738
- },
- "bounding_programs/herbie-haskell-023-data-colour-rgbspace-hsl-hsl-from-colour.fpcore": {
-  "bound": {
-   "abs": 1.3877787807814457e-16,
-   "rel": 1.5265566588595902e-16
-  },
-  "bound_s": 0.03814506530761719
- },
- "bounding_programs/herbie-haskell-024-data-colour-rgbspace-hsv-hsv-from-colour.fpcore": {
-  "bound": {
-   "abs": 1.7763568394002505e-15,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.037529945373535156
- },
- "bounding_programs/herbie-haskell-025-data-colour-rgbspace-hsv-hsv-from-colour.fpcore": {
-  "bound": {
-   "abs": 8.526512829121202e-14,
-   "rel": 3.348291661567933e-16
-  },
-  "bound_s": 0.036930084228515625
- },
- "bounding_programs/herbie-haskell-026-data-colour-rgbspace-hsv-hsv-from-colour.fpcore": {
-  "bound": {
-   "abs": 1.1368683772161603e-13,
-   "rel": 4.431023449392848e-16
-  },
-  "bound_s": 0.032896995544433594
- },
- "bounding_programs/herbie-haskell-027-data-colour-srgb-invtransferfunction-fro.fpcore": {
-  "bound": {
-   "abs": 6.217248937900878e-16,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.03199410438537598
- },
- "bounding_programs/herbie-haskell-028-data-colour-srgb-transferfunction-from-c.fpcore": {
-  "bound": {
-   "abs": 5.329070518200751e-15,
-   "rel": 4.070817756958908e-16
-  },
-  "bound_s": 0.039868831634521484
- },
- "bounding_programs/herbie-haskell-029-data-colour-cie-lightness-from-colour-2-.fpcore": {
-  "bound": {
-   "abs": 2.842170943040401e-14,
-   "rel": 2.3980817331903383e-16
-  },
-  "bound_s": 0.04185295104980469
- },
- "bounding_programs/herbie-haskell-030-data-colour-cie-cielabview-from-colour-2.fpcore": {
-  "bound": {
-   "abs": 2.67841304690819e-15,
-   "rel": 2.78481882048605e-16
-  },
-  "bound_s": 0.03290700912475586
- },
- "bounding_programs/herbie-haskell-031-data-colour-cie-cielabview-from-colour-2.fpcore": {
-  "bound": {
-   "abs": 4.4941828036826337e-13,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.0399169921875
- },
- "bounding_programs/herbie-haskell-032-data-colour-cie-cielabview-from-colour-2.fpcore": {
-  "bound": {
-   "abs": 2.0250467969162855e-13,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.04306912422180176
- },
- "bounding_programs/herbie-haskell-033-data-colour-cie-cielab-from-colour-2-3-3.fpcore": {
-  "bound": {
-   "abs": 1.0103029524088925e-14,
-   "rel": 3.491651412446118e-16
-  },
-  "bound_s": 0.03960919380187988
- },
- "bounding_programs/herbie-haskell-034-data-colour-cie-cielab-from-colour-2-3-3.fpcore": {
-  "bound": {
-   "abs": 2.919120883712696e-17,
-   "rel": 1.9918707206510165e-16
-  },
-  "bound_s": 0.03291511535644531
- },
- "bounding_programs/herbie-haskell-035-data-colour-cie-cielab-from-colour-2-3-3.fpcore": {
-  "bound": {
-   "abs": 2.237793284010081e-16,
-   "rel": 1.1274325829185773e-16
-  },
-  "bound_s": 0.0323328971862793
- },
- "bounding_programs/herbie-haskell-036-data-colour-cie-cielab-from-colour-2-3-3.fpcore": {
-  "bound": {
-   "abs": 1.1449174941446927e-16,
-   "rel": 1.14636309704134e-16
-  },
-  "bound_s": 0.037603139877319336
- },
- "bounding_programs/herbie-haskell-037-diagrams-solve-tridiagonal-solvetridiago.fpcore": {
-  "bound": {
-   "abs": 2.860127587420868e-17,
-   "rel": 5.622742415037085e-16
-  },
-  "bound_s": 0.03572797775268555
- },
- "bounding_programs/herbie-haskell-038-diagrams-solve-tridiagonal-solvetridiago.fpcore": {
-  "bound": {
-   "abs": 6.556569626132505e-19,
-   "rel": 3.3394109874551957e-16
-  },
-  "bound_s": 0.03598380088806152
- },
- "bounding_programs/herbie-haskell-039-diagrams-solve-tridiagonal-solvetridiago.fpcore": {
-  "bound": {
-   "abs": 2.842170943040401e-14,
-   "rel": 2.2562596952059633e-16
-  },
-  "bound_s": 0.045091867446899414
- },
- "bounding_programs/herbie-haskell-040-diagrams-solve-tridiagonal-solvecyclictr.fpcore": {
-  "bound": {
-   "abs": 1.6653345369377348e-16,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.047698020935058594
- },
- "bounding_programs/herbie-haskell-041-diagrams-solve-tridiagonal-solvecyclictr.fpcore": {
-  "bound": {
-   "abs": 1.1336482328337083e-17,
-   "rel": 6.771278361495499e-16
-  },
-  "bound_s": 0.04525113105773926
- },
- "bounding_programs/herbie-haskell-042-diagrams-solve-polynomial-quadform-from-.fpcore": {
-  "bound": {
-   "abs": 1.7053025658242404e-13,
-   "rel": 2.2291879628300387e-16
-  },
-  "bound_s": 0.04194521903991699
- },
- "bounding_programs/herbie-haskell-043-diagrams-solve-polynomial-quadform-from-.fpcore": {
-  "bound": {
-   "abs": 7.105427357601003e-15,
-   "rel": 4.392887471580006e-16
-  },
-  "bound_s": 0.04157590866088867
- },
- "bounding_programs/herbie-haskell-044-diagrams-solve-polynomial-quadform-from-.fpcore": {
-  "bound": {
-   "abs": 2.7755575615628914e-17,
-   "rel": 1.1102230246251565e-16
-  },
-  "bound_s": 0.04694509506225586
- },
- "bounding_programs/herbie-haskell-045-diagrams-solve-polynomial-cubform-from-d.fpcore": {
-  "bound": {
-   "abs": 5.704350769519806e-09,
-   "rel": 3.6203061367417797e-16
-  },
-  "bound_s": 0.03758811950683594
- },
  "rewriting_programs/herbie-haskell-046-diagrams-solve-polynomial-cubform-from-d.fpcore": {
-  "bound": {
-   "abs": 1.0658141036401503e-14,
-   "rel": Infinity
-  },
-  "bound_s": 0.03883981704711914,
-  "egglog_s": 0.11041688919067383,
-  "extract_s": 0.028779029846191406,
-  "rounds": 9,
+  "egglog_s": 0.07820510864257812,
+  "extract_s": 0.033188819885253906,
   "cut": false,
-  "nodes": 556,
-  "classes": 183,
-  "root_frontier": 1,
-  "max_frontier": 3,
   "original": {
    "abs": 1.0658141036401503e-14,
    "rel": Infinity
@@ -1429,62 +560,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-haskell-047-diagrams-solve-polynomial-cubform-from-d.fpcore": {
-  "bound": {
-   "abs": 3.238150488490041e-17,
-   "rel": 2.2204460492503136e-16
-  },
-  "bound_s": 0.044142961502075195
- },
- "bounding_programs/herbie-haskell-049-diagrams-solve-polynomial-cubform-from-d.fpcore": {
-  "bound": {
-   "abs": 0.0003662162343971431,
-   "rel": 3.3310040611983534e-16
-  },
-  "bound_s": 0.049468278884887695
- },
- "bounding_programs/herbie-haskell-050-diagrams-solve-polynomial-cubform-from-d.fpcore": {
-  "bound": {
-   "abs": 5.684341886080802e-14,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.04611492156982422
- },
- "bounding_programs/herbie-haskell-051-diagrams-solve-polynomial-cubform-from-d.fpcore": {
-  "bound": {
-   "abs": 8.881784197001252e-16,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.029918193817138672
- },
- "bounding_programs/herbie-haskell-052-diagrams-solve-polynomial-cubform-from-d.fpcore": {
-  "bound": {
-   "abs": 5.689893001203928e-16,
-   "rel": 3.4231876592609005e-16
-  },
-  "bound_s": 0.03777718544006348
- },
- "bounding_programs/herbie-haskell-053-diagrams-solve-polynomial-cubform-from-d.fpcore": {
-  "bound": {
-   "abs": 2.842344415387999e-14,
-   "rel": 4.446684566455192e-16
-  },
-  "bound_s": 0.042240142822265625
- },
  "rewriting_programs/herbie-haskell-054-diagrams-solve-polynomial-cubform-from-d.fpcore": {
-  "bound": {
-   "abs": 6.394748418942987e-14,
-   "rel": 6.668468129407275e-16
-  },
-  "bound_s": 0.03672623634338379,
-  "egglog_s": 0.8146228790283203,
-  "extract_s": 1.2068612575531006,
-  "rounds": 11,
+  "egglog_s": 0.9384822845458984,
+  "extract_s": 1.1879298686981201,
   "cut": false,
-  "nodes": 6542,
-  "classes": 2260,
-  "root_frontier": 2,
-  "max_frontier": 17,
   "original": {
    "abs": 3.912098730865667e-14,
    "rel": 6.668468129407275e-16
@@ -1499,19 +578,9 @@
   }
  },
  "rewriting_programs/herbie-haskell-056-diagrams-solve-polynomial-quartform-from.fpcore": {
-  "bound": {
-   "abs": 4.440892098500626e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.03047490119934082,
-  "egglog_s": 0.37056875228881836,
-  "extract_s": 0.24530696868896484,
-  "rounds": 9,
+  "egglog_s": 0.3347640037536621,
+  "extract_s": 0.2310481071472168,
   "cut": false,
-  "nodes": 4029,
-  "classes": 1022,
-  "root_frontier": 1,
-  "max_frontier": 3,
   "original": {
    "abs": 4.440892098500626e-16,
    "rel": Infinity
@@ -1526,19 +595,9 @@
   }
  },
  "rewriting_programs/herbie-haskell-057-diagrams-solve-polynomial-quartform-from.fpcore": {
-  "bound": {
-   "abs": 2.1344037648418634e-14,
-   "rel": Infinity
-  },
-  "bound_s": 0.048928022384643555,
-  "egglog_s": 0.8348898887634277,
-  "extract_s": 0.5411219596862793,
-  "rounds": 11,
+  "egglog_s": 0.8620040416717529,
+  "extract_s": 0.6546401977539062,
   "cut": false,
-  "nodes": 8046,
-  "classes": 2348,
-  "root_frontier": 1,
-  "max_frontier": 7,
   "original": {
    "abs": 2.1316282072803006e-14,
    "rel": Infinity
@@ -1552,27 +611,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-haskell-058-diagrams-solve-polynomial-quartform-from.fpcore": {
-  "bound": {
-   "abs": 4.369926642766586e-11,
-   "rel": 3.6652610983980505e-16
-  },
-  "bound_s": 0.044790029525756836
- },
  "rewriting_programs/herbie-haskell-059-diagrams-solve-polynomial-quartform-from.fpcore": {
-  "bound": {
-   "abs": 8.881784197001252e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.043253183364868164,
-  "egglog_s": 0.5206739902496338,
-  "extract_s": 0.5771839618682861,
-  "rounds": 10,
+  "egglog_s": 0.6484520435333252,
+  "extract_s": 0.6526308059692383,
   "cut": false,
-  "nodes": 7323,
-  "classes": 2116,
-  "root_frontier": 1,
-  "max_frontier": 7,
   "original": {
    "abs": 8.881784197001252e-16,
    "rel": Infinity
@@ -1586,97 +628,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-haskell-060-diagrams-solve-polynomial-quartform-from.fpcore": {
-  "bound": {
-   "abs": 1.1102230246251565e-16,
-   "rel": 1.1102230246251565e-16
-  },
-  "bound_s": 0.03812098503112793
- },
- "bounding_programs/herbie-haskell-061-text-parsec-token-maketokenparser-from-p.fpcore": {
-  "bound": {
-   "abs": 1.9984014443252818e-16,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.037431955337524414
- },
- "bounding_programs/herbie-haskell-062-text-parsec-token-maketokenparser-from-p.fpcore": {
-  "bound": {
-   "abs": 5.684341886080802e-14,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.042099952697753906
- },
- "bounding_programs/herbie-haskell-063-numeric-interval-internal-bisect-from-in.fpcore": {
-  "bound": {
-   "abs": 6.661338147750939e-16,
-   "rel": 1.973729821555834e-16
-  },
-  "bound_s": 0.03251504898071289
- },
- "bounding_programs/herbie-haskell-064-numeric-interval-internal-scale-from-int.fpcore": {
-  "bound": {
-   "abs": 4.440892098500626e-16,
-   "rel": 1.1102230246251565e-16
-  },
-  "bound_s": 0.042636871337890625
- },
- "bounding_programs/herbie-haskell-065-linear-v2-cdot-from-linear-1-19-1-3-a.fpcore": {
-  "bound": {
-   "abs": 6.830092047493963e-13,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.044069766998291016
- },
- "bounding_programs/herbie-haskell-066-linear-v3-cross-from-linear-1-19-1-3.fpcore": {
-  "bound": {
-   "abs": 4.556355293061642e-13,
-   "rel": 2.255691224635239e-16
-  },
-  "bound_s": 0.03690600395202637
- },
- "bounding_programs/herbie-haskell-067-linear-v3-cdot-from-linear-1-19-1-3-b.fpcore": {
-  "bound": {
-   "abs": 1.7530599194515162e-10,
-   "rel": 2.237592093197712e-16
-  },
-  "bound_s": 0.044419050216674805
- },
- "bounding_programs/herbie-haskell-068-linear-v4-cdot-from-linear-1-19-1-3-c.fpcore": {
-  "bound": {
-   "abs": 4.487878957348812e-08,
-   "rel": 2.237857153534698e-16
-  },
-  "bound_s": 0.04677891731262207
- },
- "bounding_programs/herbie-haskell-069-main-bigenough2-from-a.fpcore": {
-  "bound": {
-   "abs": 8.526512829121202e-14,
-   "rel": 3.322535571863564e-16
-  },
-  "bound_s": 0.038704872131347656
- },
- "bounding_programs/herbie-haskell-070-main-bigenough1-from-b.fpcore": {
-  "bound": {
-   "abs": 6.661338147750939e-16,
-   "rel": 1.9984014443252818e-16
-  },
-  "bound_s": 0.04252815246582031
- },
  "rewriting_programs/herbie-haskell-071-main-bigenough3-from-c.fpcore": {
-  "bound": {
-   "abs": 3.0054922785922005e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.05601072311401367,
-  "egglog_s": 0.09641599655151367,
-  "extract_s": 0.02598285675048828,
-  "rounds": 9,
+  "egglog_s": 0.09649991989135742,
+  "extract_s": 0.04690194129943848,
   "cut": false,
-  "nodes": 767,
-  "classes": 293,
-  "root_frontier": 1,
-  "max_frontier": 2,
   "original": {
    "abs": 3.0054922785922005e-16,
    "rel": 9.456073270270362e-16
@@ -1690,69 +645,10 @@
    "rel": 3.03791831778458e-16
   }
  },
- "bounding_programs/herbie-haskell-072-linear-quaternion-c-from-linear-1-19-1-3.fpcore": {
-  "bound": {
-   "abs": 7.398526236102043e-13,
-   "rel": 4.000773034843349e-16
-  },
-  "bound_s": 0.03999805450439453
- },
- "bounding_programs/herbie-haskell-073-linear-quaternion-c-from-linear-1-19-1-3.fpcore": {
-  "bound": {
-   "abs": 9.325873406851315e-14,
-   "rel": Infinity
-  },
-  "bound_s": 0.03332090377807617
- },
- "bounding_programs/herbie-haskell-074-linear-quaternion-c-from-linear-1-19-1-3.fpcore": {
-  "bound": {
-   "abs": 7.194245199571014e-14,
-   "rel": Infinity
-  },
-  "bound_s": 0.027955055236816406
- },
- "bounding_programs/herbie-haskell-075-linear-quaternion-c-from-linear-1-19-1-3.fpcore": {
-  "bound": {
-   "abs": 6.128431095930864e-14,
-   "rel": Infinity
-  },
-  "bound_s": 0.036718130111694336
- },
- "bounding_programs/herbie-haskell-076-linear-quaternion-c-from-linear-1-19-1-3.fpcore": {
-  "bound": {
-   "abs": 4.6407322429331543e-14,
-   "rel": 4.0122345600353156e-16
-  },
-  "bound_s": 0.031371116638183594
- },
- "bounding_programs/herbie-haskell-077-graphics-rasterific-linear-cquadrance-fr.fpcore": {
-  "bound": {
-   "abs": 1.0880185641326534e-14,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.032959938049316406
- },
- "bounding_programs/herbie-haskell-084-linear-quaternion-clog-from-linear-1-19-.fpcore": {
-  "bound": {
-   "abs": 4.702980202497586e-16,
-   "rel": 1.770169778536519e-16
-  },
-  "bound_s": 0.04349994659423828
- },
  "rewriting_programs/herbie-haskell-086-linear-matrix-det44-from-linear-1-19-1-3.fpcore": {
-  "bound": {
-   "abs": 28587309271451.984,
-   "rel": Infinity
-  },
-  "bound_s": 0.059027910232543945,
-  "egglog_s": 2.5983760356903076,
-  "extract_s": 2.6110870838165283,
-  "rounds": 18,
+  "egglog_s": 2.755376100540161,
+  "extract_s": 3.3036670684814453,
   "cut": false,
-  "nodes": 13732,
-  "classes": 6655,
-  "root_frontier": 1,
-  "max_frontier": 137,
   "original": {
    "abs": 28587309271451.984,
    "rel": Infinity
@@ -1766,104 +662,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-haskell-087-linear-matrix-det33-from-linear-1-19-1-3.fpcore": {
-  "bound": {
-   "abs": 4.771353999899475e-05,
-   "rel": 8.171509018709986e-15
-  },
-  "bound_s": 0.04123091697692871
- },
- "bounding_programs/herbie-haskell-088-linear-matrix-fromquaternion-from-linear.fpcore": {
-  "bound": {
-   "abs": 3.9968028886505635e-15,
-   "rel": Infinity
-  },
-  "bound_s": 0.03673720359802246
- },
- "bounding_programs/herbie-haskell-089-linear-matrix-fromquaternion-from-linear.fpcore": {
-  "bound": {
-   "abs": 5.773159728050814e-15,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.044013023376464844
- },
- "bounding_programs/herbie-haskell-090-linear-projection-inverseinfiniteperspec.fpcore": {
-  "bound": {
-   "abs": 5.5706550483591855e-12,
-   "rel": 4.070817756958908e-16
-  },
-  "bound_s": 0.043406009674072266
- },
- "bounding_programs/herbie-haskell-091-linear-projection-infiniteperspective-fr.fpcore": {
-  "bound": {
-   "abs": 1.9756572920846984e-18,
-   "rel": 4.0708177569589086e-16
-  },
-  "bound_s": 0.04337263107299805
- },
- "bounding_programs/herbie-haskell-092-linear-projection-inverseperspective-fro.fpcore": {
-  "bound": {
-   "abs": 2.0816681711721695e-16,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.04929780960083008
- },
- "bounding_programs/herbie-haskell-093-linear-projection-inverseperspective-fro.fpcore": {
-  "bound": {
-   "abs": 3.60822483003176e-16,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.03785896301269531
- },
- "bounding_programs/herbie-haskell-094-linear-projection-perspective-from-linea.fpcore": {
-  "bound": {
-   "abs": 1.4432899320127039e-15,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.03919792175292969
- },
- "bounding_programs/herbie-haskell-095-linear-projection-perspective-from-linea.fpcore": {
-  "bound": {
-   "abs": 5.329070518200754e-15,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.03725886344909668
- },
- "bounding_programs/herbie-haskell-096-physics-forcelayout-coulombforce-from-fo.fpcore": {
-  "bound": {
-   "abs": 2.775557561562892e-17,
-   "rel": 2.2204460492503136e-16
-  },
-  "bound_s": 0.039234161376953125
- },
- "bounding_programs/herbie-haskell-097-codec-picture-types-tonemapping-from-jui.fpcore": {
-  "bound": {
-   "abs": 5.273559366969496e-16,
-   "rel": 4.564250212347866e-16
-  },
-  "bound_s": 0.03734779357910156
- },
- "bounding_programs/herbie-haskell-099-main-i-from.fpcore": {
-  "bound": {
-   "abs": 2.4424906541753444e-15,
-   "rel": 3.5068949508000985e-16
-  },
-  "bound_s": 0.030167102813720703
- },
  "rewriting_programs/herbie-haskell-100-main-z-from.fpcore": {
-  "bound": {
-   "abs": 5.302236033594792e-15,
-   "rel": Infinity
-  },
-  "bound_s": 0.04533505439758301,
-  "egglog_s": 1.2776799201965332,
-  "extract_s": 0.7562439441680908,
-  "rounds": 14,
+  "egglog_s": 1.2819509506225586,
+  "extract_s": 0.9074580669403076,
   "cut": false,
-  "nodes": 8634,
-  "classes": 4283,
-  "root_frontier": 1,
-  "max_frontier": 8,
   "original": {
    "abs": 4.6916133700509556e-15,
    "rel": 7.552175870243026e-15
@@ -1877,69 +679,10 @@
    "rel": 4.898264829691456e-16
   }
  },
- "bounding_programs/herbie-haskell-101-diagrams-threed-shapes-frustum-from-diag.fpcore": {
-  "bound": {
-   "abs": 4.500000000001366,
-   "rel": 5.551098182822637e-16
-  },
-  "bound_s": 0.05571484565734863
- },
- "bounding_programs/herbie-haskell-102-diagrams-threed-shapes-frustum-from-diag.fpcore": {
-  "bound": {
-   "abs": 4.263256414560601e-14,
-   "rel": 3.320800424767691e-16
-  },
-  "bound_s": 0.03620004653930664
- },
- "bounding_programs/herbie-haskell-106-diagrams-color-hsv-lerp-from-diagrams-co.fpcore": {
-  "bound": {
-   "abs": 1.1546319456101628e-14,
-   "rel": 6.661338147750946e-16
-  },
-  "bound_s": 0.03820514678955078
- },
- "bounding_programs/herbie-haskell-107-diagrams-twod-segment-bernstein-evaluate.fpcore": {
-  "bound": {
-   "abs": 8.881784197001252e-16,
-   "rel": 4.599495387732792e-16
-  },
-  "bound_s": 0.03573894500732422
- },
- "bounding_programs/herbie-haskell-108-diagrams-segment-catparam-from-diagrams-.fpcore": {
-  "bound": {
-   "abs": 2.1316282072803006e-14,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.031083106994628906
- },
- "bounding_programs/herbie-haskell-109-diagrams-segment-catparam-from-diagrams-.fpcore": {
-  "bound": {
-   "abs": 8.526512829121202e-14,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.030556917190551758
- },
- "bounding_programs/herbie-haskell-110-diagrams-segment-catparam-from-diagrams-.fpcore": {
-  "bound": {
-   "abs": 1.3322676295501878e-15,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.03657102584838867
- },
  "rewriting_programs/herbie-haskell-111-diagrams-tangent-catparam-from-diagrams-.fpcore": {
-  "bound": {
-   "abs": 1.2434497875801753e-14,
-   "rel": Infinity
-  },
-  "bound_s": 0.04132413864135742,
-  "egglog_s": 0.3856070041656494,
-  "extract_s": 0.19071316719055176,
-  "rounds": 10,
+  "egglog_s": 0.35919904708862305,
+  "extract_s": 0.19477081298828125,
   "cut": false,
-  "nodes": 3856,
-  "classes": 1332,
-  "root_frontier": 1,
-  "max_frontier": 3,
   "original": {
    "abs": 8.881784197001252e-15,
    "rel": Infinity
@@ -1953,83 +696,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-haskell-112-diagrams-tangent-catparam-from-diagrams-.fpcore": {
-  "bound": {
-   "abs": 8.881784197001252e-15,
-   "rel": 6.661338147750943e-16
-  },
-  "bound_s": 0.04839611053466797
- },
- "bounding_programs/herbie-haskell-113-diagrams-tangent-catparam-from-diagrams-.fpcore": {
-  "bound": {
-   "abs": 1.7763568394002505e-15,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.040512800216674805
- },
- "bounding_programs/herbie-haskell-114-diagrams-trail-splitatparam-from-diagram.fpcore": {
-  "bound": {
-   "abs": 3.9548974127827917e-16,
-   "rel": 4.287624455731099e-16
-  },
-  "bound_s": 0.03445696830749512
- },
- "bounding_programs/herbie-haskell-115-diagrams-trail-splitatparam-from-diagram.fpcore": {
-  "bound": {
-   "abs": 7.549516567451067e-16,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.03726911544799805
- },
- "bounding_programs/herbie-haskell-116-diagrams-trail-splitatparam-from-diagram.fpcore": {
-  "bound": {
-   "abs": 6.291263806209223e-16,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.03085494041442871
- },
- "bounding_programs/herbie-haskell-117-diagrams-trail-splitatparam-from-diagram.fpcore": {
-  "bound": {
-   "abs": 6.883382752675973e-16,
-   "rel": 5.773159728050817e-16
-  },
-  "bound_s": 0.03503274917602539
- },
- "bounding_programs/herbie-haskell-118-diagrams-twod-arc-bezierfromsweepq1-from.fpcore": {
-  "bound": {
-   "abs": 6.013708050052935e-17,
-   "rel": 3.000000000000001
-  },
-  "bound_s": 0.033777713775634766
- },
- "bounding_programs/herbie-haskell-119-diagrams-twod-arc-arcbetween-from-diagra.fpcore": {
-  "bound": {
-   "abs": 1.7524443434852492e-15,
-   "rel": 5.699144859742472e-16
-  },
-  "bound_s": 0.04830312728881836
- },
- "bounding_programs/herbie-haskell-120-diagrams-twod-ellipse-ellipse-from-diagr.fpcore": {
-  "bound": {
-   "abs": 9.557287386424875e-17,
-   "rel": 1.1035804890550034e-16
-  },
-  "bound_s": 0.04050469398498535
- },
  "rewriting_programs/herbie-haskell-121-graphics-rendering-chart-axis-types-invl.fpcore": {
-  "bound": {
-   "abs": 6.4492062484029215e-15,
-   "rel": Infinity
-  },
-  "bound_s": 0.04294896125793457,
-  "egglog_s": 1.3657050132751465,
-  "extract_s": 1.4019019603729248,
-  "rounds": 11,
+  "egglog_s": 1.2833971977233887,
+  "extract_s": 1.812924861907959,
   "cut": false,
-  "nodes": 13479,
-  "classes": 5809,
-  "root_frontier": 1,
-  "max_frontier": 24,
   "original": {
    "abs": 6.4492062484029215e-15,
    "rel": Infinity
@@ -2043,90 +713,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-haskell-122-diagrams-twod-segment-bezierclip-from-di.fpcore": {
-  "bound": {
-   "abs": 4.3520742565306136e-14,
-   "rel": 4.996003610813206e-16
-  },
-  "bound_s": 0.04323911666870117
- },
- "bounding_programs/herbie-haskell-123-data-octree-internal-octantdistance-from.fpcore": {
-  "bound": {
-   "abs": 1.8036917794045733e-15,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.04078316688537598
- },
- "bounding_programs/herbie-haskell-124-graphics-rasterific-shading-sradialgradi.fpcore": {
-  "bound": {
-   "abs": 7.105427357601002e-15,
-   "rel": 2.3790493384824787e-16
-  },
-  "bound_s": 0.04092001914978027
- },
- "bounding_programs/herbie-haskell-127-diagrams-twod-apollonian-descartes-from-.fpcore": {
-  "bound": {
-   "abs": 8.753454306286496e-15,
-   "rel": 2.5288413338684125e-16
-  },
-  "bound_s": 0.059580326080322266
- },
- "bounding_programs/herbie-haskell-128-diagrams-twod-apollonian-initialconfig-f.fpcore": {
-  "bound": {
-   "abs": 2.2676305277968825e-14,
-   "rel": 4.535379164426173e-16
-  },
-  "bound_s": 0.08230400085449219
- },
- "bounding_programs/herbie-haskell-129-diagrams-twod-apollonian-initialconfig-f.fpcore": {
-  "bound": {
-   "abs": 6.226585271075474e-14,
-   "rel": 3.700743415417189e-16
-  },
-  "bound_s": 0.03664112091064453
- },
- "bounding_programs/herbie-haskell-130-diagrams-backend-rasterific-rasterificra.fpcore": {
-  "bound": {
-   "abs": 3.552713678800501e-15,
-   "rel": 4.4319746444875736e-16
-  },
-  "bound_s": 0.046604156494140625
- },
- "bounding_programs/herbie-haskell-131-data-hashtable-st-basic-computeoverhead-.fpcore": {
-  "bound": {
-   "abs": 3.1292243102276645e-15,
-   "rel": Infinity
-  },
-  "bound_s": 0.03629589080810547
- },
- "bounding_programs/herbie-haskell-132-language-haskell-hscolour-colourhighligh.fpcore": {
-  "bound": {
-   "abs": 1.2079226507921703e-13,
-   "rel": 3.3941103895683365e-16
-  },
-  "bound_s": 0.04224991798400879
- },
- "bounding_programs/herbie-haskell-133-system-random-mwc-distributions-blocks-f.fpcore": {
-  "bound": {
-   "abs": 2.220446049250313e-16,
-   "rel": 1.1102230246251565e-16
-  },
-  "bound_s": 0.04561209678649902
- },
  "rewriting_programs/herbie-haskell-134-system-random-mwc-distributions-standard.fpcore": {
-  "bound": {
-   "abs": 5.551115123125783e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.038960933685302734,
-  "egglog_s": 0.06896781921386719,
-  "extract_s": 0.008800983428955078,
-  "rounds": 8,
+  "egglog_s": 0.05023789405822754,
+  "extract_s": 0.00966501235961914,
   "cut": false,
-  "nodes": 305,
-  "classes": 109,
-  "root_frontier": 1,
-  "max_frontier": 2,
   "original": {
    "abs": 5.551115123125783e-16,
    "rel": Infinity
@@ -2140,83 +730,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-haskell-135-synthbasics-oscsamplebasedaux-from-yampa.fpcore": {
-  "bound": {
-   "abs": 4.263256414560601e-14,
-   "rel": 3.3217516198624165e-16
-  },
-  "bound_s": 0.03631877899169922
- },
- "bounding_programs/herbie-haskell-138-ai-clustering-hierarchical-internal-aver.fpcore": {
-  "bound": {
-   "abs": 7.216449660063519e-17,
-   "rel": 2.2204460492503136e-16
-  },
-  "bound_s": 0.03141283988952637
- },
- "bounding_programs/herbie-haskell-139-numeric-integration-tanhsinh-nonnegative.fpcore": {
-  "bound": {
-   "abs": 2.2204460492503136e-16,
-   "rel": 2.2204460492503136e-16
-  },
-  "bound_s": 0.03051280975341797
- },
- "bounding_programs/herbie-haskell-140-graphics-rasterific-quadraticformula-dis.fpcore": {
-  "bound": {
-   "abs": 1.7075230118734908e-13,
-   "rel": 2.255691224635239e-16
-  },
-  "bound_s": 0.03148698806762695
- },
- "bounding_programs/herbie-haskell-141-graphics-rasterific-cubicbezier-cachedbe.fpcore": {
-  "bound": {
-   "abs": 9.324182315140206e-09,
-   "rel": 3.3309338616690656e-16
-  },
-  "bound_s": 0.03169703483581543
- },
- "bounding_programs/herbie-haskell-142-graphics-rasterific-cubicbezier-issuffic.fpcore": {
-  "bound": {
-   "abs": 7.105427357601002e-15,
-   "rel": 1.1102230246251565e-16
-  },
-  "bound_s": 0.030260086059570312
- },
- "bounding_programs/herbie-haskell-143-graphics-rasterific-shading-sgradientcol.fpcore": {
-  "bound": {
-   "abs": 2.0816681711721693e-16,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.0324859619140625
- },
- "bounding_programs/herbie-haskell-144-graphics-rasterific-shading-sradialgradi.fpcore": {
-  "bound": {
-   "abs": 6.661338147750939e-16,
-   "rel": 1.9984014443252818e-16
-  },
-  "bound_s": 0.03544902801513672
- },
- "bounding_programs/herbie-haskell-145-graphics-rasterific-shading-sradialgradi.fpcore": {
-  "bound": {
-   "abs": 7.276179658788351e-12,
-   "rel": 5.561978362114289e-16
-  },
-  "bound_s": 0.03379416465759277
- },
  "rewriting_programs/herbie-haskell-148-data-number-erf-cinvnormcdf-from-erf-2-0.fpcore": {
-  "bound": {
-   "abs": 8.922903568283669e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.03160595893859863,
-  "egglog_s": 0.5267179012298584,
-  "extract_s": 0.3307321071624756,
-  "rounds": 11,
+  "egglog_s": 0.4848592281341553,
+  "extract_s": 0.46941709518432617,
   "cut": false,
-  "nodes": 6062,
-  "classes": 1484,
-  "root_frontier": 1,
-  "max_frontier": 4,
   "original": {
    "abs": 5.575786745895233e-16,
    "rel": Infinity
@@ -2230,83 +747,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-haskell-149-numeric-ad-rank1-halley-findzero-from-ad.fpcore": {
-  "bound": {
-   "abs": 4.996003610813206e-16,
-   "rel": 2.8865798640254086e-16
-  },
-  "bound_s": 0.03668498992919922
- },
- "bounding_programs/herbie-haskell-150-crypto-random-test-calculate-from-crypto.fpcore": {
-  "bound": {
-   "abs": 1.1102230246251565e-15,
-   "rel": 2.8865798640254076e-16
-  },
-  "bound_s": 0.03029346466064453
- },
- "bounding_programs/herbie-haskell-151-numeric-log-cexpm1-from-log-domain-0-10-.fpcore": {
-  "bound": {
-   "abs": 8.881784197001252e-16,
-   "rel": 1.1102230246251565e-16
-  },
-  "bound_s": 0.039231300354003906
- },
- "bounding_programs/herbie-haskell-152-numeric-log-cexpm1-from-log-domain-0-10-.fpcore": {
-  "bound": {
-   "abs": 4.440892098500626e-15,
-   "rel": 2.8735184166768764e-16
-  },
-  "bound_s": 0.04285621643066406
- },
- "bounding_programs/herbie-haskell-153-numeric-log-clog1p-from-log-domain-0-10-.fpcore": {
-  "bound": {
-   "abs": 1.176836406102666e-14,
-   "rel": 2.4671622769447924e-16
-  },
-  "bound_s": 0.03530716896057129
- },
- "bounding_programs/herbie-haskell-154-numeric-log-clog1p-from-log-domain-0-10-.fpcore": {
-  "bound": {
-   "abs": 1.967401728910795e-16,
-   "rel": 2.8150081220842817e-16
-  },
-  "bound_s": 0.03108978271484375
- },
- "bounding_programs/herbie-haskell-155-data-approximate-numerics-blog-from-appr.fpcore": {
-  "bound": {
-   "abs": 4.0708177569589106e-16,
-   "rel": 3.000000000000001
-  },
-  "bound_s": 0.042088985443115234
- },
- "bounding_programs/herbie-haskell-159-graphics-rasterific-svg-pathconverter-ar.fpcore": {
-  "bound": {
-   "abs": 1.9428902930940244e-16,
-   "rel": 4.440892098500627e-16
-  },
-  "bound_s": 0.03831911087036133
- },
- "bounding_programs/herbie-haskell-160-development-shake-profile-generatetrace-.fpcore": {
-  "bound": {
-   "abs": 5.820766091346741e-11,
-   "rel": 1.0
-  },
-  "bound_s": 0.03276681900024414
- },
  "rewriting_programs/herbie-haskell-161-development-shake-progress-decay-from-sh.fpcore": {
-  "bound": {
-   "abs": 5.169313601729067e-16,
-   "rel": 7.797651130931624e-16
-  },
-  "bound_s": 0.03615212440490723,
-  "egglog_s": 0.907768964767456,
-  "extract_s": 1.8218531608581543,
-  "rounds": 12,
+  "egglog_s": 0.8944871425628662,
+  "extract_s": 2.300844669342041,
   "cut": false,
-  "nodes": 9747,
-  "classes": 3731,
-  "root_frontier": 2,
-  "max_frontier": 10,
   "original": {
    "abs": 3.2251575404958274e-16,
    "rel": 7.797651130931624e-16
@@ -2320,27 +764,10 @@
    "rel": 4.591444094310037e-16
   }
  },
- "bounding_programs/herbie-haskell-162-development-shake-progress-message-from-.fpcore": {
-  "bound": {
-   "abs": 1.0835776720341532e-14,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.038350820541381836
- },
  "rewriting_programs/herbie-haskell-163-diagrams-backend-rasterific-crender-from.fpcore": {
-  "bound": {
-   "abs": 6.217248937900877e-15,
-   "rel": Infinity
-  },
-  "bound_s": 0.0388941764831543,
-  "egglog_s": 0.09947609901428223,
-  "extract_s": 0.048697710037231445,
-  "rounds": 8,
+  "egglog_s": 0.11362481117248535,
+  "extract_s": 0.05651402473449707,
   "cut": false,
-  "nodes": 1117,
-  "classes": 378,
-  "root_frontier": 1,
-  "max_frontier": 4,
   "original": {
    "abs": 6.217248937900877e-15,
    "rel": Infinity
@@ -2354,34 +781,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-haskell-164-numeric-histogram-binbounds-from-chart-1.fpcore": {
-  "bound": {
-   "abs": 1.1102230246251565e-15,
-   "rel": 3.7007434154171896e-16
-  },
-  "bound_s": 0.038747310638427734
- },
- "bounding_programs/herbie-haskell-165-graphics-rendering-chart-drawing-drawtex.fpcore": {
-  "bound": {
-   "abs": 7.993605777301127e-15,
-   "rel": 1.2212453270876728e-15
-  },
-  "bound_s": 0.042181968688964844
- },
  "rewriting_programs/herbie-haskell-166-graphics-rendering-chart-axis-types-hbuf.fpcore": {
-  "bound": {
-   "abs": 4.440892098500626e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.04545998573303223,
-  "egglog_s": 0.4329688549041748,
-  "extract_s": 0.31708526611328125,
-  "rounds": 9,
+  "egglog_s": 0.37754392623901367,
+  "extract_s": 0.3009672164916992,
   "cut": false,
-  "nodes": 5329,
-  "classes": 1671,
-  "root_frontier": 1,
-  "max_frontier": 1,
   "original": {
    "abs": 4.440892098500626e-16,
    "rel": Infinity
@@ -2396,19 +799,9 @@
   }
  },
  "rewriting_programs/herbie-haskell-167-graphics-rendering-chart-axis-types-linm.fpcore": {
-  "bound": {
-   "abs": 2.7894353493707074e-15,
-   "rel": Infinity
-  },
-  "bound_s": 0.04413485527038574,
-  "egglog_s": 1.1785988807678223,
-  "extract_s": 1.3590028285980225,
-  "rounds": 11,
+  "egglog_s": 1.4189810752868652,
+  "extract_s": 1.4620368480682373,
   "cut": false,
-  "nodes": 13526,
-  "classes": 5841,
-  "root_frontier": 1,
-  "max_frontier": 23,
   "original": {
    "abs": 2.7894353493707074e-15,
    "rel": Infinity
@@ -2422,69 +815,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-haskell-168-graphics-rendering-chart-plot-vectors-re.fpcore": {
-  "bound": {
-   "abs": 1.7763568394002505e-15,
-   "rel": 9.992007221626413e-16
-  },
-  "bound_s": 0.04597902297973633
- },
- "bounding_programs/herbie-haskell-170-graphics-rendering-chart-plot-areaspots-.fpcore": {
-  "bound": {
-   "abs": 5.273559366969496e-16,
-   "rel": 4.440892098500627e-16
-  },
-  "bound_s": 0.04233121871948242
- },
- "bounding_programs/herbie-haskell-171-graphics-rendering-chart-plot-pie-render.fpcore": {
-  "bound": {
-   "abs": 1.7763568394002505e-15,
-   "rel": 2.960594732333751e-16
-  },
-  "bound_s": 0.04095101356506348
- },
- "bounding_programs/herbie-haskell-172-graphics-rendering-chart-sparkline-rende.fpcore": {
-  "bound": {
-   "abs": 2.286693822287428e-13,
-   "rel": 6.638786978674961e-16
-  },
-  "bound_s": 0.042920827865600586
- },
- "bounding_programs/herbie-haskell-173-graphics-rendering-chart-backend-diagram.fpcore": {
-  "bound": {
-   "abs": 6.8833827526759745e-15,
-   "rel": 3.885780586188049e-16
-  },
-  "bound_s": 0.03697395324707031
- },
- "bounding_programs/herbie-haskell-174-graphics-rendering-chart-backend-diagram.fpcore": {
-  "bound": {
-   "abs": 7.771561172376096e-16,
-   "rel": 4.440892098500627e-16
-  },
-  "bound_s": 0.03588294982910156
- },
- "bounding_programs/herbie-haskell-175-ai-clustering-hierarchical-internal-aver.fpcore": {
-  "bound": {
-   "abs": 7.216449660063519e-17,
-   "rel": 2.2204460492503136e-16
-  },
-  "bound_s": 0.03236079216003418
- },
  "rewriting_programs/herbie-haskell-176-ai-clustering-hierarchical-internal-ward.fpcore": {
-  "bound": {
-   "abs": 7.014069667327203e-13,
-   "rel": 7.364383335851863e-15
-  },
-  "bound_s": 0.0376131534576416,
-  "egglog_s": 1.4542591571807861,
-  "extract_s": 3.9784257411956787,
-  "rounds": 14,
+  "egglog_s": 1.5258240699768066,
+  "extract_s": 4.660582780838013,
   "cut": false,
-  "nodes": 12642,
-  "classes": 5181,
-  "root_frontier": 2,
-  "max_frontier": 24,
   "original": {
    "abs": 6.137687517358761e-13,
    "rel": 4.1929950328406015e-15
@@ -2499,19 +833,9 @@
   }
  },
  "rewriting_programs/herbie-haskell-178-numeric-specfunctions-inverfc-from-math-.fpcore": {
-  "bound": {
-   "abs": 7.715124137497418e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.051815032958984375,
-  "egglog_s": 1.6447179317474365,
-  "extract_s": 2.2360188961029053,
-  "rounds": 14,
+  "egglog_s": 1.8111848831176758,
+  "extract_s": 2.6299331188201904,
   "cut": false,
-  "nodes": 9721,
-  "classes": 3991,
-  "root_frontier": 1,
-  "max_frontier": 60,
   "original": {
    "abs": 7.464925275355155e-16,
    "rel": Infinity
@@ -2525,34 +849,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-haskell-179-numeric-specfunctions-loggamma-from-math.fpcore": {
-  "bound": {
-   "abs": 3.608224830031759e-15,
-   "rel": Infinity
-  },
-  "bound_s": 0.04746103286743164
- },
- "bounding_programs/herbie-haskell-180-numeric-specfunctions-loggamma-from-math.fpcore": {
-  "bound": {
-   "abs": 2.003210832275891e-15,
-   "rel": 8.3236268638567e-16
-  },
-  "bound_s": 0.0461580753326416
- },
  "rewriting_programs/herbie-haskell-181-numeric-specfunctions-loggamma-from-math.fpcore": {
-  "bound": {
-   "abs": 2.6108694727767027e-15,
-   "rel": 3.0000000000000053
-  },
-  "bound_s": 0.04594993591308594,
-  "egglog_s": 1.210447072982788,
-  "extract_s": 2.5549848079681396,
-  "rounds": 14,
+  "egglog_s": 1.2878100872039795,
+  "extract_s": 2.9616901874542236,
   "cut": false,
-  "nodes": 7488,
-  "classes": 2812,
-  "root_frontier": 4,
-  "max_frontier": 17,
   "original": {
    "abs": 2.6108694727767023e-15,
    "rel": 3.0000000000000053
@@ -2567,19 +867,9 @@
   }
  },
  "rewriting_programs/herbie-haskell-182-numeric-specfunctions-loggamma-from-math.fpcore": {
-  "bound": {
-   "abs": 3.4573892729636186e-13,
-   "rel": 2.066189817437993e-15
-  },
-  "bound_s": 0.04908633232116699,
-  "egglog_s": 2.6526858806610107,
-  "extract_s": 13.5960853099823,
-  "rounds": 15,
+  "egglog_s": 2.95065975189209,
+  "extract_s": 16.338483333587646,
   "cut": false,
-  "nodes": 11989,
-  "classes": 4938,
-  "root_frontier": 7,
-  "max_frontier": 936,
   "original": {
    "abs": 3.4573892729636156e-13,
    "rel": 2.0661898174379926e-15
@@ -2593,55 +883,10 @@
    "rel": 1.5366798004146e-15
   }
  },
- "bounding_programs/herbie-haskell-183-numeric-specfunctions-slogfactorial-from.fpcore": {
-  "bound": {
-   "abs": 2.2204460492503136e-16,
-   "rel": 2.2204460492503136e-16
-  },
-  "bound_s": 0.04231405258178711
- },
- "bounding_programs/herbie-haskell-186-numeric-specfunctions-loggammacorrection.fpcore": {
-  "bound": {
-   "abs": 8.881784197001252e-16,
-   "rel": 3.330669073875471e-16
-  },
-  "bound_s": 0.03946518898010254
- },
- "bounding_programs/herbie-haskell-187-numeric-specfunctions-log1p-from-math-fu.fpcore": {
-  "bound": {
-   "abs": 5.329070518200751e-15,
-   "rel": 3.700743415417189e-16
-  },
-  "bound_s": 0.03752017021179199
- },
- "bounding_programs/herbie-haskell-190-numeric-specfunctions-choose-from-math-f.fpcore": {
-  "bound": {
-   "abs": 1.3322676295501878e-15,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.04303407669067383
- },
- "bounding_programs/herbie-haskell-193-numeric-specfunctions-incompletegamma-fr.fpcore": {
-  "bound": {
-   "abs": 1.303690883990796e-14,
-   "rel": 5.9775416939477195e-16
-  },
-  "bound_s": 0.0619199275970459
- },
  "rewriting_programs/herbie-haskell-194-numeric-specfunctions-invincompletegamma.fpcore": {
-  "bound": {
-   "abs": 2.7755575615628914e-16,
-   "rel": 1.5971351225679783e-14
-  },
-  "bound_s": 0.047081947326660156,
-  "egglog_s": 0.23665714263916016,
-  "extract_s": 0.21773886680603027,
-  "rounds": 13,
+  "egglog_s": 0.23777985572814941,
+  "extract_s": 0.20607304573059082,
   "cut": false,
-  "nodes": 1599,
-  "classes": 564,
-  "root_frontier": 2,
-  "max_frontier": 4,
   "original": {
    "abs": 2.7755575615628914e-16,
    "rel": 1.5971351225679534e-14
@@ -2656,19 +901,9 @@
   }
  },
  "rewriting_programs/herbie-haskell-196-numeric-specfunctions-invincompletegamma.fpcore": {
-  "bound": {
-   "abs": 9.195372693545572e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.039373159408569336,
-  "egglog_s": 1.6015160083770752,
-  "extract_s": 2.1354541778564453,
-  "rounds": 14,
+  "egglog_s": 1.7183749675750732,
+  "extract_s": 2.4101829528808594,
   "cut": false,
-  "nodes": 8698,
-  "classes": 3632,
-  "root_frontier": 1,
-  "max_frontier": 60,
   "original": {
    "abs": 8.876433981892057e-16,
    "rel": Infinity
@@ -2683,19 +918,9 @@
   }
  },
  "rewriting_programs/herbie-haskell-197-numeric-specfunctions-invincompletegamma.fpcore": {
-  "bound": {
-   "abs": 9.999717103741866e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.04393601417541504,
-  "egglog_s": 0.9546208381652832,
-  "extract_s": 1.315424919128418,
-  "rounds": 13,
+  "egglog_s": 1.0997419357299805,
+  "extract_s": 1.7229070663452148,
   "cut": false,
-  "nodes": 9873,
-  "classes": 3320,
-  "root_frontier": 1,
-  "max_frontier": 36,
   "original": {
    "abs": 9.999717103741866e-16,
    "rel": Infinity
@@ -2710,19 +935,9 @@
   }
  },
  "rewriting_programs/herbie-haskell-198-numeric-specfunctions-incompletebetaappr.fpcore": {
-  "bound": {
-   "abs": 8.28377770419181e-17,
-   "rel": 8.780854831126242e-16
-  },
-  "bound_s": 0.07674598693847656,
-  "egglog_s": 1.2744369506835938,
-  "extract_s": 8.421266078948975,
-  "rounds": 13,
+  "egglog_s": 1.3001210689544678,
+  "extract_s": 9.721529722213745,
   "cut": false,
-  "nodes": 12561,
-  "classes": 4786,
-  "root_frontier": 2,
-  "max_frontier": 28,
   "original": {
    "abs": 3.161855449874662e-17,
    "rel": 8.780854831126242e-16
@@ -2736,27 +951,10 @@
    "rel": 5.807901400930242e-16
   }
  },
- "bounding_programs/herbie-haskell-202-numeric-specfunctions-invincompletebetaw.fpcore": {
-  "bound": {
-   "abs": 7.279362298125611e-15,
-   "rel": 4.424863854641746e-16
-  },
-  "bound_s": 0.041670799255371094
- },
  "rewriting_programs/herbie-haskell-203-numeric-specfunctions-invincompletebetaw.fpcore": {
-  "bound": {
-   "abs": 9.195372693545572e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.04543280601501465,
-  "egglog_s": 1.3099489212036133,
-  "extract_s": 1.7197041511535645,
-  "rounds": 14,
+  "egglog_s": 1.352046251296997,
+  "extract_s": 1.948072910308838,
   "cut": false,
-  "nodes": 8003,
-  "classes": 3080,
-  "root_frontier": 1,
-  "max_frontier": 60,
   "original": {
    "abs": 8.876433981892057e-16,
    "rel": Infinity
@@ -2770,27 +968,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-haskell-204-numeric-specfunctions-invincompletebetaw.fpcore": {
-  "bound": {
-   "abs": 2.6645352591003757e-15,
-   "rel": 7.031412489292663e-16
-  },
-  "bound_s": 0.04114699363708496
- },
  "rewriting_programs/herbie-haskell-207-numeric-specfunctions-invincompletebetaw.fpcore": {
-  "bound": {
-   "abs": 1.0177044392397268e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.0375208854675293,
-  "egglog_s": 0.2905430793762207,
-  "extract_s": 0.20075392723083496,
-  "rounds": 8,
+  "egglog_s": 0.2995309829711914,
+  "extract_s": 0.22559523582458496,
   "cut": false,
-  "nodes": 3605,
-  "classes": 934,
-  "root_frontier": 1,
-  "max_frontier": 4,
   "original": {
    "abs": 1.0177044392397268e-16,
    "rel": Infinity
@@ -2805,19 +986,9 @@
   }
  },
  "rewriting_programs/herbie-haskell-210-numeric-specfunctions-loggamma-from-math.fpcore": {
-  "bound": {
-   "abs": 5.894597404097757e-14,
-   "rel": 1.253690104207292e-15
-  },
-  "bound_s": 0.04495716094970703,
-  "egglog_s": 1.312384843826294,
-  "extract_s": 4.580216884613037,
-  "rounds": 14,
+  "egglog_s": 1.3681190013885498,
+  "extract_s": 5.28972601890564,
   "cut": false,
-  "nodes": 8738,
-  "classes": 3413,
-  "root_frontier": 2,
-  "max_frontier": 36,
   "original": {
    "abs": 3.776084195026073e-14,
    "rel": 1.253690104207292e-15
@@ -2831,146 +1002,10 @@
    "rel": 9.044547059163886e-16
   }
  },
- "bounding_programs/herbie-haskell-211-statistics-math-rootfinding-ridders-from.fpcore": {
-  "bound": {
-   "abs": 6.81558957691038e-11,
-   "rel": 5.625129991434128e-16
-  },
-  "bound_s": 0.04802680015563965
- },
- "bounding_programs/herbie-haskell-214-statistics-correlation-kendall-numofties.fpcore": {
-  "bound": {
-   "abs": 2.220446049250313e-16,
-   "rel": 1.0
-  },
-  "bound_s": 0.04256415367126465
- },
- "bounding_programs/herbie-haskell-215-statistics-sample-robustsumvarweighted-f.fpcore": {
-  "bound": {
-   "abs": 2.2737367544323206e-12,
-   "rel": 3.330398056415535e-16
-  },
-  "bound_s": 0.05224299430847168
- },
- "bounding_programs/herbie-haskell-216-statistics-sample-swelfordmean-from-math.fpcore": {
-  "bound": {
-   "abs": 2.7755575615628914e-16,
-   "rel": 1.6326809185664068e-16
-  },
-  "bound_s": 0.04686689376831055
- },
- "bounding_programs/herbie-haskell-217-statistics-sample-skurtosis-from-math-fu.fpcore": {
-  "bound": {
-   "abs": 2.498001805406602e-16,
-   "rel": 8.688701931849052e-17
-  },
-  "bound_s": 0.04864215850830078
- },
- "bounding_programs/herbie-haskell-218-statistics-distribution-beta-centropy-fr.fpcore": {
-  "bound": {
-   "abs": 1.1281997558398871e-10,
-   "rel": 1.9185206735221923e-14
-  },
-  "bound_s": 0.05254483222961426
- },
- "bounding_programs/herbie-haskell-219-statistics-distribution-beta-cvariance-f.fpcore": {
-  "bound": {
-   "abs": 1.6454362382427086e-18,
-   "rel": 5.551115123125785e-16
-  },
-  "bound_s": 0.04318690299987793
- },
- "bounding_programs/herbie-haskell-221-statistics-distribution-binomial-cvarian.fpcore": {
-  "bound": {
-   "abs": 2.0428103653102883e-14,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.05733895301818848
- },
- "bounding_programs/herbie-haskell-223-statistics-distribution-cauchylorentz-cd.fpcore": {
-  "bound": {
-   "abs": 4.3209896482795077e-19,
-   "rel": 5.550031978711516e-16
-  },
-  "bound_s": 0.0374608039855957
- },
- "bounding_programs/herbie-haskell-224-examples-basics-basictests-f3-from-sbv-4.fpcore": {
-  "bound": {
-   "abs": 2.486899575160351e-14,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.0495448112487793
- },
- "bounding_programs/herbie-haskell-225-examples-basics-basictests-f2-from-sbv-4.fpcore": {
-  "bound": {
-   "abs": 7.327471962526033e-15,
-   "rel": 2.9605947323337516e-16
-  },
-  "bound_s": 0.03763222694396973
- },
- "bounding_programs/herbie-haskell-226-examples-basics-basictests-f1-from-sbv-4.fpcore": {
-  "bound": {
-   "abs": 1.7763568394002508e-14,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.04146528244018555
- },
- "bounding_programs/herbie-haskell-227-examples-basics-prooftests-f4-from-sbv-4.fpcore": {
-  "bound": {
-   "abs": 1.7985612998927536e-14,
-   "rel": 2.989061989375422e-16
-  },
-  "bound_s": 0.04125189781188965
- },
- "bounding_programs/herbie-haskell-230-data-random-distribution-normal-normalta.fpcore": {
-  "bound": {
-   "abs": 2.886579864025407e-15,
-   "rel": 2.275957200481571e-16
-  },
-  "bound_s": 0.04389500617980957
- },
- "bounding_programs/herbie-haskell-231-data-random-distribution-normal-doublest.fpcore": {
-  "bound": {
-   "abs": 4.440892098500626e-16,
-   "rel": 3.3306690738754706e-16
-  },
-  "bound_s": 0.045150041580200195
- },
- "bounding_programs/herbie-haskell-232-data-random-distribution-t-ccdf-from-ran.fpcore": {
-  "bound": {
-   "abs": 3.6082248300317597e-16,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.039695024490356445
- },
- "bounding_programs/herbie-haskell-233-data-random-distribution-triangular-tria.fpcore": {
-  "bound": {
-   "abs": 5.743173793680358e-17,
-   "rel": 5.768927936252916e-17
-  },
-  "bound_s": 0.0428469181060791
- },
- "bounding_programs/herbie-haskell-234-data-random-distribution-triangular-tria.fpcore": {
-  "bound": {
-   "abs": 3.4694469519536165e-18,
-   "rel": 4.440892098500627e-16
-  },
-  "bound_s": 0.0433809757232666
- },
  "rewriting_programs/herbie-haskell-235-data-random-dice-roll-from-dice-0-1.fpcore": {
-  "bound": {
-   "abs": 4.440892098500626e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.034700632095336914,
-  "egglog_s": 0.16196513175964355,
-  "extract_s": 0.0715169906616211,
-  "rounds": 9,
+  "egglog_s": 0.17353606224060059,
+  "extract_s": 0.11417603492736816,
   "cut": false,
-  "nodes": 1641,
-  "classes": 546,
-  "root_frontier": 2,
-  "max_frontier": 3,
   "original": {
    "abs": 4.440892098500626e-16,
    "rel": Infinity
@@ -2984,34 +1019,10 @@
    "rel": 1.0000000000000002
   }
  },
- "bounding_programs/herbie-haskell-236-prelude-atanh-from-fay-base-0-20-0-1.fpcore": {
-  "bound": {
-   "abs": 7.771561172376099e-16,
-   "rel": 3.1086244689504386e-16
-  },
-  "bound_s": 0.03825712203979492
- },
- "bounding_programs/herbie-haskell-237-reporttypes-explainfloat-from-gipeda-0-1.fpcore": {
-  "bound": {
-   "abs": 1.8207657603852567e-14,
-   "rel": 3.0
-  },
-  "bound_s": 0.03664994239807129
- },
  "rewriting_programs/herbie-haskell-238-hakyll-web-tags-rendertagcloud-from-haky.fpcore": {
-  "bound": {
-   "abs": 2.797826759577954e-13,
-   "rel": 9.816451971717567e-16
-  },
-  "bound_s": 0.03700709342956543,
-  "egglog_s": 1.028681993484497,
-  "extract_s": 1.110633134841919,
-  "rounds": 13,
+  "egglog_s": 1.0681672096252441,
+  "extract_s": 1.3157079219818115,
   "cut": false,
-  "nodes": 9856,
-  "classes": 3681,
-  "root_frontier": 8,
-  "max_frontier": 22,
   "original": {
    "abs": 2.7978267595779535e-13,
    "rel": 9.816451971717567e-16
@@ -3025,34 +1036,10 @@
    "rel": 6.56275597643116e-16
   }
  },
- "bounding_programs/herbie-haskell-239-data-histogram-bin-binf-cfromindex-from-.fpcore": {
-  "bound": {
-   "abs": 6.217248937900877e-15,
-   "rel": 2.2367578659573864e-16
-  },
-  "bound_s": 0.03788900375366211
- },
- "bounding_programs/herbie-haskell-240-data-histogram-bin-logbind-cbinsizen-fro.fpcore": {
-  "bound": {
-   "abs": 1.7763568394002505e-15,
-   "rel": 3.3306690738754706e-16
-  },
-  "bound_s": 0.036882877349853516
- },
  "rewriting_programs/herbie-haskell-241-numeric-signal-interpolate-from-hsignal-.fpcore": {
-  "bound": {
-   "abs": 6.988457431792284e-15,
-   "rel": Infinity
-  },
-  "bound_s": 0.03628110885620117,
-  "egglog_s": 0.6251702308654785,
-  "extract_s": 0.5061178207397461,
-  "rounds": 11,
+  "egglog_s": 0.6895599365234375,
+  "extract_s": 0.7178151607513428,
   "cut": false,
-  "nodes": 7919,
-  "classes": 3251,
-  "root_frontier": 1,
-  "max_frontier": 10,
   "original": {
    "abs": 6.988457431792284e-15,
    "rel": Infinity
@@ -3066,111 +1053,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-haskell-242-numeric-signal-multichannel-cget-from-hs.fpcore": {
-  "bound": {
-   "abs": 1.7319479184152445e-14,
-   "rel": 1.3877787807814532e-15
-  },
-  "bound_s": 0.04545307159423828
- },
- "bounding_programs/herbie-haskell-243-numeric-signal-multichannel-cput-from-hs.fpcore": {
-  "bound": {
-   "abs": 3.375077994860477e-14,
-   "rel": 4.440892098500627e-16
-  },
-  "bound_s": 0.03304600715637207
- },
- "bounding_programs/herbie-haskell-244-data-hyperloglog-config-hll-from-hyperlo.fpcore": {
-  "bound": {
-   "abs": 2.1316282072803006e-14,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.03545403480529785
- },
- "bounding_programs/herbie-haskell-247-diagrams-backend-cairo-internal-settextu.fpcore": {
-  "bound": {
-   "abs": 2.6645352591003757e-15,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.03268003463745117
- },
- "bounding_programs/herbie-haskell-248-numeric-integration-tanhsinh-simpson-fro.fpcore": {
-  "bound": {
-   "abs": 5.329070518200751e-15,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.0297849178314209
- },
- "bounding_programs/herbie-haskell-249-numeric-integration-tanhsinh-everywhere-.fpcore": {
-  "bound": {
-   "abs": 3.552713678800501e-14,
-   "rel": 3.313588719650468e-16
-  },
-  "bound_s": 0.030876874923706055
- },
- "bounding_programs/herbie-haskell-250-data-metrics-snapshot-quantile-from-metr.fpcore": {
-  "bound": {
-   "abs": 8.792966355031241e-13,
-   "rel": 4.454376588678261e-16
-  },
-  "bound_s": 0.041882991790771484
- },
- "bounding_programs/herbie-haskell-251-graphics-rendering-plot-render-plot-lege.fpcore": {
-  "bound": {
-   "abs": 1.7763568394002505e-15,
-   "rel": 2.119516683375299e-16
-  },
-  "bound_s": 0.046018123626708984
- },
- "bounding_programs/herbie-haskell-252-graphics-rendering-plot-render-plot-lege.fpcore": {
-  "bound": {
-   "abs": 1.2434497875801753e-13,
-   "rel": 4.82399405074112e-16
-  },
-  "bound_s": 0.044799089431762695
- },
- "bounding_programs/herbie-haskell-253-graphics-rendering-plot-render-plot-lege.fpcore": {
-  "bound": {
-   "abs": 1.1546319456101628e-14,
-   "rel": 3.7874563469128726e-16
-  },
-  "bound_s": 0.03814816474914551
- },
- "bounding_programs/herbie-haskell-254-graphics-rendering-plot-render-plot-lege.fpcore": {
-  "bound": {
-   "abs": 4.263256414560601e-14,
-   "rel": 2.775557561562892e-16
-  },
-  "bound_s": 0.03982186317443848
- },
- "bounding_programs/herbie-haskell-255-graphics-rendering-plot-render-plot-axis.fpcore": {
-  "bound": {
-   "abs": 1.0824674490095278e-15,
-   "rel": 3.7007434154171896e-16
-  },
-  "bound_s": 0.033905982971191406
- },
- "bounding_programs/herbie-haskell-256-graphics-rendering-plot-render-plot-axis.fpcore": {
-  "bound": {
-   "abs": 2.030122102171715e-15,
-   "rel": 4.66293670342566e-16
-  },
-  "bound_s": 0.03419899940490723
- },
  "rewriting_programs/herbie-haskell-257-graphics-rendering-plot-render-plot-axis.fpcore": {
-  "bound": {
-   "abs": 2.553512956637861e-15,
-   "rel": Infinity
-  },
-  "bound_s": 0.037668704986572266,
-  "egglog_s": 0.6412808895111084,
-  "extract_s": 0.6201801300048828,
-  "rounds": 10,
+  "egglog_s": 0.6722769737243652,
+  "extract_s": 0.6847741603851318,
   "cut": false,
-  "nodes": 8037,
-  "classes": 3131,
-  "root_frontier": 1,
-  "max_frontier": 33,
   "original": {
    "abs": 2.553512956637861e-15,
    "rel": Infinity
@@ -3185,19 +1071,9 @@
   }
  },
  "rewriting_programs/herbie-haskell-258-graphics-rendering-plot-render-plot-axis.fpcore": {
-  "bound": {
-   "abs": 6.471014200672343e-15,
-   "rel": Infinity
-  },
-  "bound_s": 0.046874046325683594,
-  "egglog_s": 0.7064700126647949,
-  "extract_s": 0.9951701164245605,
-  "rounds": 11,
+  "egglog_s": 0.7321243286132812,
+  "extract_s": 1.2160418033599854,
   "cut": false,
-  "nodes": 8819,
-  "classes": 3565,
-  "root_frontier": 1,
-  "max_frontier": 27,
   "original": {
    "abs": 6.471014200672343e-15,
    "rel": Infinity
@@ -3211,34 +1087,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-haskell-259-graphics-rendering-plot-render-plot-axis.fpcore": {
-  "bound": {
-   "abs": 4.773959005888174e-15,
-   "rel": 4.163336342344339e-16
-  },
-  "bound_s": 0.03570294380187988
- },
- "bounding_programs/herbie-haskell-260-graphics-rendering-plot-render-plot-axis.fpcore": {
-  "bound": {
-   "abs": 1.839798155093117e-15,
-   "rel": 4.66293670342566e-16
-  },
-  "bound_s": 0.03828883171081543
- },
  "rewriting_programs/herbie-haskell-261-graphics-rendering-plot-render-plot-axis.fpcore": {
-  "bound": {
-   "abs": 2.553512956637861e-15,
-   "rel": Infinity
-  },
-  "bound_s": 0.03938412666320801,
-  "egglog_s": 0.7914512157440186,
-  "extract_s": 1.0134730339050293,
-  "rounds": 10,
+  "egglog_s": 0.8547389507293701,
+  "extract_s": 1.1038122177124023,
   "cut": false,
-  "nodes": 9543,
-  "classes": 3950,
-  "root_frontier": 1,
-  "max_frontier": 37,
   "original": {
    "abs": 2.553512956637861e-15,
    "rel": Infinity
@@ -3252,76 +1104,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-haskell-262-data-array-repa-algorithms-pixel-doubler.fpcore": {
-  "bound": {
-   "abs": 5.175889790405971e-15,
-   "rel": 2.8920624468630626e-16
-  },
-  "bound_s": 0.04964017868041992
- },
- "bounding_programs/herbie-haskell-263-data-array-repa-algorithms-colorramp-ram.fpcore": {
-  "bound": {
-   "abs": 6.661338147750939e-15,
-   "rel": 6.291263806209225e-16
-  },
-  "bound_s": 0.043190717697143555
- },
- "bounding_programs/herbie-haskell-264-data-array-repa-algorithms-colorramp-ram.fpcore": {
-  "bound": {
-   "abs": 9.992007221626409e-16,
-   "rel": 2.664535259100376e-16
-  },
-  "bound_s": 0.042478084564208984
- },
- "bounding_programs/herbie-haskell-265-data-array-repa-algorithms-colorramp-ram.fpcore": {
-  "bound": {
-   "abs": 5.773159728050814e-15,
-   "rel": 4.218847493575596e-16
-  },
-  "bound_s": 0.03941702842712402
- },
- "bounding_programs/herbie-haskell-266-data-spline-key-interpolatekeys-from-smo.fpcore": {
-  "bound": {
-   "abs": 6.661338147750941e-16,
-   "rel": 1.0000000000000002
-  },
-  "bound_s": 0.04368305206298828
- },
- "bounding_programs/herbie-haskell-267-frp-yampa-vector3-vector3rho-from-yampa-.fpcore": {
-  "bound": {
-   "abs": 7.606487982543646e-15,
-   "rel": 2.336950934550484e-16
-  },
-  "bound_s": 0.04287600517272949
- },
- "bounding_programs/herbie-libraries-basilisk-008-semi-latus-rectum.fpcore": {
-  "bound": {
-   "abs": 2.1316282072803006e-14,
-   "rel": 3.4046839421838136e-16
-  },
-  "bound_s": 0.035140037536621094
- },
- "bounding_programs/herbie-libraries-basilisk-010-angular-momentum.fpcore": {
-  "bound": {
-   "abs": 6.661338147750939e-16,
-   "rel": 1.6653345369377348e-16
-  },
-  "bound_s": 0.04408383369445801
- },
  "rewriting_programs/herbie-libraries-basilisk-018-drag-accel-mag.fpcore": {
-  "bound": {
-   "abs": 5.919225513935094e-07,
-   "rel": 8.881784197001256e-16
-  },
-  "bound_s": 0.043257951736450195,
-  "egglog_s": 0.49942922592163086,
-  "extract_s": 2.307478904724121,
-  "rounds": 11,
+  "egglog_s": 0.5187880992889404,
+  "extract_s": 2.6822590827941895,
   "cut": false,
-  "nodes": 6918,
-  "classes": 1483,
-  "root_frontier": 16,
-  "max_frontier": 21,
   "original": {
    "abs": 5.919225513935094e-07,
    "rel": 8.881784197001256e-16
@@ -3336,19 +1122,9 @@
   }
  },
  "rewriting_programs/herbie-libraries-coolprop-007-b-delta2.fpcore": {
-  "bound": {
-   "abs": 3.0873081868776365e-12,
-   "rel": 7.702313575229863e-16
-  },
-  "bound_s": 0.042220115661621094,
-  "egglog_s": 0.4972379207611084,
-  "extract_s": 0.896306037902832,
-  "rounds": 14,
+  "egglog_s": 0.5209081172943115,
+  "extract_s": 1.0722169876098633,
   "cut": false,
-  "nodes": 5656,
-  "classes": 2101,
-  "root_frontier": 3,
-  "max_frontier": 25,
   "original": {
    "abs": 3.087308186877636e-12,
    "rel": 7.702313575229863e-16
@@ -3363,19 +1139,9 @@
   }
  },
  "rewriting_programs/herbie-libraries-coolprop-008-b-tau3.fpcore": {
-  "bound": {
-   "abs": 4.2287950918762404e-10,
-   "rel": 1.3385681436957107e-15
-  },
-  "bound_s": 0.04499697685241699,
-  "egglog_s": 1.8972101211547852,
-  "extract_s": 6.9098498821258545,
-  "rounds": 16,
+  "egglog_s": 1.963912010192871,
+  "extract_s": 8.706371068954468,
   "cut": false,
-  "nodes": 14192,
-  "classes": 5792,
-  "root_frontier": 28,
-  "max_frontier": 108,
   "original": {
    "abs": 4.2287950918762394e-10,
    "rel": 1.3385681436957107e-15
@@ -3390,19 +1156,9 @@
   }
  },
  "rewriting_programs/herbie-libraries-coolprop-013-d2psi-ddelta2-over-psi.fpcore": {
-  "bound": {
-   "abs": 8.526512829121203e-14,
-   "rel": Infinity
-  },
-  "bound_s": 0.045770883560180664,
-  "egglog_s": 0.9989089965820312,
-  "extract_s": 0.4187500476837158,
-  "rounds": 12,
+  "egglog_s": 1.0257420539855957,
+  "extract_s": 0.7363567352294922,
   "cut": false,
-  "nodes": 8446,
-  "classes": 3410,
-  "root_frontier": 1,
-  "max_frontier": 3,
   "original": {
    "abs": 8.526512829121203e-14,
    "rel": Infinity
@@ -3416,69 +1172,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-libraries-fast-math-000-fastmath-dist.fpcore": {
-  "bound": {
-   "abs": 1.1546319456101628e-14,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.04156088829040527
- },
- "bounding_programs/herbie-libraries-fast-math-001-fastmath-test1.fpcore": {
-  "bound": {
-   "abs": 8.881784197001252e-15,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.03861522674560547
- },
- "bounding_programs/herbie-libraries-fast-math-002-fastmath-test2.fpcore": {
-  "bound": {
-   "abs": 1.687538997430238e-14,
-   "rel": 2.934160850795057e-16
-  },
-  "bound_s": 0.04761505126953125
- },
- "bounding_programs/herbie-libraries-fast-math-003-fastmath-dist3.fpcore": {
-  "bound": {
-   "abs": 3.6415315207705135e-14,
-   "rel": 3.525273109717711e-16
-  },
-  "bound_s": 0.03715705871582031
- },
- "bounding_programs/herbie-libraries-fast-math-004-fastmath-dist4.fpcore": {
-  "bound": {
-   "abs": 6.505906924303417e-14,
-   "rel": Infinity
-  },
-  "bound_s": 0.03271818161010742
- },
- "bounding_programs/herbie-libraries-fast-math-005-fastmath-test3.fpcore": {
-  "bound": {
-   "abs": 1.3766765505351941e-14,
-   "rel": 2.8632067477175095e-16
-  },
-  "bound_s": 0.03601717948913574
- },
- "bounding_programs/herbie-libraries-fast-math-006-fastmath-repmul.fpcore": {
-  "bound": {
-   "abs": 4.440892098500626e-15,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.036154747009277344
- },
  "rewriting_programs/herbie-libraries-fast-math-007-fastmath-test5.fpcore": {
-  "bound": {
-   "abs": 9.094947017729284e-13,
-   "rel": 9.992007221626413e-16
-  },
-  "bound_s": 0.04686594009399414,
-  "egglog_s": 0.06299185752868652,
-  "extract_s": 0.009593009948730469,
-  "rounds": 7,
+  "egglog_s": 0.05289316177368164,
+  "extract_s": 0.009798765182495117,
   "cut": false,
-  "nodes": 201,
-  "classes": 20,
-  "root_frontier": 2,
-  "max_frontier": 2,
   "original": {
    "abs": 9.094947017729284e-13,
    "rel": 9.992007221626413e-16
@@ -3493,67 +1190,26 @@
   }
  },
  "rewriting_programs/herbie-libraries-jmatjs-004-jmat-real-dawson.fpcore": {
-  "bound": {
-   "abs": 5.845623324137552e-15,
-   "rel": 2.5350358733402554e-15
-  },
-  "bound_s": 0.06044626235961914,
-  "egglog_s": 8.009579181671143,
-  "extract_s": 120.04252576828003,
-  "rounds": 10,
+  "egglog_s": 9.40824818611145,
+  "extract_s": 120.09322309494019,
   "cut": true,
-  "nodes": 19539,
-  "classes": 9861,
-  "root_frontier": 14,
-  "max_frontier": 1190,
   "original": {
    "abs": 4.888640768196305e-15,
    "rel": 2.535035873340255e-15
   },
   "programs": {
-   "abs": "(* (+ (+ 1 (+ (* 0.1049934947 (* x x)) (* (* (* -0.0072644182 (* x x)) (* (* -1 x) x)) (* x x)))) (+ (* (* 0.0424060604 (* x x)) (* x x)) (+ (* (* (* 0.0005064034 (* (* x x) (* x x))) (* x x)) (* x x)) (* (* (* 0.0001789971 (* x x)) (* (* (* x x) (* x x)) (* x x))) (* x x))))) (/ x (+ (+ (* (* x x) (* (* (* (* x x) (* x x)) (* (* x x) (* x x))) (+ 0.0008327945 (* 0.0003579942 (* x x))))) (+ (* 0.7715471019 (* x x)) 1)) (* (* x x) (+ (* (* x x) (+ 0.2909738639 (* 0.0694555761 (* x x)))) (* (* 0.0140005442 (* (* x x) (* x x))) (* x x)))))))",
-   "rel": "(* (+ (+ (+ (* (* (* 0.0005064034 (* (* x x) (* x x))) (* x x)) (* x x)) (* (* (* 0.0001789971 (* x x)) (* (* (* x x) (* x x)) (* x x))) (* x x))) 1) (* (* x x) (+ 0.1049934947 (* (* x x) (+ 0.0424060604 (* 0.0072644182 (* x x))))))) (/ x (+ (+ (* (* x x) (* (* (* (* x x) (* x x)) (* (* x x) (* x x))) (+ 0.0008327945 (* 0.0003579942 (* x x))))) (+ (* 0.7715471019 (* x x)) 1)) (* (* x x) (+ (* (* x x) (+ 0.2909738639 (* 0.0694555761 (* x x)))) (* (* 0.0140005442 (* (* x x) (* x x))) (* x x)))))))"
+   "abs": "(* (+ (+ (* (* x x) (* (* (* (* x x) (* x x)) (* x x)) (+ 0.0005064034 (* 0.0001789971 (* x x))))) (* (* 0.0424060604 (* x x)) (* x x))) (+ 1 (+ (* 0.1049934947 (* x x)) (* (* (* -0.0072644182 (* x x)) (* (* -1 x) x)) (* x x))))) (/ x (+ (+ (* (* (* (* x x) (* x x)) (* (* x x) (* x x))) (* (* (* x x) (* x x)) 0.0003579942)) (+ (* 0.7715471019 (* x x)) 1)) (+ (* (* (* x x) (* x x)) (+ (* 0.0694555761 (* x x)) 0.2909738639)) (* (* (* (* x x) (* x x)) (* (* x x) (* x x))) (+ (* 0.0008327945 (* x x)) 0.0140005442))))))",
+   "rel": "(/ (* (+ (+ (* (* (* (* x x) (* x x)) (* (* x x) (* x x))) (+ (* 0.0001789971 (* x x)) 0.0005064034)) 1) (* (* x x) (+ (+ 0.1049934947 (* 0.0424060604 (* x x))) (* (* -0.0072644182 (* x x)) (* (* -1 x) x))))) x) (+ (+ (* (* x x) (* (* (* (* x x) (* x x)) (* (* x x) (* x x))) (+ 0.0008327945 (* 0.0003579942 (* x x))))) (+ (* 0.7715471019 (* x x)) 1)) (* (* x x) (+ (* (* x x) (+ 0.2909738639 (* 0.0694555761 (* x x)))) (* (* 0.0140005442 (* (* x x) (* x x))) (* x x))))))"
   },
   "bounds": {
-   "abs": 3.428322189467221e-15,
-   "rel": 2.093795175435621e-15
+   "abs": 3.6080691911221535e-15,
+   "rel": 2.1105081580952736e-15
   }
  },
- "bounding_programs/herbie-libraries-mathjs-arithmetic-003-math-square-on-complex-imaginary-part.fpcore": {
-  "bound": {
-   "abs": 5.329070518200751e-15,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.036070823669433594
- },
- "bounding_programs/herbie-libraries-mathjs-arithmetic-017-multiplycomplex-real-part.fpcore": {
-  "bound": {
-   "abs": 1.1723955140041653e-13,
-   "rel": 2.9605947323337516e-16
-  },
-  "bound_s": 0.042738914489746094
- },
- "bounding_programs/herbie-libraries-mathjs-arithmetic-018-multiplycomplex-imaginary-part.fpcore": {
-  "bound": {
-   "abs": 8.526512829121202e-14,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.0542149543762207
- },
  "rewriting_programs/herbie-libraries-octave-collocwt-000-octave-3-8-jcobi-1.fpcore": {
-  "bound": {
-   "abs": Infinity,
-   "rel": Infinity
-  },
-  "bound_s": 0.03976297378540039,
-  "egglog_s": 0.4701521396636963,
-  "extract_s": 0.35044097900390625,
-  "rounds": 11,
+  "egglog_s": 0.51521897315979,
+  "extract_s": 0.512563943862915,
   "cut": false,
-  "nodes": 6108,
-  "classes": 1930,
-  "root_frontier": 1,
-  "max_frontier": 5,
   "original": {
    "abs": Infinity,
    "rel": Infinity
@@ -3568,19 +1224,9 @@
   }
  },
  "rewriting_programs/herbie-libraries-octave-collocwt-001-octave-3-8-jcobi-2.fpcore": {
-  "bound": {
-   "abs": Infinity,
-   "rel": Infinity
-  },
-  "bound_s": 0.04294896125793457,
-  "egglog_s": 0.6686692237854004,
-  "extract_s": 0.2914698123931885,
-  "rounds": 12,
+  "egglog_s": 0.7996101379394531,
+  "extract_s": 0.4212369918823242,
   "cut": false,
-  "nodes": 7631,
-  "classes": 2190,
-  "root_frontier": 0,
-  "max_frontier": 3,
   "original": {
    "abs": Infinity,
    "rel": Infinity
@@ -3591,27 +1237,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-libraries-octave-collocwt-002-octave-3-8-jcobi-3.fpcore": {
-  "bound": {
-   "abs": Infinity,
-   "rel": Infinity
-  },
-  "bound_s": 0.04104208946228027
- },
  "rewriting_programs/herbie-libraries-octave-collocwt-003-octave-3-8-jcobi-4.fpcore": {
-  "bound": {
-   "abs": Infinity,
-   "rel": Infinity
-  },
-  "bound_s": 0.04961800575256348,
-  "egglog_s": 2.7151989936828613,
-  "extract_s": 2.242979049682617,
-  "rounds": 13,
+  "egglog_s": 3.1227362155914307,
+  "extract_s": 2.7919187545776367,
   "cut": false,
-  "nodes": 18607,
-  "classes": 9331,
-  "root_frontier": 1,
-  "max_frontier": 10,
   "original": {
    "abs": 3.692619248442655e+29,
    "rel": Infinity
@@ -3625,34 +1254,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-libraries-octave-randgamma-000-octave-3-8-oct-fill-randg.fpcore": {
-  "bound": {
-   "abs": 3.7274840933958786e-15,
-   "rel": 7.123301532135677e-16
-  },
-  "bound_s": 0.039376020431518555
- },
- "bounding_programs/herbie-mathematics-arvind-002-quotient-of-products.fpcore": {
-  "bound": {
-   "abs": 4.336808689942019e-18,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.03934597969055176
- },
  "rewriting_programs/herbie-mathematics-beta-distribution-000-a-parameter-of-renormalized-beta-distrib.fpcore": {
-  "bound": {
-   "abs": Infinity,
-   "rel": Infinity
-  },
-  "bound_s": 0.04649019241333008,
-  "egglog_s": 0.38531994819641113,
-  "extract_s": 0.1234128475189209,
-  "rounds": 9,
+  "egglog_s": 0.3411140441894531,
+  "extract_s": 0.1663510799407959,
   "cut": false,
-  "nodes": 5192,
-  "classes": 1791,
-  "root_frontier": 0,
-  "max_frontier": 2,
   "original": {
    "abs": Infinity,
    "rel": Infinity
@@ -3664,19 +1269,9 @@
   }
  },
  "rewriting_programs/herbie-mathematics-beta-distribution-001-b-parameter-of-renormalized-beta-distrib.fpcore": {
-  "bound": {
-   "abs": Infinity,
-   "rel": Infinity
-  },
-  "bound_s": 0.03969287872314453,
-  "egglog_s": 0.5031492710113525,
-  "extract_s": 0.14384675025939941,
-  "rounds": 9,
+  "egglog_s": 0.6632649898529053,
+  "extract_s": 0.19156098365783691,
   "cut": false,
-  "nodes": 7021,
-  "classes": 2677,
-  "root_frontier": 0,
-  "max_frontier": 2,
   "original": {
    "abs": Infinity,
    "rel": Infinity
@@ -3688,19 +1283,9 @@
   }
  },
  "rewriting_programs/herbie-mathematics-excel-000-x0-1-x1-x0.fpcore": {
-  "bound": {
-   "abs": 3.940858046049891e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.04044699668884277,
-  "egglog_s": 0.5400891304016113,
-  "extract_s": 0.4349639415740967,
-  "rounds": 11,
+  "egglog_s": 0.6432380676269531,
+  "extract_s": 0.5474917888641357,
   "cut": false,
-  "nodes": 6532,
-  "classes": 2201,
-  "root_frontier": 2,
-  "max_frontier": 4,
   "original": {
    "abs": 3.940858046049891e-16,
    "rel": 1.0162716585765279e-12
@@ -3714,34 +1299,10 @@
    "rel": 2.786078321832928e-16
   }
  },
- "bounding_programs/herbie-mathematics-gui-007-ab-angle-abcf-d.fpcore": {
-  "bound": {
-   "abs": 7.105427357601002e-14,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.05399322509765625
- },
- "bounding_programs/herbie-mathematics-gui-009-abcf-ab-angle-a.fpcore": {
-  "bound": {
-   "abs": 2.303097425134941e-14,
-   "rel": 8.558704151671864e-16
-  },
-  "bound_s": 0.04761910438537598
- },
  "rewriting_programs/herbie-mathematics-gui-010-abcf-ab-angle-b.fpcore": {
-  "bound": {
-   "abs": Infinity,
-   "rel": Infinity
-  },
-  "bound_s": 0.040997982025146484,
-  "egglog_s": 1.0439980030059814,
-  "extract_s": 1.9283549785614014,
-  "rounds": 16,
+  "egglog_s": 1.3688671588897705,
+  "extract_s": 2.405431032180786,
   "cut": false,
-  "nodes": 10190,
-  "classes": 4033,
-  "root_frontier": 1,
-  "max_frontier": 39,
   "original": {
    "abs": 4.433391616311864e-14,
    "rel": 4.483445742527376e-15
@@ -3756,19 +1317,9 @@
   }
  },
  "rewriting_programs/herbie-mathematics-sarnoff-000-quadratic-roots-full-range.fpcore": {
-  "bound": {
-   "abs": 2.7693705006991605e-15,
-   "rel": 2.3252812908491074e-15
-  },
-  "bound_s": 0.03492283821105957,
-  "egglog_s": 0.6970229148864746,
-  "extract_s": 0.5238561630249023,
-  "rounds": 12,
+  "egglog_s": 0.6685171127319336,
+  "extract_s": 0.6841709613800049,
   "cut": false,
-  "nodes": 5887,
-  "classes": 2018,
-  "root_frontier": 3,
-  "max_frontier": 10,
   "original": {
    "abs": 2.7693705006991605e-15,
    "rel": 2.3252812908491074e-15
@@ -3783,19 +1334,9 @@
   }
  },
  "rewriting_programs/herbie-mathematics-sarnoff-004-cubic-critical.fpcore": {
-  "bound": {
-   "abs": 2.641761453467041e-15,
-   "rel": Infinity
-  },
-  "bound_s": 0.03834176063537598,
-  "egglog_s": 0.5587141513824463,
-  "extract_s": 0.41600704193115234,
-  "rounds": 11,
+  "egglog_s": 0.6081697940826416,
+  "extract_s": 0.5138733386993408,
   "cut": false,
-  "nodes": 5745,
-  "classes": 1964,
-  "root_frontier": 1,
-  "max_frontier": 6,
   "original": {
    "abs": 2.641761453467041e-15,
    "rel": Infinity
@@ -3809,41 +1350,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-mathematics-sarnoff-008-asymptote-a.fpcore": {
-  "bound": {
-   "abs": 7.926992395823618e-16,
-   "rel": 3.20576898360514e-16
-  },
-  "bound_s": 0.04258322715759277
- },
- "bounding_programs/herbie-mathematics-sarnoff-009-asymptote-b.fpcore": {
-  "bound": {
-   "abs": 6.183942247162123e-16,
-   "rel": 5.138746571122157e-16
-  },
-  "bound_s": 0.04464221000671387
- },
- "bounding_programs/herbie-mathematics-sarnoff-010-asymptote-c.fpcore": {
-  "bound": {
-   "abs": 1.062483434566275e-15,
-   "rel": 4.1604147028058504e-16
-  },
-  "bound_s": 0.04328799247741699
- },
  "rewriting_programs/herbie-numerics-conte-004-ena-section-1-4-exercise-4b-n-2.fpcore": {
-  "bound": {
-   "abs": 311.2092896699906,
-   "rel": Infinity
-  },
-  "bound_s": 0.042701005935668945,
-  "egglog_s": 0.16620206832885742,
-  "extract_s": 0.056246042251586914,
-  "rounds": 9,
+  "egglog_s": 0.1919548511505127,
+  "extract_s": 0.061370849609375,
   "cut": false,
-  "nodes": 1903,
-  "classes": 547,
-  "root_frontier": 1,
-  "max_frontier": 2,
   "original": {
    "abs": 247.20928978919986,
    "rel": Infinity
@@ -3858,19 +1368,9 @@
   }
  },
  "rewriting_programs/herbie-numerics-conte-005-ena-section-1-4-exercise-4b-n-5.fpcore": {
-  "bound": {
-   "abs": 1.0279487815910063e+30,
-   "rel": Infinity
-  },
-  "bound_s": 0.05145001411437988,
-  "egglog_s": 0.3439469337463379,
-  "extract_s": 0.23812127113342285,
-  "rounds": 15,
+  "egglog_s": 0.32947802543640137,
+  "extract_s": 0.29934191703796387,
   "cut": false,
-  "nodes": 3754,
-  "classes": 1407,
-  "root_frontier": 1,
-  "max_frontier": 2,
   "original": {
    "abs": 8.694924568576254e+29,
    "rel": Infinity
@@ -3884,34 +1384,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-numerics-every-cs-006-x-x-2-1.fpcore": {
-  "bound": {
-   "abs": 3.1086244689504396e-16,
-   "rel": 3.108624468950439e-16
-  },
-  "bound_s": 0.047044992446899414
- },
- "bounding_programs/herbie-numerics-every-cs-007-complex-division-real-part.fpcore": {
-  "bound": {
-   "abs": 1.2326740935176378e-16,
-   "rel": 5.551115123125785e-16
-  },
-  "bound_s": 0.050868988037109375
- },
  "rewriting_programs/herbie-numerics-every-cs-008-complex-division-imag-part.fpcore": {
-  "bound": {
-   "abs": 2.3061617974750514e-17,
-   "rel": Infinity
-  },
-  "bound_s": 0.033128976821899414,
-  "egglog_s": 0.506181001663208,
-  "extract_s": 0.8077549934387207,
-  "rounds": 10,
+  "egglog_s": 0.5181667804718018,
+  "extract_s": 1.0352890491485596,
   "cut": false,
-  "nodes": 6337,
-  "classes": 2096,
-  "root_frontier": 1,
-  "max_frontier": 20,
   "original": {
    "abs": 2.3061617974750514e-17,
    "rel": Infinity
@@ -3926,19 +1402,9 @@
   }
  },
  "rewriting_programs/herbie-numerics-fma-000-fma-test1.fpcore": {
-  "bound": {
-   "abs": 4.440892098500628e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.0389246940612793,
-  "egglog_s": 1.2366361618041992,
-  "extract_s": 0.7531437873840332,
-  "rounds": 12,
+  "egglog_s": 1.3624968528747559,
+  "extract_s": 1.0580928325653076,
   "cut": false,
-  "nodes": 8562,
-  "classes": 3880,
-  "root_frontier": 1,
-  "max_frontier": 8,
   "original": {
    "abs": 4.440892098500628e-16,
    "rel": 1.3706457094137752e+16
@@ -3953,19 +1419,9 @@
   }
  },
  "rewriting_programs/herbie-numerics-fma-001-fma-test2.fpcore": {
-  "bound": {
-   "abs": Infinity,
-   "rel": Infinity
-  },
-  "bound_s": 0.0390169620513916,
-  "egglog_s": 0.08457803726196289,
-  "extract_s": 0.009402990341186523,
-  "rounds": 6,
+  "egglog_s": 0.07483291625976562,
+  "extract_s": 0.007870912551879883,
   "cut": false,
-  "nodes": 403,
-  "classes": 138,
-  "root_frontier": 0,
-  "max_frontier": 1,
   "original": {
    "abs": Infinity,
    "rel": Infinity
@@ -3977,19 +1433,9 @@
   }
  },
  "rewriting_programs/herbie-numerics-great-debate-002-kahan-p9-example.fpcore": {
-  "bound": {
-   "abs": Infinity,
-   "rel": Infinity
-  },
-  "bound_s": 0.03795623779296875,
-  "egglog_s": 0.1676011085510254,
-  "extract_s": 0.029954910278320312,
-  "rounds": 8,
+  "egglog_s": 0.19898390769958496,
+  "extract_s": 0.05108904838562012,
   "cut": false,
-  "nodes": 2238,
-  "classes": 765,
-  "root_frontier": 0,
-  "max_frontier": 2,
   "original": {
    "abs": Infinity,
    "rel": Infinity
@@ -4000,83 +1446,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-numerics-great-debate-003-kahan-p13-example-1.fpcore": {
-  "bound": {
-   "abs": 2.2961430736565787e-15,
-   "rel": 1.1472304587793295e-15
-  },
-  "bound_s": 0.04917120933532715
- },
- "bounding_programs/herbie-numerics-great-debate-004-kahan-p13-example-2.fpcore": {
-  "bound": {
-   "abs": 1.971792793321876e-15,
-   "rel": 2.054300785425295e-15
-  },
-  "bound_s": 0.043929100036621094
- },
- "bounding_programs/herbie-numerics-great-debate-005-kahan-p13-example-3.fpcore": {
-  "bound": {
-   "abs": 4.1358101516511615e-16,
-   "rel": 6.999063333563511e-16
-  },
-  "bound_s": 0.047145843505859375
- },
- "bounding_programs/herbie-numerics-hamming-misc-002-radioactive-exchange-between-two-surface.fpcore": {
-  "bound": {
-   "abs": 1.368682944757893e-12,
-   "rel": 4.88498130835069e-16
-  },
-  "bound_s": 0.04325079917907715
- },
- "bounding_programs/herbie-numerics-martel-001-expression-p14.fpcore": {
-  "bound": {
-   "abs": 2.920619301960414e-11,
-   "rel": Infinity
-  },
-  "bound_s": 0.04754471778869629
- },
- "bounding_programs/herbie-numerics-martel-002-expression-1-p15.fpcore": {
-  "bound": {
-   "abs": 1.4210854715202004e-14,
-   "rel": 4.229873929146513e-16
-  },
-  "bound_s": 0.0336458683013916
- },
- "bounding_programs/herbie-numerics-martel-003-expression-2-p15.fpcore": {
-  "bound": {
-   "abs": 6.661338147750939e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.036360979080200195
- },
- "bounding_programs/herbie-numerics-martel-004-expression-3-p15.fpcore": {
-  "bound": {
-   "abs": 2.4424906541753444e-15,
-   "rel": Infinity
-  },
-  "bound_s": 0.03441905975341797
- },
- "bounding_programs/herbie-numerics-martel-005-expression-4-p15.fpcore": {
-  "bound": {
-   "abs": 2.487077210844291e-14,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.03289985656738281
- },
  "rewriting_programs/herbie-numerics-martel-006-expression-p6.fpcore": {
-  "bound": {
-   "abs": 5.329070518200751e-15,
-   "rel": Infinity
-  },
-  "bound_s": 0.03443193435668945,
-  "egglog_s": 0.24766278266906738,
-  "extract_s": 0.13228225708007812,
-  "rounds": 10,
+  "egglog_s": 0.24177312850952148,
+  "extract_s": 0.12723207473754883,
   "cut": false,
-  "nodes": 2935,
-  "classes": 1138,
-  "root_frontier": 1,
-  "max_frontier": 1,
   "original": {
    "abs": 5.329070518200751e-15,
    "rel": Infinity
@@ -4091,19 +1464,9 @@
   }
  },
  "rewriting_programs/herbie-numerics-rosa-000-rosa-s-dopplerbench.fpcore": {
-  "bound": {
-   "abs": 3.9971870488667007e-16,
-   "rel": 5.551115123125785e-16
-  },
-  "bound_s": 0.033312082290649414,
-  "egglog_s": 0.5877640247344971,
-  "extract_s": 0.7681448459625244,
-  "rounds": 11,
+  "egglog_s": 0.5343649387359619,
+  "extract_s": 1.167119026184082,
   "cut": false,
-  "nodes": 7058,
-  "classes": 2557,
-  "root_frontier": 1,
-  "max_frontier": 9,
   "original": {
    "abs": 2.247864902111508e-16,
    "rel": 5.551115123125785e-16
@@ -4117,27 +1480,10 @@
    "rel": 2.982401539287683e-16
   }
  },
- "bounding_programs/herbie-numerics-rosa-001-rosa-s-benchmark.fpcore": {
-  "bound": {
-   "abs": 7.269822136272781e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.04002213478088379
- },
  "rewriting_programs/herbie-numerics-rosa-002-rosa-s-floatvsdoublebenchmark.fpcore": {
-  "bound": {
-   "abs": 6.687772557967281e-12,
-   "rel": Infinity
-  },
-  "bound_s": 0.05297112464904785,
-  "egglog_s": 2.2975170612335205,
-  "extract_s": 4.944282293319702,
-  "rounds": 19,
+  "egglog_s": 2.8291919231414795,
+  "extract_s": 6.192456007003784,
   "cut": false,
-  "nodes": 11876,
-  "classes": 4578,
-  "root_frontier": 68,
-  "max_frontier": 68,
   "original": {
    "abs": 3.492686947740003e-12,
    "rel": 1.3849916443787532e-13
@@ -4152,107 +1498,60 @@
   }
  },
  "rewriting_programs/herbie-numerics-rump-000-rump-s-expression-from-stadtherr-s-award.fpcore": {
-  "bound": {
-   "abs": 1.2610304318795573e+22,
-   "rel": Infinity
-  },
-  "bound_s": 0.041780948638916016,
-  "egglog_s": 2.340062141418457,
-  "extract_s": 1.3313417434692383,
-  "rounds": 17,
+  "egglog_s": 2.5105206966400146,
+  "extract_s": 1.3059961795806885,
   "cut": false,
-  "nodes": 13474,
-  "classes": 5508,
-  "root_frontier": 1,
-  "max_frontier": 1,
   "original": {
-   "abs": 1.261030431879557e+22,
-   "rel": Infinity
+   "abs": 9.214810874870035e+21,
+   "rel": 1.1137122015618846e+22
   },
   "programs": {
-   "abs": "(+ (+ (* (* (* (* 333.75 y) (* y y)) (* y y)) y) (+ (* (* y y) (+ (* (* (* 5.5 y) (* (* y y) (* y y))) y) (* (+ (* (* y (* y -1)) (* y y)) (* 11 (* x x))) (* x x)))) (* (* x x) (+ (* (* (* -121 y) (* y y)) y) -2)))) (* (/ x y) 0.5))",
-   "rel": "(+ (+ (* (* (* (* 333.75 y) (* y y)) (* y y)) y) (+ (* (* y y) (+ (* (* (* 5.5 y) (* (* y y) (* y y))) y) (* (+ (* (* y (* y -1)) (* y y)) (* 11 (* x x))) (* x x)))) (* (* x x) (+ (* (* (* -121 y) (* y y)) y) -2)))) (* (/ x y) 0.5))"
+   "abs": "(+ (+ (+ (* (* 5.5 (* (* y y) (* y y))) (* (* y y) (* y y))) (- (- (* (* x x) (* (* y y) (+ (* 121 (* y y)) (* (* x -1) (* 11 x)))))) (* (* x (* (* y y) y)) (* x (* (* y y) y))))) (+ (* (* x x) -2) (* (* (* y y) (* y y)) (* (* y y) 333.75)))) (* (/ x y) 0.5))",
+   "rel": "(+ (+ (+ (* (* 5.5 (* (* y y) (* y y))) (* (* y y) (* y y))) (- (- (* (* x x) (* (* y y) (+ (* 121 (* y y)) (* (* x -1) (* 11 x)))))) (* (* x (* (* y y) y)) (* x (* (* y y) y))))) (+ (* (* x x) -2) (* (* (* y y) (* y y)) (* (* y y) 333.75)))) (* (/ x y) 0.5))"
   },
   "bounds": {
-   "abs": 4.346483000796737e+21,
-   "rel": Infinity
+   "abs": 1.7708875613051704e+21,
+   "rel": 2.1403142304291241e+21
   }
  },
  "rewriting_programs/herbie-numerics-rump-001-from-rump-in-a-1983-paper.fpcore": {
-  "bound": {
-   "abs": 46.12353515625,
-   "rel": Infinity
-  },
-  "bound_s": 0.04905390739440918,
-  "egglog_s": 0.31677889823913574,
-  "extract_s": 0.13950490951538086,
-  "rounds": 12,
+  "egglog_s": 0.2824699878692627,
+  "extract_s": 0.17838501930236816,
   "cut": false,
-  "nodes": 2693,
-  "classes": 869,
-  "root_frontier": 1,
-  "max_frontier": 1,
   "original": {
-   "abs": 46.12353515625,
-   "rel": Infinity
+   "abs": 8.0,
+   "rel": 8.0
   },
   "programs": {
-   "abs": "(+ (+ (* (* (* 9 x) x) (* x x)) (* (* (- y) y) (* y y))) (* 2 (* y y)))",
-   "rel": "(+ (+ (* (* (* 9 x) x) (* x x)) (* (* (- y) y) (* y y))) (* 2 (* y y)))"
+   "abs": "(+ (+ (* 9 (* (* x x) (* x x))) (* (* (- y) y) (+ (* y y) -1))) (* y y))",
+   "rel": "(+ (+ (* 9 (* (* x x) (* x x))) (* (* (- y) y) (+ (* y y) -1))) (* y y))"
   },
   "bounds": {
-   "abs": 23.034927368164062,
-   "rel": Infinity
+   "abs": 0.0,
+   "rel": 0.0
   }
  },
  "rewriting_programs/herbie-numerics-rump-002-from-rump-in-a-1983-paper-rewritten.fpcore": {
-  "bound": {
-   "abs": 47.487937957048416,
-   "rel": Infinity
-  },
-  "bound_s": 0.0425567626953125,
-  "egglog_s": 0.3814260959625244,
-  "extract_s": 0.20867180824279785,
-  "rounds": 11,
+  "egglog_s": 0.3735380172729492,
+  "extract_s": 0.2587320804595947,
   "cut": false,
-  "nodes": 3546,
-  "classes": 1213,
-  "root_frontier": 1,
-  "max_frontier": 1,
   "original": {
-   "abs": 47.487937957048416,
-   "rel": Infinity
+   "abs": 8.0,
+   "rel": 8.0
   },
   "programs": {
-   "abs": "(+ (+ (* (* (* 9 x) x) (* x x)) (* (* y y) (* (* y -1) y))) (* 2 (* y y)))",
-   "rel": "(+ (+ (* (* (* 9 x) x) (* x x)) (* (* y y) (* (* y -1) y))) (* 2 (* y y)))"
+   "abs": "(+ (+ (* 9 (* (* x x) (* x x))) (* (* (* y -1) y) (+ (* y y) -1))) (* y y))",
+   "rel": "(+ (+ (* 9 (* (* x x) (* x x))) (* (* (* y -1) y) (+ (* y y) -1))) (* y y))"
   },
   "bounds": {
-   "abs": 23.034927368164062,
-   "rel": Infinity
+   "abs": 0.0,
+   "rel": 0.0
   }
  },
- "bounding_programs/herbie-physics-kalman-000-kalman-filter-per-k.fpcore": {
-  "bound": {
-   "abs": 6.760103588021635e-15,
-   "rel": 3.304023721284477e-15
-  },
-  "bound_s": 0.05373072624206543
- },
  "rewriting_programs/herbie-physics-kalman-001-kalman-filter-per-x.fpcore": {
-  "bound": {
-   "abs": 3993.709535305103,
-   "rel": Infinity
-  },
-  "bound_s": 0.05577993392944336,
-  "egglog_s": 2.6229031085968018,
-  "extract_s": 120.04398608207703,
-  "rounds": 24,
+  "egglog_s": 2.6684060096740723,
+  "extract_s": 120.0256998538971,
   "cut": true,
-  "nodes": 15387,
-  "classes": 6189,
-  "root_frontier": 3,
-  "max_frontier": 1270,
   "original": {
    "abs": 0.001485958016851663,
    "rel": Infinity
@@ -4267,19 +1566,9 @@
   }
  },
  "rewriting_programs/herbie-physics-kalman-002-kalman-filter-per-p.fpcore": {
-  "bound": {
-   "abs": 6.265056029519701e-13,
-   "rel": Infinity
-  },
-  "bound_s": 0.07308506965637207,
-  "egglog_s": 1.636667013168335,
-  "extract_s": 0.9378387928009033,
-  "rounds": 16,
+  "egglog_s": 1.7650139331817627,
+  "extract_s": 1.2049908638000488,
   "cut": false,
-  "nodes": 10475,
-  "classes": 2909,
-  "root_frontier": 1,
-  "max_frontier": 8,
   "original": {
    "abs": 2.326381511672735e-13,
    "rel": Infinity
@@ -4293,34 +1582,10 @@
    "rel": 0.660000000000001
   }
  },
- "bounding_programs/herbie-physics-quantum-walk-004-falkner-and-boettcher-appendix-b-2.fpcore": {
-  "bound": {
-   "abs": 1.6834298279796176e-16,
-   "rel": 7.5389029624782625e-16
-  },
-  "bound_s": 0.04191994667053223
- },
- "bounding_programs/herbie-physics-sidey-000-given-s-rotation-svd-example.fpcore": {
-  "bound": {
-   "abs": 3.0271188753818594e-16,
-   "rel": 2.733529779803201e-16
-  },
-  "bound_s": 0.03895425796508789
- },
  "rewriting_programs/herbie-physics-superfluidity-breakdown-003-toniolo-and-linder-equation-7.fpcore": {
-  "bound": {
-   "abs": Infinity,
-   "rel": Infinity
-  },
-  "bound_s": 0.037899017333984375,
-  "egglog_s": 1.252147912979126,
-  "extract_s": 1.6780600547790527,
-  "rounds": 16,
+  "egglog_s": 1.380260944366455,
+  "extract_s": 2.071542978286743,
   "cut": false,
-  "nodes": 11043,
-  "classes": 3795,
-  "root_frontier": 1,
-  "max_frontier": 33,
   "original": {
    "abs": 1.3043176946683385e-14,
    "rel": 8.272932374553696e-15
@@ -4335,19 +1600,9 @@
   }
  },
  "rewriting_programs/herbie-physics-superfluidity-breakdown-006-toniolo-and-linder-equation-13.fpcore": {
-  "bound": {
-   "abs": Infinity,
-   "rel": Infinity
-  },
-  "bound_s": 0.05228233337402344,
-  "egglog_s": 1.2924551963806152,
-  "extract_s": 19.939854860305786,
-  "rounds": 14,
+  "egglog_s": 1.3275160789489746,
+  "extract_s": 25.344252109527588,
   "cut": false,
-  "nodes": 14193,
-  "classes": 5146,
-  "root_frontier": 4,
-  "max_frontier": 174,
   "original": {
    "abs": 1.0351604675818082e-12,
    "rel": 1.6360986639559678e-14
@@ -4361,34 +1616,10 @@
    "rel": 3.938923566221411e-15
   }
  },
- "bounding_programs/herbie-physics-tea-whistle-000-henrywood-and-agarwal-equation-3.fpcore": {
-  "bound": {
-   "abs": 4.738173134917611e-17,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.045005083084106445
- },
- "bounding_programs/herbie-physics-tea-whistle-001-henrywood-and-agarwal-equation-9a.fpcore": {
-  "bound": {
-   "abs": 2.8256310965632805e-16,
-   "rel": 1.971297226959902e-16
-  },
-  "bound_s": 0.047077178955078125
- },
  "rewriting_programs/herbie-physics-tea-whistle-003-henrywood-and-agarwal-equation-13.fpcore": {
-  "bound": {
-   "abs": 9.663382155006236e-13,
-   "rel": 1.2195242349326555e-15
-  },
-  "bound_s": 0.04956388473510742,
-  "egglog_s": 1.5784871578216553,
-  "extract_s": 120.23890089988708,
-  "rounds": 7,
+  "egglog_s": 1.717108964920044,
+  "extract_s": 120.09904527664185,
   "cut": true,
-  "nodes": 12491,
-  "classes": 4955,
-  "root_frontier": 0,
-  "max_frontier": 2015,
   "original": {
    "abs": 9.663382155006236e-13,
    "rel": 1.2195242349326555e-15
@@ -4400,19 +1631,9 @@
   }
  },
  "rewriting_programs/herbie-physics-universal-linear-optics-000-bouland-and-aaronson-equation-24.fpcore": {
-  "bound": {
-   "abs": 3.2587266218797603e-12,
-   "rel": 1.440850591246749e-15
-  },
-  "bound_s": 0.04073905944824219,
-  "egglog_s": 1.2974789142608643,
-  "extract_s": 25.73044180870056,
-  "rounds": 18,
+  "egglog_s": 1.4572908878326416,
+  "extract_s": 31.778367042541504,
   "cut": false,
-  "nodes": 7897,
-  "classes": 3244,
-  "root_frontier": 7,
-  "max_frontier": 116,
   "original": {
    "abs": 3.2587266218797603e-12,
    "rel": 1.407718383023566e-15
@@ -4427,19 +1648,9 @@
   }
  },
  "rewriting_programs/herbie-physics-universal-linear-optics-001-bouland-and-aaronson-equation-25.fpcore": {
-  "bound": {
-   "abs": 3.3795188869589773e-12,
-   "rel": Infinity
-  },
-  "bound_s": 0.04532885551452637,
-  "egglog_s": 0.9134130477905273,
-  "extract_s": 1.0375101566314697,
-  "rounds": 13,
+  "egglog_s": 1.070674180984497,
+  "extract_s": 1.2859609127044678,
   "cut": false,
-  "nodes": 7622,
-  "classes": 2702,
-  "root_frontier": 1,
-  "max_frontier": 34,
   "original": {
    "abs": 3.3795188869589773e-12,
    "rel": Infinity
@@ -4453,41 +1664,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-physics-universal-linear-optics-002-bouland-and-aaronson-equation-26.fpcore": {
-  "bound": {
-   "abs": 2.858158154595004e-12,
-   "rel": 7.729686680774797e-16
-  },
-  "bound_s": 0.04869890213012695
- },
- "bounding_programs/herbie-proj-krovak-008-mod-dx.fpcore": {
-  "bound": {
-   "abs": 3.470558965516502e-18,
-   "rel": 1.1777670362049467e-16
-  },
-  "bound_s": 0.05302786827087402
- },
- "bounding_programs/herbie-proj-krovak-009-mod-dy.fpcore": {
-  "bound": {
-   "abs": 3.469870592830696e-18,
-   "rel": 1.379165664820186e-16
-  },
-  "bound_s": 0.06523489952087402
- },
  "rewriting_programs/herbie-proj-omerc-001-forward-half-diff.fpcore": {
-  "bound": {
-   "abs": 1.3877787807814457e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.036672115325927734,
-  "egglog_s": 0.34389185905456543,
-  "extract_s": 0.2203531265258789,
-  "rounds": 8,
+  "egglog_s": 0.3784759044647217,
+  "extract_s": 0.2705211639404297,
   "cut": false,
-  "nodes": 4036,
-  "classes": 1266,
-  "root_frontier": 2,
-  "max_frontier": 4,
   "original": {
    "abs": 1.3877787807814457e-16,
    "rel": Infinity
@@ -4501,76 +1681,10 @@
    "rel": 3.0000000000000004
   }
  },
- "bounding_programs/herbie-proj-omerc-002-forward-half-sum.fpcore": {
-  "bound": {
-   "abs": 1.3877787807814457e-16,
-   "rel": 1.4802973661668756e-16
-  },
-  "bound_s": 0.044792890548706055
- },
- "bounding_programs/herbie-proj-omerc-006-forward-rot-x.fpcore": {
-  "bound": {
-   "abs": 1.0928147275990341e-11,
-   "rel": 3.3839597790574777e-16
-  },
-  "bound_s": 0.040979862213134766
- },
- "bounding_programs/herbie-proj-omerc-007-forward-rot-y.fpcore": {
-  "bound": {
-   "abs": 3.694822225952521e-12,
-   "rel": 3.31355580952672e-16
-  },
-  "bound_s": 0.03936290740966797
- },
- "bounding_programs/herbie-proj-omerc-009-inverse-up.fpcore": {
-  "bound": {
-   "abs": 1.1404210908949608e-12,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.043103933334350586
- },
- "bounding_programs/herbie-proj-omerc-010-inverse-prephi.fpcore": {
-  "bound": {
-   "abs": 3.031513008591833e-17,
-   "rel": 3.5245103160902282e-16
-  },
-  "bound_s": 0.0459902286529541
- },
- "bounding_programs/herbie-proj-omerc-020-init-j.fpcore": {
-  "bound": {
-   "abs": 1.5338158094052175e-15,
-   "rel": 5.699144859742472e-16
-  },
-  "bound_s": 0.03929710388183594
- },
- "bounding_programs/herbie-proj-som-002-seraz0-fc-a2.fpcore": {
-  "bound": {
-   "abs": 2.22282068332106e-13,
-   "rel": 6.809367884367629e-16
-  },
-  "bound_s": 0.04778099060058594
- },
- "bounding_programs/herbie-proj-som-003-seraz0-fc-c1.fpcore": {
-  "bound": {
-   "abs": 9.046120298214074e-14,
-   "rel": 6.661338147750941e-16
-  },
-  "bound_s": 0.03252768516540527
- },
  "rewriting_programs/herbie-proj-som-015-setup-w.fpcore": {
-  "bound": {
-   "abs": 1.1103111319243918e-08,
-   "rel": Infinity
-  },
-  "bound_s": 0.038918256759643555,
-  "egglog_s": 0.7163171768188477,
-  "extract_s": 0.5634989738464355,
-  "rounds": 16,
+  "egglog_s": 0.8269689083099365,
+  "extract_s": 0.8317620754241943,
   "cut": false,
-  "nodes": 5706,
-  "classes": 2263,
-  "root_frontier": 1,
-  "max_frontier": 8,
   "original": {
    "abs": 1.1103111319243918e-08,
    "rel": Infinity
@@ -4585,19 +1699,9 @@
   }
  },
  "rewriting_programs/herbie-proj-som-016-setup-t.fpcore": {
-  "bound": {
-   "abs": 5.820766091346743e-11,
-   "rel": 7.000000000000002
-  },
-  "bound_s": 0.04499220848083496,
-  "egglog_s": 0.3357870578765869,
-  "extract_s": 0.16863727569580078,
-  "rounds": 9,
+  "egglog_s": 0.35425782203674316,
+  "extract_s": 0.2129840850830078,
   "cut": false,
-  "nodes": 3665,
-  "classes": 1272,
-  "root_frontier": 2,
-  "max_frontier": 3,
   "original": {
    "abs": 5.820766091346743e-11,
    "rel": 7.000000000000002
@@ -4611,96 +1715,27 @@
    "rel": 3.125000000000001
   }
  },
- "bounding_programs/herbie-proj-som-017-setup-xj.fpcore": {
-  "bound": {
-   "abs": 1.3322676295501878e-15,
-   "rel": 3.0
-  },
-  "bound_s": 0.03952503204345703
- },
- "bounding_programs/herbie-proj-tmerc-012-clenshaw-final-real.fpcore": {
-  "bound": {
-   "abs": 1.8640093912836164e-09,
-   "rel": 3.3656367281943726e-16
-  },
-  "bound_s": 0.04534626007080078
- },
- "bounding_programs/herbie-proj-tmerc-013-clenshaw-final-imag.fpcore": {
-  "bound": {
-   "abs": 5.875335773453116e-10,
-   "rel": 3.33066907387547e-16
-  },
-  "bound_s": 0.049591064453125
- },
  "rewriting_programs/herbie-regression-000-xlohi-overflows.fpcore": {
-  "bound": {
-   "abs": Infinity,
-   "rel": Infinity
-  },
-  "bound_s": 0.04155611991882324,
-  "egglog_s": 0.39593005180358887,
-  "extract_s": 0.25684690475463867,
-  "rounds": 11,
+  "egglog_s": 0.42266392707824707,
+  "extract_s": 0.1791539192199707,
   "cut": false,
-  "nodes": 4941,
-  "classes": 1725,
-  "root_frontier": 1,
-  "max_frontier": 4,
   "original": {
    "abs": Infinity,
    "rel": Infinity
   },
   "programs": {
-   "abs": "(* (/ (+ x (* lo -1)) (- (/ hi 2) (/ lo 2))) 0.5)",
-   "rel": "(* (/ (+ x (* lo -1)) (- (/ hi 2) (/ lo 2))) 0.5)"
+   "abs": "(/ (+ (/ x lo) -1) (+ (/ hi lo) -1))",
+   "rel": "(/ (+ (/ x lo) -1) (+ (/ hi lo) -1))"
   },
   "bounds": {
-   "abs": 1.553031667079939e-16,
-   "rel": 3.106063334159877e-16
+   "abs": 5.551115123125783e-17,
+   "rel": 1.1102230246251565e-16
   }
  },
- "bounding_programs/herbie-regression-003-x-used-to-be-hard-to-sample.fpcore": {
-  "bound": {
-   "abs": 0.0,
-   "rel": 0.0
-  },
-  "bound_s": 0.036535024642944336
- },
- "bounding_programs/herbie-regression-006-sqrt-a-should-all-be-same.fpcore": {
-  "bound": {
-   "abs": 5.360630966617865e-16,
-   "rel": 2.220446049250313e-16
-  },
-  "bound_s": 0.050874948501586914
- },
- "bounding_programs/herbie-regression-007-sqrt-b-should-all-be-same.fpcore": {
-  "bound": {
-   "abs": 3.790538507934089e-16,
-   "rel": 1.6653345369377348e-16
-  },
-  "bound_s": 0.0354917049407959
- },
- "bounding_programs/herbie-regression-008-sqrt-c-should-all-be-same.fpcore": {
-  "bound": {
-   "abs": 3.7905385079340885e-16,
-   "rel": 1.6653345369377348e-16
-  },
-  "bound_s": 0.039134979248046875
- },
  "rewriting_programs/herbie-regression-015-bug333-missed-optimization.fpcore": {
-  "bound": {
-   "abs": Infinity,
-   "rel": Infinity
-  },
-  "bound_s": 0.035279035568237305,
-  "egglog_s": 0.0615079402923584,
-  "extract_s": 0.003774881362915039,
-  "rounds": 4,
+  "egglog_s": 0.05080437660217285,
+  "extract_s": 0.004164695739746094,
   "cut": false,
-  "nodes": 191,
-  "classes": 43,
-  "root_frontier": 0,
-  "max_frontier": 1,
   "original": {
    "abs": Infinity,
    "rel": Infinity
@@ -4711,48 +1746,10 @@
    "rel": Infinity
   }
  },
- "bounding_programs/herbie-regression-016-bug366-missed-optimization.fpcore": {
-  "bound": {
-   "abs": 9.054197675486682e-15,
-   "rel": 2.7750478172907957e-16
-  },
-  "bound_s": 0.0412602424621582
- },
- "bounding_programs/herbie-regression-017-bug366-discussion-missed-optimization.fpcore": {
-  "bound": {
-   "abs": 1.5017186873610231e-15,
-   "rel": 2.590520390792032e-16
-  },
-  "bound_s": 0.02966618537902832
- },
- "bounding_programs/herbie-tutorial-000-cancel-like-terms.fpcore": {
-  "bound": {
-   "abs": 4.440892098500626e-16,
-   "rel": Infinity
-  },
-  "bound_s": 0.03639721870422363
- },
- "bounding_programs/herbie-tutorial-001-expanding-a-square.fpcore": {
-  "bound": {
-   "abs": 3.1086244689504387e-15,
-   "rel": 5.551115123125785e-16
-  },
-  "bound_s": 0.036138057708740234
- },
  "rewriting_programs/herbie-tutorial-002-commute-and-associate.fpcore": {
-  "bound": {
-   "abs": 1.3322676295501878e-14,
-   "rel": Infinity
-  },
-  "bound_s": 0.03707695007324219,
-  "egglog_s": 1.5156159400939941,
-  "extract_s": 2.5417659282684326,
-  "rounds": 11,
+  "egglog_s": 1.6839749813079834,
+  "extract_s": 3.659862995147705,
   "cut": false,
-  "nodes": 13821,
-  "classes": 7183,
-  "root_frontier": 1,
-  "max_frontier": 9,
   "original": {
    "abs": 1.1546319456101628e-14,
    "rel": Infinity

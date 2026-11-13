@@ -109,6 +109,8 @@ def extract(g, time_limit=None, cost=err, leq=precedes):
                     insert(front, entry, leq)
             if {e for e, _ in front} != {e for e, _ in F[c]}:
                 changed[c] = front
+        if not changed:
+            break
         F.update(changed)
         k += 1
         todo = sorted({i for c in changed for i in readers[c]})

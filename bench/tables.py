@@ -142,15 +142,15 @@ def windowed(m, v):
 
 
 def versus():
-    """Our rewrite's improvement on each Rewriting input against Herbie's and Daisy's, as pgfplots rows:
-    in sound bound by improvement(), and in average sampled error as the bits it drops."""
+    """Herbie's and Daisy's improvement on each Rewriting input (x) against our rewrite's (y), as pgfplots
+    rows: in sound bound by improvement(), and in average sampled error as the bits it drops."""
     measured, out = run.measured(), []
     for t in ("herbie", "daisy"):
         bounds, errors = [f"% {t} bound", "x y"], [f"% {t} error", "x y"]
         for n in run.rewriting():
             base, bits = sound(n, "original"), measured[n]["original"]["bits"]
-            bounds.append(" ".join(improvement(base, sound(n, got(w, n))) for w in ("ours", t)))
-            errors.append(" ".join(f"{bits - measured[n][got(w, n)]['bits']:.3g}" for w in ("ours", t)))
+            bounds.append(" ".join(improvement(base, sound(n, got(w, n))) for w in (t, "ours")))
+            errors.append(" ".join(f"{bits - measured[n][got(w, n)]['bits']:.3g}" for w in (t, "ours")))
         out += bounds + errors
     return "\n".join(out) + "\n"
 

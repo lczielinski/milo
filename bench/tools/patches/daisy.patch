@@ -1,0 +1,17 @@
+diff --git a/src/main/scala/daisy/tools/Taylor.scala b/src/main/scala/daisy/tools/Taylor.scala
+index 1b48c55..3af243e 100644
+--- a/src/main/scala/daisy/tools/Taylor.scala
++++ b/src/main/scala/daisy/tools/Taylor.scala
+@@ -36,6 +36,12 @@ trait Taylor extends DeltaAbstractionUtils with RangeEvaluators {
+         }
+       }
+     }
++    // Comparator gained default max/min on newer JDKs, which collide with
++    // Ordering's; Scala needs an explicit override to disambiguate.
++    override def max[U <: Option[Rational]](x: U, y: U): U =
++      if (compare(x, y) >= 0) x else y
++    override def min[U <: Option[Rational]](x: U, y: U): U =
++      if (compare(x, y) <= 0) x else y
+   }
+ 
+ 

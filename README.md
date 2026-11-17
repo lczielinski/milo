@@ -51,6 +51,9 @@ evaluation's text gives and the data of its figures. Herbie runs as `racket -l h
 | [FPTaylor] | `b5a77ca` | |
 | [Gappa] | 1.8.2 | |
 
+The local changes are in `bench/tools/patches/`: `git apply` each patch in its tool's checkout at the commit above, and
+for the `regimes` branch also replace `lib/mpfr_java-1.0*.jar` with the jars in `patches/daisy-regimes-lib/`.
+
 [uv]: https://docs.astral.sh/uv/
 [FPCore]: https://fpbench.org/spec/fpcore-2.0.html
 [Herbie]: https://github.com/herbie-fp/herbie

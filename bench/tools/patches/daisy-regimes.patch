@@ -1,0 +1,81 @@
+diff --git a/build.sbt b/build.sbt
+index a9f372e..cd0612a 100755
+--- a/build.sbt
++++ b/build.sbt
+@@ -15,7 +15,6 @@ scalacOptions ++= Seq(
+     "-Ywarn-dead-code",
+     "-Xlint:_,-adapted-args")
+ 
+-resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
+ resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/releases"
+ 
+ libraryDependencies ++= Seq(
+@@ -24,7 +23,8 @@ libraryDependencies ++= Seq(
+     "com.storm-enroute" %% "scalameter" % "0.19",
+     "org.fusesource.hawtjni" % "hawtjni-runtime" % "1.9",  //for JNI
+     "org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.2",
+-    "org.scala-lang.modules" %% "scala-parallel-collections" % "1.0.1"
++    "org.scala-lang.modules" %% "scala-parallel-collections" % "1.0.1",
++    "com.regblanc" %% "scala-smtlib" % "0.2.1-42-gc68dbaa"
+ )
+ 
+ envVars := Map("LC_NUMERIC" -> "en_US.UTF-8")
+@@ -32,7 +32,7 @@ envVars := Map("LC_NUMERIC" -> "en_US.UTF-8")
+ Keys.fork in run := true
+ 
+ javaOptions in run ++= Seq(
+-    "-Xms256M", "-Xmx4G", "-XX:+UseConcMarkSweepGC")
++    "-Xms256M", "-Xmx4G")
+ 
+ Keys.fork in Test := true   //for native libraries to be on correct path
+ 
+@@ -51,10 +51,8 @@ ivyLoggingLevel in Test := UpdateLogging.Quiet
+ 
+ logBuffered := false
+ 
+-lazy val smtlib = RootProject(uri("git://github.com/regb/scala-smtlib"))
+ 
+ lazy val basic = Project("daisy", file(".")
+-) dependsOn (smtlib
+ ) configs(
+   Benchmark
+ ) settings(
+diff --git a/project/build.properties b/project/build.properties
+index 0837f7a..04267b1 100755
+--- a/project/build.properties
++++ b/project/build.properties
+@@ -1 +1 @@
+-sbt.version=1.3.13
++sbt.version=1.9.9
+diff --git a/src/main/scala/daisy/opt/RewritingOps.scala b/src/main/scala/daisy/opt/RewritingOps.scala
+index 4271ff1..c5d012e 100644
+--- a/src/main/scala/daisy/opt/RewritingOps.scala
++++ b/src/main/scala/daisy/opt/RewritingOps.scala
+@@ -281,8 +281,8 @@ trait RewritingOps {
+     { case (a Division c) Minus (b Division c1) if c =~= c1 => (a Minus b) Division c },
+     // (a / b) + (c / d) => ((a * d) + (b * c)) / (b * d)
+     { case (a Division b) Plus (c Division d) => (a Times d) Plus (b Times c) Division (b Times d) },
+-    // (a / b) - (c / d) => ((a * d) - (c * c)) / (b * d)
+-    { case (a Division b) Minus (c Division d) => ((a Times d) Division (b Times c)) Minus (b Times d) },
++    // (a / b) - (c / d) => ((a * d) - (c * b)) / (b * d)
++    { case (a Division b) Minus (c Division d) => ((a Times d) Minus (b Times c)) Division (b Times d) },
+     // (a / b) * (c / d) => (a * c) / (b * d)
+     { case (a Division b) Times (c Division d) => (a Times c) Division (b Times d) },
+     // a / b => -a / -b
+diff --git a/src/main/scala/daisy/tools/Taylor.scala b/src/main/scala/daisy/tools/Taylor.scala
+index 62d0785..b7d1afd 100644
+--- a/src/main/scala/daisy/tools/Taylor.scala
++++ b/src/main/scala/daisy/tools/Taylor.scala
+@@ -39,6 +39,12 @@ trait Taylor extends DeltaAbstractionUtils with RangeEvaluators {
+         }
+       }
+     }
++    // Comparator gained default max/min on newer JDKs, which collide with
++    // Ordering's; Scala needs an explicit override to disambiguate.
++    override def max[U <: Option[Rational]](x: U, y: U): U =
++      if (compare(x, y) >= 0) x else y
++    override def min[U <: Option[Rational]](x: U, y: U): U =
++      if (compare(x, y) <= 0) x else y
+   }
+ 
+   /**

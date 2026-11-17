@@ -1,0 +1,48 @@
+diff --git a/PRECiSA/core/AbsPVSLang.hs b/PRECiSA/core/AbsPVSLang.hs
+index 7540205..3f3a92f 100644
+--- a/PRECiSA/core/AbsPVSLang.hs
++++ b/PRECiSA/core/AbsPVSLang.hs
+@@ -1088,7 +1088,7 @@ initFBExpr = replaceInFBExpr initErrorMark (const Nothing)
+ 
+ initErrorMark :: AExpr -> Maybe AExpr
+ initErrorMark (ErrorMark _ _ TInt) = Just (Int 0)
+-initErrorMark (ErrorMark x field fp) = Just (HalfUlp (RealMark x field) fp)
++initErrorMark (ErrorMark _ _ _) = Just (Int 0) -- inputs are exact floats, as in FPTaylor, Gappa and Daisy
+ initErrorMark (FromFloat fp fae) = Just (FromFloat fp (initFAExpr fae))
+ initErrorMark _ = Nothing
+ 
+diff --git a/PRECiSA/core/MapFPCoreLangAST.hs b/PRECiSA/core/MapFPCoreLangAST.hs
+index 0d14c2f..af7a6d4 100644
+--- a/PRECiSA/core/MapFPCoreLangAST.hs
++++ b/PRECiSA/core/MapFPCoreLangAST.hs
+@@ -15,6 +15,7 @@ import AbsFPCoreLang
+ import AbsPVSLang hiding (AcosOp, AsinOp, AtanOp, CosOp, DivOp, FloorOp, MulOp, PowOp, SinOp, SqrtOp, TanOp)
+ import Data.Ratio
+ import ErrM
++import Numeric (readFloat)
+ import qualified Operators as Op
+ import Parser.ParFPCoreLang
+ import Parser.LexFPCoreLang
+@@ -193,9 +194,21 @@ fpcoreNum2Expr (NRat (Rational s)) = FCnst FPDouble (read (map parseRat s) :: Da
+   where
+     parseRat '/' = '%'
+     parseRat c   = c
+-fpcoreNum2Expr (NDecNum (DecNum s)) = FCnst FPDouble (toRational (read s :: Double))
++fpcoreNum2Expr (NDecNum (DecNum s))
++  | isExactlyRepresentable n = FCnst FPDouble n
++  | otherwise                = ToFloat FPDouble (Rat n)
++  where
++    n = decNum2Rational s
+ fpcoreNum2Expr _ = error "Not yet implemented"
+ 
++-- The exact value of a decimal literal; reading it as a Double would round it first.
++decNum2Rational :: String -> Data.Ratio.Rational
++decNum2Rational ('-':s) = negate (decNum2Rational s)
++decNum2Rational ('+':s) = decNum2Rational s
++decNum2Rational s = case readFloat s of
++  [(n, "")] -> n
++  _         -> error $ "[decNum2Rational] Cannot parse decimal: " ++ s
++
+ -- TODO: Implementation
+ fpcoreNum2Double :: AbsFPCoreLang.Number -> Double
+ fpcoreNum2Double _ = error "Not yet implemented"
